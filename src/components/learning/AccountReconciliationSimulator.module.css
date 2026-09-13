@@ -1,0 +1,43 @@
+.wrapper { margin:30px 0; padding:17px; border:1px solid var(--color-border); border-radius:var(--radius-lg); background:var(--color-surface-subtle); }
+.heading { display:flex; gap:11px; align-items:flex-start; margin-bottom:14px; }
+.heading > span { display:grid; place-items:center; flex:0 0 auto; width:36px; height:36px; border-radius:12px; background:var(--course-accent-soft); color:var(--course-accent); }
+.heading strong { display:block; font-size:.94rem; }
+.heading p { margin:3px 0 0; color:var(--color-text-muted); font-size:.82rem; line-height:1.5; }
+.tabs { display:flex; gap:6px; margin:0 0 10px; overflow:auto; scrollbar-width:none; }
+.tabs::-webkit-scrollbar { display:none; }
+.tab,.tabActive { min-height:36px; padding:0 13px; border:1px solid var(--color-border); border-radius:999px; background:var(--color-surface); color:var(--color-text-muted); font:inherit; font-size:.78rem; font-weight:700; cursor:pointer; white-space:nowrap; }
+.tabActive { border-color:color-mix(in srgb,var(--course-accent) 50%,var(--color-border)); background:var(--course-accent-soft); color:var(--course-accent); }
+.panel { padding:16px; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface); }
+.caseHead > span { color:var(--course-accent); font-size:.68rem; font-weight:780; letter-spacing:.045em; text-transform:uppercase; }
+.caseHead h3 { margin:4px 0 14px; font-size:1.04rem; letter-spacing:-.015em; }
+.ledger { overflow:hidden; margin-bottom:17px; border:1px solid var(--color-border); border-radius:12px; }
+.ledgerHead,.row { display:grid; grid-template-columns:.75fr 1fr 1.2fr; gap:8px; align-items:center; padding:9px 10px; }
+.ledgerHead { background:var(--color-surface-subtle); color:var(--color-text-faint); font-size:.67rem; font-weight:760; text-transform:uppercase; }
+.row { border-top:1px solid var(--color-border); font-size:.74rem; }
+.row strong { font-size:.75rem; }
+.row > span { color:var(--color-text-muted); }
+.row .ok { color:var(--color-success); }
+.row .warning { color:var(--color-warning); }
+.row .neutral { color:var(--color-text-faint); }
+.panel h4 { margin:0 0 10px; font-size:.91rem; }
+.options { display:grid; gap:8px; }
+.option { display:grid; grid-template-columns:28px minmax(0,1fr) 18px; gap:9px; align-items:start; width:100%; padding:11px; border:1px solid var(--color-border); border-radius:12px; background:var(--color-surface); color:var(--color-text); text-align:left; cursor:pointer; font:inherit; }
+.option > span { display:grid; place-items:center; width:25px; height:25px; border-radius:8px; background:var(--color-surface-subtle); color:var(--color-text-muted); font-size:.7rem; font-weight:800; }
+.option p { margin:2px 0 0; font-size:.79rem; line-height:1.45; }
+.option svg { margin-top:4px; }
+.option:not(:disabled):hover { border-color:var(--color-border-strong); }
+.selected { border-color:var(--course-accent); }
+.correct { border-color:color-mix(in srgb,var(--color-success) 45%,var(--color-border)); background:var(--color-success-soft); }
+.correct svg { color:var(--color-success); }
+.wrong { border-color:color-mix(in srgb,var(--color-danger) 45%,var(--color-border)); background:var(--color-danger-soft); }
+.wrong svg { color:var(--color-danger); }
+.feedbackCorrect,.feedbackWrong { overflow:hidden; margin-top:10px; padding:11px 12px; border-radius:11px; font-size:.79rem; }
+.feedbackCorrect { background:var(--color-success-soft); }
+.feedbackWrong { background:var(--color-warning-soft); }
+.feedbackCorrect strong { color:var(--color-success); }
+.feedbackWrong strong { color:var(--color-warning); }
+.feedbackCorrect p,.feedbackWrong p { margin:3px 0 0; color:var(--color-text-muted); line-height:1.48; }
+.footer { display:flex; justify-content:space-between; align-items:center; gap:10px; margin-top:12px; color:var(--color-text-faint); font-size:.72rem; }
+.footer button { display:inline-flex; align-items:center; gap:6px; min-height:34px; padding:0 10px; border:0; border-radius:9px; background:var(--color-text); color:var(--color-canvas); font:inherit; font-size:.74rem; font-weight:720; cursor:pointer; }
+.note { display:block; margin:10px 2px 0; color:var(--color-text-faint); font-size:.68rem; line-height:1.45; }
+@media (max-width:560px) { .ledgerHead { display:none; } .row { grid-template-columns:1fr; gap:2px; padding:10px 11px; } .row strong { margin-bottom:2px; } }

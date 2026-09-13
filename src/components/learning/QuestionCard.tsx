@@ -1,0 +1,61 @@
+import { useMemo, useState } from 'react'
+import { Bookmark, CheckCircle2, CircleAlert, ExternalLink, RotateCcw } from 'lucide-react'
+import type { Course, Question } from '../../types/course'
+import { useProgressStore } from '../../stores/progressStore'
+import { optionLabel, questionOptionsForDisplay } from '../../lib/questionPresentation'
+import { Button } from '../ui/Button'
+import styles from './QuestionCard.module.css'
+
+export function QuestionCard({ course, question, compact = false, onSubmitted, showRetry = true }: { course: Course; question: Question; compact?: boolean; onSubmitted?: (correct: boolean) => void; showRetry?: boolean }) {
+  const [selected, setSelected] = useState<string | null>(null)
+  const [submitted, setSubmitted] = useState(false)
+  const recordAnswer = useProgressStore((s) => s.recordAnswer)
+  const toggleQuestionBookmark = useProgressStore((s) => s.toggleQuestionBookmark)
+  // Select only the primitive this card needs. Returning `?? []` from a Zustand
+  // selector creates a fresh array on every snapshot and React 19 can interpret
+  // that as a continuously changing external-store value.
+  const bookmarked = useProgressStore((s) => Boolean(s.courses[course.id]?.questionBookmarks?.includes(question.id)))
+  const sources = question.sourceIds.map((sourceId) => course.sources.find((source) => source.id === sourceId)).filter((source): source is NonNullable<typeof source> => Boolean(source))
+  const displayOptions = useMemo(() => questionOptionsForDisplay(question), [question])
+  const correct = selected === question.correctOptionId
+  const selectedOption = useMemo(() => question.options.find((o) => o.id === selected), [question.options, selected])
+
+  const submit = () => {
+    if (!selected || submitted) return
+    setSubmitted(true)
+    const isCorrect = selected === question.correctOptionId
+    recordAnswer(course, question.id, question.skillIds, isCorrect)
+    onSubmitted?.(isCorrect)
+  }
+
+  const reset = () => { setSelected(null); setSubmitted(false) }
+
+  return (
+    <section className={`${styles.card} ${compact ? styles.compact : ''}`}>
+      <div className={styles.top}><span>{question.type === 'pjs' ? 'Caso situacional' : 'Comprobación'}</span><div><span>Dificultad {question.difficulty}/5</span><button type="button" className={bookmarked ? styles.bookmarked : ''} aria-label={bookmarked ? 'Quitar pregunta de guardadas' : 'Guardar pregunta'} aria-pressed={bookmarked} onClick={() => toggleQuestionBookmark(course, question.id)}><Bookmark size={15} fill={bookmarked ? 'currentColor' : 'none'}/></button></div></div>
+      {question.case && <div className={styles.case}>{question.case}</div>}
+      <h3>{question.stem}</h3>
+      <div className={styles.options} role="radiogroup" aria-label="Opciones de respuesta">
+        {displayOptions.map((option, optionIndex) => {
+          const isSelected = selected === option.id
+          const isCorrect = submitted && option.id === question.correctOptionId
+          const isWrong = submitted && isSelected && !isCorrect
+          return (
+            <button key={option.id} type="button" className={`${styles.option} ${isSelected ? styles.selected : ''} ${isCorrect ? styles.correct : ''} ${isWrong ? styles.wrong : ''}`} onClick={() => !submitted && setSelected(option.id)} role="radio" aria-checked={isSelected}>
+              <span className={styles.letter} aria-hidden="true">{optionLabel(optionIndex)}</span><span>{option.text}</span>
+            </button>
+          )
+        })}
+      </div>
+      {!submitted ? <Button onClick={submit} disabled={!selected}>Comprobar respuesta</Button> : (
+        <div className={`${styles.feedback} ${correct ? styles.feedbackCorrect : styles.feedbackWrong}`} role="status" aria-live="polite">
+          <div className={styles.feedbackTitle}>{correct ? <CheckCircle2 size={20}/> : <CircleAlert size={20}/>}<strong>{correct ? 'Correcto' : 'Revisa el razonamiento'}</strong></div>
+          <p>{question.explanation}</p>
+          {selectedOption && <p className={styles.rationale}><strong>Tu opción:</strong> {selectedOption.rationale}</p>}
+          {sources.length > 0 && <div className={styles.sources}><span>Fuentes</span><div>{sources.map((source) => <a key={source.id} href={source.url} target="_blank" rel="noreferrer">{source.title}<ExternalLink size={12}/></a>)}</div></div>}
+          {showRetry && <Button variant="ghost" size="sm" icon={<RotateCcw size={15}/>} onClick={reset}>Intentar de nuevo</Button>}
+        </div>
+      )}
+    </section>
+  )
+}
