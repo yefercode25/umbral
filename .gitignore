@@ -6,5 +6,6 @@ dist/
 coverage/
 playwright-report/
 test-results/
+/umbral-pwa.zip
 # Fuentes suministradas por el propietario: mantener fuera de snapshots compartidos
 src/assets/fonts/*.{ttf,otf,woff,woff2}
