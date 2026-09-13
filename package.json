@@ -44,5 +44,21 @@
     "vite-plugin-pwa": "1.3.0",
     "workbox-window": "7.4.1",
     "vitest": "5.0.0"
-  }
+  },
+  "description": "PWA educativa para preparación progresiva de convocatorias públicas mediante rutas de estudio, práctica adaptativa, simulacros, recursos visuales y seguimiento local.",
+  "license": "MIT",
+  "keywords": [
+    "pwa",
+    "react",
+    "typescript",
+    "vite",
+    "education",
+    "learning",
+    "quiz",
+    "public-service",
+    "dian",
+    "cnsc",
+    "colombia",
+    "offline-first"
+  ]
 }
