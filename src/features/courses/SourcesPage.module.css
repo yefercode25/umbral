@@ -1,0 +1,37 @@
+.back { display:inline-flex;align-items:center;gap:7px;text-decoration:none;color:var(--color-text-muted);font-size:13px;font-weight:650;margin-bottom:18px; }
+.header { padding:22px;border:1px solid var(--color-border);border-radius:22px;background:var(--color-surface); }
+.kicker { display:inline-flex;align-items:center;gap:7px;color:var(--course-accent);font-size:12px;font-weight:750; }
+.header h1 { margin:12px 0 7px;font-size:30px;line-height:1.08;letter-spacing:-.04em; }
+.header > p { margin:0;max-width:68ch;color:var(--color-text-muted);font-size:14px;line-height:1.6; }
+.summary { margin-top:18px;padding-top:16px;border-top:1px solid var(--color-border);display:flex;align-items:baseline;gap:6px;flex-wrap:wrap;color:var(--color-text-muted);font-size:12px; }
+.summary strong { color:var(--color-text);font-size:16px; }
+.summary i { width:1px;height:15px;background:var(--color-border);margin:0 5px; }
+.controls { display:grid;gap:10px;margin:16px 0; }
+.search { min-height:46px;display:flex;align-items:center;gap:9px;padding:0 13px;border:1px solid var(--color-border);border-radius:13px;background:var(--color-surface);color:var(--color-text-faint); }
+.search:focus-within { border-color:color-mix(in srgb,var(--course-accent) 55%,var(--color-border));box-shadow:0 0 0 3px color-mix(in srgb,var(--course-accent) 10%,transparent); }
+.search input { width:100%;border:0;outline:0;background:transparent;color:var(--color-text);font:inherit;font-size:13px; }
+.search input::placeholder { color:var(--color-text-faint); }
+.filters { display:grid;grid-template-columns:repeat(3,1fr);padding:4px;border-radius:13px;background:var(--color-surface-subtle); }
+.filters button { min-height:38px;border:0;border-radius:10px;background:transparent;color:var(--color-text-muted);font:inherit;font-size:12px;font-weight:650;cursor:pointer; }
+.filters .active { background:var(--color-surface);color:var(--color-text);box-shadow:0 2px 8px rgba(22,24,29,.06); }
+.list { display:grid;gap:9px; }
+.source { position:relative;display:grid;grid-template-columns:36px minmax(0,1fr) 36px;gap:11px;padding:15px;border:1px solid var(--color-border);border-radius:15px;background:var(--color-surface); }
+.sourceIcon { width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:var(--course-accent-soft);color:var(--course-accent); }
+.sourceBody { min-width:0; }
+.sourceMeta { display:flex;align-items:center;gap:7px;flex-wrap:wrap;color:var(--color-text-faint);font-size:10px;font-weight:650; }
+.sourceMeta > span:first-child { white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%; }
+.official,.reference { padding:3px 6px;border-radius:999px; }
+.official { background:var(--color-success-soft);color:var(--color-success); }
+.reference { background:var(--color-surface-subtle);color:var(--color-text-muted); }
+.source h2 { margin:6px 0 4px;font-size:14px;line-height:1.35;letter-spacing:-.01em; }
+.source p { margin:0 0 8px;color:var(--color-text-muted);font-size:12px;line-height:1.5; }
+.source small { color:var(--color-text-faint);font-size:10px; }
+.external { width:36px;height:36px;display:grid;place-items:center;border-radius:10px;color:var(--color-text-muted);text-decoration:none;transition:background 140ms ease,color 140ms ease; }
+.external:hover { background:var(--color-surface-subtle);color:var(--course-accent); }
+.empty { padding:34px 18px;text-align:center;border:1px dashed var(--color-border-strong);border-radius:15px;color:var(--color-text-faint); }
+.empty strong { display:block;margin-top:8px;color:var(--color-text);font-size:13px; }
+.empty p { margin:3px 0 0;font-size:12px; }
+.note { margin:18px 0 4px;padding:15px 16px;border-radius:14px;background:var(--color-surface-subtle); }
+.note strong { font-size:12px; }
+.note p { margin:5px 0 0;color:var(--color-text-muted);font-size:12px;line-height:1.55; }
+@media (min-width:720px) { .header { padding:28px; }.controls { grid-template-columns:minmax(0,1fr) auto;align-items:center; }.filters { min-width:300px; }.source { padding:17px; }.source h2 { font-size:15px; } }

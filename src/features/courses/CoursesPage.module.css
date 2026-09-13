@@ -1,0 +1,6 @@
+.grid { display:grid;gap:14px; }
+.placeholder { min-height:220px;padding:20px;border:1px dashed var(--color-border-strong);border-radius:18px;display:flex;flex-direction:column;justify-content:flex-end;background:var(--color-surface-subtle); }
+.placeholder span { font-size:12px;color:var(--color-text-faint); }
+.placeholder strong { margin-top:4px;font-size:18px; }
+.placeholder p { margin:7px 0 0;color:var(--color-text-muted);font-size:13px;max-width:48ch; }
+@media (min-width:760px) { .grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }

@@ -1,0 +1,43 @@
+.back { min-height:44px;display:inline-flex;align-items:center;gap:7px;margin-bottom:18px;color:var(--color-text-muted);font-size:13px;font-weight:650;text-decoration:none; }
+.hero { padding:22px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:22px; }
+.eyebrow { display:flex;justify-content:space-between;gap:12px;color:var(--course-accent);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.07em; }
+.hero h1 { margin:15px 0 7px;font-size:clamp(28px,7vw,40px);line-height:1.05;letter-spacing:-.045em; }
+.hero > p { margin:0;color:var(--color-text-muted);font-size:14px;line-height:1.55; }
+.metrics { display:flex;flex-wrap:wrap;gap:9px 15px;margin:22px 0 18px;color:var(--color-text-muted);font-size:12px; }
+.metrics span { display:inline-flex;align-items:center;gap:6px; }
+.metrics svg { color:var(--course-accent); }
+.metrics strong { color:var(--color-text); }
+.progressRow { display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center; }
+.progressRow > strong { font-size:12px;color:var(--color-text-muted); }
+.primaryAction { min-height:46px;margin-top:18px;padding:0 16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;background:var(--color-brand);color:var(--color-on-brand);text-decoration:none;font-size:14px;font-weight:700; }
+.primaryAction:hover { background:var(--color-brand-strong); }
+.section { margin-top:28px; }
+.sectionHead { display:flex;align-items:end;justify-content:space-between;gap:14px;margin-bottom:12px; }
+.sectionHead span { color:var(--course-accent);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em; }
+.sectionHead h2 { margin:3px 0 0;font-size:21px;letter-spacing:-.025em; }
+.sectionHead > strong { color:var(--color-text-muted);font-size:13px; }
+.lessonList { overflow:hidden;border:1px solid var(--color-border);border-radius:17px;background:var(--color-surface); }
+.lesson { min-height:74px;padding:12px 14px;display:grid;grid-template-columns:24px 30px minmax(0,1fr) auto;gap:9px;align-items:center;color:inherit;text-decoration:none;border-bottom:1px solid var(--color-border);transition:background 130ms ease; }
+.lesson:last-child { border-bottom:0; }
+.lesson:hover { background:var(--color-surface-subtle); }
+.statusIcon { display:grid;place-items:center;color:var(--color-text-faint); }
+.statusIcon.done { color:var(--color-success); }
+.lessonNumber { color:var(--color-text-faint);font-size:11px;font-variant-numeric:tabular-nums; }
+.lessonText { min-width:0;display:grid;gap:3px; }
+.lessonText strong { font-size:14px;line-height:1.3; }
+.lessonText small { overflow:hidden;color:var(--color-text-muted);font-size:12px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical; }
+.duration { color:var(--color-text-faint);font-size:11px;white-space:nowrap; }
+.practiceCard { margin-top:24px;padding:19px;border:1px solid var(--color-border);border-radius:17px;background:var(--color-surface);display:grid;gap:18px; }
+.practiceCard span { color:var(--course-accent);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em; }
+.practiceCard h2 { margin:3px 0 5px;font-size:19px;letter-spacing:-.02em; }
+.practiceCard p { margin:0;color:var(--color-text-muted);font-size:13px;line-height:1.55; }
+.practiceActions { display:flex;flex-wrap:wrap;gap:8px; }
+.practiceActions a { min-height:44px;padding:0 13px;display:inline-flex;align-items:center;border:1px solid var(--color-border-strong);border-radius:11px;color:var(--color-text);text-decoration:none;font-size:13px;font-weight:700; }
+.practiceActions a:first-child { background:var(--course-accent-soft);border-color:color-mix(in srgb,var(--course-accent) 25%,var(--color-border));color:var(--course-accent); }
+@media (min-width:700px) { .hero { padding:28px; }.practiceCard { grid-template-columns:1fr auto;align-items:center; }.lesson { padding:14px 16px;grid-template-columns:26px 34px minmax(0,1fr) auto; } }
+
+@media (max-width:480px) {
+  .lesson { grid-template-columns:24px 28px minmax(0,1fr);align-items:start; }
+  .statusIcon,.lessonNumber { margin-top:3px; }
+  .duration { grid-column:3;justify-self:start;margin-top:2px; }
+}
