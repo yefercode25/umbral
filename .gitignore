@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.netlify/
+.env
+.env.*
+coverage/
+playwright-report/
+test-results/
+# Fuentes suministradas por el propietario: mantener fuera de snapshots compartidos
+src/assets/fonts/*.{ttf,otf,woff,woff2}

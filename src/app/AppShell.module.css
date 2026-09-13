@@ -1,0 +1,6 @@
+.shell { min-height: 100dvh; background: var(--color-canvas); color: var(--color-text); }
+.main { min-width: 0; padding-bottom: calc(78px + env(safe-area-inset-bottom)); }
+@media (min-width: 900px) {
+  .shell { display: grid; grid-template-columns: 252px minmax(0, 1fr); }
+  .main { padding-bottom: 0; }
+}
