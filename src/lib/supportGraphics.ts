@@ -170,9 +170,103 @@ const graphicsCatalog = {
     image: '/media/lesson-support/data-decision-foundations.webp',
     alt: 'Infografía sobre muestra, sesgo, cuantificadores y conteo para apoyar el análisis de datos.',
   },
+
+  procuraduriaCourseRoute: {
+    id: 'procuraduria-course-route',
+    eyebrow: 'Ruta integral',
+    title: 'Ruta de estudio · Procuraduría 104-2026',
+    description:
+      'Ubica la progresión del curso desde fundamentos jurídicos hasta instrucción, prueba, prevención, práctica y refuerzo profesional.',
+    image: '/media/lesson-support/procuraduria-course-route.webp',
+    alt: 'Infografía con la ruta de estudio del curso Procuraduría 104-2026 para Profesional Universitario 3PU-15.',
+  },
+  colombianState: {
+    id: 'colombian-state-public-function',
+    eyebrow: 'Fundamentos institucionales',
+    title: 'Estado colombiano, función pública y organización territorial',
+    description:
+      'Conecta Estado Social de Derecho, ramas del poder, función administrativa, servidor público y organización territorial para leer casos desde la competencia.',
+    image: '/media/lesson-support/colombian-state-public-function.webp',
+    alt: 'Infografía sobre Estado colombiano, función pública y organización territorial.',
+  },
+  procuraduriaStructure: {
+    id: 'procuraduria-structure-competence',
+    eyebrow: 'Mapa institucional',
+    title: 'Procuraduría General de la Nación · estructura, funciones y competencia',
+    description:
+      'Resume Ministerio Público, funciones misionales, niveles de actuación y los filtros básicos para verificar competencia antes de actuar.',
+    image: '/media/lesson-support/procuraduria-structure-competence.webp',
+    alt: 'Infografía sobre estructura, funciones y competencia de la Procuraduría General de la Nación.',
+  },
+  cpacaPetition: {
+    id: 'cpaca-petition-route',
+    eyebrow: 'Actuación administrativa',
+    title: 'CPACA y derecho de petición',
+    description:
+      'Ordena la actuación administrativa desde su inicio hasta firmeza y resume las principales rutas de petición y respuesta ciudadana.',
+    image: '/media/lesson-support/cpaca-petition-route.webp',
+    alt: 'Infografía sobre actuación administrativa, CPACA y derecho de petición.',
+  },
+  disciplinaryProcess: {
+    id: 'disciplinary-process-route',
+    eyebrow: 'Ruta procesal',
+    title: 'Ruta del proceso disciplinario',
+    description:
+      'Visualiza el tránsito desde la noticia disciplinaria y evaluación inicial hasta prueba, cierre, archivo o cargos y traslado a juzgamiento.',
+    image: '/media/lesson-support/disciplinary-process-route.webp',
+    alt: 'Infografía con la ruta general del proceso disciplinario en etapa de instrucción.',
+  },
+  disciplinaryEvidence: {
+    id: 'disciplinary-evidence-guide',
+    eyebrow: 'Derecho probatorio',
+    title: 'Qué probar, con qué y cómo valorarlo',
+    description:
+      'Integra hecho, hipótesis, necesidad probatoria, pertinencia, conducencia, utilidad, legalidad, contradicción, valoración y decisión.',
+    image: '/media/lesson-support/disciplinary-evidence-guide.webp',
+    alt: 'Infografía de derecho probatorio disciplinario y medios de prueba.',
+  },
+  preventiveControl: {
+    id: 'preventive-control-intervention',
+    eyebrow: 'Función misional',
+    title: 'Función preventiva, control de gestión e intervención',
+    description:
+      'Diferencia prevención, seguimiento, alertas, mejora e intervención para proteger legalidad, derechos e interés general.',
+    image: '/media/lesson-support/preventive-control-intervention.webp',
+    alt: 'Infografía sobre función preventiva, control de gestión e intervención de la Procuraduría.',
+  },
+  contractingIntegrityTerritory: {
+    id: 'contracting-integrity-territory',
+    eyebrow: 'Gestión pública aplicada',
+    title: 'Contratación, integridad y ordenamiento territorial',
+    description:
+      'Agrupa ciclo contractual, integridad y anticorrupción, competencias territoriales y criterios de revisión para casos prácticos.',
+    image: '/media/lesson-support/contracting-integrity-territory.webp',
+    alt: 'Infografía sobre contratación estatal, integridad, anticorrupción y ordenamiento territorial.',
+  },
+  systemsEvidence: {
+    id: 'systems-disciplinary-evidence',
+    eyebrow: 'Ruta profesional',
+    title: 'Ingeniería de Sistemas aplicada al proceso disciplinario',
+    description:
+      'Conecta logs, autenticación, bases de datos, correo, metadatos, hash, preservación e informe técnico con los límites de la inferencia jurídica.',
+    image: '/media/lesson-support/systems-disciplinary-evidence.webp',
+    alt: 'Infografía sobre Ingeniería de Sistemas, evidencia digital y trazabilidad aplicada al proceso disciplinario.',
+  },
 } satisfies Record<string, SupportGraphic>
 
 const lessonGraphicMap: Record<string, SupportGraphic> = {
+
+  'pgn-m0-l1': graphicsCatalog.procuraduriaCourseRoute,
+  'pgn-m5-l1': graphicsCatalog.colombianState,
+  'pgn-m10-l1': graphicsCatalog.procuraduriaStructure,
+  'pgn-m16-l1': graphicsCatalog.cpacaPetition,
+  'pgn-m25-l1': graphicsCatalog.disciplinaryProcess,
+  'pgn-m35-l1': graphicsCatalog.disciplinaryEvidence,
+  'pgn-m45-l1': graphicsCatalog.preventiveControl,
+  'pgn-m50-l1': graphicsCatalog.contractingIntegrityTerritory,
+  'pgn-m55-l1': graphicsCatalog.contractingIntegrityTerritory,
+  'pgn-m60-l1': graphicsCatalog.systemsEvidence,
+  'pgn-m80-l1': graphicsCatalog.systemsEvidence,
   'm0-l3': graphicsCatalog.courseMap,
   'm2-l6': graphicsCatalog.mipg,
   'm2-l8': graphicsCatalog.documentManagement,
