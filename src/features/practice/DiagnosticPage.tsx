@@ -1,9 +1,10 @@
+import type { CSSProperties } from 'react'
 import { useEffect, useMemo, useState } from 'react'
 import { ArrowLeft, CheckCircle2, ClipboardCheck, Clock3, RotateCcw, Target } from 'lucide-react'
-import { Link } from 'react-router-dom'
-import { dianGestorCourse } from '../../../content/courses/dian-2676-gestor-ii/course'
+import { Link, useSearchParams } from 'react-router-dom'
 import { Button } from '../../components/ui/Button'
 import { ProgressBar } from '../../components/ui/ProgressBar'
+import { getCourseFromSearchParams, withCourse } from '../../lib/courseQuery'
 import { selectBalancedQuestions } from '../../lib/questionSelection'
 import { useProgressStore } from '../../stores/progressStore'
 import type { Question } from '../../types/course'
@@ -12,8 +13,6 @@ import { scrollPageToTop } from '../../lib/scroll'
 import styles from './DiagnosticPage.module.css'
 
 const DIAGNOSTIC_SIZE = 20
-const DIAGNOSTIC_MODULE_IDS = new Set(Array.from({ length: 20 }, (_, index) => `m${index + 1}`))
-const diagnosticPool = dianGestorCourse.questions.filter((question) => DIAGNOSTIC_MODULE_IDS.has(question.moduleId))
 
 function formatElapsed(seconds: number) {
   const minutes = Math.floor(seconds / 60)
@@ -21,8 +20,17 @@ function formatElapsed(seconds: number) {
   return `${String(minutes).padStart(2, '0')}:${String(rest).padStart(2, '0')}`
 }
 
+function buildDiagnosticPool(course: ReturnType<typeof getCourseFromSearchParams>) {
+  const configuredIds = course.practiceConfig?.diagnosticModuleIds
+  if (!configuredIds?.length) return course.questions
+  const modules = new Set(configuredIds)
+  return course.questions.filter((question) => modules.has(question.moduleId))
+}
+
 export function DiagnosticPage() {
-  const course = dianGestorCourse
+  const [searchParams] = useSearchParams()
+  const course = getCourseFromSearchParams(searchParams)
+  const diagnosticPool = useMemo(() => buildDiagnosticPool(course), [course])
   const ensureCourse = useProgressStore((state) => state.ensureCourse)
   const recordAnswer = useProgressStore((state) => state.recordAnswer)
   const [run, setRun] = useState(0)
@@ -34,12 +42,20 @@ export function DiagnosticPage() {
 
   useEffect(() => { ensureCourse(course) }, [course, ensureCourse])
   useEffect(() => {
+    setQuestions(selectBalancedQuestions(diagnosticPool, DIAGNOSTIC_SIZE))
+    setAnswers({})
+    setIndex(0)
+    setSubmitted(false)
+    setElapsed(0)
+    setRun((value) => value + 1)
+  }, [course.id, diagnosticPool])
+
+  useEffect(() => {
     if (submitted) return
     const startedAt = Date.now()
     const timer = window.setInterval(() => setElapsed(Math.floor((Date.now() - startedAt) / 1000)), 1000)
     return () => window.clearInterval(timer)
   }, [run, submitted])
-
 
   useEffect(() => {
     if (!submitted) scrollPageToTop()
@@ -85,10 +101,10 @@ export function DiagnosticPage() {
   }
 
   if (submitted) {
-    const score = Math.round(result.correct / questions.length * 100)
+    const score = questions.length ? Math.round(result.correct / questions.length * 100) : 0
     const priorities = result.modules.slice(0, 5)
-    return <div className="page page--narrow">
-      <Link to="/practice" className={styles.back}><ArrowLeft size={17}/> Práctica</Link>
+    return <div className="page page--narrow" style={{ '--course-accent': course.accent } as CSSProperties}>
+      <Link to={withCourse('/practice', course)} className={styles.back}><ArrowLeft size={17}/> Práctica · {course.shortTitle}</Link>
       <header className={styles.resultHero}>
         <span className={styles.icon}><ClipboardCheck size={22}/></span>
         <p>Diagnóstico completado</p>
@@ -98,26 +114,24 @@ export function DiagnosticPage() {
       </header>
 
       <section className={styles.recommendations}>
-        <div className={styles.sectionHead}><span>Tu punto de partida</span><h2>Prioridades sugeridas</h2><p>El diagnóstico no pretende predecir tu resultado oficial. Usa estas áreas para decidir dónde comenzar a estudiar y vuelve a medirlas después.</p></div>
+        <div className={styles.sectionHead}><span>Tu punto de partida · {course.shortTitle}</span><h2>Prioridades sugeridas</h2><p>El diagnóstico no pretende predecir tu resultado oficial. Usa estas áreas para decidir dónde comenzar a estudiar y vuelve a medirlas después.</p></div>
         <div className={styles.moduleList}>{priorities.map(({ module, total, correct, percent }) => module && <Link key={module.id} to={`/courses/${course.slug}/module/${module.id}`}><span>{module.code}</span><div><strong>{module.title}</strong><small>{correct}/{total} correctas</small></div><b>{percent}%</b></Link>)}</div>
       </section>
 
       <section className={styles.nextPlan}>
-        <CheckCircle2 size={20}/><div><strong>Qué hacer ahora</strong><p>Empieza por los dos módulos con menor precisión, completa sus lecciones y luego usa una sesión recomendada. El sistema irá ajustando las preguntas con tus nuevos intentos.</p></div>
+        <CheckCircle2 size={20}/><div><strong>Qué hacer ahora</strong><p>Empieza por los dos módulos con menor precisión, completa sus lecciones y luego usa una sesión recomendada. El sistema ajustará la práctica con tus nuevos intentos.</p></div>
       </section>
 
       <div className={styles.actions}><Button icon={<RotateCcw size={17}/>} onClick={restart}>Repetir diagnóstico</Button><Link to={`/courses/${course.slug}`}>Ir al curso</Link></div>
     </div>
   }
 
-  if (!current) {
-    return <div className="page page--narrow"><p>No hay preguntas disponibles para iniciar el diagnóstico.</p></div>
-  }
+  if (!current) return <div className="page page--narrow" style={{ '--course-accent': course.accent } as CSSProperties}><p>No hay preguntas disponibles para iniciar el diagnóstico de {course.shortTitle}.</p></div>
 
-  return <div className="page page--narrow">
+  return <div className="page page--narrow" style={{ '--course-accent': course.accent } as CSSProperties}>
     <header className={styles.examHeader}>
-      <Link to="/practice" aria-label="Salir del diagnóstico"><ArrowLeft size={19}/></Link>
-      <div><span>Diagnóstico inicial</span><strong>Pregunta {index + 1} de {questions.length}</strong></div>
+      <Link to={withCourse('/practice', course)} aria-label="Salir del diagnóstico"><ArrowLeft size={19}/></Link>
+      <div><span>Diagnóstico · {course.shortTitle}</span><strong>Pregunta {index + 1} de {questions.length}</strong></div>
       <div className={styles.timer}><Clock3 size={15}/>{formatElapsed(elapsed)}</div>
     </header>
     <ProgressBar value={Math.round(((index + 1) / questions.length) * 100)}/>

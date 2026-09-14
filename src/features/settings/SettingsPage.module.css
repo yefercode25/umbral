@@ -33,3 +33,14 @@
 .brandIcons { display:flex;gap:9px;align-items:center;flex-wrap:wrap; }
 .brandIcons img { width:54px;height:54px;display:block;object-fit:cover;border-radius:14px;border:1px solid var(--color-border);background:var(--color-surface-subtle); }
 @media (min-width:700px) { .pwaPanel { min-height:220px; }.pwaCopy { padding:22px; }.brandPanel { grid-template-columns:minmax(0,1fr) auto;align-items:center; }.brandIcons { justify-content:flex-end; } }
+
+.courseSettings { display:grid;gap:10px;margin-top:15px; }
+.courseSetting { padding:14px;border:1px solid var(--color-border);border-radius:15px;background:var(--color-surface); }
+.courseSetting > div:first-child { display:grid;gap:2px;margin-bottom:10px; }
+.courseSetting > div:first-child span { color:var(--color-text-muted);font-size:10px; }
+.courseSetting > div:first-child strong { font-size:14px; }
+.resetList { display:grid;gap:9px;margin-top:15px; }
+.resetList > div { padding:12px;border:1px solid var(--color-border);border-radius:13px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--color-surface); }
+.resetList > div > span { display:grid;gap:2px; }
+.resetList strong { font-size:13px; }
+.resetList small { color:var(--color-text-muted);font-size:10px; }

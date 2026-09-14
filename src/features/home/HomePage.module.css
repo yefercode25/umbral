@@ -29,3 +29,6 @@
 @media (max-width:560px) { .heroArt { object-position:72% center;opacity:.58; }.heroMain::before { background:linear-gradient(90deg,rgba(13,16,21,.98) 0%,rgba(13,16,21,.88) 58%,rgba(13,16,21,.52) 100%); } }
 @media (min-width:760px) { .hero { grid-template-columns:minmax(0,1.5fr) minmax(260px,.5fr); }.goal { align-content:center; }.quickGrid { grid-template-columns:1fr 1fr; } }
 @media (min-width:900px) { .topbar h1 { font-size:36px; }.settings { display:none; }.heroMain { min-height:330px;padding:32px; }.heroMain h2 { font-size:34px; } }
+
+.courseGrid { display:grid;gap:12px; }
+@media (min-width:860px) { .courseGrid { grid-template-columns:repeat(2,minmax(0,1fr)); } }

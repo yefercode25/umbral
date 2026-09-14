@@ -1,9 +1,10 @@
+import type { CSSProperties } from 'react'
 import { useMemo, useState } from 'react'
 import { ArrowLeft, BookOpenCheck, CheckCircle2, NotebookPen, RotateCcw, Save } from 'lucide-react'
-import { Link } from 'react-router-dom'
-import { dianGestorCourse } from '../../../content/courses/dian-2676-gestor-ii/course'
+import { Link, useSearchParams } from 'react-router-dom'
 import { Button } from '../../components/ui/Button'
 import { PageHeader } from '../../components/ui/PageHeader'
+import { getCourseFromSearchParams, withCourse } from '../../lib/courseQuery'
 import { useProgressStore } from '../../stores/progressStore'
 import type { ErrorReason } from '../../types/progress'
 import styles from './ErrorNotebookPage.module.css'
@@ -23,7 +24,8 @@ function shortDate(iso: string) {
 }
 
 export function ErrorNotebookPage() {
-  const course = dianGestorCourse
+  const [searchParams] = useSearchParams()
+  const course = getCourseFromSearchParams(searchParams)
   const progress = useProgressStore((state) => state.courses[course.id])
   const setErrorReflection = useProgressStore((state) => state.setErrorReflection)
   const markErrorReviewed = useProgressStore((state) => state.markErrorReviewed)
@@ -31,18 +33,16 @@ export function ErrorNotebookPage() {
   type Draft = { reason?: ErrorReason; note: string }
   const [drafts, setDrafts] = useState<Record<string, Draft>>({})
 
-  const entries = useMemo(() => {
-    return Object.values(progress?.errorJournal ?? {})
-      .filter((entry) => showResolved || !entry.resolvedAt)
-      .sort((a, b) => new Date(b.lastWrongAt).getTime() - new Date(a.lastWrongAt).getTime())
-  }, [progress?.errorJournal, showResolved])
+  const entries = useMemo(() => Object.values(progress?.errorJournal ?? {})
+    .filter((entry) => showResolved || !entry.resolvedAt)
+    .sort((a, b) => new Date(b.lastWrongAt).getTime() - new Date(a.lastWrongAt).getTime()), [progress?.errorJournal, showResolved])
 
   const unresolved = Object.values(progress?.errorJournal ?? {}).filter((entry) => !entry.resolvedAt).length
   const total = Object.keys(progress?.errorJournal ?? {}).length
 
-  return <div className="page page--narrow">
-    <Link className={styles.back} to="/practice"><ArrowLeft size={17}/> Práctica</Link>
-    <PageHeader eyebrow="Aprender del fallo" title="Cuaderno de errores" subtitle="Clasifica por qué fallaste y deja una regla recuperable. El objetivo no es coleccionar respuestas: es evitar repetir el mismo modelo mental." />
+  return <div className="page page--narrow" style={{ '--course-accent': course.accent } as CSSProperties}>
+    <Link className={styles.back} to={withCourse('/practice', course)}><ArrowLeft size={17}/> Práctica · {course.shortTitle}</Link>
+    <PageHeader eyebrow={`Aprender del fallo · ${course.shortTitle}`} title="Cuaderno de errores" subtitle="Clasifica por qué fallaste y deja una regla recuperable. El cuaderno es independiente para cada curso." />
 
     <section className={styles.overview}>
       <div><NotebookPen size={18}/><span><strong>{unresolved}</strong><small>por consolidar</small></span></div>
@@ -51,7 +51,7 @@ export function ErrorNotebookPage() {
     </section>
 
     {entries.length === 0 ? <section className={styles.empty}>
-      <BookOpenCheck size={26}/><h2>{total ? 'No hay errores pendientes' : 'Tu cuaderno está vacío'}</h2><p>{total ? 'Los errores registrados ya tuvieron una respuesta correcta posterior.' : 'Cuando falles una pregunta, Umbral la agregará aquí automáticamente para que puedas clasificar la causa.'}</p><Link to="/practice">Ir a practicar</Link>
+      <BookOpenCheck size={26}/><h2>{total ? 'No hay errores pendientes' : 'Tu cuaderno está vacío'}</h2><p>{total ? 'Los errores registrados ya tuvieron una respuesta correcta posterior.' : `Cuando falles una pregunta de ${course.shortTitle}, Umbral la agregará aquí automáticamente para que puedas clasificar la causa.`}</p><Link to={withCourse('/practice', course)}>Ir a practicar</Link>
     </section> : <div className={styles.list}>{entries.map((entry) => {
       const question = course.questions.find((item) => item.id === entry.questionId)
       if (!question) return null
@@ -65,7 +65,7 @@ export function ErrorNotebookPage() {
         <div className={styles.explanation}><strong>Regla a recuperar</strong><p>{question.explanation}</p></div>
         <div className={styles.formRow}>
           <label><span>¿Qué produjo el error?</span><select value={draft.reason ?? ''} onChange={(event) => { const reason = event.target.value as ErrorReason | ''; setDrafts((current) => ({ ...current, [entry.questionId]: reason ? { ...draft, reason } : { note: draft.note } })) }}><option value="">Sin clasificar</option>{reasonOptions.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}</select></label>
-          <label className={styles.note}><span>Tu regla en una frase</span><textarea rows={3} value={draft.note} placeholder="Ej.: Avalúo = valor del bien; liquidación = valor de la deuda." onChange={(event) => setDrafts((current) => ({ ...current, [entry.questionId]: { ...draft, note: event.target.value } }))}/></label>
+          <label className={styles.note}><span>Tu regla en una frase</span><textarea rows={3} value={draft.note} placeholder="Escribe una regla breve que puedas recuperar en otro caso." onChange={(event) => setDrafts((current) => ({ ...current, [entry.questionId]: { ...draft, note: event.target.value } }))}/></label>
         </div>
         <div className={styles.sources}>{sourceLinks.map((source) => <a key={source.id} href={source.url} target="_blank" rel="noreferrer">{source.title}</a>)}</div>
         <footer>

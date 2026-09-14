@@ -31,6 +31,14 @@ export type LessonBlock =
   | { type: 'refund-simulator'; title: string; text: string }
   | { type: 'behavior-simulator'; title: string; text: string }
   | { type: 'concursal-simulator'; title: string; text: string }
+  | {
+      type: 'decision-simulator'
+      title: string
+      text: string
+      scenario: string
+      prompt: string
+      options: { id: string; text: string; correct: boolean; rationale: string }[]
+    }
   | { type: 'checkpoint'; questionId: string }
   | { type: 'sources'; sourceIds: string[] }
 
@@ -64,6 +72,8 @@ export type CourseUnit = {
   title: string
   description: string
   moduleIds: string[]
+  artwork?: string
+  artworkAlt?: string
 }
 
 export type QuestionOption = {
@@ -107,6 +117,20 @@ export type Course = {
   salaryLabel?: string
   cardArtwork?: string
   heroArtwork?: string
+  guideNotice?: string
+  studyPlanLabel?: string
+  sourceIntro?: string
+  practiceConfig?: {
+    coreLabel: string
+    coreModuleIds: string[]
+    transversalLabel: string
+    transversalModuleIds: string[]
+    diagnosticModuleIds?: string[]
+    examModuleIds?: string[]
+    studyModuleIds?: string[]
+    priorityModuleIds?: string[]
+    hasCaseLabs?: boolean
+  }
   units: CourseUnit[]
   modules: CourseModule[]
   lessons: Lesson[]

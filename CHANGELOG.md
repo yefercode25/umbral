@@ -1,6 +1,133 @@
 # Changelog
 
+## 2026.09.14-alpha.2 · Auditoría profunda de contenido Procuraduría 104-2026
+
+### Profundidad curricular
+- La auditoría detecta que alpha.1 tenía buena cobertura estructural, pero demasiada uniformidad editorial en la generación de lecciones y preguntas; alpha.2 conserva la arquitectura y añade contenido específico por materia en todos los módulos del banco principal.
+- El curso pasa a **17 unidades, 85 módulos, 255 lecciones, 880 preguntas y 37 fuentes**. Los cinco módulos nuevos M80–M84 refuerzan el área profesional de Ingeniería de Sistemas sin presentar esa ampliación como distribución oficial de la prueba.
+- Todos los módulos evaluables por defecto (M0–M74 y M80–M84) incorporan ahora al menos un bloque de fundamento específico adicional a la plantilla pedagógica común. M75–M79 permanece deliberadamente condicional.
+- Se incorporan anclajes normativos puntuales del Código General Disciplinario para ilicitud/culpabilidad/debido proceso, indagación, investigación, sujetos procesales, cierre, evaluación/cargos, nulidades, carga e imparcialidad probatoria, contradicción, sana crítica, apoyo técnico y aseguramiento de evidencia.
+- El módulo de preservación digital aclara expresamente que la cadena de custodia no aparece como un régimen autónomo completo dentro del CGD y que la Guía Disciplinaria la conecta con aseguramiento de prueba, apoyo técnico e integración normativa.
+
+### Casos integradores
+- Se añaden **30 preguntas PJS integradoras** agrupadas en **6 expedientes de cinco decisiones**: alteración de datos, ruta completa de instrucción, petición/población vulnerable, riesgo preventivo en contratación, competencia/despacho comisorio y cambio de software.
+- `/practice/cases` deja de estar acoplado a DIAN y funciona con laboratorios específicos de cada curso; Procuraduría habilita sus seis expedientes propios.
+
+### Fuentes y prudencia editorial
+- Se añaden Resoluciones 076, 108 y 133 de 2026, portal oficial del concurso, Decreto 1851 de 2021 y referencias MinTIC MRAE/MSPI para el refuerzo profesional.
+- Se corrige el enlace editorial de la Convocatoria 104 para apuntar al portal oficial del concurso y se documenta que la **versión 4 aportada para el curso prevalece** frente a versiones anteriores encontradas en línea.
+- No se fija una fecha de examen dentro del contenido: el cronograma sigue tratándose como información dinámica del concurso y debe consultarse en los canales oficiales.
+- El filtro transversal de práctica deja de incluir accidentalmente M75–M79: ahora agrupa M55–M74 y M80–M84, mientras las cinco especializaciones condicionales solo se alcanzan por su ruta explícita.
+
+### Calidad
+- La auditoría runtime valida **17/85/255/880/37**, 510 checkpoints, 170 simuladores de decisión, 30 preguntas integradoras, 6 casos, IDs únicos y **0 referencias rotas**.
+- Compilación TypeScript estricta del núcleo de contenido con `strict`, `noUncheckedIndexedAccess` y `exactOptionalPropertyTypes`: sin diagnósticos.
+- Se agregan pruebas específicas de laboratorios integradores y controles para que los módulos del banco principal no regresen a contenido exclusivamente genérico.
+
+## 2026.09.14-alpha.1 · Procuraduría 104-2026
+
+### Nuevo curso · Profesional Universitario 3PU-15
+- Se incorpora el segundo curso real de Umbral: `Procuraduría 104-2026 · Profesional Universitario 3PU-15`, manteniendo progreso, práctica y estadísticas independientes del curso DIAN.
+- El currículo parte de cero y alcanza nivel avanzado en **16 unidades, 80 módulos, 240 lecciones y 800 preguntas**, respaldadas por **30 fuentes** registradas.
+- Cada módulo contiene tres capas pedagógicas: fundamentos desde cero, aplicación paso a paso y nivel avanzado/trampas; además aporta diez preguntas de dificultad progresiva.
+- Se priorizan Derecho Disciplinario, instrucción y Derecho Probatorio por su conexión directa con las funciones de apoyo en instrucción, práctica/recaudo de pruebas y despachos comisorios.
+- Se incorpora Derecho Constitucional, Administrativo y Procesal, PGN y Ministerio Público, función preventiva/intervención, contratación, anticorrupción, ordenamiento territorial, gestión pública, calidad, gestión documental, atención, ofimática y análisis de datos.
+- Se crea una especialización aplicada para Ingeniería de Sistemas: calidad de datos, accesos, logs, autenticación, bases de datos, correo, metadatos, hash, preservación digital e informe técnico, separando hallazgo técnico, inferencia y valoración jurídica.
+- Se entrenan exclusivamente las seis competencias comportamentales indicadas por el perfil 3PU-15.
+- M75–M79 queda como ruta condicional de Economía/Hacienda Pública y Fuerza Pública; se excluye del banco de examen predeterminado hasta contar con una razón oficial para priorizarlo.
+
+### Arquitectura multi-curso
+- Curso, módulos, lecciones, fuentes, plan de estudio, práctica general, diagnóstico, adaptativo, simulacros, cuaderno de errores, progreso, Inicio, Ajustes y navegación dejan de depender de un único curso hardcodeado.
+- `practiceConfig` define por curso núcleo, transversal, diagnóstico, examen, estudio, prioridad adaptativa y disponibilidad de laboratorios integradores.
+- La navegación contextual conserva `?course=` para evitar que práctica o progreso cambien de convocatoria al navegar desde un curso.
+- Los laboratorios integradores existentes permanecen deliberadamente exclusivos de DIAN mientras se diseñan expedientes encadenados propios para Procuraduría.
+
+### Aprendizaje jurídico y técnico
+- Nuevo bloque `decision-simulator` con decisión A/B/C y feedback posterior, reutilizable en lecciones jurídicas y técnicas.
+- Se agregan apoyos editoriales específicos dentro de módulos críticos: mapa de las 11 funciones, diccionario jurídico mínimo, arquitectura de proceso, ruta desde noticia disciplinaria, pilares probatorios, calidad de información, lectura de logs e informe técnico informático.
+- El lector de voz reconoce los nuevos bloques sin revelar racionales de respuesta antes de que el estudiante decida.
+
+- El simulador jurídico presenta las opciones en un orden determinista por escenario y el lector utiliza exactamente ese mismo orden A/B/C, evitando patrones de posición sin desalinear audio e interfaz.
+- Las preguntas avanzadas de Procuraduría ya no se marcan artificialmente como integradoras: `integrated` queda reservado para futuros casos que relacionen realmente varios módulos.
+
+### Auditoría
+- Se añade `tests/content/procuraduria-course-integrity.test.ts` para validar snapshot, IDs, relaciones, fuentes, preguntas, checkpoints, aprendizaje activo, rutas condicionales y especialización técnica.
+- Se actualizan las pruebas de selección de preguntas y narración para operar sobre DIAN y Procuraduría.
+- Se documenta el currículo y la matriz función → habilidad → módulos en `docs/11-procuraduria-104-2026-curriculum.md`.
+
 ## 2026.09.13-alpha.6
+
+### Preparación para repositorio público
+- Se añade `LICENSE` con licencia MIT para el código original de Umbral.
+- Se añaden `NOTICE.md` y `THIRD_PARTY_NOTICES.md` para separar claramente código propio, materiales oficiales y recursos de terceros.
+- Se documenta que Google Sans permanece en `public/fonts/` por decisión del propietario, pero sus binarios no quedan relicenciados bajo MIT y cada redistribuidor debe verificar sus derechos de uso/distribución.
+- `README.md` incorpora aviso de independencia frente a DIAN/CNSC y límites de la licencia.
+- `package.json` incorpora descripción pública, licencia y palabras clave del proyecto.
+
+- Se agrega `workbox-window@7.4.1` como dependencia de desarrollo directa, requerida por `virtual:pwa-register/react`; corrige el fallo de Rolldown/Vite 8 al resolver el registro PWA bajo instalaciones pnpm estrictas.
+
+### Correcciones de TypeScript para despliegue
+- Se corrigen errores provocados por `noUncheckedIndexedAccess` y `exactOptionalPropertyTypes` en preguntas transversales, simuladores, diagnóstico, simulacros y navegación.
+- Los simuladores ahora resuelven de forma segura el escenario activo sin asumir que un acceso por índice siempre existe.
+- Las permutaciones de preguntas, opciones y secuencias evitan asignaciones potencialmente `undefined` durante los intercambios.
+- Se corrigen props opcionales (`explanation`, `firstLessonId`, `end`, `reason` y `case`) para respetar la configuración estricta del proyecto.
+- Se añaden guardas explícitas en diagnóstico, perfil de simulacro y selección ponderada para evitar estados imposibles durante compilación y ejecución.
+- El helper de preguntas transversales valida los identificadores A/B/C antes de construir cada pregunta.
+
+
+### Revisión de suficiencia editorial CT-CR-3007
+- Se reaudita el contenido contra las 11 funciones esenciales y las competencias funcionales básicas de la ficha CT-CR-3007; el volumen actual se considera suficiente para una primera versión y se prioriza precisión sobre crecimiento artificial.
+- `m0-l1` incorpora una matriz función → módulo para que el estudiante vea exactamente dónde se entrena cada función esencial, incluyendo ámbito Central/Seccional y la diferencia entre ámbito de aplicación y competencia concreta.
+- `m0-l3` elimina el texto obsoleto sobre módulos “en preparación” y separa la ruta principal M0–M23 del bloque complementario M24–M28.
+- `m7-l9` desarrolla expresamente auditoría, capacitación, verificación de requisitos, seguimiento y sanción a EAR, evitando reducir toda la función a control sancionatorio.
+- Se añade `docs/10-content-review-ct-cr-3007.md` con la matriz de cobertura y el criterio editorial de no aumentar teoría sin un vacío verificable.
+
+
+- En móvil, el lector flotante se reduce a un botón circular de solo icono y se posiciona por encima de la barra de navegación inferior para no cubrir opciones; se elimina el emoji y cualquier texto visible del botón.
+
+- El lector en voz alta deja de ocupar espacio dentro del flujo de lectura y pasa a un botón flotante inferior derecho; al pulsarlo se despliega el panel configurable con voz, velocidad, progreso y controles.
+
+### Lectura en voz alta por lección
+- Todas las lecciones incorporan un lector nativo basado en Web Speech API, sin dependencia adicional ni envío de contenido a servicios externos.
+- El lector permite reproducir, pausar, continuar y detener la narración, con progreso por fragmentos para evitar cortes en textos extensos.
+- Cada usuario puede elegir voz disponible en su dispositivo y velocidad entre 0.75× y 1.5×; ambas preferencias se conservan en `umbral:settings:v1`.
+- La narración incluye contenido pedagógico, pasos, tablas, procesos, actividades y opciones de checkpoints, pero omite explicaciones y racionales que revelarían respuestas antes de contestar.
+- La lectura se cancela automáticamente al cambiar de lección o abandonar la vista.
+
+### Corrección de desarrollo local, visor y CSP
+- Se corrige el error de runtime del visor de infografías: `SearchMinus`/`SearchPlus` no forman parte de los exports disponibles en la versión instalada de `lucide-react`; se sustituyen por `Minus`/`Plus` y `Maximize2`.
+- En desarrollo local se desregistran service workers antiguos y se limpian caches PWA de Umbral/Workbox para evitar que una versión de producción previa controle `localhost:5173` durante Vite.
+- Se añade `favicon.ico` real para eliminar la petición 404 automática del navegador.
+- Netlify incorpora una CSP explícita y compatible con la PWA (`script-src 'self'`, worker local, imágenes/font local y estilos inline requeridos por la UI), junto a las cabeceras de seguridad existentes.
+- Los avisos `script-src 'none'` no se originaban en el `index.html`, Vite ni `netlify.toml` actuales; la limpieza de SW/caché evita el caso controlable desde la aplicación y la CSP de producción queda declarada de forma explícita.
+
+### Integración contextual de infografías en lecciones
+- El apoyo visual insertado en lecciones ahora abre un visor ampliado con fondo modal, zoom, restablecimiento y cierre, para estudiar los detalles sin salir de la lección.
+- Se confirma la eliminación del bloque tipo “Apoyos rápidos antes de practicar” en `/practice`, manteniendo allí solo material funcional de entrenamiento.
+- Se retiran las secciones generales de infografías en Curso, Módulo y Práctica para evitar piezas sueltas fuera del flujo real de estudio.
+- Las infografías pasan a mostrarse dentro de lecciones concretas mediante `LessonSupportGraphic`, justo después del encabezado y antes del contenido de lectura.
+- Se generan cuatro nuevas piezas de apoyo: MIPG vigente, ruta de la actuación administrativa, ciclo EAR y ruta del crédito fiscal en concurso.
+- El catálogo de apoyos visuales se reorganiza por lección en `src/lib/supportGraphics.ts`, alcanzando diez recursos contextuales para estudio.
+- `docs/09-infographic-support.md` se actualiza para documentar la ubicación puntual de cada recurso dentro del curso.
+
+### Infografías de apoyo temático
+- Se agregan seis recursos gráficos de estudio en `public/media/infographics`, optimizados a WebP y alineados con el curso DIAN 2676.
+- La vista del curso incorpora la sección `Recursos gráficos para repaso rápido` con el mapa general y cinco apoyos temáticos adicionales.
+- La vista de módulo ahora muestra un apoyo visual contextual cuando el tema principal coincide con estado de cuenta, cobro persuasivo/coactivo, cobro coactivo, devoluciones o técnica PJS.
+- `/practice` incorpora la sección `Apoyos rápidos antes de practicar` para reforzar PJS, lectura de estado de cuenta y distinción entre rutas de cobro antes del banco general.
+- Se crea `SupportGraphicSection` como componente reusable y `src/lib/supportGraphics.ts` como catálogo central de metadatos y asignación por módulo.
+- `docs/09-infographic-support.md` documenta rutas, ubicación funcional y criterio pedagógico de integración.
+
+### Sistema visual generado e integración editorial
+- Se integra el nuevo conjunto de marca y gráficos editoriales de Umbral sin reemplazar la información real de la aplicación por texto sintético de las composiciones.
+- `BrandMark` utiliza el emblema generado con transparencia, manteniendo el wordmark tipográfico real para legibilidad en claro y oscuro.
+- Inicio incorpora el banner de plataforma como arte de fondo recortado; la capa de contenido real permanece por encima y conserva contraste.
+- El curso DIAN 2676 incorpora una pieza editorial dedicada en su hero, con recorte responsive y sin convertir la imagen en fuente curricular.
+- Práctica y Progreso incorporan visuales propios como ambientación; en Progreso la imagen se atenúa para evitar que cifras o etiquetas sintéticas compitan con las métricas calculadas por la app.
+- Ajustes incorpora una sección PWA/identidad con el visual multidispositivo, wordmark y variantes de icono.
+- Los iconos PWA 192/512, maskable y Apple Touch se regeneran desde la nueva identidad; se añaden favicons claro/oscuro.
+- Todos los assets editoriales se optimizan a WebP y quedan cubiertos por el precache de Workbox.
+- `docs/08-generated-media.md` documenta usos, rutas y la regla de no tratar texto generado dentro de imágenes como contenido oficial.
 
 ### Hardening de navegación, contraste y PWA
 - Las transiciones entre rutas reinician el scroll al inicio para que una lección, módulo o vista nueva no herede la posición vertical anterior.

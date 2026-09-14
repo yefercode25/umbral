@@ -10,6 +10,7 @@ import { BehaviorProfileSimulator } from './BehaviorProfileSimulator'
 import { ConcursalDecisionSimulator } from './ConcursalDecisionSimulator'
 import { QuestionCard } from './QuestionCard'
 import { SequenceExercise } from './SequenceExercise'
+import { LegalDecisionSimulator } from './LegalDecisionSimulator'
 import styles from './LessonRenderer.module.css'
 
 export function LessonRenderer({ course, blocks }: { course: Course; blocks: LessonBlock[] }) {
@@ -39,6 +40,7 @@ export function LessonRenderer({ course, blocks }: { course: Course; blocks: Les
       if (block.type === 'refund-simulator') return <RefundDecisionSimulator key={key} title={block.title} text={block.text}/>
       if (block.type === 'behavior-simulator') return <BehaviorProfileSimulator key={key} title={block.title} text={block.text}/>
       if (block.type === 'concursal-simulator') return <ConcursalDecisionSimulator key={key} title={block.title} text={block.text}/>
+      if (block.type === 'decision-simulator') return <LegalDecisionSimulator key={key} title={block.title} text={block.text} scenario={block.scenario} prompt={block.prompt} options={block.options}/>
       if (block.type === 'checkpoint') {
         const q = course.questions.find((question) => question.id === block.questionId)
         return q ? <QuestionCard key={key} course={course} question={q}/> : null

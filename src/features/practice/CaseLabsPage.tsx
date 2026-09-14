@@ -1,9 +1,9 @@
 import { ArrowLeft, ArrowRight, BookOpenCheck, Clock3, Layers3, Route, ShieldCheck } from 'lucide-react'
-import { Link, useParams } from 'react-router-dom'
-import { dianGestorCourse } from '../../../content/courses/dian-2676-gestor-ii/course'
-import { dianCaseLabs } from '../../../content/courses/dian-2676-gestor-ii/caseLabs'
+import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { QuestionCard } from '../../components/learning/QuestionCard'
 import { PageHeader } from '../../components/ui/PageHeader'
+import { getCaseLabsForCourse } from '../../lib/caseLabs'
+import { getCourseFromSearchParams, withCourse } from '../../lib/courseQuery'
 import { useProgressStore } from '../../stores/progressStore'
 import styles from './CaseLabsPage.module.css'
 
@@ -15,13 +15,23 @@ const difficultyLabel = (difficulty: number) => {
 
 export function CaseLabsPage() {
   const { caseId } = useParams()
-  const progress = useProgressStore((s) => s.courses[dianGestorCourse.id])
-  const activeCase = caseId ? dianCaseLabs.find((item) => item.id === caseId) : undefined
+  const [searchParams] = useSearchParams()
+  const course = getCourseFromSearchParams(searchParams)
+  const caseLabs = getCaseLabsForCourse(course.id)
+  const progress = useProgressStore((state) => state.courses[course.id])
+  const activeCase = caseId ? caseLabs.find((item) => item.id === caseId) : undefined
+
+  if (!caseLabs.length) {
+    return <div className="page page--narrow">
+      <PageHeader eyebrow="Casos integradores" title="Laboratorios en preparación" subtitle={`Los casos integradores largos todavía no están publicados para ${course.shortTitle}. El curso mantiene simuladores y preguntas situacionales dentro de sus lecciones y banco general.`} />
+      <Link className={styles.backLink} to={withCourse('/practice', course)}><ArrowLeft size={16}/> Volver a práctica</Link>
+    </div>
+  }
 
   if (caseId && !activeCase) {
     return <div className="page page--narrow">
       <PageHeader eyebrow="Casos integradores" title="Caso no encontrado" subtitle="El caso solicitado no existe en la versión actual del curso." />
-      <Link className={styles.backLink} to="/practice/cases"><ArrowLeft size={16}/> Volver a los casos</Link>
+      <Link className={styles.backLink} to={withCourse('/practice/cases', course)}><ArrowLeft size={16}/> Volver a los casos</Link>
     </div>
   }
 
@@ -30,22 +40,22 @@ export function CaseLabsPage() {
       <PageHeader
         eyebrow="Entrenamiento aplicado"
         title="Casos integradores"
-        subtitle="Un mismo expediente cruza módulos. Practica la secuencia completa: hechos, competencia, procedimiento, evidencia y decisión."
+        subtitle={`Un mismo expediente cruza módulos de ${course.shortTitle}. Practica la secuencia completa: hechos, competencia, procedimiento, evidencia y decisión.`}
       />
 
       <section className={styles.intro}>
         <div className={styles.introIcon}><Route size={21}/></div>
         <div>
-          <strong>No son cinco preguntas independientes.</strong>
-          <p>Cada laboratorio mantiene un contexto común y cambia la etapa del expediente. La meta es reconocer cuándo una regla correcta deja de ser la actuación correcta por oportunidad, competencia o nueva evidencia.</p>
+          <strong>No son preguntas independientes.</strong>
+          <p>Cada laboratorio mantiene un contexto común y hace evolucionar los hechos. La meta es detectar cuándo una regla correcta deja de producir la actuación correcta por competencia, etapa, evidencia o nueva información.</p>
         </div>
       </section>
 
       <div className={styles.grid}>
-        {dianCaseLabs.map((item, index) => {
+        {caseLabs.map((item, index) => {
           const answered = item.questionIds.filter((questionId) => (progress?.questionStats?.[questionId]?.attempts ?? 0) > 0).length
           const correct = item.questionIds.filter((questionId) => progress?.questionStats?.[questionId]?.lastCorrect).length
-          const modules = item.moduleIds.map((moduleId) => dianGestorCourse.modules.find((module) => module.id === moduleId)).filter(Boolean)
+          const modules = item.moduleIds.map((moduleId) => course.modules.find((module) => module.id === moduleId)).filter(Boolean)
           return <article className={styles.caseCard} key={item.id}>
             <div className={styles.caseTop}>
               <span className={styles.caseNumber}>Caso {String(index + 1).padStart(2, '0')}</span>
@@ -67,7 +77,7 @@ export function CaseLabsPage() {
             </div>
             <div className={styles.cardFooter}>
               <small>{answered > 0 ? `${correct} última${correct === 1 ? '' : 's'} respuesta${correct === 1 ? '' : 's'} correcta${correct === 1 ? '' : 's'}` : 'Sin iniciar'}</small>
-              <Link to={`/practice/cases/${item.id}`}>{answered ? 'Continuar' : 'Resolver'} <ArrowRight size={15}/></Link>
+              <Link to={withCourse(`/practice/cases/${item.id}`, course)}>{answered ? 'Continuar' : 'Resolver'} <ArrowRight size={15}/></Link>
             </div>
           </article>
         })}
@@ -76,18 +86,18 @@ export function CaseLabsPage() {
   }
 
   const questions = activeCase.questionIds
-    .map((questionId) => dianGestorCourse.questions.find((question) => question.id === questionId))
+    .map((questionId) => course.questions.find((question) => question.id === questionId))
     .filter((question): question is NonNullable<typeof question> => Boolean(question))
   const sources = activeCase.sourceIds
-    .map((sourceId) => dianGestorCourse.sources.find((source) => source.id === sourceId))
+    .map((sourceId) => course.sources.find((source) => source.id === sourceId))
     .filter((source): source is NonNullable<typeof source> => Boolean(source))
   const modules = activeCase.moduleIds
-    .map((moduleId) => dianGestorCourse.modules.find((module) => module.id === moduleId))
+    .map((moduleId) => course.modules.find((module) => module.id === moduleId))
     .filter((module): module is NonNullable<typeof module> => Boolean(module))
   const answered = activeCase.questionIds.filter((questionId) => (progress?.questionStats?.[questionId]?.attempts ?? 0) > 0).length
 
   return <div className="page page--narrow">
-    <Link className={styles.backLink} to="/practice/cases"><ArrowLeft size={16}/> Casos integradores</Link>
+    <Link className={styles.backLink} to={withCourse('/practice/cases', course)}><ArrowLeft size={16}/> Casos integradores</Link>
     <PageHeader eyebrow="Laboratorio de decisión" title={activeCase.title} subtitle={activeCase.subtitle} />
 
     <section className={styles.caseBrief}>
@@ -118,7 +128,7 @@ export function CaseLabsPage() {
     <div className={styles.questions}>
       {questions.map((question, index) => <section className={styles.questionStep} key={question.id}>
         <div className={styles.stepLabel}><span>{index + 1}</span><div><strong>Decisión {index + 1} de {questions.length}</strong><small>{index === 0 ? 'Punto de partida' : 'El expediente evoluciona'}</small></div></div>
-        <QuestionCard course={dianGestorCourse} question={question} showRetry={false} />
+        <QuestionCard course={course} question={question} showRetry={false} />
       </section>)}
     </div>
 
@@ -127,6 +137,6 @@ export function CaseLabsPage() {
       <div className={styles.sourceLinks}>{sources.map((source) => <a key={source.id} href={source.url} target="_blank" rel="noreferrer">{source.title}<ArrowRight size={14}/></a>)}</div>
     </section>
 
-    <div className={styles.bottomNav}><Link to="/practice"><ArrowLeft size={15}/> Volver a práctica</Link><Link to="/practice/cases">Elegir otro caso <ArrowRight size={15}/></Link></div>
+    <div className={styles.bottomNav}><Link to={withCourse('/practice', course)}><ArrowLeft size={15}/> Volver a práctica</Link><Link to={withCourse('/practice/cases', course)}>Elegir otro caso <ArrowRight size={15}/></Link></div>
   </div>
 }

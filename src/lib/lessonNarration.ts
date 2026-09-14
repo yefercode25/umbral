@@ -1,6 +1,6 @@
 import type { Course, Lesson, LessonBlock } from '../types/course'
 import type { SupportGraphic } from './supportGraphics'
-import { optionLabel, questionOptionsForDisplay } from './questionPresentation'
+import { optionLabel, optionsForDisplay, questionOptionsForDisplay } from './questionPresentation'
 
 const MAX_CHUNK_LENGTH = 280
 
@@ -92,6 +92,13 @@ function blockToSpeech(course: Course, block: LessonBlock) {
     block.type === 'behavior-simulator' ||
     block.type === 'concursal-simulator'
   ) return `Actividad interactiva. ${block.title}. ${block.text}`
+
+  if (block.type === 'decision-simulator') {
+    const options = optionsForDisplay(block.options, `decision:${block.title}:${block.scenario}`)
+      .map((option, index) => `Opción ${optionLabel(index)}. ${option.text}`)
+      .join(' ')
+    return `Laboratorio de decisión. ${block.title}. ${block.text}. Situación. ${block.scenario}. ${block.prompt}. ${options}`
+  }
 
   if (block.type === 'checkpoint') {
     const question = course.questions.find((item) => item.id === block.questionId)

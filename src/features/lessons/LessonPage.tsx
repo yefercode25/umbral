@@ -1,41 +1,44 @@
 import { useEffect } from 'react'
 import { ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, Clock3 } from 'lucide-react'
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
-import { dianGestorCourse } from '../../../content/courses/dian-2676-gestor-ii/course'
 import { LessonRenderer } from '../../components/learning/LessonRenderer'
 import { LessonNarrator } from '../../components/learning/LessonNarrator'
 import { LessonSupportGraphic } from '../../components/learning/LessonSupportGraphic'
 import { Button } from '../../components/ui/Button'
 import { ProgressBar } from '../../components/ui/ProgressBar'
+import { getCourseBySlug } from '../../lib/courses'
 import { getLessonSupportGraphic } from '../../lib/supportGraphics'
 import { useProgressStore } from '../../stores/progressStore'
 import styles from './LessonPage.module.css'
 
 export function LessonPage() {
-  const { lessonId } = useParams()
+  const { courseSlug, lessonId } = useParams()
   const location = useLocation()
   const navigate = useNavigate()
-  const course = dianGestorCourse
-  const lesson = course.lessons.find((l) => l.id === lessonId)
-  const ensureCourse = useProgressStore((s) => s.ensureCourse)
-  const start = useProgressStore((s) => s.markLessonStarted)
-  const complete = useProgressStore((s) => s.markLessonCompleted)
-  const toggleBookmark = useProgressStore((s) => s.toggleBookmark)
-  const progress = useProgressStore((s) => s.courses[course.id])
+  const course = getCourseBySlug(courseSlug)
+  const lesson = course?.lessons.find((item) => item.id === lessonId)
+  const ensureCourse = useProgressStore((state) => state.ensureCourse)
+  const start = useProgressStore((state) => state.markLessonStarted)
+  const complete = useProgressStore((state) => state.markLessonCompleted)
+  const toggleBookmark = useProgressStore((state) => state.toggleBookmark)
+  const progress = useProgressStore((state) => course ? state.courses[course.id] : undefined)
 
   useEffect(() => {
+    if (!course) return
     ensureCourse(course)
     if (lesson) start(course, lesson.id, location.pathname)
   }, [ensureCourse, course, lesson, start, location.pathname])
 
-  if (!lesson) return <div className="page"><p>Lección no encontrada.</p></div>
-  const module = course.modules.find((m) => m.id === lesson.moduleId)!
-  const allPublished = course.lessons.filter((l) => l.status === 'published').sort((a,b) => {
-    const ma = course.modules.find((m) => m.id === a.moduleId)?.order ?? 0
-    const mb = course.modules.find((m) => m.id === b.moduleId)?.order ?? 0
+  if (!course || !lesson) return <div className="page"><p>Lección no encontrada.</p></div>
+  const module = course.modules.find((item) => item.id === lesson.moduleId)
+  if (!module) return <div className="page"><p>Módulo no encontrado.</p></div>
+
+  const allPublished = course.lessons.filter((item) => item.status === 'published').sort((a,b) => {
+    const ma = course.modules.find((item) => item.id === a.moduleId)?.order ?? 0
+    const mb = course.modules.find((item) => item.id === b.moduleId)?.order ?? 0
     return ma === mb ? a.order-b.order : ma-mb
   })
-  const index = allPublished.findIndex((l) => l.id === lesson.id)
+  const index = allPublished.findIndex((item) => item.id === lesson.id)
   const next = allPublished[index+1]
   const previous = allPublished[index-1]
   const isBookmarked = progress?.bookmarks.includes(lesson.id) ?? false
@@ -48,7 +51,7 @@ export function LessonPage() {
     else navigate(`/courses/${course.slug}`)
   }
 
-  return <div className={styles.page}>
+  return <div className={styles.page} style={{ '--course-accent': course.accent } as React.CSSProperties}>
     <header className={styles.mobileHeader}>
       <Link to={`/courses/${course.slug}`} aria-label="Volver al curso"><ArrowLeft size={20}/></Link>
       <div><span>{module.code}</span><strong>{module.title}</strong></div>

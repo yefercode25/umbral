@@ -1,12 +1,28 @@
 # Umbral — PWA de estudio
 
-Plataforma de estudio **mobile-first, instalable y offline-first**. El primer curso es **DIAN 2676 · Gestor II · CT-CR-3007**, pero la arquitectura es multi-curso desde el inicio.
+Plataforma de estudio **mobile-first, instalable y offline-first** para preparación progresiva de convocatorias públicas. La biblioteca es multi-curso y actualmente contiene **DIAN 2676 · Gestor II · CT-CR-3007** y **Procuraduría 104-2026 · Profesional Universitario 3PU-15**.
 
 > **Copia maestra:** esta carpeta es la única base de trabajo. Los cambios se aplican sobre los mismos archivos; no se mantienen implementaciones paralelas.
 
-> **Proyecto independiente:** Umbral no está afiliado, patrocinado, avalado ni publicado por la DIAN, la CNSC ni otra entidad pública. El contenido de preparación combina fuentes oficiales citadas con interpretación pedagógica y material de práctica propio.
+> **Proyecto independiente:** Umbral no está afiliado, patrocinado, avalado ni publicado por la DIAN, la CNSC, la Procuraduría General de la Nación ni otra entidad pública. El contenido de preparación combina fuentes oficiales citadas con interpretación pedagógica y material de práctica propio.
 
-## Estado actual · 2026.09.13-alpha.6
+## Estado actual · biblioteca multi-curso
+
+### Procuraduría 104-2026 · Profesional Universitario 3PU-15 · alpha.2
+
+- **17 unidades, 85 módulos y 255 lecciones** con progresión fundamentos → aplicación → avanzado.
+- **880 preguntas**: 850 preguntas base + 30 decisiones integradoras multi-módulo, respaldadas por **37 fuentes** registradas.
+- Cobertura explícita de las 11 funciones del empleo, Derecho Constitucional, Administrativo, Procesal, Disciplinario y Probatorio, contratación, anticorrupción, ordenamiento territorial, gestión/documentación y herramientas comunes.
+- Núcleo prioritario en instrucción disciplinaria y Derecho probatorio.
+- Doble ruta para Ingeniería de Sistemas: evidencia técnica aplicada al expediente (M60–M64) + fundamentos profesionales de arquitectura, redes, seguridad, software y gobierno de datos (M80–M84).
+- Las seis competencias comportamentales exactas del perfil se entrenan de forma separada.
+- **6 laboratorios integradores propios** mantienen un expediente común durante cinco decisiones y cruzan instrucción, prueba, prevención, contratación, competencia y sistemas.
+- M75–M79 se conservan como especializaciones condicionales y no entran por defecto al banco general de examen.
+- Diagnóstico, práctica, adaptativo, simulacros, progreso, lector de voz y plan de estudio funcionan con estado independiente por curso.
+
+Consulta `docs/11-procuraduria-104-2026-curriculum.md` para la matriz función → habilidad → módulos y la auditoría curricular.
+
+### DIAN 2676 · Gestor II · 2026.09.13-alpha.6
 
 - 9 unidades y 29 módulos (M0–M28).
 - **211 lecciones publicadas**, todas con al menos una actividad de recuperación, checkpoint, secuencia o simulador.
@@ -95,6 +111,8 @@ npm run build
 - `docs/07-ui-audit-alpha6.md`
 - `docs/08-generated-media.md`
 - `docs/09-infographic-support.md`
+- `docs/10-content-review-ct-cr-3007.md`
+- `docs/11-procuraduria-104-2026-curriculum.md`
 - `NOTICE.md`
 - `THIRD_PARTY_NOTICES.md`
 - `LICENSE`
