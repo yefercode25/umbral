@@ -45,8 +45,12 @@ export function deterministicOrder<T>(items: readonly T[], seed: string, key: (i
   return result
 }
 
+export function optionsForDisplay<T extends { id: string }>(items: readonly T[], seed: string): T[] {
+  return deterministicOrder(items, seed, (item) => item.id)
+}
+
 export function questionOptionsForDisplay(question: Question): QuestionOption[] {
-  return deterministicOrder(question.options, `option:${question.id}`, (option) => option.id)
+  return optionsForDisplay(question.options, `option:${question.id}`)
 }
 
 export function optionLabel(index: number): string {
