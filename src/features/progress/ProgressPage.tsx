@@ -1,15 +1,19 @@
+import type { CSSProperties } from 'react'
 import { Award, Bookmark, BookOpenCheck, CheckCircle2, NotebookPen, Target } from 'lucide-react'
-import { Link } from 'react-router-dom'
-import { dianGestorCourse } from '../../../content/courses/dian-2676-gestor-ii/course'
+import { Link, useSearchParams } from 'react-router-dom'
 import { PageHeader } from '../../components/ui/PageHeader'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { courseCompletion, moduleCompletion, publishedLessons } from '../../lib/course'
+import { courses } from '../../lib/courses'
+import { getCourseFromSearchParams, withCourse } from '../../lib/courseQuery'
 import { useProgressStore } from '../../stores/progressStore'
 import styles from './ProgressPage.module.css'
 
 export function ProgressPage() {
-  const course = dianGestorCourse
-  const progress = useProgressStore((s) => s.courses[course.id])
+  const [searchParams] = useSearchParams()
+  const course = getCourseFromSearchParams(searchParams)
+  const progressByCourse = useProgressStore((state) => state.courses)
+  const progress = progressByCourse[course.id]
   const lessons = publishedLessons(course)
   const completed = lessons.filter((lesson) => progress?.lessons[lesson.id]?.status === 'completed').length
   const skills = Object.values(progress?.skills ?? {})
@@ -32,13 +36,17 @@ export function ProgressPage() {
     return { module, attempts: moduleAttempts, accuracy: moduleAttempts ? Math.round(moduleCorrect / moduleAttempts * 100) : null }
   }).filter((item) => item.attempts > 0 && item.accuracy !== null).sort((a, b) => (a.accuracy ?? 100) - (b.accuracy ?? 100)).slice(0, 4)
 
-  return <div className="page">
-    <PageHeader eyebrow="Seguimiento" title="Progreso" subtitle="El avance combina contenido completado, recuperación activa y consolidación posterior. No mide solo páginas abiertas." />
+  return <div className="page" style={{ '--course-accent': course.accent } as CSSProperties}>
+    <PageHeader eyebrow="Seguimiento" title="Progreso" subtitle="El avance combina contenido completado, recuperación activa y consolidación posterior. Cada curso conserva sus métricas por separado." />
+
+    <nav className={styles.courseScope} aria-label="Curso para consultar progreso">
+      {courses.map((item) => <Link key={item.id} to={withCourse('/progress', item)} className={item.id === course.id ? styles.courseScopeActive : ''}><span>{item.shortTitle}</span><small>{courseCompletion(item, progressByCourse[item.id])}% completado</small></Link>)}
+    </nav>
 
     <section className={styles.progressVisual} aria-label="Resumen de aprendizaje">
       <img src="/media/editorial/progress-overview.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" />
       <div className={styles.progressVisualCopy}>
-        <span>Evidencia de aprendizaje</span>
+        <span>{course.shortTitle}</span>
         <strong>{courseCompletion(course, progress)}% del contenido publicado</strong>
         <p>{attempts ? `${accuracy}% de precisión sobre ${attempts} intentos registrados.` : 'Empieza una práctica para construir tu línea base de precisión.'}</p>
       </div>
@@ -58,13 +66,13 @@ export function ProgressPage() {
       </div>
       <div className={styles.learningHealthGrid}>
         <div className={styles.healthCard}><CheckCircle2 size={18}/><span><strong>{competent}</strong><small>habilidades competentes</small></span></div>
-        <Link className={styles.healthCard} to="/practice/errors"><NotebookPen size={18}/><span><strong>{resolvedErrors}</strong><small>errores corregidos después</small></span></Link>
-        <Link className={styles.healthCard} to="/practice?mode=saved"><Bookmark size={18}/><span><strong>{savedQuestions}</strong><small>preguntas guardadas</small></span></Link>
+        <Link className={styles.healthCard} to={withCourse('/practice/errors', course)}><NotebookPen size={18}/><span><strong>{resolvedErrors}</strong><small>errores corregidos después</small></span></Link>
+        <Link className={styles.healthCard} to={withCourse('/practice', course, { mode: 'saved' })}><Bookmark size={18}/><span><strong>{savedQuestions}</strong><small>preguntas guardadas</small></span></Link>
       </div>
     </section>
 
     {modulePerformance.length > 0 && <section className={styles.focus}>
-      <div className={styles.focusHead}><div><span>Prioridad de repaso</span><h2>Módulos con menor precisión</h2></div><Link to="/practice/adaptive">Practicar recomendadas</Link></div>
+      <div className={styles.focusHead}><div><span>Prioridad de repaso</span><h2>Módulos con menor precisión</h2></div><Link to={withCourse('/practice/adaptive', course)}>Practicar recomendadas</Link></div>
       <div className={styles.focusGrid}>{modulePerformance.map(({ module, attempts: moduleAttempts, accuracy: moduleAccuracy }) => <Link key={module.id} to={`/courses/${course.slug}/module/${module.id}`} className={styles.focusItem}><span>{module.code}</span><strong>{module.title}</strong><small>{moduleAccuracy}% · {moduleAttempts} intento{moduleAttempts === 1 ? '' : 's'}</small></Link>)}</div>
     </section>}
 
