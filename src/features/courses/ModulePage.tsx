@@ -1,19 +1,20 @@
+import type { CSSProperties } from 'react'
 import { ArrowLeft, BookOpenCheck, CheckCircle2, Circle, Clock3, PlayCircle, Target } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
-import { dianGestorCourse } from '../../../content/courses/dian-2676-gestor-ii/course'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { moduleCompletion } from '../../lib/course'
+import { getCourseBySlug } from '../../lib/courses'
 import { useProgressStore } from '../../stores/progressStore'
 import type { Lesson } from '../../types/course'
 import styles from './ModulePage.module.css'
 
 export function ModulePage() {
-  const { moduleId } = useParams()
-  const course = dianGestorCourse
-  const module = course.modules.find((item) => item.id === moduleId)
-  const progress = useProgressStore((state) => state.courses[course.id])
+  const { courseSlug, moduleId } = useParams()
+  const course = getCourseBySlug(courseSlug)
+  const progress = useProgressStore((state) => course ? state.courses[course.id] : undefined)
+  const module = course?.modules.find((item) => item.id === moduleId)
 
-  if (!module) return <div className="page"><p>Módulo no encontrado.</p></div>
+  if (!course || !module) return <div className="page"><p>Módulo no encontrado.</p></div>
 
   const lessons = module.lessonIds
     .map((id) => course.lessons.find((lesson) => lesson.id === id))
@@ -24,8 +25,9 @@ export function ModulePage() {
   const completion = moduleCompletion(course, module.id, progress)
   const completed = lessons.filter((lesson) => progress?.lessons[lesson.id]?.status === 'completed').length
   const nextLesson = lessons.find((lesson) => progress?.lessons[lesson.id]?.status !== 'completed') ?? lessons[0]
+  const practiceQuery = `?course=${course.slug}`
 
-  return <div className="page page--narrow">
+  return <div className="page page--narrow" style={{ '--course-accent': course.accent } as CSSProperties}>
     <Link to={`/courses/${course.slug}`} className={styles.back}><ArrowLeft size={17}/> Volver al curso</Link>
 
     <header className={styles.hero}>
@@ -58,8 +60,8 @@ export function ModulePage() {
     </section>
 
     {questions.length > 0 && <section className={styles.practiceCard}>
-      <div><span>Refuerza este módulo</span><h2>Practica después de estudiar</h2><p>El banco contiene {questions.length} preguntas asociadas a {module.code}. Puedes usar la práctica general o una sesión recomendada para que Umbral combine este tema con tus debilidades.</p></div>
-      <div className={styles.practiceActions}><Link to="/practice">Abrir banco</Link><Link to="/practice/adaptive">Sesión recomendada</Link></div>
+      <div><span>Refuerza este módulo</span><h2>Practica después de estudiar</h2><p>El banco contiene {questions.length} preguntas asociadas a {module.code}. Umbral puede combinarlas después con temas débiles para evitar estudiar cada módulo como una isla.</p></div>
+      <div className={styles.practiceActions}><Link to={`/practice${practiceQuery}`}>Abrir banco</Link><Link to={`/practice/adaptive${practiceQuery}`}>Sesión recomendada</Link></div>
     </section>}
   </div>
 }

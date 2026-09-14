@@ -1,5 +1,6 @@
 import { BookOpen, ChartNoAxesColumnIncreasing, GraduationCap, Home } from 'lucide-react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
+import { contextualNavHref } from '../../lib/navigationContext'
 import styles from './BottomNav.module.css'
 
 const items = [
@@ -10,14 +11,16 @@ const items = [
 ]
 
 export function BottomNav() {
+  const location = useLocation()
   return (
     <nav className={styles.nav} aria-label="Navegación principal">
-      {items.map(({ to, label, icon: Icon, end }) => (
-        <NavLink key={to} to={to} end={end} className={({ isActive }) => `${styles.item} ${isActive ? styles.active : ''}`}>
+      {items.map(({ to, label, icon: Icon, end }) => {
+        const href = contextualNavHref(to, location.pathname, location.search)
+        return <NavLink key={to} to={href} end={end} className={({ isActive }) => `${styles.item} ${isActive ? styles.active : ''}`}>
           <Icon size={20} strokeWidth={2} />
           <span>{label}</span>
         </NavLink>
-      ))}
+      })}
     </nav>
   )
 }
