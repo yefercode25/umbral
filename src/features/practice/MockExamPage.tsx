@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react'
 import { useEffect, useMemo, useState } from 'react'
 import {
   ArrowLeft,
@@ -11,14 +12,14 @@ import {
   Target,
   XCircle,
 } from 'lucide-react'
-import { Link } from 'react-router-dom'
-import { dianGestorCourse } from '../../../content/courses/dian-2676-gestor-ii/course'
+import { Link, useSearchParams } from 'react-router-dom'
 import { Button } from '../../components/ui/Button'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { useProgressStore } from '../../stores/progressStore'
-import { examProfiles, selectExamQuestions, type ExamProfileId } from '../../lib/questionSelection'
+import { examProfilesForCourse, selectExamQuestions, type ExamProfileId } from '../../lib/questionSelection'
 import type { Question } from '../../types/course'
 import { optionLabel, questionOptionsForDisplay } from '../../lib/questionPresentation'
+import { getCourseFromSearchParams, withCourse } from '../../lib/courseQuery'
 import { scrollPageToTop } from '../../lib/scroll'
 import styles from './MockExamPage.module.css'
 
@@ -29,7 +30,9 @@ function formatElapsed(seconds: number) {
 }
 
 export function MockExamPage() {
-  const course = dianGestorCourse
+  const [searchParams] = useSearchParams()
+  const course = getCourseFromSearchParams(searchParams)
+  const examProfiles = examProfilesForCourse(course)
   const recordAnswer = useProgressStore((state) => state.recordAnswer)
   const ensureCourse = useProgressStore((state) => state.ensureCourse)
   const [profileId, setProfileId] = useState<ExamProfileId>('functional-training')
@@ -47,6 +50,17 @@ export function MockExamPage() {
   useEffect(() => {
     ensureCourse(course)
   }, [course, ensureCourse])
+
+  useEffect(() => {
+    setStarted(false)
+    setQuestions([])
+    setAnswers({})
+    setFlagged(new Set())
+    setCurrentIndex(0)
+    setSubmitted(false)
+    setElapsed(0)
+    setProfileId('functional-training')
+  }, [course.id])
 
   useEffect(() => {
     if (!started || submitted) return
@@ -89,7 +103,7 @@ export function MockExamPage() {
   }, [answers, questions])
 
   const begin = () => {
-    setQuestions(selectExamQuestions(course.questions, profileId))
+    setQuestions(selectExamQuestions(course, profileId))
     setAnswers({})
     setFlagged(new Set())
     setCurrentIndex(0)
@@ -132,12 +146,12 @@ export function MockExamPage() {
 
   if (!started) {
     return (
-      <div className="page page--narrow">
-        <Link className={styles.back} to="/practice"><ArrowLeft size={17}/> Práctica</Link>
+      <div className="page page--narrow" style={{ '--course-accent': course.accent } as CSSProperties}>
+        <Link className={styles.back} to={withCourse('/practice', course)}><ArrowLeft size={17}/> Práctica</Link>
         <header className={styles.setupHeader}>
           <span>Entrenamiento sin retroalimentación inmediata</span>
           <h1>Configura tu simulacro</h1>
-          <p>Elige la profundidad de la sesión. Los perfiles funcionales usan preguntas PJS de M1–M17; el perfil transversal trabaja M24–M28 como preparación complementaria. La ponderación interna de Umbral <strong>no representa una distribución oficial de la CNSC</strong>.</p>
+          <p>Elige la profundidad de la sesión para <strong>{course.shortTitle}</strong>. Los perfiles se construyen con la configuración de este curso y nunca mezclan preguntas de otra convocatoria. La ponderación interna de Umbral es formativa y <strong>no reemplaza una distribución oficial de la prueba</strong>.</p>
         </header>
 
         <div className={styles.profileGrid} role="radiogroup" aria-label="Tipo de simulacro">
@@ -165,10 +179,10 @@ export function MockExamPage() {
         </div>
 
         <section className={styles.setupNotes} aria-label="Cómo funciona este simulacro">
-          <div><Clock3 size={17}/><span><strong>Cronómetro de referencia</strong><small>Cuenta el tiempo, pero no impone un límite mientras la GOA oficial siga pendiente.</small></span></div>
+          <div><Clock3 size={17}/><span><strong>Cronómetro de referencia</strong><small>Cuenta el tiempo, pero no impone un límite mientras no exista una duración oficial específica aplicable al curso.</small></span></div>
           <div><Bookmark size={17}/><span><strong>Marca para revisar</strong><small>Puedes saltar entre preguntas, dejarlas pendientes y volver antes de entregar.</small></span></div>
           <div><Target size={17}/><span><strong>Resultado formativo</strong><small>Verás precisión por módulo y la explicación completa solo al finalizar.</small></span></div>
-          <div><CheckCircle2 size={17}/><span><strong>Transferencia entre módulos</strong><small>Los perfiles funcionales incluyen un mínimo de casos integradores sin sacrificar la cobertura M1–M17.</small></span></div>
+          <div><CheckCircle2 size={17}/><span><strong>Transferencia entre módulos</strong><small>Las sesiones combinan cobertura y prioridad pedagógica según el curso seleccionado.</small></span></div>
         </section>
 
         <div className={styles.setupAction}>
@@ -182,13 +196,13 @@ export function MockExamPage() {
   if (submitted) {
     const score = Math.round((results.correct / questions.length) * 100)
     return (
-      <div className="page page--narrow">
-        <Link className={styles.back} to="/practice"><ArrowLeft size={17}/> Práctica</Link>
+      <div className="page page--narrow" style={{ '--course-accent': course.accent } as CSSProperties}>
+        <Link className={styles.back} to={withCourse('/practice', course)}><ArrowLeft size={17}/> Práctica</Link>
         <header className={styles.resultHero}>
           <span>{profile.title} completado</span>
           <div className={styles.score}>{score}<small>/100</small></div>
           <h1>{results.correct} de {questions.length} respuestas correctas</h1>
-          <p>Resultado formativo de Umbral. No equivale a la calificación oficial ni presupone la cantidad, duración o ponderación definitiva de la prueba CNSC.</p>
+          <p>Resultado formativo de Umbral para {course.shortTitle}. No equivale a la calificación oficial ni presupone cantidad, duración o ponderación definitiva de la prueba.</p>
           <div className={styles.resultMeta}>
             <span><Clock3 size={15}/>{formatElapsed(elapsed)}</span>
             <span><Target size={15}/>{answeredCount}/{questions.length} respondidas</span>
@@ -234,7 +248,7 @@ export function MockExamPage() {
 
         <div className={styles.actions}>
           <Button size="lg" icon={<RotateCcw size={18}/>} onClick={restart}>Configurar otro</Button>
-          <Link to="/practice">Volver a práctica</Link>
+          <Link to={withCourse('/practice', course)}>Volver a práctica</Link>
         </div>
       </div>
     )
@@ -243,7 +257,7 @@ export function MockExamPage() {
   if (!current) return null
 
   return (
-    <div className="page page--narrow">
+    <div className="page page--narrow" style={{ '--course-accent': course.accent } as CSSProperties}>
       <div className={styles.examHeader}>
         <button type="button" aria-label="Volver a configuración" onClick={restart}><ArrowLeft size={19}/></button>
         <div><span>{profile.title}</span><strong>Pregunta {currentIndex + 1} de {questions.length}</strong></div>

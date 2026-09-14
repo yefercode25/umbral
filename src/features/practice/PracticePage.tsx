@@ -1,10 +1,12 @@
+import type { CSSProperties } from 'react'
 import { useEffect, useMemo, useState } from 'react'
-import { BookOpen, BrainCircuit, ClipboardCheck, Filter, Gauge, NotebookPen, Route, Shuffle } from 'lucide-react'
+import { BookOpenCheck, BrainCircuit, ClipboardCheck, Filter, Gauge, NotebookPen, Route, Shuffle } from 'lucide-react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { dianGestorCourse } from '../../../content/courses/dian-2676-gestor-ii/course'
 import { QuestionCard } from '../../components/learning/QuestionCard'
 import { Button } from '../../components/ui/Button'
 import { PageHeader } from '../../components/ui/PageHeader'
+import { courses } from '../../lib/courses'
+import { getCourseFromSearchParams, withCourse } from '../../lib/courseQuery'
 import { useProgressStore } from '../../stores/progressStore'
 import { deterministicOrder } from '../../lib/questionPresentation'
 import styles from './PracticePage.module.css'
@@ -15,68 +17,91 @@ const modes: Mode[] = ['all', 'pjs', 'integrated', 'core', 'transversal', 'error
 
 export function PracticePage() {
   const [searchParams, setSearchParams] = useSearchParams()
+  const course = getCourseFromSearchParams(searchParams)
   const requestedMode = searchParams.get('mode') as Mode | null
   const mode: Mode = requestedMode && modes.includes(requestedMode) ? requestedMode : 'all'
   const [seed, setSeed] = useState(0)
   const [visibleCount, setVisibleCount] = useState(20)
-  const setMode = (next: Mode) => setSearchParams(next === 'all' ? {} : { mode: next }, { replace: true })
-  const progress = useProgressStore((s) => s.courses[dianGestorCourse.id])
+  const progress = useProgressStore((state) => state.courses[course.id])
+  const config = course.practiceConfig
+  const coreModules = useMemo(() => new Set(config?.coreModuleIds ?? []), [config?.coreModuleIds])
+  const transversalModules = useMemo(() => new Set(config?.transversalModuleIds ?? []), [config?.transversalModuleIds])
+
+  const setMode = (next: Mode) => {
+    const params = new URLSearchParams({ course: course.slug })
+    if (next !== 'all') params.set('mode', next)
+    setSearchParams(params, { replace: true })
+  }
+
   const questions = useMemo(() => {
-    const coreModules = new Set(['m9','m10','m11','m12','m13','m14','m15','m16'])
-    const transversalModules = new Set(['m24','m25','m26','m27','m28'])
-    const filtered = dianGestorCourse.questions.filter((q) => {
+    const filtered = course.questions.filter((question) => {
       if (mode === 'all') return true
-      if (mode === 'pjs') return q.type === 'pjs'
-      if (mode === 'integrated') return Boolean(q.integrated)
-      if (mode === 'core') return coreModules.has(q.moduleId)
-      if (mode === 'transversal') return transversalModules.has(q.moduleId)
-      if (mode === 'saved') return Boolean(progress?.questionBookmarks?.includes(q.id))
-      const error = progress?.errorJournal?.[q.id]
+      if (mode === 'pjs') return question.type === 'pjs'
+      if (mode === 'integrated') return Boolean(question.integrated)
+      if (mode === 'core') return coreModules.size ? coreModules.has(question.moduleId) : true
+      if (mode === 'transversal') return transversalModules.has(question.moduleId)
+      if (mode === 'saved') return Boolean(progress?.questionBookmarks?.includes(question.id))
+      const error = progress?.errorJournal?.[question.id]
       return Boolean(error && !error.resolvedAt)
     })
-    return deterministicOrder(filtered, `practice:${seed}`, (question) => question.id)
-  }, [mode, seed, progress])
+    return deterministicOrder(filtered, `practice:${course.id}:${seed}`, (question) => question.id)
+  }, [course, coreModules, mode, progress, seed, transversalModules])
 
   useEffect(() => {
     setVisibleCount(20)
-  }, [mode, seed])
+  }, [course.id, mode, seed])
 
   const visibleQuestions = useMemo(() => questions.slice(0, visibleCount), [questions, visibleCount])
+  const hasIntegrated = course.questions.some((question) => question.integrated)
+  const hasTransversal = transversalModules.size > 0
+  const hasCaseLabs = config?.hasCaseLabs !== false
 
-  return <div className="page page--narrow">
-    <PageHeader eyebrow="Entrenamiento" title="Practicar" subtitle="Primero precisión; después velocidad. Cada respuesta explica el porqué y deja trazabilidad a fuentes oficiales." />
+  return <div className="page page--narrow" style={{ '--course-accent': course.accent } as CSSProperties}>
+    <PageHeader eyebrow="Entrenamiento" title="Practicar" subtitle={`Banco activo: ${course.shortTitle}. Primero precisión; después velocidad. Cada respuesta explica el porqué y deja trazabilidad a fuentes del curso.`} />
+
+    <nav className={styles.courseScope} aria-label="Curso para practicar">
+      {courses.map((item) => <Link key={item.id} to={withCourse('/practice', item)} className={item.id === course.id ? styles.courseScopeActive : ''}>
+        <span>{item.shortTitle}</span><small>{item.questions.length} preguntas</small>
+      </Link>)}
+    </nav>
+
     <section className={styles.visualIntro} aria-label="Práctica aplicada">
       <div className={styles.visualCopy}>
-        <span>Decide con contexto</span>
+        <span>{course.shortTitle}</span>
         <strong>Casos, distractores plausibles y retroalimentación con fuente</strong>
-        <p>La imagen es editorial; tus resultados, preguntas y métricas siempre provienen del banco real de Umbral.</p>
+        <p>Las métricas y preguntas pertenecen únicamente al curso seleccionado; Umbral no mezcla bancos entre convocatorias.</p>
       </div>
       <img src="/media/editorial/practice-adaptive.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" />
     </section>
+
     <div className={styles.toolbar}>
       <div className={styles.segment} aria-label="Filtro de práctica">
         <button type="button" aria-pressed={mode === 'all'} className={mode === 'all' ? styles.active : ''} onClick={() => setMode('all')}>Todas</button>
-        <button type="button" aria-pressed={mode === 'pjs'} className={mode === 'pjs' ? styles.active : ''} onClick={() => setMode('pjs')}>Solo PJS</button>
-        <button type="button" aria-pressed={mode === 'integrated'} className={mode === 'integrated' ? styles.active : ''} onClick={() => setMode('integrated')}>Integradoras</button>
-        <button type="button" aria-pressed={mode === 'core'} className={mode === 'core' ? styles.active : ''} onClick={() => setMode('core')}>Núcleo CT-CR-3007</button>
-        <button type="button" aria-pressed={mode === 'transversal'} className={mode === 'transversal' ? styles.active : ''} onClick={() => setMode('transversal')}>Transversal</button>
+        <button type="button" aria-pressed={mode === 'pjs'} className={mode === 'pjs' ? styles.active : ''} onClick={() => setMode('pjs')}>Situacionales</button>
+        {hasIntegrated ? <button type="button" aria-pressed={mode === 'integrated'} className={mode === 'integrated' ? styles.active : ''} onClick={() => setMode('integrated')}>Integradoras</button> : null}
+        <button type="button" aria-pressed={mode === 'core'} className={mode === 'core' ? styles.active : ''} onClick={() => setMode('core')}>{config?.coreLabel ?? 'Núcleo'}</button>
+        {hasTransversal ? <button type="button" aria-pressed={mode === 'transversal'} className={mode === 'transversal' ? styles.active : ''} onClick={() => setMode('transversal')}>{config?.transversalLabel ?? 'Complementario'}</button> : null}
         <button type="button" aria-pressed={mode === 'errors'} className={mode === 'errors' ? styles.active : ''} onClick={() => setMode('errors')}>Mis errores</button>
         <button type="button" aria-pressed={mode === 'saved'} className={mode === 'saved' ? styles.active : ''} onClick={() => setMode('saved')}>Guardadas</button>
       </div>
-      <Button variant="secondary" size="sm" icon={<Shuffle size={15}/>} onClick={() => setSeed((s) => s+1)}>Mezclar</Button>
+      <Button variant="secondary" size="sm" icon={<Shuffle size={15}/>} onClick={() => setSeed((value) => value + 1)}>Mezclar</Button>
     </div>
+
     <div className={styles.practiceModes}>
-      <div className={styles.examCta}><div><NotebookPen size={18}/><span><strong>Cuaderno de errores</strong><small>Clasifica fallos · guarda tu regla · comprueba después</small></span></div><Link to="/practice/errors">Revisar</Link></div>
-      <div className={styles.examCta}><div><ClipboardCheck size={18}/><span><strong>Diagnóstico inicial</strong><small>20 preguntas · detecta prioridades antes de empezar</small></span></div><Link to="/practice/diagnostic">Evaluarme</Link></div>
-      <div className={styles.examCta}><div><BrainCircuit size={18}/><span><strong>Sesión recomendada</strong><small>12 preguntas · prioriza errores y habilidades débiles</small></span></div><Link to="/practice/adaptive">Practicar</Link></div>
-      <div className={styles.examCta}><div><Gauge size={18}/><span><strong>Simulacros funcionales</strong><small>10, 20 o 40 preguntas · PJS · marca para revisar</small></span></div><Link to="/practice/mock">Configurar</Link></div>
-      <div className={styles.examCta}><div><Route size={18}/><span><strong>Casos integradores</strong><small>8 expedientes · 40 decisiones · cruza varios módulos</small></span></div><Link to="/practice/cases">Resolver</Link></div>
+      <div className={styles.examCta}><div><NotebookPen size={18}/><span><strong>Cuaderno de errores</strong><small>Clasifica fallos, guarda tu regla y comprueba después.</small></span></div><Link to={withCourse('/practice/errors', course)}>Revisar</Link></div>
+      <div className={styles.examCta}><div><ClipboardCheck size={18}/><span><strong>Diagnóstico inicial</strong><small>20 preguntas para detectar prioridades antes de estudiar.</small></span></div><Link to={withCourse('/practice/diagnostic', course)}>Evaluarme</Link></div>
+      <div className={styles.examCta}><div><BrainCircuit size={18}/><span><strong>Sesión recomendada</strong><small>12 preguntas priorizadas por errores, debilidades y cobertura nueva.</small></span></div><Link to={withCourse('/practice/adaptive', course)}>Practicar</Link></div>
+      <div className={styles.examCta}><div><Gauge size={18}/><span><strong>Simulacros</strong><small>10, 20 o 40 preguntas sin feedback durante la sesión.</small></span></div><Link to={withCourse('/practice/mock', course)}>Configurar</Link></div>
+      {hasCaseLabs ? <div className={styles.examCta}><div><Route size={18}/><span><strong>Casos integradores</strong><small>Expedientes largos que cruzan varios módulos del curso.</small></span></div><Link to={withCourse('/practice/cases', course)}>Resolver</Link></div> : null}
+      <div className={styles.examCta}><div><BookOpenCheck size={18}/><span><strong>Volver al contenido</strong><small>Revisa los módulos antes de seguir entrenando.</small></span></div><Link to={`/courses/${course.slug}`}>Curso</Link></div>
     </div>
+
     <div className={styles.summary}><Filter size={16}/><span>{questions.length} preguntas disponibles en este filtro</span></div>
     <div className={styles.list}>
-      {visibleQuestions.map((question) => <QuestionCard key={`${question.id}-${seed}`} course={dianGestorCourse} question={question} compact />)}
+      {visibleQuestions.map((question) => <QuestionCard key={`${question.id}-${seed}`} course={course} question={question} compact />)}
     </div>
-    {visibleCount < questions.length && <div className={styles.loadMore}><Button variant="secondary" onClick={() => setVisibleCount((count) => Math.min(count + 20, questions.length))}>Mostrar 20 más</Button><span>Viendo {visibleQuestions.length} de {questions.length}</span></div>}
-    <div className={styles.end}><BookOpen size={18}/><p>El banco crecerá por lotes verificados. Umbral prioriza preguntas con explicación y fuente antes que volumen artificial.</p></div>
+
+    {visibleCount < questions.length ? <div className={styles.loadMore}><Button variant="secondary" onClick={() => setVisibleCount((count) => Math.min(count + 20, questions.length))}>Cargar 20 más</Button><span>Mostrando {visibleQuestions.length} de {questions.length}</span></div> : null}
+    {questions.length === 0 ? <div className={styles.end}><BookOpenCheck size={19}/><p>No hay preguntas en este filtro todavía. Cambia el filtro o continúa estudiando.</p></div> : null}
   </div>
 }

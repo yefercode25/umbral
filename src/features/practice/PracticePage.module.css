@@ -30,3 +30,10 @@
 .visualCopy strong { font-size:17px;line-height:1.25;letter-spacing:-.02em; }
 .visualCopy p { margin:3px 0 0;color:rgba(244,246,248,.72);font-size:11px;line-height:1.45; }
 @media (min-width:700px) { .visualIntro { min-height:190px; }.visualCopy { padding:22px;max-width:470px; }.visualCopy strong { font-size:20px; } }
+
+.courseScope { display:flex;gap:8px;margin:-4px 0 16px;overflow-x:auto;scrollbar-width:none; }
+.courseScope::-webkit-scrollbar { display:none; }
+.courseScope a { min-width:160px;padding:10px 12px;border:1px solid var(--color-border);border-radius:13px;background:var(--color-surface);color:inherit;text-decoration:none;display:grid;gap:2px; }
+.courseScope a span { font-size:12px;font-weight:780; }
+.courseScope a small { color:var(--color-text-muted);font-size:10px; }
+.courseScope .courseScopeActive { border-color:color-mix(in srgb,var(--course-accent) 55%,var(--color-border));background:color-mix(in srgb,var(--course-accent) 8%,var(--color-surface)); }
