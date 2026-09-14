@@ -46,9 +46,8 @@ export function CoursePage() {
 
     <div className={styles.units}>
       {course.units.map((unit) => <section key={unit.id} className={styles.unit}>
-        <div className={`${styles.unitIntro} ${unit.artwork ? styles.unitIntroWithArt : ''}`}>
+        <div className={styles.unitIntro}>
           <div className={styles.unitHead}><span>Unidad {unit.order}</span><h2>{unit.title}</h2><p>{unit.description}</p></div>
-          {unit.artwork ? <figure className={styles.unitVisual}><img src={unit.artwork} alt={unit.artworkAlt ?? ''} loading="lazy" decoding="async" /></figure> : null}
         </div>
         <div className={styles.moduleGrid}>
           {unit.moduleIds.map((moduleId) => {
