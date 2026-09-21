@@ -65,7 +65,7 @@ export function LessonPage() {
       <h1>{lesson.title}</h1><p className={styles.subtitle}>{lesson.subtitle}</p>
       <LessonNarrator course={course} lesson={lesson} supportGraphic={supportGraphic} />
       {supportGraphic ? <LessonSupportGraphic graphic={supportGraphic} /> : null}
-      <LessonRenderer course={course} blocks={lesson.blocks}/>
+      <LessonRenderer key={`${course.id}:${lesson.id}`} course={course} blocks={lesson.blocks}/>
       <div className={styles.finish}>
         <div><span>Lección {index+1} de {allPublished.length}</span><strong>{next ? `Siguiente: ${next.title}` : 'Has llegado al final del contenido publicado.'}</strong></div>
         <Button size="lg" onClick={finish} icon={<ArrowRight size={18}/>}>{next ? 'Completar y continuar' : 'Completar lección'}</Button>

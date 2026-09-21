@@ -43,7 +43,7 @@ export function LessonRenderer({ course, blocks }: { course: Course; blocks: Les
       if (block.type === 'decision-simulator') return <LegalDecisionSimulator key={key} title={block.title} text={block.text} scenario={block.scenario} prompt={block.prompt} options={block.options}/>
       if (block.type === 'checkpoint') {
         const q = course.questions.find((question) => question.id === block.questionId)
-        return q ? <QuestionCard key={key} course={course} question={q}/> : null
+        return q ? <QuestionCard key={`checkpoint-${block.questionId}-${index}`} course={course} question={q}/> : null
       }
       if (block.type === 'sources') {
         const sources = block.sourceIds.map((id) => course.sources.find((s) => s.id === id)).filter(Boolean)

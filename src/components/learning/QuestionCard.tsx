@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Bookmark, CheckCircle2, CircleAlert, ExternalLink, RotateCcw } from 'lucide-react'
 import type { Course, Question } from '../../types/course'
 import { useProgressStore } from '../../stores/progressStore'
@@ -19,6 +19,14 @@ export function QuestionCard({ course, question, compact = false, onSubmitted, s
   const displayOptions = useMemo(() => questionOptionsForDisplay(question), [question])
   const correct = selected === question.correctOptionId
   const selectedOption = useMemo(() => question.options.find((o) => o.id === selected), [question.options, selected])
+
+  // QuestionCard is reused in lessons, adaptive practice and case labs. When React
+  // keeps the same component instance while the question prop changes, local UI
+  // state must not leak from the previous question into the new one.
+  useEffect(() => {
+    setSelected(null)
+    setSubmitted(false)
+  }, [course.id, question.id])
 
   const submit = () => {
     if (!selected || submitted) return
