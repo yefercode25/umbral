@@ -4,6 +4,15 @@
 Cada lección combina: objetivo → lectura corta → visual/diagrama → ejemplo → mini checkpoint → resumen → fuentes.
 Cada módulo finaliza con evaluación. La práctica PJS mezcla habilidades de módulos previos.
 
+## Profundización 2026 y lectura de la GOA (actualización del 12/10/2026)
+
+- El plan conserva las **9 unidades y 29 módulos** y contiene ahora **262 lecciones y 685 preguntas**: 29 talleres profesionales nuevos (M0–M28), 12 laboratorios de expediente (M6–M17), 9 clínicas jurídico-operativas (M9–M17) y una lectura especializada de la GOA (M0).
+- En cada módulo realiza primero las lecciones de fundamentos; después el **taller de expediente**, el **laboratorio** cuando exista y finalmente la **clínica** en M9–M17. El material no se sustituye: se añade dificultad gradual.
+- Los **simulacros funcionales DIAN** seleccionan solo **PJS con tres alternativas**. El nuevo perfil «Expedientes profesionales» escoge exclusivamente casos nuevos; el filtro «Casos nuevos · 2026» permite revisar las 70 preguntas añadidas.
+- M18–M20 incluyen **34 afirmaciones Likert** específicas del perfil para comportamentales/integridad sin claves de acierto. Las prácticas conceptuales de otras lecciones no deben confundirse con ese instrumento oficial.
+- La CNSC publicó la **GOA el 08/10/2026**; sin embargo, **los indicadores por número de inscripción siguen sin aportarse**. No tratar como ejes individuales confirmados M24–M28 (Office, Excel, datos, conjuntos, probabilidad). Se aplica el corte normativo que señala la GOA: **antes del 19/06/2026**.
+- La explicación de matrices, clínicas, trazabilidad MERF y pruebas se encuentra en `docs/16-dian-2676-profundizacion-funcional-goa-2026-10-12.md`.
+
 ## Unidad 0 — Preparación y diagnóstico
 ### M0. Perfil del empleo y estrategia
 - propósito de CT-CR-3007

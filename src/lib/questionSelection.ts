@@ -1,6 +1,6 @@
 import type { Course, Question } from '../types/course'
 
-export type ExamProfileId = 'functional-quick' | 'functional-training' | 'functional-extended' | 'study-mix' | 'transversal-check'
+export type ExamProfileId = 'functional-quick' | 'functional-training' | 'functional-extended' | 'functional-deep' | 'study-mix' | 'transversal-check'
 
 export type ExamProfile = {
   id: ExamProfileId
@@ -23,6 +23,16 @@ export function examProfilesForCourse(course: Course): ExamProfile[] {
   const hasIntegratedCases = course.questions.some((question) => question.integrated && (question.relatedModuleIds?.length ?? 0) > 0)
 
   return [
+    ...(course.id === 'dian-2676-gestor-ii' ? [{
+      id: 'functional-deep' as const,
+      title: 'Expedientes profesionales · PJS',
+      shortTitle: 'Expedientes',
+      description: '20 casos originales de decisión: expedientes tributarios y aplicación transversal de legalidad, evidencias, términos y reserva.',
+      size: 20,
+      scopeLabel: 'Casos de profundización M1–M17',
+      questionTypeLabel: 'Solo PJS · 3 alternativas',
+      kind: 'functional' as const,
+    }] : []),
     {
       id: 'functional-quick',
       title: 'Núcleo rápido',
@@ -30,7 +40,7 @@ export function examProfilesForCourse(course: Course): ExamProfile[] {
       description: `Sesión breve con énfasis en ${core.toLowerCase()} y aplicación situacional.`,
       size: 10,
       scopeLabel: `${coreCount} módulos · énfasis prioritario`,
-      questionTypeLabel: 'PJS + aplicación',
+      questionTypeLabel: course.id === 'dian-2676-gestor-ii' ? 'Solo PJS · 3 alternativas' : 'PJS + aplicación',
       kind: 'functional',
       integratedTarget: hasIntegratedCases ? 2 : 0,
     },
@@ -41,7 +51,7 @@ export function examProfilesForCourse(course: Course): ExamProfile[] {
       description: `Cobertura amplia del recorrido evaluable con mayor presencia de ${core.toLowerCase()}.`,
       size: 20,
       scopeLabel: `${coreCount} módulos · cobertura amplia`,
-      questionTypeLabel: 'PJS + conocimiento',
+      questionTypeLabel: course.id === 'dian-2676-gestor-ii' ? 'Solo PJS · 3 alternativas' : 'PJS + conocimiento',
       kind: 'functional',
       integratedTarget: hasIntegratedCases ? 4 : 0,
     },
@@ -52,7 +62,7 @@ export function examProfilesForCourse(course: Course): ExamProfile[] {
       description: 'Sesión larga para medir transferencia entre temas, resistencia de atención y precisión sostenida.',
       size: 40,
       scopeLabel: `${coreCount} módulos · cobertura + profundidad`,
-      questionTypeLabel: 'PJS + conocimiento',
+      questionTypeLabel: course.id === 'dian-2676-gestor-ii' ? 'Solo PJS · 3 alternativas' : 'PJS + conocimiento',
       kind: 'functional',
       integratedTarget: hasIntegratedCases ? 10 : 0,
     },
@@ -183,6 +193,8 @@ export function selectExamQuestions(course: Course, profileId: ExamProfileId): Q
     return selectBalancedQuestions(pool.length ? pool : course.questions, profile.size)
   }
 
-  const pool = course.questions.filter((question) => examModuleIds.has(question.moduleId))
+  // La GOA de DIAN 2676 establece tres opciones de juicio situacional en funcionales.
+  // Los ítems conceptuales se conservan en estudio y repaso mixto, no en el simulacro funcional.
+  const pool = course.questions.filter((question) => examModuleIds.has(question.moduleId) && (course.id !== 'dian-2676-gestor-ii' || question.type === 'pjs') && (profile.id !== 'functional-deep' || question.id.startsWith('q-goa26-') || question.id.startsWith('q-master-2026-') || question.id.startsWith('q-transversal-2026-')))
   return takeWeightedByModule(pool, profile.size, priorityModuleIds, profile.size >= Math.min(examModuleIds.size, profile.size), profile.integratedTarget ?? 0)
 }

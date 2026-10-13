@@ -151,7 +151,7 @@ export function MockExamPage() {
         <header className={styles.setupHeader}>
           <span>Entrenamiento sin retroalimentación inmediata</span>
           <h1>Configura tu simulacro</h1>
-          <p>Elige la profundidad de la sesión para <strong>{course.shortTitle}</strong>. Los perfiles se construyen con la configuración de este curso y nunca mezclan preguntas de otra convocatoria. La ponderación interna de Umbral es formativa y <strong>no reemplaza una distribución oficial de la prueba</strong>.</p>
+          <p>Elige la profundidad de la sesión para <strong>{course.shortTitle}</strong>. Los perfiles se construyen con la configuración de este curso y nunca mezclan preguntas de otra convocatoria. {course.id === 'dian-2676-gestor-ii' ? 'En DIAN 2676 los simulacros funcionales incluyen únicamente PJS; el repaso mixto mantiene preguntas de estudio.' : 'Los tipos de pregunta se ajustan a los contenidos disponibles para esta convocatoria.'} La ponderación interna de Umbral es formativa y <strong>no reemplaza la calificación psicométrica ni una distribución oficial</strong>.</p>
         </header>
 
         <div className={styles.profileGrid} role="radiogroup" aria-label="Tipo de simulacro">
@@ -200,7 +200,7 @@ export function MockExamPage() {
         <Link className={styles.back} to={withCourse('/practice', course)}><ArrowLeft size={17}/> Práctica</Link>
         <header className={styles.resultHero}>
           <span>{profile.title} completado</span>
-          <div className={styles.score}>{score}<small>/100</small></div>
+          <div className={styles.score}>{score}<small>%</small></div>
           <h1>{results.correct} de {questions.length} respuestas correctas</h1>
           <p>Resultado formativo de Umbral para {course.shortTitle}. No equivale a la calificación oficial ni presupone cantidad, duración o ponderación definitiva de la prueba.</p>
           <div className={styles.resultMeta}>

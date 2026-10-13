@@ -65,7 +65,7 @@ export const dianSources: SourceRef[] = [
     url: 'https://www.funcionpublica.gov.co/modelo-integrado-de-planeacion-y-gestion',
     type: 'official',
     verifiedAt: '2026-09-13',
-    note: 'Portal oficial vigente del MIPG. La versión actual consultada organiza el modelo en seis dimensiones y sus políticas de gestión y desempeño.'
+    note: 'El portal muestra ahora la versión 7 (seis dimensiones), posterior al corte 19/06/2026 de la GOA. Para estudiar el corte usar Manual MIPG 6.1 de febrero de 2026 (siete dimensiones).'
   },
   {
     id: 'codigo-integridad',
@@ -627,5 +627,31 @@ export const dianSources: SourceRef[] = [
     verifiedAt: '2026-09-13',
     note: 'Información oficial de orientación al ciudadano sobre requisitos, efectos, garantías, plazos y consecuencias de incumplimiento de facilidades de pago.'
   }
-
+  ,{
+    id: 'goa-cnsc-2676-2026',
+    title: 'DIAN 2676 · Guía de Orientación al Aspirante para la presentación de las Pruebas Escritas · octubre 2026',
+    publisher: 'CNSC · Fundación Universitaria del Área Andina',
+    url: 'https://www.cnsc.gov.co/sites/default/files/2026-10/dian-2676_guia_orientacion_aspirante_presentacion-pruebas-escritas_0.pdf',
+    type: 'official',
+    verifiedAt: '2026-10-12',
+    note: 'Publicación oficial de la GOA el 08/10/2026. Define formato PJS funcional, autoinforme Likert comportamental/integridad, ponderaciones condicionadas a modalidad y corte normativo anterior al 19/06/2026. Los indicadores individuales se consultan en el portal del operador con número de inscripción.'
+  },
+  {
+    id: 'doctrina-dian-6513-2024',
+    title: 'Concepto DIAN 006513 (int. 766) de 12/09/2024 · Imputación de pagos en facilidades',
+    publisher: 'DIAN · Compilación jurídica',
+    url: 'https://normograma.dian.gov.co/dian/compilacion/docs/oficio_dian_6513_2024.htm',
+    type: 'official',
+    verifiedAt: '2026-10-12',
+    note: 'Artículos 804, 814 y 814-3 del ET: proporcionalidad y asignación a impuesto/periodo de la resolución de facilidad. Doctrina publicada antes del corte normativo de GOA.'
+  },
+  {
+    id: 'dian-tramite-devoluciones',
+    title: 'DIAN · Trámite y requisitos para devoluciones y compensaciones',
+    publisher: 'DIAN',
+    url: 'https://www.dian.gov.co/tramitesservicios/Tramites_Impuestos/Devoluciones/Paginas/Tramite-y-requisitos.aspx',
+    type: 'official',
+    verifiedAt: '2026-10-12',
+    note: 'Explica plazos general 50 días, con garantía 20 días y automático 15 días sujetos a requisitos. Esta página es una fuente operativa dinámica: contrastar con las normas vigentes antes del 19/06/2026 para el examen.'
+  }
 ]

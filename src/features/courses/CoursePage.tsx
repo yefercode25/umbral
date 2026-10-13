@@ -42,7 +42,7 @@ export function CoursePage() {
       </div>
     </section>
 
-    {course.officialGuideStatus === 'pending' && <aside className={styles.notice}><CircleAlert size={19}/><p><strong>Currículo sujeto a actualización oficial.</strong> {course.guideNotice ?? 'Umbral actualizará prioridades cuando se publique una orientación oficial más específica, sin borrar tu progreso.'}</p></aside>}
+    {(course.officialGuideStatus === 'pending' || course.guideNotice) && <aside className={styles.notice}><CircleAlert size={19}/><p><strong>{course.officialGuideStatus === 'published' ? 'Guía publicada · consulta tus indicadores.' : 'Currículo sujeto a actualización oficial.'}</strong> {course.guideNotice ?? 'Umbral actualizará prioridades cuando se publique una orientación oficial más específica, sin borrar tu progreso.'}</p></aside>}
 
     <div className={styles.units}>
       {course.units.map((unit) => <section key={unit.id} className={styles.unit}>

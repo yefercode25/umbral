@@ -1,17 +1,10 @@
 import { useMemo, useState } from 'react'
-import { CheckCircle2, RotateCcw, Scale, ShieldCheck, XCircle } from 'lucide-react'
+import { RotateCcw, Scale, ShieldCheck } from 'lucide-react'
+import type { BehaviorStatement } from '../../types/course'
 import { motion } from 'motion/react'
 import styles from './BehaviorProfileSimulator.module.css'
 
-type Statement = {
-  id: string
-  text: string
-  direction: 'direct' | 'inverse'
-  competency: string
-  note: string
-}
-
-const statements: Statement[] = [
+const defaultStatements: BehaviorStatement[] = [
   { id:'s1', text:'Cuando una instrucción cambia, reviso cómo afecta mis responsabilidades antes de continuar con el mismo método.', direction:'direct', competency:'Adaptabilidad · nivel 3', note:'El nivel 3 enfatiza anticipar repercusiones y ajustar el propio accionar frente al cambio.' },
   { id:'s2', text:'Si una forma de trabajo me ha funcionado antes, prefiero mantenerla aunque aparezcan nuevas evidencias o herramientas institucionales.', direction:'inverse', competency:'Adaptabilidad · nivel 3', note:'Una formulación inversa puede describir rigidez. La especificación técnica de DIAN 2676 exige afirmaciones directas e inversas.' },
   { id:'s3', text:'Antes de comunicar una decisión sensible, considero qué canal y método reducen barreras y permiten que el interlocutor comprenda el mensaje.', direction:'direct', competency:'Comunicación efectiva · nivel 3', note:'El nivel 3 selecciona métodos adecuados y considera el impacto de la comunicación en los interlocutores.' },
@@ -25,13 +18,13 @@ const choices = [
   { id:'strong-yes', label:'Muy de acuerdo' },
 ]
 
-export function BehaviorProfileSimulator({ title, text }: { title: string; text: string }) {
+export function BehaviorProfileSimulator({ title, text, statements = defaultStatements }: { title: string; text: string; statements?: BehaviorStatement[] }) {
   const [index, setIndex] = useState(0)
   const [answers, setAnswers] = useState<Record<string,string>>({})
   const statement = statements[index] ?? statements[0]!
   const answered = answers[statement.id]
   const completed = Object.keys(answers).length === statements.length
-  const directCount = useMemo(() => statements.filter((item) => item.direction === 'direct').length, [])
+  const directCount = useMemo(() => statements.filter((item) => item.direction === 'direct').length, [statements])
 
   const answer = (choice: string) => setAnswers((current) => ({ ...current, [statement.id]: choice }))
   const next = () => { if (index < statements.length - 1) setIndex((value) => value + 1) }
@@ -52,7 +45,7 @@ export function BehaviorProfileSimulator({ title, text }: { title: string; text:
         {choices.map((choice) => <button type="button" key={choice.id} className={answered === choice.id ? styles.choiceActive : styles.choice} onClick={() => answer(choice.id)}>{choice.label}</button>)}
       </div>
       {answered && <motion.div className={styles.explanation} initial={{ opacity:0 }} animate={{ opacity:1 }}>
-        <div>{statement.direction === 'direct' ? <CheckCircle2 size={17}/> : <XCircle size={17}/>}<strong>{statement.direction === 'direct' ? 'Afirmación directa' : 'Afirmación inversa'}</strong></div>
+        <div><Scale size={17}/><strong>{statement.direction === 'direct' ? 'Enunciado directo' : 'Enunciado inverso'}</strong></div>
         <p>{statement.note}</p>
         <small>No se muestra una “respuesta correcta”: estas pruebas estiman ajuste conductual y controlan patrones de respuesta. Contesta de forma coherente con tu conducta real.</small>
       </motion.div>}

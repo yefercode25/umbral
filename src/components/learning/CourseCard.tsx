@@ -30,7 +30,7 @@ export function CourseCard({ course, completion, publishedLessonCount }: { cours
       </div>
       <div className={styles.meta}>
         <span><Clock3 size={15} /> {publishedLessonCount} lecciones publicadas</span>
-        <span>{course.officialGuideStatus === 'pending' ? 'Orientación específica pendiente' : 'Guía oficial incorporada'}</span>
+        <span>{course.officialGuideStatus === 'pending' ? 'Orientación específica pendiente' : 'Guía de orientación publicada'}</span>
       </div>
       <ProgressBar value={completion} />
       <div className={styles.footer}><span>{completion > 0 ? 'Continuar' : 'Comenzar'}</span><ArrowRight size={18} /></div>

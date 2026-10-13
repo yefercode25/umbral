@@ -1,8 +1,10 @@
 import { describe, expect, it } from 'vitest'
 import { dianGestorCourse } from '../../content/courses/dian-2676-gestor-ii/course'
+import { examProfilesForCourse, selectExamQuestions } from '../../src/lib/questionSelection'
 
 const activeBlockTypes = new Set([
   'checkpoint',
+  'decision-simulator',
   'sequence-exercise',
   'prescription-simulator',
   'coactive-simulator',
@@ -14,13 +16,13 @@ const activeBlockTypes = new Set([
 ])
 
 describe('DIAN Gestor II course integrity', () => {
-  it('matches the audited alpha.6 content snapshot', () => {
-    expect(dianGestorCourse.version).toBe('2026.09.13-alpha.6')
+  it('retains 2026.09 original content and extends the October 2026 curriculum', () => {
+    expect(dianGestorCourse.version).toBe('2026.10.12-dian-transversal.3')
     expect(dianGestorCourse.units).toHaveLength(9)
     expect(dianGestorCourse.modules).toHaveLength(29)
-    expect(dianGestorCourse.lessons).toHaveLength(211)
-    expect(dianGestorCourse.questions).toHaveLength(615)
-    expect(dianGestorCourse.sources).toHaveLength(93)
+    expect(dianGestorCourse.lessons).toHaveLength(309)
+    expect(dianGestorCourse.questions).toHaveLength(759)
+    expect(dianGestorCourse.sources).toHaveLength(100)
   })
 
   it('uses unique ids across core collections', () => {
@@ -129,9 +131,37 @@ describe('DIAN Gestor II course integrity', () => {
     }
   })
 
-  it('keeps the course metadata explicit about its provisional guide status', () => {
+  it('uses only PJS in DIAN functional mock exams and keeps dedicated advanced dossier sessions', () => {
+    expect(dianGestorCourse.lessons.filter((item) => item.id.endsWith('-advanced-2026'))).toHaveLength(29)
+    expect(dianGestorCourse.lessons.filter((item) => item.id.endsWith('-dossier-2026'))).toHaveLength(12)
+    expect(dianGestorCourse.lessons.filter((item) => item.id.endsWith('-clinic-2026'))).toHaveLength(9)
+    expect(dianGestorCourse.questions.filter((item) => item.id.startsWith('q-goa26-clinic-'))).toHaveLength(18)
+    expect(dianGestorCourse.questions.filter((item) => item.id.startsWith('q-goa26-'))).toHaveLength(70)
+    expect(dianGestorCourse.lessons.filter((item) => item.id.endsWith('-master-2026'))).toHaveLength(29)
+    expect(dianGestorCourse.questions.filter((item) => item.id.startsWith('q-master-2026-'))).toHaveLength(38)
+    for (const module of dianGestorCourse.modules) {
+      const firstLesson = module.lessonIds.map((id) => dianGestorCourse.lessons.find((item) => item.id === id)).filter((item) => item !== undefined).sort((a, b) => a.order - b.order)[0]
+      expect(firstLesson?.id, `Teoría inicial ${module.id}`).toBe(`${module.id}-master-2026`)
+      const theory = firstLesson!
+      expect(theory.blocks.filter((block) => block.type === 'paragraph' || block.type === 'lead' || block.type === 'definition').length, `Teoría sustantiva ${module.id}`).toBeGreaterThanOrEqual(3)
+      expect(theory.blocks.some((block) => block.type === 'comparison'), `Matriz ${module.id}`).toBe(true)
+      expect(theory.blocks.some((block) => block.type === 'example'), `Expediente ${module.id}`).toBe(true)
+      expect(theory.blocks.some((block) => block.type === 'checkpoint'), `Práctica ${module.id}`).toBe(true)
+    }
+
+    expect(examProfilesForCourse(dianGestorCourse).some((item) => item.id === 'functional-deep')).toBe(true)
+    for (const profileId of ['functional-quick', 'functional-training', 'functional-extended', 'functional-deep'] as const) {
+      const questions = selectExamQuestions(dianGestorCourse, profileId)
+      expect(questions.length).toBeGreaterThan(0)
+      expect(questions.every((question) => question.type === 'pjs')).toBe(true)
+      if (profileId === 'functional-deep') expect(questions.every((question) => question.id.startsWith('q-goa26-') || question.id.startsWith('q-master-2026-') || question.id.startsWith('q-transversal-2026-'))).toBe(true)
+    }
+  })
+
+  it('keeps GOA published and avoids presenting unverified individual indicators as official', () => {
     expect(dianGestorCourse.disclaimer.length).toBeGreaterThan(40)
-    expect(dianGestorCourse.officialGuideStatus).toBe('pending')
+    expect(dianGestorCourse.officialGuideStatus).toBe('published')
+    expect(dianGestorCourse.guideNotice).toContain('número de inscripción')
     expect(dianGestorCourse.updatedAt).toMatch(/^\d{4}-\d{2}-\d{2}$/)
   })
 })

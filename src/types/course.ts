@@ -10,6 +10,8 @@ export type SourceRef = {
   note?: string
 }
 
+export type BehaviorStatement = { id: string; text: string; direction: 'direct' | 'inverse'; competency: string; note: string }
+
 export type LessonBlock =
   | { type: 'paragraph'; text: string }
   | { type: 'lead'; text: string }
@@ -29,7 +31,7 @@ export type LessonBlock =
   | { type: 'account-simulator'; title: string; text: string }
   | { type: 'enforcement-simulator'; title: string; text: string }
   | { type: 'refund-simulator'; title: string; text: string }
-  | { type: 'behavior-simulator'; title: string; text: string }
+  | { type: 'behavior-simulator'; title: string; text: string; statements?: BehaviorStatement[] }
   | { type: 'concursal-simulator'; title: string; text: string }
   | {
       type: 'decision-simulator'

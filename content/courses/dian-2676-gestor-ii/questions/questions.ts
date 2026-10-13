@@ -3442,12 +3442,12 @@ export const dianQuestions: Question[] = [
   },
   {
     id:'q-mipg-v6-02', moduleId:'m2', skillIds:['mipg','seguimiento'], type:'single', difficulty:2,
-    stem:'En la versión vigente consultada de MIPG, ¿qué dimensión se concentra en saber si la gestión funcionó, controlar riesgos y orientar mejoras?',
+    stem:'Según el Manual MIPG versión 6.1 de febrero de 2026, ¿cuál es la séptima dimensión del modelo?',
     options:[
-      {id:'a',text:'Seguimiento, Evaluación y Control Integral.',rationale:'Es la dimensión que articula seguimiento, evaluación y control para brindar aseguramiento razonable y mejorar.'},
-      {id:'b',text:'Gestión del Talento Humano únicamente.',rationale:'Talento Humano aborda capacidades y desarrollo de las personas, no concentra todo el seguimiento institucional.'},
-      {id:'c',text:'Relación Estado–Ciudadanías únicamente.',rationale:'Esta dimensión se orienta a la relación con ciudadanos y grupos de valor.'}
-    ], correctOptionId:'a', explanation:'El modelo vigente consultado presenta seis dimensiones; Seguimiento, Evaluación y Control Integral cierra el ciclo de gestión con información para corregir y mejorar.', sourceIds:['mipg'], verifiedAt:'2026-09-13'
+      {id:'a',text:'Control Interno.',rationale:'Es la séptima dimensión de la versión 6.1 y desarrolla el MECI.'},
+      {id:'b',text:'Relación Estado–Ciudadanías.',rationale:'Forma parte de la organización posterior de seis dimensiones, no es la séptima del manual 6.1.'},
+      {id:'c',text:'Seguimiento, Evaluación y Control Integral.',rationale:'Es denominación asociada a la reorganización del MIPG posterior al corte.'}
+    ], correctOptionId:'a', explanation:'Manual MIPG 6.1 (febrero de 2026): siete dimensiones; séptima Control Interno. La versión 7 (agosto) reorganiza el modelo en seis dimensiones, pero es posterior al corte GOA del 19/06/2026.', sourceIds:['mipg-manual-6-1-2026','mipg-manual-v7-2026'], verifiedAt:'2026-10-12'
   },
   {
     id:'q-mipg-v6-03', moduleId:'m2', skillIds:['mipg','procedimiento'], type:'pjs', difficulty:3,
