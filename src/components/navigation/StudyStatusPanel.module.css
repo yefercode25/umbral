@@ -1,0 +1,25 @@
+.panel{display:none;}
+@media(min-width:1320px){
+.panel{display:flex;position:sticky;top:0;max-height:100dvh;overflow:auto;flex-direction:column;gap:19px;padding:25px 17px 34px;border-left:2px solid var(--color-border);background:var(--color-surface);}
+}
+.hud{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
+.hud>div{min-width:0;display:grid;grid-template-columns:24px 1fr;gap:3px 7px;align-items:center;border:2px solid var(--color-border);border-bottom-width:4px;border-radius:15px;padding:9px 11px;}
+.hud>div:first-child{color:var(--color-warning);}
+.hud>div:nth-child(2){color:var(--color-brand-strong);}
+.hud strong{font-family:var(--font-display);font-size:23px;line-height:1;}
+.hud small{grid-column:1/-1;color:var(--color-text-muted);font-size:11px;font-weight:800;}
+.card{padding:18px 16px;border:2px solid var(--color-border);border-bottom-width:5px;border-radius:18px;background:var(--color-surface);}
+.rank{display:flex;align-items:center;gap:10px;}.rank small{font-size:10px;font-weight:900;letter-spacing:.08em;color:var(--color-text-muted);}
+.rank h2{font-family:var(--font-display);font-size:17px;line-height:1.2;margin:4px 0 0;}
+.trophy{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:var(--color-warning-soft);color:var(--color-warning);flex:0 0 auto;}
+.card p{font-size:12px;font-weight:700;color:var(--color-text-muted);line-height:1.55;margin:15px 0;}
+.footer{display:flex;justify-content:space-between;margin-top:10px;gap:10px;color:var(--color-text-muted);font-size:12px;font-weight:800;}
+.cardTitle{margin:0 0 17px;display:flex;align-items:center;gap:8px;font-family:var(--font-display);font-size:18px;}
+.cardTitle svg{color:var(--color-warning);}
+.goal{display:flex;align-items:end;justify-content:space-between;margin-bottom:14px;gap:8px;}
+.goal strong{font-family:var(--font-display);font-size:29px;line-height:1;}.goal small{font-size:13px;color:var(--color-text-muted);}
+.goal span{font-size:11px;font-weight:800;color:var(--color-success);text-align:right;}
+.go{margin-top:16px;display:flex;align-items:center;justify-content:space-between;gap:9px;color:var(--color-brand-strong);font-size:13px;font-weight:900;text-decoration:none;}
+.metric{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--color-border);padding:10px 0;gap:12px;}
+.metric strong{font-family:var(--font-display);font-size:22px;}.metric span{font-size:12px;color:var(--color-text-muted);font-weight:800;}
+.disclaimer{color:var(--color-text-faint);font-size:11px;line-height:1.5;text-align:center;margin:0 8px;}

@@ -33,7 +33,7 @@ export function App() {
       const resolved = theme === 'system' ? (media.matches ? 'dark' : 'light') : theme
       root.dataset.theme = resolved
       root.style.colorScheme = resolved
-      document.querySelector<HTMLMetaElement>('meta[name="theme-color"]')?.setAttribute('content', resolved === 'dark' ? '#0D1015' : '#F7F8FA')
+      document.querySelector<HTMLMetaElement>('meta[name="theme-color"]')?.setAttribute('content', resolved === 'dark' ? '#191D24' : '#FFFDF9')
     }
     apply()
     media.addEventListener('change', apply)

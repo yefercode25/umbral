@@ -1,8 +1,9 @@
 import type { Course } from '../types/course'
 import { getRequestedCourse } from './courses'
+import { useSettingsStore } from '../stores/settingsStore'
 
 export function getCourseFromSearchParams(searchParams: URLSearchParams) {
-  return getRequestedCourse(searchParams.get('course'))
+  return getRequestedCourse(searchParams.get('course') ?? useSettingsStore.getState().activeCourseSlug)
 }
 
 export function withCourse(path: string, course: Course, params: Record<string, string | undefined> = {}) {

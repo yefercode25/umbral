@@ -1,3 +1,4 @@
-.wrap { display:inline-flex;align-items:center;gap:10px; }
-.mark { width:32px;height:32px;display:block;object-fit:contain;flex:0 0 auto; }
-.word { font-size:21px;font-weight:650;letter-spacing:-.035em; }
+.wrap{display:inline-flex;align-items:center;gap:10px;}
+.mark{display:block;width:44px;height:44px;object-fit:contain;flex:0 0 auto;}
+.word{font-family:var(--font-display);font-size:30px;font-weight:800;letter-spacing:-.035em;color:var(--color-brand-strong);line-height:1.1;}
+.dot{color:var(--color-warning);}

@@ -5,6 +5,8 @@ export type ThemePreference = 'system' | 'light' | 'dark'
 
 type SettingsState = {
   theme: ThemePreference
+  activeCourseSlug: string
+  setActiveCourse: (slug: string) => void
   reducedMotion: 'system' | 'reduce'
   speechVoiceURI: string | null
   speechRate: number
@@ -18,6 +20,8 @@ export const useSettingsStore = create<SettingsState>()(
   persist(
     (set) => ({
       theme: 'system',
+      activeCourseSlug: 'dian-2676-gestor-ii',
+      setActiveCourse: (activeCourseSlug) => set({ activeCourseSlug }),
       reducedMotion: 'system',
       speechVoiceURI: null,
       speechRate: 1,
