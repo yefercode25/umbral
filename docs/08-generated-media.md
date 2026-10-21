@@ -8,10 +8,10 @@ Integrar la nueva identidad visual y las piezas editoriales generadas para Umbra
 
 ## Assets de marca
 
-- `public/media/brand/mark-gradient.webp`: emblema transparente usado por `BrandMark` en navegación.
+- `public/media/brand/mark-gradient.webp`: emblema verde transparente para piezas de identidad. La navegación utiliza ahora la versión clara desde `public/icons/brand-mark-256.png`.
 - `public/media/brand/wordmark.webp`: lockup gráfico completo, utilizado en Ajustes como referencia de identidad.
-- `public/media/brand/app-teal.webp`: variante turquesa.
-- `public/media/brand/app-light.webp`: variante clara.
+- `public/media/brand/app-teal.webp`: variante verde brillante (secundaria).
+- `public/media/brand/app-light.webp`: **variante clara principal** (fondo blanco, símbolo verde).
 - `public/media/brand/app-dark.webp`: variante oscura.
 
 ## Assets editoriales
@@ -24,7 +24,7 @@ Integrar la nueva identidad visual y las piezas editoriales generadas para Umbra
 
 ## Iconos PWA
 
-La identidad generada alimenta ahora:
+La actualización del 20 de octubre de 2026 utiliza el icono **claro** como predeterminado para navegador, instalación PWA y cabeceras. La variante oscura se reserva para el favicon en modo oscuro y el panel de identidad. Los gráficos derivados alimentan:
 
 - `public/icons/icon-192.png`
 - `public/icons/icon-512.png`

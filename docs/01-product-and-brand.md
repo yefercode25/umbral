@@ -13,7 +13,8 @@ Cada curso es un umbral que el estudiante cruza mediante comprensión, práctica
 - Marca neutral y seria; no aparentar ser un producto oficial de DIAN/CNSC.
 - El curso DIAN llevará la leyenda: `Preparación independiente · No afiliada a DIAN/CNSC`.
 - Icono propuesto: arco/portal geométrico de esquinas suaves con una abertura central que sugiere una ruta ascendente. Sin birrete, cerebro, robot, chispas ni iconografía típica de IA.
-- Logotipo: wordmark `umbral` en Google Sans Medium/Semibold.
+- Logotipo: wordmark `umbral` con emblema de portal.
+- Identidad principal actual (20/10/2026): icono **claro** (baldosa blanca, portal verde), con variantes verde y oscura complementarias. Se aplica en navegación, favicon e instalación PWA. No incluye corazones ni vidas.
 
 ## Arquitectura de información
 1. Inicio

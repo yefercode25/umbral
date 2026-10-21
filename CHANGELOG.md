@@ -1,5 +1,33 @@
 # Changelog
 
+## 2026.10.20 · Corrección transversal de contraste y legibilidad (claro/oscuro)
+
+- Se corrige el botón «Completar y continuar»: las reglas de tipografía del pie de lección se acotan al bloque de información y dejan de sobrescribir los `span` de los botones.
+- Se introduce `--course-accent-ink` para distinguir el color editorial de cada curso de la tinta de lectura accesible. Se ajustan titulares pequeños, enlaces, mensajes de simuladores y ayudas contextualizadas.
+- Se revisan tokens de texto terciario, estados correcto/atención/error, anillos de foco y controles deshabilitados; se preserva la paleta táctil tipo Duolingo.
+- Se corrigen contrastes de nodos verdes, dorados y pendientes, casillas seleccionadas en simulacros, botones de ejercicios y la acción principal de Inicio en tema oscuro.
+- Se añade `pnpm run check:contrast`: 46 verificaciones de pares de color y tres defensas contra regresiones de selectores (sin dependencias adicionales).
+- Se documentan las comprobaciones estáticas y las limitaciones de pruebas de navegador en `docs/19-auditoria-contraste-ui-2026-10-20.md`.
+- No se modifican preguntas, lecciones, fuentes, rutas educativas ni datos de progreso.
+
+
+## 2026.10.20 · Integración de iconografía Umbral (principal clara)
+
+- Se adoptan los nuevos iconos generados conservando las rutas de recursos existentes; **variante clara** como principal en el menú lateral, cabecera móvil, favicon clásico, iconos PWA e icono de Apple.
+- Se regeneran `favicon-light`, `favicon-dark`, `brand-mark`, máscara segura para PWA, las tres previsualizaciones de Ajustes y el wordmark.
+- `BrandMark` sustituye la letra decorativa `U` por el icono real de Umbral para escritorio y móvil.
+- El manifiesto alinea los colores de instalación con el fondo claro; no se modifican bancos, identificadores, progresos ni mecánicas educativas.
+
+
+## 2026.10.20 · Migración visual táctil e interfaz tipo Duolingo
+
+- Se adapta la interfaz completa a tarjetas, botones 3D, tipografía redondeada, rutas con nodos, indicadores de avance y navegación responsiva; selector de curso con preferencia local persistente.
+- Inicio, curso y módulo muestran rutas de aprendizaje por unidades, módulos y lecciones, respetando todos los identificadores, estados y enlaces publicados; sin bloqueo por vidas.
+- Panel lateral basado en lecciones, aciertos y metas reales, sin corazones, contadores de vida ni recompensas ficticias.
+- El motor de aprendizaje, bancos DIAN/Procuraduría, fuentes, progreso y pruebas de contenido originales permanecen intactos.
+- Véase `docs/12-migracion-visual-duolingo-2026-10-20.md` para alcance, límites de validación y prueba posterior al despliegue.
+
+
 ## 2026.09.14-alpha.2 · Auditoría profunda de contenido Procuraduría 104-2026
 
 ### Profundidad curricular

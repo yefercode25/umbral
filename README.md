@@ -6,6 +6,10 @@ Plataforma de estudio **mobile-first, instalable y offline-first** para preparac
 
 > **Proyecto independiente:** Umbral no está afiliado, patrocinado, avalado ni publicado por la DIAN, la CNSC, la Procuraduría General de la Nación ni otra entidad pública. El contenido de preparación combina fuentes oficiales citadas con interpretación pedagógica y material de práctica propio.
 
+## Experiencia visual · octubre 2026
+
+Umbral ofrece una ruta de aprendizaje con nodos de unidades, módulos y lecciones, selector de curso persistente, controles táctiles, panel de avance y modo móvil inmersivo. La inspiración visual es Duolingo, sin vidas ni corazones: todas las lecciones publicadas son accesibles. Los progresos DIAN y Procuraduría continúan separados, con la misma clave `umbral:progress:v1`. Consulta `docs/12-migracion-visual-duolingo-2026-10-20.md`.
+
 ## Estado actual · biblioteca multi-curso
 
 ### Procuraduría 104-2026 · Profesional Universitario 3PU-15 · alpha.2
@@ -22,11 +26,11 @@ Plataforma de estudio **mobile-first, instalable y offline-first** para preparac
 
 Consulta `docs/11-procuraduria-104-2026-curriculum.md` para la matriz función → habilidad → módulos y la auditoría curricular.
 
-### DIAN 2676 · Gestor II · 2026.09.13-alpha.6
+### DIAN 2676 · Gestor II · versión vigente 2026.10.12
 
 - 9 unidades y 29 módulos (M0–M28).
-- **211 lecciones publicadas**, todas con al menos una actividad de recuperación, checkpoint, secuencia o simulador.
-- **615 objetos `Question` reales** enlazados a **93 fuentes**.
+- **309 lecciones publicadas**, todas con al menos una actividad de recuperación, checkpoint, secuencia o simulador.
+- **759 objetos `Question` reales** enlazados a **100 fuentes**.
 - 8 laboratorios de casos integradores con 40 decisiones PJS encadenadas.
 - simuladores interactivos de prescripción, cobro coactivo, estado de cuenta, ejecución sobre bienes, devoluciones, procesos concursales y perfil comportamental;
 - diagnóstico, práctica adaptativa, cuaderno de errores, preguntas guardadas y dominio por habilidades;
@@ -63,7 +67,7 @@ Alpha.6 no persigue volumen por sí mismo: expande teoría donde la auditoría e
 
 ## Bloque transversal complementario · M24–M28
 
-La Unidad 8 añade **Ofimática y productividad digital, Excel aplicado, interpretación y análisis de datos, razonamiento lógico/conjuntos y matemática práctica/probabilidad**. El bloque está marcado pedagógicamente como **complementario y provisional** mientras la GOA definitiva de DIAN 2676 siga pendiente.
+La Unidad 8 incluye **Ofimática y productividad digital, Excel aplicado, interpretación y análisis de datos, razonamiento lógico/conjuntos y matemática práctica/probabilidad**. El bloque está marcado pedagógicamente como **complementario y provisional** con carácter complementario y sujeto a los indicadores particulares de la inscripción. La GOA del concurso se publicó el 8 de octubre de 2026.
 
 - M24–M26 tienen prioridad práctica mayor por la mención expresa de **Herramientas Informáticas** en el MERF y por su utilidad directa para trabajar con información.
 - M27–M28 cubren lógica, conjuntos, porcentajes y probabilidad como preparación prudente; no se presentan como ejes oficiales confirmados por CNSC.
@@ -95,6 +99,7 @@ En este entorno la instalación completa de dependencias puede depender de conec
 ```bash
 npm install
 npm run lint
+npm run check:contrast
 npm run typecheck
 npm run test
 npm run build
