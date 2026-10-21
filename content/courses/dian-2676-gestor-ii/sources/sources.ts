@@ -65,7 +65,7 @@ export const dianSources: SourceRef[] = [
     url: 'https://www.funcionpublica.gov.co/modelo-integrado-de-planeacion-y-gestion',
     type: 'official',
     verifiedAt: '2026-09-13',
-    note: 'El portal muestra ahora la versión 7 (seis dimensiones), posterior al corte 19/06/2026 de la GOA. Para estudiar el corte usar Manual MIPG 6.1 de febrero de 2026 (siete dimensiones).'
+    note: 'La versión 7 de agosto de 2026 (seis dimensiones) es posterior a la referencia de corte de junio utilizada en guías anteriores. Para el marco previo, revisar el Manual MIPG 6.1 de febrero de 2026 (siete dimensiones). Confirmar el alcance literal del corte en la GOA revisada el 19/10/2026.'
   },
   {
     id: 'codigo-integridad',
@@ -629,12 +629,21 @@ export const dianSources: SourceRef[] = [
   }
   ,{
     id: 'goa-cnsc-2676-2026',
-    title: 'DIAN 2676 · Guía de Orientación al Aspirante para la presentación de las Pruebas Escritas · octubre 2026',
+    title: 'DIAN 2676 · GOA pruebas escritas · versión publicada 19/10/2026',
     publisher: 'CNSC · Fundación Universitaria del Área Andina',
-    url: 'https://www.cnsc.gov.co/sites/default/files/2026-10/dian-2676_guia_orientacion_aspirante_presentacion-pruebas-escritas_0.pdf',
+    url: 'https://www.cnsc.gov.co/sites/default/files/2026-10/dian_2676_guia_orientacion_aspirante_19102026.pdf',
     type: 'official',
-    verifiedAt: '2026-10-12',
-    note: 'Publicación oficial de la GOA el 08/10/2026. Define formato PJS funcional, autoinforme Likert comportamental/integridad, ponderaciones condicionadas a modalidad y corte normativo anterior al 19/06/2026. Los indicadores individuales se consultan en el portal del operador con número de inscripción.'
+    verifiedAt: '2026-10-20',
+    note: 'Enlace extraído de la sección Guías de la CNSC el 20/10/2026. El 19/10 hubo actualización oficial por corte normativo. No se pudo descargar el PDF completo desde este entorno: el alcance exacto del día 19/06/2026 (si lo incluye o no) requiere lectura directa de esta versión antes de tomar decisiones sobre normas de esa fecha. El formato PJS y Likert procede de las guías de octubre ya publicadas.'
+  },
+  {
+    id: 'cnsc-2676-aviso-actualizacion-goa-2026-10-19',
+    title: 'CNSC · Aviso 19/10/2026 · Actualización GOA DIAN 2676 por corte normativo',
+    publisher: 'CNSC · Fundación Universitaria del Área Andina',
+    url: 'https://www.cnsc.gov.co/node/69688',
+    type: 'official',
+    verifiedAt: '2026-10-20',
+    note: 'El aviso confirma la publicación de una nueva versión de la guía por ajustes al corte normativo, pero NO detalla en el aviso la fecha exacta ni el carácter inclusivo de la frontera. Para esos extremos leer el documento adjunto actualizado.'
   },
   {
     id: 'doctrina-dian-6513-2024',

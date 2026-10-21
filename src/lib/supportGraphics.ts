@@ -19,12 +19,12 @@ const graphicsCatalog = {
   },
   mipg: {
     id: 'mipg-dimensions',
-    eyebrow: 'Gestión pública',
-    title: 'MIPG vigente en seis dimensiones',
+    eyebrow: 'MIPG · contraste de versiones',
+    title: 'MIPG versión 7 de agosto de 2026 (posterior al corte)',
     description:
-      'Sintetiza la lógica de articulación del modelo para ubicar personas, planeación, resultados, información y control en una sola vista.',
+      'Esta infografía muestra la versión 7 de seis dimensiones. Para el marco anterior a junio de 2026 consulta el Manual 6.1, con siete dimensiones; esta imagen NO representa esa versión histórica. Revisa el corte exacto en la GOA del 19/10.',
     image: '/media/lesson-support/mipg-dimensions.webp',
-    alt: 'Infografía sobre MIPG vigente y sus seis dimensiones.',
+    alt: 'Infografía de seis dimensiones correspondiente a la versión 7 de MIPG, publicada después del corte de junio de 2026; no representa el Manual 6.1 de siete dimensiones.',
   },
   cpaca: {
     id: 'cpaca-route',

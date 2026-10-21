@@ -326,7 +326,7 @@ export const dianAdvancedCaseworkLessons: Lesson[] = Object.entries(workshops).m
     { type: 'sources', sourceIds: w.sources },
   ]
   return {
-    id: `${moduleId}-advanced-2026`, moduleId, order: 100 + number,
+    id: `${moduleId}-advanced-2026`, moduleId, order: 150 + number,
     title: w.title, subtitle: w.subtitle, durationMinutes: number >= 6 && number <= 17 ? 24 : 20,
     skillIds: [`profundizacion-${moduleId}`, 'analisis-casos'], status: 'published', blocks,
   }

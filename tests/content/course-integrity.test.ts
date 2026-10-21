@@ -17,12 +17,12 @@ const activeBlockTypes = new Set([
 
 describe('DIAN Gestor II course integrity', () => {
   it('retains 2026.09 original content and extends the October 2026 curriculum', () => {
-    expect(dianGestorCourse.version).toBe('2026.10.12-dian-transversal.3')
+    expect(dianGestorCourse.version).toBe('2026.10.20-dian-goa.4')
     expect(dianGestorCourse.units).toHaveLength(9)
     expect(dianGestorCourse.modules).toHaveLength(29)
     expect(dianGestorCourse.lessons).toHaveLength(309)
     expect(dianGestorCourse.questions).toHaveLength(759)
-    expect(dianGestorCourse.sources).toHaveLength(100)
+    expect(dianGestorCourse.sources).toHaveLength(101)
   })
 
   it('uses unique ids across core collections', () => {
@@ -156,6 +156,18 @@ describe('DIAN Gestor II course integrity', () => {
       expect(questions.every((question) => question.type === 'pjs')).toBe(true)
       if (profileId === 'functional-deep') expect(questions.every((question) => question.id.startsWith('q-goa26-') || question.id.startsWith('q-master-2026-') || question.id.startsWith('q-transversal-2026-'))).toBe(true)
     }
+  })
+
+  it('uses the CNSC link to the 19/10 GOA, keeps the cut-off inclusive question open pending full PDF and preserves legacy IDs', () => {
+    const goa = dianGestorCourse.sources.find((item) => item.id === 'goa-cnsc-2676-2026')
+    const aviso = dianGestorCourse.sources.find((item) => item.id === 'cnsc-2676-aviso-actualizacion-goa-2026-10-19')
+    const lesson = dianGestorCourse.lessons.find((item) => item.id === 'm0-goa-2026')
+    expect(goa?.url).toContain('dian_2676_guia_orientacion_aspirante_19102026.pdf')
+    expect(aviso?.url).toBe('https://www.cnsc.gov.co/node/69688')
+    expect(lesson?.title).toContain('actualizada')
+    expect(lesson?.blocks.some((block) => block.type === 'decision-simulator')).toBe(true)
+    expect(lesson?.blocks.some((block) => block.type === 'rule' && block.text.includes('NO se afirma'))).toBe(true)
+    expect(dianGestorCourse.questions.find((item) => item.id === 'q-goa26-m0-b')).toBeDefined()
   })
 
   it('keeps GOA published and avoids presenting unverified individual indicators as official', () => {
