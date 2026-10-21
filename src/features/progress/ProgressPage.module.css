@@ -1,43 +1,43 @@
 .kpis { display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:24px; }
 .kpis div { min-height:118px;padding:16px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:16px;display:flex;flex-direction:column;align-items:flex-start; }
-.kpis svg { width:20px;color:var(--course-accent);margin-bottom:auto; }
+.kpis svg { width:20px;color:var(--course-accent-ink);margin-bottom:auto; }
 .kpis span { color:var(--color-text-muted);font-size:11px; }
 .kpis strong { font-size:22px;letter-spacing:-.03em; }
 .course { padding:20px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:18px; }
 .courseHead { display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:12px; }
 .courseHead span { color:var(--color-text-faint);font-size:11px; }
 .courseHead h2 { margin:2px 0 0;font-size:19px; }
-.courseHead > strong { font-size:24px;color:var(--course-accent); }
+.courseHead > strong { font-size:24px;color:var(--course-accent-ink); }
 .modules { display:grid;gap:13px;margin-top:24px; }
 .module { display:grid;grid-template-columns:minmax(130px,1fr) minmax(90px,1fr) 38px;align-items:center;gap:12px;padding-top:13px;border-top:1px solid var(--color-border); }
 .module div:first-child { min-width:0;display:grid; }
-.module span { color:var(--course-accent);font-size:10px;font-weight:800; }
+.module span { color:var(--course-accent-ink);font-size:10px;font-weight:800; }
 .module strong { overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px; }
 .module b { text-align:right;font-size:12px;color:var(--color-text-muted); }
 @media (min-width:760px) { .kpis { grid-template-columns:repeat(4,1fr); }.course { padding:24px; } }
 
 .focus { margin-bottom:18px;padding:18px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:18px; }
 .focusHead { display:flex;justify-content:space-between;gap:16px;align-items:end;margin-bottom:12px; }
-.focusHead span { color:var(--course-accent);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em; }
+.focusHead span { color:var(--course-accent-ink);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em; }
 .focusHead h2 { margin:3px 0 0;font-size:17px;letter-spacing:-.02em; }
-.focusHead a { color:var(--course-accent);font-size:11px;font-weight:750;text-decoration:none;white-space:nowrap; }
+.focusHead a { color:var(--course-accent-ink);font-size:11px;font-weight:750;text-decoration:none;white-space:nowrap; }
 .focusGrid { display:grid;gap:8px; }
 .focusItem { padding:12px 13px;border:1px solid var(--color-border);border-radius:13px;color:inherit;text-decoration:none;display:grid;grid-template-columns:auto 1fr auto;gap:9px;align-items:center; }
 .focusItem:hover { background:var(--color-surface-subtle); }
-.focusItem > span { color:var(--course-accent);font-size:10px;font-weight:800; }
+.focusItem > span { color:var(--course-accent-ink);font-size:10px;font-weight:800; }
 .focusItem > strong { min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px; }
 .focusItem > small { color:var(--color-text-muted);font-size:10px;white-space:nowrap; }
 @media (max-width:560px) { .focusHead { align-items:flex-start;flex-direction:column;gap:6px; }.focusItem { grid-template-columns:auto 1fr; }.focusItem > small { grid-column:2; } }
 
 .learningHealth { margin-bottom:18px;padding:18px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:18px; }
 .learningHealthHead { display:grid;gap:8px;margin-bottom:14px; }
-.learningHealthHead span { color:var(--course-accent);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em; }
+.learningHealthHead span { color:var(--course-accent-ink);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em; }
 .learningHealthHead h2 { margin:3px 0 0;font-size:17px;letter-spacing:-.02em; }
 .learningHealthHead p { margin:0;color:var(--color-text-muted);font-size:12px;line-height:1.5; }
 .learningHealthGrid { display:grid;gap:8px; }
 .healthCard { min-height:72px;padding:13px 14px;border:1px solid var(--color-border);border-radius:13px;display:flex;align-items:center;gap:11px;color:inherit;text-decoration:none;background:var(--color-surface); }
 a.healthCard:hover { background:var(--color-surface-subtle);border-color:var(--color-border-strong); }
-.healthCard svg { flex:0 0 auto;color:var(--course-accent); }
+.healthCard svg { flex:0 0 auto;color:var(--course-accent-ink); }
 .healthCard span { display:grid; }
 .healthCard strong { font-size:18px;line-height:1.1;letter-spacing:-.02em; }
 .healthCard small { margin-top:3px;color:var(--color-text-muted);font-size:10px; }
@@ -58,3 +58,10 @@ a.healthCard:hover { background:var(--color-surface-subtle);border-color:var(--c
 .courseScope a span { font-size:12px;font-weight:780; }
 .courseScope a small { color:var(--color-text-muted);font-size:10px; }
 .courseScope .courseScopeActive { border-color:color-mix(in srgb,var(--course-accent) 55%,var(--color-border));background:color-mix(in srgb,var(--course-accent) 8%,var(--color-surface)); }
+.kpis div,.course,.focus,.learningHealth,.focusItem,.healthCard{border:2px solid var(--color-border);border-bottom-width:5px;border-radius:17px;}
+.kpis strong,.healthCard strong{font-family:var(--font-display);font-weight:700;}
+.kpis svg,.healthCard svg{color:var(--color-brand-strong);}
+.progressVisual{background:linear-gradient(135deg,#148ec6,#1cb0f6);border:2px solid var(--color-border);border-bottom-width:5px;border-radius:20px;}
+.progressVisual::after{background:linear-gradient(90deg,rgba(9,95,140,.92),rgba(9,95,140,.30));}
+.progressVisualCopy strong{font-family:var(--font-display);}
+.courseScope a{border:2px solid var(--color-border);border-bottom-width:4px;border-radius:14px;}.courseScope .courseScopeActive{border-color:var(--color-brand);border-bottom-color:var(--color-brand-strong);background:var(--color-brand-soft);}

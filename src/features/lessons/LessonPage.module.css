@@ -2,21 +2,33 @@
 .mobileHeader { position:sticky;top:0;z-index:40;height:62px;padding:0 14px;display:grid;grid-template-columns:46px 1fr 46px;align-items:center;background:var(--color-surface);border-bottom:1px solid var(--color-border); }
 .mobileHeader a,.mobileHeader button { width:44px;height:44px;border:0;border-radius:12px;background:transparent;color:var(--color-text-muted);display:grid;place-items:center; }
 .mobileHeader div { min-width:0;text-align:center;display:grid; }
-.mobileHeader div span { color:var(--course-accent);font-size:10px;font-weight:800; }
+.mobileHeader div span { color:var(--course-accent-ink);font-size:10px;font-weight:800; }
 .mobileHeader div strong { overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px; }
 .topProgress { position:sticky;top:62px;z-index:39; }
 .topProgress :global(.root) { border-radius:0; }
 .reading { width:min(100%,var(--reading-max));margin:0 auto;padding:26px 18px 54px; }
 .breadcrumb { display:none;align-items:center;gap:7px;color:var(--color-text-faint);font-size:12px;margin-bottom:24px; }
 .breadcrumb a { text-decoration:none; }
-.lessonMeta { display:flex;justify-content:space-between;gap:12px;color:var(--course-accent);font-size:12px;font-weight:700;margin-bottom:10px; }
+.lessonMeta { display:flex;justify-content:space-between;gap:12px;color:var(--course-accent-ink);font-size:12px;font-weight:700;margin-bottom:10px; }
 .lessonMeta span:last-child { display:flex;align-items:center;gap:5px;color:var(--color-text-faint);font-weight:600; }
 .reading h1 { margin:0;font-size:31px;line-height:1.08;letter-spacing:-.04em; }
 .subtitle { margin:10px 0 27px;color:var(--color-text-muted);font-size:15px;line-height:1.5; }
 .finish { margin-top:40px;padding:20px;border-radius:18px;background:var(--color-text);color:var(--color-canvas);display:grid;gap:18px; }
-.finish span { display:block;font-size:11px;opacity:.66; }
-.finish strong { display:block;margin-top:4px;font-size:15px;line-height:1.4; }
+.finish > div > span { display:block;font-size:11px; }
+.finish > div > strong { display:block;margin-top:4px;font-size:15px;line-height:1.4; }
 .prevNext { display:flex;justify-content:space-between;gap:12px;margin-top:16px; }
 .prevNext a { min-height:44px;max-width:46%;display:flex;align-items:center;gap:6px;color:var(--color-text-muted);font-size:12px;text-decoration:none; }
 .prevNext a:last-child { text-align:right;justify-content:flex-end; }
 @media (min-width:900px) { .mobileHeader,.topProgress { display:none; }.reading { padding:44px 28px 70px; }.breadcrumb { display:flex; }.reading h1 { font-size:42px; }.subtitle { font-size:17px; }.finish { grid-template-columns:1fr auto;align-items:center;padding:24px; } }
+/* Ruta inmersiva: barra de progreso, contenido legible y cierre táctil. */
+.mobileHeader{height:68px;border-bottom:2px solid var(--color-border);}
+.mobileHeader a,.mobileHeader button{border:2px solid var(--color-border);border-bottom-width:4px;border-radius:13px;background:var(--color-surface);}
+.topProgress{top:68px;}
+.reading{padding-top:30px;}
+.lessonMeta{font-weight:900;color:var(--color-brand-strong);}
+.reading h1{font-family:var(--font-display);font-weight:700;line-height:1.17;letter-spacing:-.018em;}
+.subtitle{font-weight:750;}
+.finish{border:2px solid var(--color-border);border-bottom-width:5px;border-radius:21px;background:var(--color-surface);color:var(--color-text);}
+.finish > div > span{color:var(--color-text-muted);font-weight:900;}.finish > div > strong{font-family:var(--font-display);font-size:18px;}
+.prevNext a{font-weight:850;}
+@media(min-width:980px){.mobileHeader,.topProgress{display:none;}.reading{padding-top:37px;}}

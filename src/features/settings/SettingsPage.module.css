@@ -44,3 +44,9 @@
 .resetList > div > span { display:grid;gap:2px; }
 .resetList strong { font-size:13px; }
 .resetList small { color:var(--color-text-muted);font-size:10px; }
+.section{padding:23px 0;border-top:2px solid var(--color-border);}
+.sectionTitle h2,.row h2{font-family:var(--font-display);font-size:21px;}
+.themeGrid button,.goalGrid button,.courseSetting,.brandPanel,.resetList>div{border:2px solid var(--color-border);border-bottom-width:5px;border-radius:17px;}
+.themeGrid .selected,.goalGrid .goalSelected{border-color:var(--color-brand);border-bottom-color:var(--color-brand-strong);background:var(--color-brand-soft);color:var(--color-brand-strong);}
+.courseSetting>div:first-child strong{font-family:var(--font-display);font-size:18px;}
+.pwaPanel{border:2px solid var(--color-border);border-bottom-width:5px;border-radius:20px;}

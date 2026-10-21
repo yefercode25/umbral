@@ -6,39 +6,39 @@
 .examHeader strong { font-size:13px; }
 .timer { display:flex;align-items:center;gap:5px;color:var(--color-text-muted);font-size:11px;font-variant-numeric:tabular-nums; }
 .examBody { margin-top:22px; }
-.questionMeta { display:flex;justify-content:space-between;gap:12px;color:var(--course-accent);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.05em; }
+.questionMeta { display:flex;justify-content:space-between;gap:12px;color:var(--course-accent-ink);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.05em; }
 .caseBox { margin:15px 0;padding:15px;border-radius:14px;background:var(--color-surface-subtle);border:1px solid var(--color-border); }
-.caseBox span { color:var(--course-accent);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em; }
+.caseBox span { color:var(--course-accent-ink);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em; }
 .caseBox p { margin:5px 0 0;color:var(--color-text-muted);font-size:14px;line-height:1.58; }
 .examBody h1 { margin:18px 0;font-size:21px;line-height:1.35;letter-spacing:-.025em; }
 .options { display:grid;grid-auto-rows:1fr;gap:9px; }
 .option,.optionSelected { min-height:58px;padding:12px 13px;display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:center;text-align:left;border:1px solid var(--color-border);border-radius:14px;background:var(--color-surface);color:var(--color-text);cursor:pointer; }
 .option:hover { border-color:var(--color-border-strong); }
-.optionSelected { border-color:var(--course-accent);background:var(--course-accent-soft); }
+.optionSelected { border-color:var(--course-accent-ink);background:var(--course-accent-soft); }
 .option span,.optionSelected span { width:28px;height:28px;display:grid;place-items:center;border-radius:9px;background:var(--color-surface-subtle);font-size:11px;font-weight:800; }
 .option p,.optionSelected p { margin:0;font:inherit;font-size:13px;line-height:1.45; }
 .navigator { display:flex;gap:6px;flex-wrap:wrap;margin:22px 0; }
 .navigator button { width:34px;height:34px;border:1px solid var(--color-border);border-radius:9px;background:var(--color-surface);color:var(--color-text-muted);font-size:11px;cursor:pointer; }
-.navigator .navAnswered { border-color:color-mix(in srgb,var(--course-accent) 35%,var(--color-border));background:var(--course-accent-soft);color:var(--course-accent); }
+.navigator .navAnswered { border-color:color-mix(in srgb,var(--course-accent) 35%,var(--color-border));background:var(--course-accent-soft);color:var(--course-accent-ink); }
 .navigator .navCurrent { box-shadow:0 0 0 2px var(--color-canvas),0 0 0 4px var(--course-accent); }
 .examActions { display:flex;justify-content:space-between;gap:10px;padding-top:17px;border-top:1px solid var(--color-border); }
 .pending { margin:12px 0 0;color:var(--color-warning);font-size:11px;text-align:right; }
 .resultHero { padding:26px 22px;text-align:center;border:1px solid var(--color-border);border-radius:22px;background:var(--color-surface); }
-.icon { width:48px;height:48px;margin:0 auto 14px;display:grid;place-items:center;border-radius:15px;background:var(--course-accent-soft);color:var(--course-accent); }
+.icon { width:48px;height:48px;margin:0 auto 14px;display:grid;place-items:center;border-radius:15px;background:var(--course-accent-soft);color:var(--course-accent-ink); }
 .resultHero p { margin:0;color:var(--color-text-muted);font-size:12px; }
 .resultHero h1 { margin:8px 0 0;font-size:52px;line-height:1;letter-spacing:-.06em; }
 .resultHero > strong { display:block;margin-top:7px;font-size:14px; }
 .meta { margin-top:16px;display:flex;justify-content:center;gap:16px;color:var(--color-text-muted);font-size:11px; }
 .meta span { display:inline-flex;gap:5px;align-items:center; }
 .recommendations { margin-top:24px; }
-.sectionHead > span { color:var(--course-accent);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em; }
+.sectionHead > span { color:var(--course-accent-ink);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em; }
 .sectionHead h2 { margin:3px 0 5px;font-size:20px; }
 .sectionHead p { margin:0;color:var(--color-text-muted);font-size:13px;line-height:1.55; }
 .moduleList { margin-top:13px;overflow:hidden;border:1px solid var(--color-border);border-radius:16px;background:var(--color-surface); }
 .moduleList a { min-height:66px;padding:11px 13px;display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center;color:inherit;text-decoration:none;border-bottom:1px solid var(--color-border); }
 .moduleList a:last-child { border-bottom:0; }
 .moduleList a:hover { background:var(--color-surface-subtle); }
-.moduleList > a > span { color:var(--course-accent);font-size:10px;font-weight:800; }
+.moduleList > a > span { color:var(--course-accent-ink);font-size:10px;font-weight:800; }
 .moduleList div { min-width:0;display:grid; }
 .moduleList strong { overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px; }
 .moduleList small { color:var(--color-text-muted);font-size:10px; }
@@ -49,3 +49,8 @@
 .actions { margin-top:18px;display:flex;gap:10px;flex-wrap:wrap; }
 .actions > a { min-height:44px;padding:0 15px;display:inline-flex;align-items:center;border:1px solid var(--color-border-strong);border-radius:12px;color:var(--color-text);font-size:13px;font-weight:700;text-decoration:none; }
 @media (min-width:680px) { .examBody h1 { font-size:24px; }.resultHero { padding:34px; } }
+/* Evaluación diagnóstica con controles táctiles y contexto legible */
+.examHeader button{border-radius:13px;}
+.caseBox{border:2px solid color-mix(in srgb,var(--color-brand) 30%,var(--color-border));border-bottom-width:4px;border-radius:17px;background:var(--color-brand-soft);}
+.option,.optionSelected{border:2px solid var(--color-border);border-bottom-width:5px;border-radius:16px;font-weight:850;min-height:65px;}
+.optionSelected{border-color:#1cb0f6;border-bottom-color:#128fc8;background:var(--color-brand-soft);}

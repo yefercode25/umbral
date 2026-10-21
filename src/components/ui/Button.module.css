@@ -1,15 +1,12 @@
-.button { border: 0; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; font: inherit; font-weight: 650; cursor: pointer; transition: transform 120ms ease, background 150ms ease, color 150ms ease, border-color 150ms ease; -webkit-tap-highlight-color: transparent; }
-.button:active:not(:disabled) { transform: translateY(1px) scale(.995); }
-.button:focus-visible { outline: 3px solid var(--color-focus-ring); outline-offset: 2px; }
-.button:disabled { opacity: 1; cursor: not-allowed; background: var(--color-disabled-surface); color: var(--color-disabled-text); border: 1px solid var(--color-border); }
-.sm { min-height: 36px; padding: 0 12px; font-size: 13px; }
-.md { min-height: 44px; padding: 0 16px; font-size: 14px; }
-.lg { min-height: 50px; padding: 0 19px; font-size: 15px; }
-.primary { background: var(--color-brand); color: var(--color-on-brand); }
-.primary:hover:not(:disabled) { background: var(--color-brand-strong); }
-.secondary { background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border-strong); }
-.secondary:hover:not(:disabled) { background: var(--color-surface-subtle); }
-.ghost { background: transparent; color: var(--color-text-muted); }
-.ghost:hover:not(:disabled) { background: var(--color-surface-subtle); color: var(--color-text); }
-.danger { background: var(--color-danger-soft); color: var(--color-danger); border: 1px solid color-mix(in srgb,var(--color-danger) 22%,var(--color-border)); }
-.danger:hover:not(:disabled) { border-color: color-mix(in srgb,var(--color-danger) 38%,var(--color-border)); }
+.button{border:2px solid transparent;border-bottom-width:5px;border-radius:15px;display:inline-flex;align-items:center;justify-content:center;gap:9px;font:inherit;font-family:var(--font-display);font-weight:700;letter-spacing:.02em;cursor:pointer;transition:transform .11s ease,background .15s ease,border-color .15s ease,color .15s;}
+.button:active:not(:disabled){transform:translateY(3px);border-bottom-width:2px;}
+.button:focus-visible{outline:3px solid var(--color-focus-ring);outline-offset:2px;}
+.button:disabled{opacity:1;cursor:not-allowed;background:var(--color-disabled-surface);color:var(--color-disabled-text);border-color:var(--color-border);}
+.sm{min-height:39px;padding:6px 14px;font-size:13px;}.md{min-height:47px;padding:8px 18px;font-size:14px;}.lg{min-height:53px;padding:11px 21px;font-size:16px;}
+.primary{background:var(--color-brand);color:var(--color-on-brand);border-bottom-color:var(--color-brand-strong);}.primary:hover:not(:disabled){background:color-mix(in srgb,var(--color-brand) 90%,#117c00);}
+.secondary{background:var(--color-surface);color:var(--color-text);border-color:var(--color-border);border-bottom-color:var(--color-border-strong);}.secondary:hover:not(:disabled){background:var(--color-surface-subtle);}
+.ghost{background:transparent;color:var(--color-text-muted);border-bottom-color:transparent;}.ghost:hover:not(:disabled){background:var(--color-surface-subtle);color:var(--color-text);}
+.danger{background:var(--color-danger-soft);color:var(--color-danger);border-color:color-mix(in srgb,var(--color-danger) 25%,var(--color-border));border-bottom-color:color-mix(in srgb,var(--color-danger) 55%,var(--color-border));}
+
+/* El rótulo del botón conserva la tipografía y el contraste, incluso dentro de tarjetas informativas. */
+.button > span{font-size:inherit;opacity:1;color:inherit;line-height:1.35;}

@@ -11,7 +11,7 @@
 .heading > div { min-width: 0; }
 .heading strong { display: block; font-size: 1rem; color: var(--text); }
 .heading p { margin: .25rem 0 0; color: var(--text-secondary); font-size: .9rem; line-height: 1.5; }
-.icon { width: 2.15rem; height: 2.15rem; border-radius: .7rem; display: grid; place-items: center; flex: 0 0 auto; background: color-mix(in srgb, var(--course-accent) 12%, var(--surface)); color: var(--course-accent); }
+.icon { width: 2.15rem; height: 2.15rem; border-radius: .7rem; display: grid; place-items: center; flex: 0 0 auto; background: color-mix(in srgb, var(--course-accent) 12%, var(--surface)); color: var(--course-accent-ink); }
 
 .stageScroller { overflow-x: auto; margin: 0 -.25rem 1rem; padding: .1rem .25rem .5rem; scrollbar-width: thin; }
 .stages { display: flex; min-width: 760px; align-items: stretch; }
@@ -21,17 +21,17 @@
 .stage strong { font-size: .78rem; line-height: 1.2; }
 .stage small { font-size: .67rem; line-height: 1.25; color: var(--text-tertiary); }
 .stage.done > span { background: var(--success-soft); border-color: transparent; color: var(--success); }
-.stage.active > span { background: var(--course-accent); border-color: var(--course-accent); color: var(--color-on-course-accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--course-accent) 12%, transparent); }
-.stage.active strong { color: var(--course-accent); }
-.stage.future { opacity: .6; }
+.stage.active > span { background: var(--course-accent); border-color: var(--course-accent-ink); color: var(--color-on-course-accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--course-accent) 12%, transparent); }
+.stage.active strong { color: var(--course-accent-ink); }
+.stage.future { opacity:1; }
 .arrow { position: absolute; right: .18rem; color: var(--border-strong); }
 
 .caseTabs { display: flex; gap: .4rem; margin-bottom: .75rem; }
 .tab, .tabActive { appearance: none; border: 1px solid var(--border); background: var(--surface); color: var(--text-secondary); border-radius: 999px; min-height: 2.25rem; padding: 0 .8rem; font: inherit; font-size: .78rem; cursor: pointer; transition: border-color 140ms ease, background 140ms ease, color 140ms ease; }
-.tabActive { color: var(--course-accent); border-color: color-mix(in srgb, var(--course-accent) 40%, var(--border)); background: color-mix(in srgb, var(--course-accent) 8%, var(--surface)); font-weight: 650; }
+.tabActive { color: var(--course-accent-ink); border-color: color-mix(in srgb, var(--course-accent) 40%, var(--border)); background: color-mix(in srgb, var(--course-accent) 8%, var(--surface)); font-weight: 650; }
 
 .case { border-radius: var(--radius-lg); background: var(--surface-subtle); border: 1px solid var(--border); padding: .9rem; }
-.caseHeading span { display: inline-flex; gap: .35rem; align-items: center; color: var(--course-accent); font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .055em; }
+.caseHeading span { display: inline-flex; gap: .35rem; align-items: center; color: var(--course-accent-ink); font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .055em; }
 .caseHeading h3 { margin: .45rem 0 .25rem; font-size: 1rem; line-height: 1.3; }
 .caseHeading p { margin: 0; color: var(--text-secondary); font-size: .86rem; line-height: 1.5; }
 .case h4 { margin: 1rem 0 .6rem; font-size: .9rem; }
@@ -54,7 +54,7 @@
 .feedbackCorrect p, .feedbackWrong p { margin: .2rem 0 0; }
 .feedbackCorrect small, .feedbackWrong small { display: block; margin-top: .4rem; color: var(--text-secondary); }
 .footer { display: flex; justify-content: space-between; align-items: center; gap: .75rem; margin-top: .8rem; color: var(--text-tertiary); font-size: .75rem; }
-.footer button { display: inline-flex; align-items: center; gap: .35rem; min-height: 2.25rem; border: 0; background: transparent; color: var(--course-accent); font: inherit; font-size: .78rem; font-weight: 650; cursor: pointer; }
+.footer button { display: inline-flex; align-items: center; gap: .35rem; min-height: 2.25rem; border: 0; background: transparent; color: var(--course-accent-ink); font: inherit; font-size: .78rem; font-weight: 650; cursor: pointer; }
 .note { display: block; margin-top: .7rem; color: var(--text-tertiary); font-size: .72rem; line-height: 1.45; }
 
 @media (min-width: 720px) {
@@ -66,3 +66,10 @@
 @media (prefers-reduced-motion: reduce) {
   .option, .tab, .tabActive { transition: none; }
 }
+
+/* Tactile style applied to every step and option; scoring logic is unchanged. */
+.wrapper,.panel,.case{border:2px solid var(--color-border);border-bottom-width:5px;border-radius:19px;background:var(--color-surface);}
+.option,.stage,.tab,.route{border-radius:14px;border-width:2px;border-bottom-width:5px;font-weight:850;}
+.option.selected,.tabActive,.stageActive,.routeActive{border-color:#1cb0f6;border-bottom-color:#128fc8;background:var(--color-brand-soft);}
+.option.correct{border-color:#58cc02;background:var(--color-success-soft);}
+.option.wrong{border-color:#ff4b4b;background:var(--color-danger-soft);}

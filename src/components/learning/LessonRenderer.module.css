@@ -7,26 +7,26 @@
 .callout li + li { margin-top:6px; }
 .calloutTitle { display:flex;align-items:center;gap:9px;color:var(--color-text);font-size:14px; }
 .objective { border-color:color-mix(in srgb,var(--course-accent) 28%,var(--color-border));background:color-mix(in srgb,var(--course-accent-soft) 48%,var(--color-surface)); }
-.definition .calloutTitle { color:var(--course-accent); }
+.definition .calloutTitle { color:var(--course-accent-ink); }
 .rule { background:var(--color-surface-subtle); }
-.rule .calloutTitle { color:var(--color-brand); }
+.rule .calloutTitle { color:var(--color-brand-strong); }
 .tip { background:var(--color-success-soft);border-color:color-mix(in srgb,var(--color-success) 20%,var(--color-border)); }
 .tip .calloutTitle { color:var(--color-success); }
 .trap { background:var(--color-warning-soft);border-color:color-mix(in srgb,var(--color-warning) 20%,var(--color-border)); }
 .trap .calloutTitle { color:var(--color-warning); }
 .example { background:var(--color-brand-soft);border-color:color-mix(in srgb,var(--color-brand) 18%,var(--color-border)); }
-.example .calloutTitle { color:var(--color-brand); }
+.example .calloutTitle { color:var(--color-brand-strong); }
 .article { margin:26px 0;padding:19px;border:1px solid color-mix(in srgb,var(--course-accent) 30%,var(--color-border));border-radius:16px;background:var(--color-surface); }
 .articleHead { display:flex;gap:10px;align-items:center;flex-wrap:wrap; }
-.articleHead span { color:var(--course-accent);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.04em; }
+.articleHead span { color:var(--course-accent-ink);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.04em; }
 .articleHead strong { font-size:15px; }
 .article p { margin:10px 0;color:var(--color-text-muted); }
-.article a { display:inline-flex;align-items:center;gap:6px;color:var(--course-accent);text-decoration:none;font-size:13px;font-weight:700; }
+.article a { display:inline-flex;align-items:center;gap:6px;color:var(--course-accent-ink);text-decoration:none;font-size:13px;font-weight:700; }
 .steps { margin:28px 0; }
 .steps h3,.tableWrap h3,.sources h3 { font-size:15px;margin:0 0 13px; }
 .steps ol { margin:0;padding:0;list-style:none;counter-reset:step;display:grid;gap:10px; }
 .steps li { counter-increment:step;display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:start;padding:12px 14px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:13px;color:var(--color-text-muted); }
-.steps li::before { content:counter(step);width:28px;height:28px;border-radius:9px;background:var(--course-accent-soft);color:var(--course-accent);display:grid;place-items:center;font-size:12px;font-weight:800; }
+.steps li::before { content:counter(step);width:28px;height:28px;border-radius:9px;background:var(--course-accent-soft);color:var(--course-accent-ink);display:grid;place-items:center;font-size:12px;font-weight:800; }
 .tableWrap { margin:28px 0; }
 .tableScroller { overflow:auto;border:1px solid var(--color-border);border-radius:14px;background:var(--color-surface); }
 table { width:100%;border-collapse:collapse;min-width:520px;font-size:14px; }
@@ -39,4 +39,15 @@ tr:last-child td { border-bottom:0; }
 .sources span { display:grid;gap:3px; }
 .sources strong { font-size:13px;font-weight:650; }
 .sources small { color:var(--color-text-faint);font-size:11px; }
-.sources svg { flex:0 0 auto;color:var(--course-accent); }
+.sources svg { flex:0 0 auto;color:var(--course-accent-ink); }
+/* Duolingo-inspired study blocks. Keep content and source links unchanged. */
+.content{line-height:1.7;}
+.lead{font-weight:800;font-size:19px;}
+.callout,.article{border:2px solid var(--color-border);border-bottom-width:5px;border-radius:18px;}
+.objective{border-color:color-mix(in srgb,var(--color-brand) 32%,var(--color-border));}
+.calloutTitle{font-family:var(--font-display);font-size:17px;font-weight:700;}
+.article{border-color:color-mix(in srgb,var(--color-brand) 40%,var(--color-border));}
+.steps li{border:2px solid var(--color-border);border-bottom-width:4px;border-radius:15px;padding:15px;font-weight:750;}
+.steps li::before{background:var(--color-brand);color:var(--color-on-brand);border-radius:11px;}
+.tableScroller{border:2px solid var(--color-border);border-radius:15px;}
+.sources a{font-weight:850;}

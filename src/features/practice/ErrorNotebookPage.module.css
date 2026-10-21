@@ -1,6 +1,6 @@
 .back { display:inline-flex;align-items:center;gap:6px;margin:0 0 14px;color:var(--color-text-muted);font-size:13px;font-weight:650;text-decoration:none; }
 .overview { display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 18px; }
-.overview > div { min-height:72px;padding:12px;border:1px solid var(--color-border);border-radius:14px;background:var(--color-surface);display:flex;align-items:center;gap:10px;color:var(--course-accent); }
+.overview > div { min-height:72px;padding:12px;border:1px solid var(--color-border);border-radius:14px;background:var(--color-surface);display:flex;align-items:center;gap:10px;color:var(--course-accent-ink); }
 .overview span { display:grid;gap:1px; }
 .overview strong { color:var(--color-text);font-size:18px;line-height:1; }
 .overview small { color:var(--color-text-muted);font-size:11px; }
@@ -10,13 +10,13 @@
 .card.resolved { opacity:.82; }
 .card header { display:flex;flex-direction:column;gap:5px;padding-bottom:12px;border-bottom:1px solid var(--color-border); }
 .card header > div { display:flex;align-items:center;gap:8px; }
-.card header span { padding:4px 7px;border-radius:7px;background:color-mix(in srgb,var(--course-accent) 10%,transparent);color:var(--course-accent);font-size:10px;font-weight:800; }
+.card header span { padding:4px 7px;border-radius:7px;background:color-mix(in srgb,var(--course-accent) 10%,transparent);color:var(--course-accent-ink);font-size:10px;font-weight:800; }
 .card header strong { font-size:12px;color:var(--color-text-muted); }
 .card header small { color:var(--color-text-faint);font-size:11px; }
 .case { margin:14px 0 5px;padding:11px 12px;border:1px solid var(--color-border);border-radius:var(--radius-md);background:var(--color-surface-subtle);color:var(--color-text-muted);font-size:13px;line-height:1.55; }
 .card h2 { margin:10px 0 14px;font-size:16px;line-height:1.4;letter-spacing:-.01em; }
 .explanation { padding:12px 13px;border-radius:12px;background:var(--color-surface-subtle); }
-.explanation strong { color:var(--course-accent);font-size:11px;text-transform:uppercase;letter-spacing:.05em; }
+.explanation strong { color:var(--course-accent-ink);font-size:11px;text-transform:uppercase;letter-spacing:.05em; }
 .explanation p { margin:5px 0 0;color:var(--color-text-muted);font-size:13px;line-height:1.55; }
 .formRow { display:grid;gap:11px;margin-top:13px; }
 .formRow label { display:grid;gap:6px; }
@@ -24,7 +24,7 @@
 .formRow select,.formRow textarea { width:100%;border:1px solid var(--color-border-strong);border-radius:11px;background:var(--color-canvas);color:var(--color-text);font:inherit;font-size:13px;outline:none; }
 .formRow select { min-height:42px;padding:0 10px; }
 .formRow textarea { resize:vertical;padding:10px;line-height:1.45; }
-.formRow select:focus-visible,.formRow textarea:focus-visible { border-color:var(--course-accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--course-accent) 14%,transparent); }
+.formRow select:focus-visible,.formRow textarea:focus-visible { border-color:var(--course-accent-ink);box-shadow:0 0 0 3px color-mix(in srgb,var(--course-accent) 14%,transparent); }
 .sources { display:flex;flex-wrap:wrap;gap:6px;margin-top:12px; }
 .sources a { padding:5px 8px;border:1px solid var(--color-border);border-radius:999px;color:var(--color-text-muted);font-size:10px;font-weight:650;text-decoration:none; }
 .card footer { display:flex;flex-direction:column;gap:10px;margin-top:14px;padding-top:12px;border-top:1px solid var(--color-border); }
@@ -33,7 +33,7 @@
 .empty { min-height:280px;padding:30px 20px;border:1px dashed var(--color-border-strong);border-radius:17px;display:grid;place-items:center;text-align:center;color:var(--color-text-muted); }
 .empty h2 { margin:4px 0 0;color:var(--color-text);font-size:17px; }
 .empty p { max-width:420px;margin:0;font-size:13px;line-height:1.55; }
-.empty a { color:var(--course-accent);font-size:13px;font-weight:750; }
+.empty a { color:var(--course-accent-ink);font-size:13px;font-weight:750; }
 @media (min-width:700px) {
   .overview { grid-template-columns:180px 180px 1fr;align-items:stretch; }
   .overview button { grid-column:auto;justify-self:end;min-width:150px; }
@@ -42,3 +42,6 @@
   .formRow { grid-template-columns:190px 1fr;align-items:start; }
   .card footer { flex-direction:row;align-items:center;justify-content:space-between; }
 }
+.overview,.card,.empty{border:2px solid var(--color-border);border-bottom-width:5px;border-radius:19px;background:var(--color-surface);}
+.formRow select,.formRow textarea{border:2px solid var(--color-border);border-radius:14px;}
+.note{font-size:12px;font-weight:750;color:var(--color-text-muted);}

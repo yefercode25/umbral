@@ -77,9 +77,9 @@ export function SettingsPage() {
       <div className={styles.brandPanel} aria-label="Identidad visual de Umbral">
         <div className={styles.wordmarkWrap}><img src="/media/brand/wordmark.webp" alt="Umbral" loading="lazy" decoding="async" /></div>
         <div className={styles.brandIcons} aria-label="Variantes de icono">
-          <img src="/media/brand/app-teal.webp" alt="Icono turquesa de Umbral" loading="lazy" decoding="async" />
-          <img src="/media/brand/app-light.webp" alt="Icono claro de Umbral" loading="lazy" decoding="async" />
-          <img src="/media/brand/app-dark.webp" alt="Icono oscuro de Umbral" loading="lazy" decoding="async" />
+          <img src="/media/brand/app-light.webp" alt="Icono principal claro de Umbral" loading="lazy" decoding="async" />
+          <img src="/media/brand/app-teal.webp" alt="Variante verde de Umbral" loading="lazy" decoding="async" />
+          <img src="/media/brand/app-dark.webp" alt="Variante oscura de Umbral" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>

@@ -1,16 +1,16 @@
 .backLink { display:inline-flex;align-items:center;gap:7px;margin:2px 0 18px;color:var(--color-text-muted);font-size:13px;font-weight:700;text-decoration:none; }
 .backLink:hover { color:var(--color-text); }
 .intro { display:grid;grid-template-columns:38px 1fr;gap:12px;margin:4px 0 20px;padding:16px;border:1px solid var(--color-border);border-radius:16px;background:var(--color-surface); }
-.introIcon { width:38px;height:38px;border-radius:11px;background:color-mix(in srgb,var(--course-accent) 12%,transparent);color:var(--course-accent);display:grid;place-items:center; }
+.introIcon { width:38px;height:38px;border-radius:11px;background:color-mix(in srgb,var(--course-accent) 12%,transparent);color:var(--course-accent-ink);display:grid;place-items:center; }
 .intro strong { display:block;margin-bottom:5px;font-size:14px; }
 .intro p { margin:0;color:var(--color-text-muted);font-size:13px;line-height:1.55; }
 .grid { display:grid;gap:12px; }
 .caseCard { padding:17px;border:1px solid var(--color-border);border-radius:17px;background:var(--color-surface); }
 .caseTop { display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px; }
-.caseNumber { color:var(--course-accent);font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase; }
+.caseNumber { color:var(--course-accent-ink);font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase; }
 .difficulty { color:var(--color-text-faint);font-size:11px;font-weight:700; }
 .caseCard h2 { margin:0;font-size:18px;line-height:1.25;letter-spacing:-.015em; }
-.subtitle { margin:5px 0 0;color:var(--course-accent);font-size:12px;font-weight:680; }
+.subtitle { margin:5px 0 0;color:var(--course-accent-ink);font-size:12px;font-weight:680; }
 .description { margin:11px 0 13px;color:var(--color-text-muted);font-size:13px;line-height:1.55; }
 .moduleChips { display:flex;flex-wrap:wrap;gap:6px;margin:12px 0; }
 .moduleChips span { padding:5px 8px;border:1px solid var(--color-border);border-radius:8px;background:var(--color-surface-subtle);color:var(--color-text-muted);font-size:10px;font-weight:750; }
@@ -24,7 +24,7 @@
 .caseBrief { margin-bottom:16px;padding:18px;border:1px solid var(--color-border);border-radius:18px;background:var(--color-surface); }
 .briefHeader { display:grid;gap:13px; }
 .briefHeader p { margin:5px 0 0;color:var(--color-text-muted);font-size:13px;line-height:1.55; }
-.eyebrow { color:var(--course-accent);font-size:10px;font-weight:820;letter-spacing:.08em;text-transform:uppercase; }
+.eyebrow { color:var(--course-accent-ink);font-size:10px;font-weight:820;letter-spacing:.08em;text-transform:uppercase; }
 .briefMeta { display:flex;gap:12px;color:var(--color-text-faint);font-size:11px; }
 .facts { display:grid;gap:8px;margin:16px 0 0;padding:0;list-style:none;counter-reset:fact; }
 .facts li { position:relative;padding-left:24px;color:var(--color-text-muted);font-size:13px;line-height:1.5;counter-increment:fact; }
@@ -32,7 +32,7 @@
 .caseStatus { margin-top:17px;padding-top:14px;border-top:1px solid var(--color-border); }
 .caseStatus > div:first-child { display:flex;justify-content:space-between;gap:10px;margin-bottom:8px;color:var(--color-text-muted);font-size:11px; }
 .caseStatus strong { color:var(--color-text); }
-.sequenceNote { display:grid;grid-template-columns:20px 1fr;gap:9px;margin:0 0 18px;padding:13px 14px;border-radius:13px;background:var(--color-surface-subtle);color:var(--course-accent); }
+.sequenceNote { display:grid;grid-template-columns:20px 1fr;gap:9px;margin:0 0 18px;padding:13px 14px;border-radius:13px;background:var(--color-surface-subtle);color:var(--course-accent-ink); }
 .sequenceNote p { margin:0;color:var(--color-text-muted);font-size:12px;line-height:1.5; }
 .questions { display:grid;gap:24px; }
 .questionStep { display:grid;gap:9px; }
@@ -42,7 +42,7 @@
 .stepLabel strong { font-size:12px; }
 .stepLabel small { color:var(--color-text-faint);font-size:10px; }
 .sourcesBox { margin:28px 0 12px;padding:17px;border:1px solid var(--color-border);border-radius:17px;background:var(--color-surface); }
-.sourcesTitle { display:flex;gap:9px;color:var(--course-accent); }
+.sourcesTitle { display:flex;gap:9px;color:var(--course-accent-ink); }
 .sourcesTitle > div { display:grid;gap:2px; }
 .sourcesTitle strong { color:var(--color-text);font-size:13px; }
 .sourcesTitle small { color:var(--color-text-muted);font-size:11px; }
@@ -58,3 +58,7 @@
   .briefMeta { justify-content:flex-end; }
 }
 @media (prefers-reduced-motion:reduce) { .progressLine span { transition:none; } }
+.caseCard,.caseBrief,.questions,.sourcesBox{border:2px solid var(--color-border);border-bottom-width:5px;border-radius:19px;}
+.caseCard:hover{border-color:var(--color-brand);}
+.caseNumber,.eyebrow,.stepLabel{font-weight:900;}
+.questionStep{border-radius:19px;}
