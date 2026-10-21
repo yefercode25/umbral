@@ -18,11 +18,12 @@ const choices = [
   { id:'strong-yes', label:'Muy de acuerdo' },
 ]
 
-export function BehaviorProfileSimulator({ title, text, statements = defaultStatements }: { title: string; text: string; statements?: BehaviorStatement[] }) {
+export function BehaviorProfileSimulator({ title, text, statements = defaultStatements, dianOfficialScale = false }: { title: string; text: string; statements?: BehaviorStatement[]; dianOfficialScale?: boolean }) {
   const [index, setIndex] = useState(0)
   const [answers, setAnswers] = useState<Record<string,string>>({})
   const statement = statements[index] ?? statements[0]!
   const answered = answers[statement.id]
+  const displayedChoices = dianOfficialScale ? choices.map((choice) => ({ ...choice, label: choice.id === 'strong-no' ? 'Totalmente en desacuerdo' : choice.id === 'strong-yes' ? 'Totalmente de acuerdo' : choice.label })) : choices
   const completed = Object.keys(answers).length === statements.length
   const directCount = useMemo(() => statements.filter((item) => item.direction === 'direct').length, [statements])
 
@@ -42,7 +43,7 @@ export function BehaviorProfileSimulator({ title, text, statements = defaultStat
       <div className={styles.counter}><span>{index + 1} / {statements.length}</span><strong>{statement.competency}</strong></div>
       <p className={styles.statement}>{statement.text}</p>
       <div className={styles.scale}>
-        {choices.map((choice) => <button type="button" key={choice.id} className={answered === choice.id ? styles.choiceActive : styles.choice} onClick={() => answer(choice.id)}>{choice.label}</button>)}
+        {displayedChoices.map((choice) => <button type="button" key={choice.id} className={answered === choice.id ? styles.choiceActive : styles.choice} onClick={() => answer(choice.id)}>{choice.label}</button>)}
       </div>
       {answered && <motion.div className={styles.explanation} initial={{ opacity:0 }} animate={{ opacity:1 }}>
         <div><Scale size={17}/><strong>{statement.direction === 'direct' ? 'Enunciado directo' : 'Enunciado inverso'}</strong></div>

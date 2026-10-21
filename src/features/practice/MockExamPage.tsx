@@ -179,7 +179,7 @@ export function MockExamPage() {
         </div>
 
         <section className={styles.setupNotes} aria-label="Cómo funciona este simulacro">
-          <div><Clock3 size={17}/><span><strong>Cronómetro de referencia</strong><small>Cuenta el tiempo, pero no impone un límite mientras no exista una duración oficial específica aplicable al curso.</small></span></div>
+          <div><Clock3 size={17}/><span><strong>Cronómetro de referencia</strong><small>{course.id === 'dian-2676-gestor-ii' ? 'La GOA 19/10/2026 establece cinco horas para la jornada completa de pruebas escritas. Este simulacro parcial es formativo: el cronómetro no agota ni reproduce toda la sesión oficial.' : 'Cuenta el tiempo, pero no impone un límite mientras no exista una duración oficial específica aplicable al curso.'}</small></span></div>
           <div><Bookmark size={17}/><span><strong>Marca para revisar</strong><small>Puedes saltar entre preguntas, dejarlas pendientes y volver antes de entregar.</small></span></div>
           <div><Target size={17}/><span><strong>Resultado formativo</strong><small>Verás precisión por módulo y la explicación completa solo al finalizar.</small></span></div>
           <div><CheckCircle2 size={17}/><span><strong>Transferencia entre módulos</strong><small>Las sesiones combinan cobertura y prioridad pedagógica según el curso seleccionado.</small></span></div>

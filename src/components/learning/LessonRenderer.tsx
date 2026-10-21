@@ -38,7 +38,7 @@ export function LessonRenderer({ course, blocks }: { course: Course; blocks: Les
       if (block.type === 'account-simulator') return <AccountReconciliationSimulator key={key} title={block.title} text={block.text}/>
       if (block.type === 'enforcement-simulator') return <EnforcementChainSimulator key={key} title={block.title} text={block.text}/>
       if (block.type === 'refund-simulator') return <RefundDecisionSimulator key={key} title={block.title} text={block.text}/>
-      if (block.type === 'behavior-simulator') return <BehaviorProfileSimulator key={key} title={block.title} text={block.text} {...(block.statements ? { statements: block.statements } : {})}/>
+      if (block.type === 'behavior-simulator') return <BehaviorProfileSimulator key={key} title={block.title} text={block.text} dianOfficialScale={course.id === 'dian-2676-gestor-ii'} {...(block.statements ? { statements: block.statements } : {})}/>
       if (block.type === 'concursal-simulator') return <ConcursalDecisionSimulator key={key} title={block.title} text={block.text}/>
       if (block.type === 'decision-simulator') return <LegalDecisionSimulator key={key} title={block.title} text={block.text} scenario={block.scenario} prompt={block.prompt} options={block.options}/>
       if (block.type === 'checkpoint') {
