@@ -1,22 +1,26 @@
+import { BookOpenCheck, GraduationCap } from 'lucide-react'
 import { CourseCard } from '../../components/learning/CourseCard'
-import { PageHeader } from '../../components/ui/PageHeader'
 import { courseCompletion, publishedLessons } from '../../lib/course'
 import { courses } from '../../lib/courses'
 import { useProgressStore } from '../../stores/progressStore'
+import { useSettingsStore } from '../../stores/settingsStore'
 import styles from './CoursesPage.module.css'
 
 export function CoursesPage() {
-  const progressByCourse = useProgressStore((state) => state.courses)
-
+  const progress = useProgressStore((state) => state.courses)
+  const selected = useSettingsStore((state) => state.activeCourseSlug)
   return <div className="page">
-    <PageHeader eyebrow="Biblioteca" title="Cursos" subtitle="Cada convocatoria conserva contenido, progreso y evaluación por separado. Puedes cambiar de curso sin mezclar estadísticas ni perder lo ya estudiado." />
+    <header className={styles.header}>
+      <span><GraduationCap size={19}/> TU BIBLIOTECA</span>
+      <h1>¿Qué vas a aprender hoy?</h1>
+      <p>Elige tu convocatoria, como cuando cambias de curso en Duolingo. Cada una tiene sus propias lecciones, preguntas, simulacros y progreso guardado.</p>
+    </header>
     <div className={styles.grid}>
-      {courses.map((course) => <CourseCard
-        key={course.id}
-        course={course}
-        completion={courseCompletion(course, progressByCourse[course.id])}
-        publishedLessonCount={publishedLessons(course).length}
-      />)}
+      {courses.map((course) => <div key={course.id} className={styles.choice}>
+        {course.slug === selected && <span className={styles.selected}><BookOpenCheck size={15}/> ESTÁS ESTUDIANDO ESTE CURSO</span>}
+        <CourseCard course={course} completion={courseCompletion(course, progress[course.id])} publishedLessonCount={publishedLessons(course).length}/>
+      </div>)}
     </div>
+    <p className={styles.footnote}>Cambiar de curso no reinicia nada. Puedes alternar entre DIAN y Procuraduría cuando lo necesites.</p>
   </div>
 }

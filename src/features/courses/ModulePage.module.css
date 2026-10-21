@@ -1,43 +1,22 @@
-.back { min-height:44px;display:inline-flex;align-items:center;gap:7px;margin-bottom:18px;color:var(--color-text-muted);font-size:13px;font-weight:650;text-decoration:none; }
-.hero { padding:22px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:22px; }
-.eyebrow { display:flex;justify-content:space-between;gap:12px;color:var(--course-accent);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.07em; }
-.hero h1 { margin:15px 0 7px;font-size:clamp(28px,7vw,40px);line-height:1.05;letter-spacing:-.045em; }
-.hero > p { margin:0;color:var(--color-text-muted);font-size:14px;line-height:1.55; }
-.metrics { display:flex;flex-wrap:wrap;gap:9px 15px;margin:22px 0 18px;color:var(--color-text-muted);font-size:12px; }
-.metrics span { display:inline-flex;align-items:center;gap:6px; }
-.metrics svg { color:var(--course-accent); }
-.metrics strong { color:var(--color-text); }
-.progressRow { display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center; }
-.progressRow > strong { font-size:12px;color:var(--color-text-muted); }
-.primaryAction { min-height:46px;margin-top:18px;padding:0 16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;background:var(--color-brand);color:var(--color-on-brand);text-decoration:none;font-size:14px;font-weight:700; }
-.primaryAction:hover { background:var(--color-brand-strong); }
-.section { margin-top:28px; }
-.sectionHead { display:flex;align-items:end;justify-content:space-between;gap:14px;margin-bottom:12px; }
-.sectionHead span { color:var(--course-accent);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em; }
-.sectionHead h2 { margin:3px 0 0;font-size:21px;letter-spacing:-.025em; }
-.sectionHead > strong { color:var(--color-text-muted);font-size:13px; }
-.lessonList { overflow:hidden;border:1px solid var(--color-border);border-radius:17px;background:var(--color-surface); }
-.lesson { min-height:74px;padding:12px 14px;display:grid;grid-template-columns:24px 30px minmax(0,1fr) auto;gap:9px;align-items:center;color:inherit;text-decoration:none;border-bottom:1px solid var(--color-border);transition:background 130ms ease; }
-.lesson:last-child { border-bottom:0; }
-.lesson:hover { background:var(--color-surface-subtle); }
-.statusIcon { display:grid;place-items:center;color:var(--color-text-faint); }
-.statusIcon.done { color:var(--color-success); }
-.lessonNumber { color:var(--color-text-faint);font-size:11px;font-variant-numeric:tabular-nums; }
-.lessonText { min-width:0;display:grid;gap:3px; }
-.lessonText strong { font-size:14px;line-height:1.3; }
-.lessonText small { overflow:hidden;color:var(--color-text-muted);font-size:12px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical; }
-.duration { color:var(--color-text-faint);font-size:11px;white-space:nowrap; }
-.practiceCard { margin-top:24px;padding:19px;border:1px solid var(--color-border);border-radius:17px;background:var(--color-surface);display:grid;gap:18px; }
-.practiceCard span { color:var(--course-accent);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em; }
-.practiceCard h2 { margin:3px 0 5px;font-size:19px;letter-spacing:-.02em; }
-.practiceCard p { margin:0;color:var(--color-text-muted);font-size:13px;line-height:1.55; }
-.practiceActions { display:flex;flex-wrap:wrap;gap:8px; }
-.practiceActions a { min-height:44px;padding:0 13px;display:inline-flex;align-items:center;border:1px solid var(--color-border-strong);border-radius:11px;color:var(--color-text);text-decoration:none;font-size:13px;font-weight:700; }
-.practiceActions a:first-child { background:var(--course-accent-soft);border-color:color-mix(in srgb,var(--course-accent) 25%,var(--color-border));color:var(--course-accent); }
-@media (min-width:700px) { .hero { padding:28px; }.practiceCard { grid-template-columns:1fr auto;align-items:center; }.lesson { padding:14px 16px;grid-template-columns:26px 34px minmax(0,1fr) auto; } }
-
-@media (max-width:480px) {
-  .lesson { grid-template-columns:24px 28px minmax(0,1fr);align-items:start; }
-  .statusIcon,.lessonNumber { margin-top:3px; }
-  .duration { grid-column:3;justify-self:start;margin-top:2px; }
-}
+.back{display:inline-flex;align-items:center;gap:8px;min-height:40px;text-decoration:none;color:var(--color-text-muted);font-weight:900;font-size:13px;margin-bottom:16px;}
+.hero{padding:23px;border-radius:22px;border-bottom:7px solid #1679a8;background:linear-gradient(130deg,#117db2,#0a6a9e);color:#fff;}
+.eyebrow{display:flex;align-items:center;justify-content:space-between;gap:12px;opacity:.95;font-size:11px;font-weight:900;letter-spacing:.06em;}
+.hero h1{font-size:clamp(27px,5vw,39px);line-height:1.12;margin:12px 0 6px;color:#fff;}.hero p{font-size:14px;font-weight:750;margin:0;opacity:.97;max-width:57ch;color:#fff;}
+.metrics{display:flex;flex-wrap:wrap;gap:8px 16px;margin:17px 0;font-size:12px;font-weight:850;color:#fff;}.metrics span{display:flex;align-items:center;gap:6px;}
+.progress{padding:12px 0;background:transparent;}
+.primaryAction{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:10px 17px;margin-top:12px;border-radius:13px;background:#fff;border-bottom:5px solid #cbe6f3;color:#16668e;text-decoration:none;font-size:13px;font-weight:900;}
+.section{margin-top:34px;}.sectionHead{display:flex;align-items:center;justify-content:space-between;gap:12px;}.sectionHead span{color:var(--color-brand-strong);font-size:11px;font-weight:900;letter-spacing:.07em;}.sectionHead h2{font-size:25px;margin:4px 0;}.sectionHead p{font-size:13px;font-weight:750;color:var(--color-text-muted);margin:0;max-width:43ch;}.sectionHead>strong{color:var(--color-brand-strong);font-family:var(--font-display);font-size:26px;}
+.lessonPath{display:flex;flex-direction:column;align-items:center;gap:27px;padding:42px 0 24px;max-width:440px;margin:0 auto;}
+.step{display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;max-width:220px;position:relative;color:var(--color-text);}
+.offset0{transform:translateX(0);}.offset1{transform:translateX(-45px);}.offset2{transform:translateX(-25px);}.offset3{transform:translateX(45px);}.offset4{transform:translateX(25px);}
+.orb{width:77px;height:71px;display:grid;place-items:center;border-radius:50%;background:var(--color-disabled-surface);color:var(--color-disabled-text);border-bottom:7px solid var(--color-border-strong);transition:transform .15s;}.step:hover .orb{transform:translateY(-3px) scale(1.05);}
+.completed .orb{background:#ffc800;color:#624400;border-bottom-color:#d5a300;}.active .orb{background:#58cc02;color:#173c00;border-bottom-color:#3e9300;box-shadow:0 0 0 7px #def7cd;}
+.stepLabel{display:grid;gap:3px;text-align:center;background:var(--color-surface);border:2px solid var(--color-border);border-bottom-width:4px;border-radius:13px;padding:8px 13px;}
+.stepLabel strong{font-size:13px;line-height:1.35;font-weight:900;}.stepLabel small{font-size:11px;color:var(--color-text-muted);font-weight:850;}
+.startHere{position:absolute;bottom:calc(100% + 8px);white-space:nowrap;padding:7px 13px;border-radius:10px;background:var(--color-surface);border:2px solid #58cc02;border-bottom-width:4px;color:var(--color-success);font-size:10px;font-weight:900;}
+.practiceCard{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:28px;padding:21px;background:var(--color-surface);border:2px solid var(--color-border);border-bottom-width:5px;border-radius:19px;}
+.practiceCard span{font-size:11px;font-weight:900;letter-spacing:.05em;color:var(--color-brand-strong);}.practiceCard h2{margin:6px 0;font-size:22px;}.practiceCard p{margin:0;font-size:13px;font-weight:750;color:var(--color-text-muted);max-width:40ch;}
+.practiceCard>a{display:inline-flex;align-items:center;gap:9px;padding:12px 17px;background:var(--color-brand);border-bottom:5px solid var(--color-brand-strong);border-radius:14px;color:var(--color-on-brand);font-size:13px;font-weight:900;text-decoration:none;}
+@media(max-width:430px){.offset1{transform:translateX(-27px)}.offset3{transform:translateX(30px)}.offset4{transform:translateX(15px)}}
+.future .orb{background:var(--color-disabled-surface);color:var(--color-disabled-text);}
+.progress{--color-text-muted:#fff;--color-surface-strong:rgba(255,255,255,.34);--color-brand:#fff;}
