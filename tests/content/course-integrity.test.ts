@@ -17,12 +17,12 @@ const activeBlockTypes = new Set([
 
 describe('DIAN Gestor II course integrity', () => {
   it('retains 2026.09 original content and extends the October 2026 curriculum', () => {
-    expect(dianGestorCourse.version).toBe('2026.10.20-dian-goa.4')
+    expect(dianGestorCourse.version).toBe('2026.10.21-dian-goa-ley2586.1')
     expect(dianGestorCourse.units).toHaveLength(9)
     expect(dianGestorCourse.modules).toHaveLength(29)
-    expect(dianGestorCourse.lessons).toHaveLength(309)
-    expect(dianGestorCourse.questions).toHaveLength(759)
-    expect(dianGestorCourse.sources).toHaveLength(101)
+    expect(dianGestorCourse.lessons).toHaveLength(310)
+    expect(dianGestorCourse.questions).toHaveLength(765)
+    expect(dianGestorCourse.sources).toHaveLength(103)
   })
 
   it('uses unique ids across core collections', () => {
@@ -158,7 +158,7 @@ describe('DIAN Gestor II course integrity', () => {
     }
   })
 
-  it('uses the CNSC link to the 19/10 GOA, keeps the cut-off inclusive question open pending full PDF and preserves legacy IDs', () => {
+  it('uses the verified 19/10 GOA with inclusive normative cut-off and preserves legacy IDs', () => {
     const goa = dianGestorCourse.sources.find((item) => item.id === 'goa-cnsc-2676-2026')
     const aviso = dianGestorCourse.sources.find((item) => item.id === 'cnsc-2676-aviso-actualizacion-goa-2026-10-19')
     const lesson = dianGestorCourse.lessons.find((item) => item.id === 'm0-goa-2026')
@@ -166,7 +166,10 @@ describe('DIAN Gestor II course integrity', () => {
     expect(aviso?.url).toBe('https://www.cnsc.gov.co/node/69688')
     expect(lesson?.title).toContain('actualizada')
     expect(lesson?.blocks.some((block) => block.type === 'decision-simulator')).toBe(true)
-    expect(lesson?.blocks.some((block) => block.type === 'rule' && block.text.includes('NO se afirma'))).toBe(true)
+    expect(lesson?.blocks.some((block) => block.type === 'rule' && block.text.includes('fecha límite está incluida'))).toBe(true)
+    expect(dianGestorCourse.sources.find((item) => item.id === 'ley-2586-2026')).toBeDefined()
+    expect(dianGestorCourse.lessons.find((item) => item.id === 'm3-ley-2586-2026')).toBeDefined()
+    expect(dianGestorCourse.questions.filter((item) => item.id.startsWith('q-ley2586-2026-'))).toHaveLength(6)
     expect(dianGestorCourse.questions.find((item) => item.id === 'q-goa26-m0-b')).toBeDefined()
   })
 

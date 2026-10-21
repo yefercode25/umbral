@@ -628,13 +628,31 @@ export const dianSources: SourceRef[] = [
     note: 'Información oficial de orientación al ciudadano sobre requisitos, efectos, garantías, plazos y consecuencias de incumplimiento de facilidades de pago.'
   }
   ,{
+    id: 'ley-2586-2026',
+    title: 'Ley 2586 de 19 de junio de 2026 · Nuevo régimen sancionatorio y decomiso aduanero',
+    publisher: 'Congreso de Colombia · Normograma DIAN',
+    url: 'https://normograma.dian.gov.co/dian/compilacion/docs/ley_2586_2026.htm',
+    type: 'official',
+    verifiedAt: '2026-10-21',
+    note: 'Diario Oficial 53.527 del 19/06/2026. Art. 1 objeto, art. 2 principios, art. 3 fiscalización, art. 112 transición, art. 114 vigencia y derogatoria. Se incluye temporalmente en GOA 19/10/2026 §4.3; no se afirma que todos los artículos sean indicadores para CT-CR-3007.'
+  },
+  {
+    id: 'decreto-920-2023-transicion',
+    title: 'Decreto Ley 920 de 2023 · Referencia histórica y régimen transitorio (derogado)',
+    publisher: 'DIAN · Normograma',
+    url: 'https://normograma.dian.gov.co/dian/compilacion/docs/decreto_0920_2023.htm',
+    type: 'official',
+    verifiedAt: '2026-10-21',
+    note: 'DEROGADO por artículo 114 Ley 2586/2026. No citarlo como régimen general vigente. Estudiarlo para situaciones anteriores bajo las reglas transitorias del artículo 112 de la Ley 2586.'
+  },
+  {
     id: 'goa-cnsc-2676-2026',
     title: 'DIAN 2676 · GOA pruebas escritas · versión publicada 19/10/2026',
     publisher: 'CNSC · Fundación Universitaria del Área Andina',
     url: 'https://www.cnsc.gov.co/sites/default/files/2026-10/dian_2676_guia_orientacion_aspirante_19102026.pdf',
     type: 'official',
-    verifiedAt: '2026-10-20',
-    note: 'Enlace extraído de la sección Guías de la CNSC el 20/10/2026. El 19/10 hubo actualización oficial por corte normativo. No se pudo descargar el PDF completo desde este entorno: el alcance exacto del día 19/06/2026 (si lo incluye o no) requiere lectura directa de esta versión antes de tomar decisiones sobre normas de esa fecha. El formato PJS y Likert procede de las guías de octubre ya publicadas.'
+    verifiedAt: '2026-10-21',
+    note: 'PDF de 35 páginas aportado y leído íntegramente el 21/10/2026. Num. 4.3 (p. 11): normas vigentes expedidas HASTA el 19/06/2026 (fecha inclusive). Funcionales: PJS con tres alternativas (p. 12). Comportamentales e integridad: Likert de 4 niveles sin clave de acierto (pp. 17–18). Jornada 8/11/2026 de cinco horas (p. 25).'
   },
   {
     id: 'cnsc-2676-aviso-actualizacion-goa-2026-10-19',

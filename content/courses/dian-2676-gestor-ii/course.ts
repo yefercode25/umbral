@@ -11,6 +11,8 @@ import { dianMasterPracticeQuestions } from './questions/masterPractice2026'
 import { dianAppliedPublicServiceLessons, dianAppliedPublicServiceQuestions } from './modules/appliedPublicService2026'
 import { dianAppliedPublicServiceSources } from './sources/appliedPublicServiceSources2026'
 import { dianOfficialGuideLesson } from './modules/officialGuide2026Lesson'
+import { dianLey2586AduanasLesson } from './modules/ley2586AduanasLesson'
+import { dianLey2586AduanasQuestions } from './questions/ley2586AduanasQuestions'
 import { dianQuestions } from './questions/questions'
 import { dianIntegratedQuestions } from './questions/integratedCases'
 import { dianFoundationExpansionQuestions } from './questions/foundationExpansion'
@@ -31,10 +33,10 @@ export const dianGestorCourse: Course = {
   shortTitle: 'Gestor II',
   subtitle: 'OPEC 236844 · CT-CR-3007',
   description: 'Programa intensivo de Gestor II con fundamentos, expedientes y PJS de cartera, cobro, recaudo, EAR y devoluciones; incluye clínicas aplicadas de gestión documental, PQRSF, MIPG por vigencias, CPACA, servicio y Buen Gobierno. Ofimática y razonamiento se identifican como complementos, sujetos a los indicadores de la inscripción.',
-  disclaimer: 'Preparación independiente, no afiliada ni avalada por la DIAN o la CNSC. La CNSC publicó la GOA el 08/10/2026 y anunció una actualización por corte normativo el 19/10/2026. Los ejes particulares se consultan por inscripción; el MERF CT-CR-3007 y los contenidos complementarios no sustituyen esos indicadores. El 19/06/2026 es la fecha de referencia del corte en ediciones anteriores: verificar el alcance literal en el PDF oficial de 19/10/2026 antes de incluir o excluir una norma expedida ese día.',
+  disclaimer: 'Preparación independiente, no afiliada ni avalada por DIAN o CNSC. Se verificó directamente la GOA de 19/10/2026: sección 4.3 incluye normas vigentes expedidas hasta el 19/06/2026. Ley 2586/2026 queda dentro del corte temporal, sin garantizar que sea eje individual para CT-CR-3007. El MERF y los complementos no reemplazan los indicadores por número de inscripción ni las reglas de Acuerdo y Anexo.',
   accent: '#167C80',
-  version: '2026.10.20-dian-goa.4',
-  updatedAt: '2026-10-20',
+  version: '2026.10.21-dian-goa-ley2586.1',
+  updatedAt: '2026-10-21',
   officialGuideStatus: 'published',
   opec: '236844',
   jobCode: '302 · Grado 2',
@@ -42,7 +44,7 @@ export const dianGestorCourse: Course = {
   cardArtwork: '/media/editorial/course-dian-2676-cover.webp',
   heroArtwork: '/media/editorial/course-dian-2676-cover.webp',
   studyPlanLabel: 'Ruta de profundización DIAN · Gestor II',
-  guideNotice: 'Actualización oficial CNSC del 19/10/2026: nueva versión de la GOA por ajustes de corte normativo. Verifica el texto íntegro antes de incluir una norma de la fecha límite. Indicadores por número de inscripción: no asumas que MERF o complementos equivalen a ejes particulares. Funcionales: PJS de tres alternativas. Comportamentales e integridad: autoinforme Likert de cuatro niveles. Revisa la citación en SIMO y la guía actualizada en Fuentes.',
+  guideNotice: 'GOA CNSC 19/10/2026 verificada: corte normativo INCLUSIVO hasta el 19/06/2026 (num. 4.3). Se incorporó Ley 2586/2026 como complemento aduanero; indicadores individuales por número de inscripción, no supuestos. Funcionales: PJS de tres alternativas, mínimo 70,00; comportamentales e integridad: Likert de cuatro niveles sin clave; prueba el 08/11/2026, jornada de 5 horas. Consulta tu citación y condiciones definitivas en SIMO.',
   practiceConfig: {
     coreLabel: 'Núcleo CT-CR-3007',
     coreModuleIds: ['m9','m10','m11','m12','m13','m14','m15','m16'],
@@ -56,7 +58,7 @@ export const dianGestorCourse: Course = {
   },
   units: dianUnits,
   modules: dianModules,
-  lessons: [...dianMasterTheoryLessons, ...dianLessons, ...dianTransversalLessons, ...dianDeepTheoryLessons, ...dianTheoryAuditLessons, dianOfficialGuideLesson, ...dianAdvancedCaseworkLessons, ...dianAdvancedDossierLessons, ...dianAdvancedLegalClinicLessons, ...dianAppliedPublicServiceLessons],
-  questions: [...dianMasterTheoryQuestions, ...dianMasterPracticeQuestions, ...dianQuestions, ...dianIntegratedQuestions, ...dianFoundationExpansionQuestions, ...dianAlpha4ExpansionQuestions, ...dianTransversalQuestions, ...dianDeepTheoryExpansionQuestions, ...dianTheoryAuditExpansionQuestions, ...dianAdvancedSituationalQuestions, ...dianAdvancedLegalClinicQuestions, ...dianAppliedPublicServiceQuestions],
+  lessons: [...dianMasterTheoryLessons, ...dianLessons, ...dianTransversalLessons, ...dianDeepTheoryLessons, ...dianTheoryAuditLessons, dianOfficialGuideLesson, dianLey2586AduanasLesson, ...dianAdvancedCaseworkLessons, ...dianAdvancedDossierLessons, ...dianAdvancedLegalClinicLessons, ...dianAppliedPublicServiceLessons],
+  questions: [...dianMasterTheoryQuestions, ...dianMasterPracticeQuestions, ...dianQuestions, ...dianIntegratedQuestions, ...dianFoundationExpansionQuestions, ...dianAlpha4ExpansionQuestions, ...dianTransversalQuestions, ...dianDeepTheoryExpansionQuestions, ...dianTheoryAuditExpansionQuestions, ...dianAdvancedSituationalQuestions, ...dianAdvancedLegalClinicQuestions, ...dianAppliedPublicServiceQuestions, ...dianLey2586AduanasQuestions],
   sources: [...dianSources, ...dianTransversalSources, ...dianAuditExpansionSources, ...dianAppliedPublicServiceSources],
 }
