@@ -4,6 +4,8 @@ import { AnimatePresence, MotionConfig } from 'motion/react'
 import { AppShell } from './AppShell'
 import { HomePage } from '../features/home/HomePage'
 import { CoursesPage } from '../features/courses/CoursesPage'
+import { LibraryPage } from '../features/library/LibraryPage'
+import { IndicatorsPage } from '../features/library/IndicatorsPage'
 import { CoursePage } from '../features/courses/CoursePage'
 import { ModulePage } from '../features/courses/ModulePage'
 import { SourcesPage } from '../features/courses/SourcesPage'
@@ -50,6 +52,8 @@ export function App() {
             <Route element={<AppShell />}>
             <Route index element={<HomePage />} />
             <Route path="courses" element={<CoursesPage />} />
+            <Route path="library" element={<LibraryPage />} />
+            <Route path="library/indicators" element={<IndicatorsPage />} />
             <Route path="courses/:courseSlug" element={<CoursePage />} />
             <Route path="courses/:courseSlug/module/:moduleId" element={<ModulePage />} />
             <Route path="courses/:courseSlug/sources" element={<SourcesPage />} />

@@ -1,0 +1,15 @@
+.page { max-width:990px; }.back { display:inline-flex;align-items:center;gap:7px;margin-bottom:15px;text-decoration:none;color:var(--color-text-muted);font-weight:800;font-size:13px; }
+.editor { margin:16px 0;padding:19px;border:1px solid var(--color-border);background:var(--color-surface);border-radius:18px; }
+.editor h2 { margin:0 0 8px;font-size:20px; }.editor p { font-size:13px;line-height:1.6;color:var(--color-text-muted); }
+.editor label { display:block;font-size:12px;font-weight:800;margin:14px 0 6px; }
+.editor textarea { width:100%;display:block;background:var(--color-surface-subtle);border:1px solid var(--color-border-strong);border-radius:12px;padding:13px;font:13px/1.5 var(--font-ui);color:var(--color-text);resize:vertical; }
+.primary { display:inline-flex;align-items:center;gap:8px;min-height:43px;margin-top:12px;padding:9px 15px;background:var(--color-brand);color:var(--color-on-brand);font:800 13px var(--font-ui);border:0;border-radius:11px;cursor:pointer; }
+.warning { display:flex;align-items:flex-start;gap:10px; }.warning svg { flex:none;color:var(--color-warning); }.warning code { font-size:12px; }
+.indicatorList { display:grid;gap:11px;margin:15px 0; }.indicator { padding:14px;border:1px solid var(--color-border);background:var(--color-surface-subtle);border-radius:13px; }
+.indicator h3 { font-size:14px;margin:0;line-height:1.4; }.indicator .evidence { font-size:12px;margin:9px 0 0; }.row { display:flex;align-items:start;gap:10px;justify-content:space-between; }
+.remove { cursor:pointer;display:grid;place-items:center;flex:none;border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-danger);border-radius:9px;width:32px;height:32px; }
+.indicator details { margin-top:12px; }.indicator summary { cursor:pointer;color:var(--color-brand-strong);font-size:12px;font-weight:800; }
+.moduleList { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:10px;max-height:280px;overflow:auto;padding:5px; }
+.moduleList label { display:flex;gap:8px;align-items:start;padding:8px;margin:0;border:1px solid var(--color-border);border-radius:9px;background:var(--color-surface);font-size:12px;font-weight:650;line-height:1.4;cursor:pointer; }
+.moduleList input { accent-color:var(--color-brand);margin-top:3px; }
+@media(max-width:620px){ .moduleList {grid-template-columns:1fr;} .editor {padding:15px;} }

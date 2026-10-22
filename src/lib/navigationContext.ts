@@ -6,7 +6,7 @@ export function contextualCourseSlug(pathname: string, search: string) {
 }
 
 export function contextualNavHref(to: string, pathname: string, search: string) {
-  if (to !== '/practice' && to !== '/progress') return to
+  if (to !== '/practice' && to !== '/progress' && to !== '/library') return to
   const course = contextualCourseSlug(pathname, search)
   return course ? `${to}?course=${encodeURIComponent(course)}` : to
 }

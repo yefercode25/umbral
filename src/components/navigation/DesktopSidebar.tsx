@@ -1,4 +1,4 @@
-import { BookOpenCheck, ChartNoAxesColumnIncreasing, House, NotebookPen, Settings2 } from 'lucide-react'
+import { LibraryBig, ChartNoAxesColumnIncreasing, House, NotebookPen, Settings2 } from 'lucide-react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { contextualNavHref } from '../../lib/navigationContext'
 import { CourseSwitcher } from './CourseSwitcher'
@@ -7,7 +7,7 @@ import styles from './DesktopSidebar.module.css'
 
 const items = [
   { to: '/', label: 'Aprender', icon: House, end: true },
-  { to: '/courses', label: 'Mis cursos', icon: BookOpenCheck, end: false },
+  { to: '/library', label: 'Biblioteca', icon: LibraryBig, end: false },
   { to: '/practice', label: 'Practicar', icon: NotebookPen, end: false },
   { to: '/progress', label: 'Mi progreso', icon: ChartNoAxesColumnIncreasing, end: false },
 ]
