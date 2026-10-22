@@ -1,0 +1,12 @@
+.panel { border:1px solid var(--color-border);background:var(--color-surface);border-radius:18px;padding:22px;margin:20px 0; }
+.panel header h2 { margin:7px 0;font-size:22px;line-height:1.2; }.panel header p,.warning p,.empty,.panel footer p { font-size:12px;color:var(--color-text-muted);line-height:1.6; }
+.kicker { font-weight:850;letter-spacing:.05em;color:var(--color-brand-strong);font-size:11px; }
+.kpis { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:15px 0; }.kpis>div {display:grid;align-content:start;gap:5px;background:var(--color-surface-subtle);border:1px solid var(--color-border);padding:13px;border-radius:12px; }
+.kpis span {font-size:11px;font-weight:750;color:var(--color-text-muted);} .kpis strong {font:750 23px var(--font-display);} .kpis small {font-size:11px;color:var(--color-text-muted);}
+.warning {background:var(--color-surface-subtle);border-radius:12px;padding:13px;margin:14px 0;} .warning strong {font-size:13px;}.warning p {margin:6px 0 0;}
+.panel h3 {font-size:15px;margin:21px 0 12px;}.difficulty,.modules {display:grid;gap:9px;}.difficulty {grid-template-columns:repeat(5,minmax(0,1fr));}.difficulty>div,.modules>div {border:1px solid var(--color-border);border-radius:11px;padding:11px;display:grid;gap:6px;}.difficulty span,.modules span{font-size:12px;line-height:1.4;} .difficulty strong{font-size:16px;}.difficulty small,.modules small {font-size:11px;color:var(--color-text-muted);}
+.track {height:7px;border-radius:7px;background:var(--color-surface-strong);overflow:hidden;}.track span {display:block;height:100%;background:var(--color-brand);border-radius:7px;}
+.show {margin-top:10px;border:1px solid var(--color-border);border-radius:10px;background:var(--color-surface);color:var(--color-brand-strong);padding:8px 12px;font:800 12px var(--font-ui);cursor:pointer;}
+.sessions{display:grid;gap:7px;}.sessions>div{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--color-surface-subtle);border-radius:9px;padding:9px 12px;}.sessions span{font-size:12px;color:var(--color-text-muted);}
+.panel footer{margin-top:20px;padding-top:13px;border-top:1px solid var(--color-border);}.panel footer a{color:var(--color-brand-strong);font-size:13px;font-weight:800;}
+@media(max-width:720px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr));}.difficulty{grid-template-columns:repeat(2,minmax(0,1fr));}.panel{padding:16px;}}

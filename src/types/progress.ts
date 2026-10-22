@@ -37,6 +37,16 @@ export type QuestionProgress = {
   lastCorrect: boolean
 }
 
+export type PracticeSession = {
+  id: string
+  recordedAt: string
+  profileId: string
+  questions: number
+  correct: number
+  durationSeconds: number
+  byModule: { moduleId: string; questions: number; correct: number }[]
+}
+
 export type CourseProgress = {
   courseId: string
   contentVersion: string
@@ -45,6 +55,7 @@ export type CourseProgress = {
   lastRoute?: string
   lessons: Record<string, LessonProgress>
   skills: Record<string, SkillProgress>
+  practiceSessions?: PracticeSession[]
   questionStats?: Record<string, QuestionProgress>
   errorJournal?: Record<string, ErrorJournalEntry>
   questionBookmarks?: string[]

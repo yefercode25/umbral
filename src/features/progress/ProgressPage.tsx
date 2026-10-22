@@ -8,6 +8,7 @@ import { courses } from '../../lib/courses'
 import { getCourseFromSearchParams, withCourse } from '../../lib/courseQuery'
 import { useProgressStore } from '../../stores/progressStore'
 import styles from './ProgressPage.module.css'
+import { PracticeAnalyticsPanel } from './PracticeAnalyticsPanel'
 
 export function ProgressPage() {
   const [searchParams] = useSearchParams()
@@ -75,6 +76,8 @@ export function ProgressPage() {
       <div className={styles.focusHead}><div><span>Prioridad de repaso</span><h2>Módulos con menor precisión</h2></div><Link to={withCourse('/practice/adaptive', course)}>Practicar recomendadas</Link></div>
       <div className={styles.focusGrid}>{modulePerformance.map(({ module, attempts: moduleAttempts, accuracy: moduleAccuracy }) => <Link key={module.id} to={`/courses/${course.slug}/module/${module.id}`} className={styles.focusItem}><span>{module.code}</span><strong>{module.title}</strong><small>{moduleAccuracy}% · {moduleAttempts} intento{moduleAttempts === 1 ? '' : 's'}</small></Link>)}</div>
     </section>}
+
+    {course.id === 'dian-2676-gestor-ii' && <PracticeAnalyticsPanel course={course} progress={progress}/>}
 
     <section className={styles.course}>
       <div className={styles.courseHead}><div><span>{course.subtitle}</span><h2>{course.title}</h2></div><strong>{courseCompletion(course, progress)}%</strong></div>

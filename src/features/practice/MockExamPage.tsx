@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   ArrowLeft,
   Bookmark,
@@ -34,7 +34,9 @@ export function MockExamPage() {
   const course = getCourseFromSearchParams(searchParams)
   const examProfiles = examProfilesForCourse(course)
   const recordAnswer = useProgressStore((state) => state.recordAnswer)
+  const recordPracticeSession = useProgressStore((state) => state.recordPracticeSession)
   const ensureCourse = useProgressStore((state) => state.ensureCourse)
+  const submittedLatch = useRef(false)
   const [profileId, setProfileId] = useState<ExamProfileId>('functional-training')
   const [attempt, setAttempt] = useState(0)
   const [started, setStarted] = useState(false)
@@ -52,6 +54,7 @@ export function MockExamPage() {
   }, [course, ensureCourse])
 
   useEffect(() => {
+    submittedLatch.current = false
     setStarted(false)
     setQuestions([])
     setAnswers({})
@@ -103,6 +106,7 @@ export function MockExamPage() {
   }, [answers, questions])
 
   const begin = () => {
+    submittedLatch.current = false
     setQuestions(selectExamQuestions(course, profileId))
     setAnswers({})
     setFlagged(new Set())
@@ -115,16 +119,27 @@ export function MockExamPage() {
   }
 
   const submit = () => {
-    if (submitted || unansweredCount > 0) return
+    if (submittedLatch.current || submitted || unansweredCount > 0 || !questions.length) return
+    submittedLatch.current = true
     for (const question of questions) {
       const correct = answers[question.id] === question.correctOptionId
       recordAnswer(course, question.id, question.skillIds, correct)
     }
+    if (course.id === 'dian-2676-gestor-ii') recordPracticeSession(course, {
+      id: `${course.id}-${profileId}-${Date.now()}`,
+      recordedAt: new Date().toISOString(),
+      profileId,
+      questions: questions.length,
+      correct: results.correct,
+      durationSeconds: elapsed,
+      byModule: [...results.modules.entries()].map(([moduleId, value]) => ({ moduleId, questions: value.total, correct: value.correct })),
+    })
     setSubmitted(true)
     scrollPageToTop()
   }
 
   const restart = () => {
+    submittedLatch.current = false
     setStarted(false)
     setQuestions([])
     setAnswers({})

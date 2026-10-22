@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import type { Course } from '../types/course'
-import type { CourseProgress, ErrorReason, ProgressState } from '../types/progress'
+import type { CourseProgress, ErrorReason, PracticeSession, ProgressState } from '../types/progress'
 import { nextSkillProgress } from '../lib/mastery'
 import { todayKey } from '../lib/date'
 
@@ -13,6 +13,7 @@ const emptyCourseProgress = (course: Course): CourseProgress => ({
   lessons: {},
   skills: {},
   questionStats: {},
+  practiceSessions: [],
   errorJournal: {},
   questionBookmarks: [],
   bookmarks: [],
@@ -26,6 +27,7 @@ type ProgressActions = {
   markLessonStarted: (course: Course, lessonId: string, route: string) => void
   markLessonCompleted: (course: Course, lessonId: string, minutes?: number) => void
   recordAnswer: (course: Course, questionId: string, skillIds: string[], correct: boolean) => void
+  recordPracticeSession: (course: Course, session: PracticeSession) => void
   toggleBookmark: (course: Course, lessonId: string) => void
   toggleQuestionBookmark: (course: Course, questionId: string) => void
   setDailyGoal: (course: Course, minutes: number) => void
@@ -136,6 +138,14 @@ export const useProgressStore = create<ProgressState & ProgressActions>()(
               [course.id]: { ...current, lastActivityAt: now, skills, questionStats, errorJournal },
             },
           }
+        }),
+      recordPracticeSession: (course, session) =>
+        set((state) => {
+          const current = state.courses[course.id] ?? emptyCourseProgress(course)
+          return { courses: { ...state.courses, [course.id]: {
+            ...current, lastActivityAt: session.recordedAt,
+            practiceSessions: [...(current.practiceSessions ?? []), session].slice(-60),
+          } } }
         }),
       toggleBookmark: (course, lessonId) =>
         set((state) => {
