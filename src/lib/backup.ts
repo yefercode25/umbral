@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { readIndicators, saveIndicators } from './indicatorCoverage'
 
 const persistedProgressSchema = z.object({
   state: z.object({
@@ -24,6 +25,7 @@ export const backupSchema = z.object({
   exportedAt: z.string(),
   progress: persistedProgressSchema.nullable(),
   settings: persistedSettingsSchema.nullable(),
+  dianIndicators: z.array(z.object({ id: z.string(), title: z.string(), moduleIds: z.array(z.string()) })).max(150).optional(),
 })
 
 export type UmbralBackup = z.infer<typeof backupSchema>
@@ -40,6 +42,7 @@ export function createBackup(): UmbralBackup {
     exportedAt: new Date().toISOString(),
     progress: parseStored(localStorage.getItem('umbral:progress:v1')),
     settings: parseStored(localStorage.getItem('umbral:settings:v1')),
+    dianIndicators: readIndicators(),
   })
 }
 
@@ -47,6 +50,7 @@ export function restoreBackup(input: unknown) {
   const parsed = backupSchema.parse(input)
   if (parsed.progress) localStorage.setItem('umbral:progress:v1', JSON.stringify(parsed.progress))
   else localStorage.removeItem('umbral:progress:v1')
+  if (parsed.dianIndicators) saveIndicators(parsed.dianIndicators)
   if (parsed.settings) localStorage.setItem('umbral:settings:v1', JSON.stringify(parsed.settings))
   else localStorage.removeItem('umbral:settings:v1')
   return parsed
