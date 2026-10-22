@@ -27,3 +27,18 @@ a.node:active .round{transform:translateY(2px);}
 @media(max-width:500px){.banner{padding:17px 16px;}.bannerIcon{font-size:25px;width:32px;}.path{gap:27px;}.offset1{transform:translateX(-36px)}.offset2{transform:translateX(-17px)}.offset3{transform:translateX(37px)}.offset4{transform:translateX(18px)}}
 @media(prefers-reduced-motion:reduce){.current .round{animation:none;}}
 .unavailable{opacity:1;cursor:not-allowed;filter:grayscale(.4);}.unavailable .round{background:var(--color-disabled-surface);color:var(--color-disabled-text);}.unavailable .nodeTitle{border-style:dashed;}
+
+.unitMapBtn{margin-top:10px;display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:11px;border:2px solid rgba(255,255,255,.32);background:rgba(255,255,255,.16);color:#fff;font:900 11.5px var(--font-ui);cursor:pointer;}
+.unitMapBtn:hover{background:rgba(255,255,255,.26);}
+.bannerThumbWrap{position:relative;width:132px;height:98px;flex:0 0 auto;border-radius:14px;border:2px solid rgba(255,255,255,.4);border-bottom-width:5px;overflow:hidden;padding:0;background:#fffdf9;cursor:zoom-in;}
+.bannerThumb{width:100%;height:100%;object-fit:cover;display:block;}
+.thumbZoom{position:absolute;right:6px;bottom:6px;width:22px;height:22px;border-radius:7px;background:rgba(15,23,42,.82);color:#fff;font-size:11px;font-weight:900;display:grid;place-items:center;}
+.modalBackdrop{position:fixed;inset:0;z-index:130;background:rgba(10,15,24,.82);backdrop-filter:blur(8px);display:grid;place-items:center;padding:18px;}
+.modalCard{width:min(1120px,100%);max-height:92vh;background:var(--color-surface);border:2px solid var(--color-border);border-radius:22px;overflow:hidden;display:grid;grid-template-rows:auto minmax(0,1fr);}
+.modalHead{padding:14px 18px;border-bottom:1.5px solid var(--color-border);display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.modalHead span{display:block;font-size:11px;font-weight:900;color:var(--color-brand-strong);letter-spacing:.06em;}
+.modalHead strong{font-size:17px;color:var(--color-text);}
+.modalHead button{width:38px;height:38px;border-radius:11px;border:2px solid var(--color-border);background:var(--color-surface-subtle);color:var(--color-text);display:grid;place-items:center;cursor:pointer;}
+.modalBody{overflow:auto;padding:16px;background:#0c111a;display:grid;place-items:center;}
+.modalImg{max-width:100%;height:auto;border-radius:14px;}
+@media(max-width:600px){.bannerThumbWrap{width:96px;height:72px;}}

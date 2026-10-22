@@ -2,15 +2,15 @@ import type { CourseModule, CourseUnit } from '../../../../src/types/course'
 import { dianAppliedPublicServiceLessons } from './appliedPublicService2026'
 
 export const dianUnits: CourseUnit[] = [
-  { id: 'u0', order: 0, title: 'Preparación', description: 'Entiende el empleo, el examen y cómo estudiar antes de entrar a la norma.', moduleIds: ['m0'] },
-  { id: 'u1', order: 1, title: 'Fundamentos institucionales y jurídicos', description: 'El piso común de función pública, DIAN y procedimiento administrativo.', moduleIds: ['m1','m2','m3','m4'] },
-  { id: 'u2', order: 2, title: 'Tributario y recaudo', description: 'Obligación, declaraciones, recaudo y control extensivo.', moduleIds: ['m5','m6','m7','m8'] },
-  { id: 'u3', order: 3, title: 'Cartera y cobro', description: 'El núcleo operativo del empleo CT-CR-3007.', moduleIds: ['m9','m10','m11','m12','m13','m14'] },
-  { id: 'u4', order: 4, title: 'Devoluciones y compensaciones', description: 'Desde el saldo a favor hasta la decisión y el pago.', moduleIds: ['m15','m16'] },
-  { id: 'u5', order: 5, title: 'Información institucional', description: 'Calidad, trazabilidad y sistemas de información del subproceso.', moduleIds: ['m17'] },
-  { id: 'u6', order: 6, title: 'Competencias e integridad', description: 'Perfil comportamental y criterios éticos de la DIAN.', moduleIds: ['m18','m19','m20'] },
-  { id: 'u7', order: 7, title: 'Entrenamiento de prueba', description: 'Método PJS, práctica adaptativa y simulacros.', moduleIds: ['m21','m22','m23'] },
-  { id: 'u8', order: 8, title: 'Herramientas y razonamiento transversal', description: 'Bloque complementario y provisional: ofimática, Excel, análisis de datos, lógica, conjuntos, matemática práctica y probabilidad.', moduleIds: ['m24','m25','m26','m27','m28'] },
+  { id: 'u0', order: 0, title: 'Preparación', description: 'Entiende el empleo, el examen y cómo estudiar antes de entrar a la norma.', moduleIds: ['m0'], artwork: '/media/lesson-support/goa-2676-exam-blueprint.webp', artworkAlt: 'Arquitectura oficial del examen DIAN 2676 y mapa del curso.' },
+  { id: 'u1', order: 1, title: 'Fundamentos institucionales y jurídicos', description: 'El piso común de función pública, DIAN y procedimiento administrativo.', moduleIds: ['m1','m2','m3','m4'], artwork: '/media/lesson-support/dian-structure-levels.webp', artworkAlt: 'Estructura institucional de la DIAN, MIPG y actuación administrativa CPACA.' },
+  { id: 'u2', order: 2, title: 'Tributario y recaudo', description: 'Obligación, declaraciones, recaudo y control extensivo.', moduleIds: ['m5','m6','m7','m8'], artwork: '/media/lesson-support/account-checklist.webp', artworkAlt: 'Obligación tributaria, estado de cuenta, ciclo EAR y control extensivo.' },
+  { id: 'u3', order: 3, title: 'Cartera y cobro', description: 'El núcleo operativo del empleo CT-CR-3007.', moduleIds: ['m9','m10','m11','m12','m13','m14'], artwork: '/media/lesson-support/coactive-route.webp', artworkAlt: 'Núcleo operativo de cartera, prescripción, facilidades, cobro coactivo y concursal.' },
+  { id: 'u4', order: 4, title: 'Devoluciones y compensaciones', description: 'Desde el saldo a favor hasta la decisión y el pago.', moduleIds: ['m15','m16'], artwork: '/media/lesson-support/refunds-route-v2.webp', artworkAlt: 'Ruta integral del procedimiento de devoluciones y compensaciones.' },
+  { id: 'u5', order: 5, title: 'Información institucional', description: 'Calidad, trazabilidad y sistemas de información del subproceso.', moduleIds: ['m17'], artwork: '/media/lesson-support/dian-systems-security-traceability.webp', artworkAlt: 'Sistemas de información, seguridad de accesos, reserva tributaria y trazabilidad.' },
+  { id: 'u6', order: 6, title: 'Competencias e integridad', description: 'Perfil comportamental y criterios éticos de la DIAN.', moduleIds: ['m18','m19','m20'], artwork: '/media/lesson-support/dian-competencies-integrity-merf.webp', artworkAlt: 'Competencias comportamentales MERF niveles 3 y 4, integridad y escala Likert.' },
+  { id: 'u7', order: 7, title: 'Entrenamiento de prueba', description: 'Método PJS, práctica adaptativa y simulacros.', moduleIds: ['m21','m22','m23'], artwork: '/media/lesson-support/pjs-method.webp', artworkAlt: 'Método de 5 pasos para resolver Preguntas de Juicio Situacional PJS.' },
+  { id: 'u8', order: 8, title: 'Herramientas y razonamiento transversal', description: 'Bloque complementario y provisional: ofimática, Excel, análisis de datos, lógica, conjuntos, matemática práctica y probabilidad.', moduleIds: ['m24','m25','m26','m27','m28'], artwork: '/media/lesson-support/excel-logic-quantitative-toolkit.webp', artworkAlt: 'Herramientas transversales de Excel tributario, análisis de datos, conjuntos y probabilidad.' },
 ]
 
 const accent = '#167C80'

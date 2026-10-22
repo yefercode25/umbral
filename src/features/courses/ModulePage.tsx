@@ -1,9 +1,11 @@
 import { useEffect } from 'react'
-import { ArrowLeft, ArrowRight, BookOpenCheck, Check, Clock3, Play, Star, Target } from 'lucide-react'
+import { ArrowLeft, ArrowRight, BookOpenCheck, Check, Clock3, Network, Play, Star, Target } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
+import { LessonSupportGraphic } from '../../components/learning/LessonSupportGraphic'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { moduleCompletion } from '../../lib/course'
 import { getCourseBySlug } from '../../lib/courses'
+import { getModuleSupportGraphic } from '../../lib/supportGraphics'
 import { useProgressStore } from '../../stores/progressStore'
 import { useSettingsStore } from '../../stores/settingsStore'
 import type { Lesson } from '../../types/course'
@@ -25,6 +27,12 @@ export function ModulePage() {
   const completion = moduleCompletion(course, module.id, progress)
   const completed = lessons.filter((lesson) => progress?.lessons[lesson.id]?.status === 'completed').length
   const nextLesson = lessons.find((lesson) => progress?.lessons[lesson.id]?.status !== 'completed') ?? lessons[0]
+  const moduleGraphic = getModuleSupportGraphic(module.id)
+
+  const attemptedQuestions = questions.filter((q) => (progress?.questionStats?.[q.id]?.attempts ?? 0) > 0)
+  const totalAttempts = attemptedQuestions.reduce((acc, q) => acc + (progress?.questionStats?.[q.id]?.attempts ?? 0), 0)
+  const totalCorrect = attemptedQuestions.reduce((acc, q) => acc + (progress?.questionStats?.[q.id]?.correct ?? 0), 0)
+  const moduleAccuracy = totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : null
 
   return <div className="page page--narrow">
     <Link to={`/courses/${course.slug}`} className={styles.back}><ArrowLeft size={18}/> Volver a mi ruta</Link>
@@ -35,11 +43,20 @@ export function ModulePage() {
       <div className={styles.metrics}>
         <span><BookOpenCheck size={18}/>{lessons.length} lecciones</span>
         <span><Clock3 size={18}/>{minutes} min aprox.</span>
-        <span><Target size={18}/>{questions.length} preguntas</span>
+        <span><Target size={18}/>{questions.length} preguntas ({attemptedQuestions.length} practicadas{moduleAccuracy !== null ? ` · ${moduleAccuracy}% aciertos` : ''})</span>
       </div>
       <div className={styles.progress}><ProgressBar value={completion} label="Progreso del módulo"/></div>
-      {nextLesson && <Link className={styles.primaryAction} to={`/courses/${course.slug}/lesson/${nextLesson.id}`}><Play size={18} fill="currentColor"/>{completed > 0 ? 'CONTINUAR APRENDIENDO' : 'EMPEZAR A APRENDER'}</Link>}
+      <div className={styles.heroActions}>
+        {nextLesson && <Link className={styles.primaryAction} to={`/courses/${course.slug}/lesson/${nextLesson.id}`}><Play size={18} fill="currentColor"/>{completed > 0 ? 'CONTINUAR APRENDIENDO' : 'EMPEZAR A APRENDER'}</Link>}
+        {course.id === 'dian-2676-gestor-ii' && <Link className={styles.secondaryHeroAction} to="/library?tab=mapas"><Network size={17}/> Atlas Visual DIAN</Link>}
+      </div>
     </header>
+
+    {moduleGraphic ? (
+      <div className={styles.moduleGraphicWrap}>
+        <LessonSupportGraphic graphic={moduleGraphic} />
+      </div>
+    ) : null}
 
     <section className={styles.section}>
       <div className={styles.sectionHead}><div><span>⭐ TU CAMINO</span><h2>Lección por lección</h2><p>Toca cualquier nodo para aprender. No necesitas vidas ni desbloquear lecciones.</p></div><strong>{completed}/{lessons.length}</strong></div>

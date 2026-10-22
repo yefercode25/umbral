@@ -107,3 +107,6 @@
 .orgFlow>div small{font-size:11px;color:var(--color-text-muted)}.orgFlow>div strong{font-size:13px;line-height:1.5;color:var(--color-text)}
 .orgFlow>svg{align-self:center;flex-shrink:0;color:var(--color-brand-strong)}
 @media(max-width:720px){.orgFlow{flex-direction:column;overflow:visible}.orgFlow>div{min-width:0}.orgFlow>svg{transform:rotate(90deg)}}
+
+.ctaVisual{display:inline-flex;align-items:center;gap:7px;padding:10px 14px;border:2px solid var(--color-brand);border-bottom-width:4px;border-radius:11px;background:var(--color-brand);color:var(--color-on-brand);font:850 13px var(--font-ui);cursor:pointer;}
+.ctaVisual:hover{filter:brightness(1.04);}

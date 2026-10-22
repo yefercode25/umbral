@@ -1,13 +1,17 @@
 import { useMemo, useState } from 'react'
-import { BookOpenText, Building2, CheckCircle2, ExternalLink, FileText, LibraryBig, ListChecks, Search, Waypoints, Lightbulb, AlertTriangle, ChevronRight, GraduationCap } from 'lucide-react'
+import { BookOpenText, Building2, CheckCircle2, ExternalLink, FileText, LibraryBig, ListChecks, Search, Waypoints, Lightbulb, AlertTriangle, ChevronRight, GraduationCap, Sparkles } from 'lucide-react'
 import { Link, useSearchParams } from 'react-router-dom'
+import { DianVisualAtlas } from '../../components/learning/DianVisualAtlas'
+import { LessonSupportGraphic } from '../../components/learning/LessonSupportGraphic'
 import { getCourseFromSearchParams, withCourse } from '../../lib/courseQuery'
 import { dianGlossary, dianLibraryEntries, type LibraryCategory } from '../../lib/dianLibrary'
 import { dianLawGuides, dianOrgNodes, dianOrgScenarios, dianDetailedProcesses, dianLibraryQuiz, type StudyCase } from '../../lib/dianLibraryExpanded'
+import { dianVisualAtlasCatalog, getModuleSupportGraphic } from '../../lib/supportGraphics'
 import styles from './LibraryPage.module.css'
 
-type Tab = 'normas' | 'organigrama' | 'procesos' | 'glosario' | 'casos'
+type Tab = 'mapas' | 'normas' | 'organigrama' | 'procesos' | 'glosario' | 'casos'
 const tabs: { id: Tab; label: string; icon: typeof BookOpenText }[] = [
+  { id: 'mapas', label: 'Atlas Visual y Gráficas', icon: Sparkles },
   { id: 'normas', label: 'Normas', icon: BookOpenText },
   { id: 'organigrama', label: 'Organigrama', icon: Building2 },
   { id: 'procesos', label: 'Procesos', icon: Waypoints },
@@ -17,6 +21,19 @@ const tabs: { id: Tab; label: string; icon: typeof BookOpenText }[] = [
 const orgGroups = ['Dirección','Subdirección','Seccional','Delegada'] as const
 const families = ['Mapa institucional','Gestión tributaria','Control y cobro','Casos especiales'] as const
 const categories: ('Todas' | LibraryCategory)[] = ['Todas','Núcleo del empleo','Procedimiento y servicio','Organización e integridad','Complementario']
+
+const processGraphicById: Record<string, string> = {
+  mapa: 'dian-structure-levels',
+  registro: 'cpaca-route',
+  cuenta: 'account-checklist',
+  recaudacion: 'ear-cycle',
+  extensivo: 'extensive-control',
+  persuasivo: 'persuasive-vs-coactive',
+  coactivo: 'coactive-route',
+  facilidades: 'payment-facilities-guarantees',
+  devoluciones: 'refunds-route',
+  concursal: 'concursal-credit-route',
+}
 
 function ExplainedCase({ item }: { item: StudyCase }) {
   return <div className={styles.caseStudy}>
@@ -41,14 +58,16 @@ export function LibraryPage() {
     (category === 'Todas' || entry.category === category) &&
     `${entry.title} ${entry.relevance} ${entry.description} ${entry.concepts.join(' ')} ${(dianLawGuides[entry.id]?.essentials ?? []).join(' ')} ${(dianLawGuides[entry.id]?.connections ?? []).join(' ')}`.toLocaleLowerCase('es').includes(term.toLocaleLowerCase('es').trim())), [term,category])
   const sourceUrl = (sourceId?: string) => course.sources.find((source) => source.id === sourceId)?.url
+  const orgSupportGraphic = getModuleSupportGraphic('m3')
 
   function changeTab(tab: Tab) { const next = new URLSearchParams(params); next.set('tab',tab); setParams(next) }
   return <div className={`page ${styles.page}`}>
     <header className={styles.hero}>
-      <span className={styles.eyebrow}><LibraryBig size={17}/> BIBLIOTECA DE ESTUDIO</span>
-      <h1>Consulta, entiende y aplica</h1>
-      <p>Una biblioteca para estudiar con criterio: explicaciones detalladas, organigrama por competencias, diez procesos con pasos comentados y casos de juicio situacional. No sustituye las fuentes oficiales ni los indicadores de tu empleo.</p>
+      <span className={styles.eyebrow}><LibraryBig size={17}/> BIBLIOTECA DE ESTUDIO · DIAN 2676</span>
+      <h1>Consulta, visualiza, entiende y aplica</h1>
+      <p>Una biblioteca interactiva para estudiar con criterio: atlas visual con mapas conceptuales, gráficas de términos, comparativas de alto contraste, 20 guías normativas, organigrama por competencias, 10 procesos con flujogramas y casos PJS. No sustituye las fuentes oficiales ni los indicadores de tu empleo.</p>
       <div className={styles.heroLinks}>
+        {course.id === 'dian-2676-gestor-ii' && <button type="button" className={styles.ctaVisual} onClick={() => changeTab('mapas')}><Sparkles size={15}/> Abrir Atlas Visual y Comparativas</button>}
         <Link to="/courses">Cambiar o explorar cursos</Link>
         {course.id === 'dian-2676-gestor-ii' && <Link to={withCourse('/library/indicators',course)}>Mis indicadores y cobertura</Link>}
       </div>
@@ -61,6 +80,7 @@ export function LibraryPage() {
       <div className={styles.tabs} aria-label="Secciones de la biblioteca">
         {tabs.map(({id,label,icon: Icon}) => <button key={id} type="button" aria-pressed={currentTab === id} className={currentTab === id ? styles.active : ''} onClick={() => changeTab(id)}><Icon size={17}/>{label}</button>)}
       </div>
+      {currentTab === 'mapas' && <DianVisualAtlas />}
       {currentTab === 'normas' && <section aria-label="Normativa para DIAN">
         <div className={styles.notice}><strong>Orden de estudio recomendado</strong><p>Primero Estatuto Tributario, ficha CT-CR-3007 y procedimientos de cartera, cobro, recaudo y devoluciones. Después las reglas transversales. Ley 2586 se explica como material complementario: el corte incluye su fecha, pero no se ha comprobado que figure entre los indicadores personales del empleo.</p></div>
         <div className={styles.searchRow}><label className={styles.search}><Search size={18}/><input type="search" value={term} onChange={(e) => setTerm(e.target.value)} placeholder="Buscar norma, concepto o trámite" aria-label="Buscar en la biblioteca" /></label>
@@ -98,6 +118,7 @@ export function LibraryPage() {
       {currentTab === 'organigrama' && <section className={styles.content}>
         <h2>Organigrama DIAN: quién orienta y quién actúa</h2>
         <p>Una <strong>dependencia</strong> es una unidad de organización; un <strong>proceso</strong> es el trabajo que varias unidades realizan. El Decreto 1742 de 2020 establece niveles central, local y delegado. Esta vista describe responsabilidades generales, no reemplaza los actos que asignan competencia específica o territorial.</p>
+        {orgSupportGraphic ? <div style={{ marginTop: '18px' }}><LessonSupportGraphic graphic={orgSupportGraphic} /></div> : null}
         <div className={styles.orgCore}>DIAN <span>Dirección General · nivel central</span></div>
         <div className={styles.orgLevels}>
           <article><strong>Nivel central</strong><p>Formula lineamientos, coordina direcciones y supervisa la gestión nacional. No resuelve necesariamente cada expediente seccional.</p></article>
@@ -134,12 +155,16 @@ export function LibraryPage() {
       </section>}
       {currentTab === 'procesos' && <section className={styles.content}>
         <h2>Procesos explicados de principio a fin</h2>
-        <p>Incluye el <strong>mapa institucional 2026</strong> y recorridos tributarios relevantes para Gestor II. Cada ruta describe el propósito, inicio, verificaciones, ejemplos y un caso resuelto. Son modelos pedagógicos: no constituyen un flujograma oficial con términos exhaustivos.</p>
+        <p>Incluye el <strong>mapa institucional 2026</strong> y recorridos tributarios relevantes para Gestor II. Cada ruta describe el propósito, inicio, verificaciones, ejemplos, flujograma visual ampliable y un caso resuelto. Son modelos pedagógicos: no constituyen un flujograma oficial con términos exhaustivos.</p>
         <div className={styles.notice}><strong>Diferencia esencial</strong><p><strong>Organigrama:</strong> quién es competente. <strong>Mapa de procesos:</strong> qué actividad se realiza, con qué apoyos y con qué resultado. Una misma gestión puede requerir coordinación de varias áreas.</p></div>
         {families.map((family) => <div key={family} className={styles.processFamily}><h3>{family}</h3>
-          {dianDetailedProcesses.filter((item) => item.family === family).map((process) => <details key={process.id} className={styles.detailedProcess} open={process.id === 'mapa'}>
+          {dianDetailedProcesses.filter((item) => item.family === family).map((process) => {
+            const gId = processGraphicById[process.id]
+            const procGraphic = gId ? dianVisualAtlasCatalog.find((g) => g.id === gId) : undefined
+            return <details key={process.id} className={styles.detailedProcess} open={process.id === 'mapa'}>
             <summary><span className={styles.processTitle}><small>{process.family} · {process.steps.length} etapas de estudio</small><strong>{process.name}</strong><em>{process.goal}</em></span><span className={styles.expand}>Explorar +</span></summary>
             <div className={styles.processBody}><p><strong>¿Qué lo activa?</strong> {process.start}</p><p><strong>Resultado esperado:</strong> {process.outcome}</p>
+              {procGraphic ? <div style={{ margin: '14px 0 18px' }}><LessonSupportGraphic graphic={procGraphic} /></div> : null}
               <ol className={styles.processTimeline}>{process.steps.map((step,index) => <li key={step.title}>
                 <span className={styles.stepNumber}>{index+1}</span><div><strong>{step.title}</strong><p>{step.why}</p><p className={styles.stepExample}><strong>Ejemplo:</strong> {step.example}</p><p className={styles.stepCheckpoint}><strong>Comprobación:</strong> {step.checkpoint}</p></div>
               </li>)}</ol>
@@ -147,7 +172,7 @@ export function LibraryPage() {
               <h4>Errores frecuentes</h4><ul>{process.confusion.map((text) => <li key={text}>{text}</li>)}</ul>
               <div className={styles.linkRow}>{process.sources.map((source) => <a key={source.url} className={styles.source} href={source.url} target="_blank" rel="noreferrer">{source.label} <ExternalLink size={14}/></a>)}</div>
             </div>
-          </details>)}
+          </details>})}
         </div>)}
       </section>}
       {currentTab === 'glosario' && <section className={styles.content}><h2>Conceptos sin tecnicismos innecesarios</h2><div className={styles.stack}>{dianGlossary.map((item) => <article key={item.term}><strong>{item.term}</strong><p>{item.plain}</p><small>Ejemplo: {item.example}</small></article>)}</div></section>}

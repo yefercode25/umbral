@@ -13,3 +13,10 @@
 .notice svg{color:var(--color-warning);flex-shrink:0;}.notice p{margin:0;font-size:12px;color:var(--color-text);}
 .sectionHeading{text-align:center;margin:35px auto 24px;max-width:530px;}.sectionHeading span{font-size:11px;font-weight:900;color:var(--color-brand-strong);letter-spacing:.07em;}.sectionHeading h2{font-size:26px;margin:5px 0;}.sectionHeading p{font-size:13px;font-weight:750;color:var(--color-text-muted);margin:0;}
 @media(min-width:740px){.hero{padding:28px 31px;}}
+
+.heroGrid{display:grid;grid-template-columns:1fr 290px;gap:20px;align-items:center;}
+.heroCover{border-radius:17px;border:2px solid var(--color-border);border-bottom-width:5px;overflow:hidden;background:#fffdf9;}
+.heroCover img{width:100%;height:auto;display:block;}
+.actionHighlight{border-color:var(--color-brand)!important;background:var(--color-brand-soft)!important;color:var(--color-brand-strong)!important;}
+.courseGraphicWrap{margin:20px 0;}
+@media(max-width:780px){.heroGrid{grid-template-columns:1fr;}.heroCover{display:none;}}
