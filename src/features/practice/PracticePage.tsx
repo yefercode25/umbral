@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react'
 import { useEffect, useMemo, useState } from 'react'
-import { BookOpenCheck, BrainCircuit, ClipboardCheck, Filter, Gauge, NotebookPen, Route, Shuffle } from 'lucide-react'
+import { BookOpenCheck, BrainCircuit, ClipboardCheck, Filter, Gauge, Network, NotebookPen, Route, Shuffle, Sparkles } from 'lucide-react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { QuestionCard } from '../../components/learning/QuestionCard'
 import { Button } from '../../components/ui/Button'
@@ -58,7 +58,7 @@ export function PracticePage() {
   const hasCaseLabs = config?.hasCaseLabs !== false
 
   return <div className="page page--narrow" style={{ '--course-accent': course.accent } as CSSProperties}>
-    <PageHeader eyebrow="Entrenamiento" title="Practicar" subtitle={`Banco activo: ${course.shortTitle}. Primero precisión; después velocidad. Cada respuesta explica el porqué y deja trazabilidad a fuentes del curso.`} />
+    <PageHeader eyebrow="Entrenamiento" title="Practicar" subtitle={`Banco activo: ${course.shortTitle}. Primero precisión; después velocidad. Cada tarjeta incluye tachado de distractores, guía PJS y fuentes verificadas.`} />
 
     <nav className={styles.courseScope} aria-label="Curso para practicar">
       {courses.map((item) => <Link key={item.id} to={withCourse('/practice', item)} className={item.id === course.id ? styles.courseScopeActive : ''}>
@@ -69,8 +69,8 @@ export function PracticePage() {
     <section className={styles.visualIntro} aria-label="Práctica aplicada">
       <div className={styles.visualCopy}>
         <span>{course.shortTitle}</span>
-        <strong>Casos, distractores plausibles y retroalimentación con fuente</strong>
-        <p>Las métricas y preguntas pertenecen únicamente al curso seleccionado; Umbral no mezcla bancos entre convocatorias.</p>
+        <strong>Casos, descarte activo de distractores y retroalimentación con fuente</strong>
+        <p>Usa la tijera junto a cada opción para descartar distractores y activa «Guía PJS» si necesitas repasar los filtros de competencia, etapa y soporte antes de responder.</p>
       </div>
       <img src="/media/editorial/practice-adaptive.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" />
     </section>
@@ -90,6 +90,12 @@ export function PracticePage() {
     </div>
 
     <div className={styles.practiceModes}>
+      {course.id === 'dian-2676-gestor-ii' && (
+        <div className={styles.examCta}><div><Sparkles size={18}/><span><strong>Gimnasio Interactivo DIAN</strong><small>Expediente en vivo, caza el vicio en el acto, flashcards 3D, Rayos X PJS y calculadora ET.</small></span></div><Link to="/practice/workout">Entrenar</Link></div>
+      )}
+      {course.id === 'dian-2676-gestor-ii' && (
+        <div className={styles.examCta}><div><Network size={18}/><span><strong>Atlas Visual y Comparativas</strong><small>Mapa conceptual de 6 nodos, escalímetro de términos y 27 infografías HD.</small></span></div><Link to="/library?tab=mapas">Explorar</Link></div>
+      )}
       <div className={styles.examCta}><div><NotebookPen size={18}/><span><strong>Cuaderno de errores</strong><small>Clasifica fallos, guarda tu regla y comprueba después.</small></span></div><Link to={withCourse('/practice/errors', course)}>Revisar</Link></div>
       <div className={styles.examCta}><div><ClipboardCheck size={18}/><span><strong>Diagnóstico inicial</strong><small>20 preguntas para detectar prioridades antes de estudiar.</small></span></div><Link to={withCourse('/practice/diagnostic', course)}>Evaluarme</Link></div>
       <div className={styles.examCta}><div><BrainCircuit size={18}/><span><strong>Sesión recomendada</strong><small>12 preguntas priorizadas por errores, debilidades y cobertura nueva.</small></span></div><Link to={withCourse('/practice/adaptive', course)}>Practicar</Link></div>

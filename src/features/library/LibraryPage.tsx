@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { BookOpenText, Building2, CheckCircle2, ExternalLink, FileText, LibraryBig, ListChecks, Search, Waypoints, Lightbulb, AlertTriangle, ChevronRight, GraduationCap, Sparkles } from 'lucide-react'
+import { BookOpenText, Building2, CheckCircle2, ExternalLink, FileText, LibraryBig, ListChecks, Search, Waypoints, Lightbulb, AlertTriangle, ChevronRight, GraduationCap, Sparkles, Zap } from 'lucide-react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { DianVisualAtlas } from '../../components/learning/DianVisualAtlas'
 import { LessonSupportGraphic } from '../../components/learning/LessonSupportGraphic'
@@ -68,6 +68,7 @@ export function LibraryPage() {
       <p>Una biblioteca interactiva para estudiar con criterio: atlas visual con mapas conceptuales, gráficas de términos, comparativas de alto contraste, 20 guías normativas, organigrama por competencias, 10 procesos con flujogramas y casos PJS. No sustituye las fuentes oficiales ni los indicadores de tu empleo.</p>
       <div className={styles.heroLinks}>
         {course.id === 'dian-2676-gestor-ii' && <button type="button" className={styles.ctaVisual} onClick={() => changeTab('mapas')}><Sparkles size={15}/> Abrir Atlas Visual y Comparativas</button>}
+        {course.id === 'dian-2676-gestor-ii' && <Link to="/practice/workout"><Zap size={15}/> Gimnasio Interactivo DIAN</Link>}
         <Link to="/courses">Cambiar o explorar cursos</Link>
         {course.id === 'dian-2676-gestor-ii' && <Link to={withCourse('/library/indicators',course)}>Mis indicadores y cobertura</Link>}
       </div>

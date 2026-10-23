@@ -19,6 +19,7 @@ import { CaseLabsPage } from '../features/practice/CaseLabsPage'
 import { ProgressPage } from '../features/progress/ProgressPage'
 import { SettingsPage } from '../features/settings/SettingsPage'
 import { StudyPlanPage } from '../features/studyplan/StudyPlanPage'
+import { DianInteractiveWorkout } from '../components/learning/DianInteractiveWorkout'
 import { useSettingsStore } from '../stores/settingsStore'
 import { PwaStatus } from '../components/pwa/PwaStatus'
 import { AppErrorBoundary } from '../components/system/AppErrorBoundary'
@@ -60,6 +61,7 @@ export function App() {
             <Route path="courses/:courseSlug/plan" element={<StudyPlanPage />} />
             <Route path="courses/:courseSlug/lesson/:lessonId" element={<LessonPage />} />
             <Route path="practice" element={<PracticePage />} />
+            <Route path="practice/workout" element={<DianInteractiveWorkout />} />
             <Route path="practice/mock" element={<MockExamPage />} />
             <Route path="practice/adaptive" element={<AdaptivePracticePage />} />
             <Route path="practice/diagnostic" element={<DiagnosticPage />} />

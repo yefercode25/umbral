@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, Clock3 } from 'lucide-r
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { LessonRenderer } from '../../components/learning/LessonRenderer'
 import { LessonNarrator } from '../../components/learning/LessonNarrator'
+import { LessonQuickReview } from '../../components/learning/LessonQuickReview'
 import { LessonSupportGraphic } from '../../components/learning/LessonSupportGraphic'
 import { Button } from '../../components/ui/Button'
 import { ProgressBar } from '../../components/ui/ProgressBar'
@@ -66,6 +67,7 @@ export function LessonPage() {
       <LessonNarrator course={course} lesson={lesson} supportGraphic={supportGraphic} />
       {supportGraphic ? <LessonSupportGraphic graphic={supportGraphic} /> : null}
       <LessonRenderer key={`${course.id}:${lesson.id}`} course={course} blocks={lesson.blocks}/>
+      <LessonQuickReview course={course} lesson={lesson} />
       <div className={styles.finish}>
         <div><span>Lección {index+1} de {allPublished.length}</span><strong>{next ? `Siguiente: ${next.title}` : 'Has llegado al final del contenido publicado.'}</strong></div>
         <Button size="lg" onClick={finish} icon={<ArrowRight size={18}/>}>{next ? 'Completar y continuar' : 'Completar lección'}</Button>

@@ -1,4 +1,4 @@
-import { ArrowRight, BarChart3, BookOpenCheck, ChevronDown, Flame, Layers, Network, Sparkles, Target } from 'lucide-react'
+import { ArrowRight, BarChart3, BookOpenCheck, ChevronDown, Flame, Layers, Network, Sparkles, Target, Zap } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { LearningPath } from '../../components/learning/LearningPath'
 import { ProgressBar } from '../../components/ui/ProgressBar'
@@ -44,8 +44,8 @@ export function HomePage() {
             {next ? 'CONTINUAR APRENDIENDO' : 'VER MI RUTA'} <ArrowRight size={19}/>
           </Link>
           {isDian && (
-            <Link className={styles.atlasLink} to="/library?tab=mapas">
-              <Network size={17}/> ATLAS VISUAL Y COMPARATIVAS
+            <Link className={styles.atlasLink} to="/practice/workout">
+              <Zap size={17}/> GIMNASIO INTERACTIVO
             </Link>
           )}
         </div>
@@ -66,8 +66,8 @@ export function HomePage() {
         <div className={styles.cockpitHead}>
           <div>
             <span className={styles.cockpitEyebrow}><BarChart3 size={14}/> RADAR VISUAL DE BLOQUES · GESTOR II (CT-CR-3007)</span>
-            <h2>Tu avance por bloques curriculares y herramientas visuales</h2>
-            <p>Visualiza tu progreso en los 6 grandes bloques del curso y accede en un clic a los mapas conceptuales, gráficas de términos y matrices comparativas.</p>
+            <h2>Tu avance por bloques curriculares y herramientas interactivas</h2>
+            <p>Visualiza tu progreso en los 6 grandes bloques del curso y accede en un clic al Gimnasio Interactivo, mapas conceptuales, gráficas de términos y matrices comparativas.</p>
           </div>
           <div className={styles.examBadges}>
             <span>📅 Prueba: 08/11/2026 (5h)</span>
@@ -94,9 +94,14 @@ export function HomePage() {
         </div>
 
         <div className={styles.visualShortcuts}>
+          <Link to="/practice/workout" className={styles.shortcutCard}>
+            <Zap size={20}/>
+            <div><strong>Gimnasio Interactivo DIAN (5 Laboratorios)</strong><small>Expediente en vivo, caza el vicio en el acto, flashcards 3D, Rayos X PJS y calculadora ET</small></div>
+            <ArrowRight size={16}/>
+          </Link>
           <Link to="/library?tab=mapas" className={styles.shortcutCard}>
             <Network size={20}/>
-            <div><strong>Mapa Conceptual y Gráficas</strong><small>6 nodos interactivos, simulador Art. 804/838 ET y 27 infografías HD</small></div>
+            <div><strong>Atlas Visual, Mapas y Comparativas</strong><small>6 nodos interactivos, escalímetro de 12 términos, 5 matrices PJS y 27 infografías HD</small></div>
             <ArrowRight size={16}/>
           </Link>
           <Link to="/library?tab=procesos" className={styles.shortcutCard}>
