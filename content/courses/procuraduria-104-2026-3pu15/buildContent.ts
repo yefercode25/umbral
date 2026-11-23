@@ -1,6 +1,7 @@
 import type { CourseModule, Lesson, LessonBlock, Question, QuestionOption } from '../../../src/types/course'
 import { procuraduriaModuleBlueprints, type ProcuraduriaModuleBlueprint } from './blueprints'
 import { buildProcuraduriaSituationalQuestions } from './situationalQuestions'
+import { buildProcuraduriaTransferQuestions } from './transferQuestions'
 import { caseProfileFor } from './caseProfiles'
 
 const ACCENT = '#5F9E80'
@@ -1092,6 +1093,7 @@ export const procuraduriaModules: CourseModule[] = procuraduriaModuleBlueprints.
 export const procuraduriaLessons: Lesson[] = procuraduriaModuleBlueprints.flatMap(buildLessons)
 export const procuraduriaQuestions: Question[] = procuraduriaModuleBlueprints.flatMap(buildQuestions)
 export const procuraduriaSituationalQuestions: Question[] = procuraduriaModuleBlueprints.flatMap(buildProcuraduriaSituationalQuestions)
+export const procuraduriaTransferQuestions: Question[] = procuraduriaModuleBlueprints.flatMap(buildProcuraduriaTransferQuestions)
 
 export const procuraduriaContentStats = {
   modules: procuraduriaModules.length,
