@@ -49,3 +49,11 @@
 .visualCopy strong{font-family:var(--font-display);font-size:21px;}.visualCopy p{color:#f4ffff;font-weight:750;}.visualCopy span{color:#ebfff1;}
 .courseScope a{border:2px solid var(--color-border);border-bottom-width:4px;border-radius:14px;}.courseScope a span{font-weight:900;}.courseScope .courseScopeActive{border-color:var(--color-brand);border-bottom-color:var(--color-brand-strong);background:var(--color-brand-soft);}
 .summary{font-weight:850;color:var(--color-text-muted);}
+
+/* Mostrar primero las preguntas; los demás modos quedan accesibles bajo demanda. */
+.moduleScope{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:12px 14px;margin-bottom:15px;border:1px solid var(--color-border);border-radius:12px;background:var(--color-surface-subtle);font-size:12px;}
+.moduleScope a{color:var(--color-brand-strong);font-weight:800;}
+.modeDisclosure{border:1px solid var(--color-border);border-radius:13px;padding:0 14px;margin:12px 0;background:var(--color-surface);}
+.modeDisclosure>summary{cursor:pointer;padding:13px 0;font-size:13px;font-weight:800;color:var(--color-text);}
+.modeDisclosure[open]>summary{border-bottom:1px solid var(--color-border);}
+.modeDisclosure .practiceModes{margin:13px 0;}
