@@ -42,7 +42,7 @@ export function ModulePage() {
       <div className={styles.metrics}>
         <span><BookOpenCheck size={18}/>{lessons.length} lecciones</span>
         <span><Clock3 size={18}/>{minutes} min aprox.</span>
-        {isPgn ? <span><Target size={18}/>2 comprobaciones por lección + cierre de 3 casos</span>
+        {isPgn ? <span><Target size={18}/>4 comprobaciones en las primeras dos lecciones + cierre de 3 casos</span>
           : <span><Target size={18}/>{questions.length} preguntas ({attemptedQuestions.length} practicadas{moduleAccuracy !== null ? ` · ${moduleAccuracy}% aciertos` : ''})</span>}
       </div>
       <div className={styles.progress}><ProgressBar value={completion} label="Progreso del módulo"/></div>
