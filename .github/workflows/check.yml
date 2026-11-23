@@ -28,5 +28,7 @@ jobs:
         run: npm run lint
       - name: Ejecutar pruebas
         run: npm run test
+      - name: Verificar 255 SVG de Procuraduría
+        run: node scripts/check-procuraduria-module-svgs.mjs
       - name: Generar PWA
         run: npm run build

@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { BookOpenText, Building2, CheckCircle2, ExternalLink, FileText, LibraryBig, ListChecks, Search, Waypoints, Lightbulb, AlertTriangle, ChevronRight, GraduationCap, Sparkles, Zap } from 'lucide-react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { DianVisualAtlas } from '../../components/learning/DianVisualAtlas'
+import { ProcuraduriaVisualCatalog } from '../../components/learning/ProcuraduriaVisualCatalog'
 import { LessonSupportGraphic } from '../../components/learning/LessonSupportGraphic'
 import { getCourseFromSearchParams, withCourse } from '../../lib/courseQuery'
 import { dianGlossary, dianLibraryEntries, type LibraryCategory } from '../../lib/dianLibrary'
@@ -63,9 +64,9 @@ export function LibraryPage() {
   function changeTab(tab: Tab) { const next = new URLSearchParams(params); next.set('tab',tab); setParams(next) }
   return <div className={`page ${styles.page}`}>
     <header className={styles.hero}>
-      <span className={styles.eyebrow}><LibraryBig size={17}/> BIBLIOTECA DE ESTUDIO · DIAN 2676</span>
-      <h1>Consulta, visualiza, entiende y aplica</h1>
-      <p>Una biblioteca interactiva para estudiar con criterio: atlas visual con mapas conceptuales, gráficas de términos, comparativas de alto contraste, 20 guías normativas, organigrama por competencias, 10 procesos con flujogramas y casos PJS. No sustituye las fuentes oficiales ni los indicadores de tu empleo.</p>
+      <span className={styles.eyebrow}><LibraryBig size={17}/>{course.id === 'dian-2676-gestor-ii' ? 'BIBLIOTECA DE ESTUDIO · DIAN 2676' : 'BIBLIOTECA VISUAL · PROCURADURÍA 104-2026'}</span>
+      <h1>{course.id === 'dian-2676-gestor-ii' ? 'Consulta, visualiza, entiende y aplica' : 'Esquemas para cada lección'}</h1>
+      <p>{course.id === 'dian-2676-gestor-ii' ? 'Una biblioteca interactiva para estudiar con criterio: atlas visual con mapas conceptuales, gráficas de términos, comparativas de alto contraste, 20 guías normativas, organigrama por competencias, 10 procesos con flujogramas y casos PJS. No sustituye las fuentes oficiales ni los indicadores de tu empleo.' : 'Explora diagramas de conceptos, métodos y casos asociados a los módulos de Procuraduría. Cada gráfico complementa la lección y sus fuentes oficiales.'}</p>
       <div className={styles.heroLinks}>
         {course.id === 'dian-2676-gestor-ii' && <button type="button" className={styles.ctaVisual} onClick={() => changeTab('mapas')}><Sparkles size={15}/> Abrir Atlas Visual y Comparativas</button>}
         {course.id === 'dian-2676-gestor-ii' && <Link to="/practice/workout"><Zap size={15}/> Gimnasio Interactivo DIAN</Link>}
@@ -73,11 +74,10 @@ export function LibraryPage() {
         {course.id === 'dian-2676-gestor-ii' && <Link to={withCourse('/library/indicators',course)}>Mis indicadores y cobertura</Link>}
       </div>
     </header>
-    {course.id !== 'dian-2676-gestor-ii' ? <section className={styles.notice}>
-      <h2>Biblioteca de {course.shortTitle}</h2>
-      <p>La biblioteca temática desarrollada aquí corresponde exclusivamente a DIAN 2676. No mezclamos normativa ni indicadores de otras convocatorias. Puedes consultar las fuentes específicas de este curso.</p>
-      <Link to={`/courses/${course.slug}/sources`}>Abrir fuentes de {course.shortTitle} <ExternalLink size={15}/></Link>
-    </section> : <>
+    {course.id !== 'dian-2676-gestor-ii' ? <>
+      <ProcuraduriaVisualCatalog course={course}/>
+      <section className={styles.notice}><Link to={`/courses/${course.slug}/sources`}>Consultar fuentes oficiales de {course.shortTitle} <ExternalLink size={15}/></Link></section>
+    </> : <>
       <div className={styles.tabs} aria-label="Secciones de la biblioteca">
         {tabs.map(({id,label,icon: Icon}) => <button key={id} type="button" aria-pressed={currentTab === id} className={currentTab === id ? styles.active : ''} onClick={() => changeTab(id)}><Icon size={17}/>{label}</button>)}
       </div>

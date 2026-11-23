@@ -21,3 +21,8 @@
 .arrow{display:none}
 .optional summary:focus-visible,.diagramBody a:focus-visible{outline:3px solid var(--color-focus-ring);outline-offset:3px}
 @media(max-width:580px){.flow ol{grid-template-columns:1fr}.step{min-height:0}.cue{display:none}}
+
+.visualLinks{display:flex;flex-wrap:wrap;gap:9px 16px}
+.visualLinks a,.flowLink{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:800;color:var(--color-brand-strong);text-decoration:underline;text-underline-offset:2px}
+.flowLink{margin-top:11px;padding:7px 0}
+.visualLinks a:focus-visible,.flowLink:focus-visible{outline:3px solid var(--color-focus-ring);outline-offset:3px}

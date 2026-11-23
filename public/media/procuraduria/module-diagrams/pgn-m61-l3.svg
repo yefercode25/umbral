@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 707" width="1000" height="707" role="img" aria-labelledby="title desc">
+<title id="title">M61 · Logs, autenticación e identidad digital · Análisis situacional</title>
+<desc id="desc">Esquema pedagógico del módulo 61 de Procuraduría, lección 3. Apoya el texto normativo, sin sustituirlo.</desc>
+<style>
+.bg{fill:#F8FBF9}.main{fill:#22372D}.title{font:700 29px Arial,sans-serif;fill:#22372D}.sub{font:17px Arial,sans-serif;fill:#556D62}
+.eyebrow{font:700 14px Arial,sans-serif;letter-spacing:.8px;fill:#3C689E}.badge{font:700 14px Arial,sans-serif;fill:#3C689E}
+.panelTitle{font:700 17px Arial,sans-serif;fill:#20372B}.body{font:16px Arial,sans-serif;fill:#3D5448}.bodySmall{font:15px Arial,sans-serif;fill:#3D5448}.foot{font:13px Arial,sans-serif;fill:#65766E}
+</style>
+<rect width="1000" height="707" rx="24" fill="#F8FBF9"/>
+<rect width="1000" height="197" rx="24" fill="#EBF2FC"/>
+<rect x="0" y="173" width="1000" height="24" fill="#EBF2FC"/>
+<text x="46" y="42" class="eyebrow">UMBRAL · PROCURADURÍA · M61 / LECCIÓN 3</text>
+<text x="46" y="94" class="title">Logs, autenticación e identidad digital</text>
+<text x="46" y="131" class="sub">Caso y distractores: qué debes contrastar antes de decidir</text>
+<rect x="46" y="218" width="908" height="192" rx="12" fill="#FFFFFF" stroke="#D4E5D9"/>
+<rect x="46" y="218" width="908" height="5" rx="2.5" fill="#3C689E"/>
+<text x="68" y="256" class="panelTitle">Situación del expediente</text>
+<text x="68" y="291" class="body">Un evento proviene de la IP asignada a una sede con cientos de usuarios y se propone identificar al</text><text x="68" y="314" class="body">responsable por esa dirección.</text>
+<rect x="46" y="433" width="439" height="168" rx="12" fill="#FFF9F1" stroke="#E7D8C2"/>
+<circle cx="70" cy="464" r="12" fill="#F5E5CF"/><text x="70" y="469" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="14" fill="#915B27">!</text>
+<text x="91" y="470" class="panelTitle">Atajo tentador 1</text>
+<text x="64" y="508" class="bodySmall">Identificar a la primera persona conectada a</text><text x="64" y="530" class="bodySmall">la sede.</text><rect x="513" y="433" width="439" height="168" rx="12" fill="#FFF9F1" stroke="#E7D8C2"/>
+<circle cx="537" cy="464" r="12" fill="#F5E5CF"/><text x="537" y="469" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="14" fill="#915B27">!</text>
+<text x="558" y="470" class="panelTitle">Atajo tentador 2</text>
+<text x="531" y="508" class="bodySmall">Concluir que una IP nunca aporta información</text><text x="531" y="530" class="bodySmall">útil.</text>
+<rect x="46" y="621" width="908" height="51" rx="9" fill="#EBF2FC" stroke="#DDE8DF"/>
+<text x="65" y="653" class="body">Contrasta hechos, competencia, etapa y soporte antes de descartar alternativas.</text>
+<text x="46" y="685" class="foot">Ayuda visual de estudio; las reglas, excepciones y términos se verifican en las fuentes de la lección.</text>
+</svg>
