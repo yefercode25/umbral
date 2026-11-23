@@ -14,6 +14,57 @@ export type PrioritySituationalOverride = {
 }
 
 export const prioritySituationalOverrides: Record<string, PrioritySituationalOverride[]> = {
+  'pgn-m0': [{
+    number: 1,
+    caseText: 'Una profesional se vincula al cargo 3PU-15 en una procuraduría territorial. Recibe una queja sobre omisiones en la gestión documental, una matriz de seguimiento y la orden de preparar un informe. Su formación es técnica, pero el despacho solicita que además declare, en el propio informe, la responsabilidad disciplinaria de un servidor. La profesional conoce los sistemas y los registros, aunque no le han conferido atribución para adoptar una decisión disciplinaria.',
+    stem: '¿Qué actuación distingue mejor las funciones de apoyo del empleo y las decisiones reservadas a la autoridad competente?',
+    options: [
+      'Preparar y firmar una conclusión disciplinaria definitiva, porque la orden de la coordinación y el conocimiento técnico son suficientes para decidir el expediente.',
+      'Abstenerse de procesar documentos y de elaborar cualquier informe porque los estudios de ingeniería no habilitan para participar en procesos preventivo-disciplinarios.',
+      'Organizar las actuaciones, verificar registros y fuentes, documentar hallazgos y límites en un informe trazable y remitir la valoración jurídica decisoria a quien tenga competencia.',
+    ],
+    rationales: [
+      'Una instrucción de trabajo no amplía automáticamente las potestades decisorias ni convierte un informe de apoyo en un fallo.',
+      'Las funciones del 3PU-15 son multidisciplinarias y sí incluyen apoyo profesional, análisis y documentación en los términos del empleo.',
+      'La respuesta identifica el producto profesional útil y preserva la diferencia entre prueba, inferencia y potestad jurídica.',
+    ],
+    correctOptionId: 'c',
+    explanation: 'Convocatoria 104-2026 versión 4 y manual de funciones: el empleo apoya instrucción, prevención, prueba, atención y gestión. La formación profesional aporta métodos, pero el ejercicio de competencia disciplinaria requiere habilitación legal, función y etapa. La priorización temática de Umbral no constituye distribución oficial de preguntas.',
+  }],
+  'pgn-m1': [{
+    number: 1,
+    caseText: 'Una oficina recibe un radicado con solicitud de copias de documentos que conserva y una petición sobre una decisión que corresponde a otra autoridad. El servidor conoce la norma general sobre el asunto y proyecta una resolución para todo el escrito. Una compañera advierte que todavía no se ha verificado la competencia y que la plataforma identifica el correo de salida como simple comunicación, no como notificación.',
+    stem: '¿Qué análisis diferencia correctamente actuación, competencia y efectos jurídicos antes de responder?',
+    options: [
+      'Emitir la decisión sobre todos los puntos porque la norma citada es aplicable a la materia, y tomar el correo interno como constancia suficiente de notificación.',
+      'Separar los componentes, identificar qué puede resolver la dependencia y qué debe tramitar por la vía competente, y verificar el acto y el mecanismo de comunicación o notificación exigibles.',
+      'Devolver todo el escrito al solicitante para que determine por sí mismo la autoridad, aunque la oficina ya tenga competencia y soportes sobre una parte.',
+    ],
+    rationales: [
+      'Que una norma sea verdadera no habilita a cualquier dependencia ni convierte una comunicación interna en notificación válida.',
+      'Examina hechos, competencia, actuación, efecto jurídico y constancias sin confundir conceptos.',
+      'La falta de competencia sobre un punto no elimina necesariamente los deberes respecto de lo que sí corresponde atender.',
+    ],
+    correctOptionId: 'b',
+    explanation: 'Derecho básico aplicado: la competencia delimita quién actúa; una actuación de trámite no equivale a un acto definitivo; las comunicaciones y notificaciones se rigen por sus presupuestos particulares. Deben revisarse el CPACA y el procedimiento aplicable, sin asumir una única respuesta para todos los componentes.',
+  }],
+  'pgn-m2': [{
+    number: 1,
+    caseText: 'Una estudiante prepara el simulacro de Procuraduría. Recuerda que el artículo 208 del Código General Disciplinario contempla una indagación previa de seis meses. En una pregunta se desconoce quién sería el presunto autor; en otra, el posible autor ya está individualizado. Un compañero afirma que cualquier queja exige los mismos seis meses, y otro sostiene que el plazo siempre puede ampliarse porque existen derechos fundamentales involucrados.',
+    stem: '¿Cómo debe utilizarse la regla del artículo 208 para resolver ambos casos sin depender de una cifra memorizada?',
+    options: [
+      'Comprobar primero si existe duda sobre identificación o individualización del posible autor, distinguir el término general de seis meses y examinar únicamente la extensión especial legalmente prevista para violaciones de derechos humanos o derecho internacional humanitario.',
+      'Aplicar siempre una indagación previa de seis meses a toda queja y dejar para el cierre la comprobación del supuesto que justificaba abrirla.',
+      'Asumir que cualquier posible afectación de derechos fundamentales extiende automáticamente la indagación por otros seis meses, sin examinar el supuesto legal específico.',
+    ],
+    rationales: [
+      'Identifica el presupuesto de procedencia, el plazo, la excepción y la etapa antes de escoger la alternativa.',
+      'El artículo 208 no establece la indagación previa como fase obligatoria para cualquier noticia disciplinaria.',
+      'La extensión especial requiere el supuesto señalado por la ley; no se desprende automáticamente de la invocación genérica de un derecho.',
+    ],
+    correctOptionId: 'a',
+    explanation: 'El artículo 208 de la Ley 1952 de 2019, modificado por el artículo 34 de la Ley 2094 de 2021, vincula la indagación previa a dudas sobre identificación del posible autor, fija seis meses y prevé una posible extensión especial por violaciones a derechos humanos o derecho internacional humanitario. La clave es analizar supuesto, norma, término y decisión, no reconocer solo el número.',
+  }],
   'pgn-m17': [{
     number: 1,
     caseText: 'Una ciudadana radica un escrito único ante una procuraduría regional. Solicita copia de las actas de una visita preventiva, pregunta por el estado de la actuación y pide un concepto sobre la legalidad de una decisión de otra entidad. El archivo de la visita contiene datos personales de terceros; además, parte de los documentos se encuentra en una dependencia distinta. El equipo propone contestar todo junto al finalizar el plazo de una consulta para evitar respuestas separadas.',

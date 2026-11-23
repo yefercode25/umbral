@@ -14,6 +14,27 @@ export type ProcuraduriaCaseProfile = {
 }
 
 const specific: Record<string, ProcuraduriaCaseProfile> = {
+  'pgn-m0': {
+    setting: 'En una procuraduría territorial, un profesional recién vinculado recibe una queja ciudadana, un reporte de gestión y un oficio que solicita apoyo en la etapa de instrucción.',
+    document: 'El expediente contiene una relación de funciones del 3PU-15, las actuaciones pendientes y un memorando que distingue actividades de apoyo profesional de las decisiones de la autoridad competente.',
+    conflict: 'La coordinación pide al profesional redactar conclusiones jurídicas definitivas sin indicar si tiene una asignación válida para adoptarlas.',
+    change: 'El despacho precisa que el apoyo solicitado es documental y de análisis de información; las decisiones disciplinarias quedan a cargo de la autoridad habilitada.',
+    pressure: 'Hay que entregar un producto útil ese mismo día, pero rapidez y experiencia técnica no reemplazan las atribuciones del empleo.',
+  },
+  'pgn-m1': {
+    setting: 'Un ciudadano presenta una solicitud de copias de actuaciones ante una oficina que también tramita comunicaciones y reportes de seguimiento institucional.',
+    document: 'El expediente incluye un correo interno, una norma verdadera y una constancia de radicación; falta identificar cuál oficina puede resolver el componente solicitado.',
+    conflict: 'El equipo confunde comunicar con notificar, y sostiene que conocer una norma basta para adoptar cualquier actuación relacionada con ella.',
+    change: 'Se verifica que la competencia para decidir corresponde a otra dependencia, mientras esta oficina conserva documentos que sí puede gestionar dentro de sus funciones.',
+    pressure: 'El ciudadano necesita respuesta, pero una actuación expedita no subsana por sí sola los requisitos de competencia y comunicación.',
+  },
+  'pgn-m2': {
+    setting: 'En un simulacro del curso, una estudiante identifica correctamente que el artículo 208 menciona seis meses de indagación previa, pero aplica ese dato a toda queja disciplinaria.',
+    document: 'La ficha de estudio reproduce el artículo 208 del Código General Disciplinario y su modificación; un caso dice que la identidad del posible autor es dudosa y otro presenta una persona claramente individualizada.',
+    conflict: 'Un compañero propone marcar siempre la alternativa que mencione seis meses, sin comparar el supuesto de procedencia ni la excepción legal para violaciones a derechos humanos o al derecho internacional humanitario.',
+    change: 'La estudiante comprueba en la fuente que la indagación previa se relaciona con la identificación del autor y que puede existir extensión especial del término en el supuesto legal previsto.',
+    pressure: 'Quedan pocos minutos de simulacro; debe preferirse el razonamiento normativo al reconocimiento rápido de una cifra familiar.',
+  },
   'pgn-m17': {
     setting: 'Una dependencia recibe una petición ciudadana que mezcla una consulta jurídica y una solicitud de copias de documentos.',
     document: 'El gestor documental conserva el sello de radicación y registra dos categorías de solicitudes en una misma comunicación.',
