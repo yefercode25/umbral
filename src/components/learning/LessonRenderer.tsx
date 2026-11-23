@@ -59,6 +59,9 @@ export function LessonRenderer({ course, blocks, moduleId, lessonOrder }: { cour
       if (block.type === 'concursal-simulator') return <ConcursalDecisionSimulator key={key} title={block.title} text={block.text}/>
       if (block.type === 'decision-simulator') return <LegalDecisionSimulator key={key} title={block.title} text={block.text} scenario={block.scenario} prompt={block.prompt} options={block.options}/>
       if (block.type === 'checkpoint') {
+        // La tercera lección PGN termina con un solo cierre integrado de 3 casos;
+        // las dos preguntas históricas de esta lección se conservan en el banco.
+        if (isProcuraduria && lessonOrder === 3) return null
         const q = course.questions.find((question) => question.id === block.questionId)
         return q ? <QuestionCard key={`checkpoint-${block.questionId}-${index}`} course={course} question={q}/> : null
       }
