@@ -6,6 +6,7 @@ import { auditedTransferOverridesM3M5 } from './auditedTransferOverridesM3M5'
 import { auditedTransferOverridesM6M8 } from './auditedTransferOverridesM6M8'
 import { auditedTransferOverridesM9M11 } from './auditedTransferOverridesM9M11'
 import { auditedTransferOverridesM12M14 } from './auditedTransferOverridesM12M14'
+import { auditedTransferOverridesM15M17 } from './auditedTransferOverridesM15M17'
 
 type Choice = { text: string; reason: string }
 
@@ -84,7 +85,7 @@ export function buildProcuraduriaTransferQuestions(bp: ProcuraduriaModuleBluepri
     },
   ]
 
-  const adaptedCases = auditedTransferOverridesM12M14[bp.id] ?? auditedTransferOverridesM9M11[bp.id] ?? auditedTransferOverridesM6M8[bp.id] ?? auditedTransferOverridesM3M5[bp.id] ?? foundationTransferOverrides[bp.id] ?? cases
+  const adaptedCases = auditedTransferOverridesM15M17[bp.id] ?? auditedTransferOverridesM12M14[bp.id] ?? auditedTransferOverridesM9M11[bp.id] ?? auditedTransferOverridesM6M8[bp.id] ?? auditedTransferOverridesM3M5[bp.id] ?? foundationTransferOverrides[bp.id] ?? cases
 
   return adaptedCases.map((item, index) => {
     const choices = [item.correct, ...item.other]
