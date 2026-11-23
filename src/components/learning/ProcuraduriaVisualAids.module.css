@@ -1,0 +1,23 @@
+.optional{margin:16px 0 22px;border:1px solid var(--color-border);border-radius:13px;background:var(--color-surface)}
+.summary{display:flex;align-items:center;gap:12px;cursor:pointer;padding:13px 15px;list-style:none;color:var(--color-text)}
+.summary::-webkit-details-marker{display:none}
+.summary>svg{flex-shrink:0;color:var(--color-brand-strong)}
+.summary>span:nth-child(2){display:grid;gap:2px;flex:1;min-width:0}
+.summary strong{font-size:13px}
+.summary small{font-size:11px;color:var(--color-text-muted)}
+.cue{font-size:12px;font-weight:750;color:var(--color-brand-strong);white-space:nowrap}
+.optional[open] .summary{border-bottom:1px solid var(--color-border)}
+.diagramBody{padding:14px}
+.diagramBody img{display:block;width:100%;height:auto;border-radius:9px;border:1px solid var(--color-border)}
+.diagramBody>a{display:inline-flex;align-items:center;gap:6px;margin-top:11px;font-size:12px;font-weight:800;color:var(--color-brand-strong)}
+.diagramBody p{margin:8px 0 0;font-size:12px;line-height:1.5;color:var(--color-text-muted)}
+.flow{margin:19px 0 25px}
+.flow h3{display:flex;align-items:center;gap:9px;font-size:17px;margin:0 0 15px}
+.flow h3 svg{color:var(--color-brand-strong)}
+.flow ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0;padding:0;list-style:none}
+.step{position:relative;display:flex;align-items:flex-start;gap:9px;min-height:88px;padding:14px;border:1px solid var(--color-border);border-radius:12px;background:var(--color-surface);font-size:13px;line-height:1.5;color:var(--color-text)}
+.stepNumber{display:grid;place-items:center;flex:0 0 26px;width:26px;height:26px;background:var(--color-brand-soft);color:var(--color-brand-strong);font-weight:800;border-radius:8px}
+.stepIcon{flex:0 0 auto;margin-top:5px;color:var(--color-text-muted)}
+.arrow{display:none}
+.optional summary:focus-visible,.diagramBody a:focus-visible{outline:3px solid var(--color-focus-ring);outline-offset:3px}
+@media(max-width:580px){.flow ol{grid-template-columns:1fr}.step{min-height:0}.cue{display:none}}
