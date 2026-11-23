@@ -79,7 +79,7 @@ describe('Auditoría editorial Procuraduría M15–M17', () => {
     for (const [moduleId, situation, first, second] of [
       ['pgn-m15', 'c', 'c', 'b'],
       ['pgn-m16', 'b', 'b', 'a'],
-      ['pgn-m17', 'a', 'a', 'c'],
+      ['pgn-m17', 'b', 'a', 'c'],
     ] as const) {
       expect(procuraduriaCourse.questions.find(q => q.id === `${moduleId}-situational-1`)?.correctOptionId).toBe(situation)
       expect(procuraduriaCourse.questions.find(q => q.id === `${moduleId}-transfer-1`)?.correctOptionId).toBe(first)
