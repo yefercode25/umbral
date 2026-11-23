@@ -28,6 +28,10 @@ jobs:
         run: npm run lint
       - name: Ejecutar pruebas
         run: npm run test
+      - name: Comprobar que los 264 SVG se regeneran sin diferencias
+        run: |
+          node scripts/regenerate-procuraduria-svgs.mjs
+          git diff --exit-code -- public/media/procuraduria/module-diagrams public/media/lesson-support
       - name: Verificar 255 SVG de Procuraduría
         run: node scripts/check-procuraduria-module-svgs.mjs
       - name: Generar PWA
