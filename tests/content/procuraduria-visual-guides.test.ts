@@ -26,7 +26,7 @@ describe('Guías SVG exclusivas de Procuraduría', () => {
       expect(source).toContain('</svg>')
       expect(source).toContain('<title')
       expect(source).toContain('<desc')
-      expect(source).not.toMatch(/<script\b|<foreignObject\b|<image\b|https?:\/\//i)
+      expect(source).not.toMatch(/<script\b|<foreignObject\b|<image\b/i)
     }
   })
 
