@@ -14,6 +14,27 @@ export type ProcuraduriaCaseProfile = {
 }
 
 const specific: Record<string, ProcuraduriaCaseProfile> = {
+  'pgn-m6': {
+    setting: 'Tras una auditoría a un contrato municipal de equipos escolares, un ciudadano presenta denuncias ante Contraloría, Procuraduría y Fiscalía por los mismos hechos aparentes.',
+    document: 'La carpeta contiene un acta de supervisión, un informe de pagos, comprobantes de entrega y tres comunicaciones de entidades distintas que requieren aclarar los hechos y sus posibles efectos.',
+    conflict: 'La entidad sostiene que, como la Fiscalía abrió un expediente, debe detenerse toda valoración fiscal o disciplinaria, mientras otra oficina propone que la Procuraduría resuelva directamente el eventual daño patrimonial.',
+    change: 'Un nuevo certificado demuestra que parte del pago correspondía a bienes efectivamente entregados, pero persiste la controversia sobre el resto y sobre la conducta funcional de los servidores.',
+    pressure: 'Se necesita contestar con rapidez sin confundir investigación penal, responsabilidad fiscal y evaluación disciplinaria ni decidir asuntos de otra autoridad.',
+  },
+  'pgn-m7': {
+    setting: 'En una oficina regional, dos peticiones sobre el mismo servicio público ingresan por ventanilla y correo; una es de un conocido de la jefatura, y la otra describe una urgencia con soportes de atención diferencial.',
+    document: 'La tabla de correspondencia conserva radicado, fecha y medio de recepción, pero se cambió manualmente la prioridad de la persona conocida sin registrar la motivación ni el criterio legal.',
+    conflict: 'Un servidor defiende el cambio como una medida de celeridad y economía; otro pide publicar la lista completa de solicitantes, incluidos datos personales, para demostrar transparencia.',
+    change: 'Al revisar la carpeta, aparece soporte verificable de una condición que podría activar atención prioritaria para la segunda persona, conforme a reglas aplicables al asunto.',
+    pressure: 'La dirección necesita responder oportunamente, garantizar igualdad e imparcialidad y documentar las excepciones que realmente procedan.',
+  },
+  'pgn-m8': {
+    setting: 'En un municipio se presenta una queja contra el supervisor de un contrato de mantenimiento vial porque una actividad se recibió varias semanas después de la fecha anunciada.',
+    document: 'El expediente contiene manual de funciones, orden de designación, actas parciales, correspondencia al contratista y un reporte de pagos; todavía falta contrastar quién tenía a cargo cada actuación.',
+    conflict: 'Un equipo propone declarar automáticamente responsable al supervisor por el retraso y acumular en una única conclusión una falta disciplinaria, un daño fiscal y un posible delito.',
+    change: 'Se incorpora un informe que atribuye parte de la demora a un tercero y demuestra algunas gestiones preventivas del supervisor; no elimina otras posibles omisiones aún pendientes de verificación.',
+    pressure: 'La oficina debe identificar deber funcional, conducta, competencia y fuentes antes de remitir hechos que puedan corresponder a otras autoridades.',
+  },
   'pgn-m3': {
     setting: 'Una aspirante a la Convocatoria 104-2026 revisa un diagnóstico de cuarenta preguntas: obtuvo 17/20 en Constitución y 9/20 en derecho probatorio disciplinario.',
     document: 'Su cuaderno registra los ítems fallados, las respuestas elegidas y el soporte oficial de que conocimientos es eliminatoria con 65/100 y pesa 70 % del resultado de concurso para nivel profesional.',
