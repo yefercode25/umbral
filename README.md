@@ -12,13 +12,13 @@ Umbral ofrece una ruta de aprendizaje con nodos de unidades, módulos y leccione
 
 ## Estado actual · biblioteca multi-curso
 
-### Procuraduría 104-2026 · Profesional Universitario 3PU-15 · alpha.2
+### Procuraduría 104-2026 · Profesional Universitario 3PU-15 · beta.3
 
 - **17 unidades, 85 módulos y 255 lecciones** con progresión fundamentos → aplicación → avanzado.
-- **880 preguntas**: 850 preguntas base + 30 decisiones integradoras multi-módulo, respaldadas por **37 fuentes** registradas.
+- **1948 registros de preguntas, 1098 evaluables**: 850 controles históricos, 850 situacionales, 170 nuevos casos de transferencia por módulo, 48 preguntas de 12 expedientes multidisciplinares y 30 decisiones integradoras, respaldadas por **42 fuentes** registradas.
 - Cobertura explícita de las 11 funciones del empleo, Derecho Constitucional, Administrativo, Procesal, Disciplinario y Probatorio, contratación, anticorrupción, ordenamiento territorial, gestión/documentación y herramientas comunes.
 - Núcleo prioritario en instrucción disciplinaria y Derecho probatorio.
-- Doble ruta para Ingeniería de Sistemas: evidencia técnica aplicada al expediente (M60–M64) + fundamentos profesionales de arquitectura, redes, seguridad, software y gobierno de datos (M80–M84).
+- Preparación transversal en ofimática, datos y gestión para el empleo; los fundamentos especializados de sistemas (M80–M84) quedan como complemento optativo y no sustituyen el núcleo común.
 - Las seis competencias comportamentales exactas del perfil se entrenan de forma separada.
 - **6 laboratorios integradores propios** mantienen un expediente común durante cinco decisiones y cruzan instrucción, prueba, prevención, contratación, competencia y sistemas.
 - M75–M79 se conservan como especializaciones condicionales y no entran por defecto al banco general de examen.
