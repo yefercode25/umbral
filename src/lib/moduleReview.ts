@@ -1,4 +1,5 @@
 import type { Course, Question } from '../types/course'
+import type { CourseProgress } from '../types/progress'
 
 /**
  * Evaluación integrada al final de cada módulo de Procuraduría.
@@ -21,3 +22,13 @@ export function moduleReviewQuestions(course: Course, moduleId: string, round = 
 
 export const MODULE_PASS_SCORE = 2
 export const MODULE_REVIEW_COUNT = 3
+
+/** Preserve freedom to inspect modules, but don't advance automatically
+ * past the third lesson while a preceding lesson remains incomplete.
+ */
+export function priorModuleLessonsCompleted(
+  course: Course, moduleId: string, progress?: Pick<CourseProgress, 'lessons'>,
+): boolean {
+  const preceding = course.lessons.filter(lesson => lesson.moduleId === moduleId && lesson.order < 3 && lesson.status === 'published')
+  return preceding.length === 2 && preceding.every(lesson => progress?.lessons[lesson.id]?.status === 'completed')
+}
