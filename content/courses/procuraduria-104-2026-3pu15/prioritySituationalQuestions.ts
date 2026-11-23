@@ -14,6 +14,57 @@ export type PrioritySituationalOverride = {
 }
 
 export const prioritySituationalOverrides: Record<string, PrioritySituationalOverride[]> = {
+  'pgn-m6': [{
+    number: 1,
+    caseText: 'Una alcaldía recibe tres requerimientos sobre la contratación de mobiliario: la Contraloría examina el uso de recursos públicos, la Procuraduría verifica actuaciones de servidores y la Fiscalía solicita datos relativos a un posible delito. Existe un acta con bienes no entregados, una inconsistencia en los pagos y una denuncia que acusa a todos los funcionarios. La dirección municipal afirma que solo debe responder a Fiscalía porque ella «investiga todo»; otro servidor propone pedir a Procuraduría que decida directamente la responsabilidad fiscal.',
+    stem: '¿Cuál respuesta distingue la estructura estatal y las competencias que surgen de una misma situación contractual?',
+    options: [
+      'Suspender cualquier verificación disciplinaria o fiscal porque la apertura penal desplaza automáticamente a todas las demás autoridades.',
+      'Solicitar que Procuraduría determine el daño fiscal y la culpabilidad penal, pues todos los órganos de control y la Fiscalía tienen idéntica competencia.',
+      'Separar el objeto de cada requerimiento, preservar y remitir soportes pertinentes por los canales competentes y evitar afirmar responsabilidades antes de la valoración propia de cada régimen.',
+    ],
+    rationales: [
+      'La existencia de una actuación penal no elimina por sí sola los objetos y competencias de los demás regímenes.',
+      'Procuraduría, Contraloría y Fiscalía no son autoridades intercambiables; la Fiscalía integra la Rama Judicial y la Contraloría ejerce control fiscal.',
+      'Aplica los artículos 113, 117 a 119 y 250 según competencia, sin importar automáticamente decisiones ni presumir responsabilidades.',
+    ],
+    correctOptionId: 'c',
+    explanation: 'Constitución: las ramas del poder se distinguen de los órganos de control; el Ministerio Público incluye la Procuraduría y el control fiscal corresponde a la Contraloría. La Fiscalía pertenece a la Rama Judicial y desempeña funciones penales. Hechos compartidos pueden justificar actuaciones diferentes, cada una con su procedimiento.',
+  }],
+  'pgn-m7': [{
+    number: 1,
+    caseText: 'Una oficina mantiene una matriz de correspondencia con número de radicado y fecha. El jefe pide tramitar primero la solicitud de un conocido, sin soporte para alterar el orden. Otro expediente contiene un documento que podría justificar legalmente una atención prioritaria; hay datos personales en las dos carpetas. La oficina afirma que la celeridad y publicidad del artículo 209 justifican tanto el cambio informal de orden como publicar todas las solicitudes sin revisión.',
+    stem: '¿Qué decisión permite aplicar simultáneamente igualdad, imparcialidad, celeridad y publicidad sin convertirlos en excusas para arbitrariedades?',
+    options: [
+      'Tramitar primero al conocido y luego compensar atendiendo a otra persona, porque un reparto informal termina produciendo igualdad estadística.',
+      'Validar registros y criterios oficiales de atención, examinar la prioridad legal acreditada, documentar cualquier cambio y divulgar solo la información que proceda conforme a protección de datos y reservas aplicables.',
+      'Publicar íntegramente todas las solicitudes para demostrar transparencia, dejando que cada interesado gestione después la protección de su información.',
+    ],
+    rationales: [
+      'El favoritismo no se corrige favoreciendo arbitrariamente después a otra persona y puede violar la imparcialidad.',
+      'Los principios del artículo 209 se aplican conjuntamente con competencia, reglas de atención, tratamiento de datos y motivación de las excepciones.',
+      'La publicidad no es una autorización automática para divulgar datos personales protegidos o material sujeto a restricciones legales.',
+    ],
+    correctOptionId: 'b',
+    explanation: 'Art. 209 constitucional y CPACA: eficacia y celeridad no eliminan igualdad e imparcialidad. Publicidad no equivale a entrega indiscriminada de datos personales; las prioridades requieren supuesto legal y constancia. El uso de Excel es de apoyo, no crea criterios de prioridad.',
+  }],
+  'pgn-m8': [{
+    number: 1,
+    caseText: 'Una alcaldía registra retrasos en una obra de mantenimiento y se presenta una queja contra el supervisor. El expediente muestra actas parciales, órdenes al contratista y un correo que atribuye la demora a un tercero. La oficina proyecta declarar al supervisor responsable disciplinario, penal y fiscal porque «es servidor público y firmó el contrato», sin verificar cuáles eran sus funciones efectivas, quién aprobó los pagos o qué medidas adoptó.',
+    stem: '¿Qué investigación inicial distingue calidad del sujeto, deber funcional y responsabilidades de naturaleza diferente?',
+    options: [
+      'Verificar designación, deber concreto, actuaciones exigibles y realizadas, evidencia de posibles omisiones y autoridad de cada régimen antes de deducir responsabilidades.',
+      'Imponer en un solo concepto administrativo tres responsabilidades por el retraso, pues la condición de servidor público permite presumir autoría en todas.',
+      'Excluir cualquier revisión porque un tercero pudo provocar parte del atraso, de modo que ningún servidor podría haber incumplido su deber funcional.',
+    ],
+    rationales: [
+      'La relación entre calidad del sujeto, función, hechos acreditados y competencia permite investigar con garantías y sin trasladar resultados entre regímenes.',
+      'Ser servidor y estar en el expediente no acredita por sí mismo una conducta culpable ni concede competencia para decidir todos los regímenes.',
+      'Un hecho alternativo puede modificar la hipótesis, pero no elimina automáticamente otros deberes o actuaciones que todavía requieren revisión.',
+    ],
+    correctOptionId: 'a',
+    explanation: 'Artículos 6, 121, 123 y 124 constitucionales y Código General Disciplinario: deben delimitarse calidad del sujeto, obligación funcional, conducta u omisión, soporte y autoridad competente. Fiscal, penal y disciplinario persiguen objetos distintos y no se acumulan mediante una calificación automática.',
+  }],
   'pgn-m3': [{
     number: 1,
     caseText: 'En la preparación para la Convocatoria 104-2026, un aspirante al nivel profesional realiza 40 preguntas de diagnóstico. Obtiene 17/20 respuestas correctas en Constitución y 9/20 en pruebas disciplinarias. Recuerda que el puntaje mínimo aprobatorio de conocimientos es 65/100 y que su peso en el concurso es 70 %. Un compañero le propone suspender la revisión porque su resultado promedio está cerca de esa cifra y afirma que ese 70 % equivale a una nota mínima adicional.',
