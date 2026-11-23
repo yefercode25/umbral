@@ -44,7 +44,7 @@ export function CoursePage() {
         <Link to={`/practice?course=${course.slug}`}><Target size={17}/>Practicar</Link>
       </div>
     </header>
-    {(course.officialGuideStatus === 'pending' || course.guideNotice) && <aside className={styles.notice}><CircleAlert size={19}/><p><strong>{course.officialGuideStatus === 'published' ? 'Información del curso' : 'Currículo sujeto a actualización oficial.'}</strong> {course.guideNotice ?? 'Las prioridades pueden actualizarse con orientaciones oficiales sin borrar tu avance.'}</p></aside>}
+    {course.officialGuideStatus === 'pending' && <aside className={styles.notice}><CircleAlert size={19}/><p><strong>Currículo sujeto a actualización oficial.</strong> {course.guideNotice ?? 'Las prioridades pueden actualizarse sin borrar tu avance.'}</p></aside>}
     <div className={styles.sectionHeading}><h2>Módulos del curso</h2><p>Elige un módulo para continuar estudiando.</p></div>
     <LearningPath course={course} progress={progress}/>
   </div>
