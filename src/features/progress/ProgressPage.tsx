@@ -44,15 +44,6 @@ export function ProgressPage() {
       {courses.map((item) => <Link key={item.id} to={withCourse('/progress', item)} className={item.id === course.id ? styles.courseScopeActive : ''}><span>{item.shortTitle}</span><small>{courseCompletion(item, progressByCourse[item.id])}% completado</small></Link>)}
     </nav>
 
-    <section className={styles.progressVisual} aria-label="Resumen de aprendizaje">
-      <img src="/media/editorial/progress-overview.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" />
-      <div className={styles.progressVisualCopy}>
-        <span>{course.shortTitle}</span>
-        <strong>{courseCompletion(course, progress)}% del contenido publicado</strong>
-        <p>{attempts ? `${accuracy}% de precisión sobre ${attempts} intentos registrados.` : 'Empieza una práctica para construir tu línea base de precisión.'}</p>
-      </div>
-    </section>
-
     <div className={styles.kpis}>
       <div><BookOpenCheck/><span>Lecciones</span><strong>{completed}/{lessons.length}</strong></div>
       <div><Target/><span>Precisión</span><strong>{attempts ? `${accuracy}%` : '—'}</strong></div>

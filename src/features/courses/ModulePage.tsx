@@ -1,11 +1,9 @@
 import { useEffect } from 'react'
-import { ArrowLeft, ArrowRight, BookOpenCheck, Check, Clock3, Network, Play, Star, Target } from 'lucide-react'
+import { ArrowLeft, ArrowRight, BookOpenCheck, Check, Clock3, Play, Target } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
-import { LessonSupportGraphic } from '../../components/learning/LessonSupportGraphic'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { moduleCompletion } from '../../lib/course'
 import { getCourseBySlug } from '../../lib/courses'
-import { getModuleSupportGraphic } from '../../lib/supportGraphics'
 import { useProgressStore } from '../../stores/progressStore'
 import { useSettingsStore } from '../../stores/settingsStore'
 import type { Lesson } from '../../types/course'
@@ -27,7 +25,6 @@ export function ModulePage() {
   const completion = moduleCompletion(course, module.id, progress)
   const completed = lessons.filter((lesson) => progress?.lessons[lesson.id]?.status === 'completed').length
   const nextLesson = lessons.find((lesson) => progress?.lessons[lesson.id]?.status !== 'completed') ?? lessons[0]
-  const moduleGraphic = getModuleSupportGraphic(module.id)
 
   const attemptedQuestions = questions.filter((q) => (progress?.questionStats?.[q.id]?.attempts ?? 0) > 0)
   const totalAttempts = attemptedQuestions.reduce((acc, q) => acc + (progress?.questionStats?.[q.id]?.attempts ?? 0), 0)
@@ -48,34 +45,27 @@ export function ModulePage() {
       <div className={styles.progress}><ProgressBar value={completion} label="Progreso del módulo"/></div>
       <div className={styles.heroActions}>
         {nextLesson && <Link className={styles.primaryAction} to={`/courses/${course.slug}/lesson/${nextLesson.id}`}><Play size={18} fill="currentColor"/>{completed > 0 ? 'CONTINUAR APRENDIENDO' : 'EMPEZAR A APRENDER'}</Link>}
-        {course.id === 'dian-2676-gestor-ii' && <Link className={styles.secondaryHeroAction} to="/library?tab=mapas"><Network size={17}/> Atlas Visual DIAN</Link>}
       </div>
     </header>
 
-    {moduleGraphic ? (
-      <div className={styles.moduleGraphicWrap}>
-        <LessonSupportGraphic graphic={moduleGraphic} />
-      </div>
-    ) : null}
-
     <section className={styles.section}>
-      <div className={styles.sectionHead}><div><span>⭐ TU CAMINO</span><h2>Lección por lección</h2><p>Toca cualquier nodo para aprender. No necesitas vidas ni desbloquear lecciones.</p></div><strong>{completed}/{lessons.length}</strong></div>
+      <div className={styles.sectionHead}><div><h2>Lecciones del módulo</h2></div><strong>{completed}/{lessons.length}</strong></div>
       <div className={styles.lessonPath}>
         {lessons.map((lesson, index) => {
           const done = progress?.lessons[lesson.id]?.status === 'completed'
           const current = lesson.id === nextLesson?.id && !done
-          return <Link key={lesson.id} className={`${styles.step} ${done ? styles.completed : current ? styles.active : styles.future} ${styles[`offset${index % 5}`]}`} to={`/courses/${course.slug}/lesson/${lesson.id}`}>
-            {current && <span className={styles.startHere}>¡SIGUE AQUÍ!</span>}
-            <span className={styles.orb}>{done ? <Check size={28} strokeWidth={3.5}/> : current ? <Play size={27} fill="currentColor"/> : <Star size={28} fill="currentColor"/>}</span>
-            <span className={styles.stepLabel}><strong>{lesson.title}</strong><small>{lesson.durationMinutes} min · {done ? 'Completada' : `Lección ${index + 1}`}</small></span>
+          return <Link key={lesson.id} className={`${styles.step} ${done ? styles.completed : current ? styles.active : ''}`} to={`/courses/${course.slug}/lesson/${lesson.id}`}>
+            <span className={styles.orb}>{done ? <Check size={19} strokeWidth={3} /> : current ? <Play size={19} fill="currentColor" /> : <BookOpenCheck size={19} />}</span>
+            <span className={styles.stepLabel}><strong>{index + 1}. {lesson.title}</strong><small>{lesson.durationMinutes} min · {done ? 'Completada' : current ? 'Siguiente lección' : 'Pendiente'}</small></span>
+            <ArrowRight size={17} className={styles.chevron} aria-hidden="true" />
           </Link>
         })}
       </div>
     </section>
 
     {questions.length > 0 && <section className={styles.practiceCard}>
-      <div><span>🎯 REFUERZA TUS CONOCIMIENTOS</span><h2>¡Hora de ponerlo en práctica!</h2><p>Encontrarás {questions.length} preguntas de este módulo dentro del banco de {course.shortTitle}.</p></div>
-      <Link to={`/practice?course=${course.slug}`}>IR A PRACTICAR <ArrowRight size={17}/></Link>
+      <div><h2>Practicar este módulo</h2><p>{questions.length} preguntas relacionadas con {module.code}.</p></div>
+      <Link to={`/practice?course=${course.slug}&module=${module.id}`}>Practicar <ArrowRight size={17}/></Link>
     </section>}
   </div>
 }

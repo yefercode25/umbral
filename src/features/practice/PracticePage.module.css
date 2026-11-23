@@ -22,14 +22,6 @@
 .loadMore { margin:18px 0 4px;display:flex;flex-direction:column;align-items:center;gap:8px; }
 .loadMore span { color:var(--color-text-faint);font-size:12px; }
 
-.visualIntro { min-height:168px;margin:-2px 0 18px;border:1px solid var(--color-border);border-radius:18px;overflow:hidden;position:relative;background:#0E1722;color:#F4F6F8;display:grid;align-items:end;isolation:isolate; }
-.visualIntro::after { content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(14,23,34,.98) 0%,rgba(14,23,34,.9) 45%,rgba(14,23,34,.3) 100%);pointer-events:none; }
-.visualIntro img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:68% 49%;opacity:.76;z-index:0; }
-.visualCopy { position:relative;z-index:2;padding:18px;max-width:430px;display:grid;gap:4px; }
-.visualCopy span { color:#62D5D2;font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase; }
-.visualCopy strong { font-size:17px;line-height:1.25;letter-spacing:-.02em; }
-.visualCopy p { margin:3px 0 0;color:rgba(244,246,248,.72);font-size:11px;line-height:1.45; }
-@media (min-width:700px) { .visualIntro { min-height:190px; }.visualCopy { padding:22px;max-width:470px; }.visualCopy strong { font-size:20px; } }
 
 .courseScope { display:flex;gap:8px;margin:-4px 0 16px;overflow-x:auto;scrollbar-width:none; }
 .courseScope::-webkit-scrollbar { display:none; }
@@ -44,8 +36,13 @@
 .examCta{padding:18px;border:2px solid var(--color-border);border-bottom-width:5px;border-radius:18px;gap:10px;}
 .examCta>div{align-items:flex-start;color:var(--color-brand-strong);}.examCta strong{font-family:var(--font-display);font-size:17px;}.examCta small{font-size:12px;font-weight:750;}
 .examCta a{background:var(--color-brand);color:var(--color-on-brand);border-radius:12px;border-bottom:4px solid var(--color-brand-strong);font-weight:900;}
-.visualIntro{border:2px solid var(--color-border);border-bottom-width:5px;border-radius:20px;min-height:170px;background:linear-gradient(130deg,#117db2,#0a6a9e);}
-.visualIntro::after{background:linear-gradient(90deg,rgba(12,77,113,.95),rgba(12,77,113,.45));}
-.visualCopy strong{font-family:var(--font-display);font-size:21px;}.visualCopy p{color:#f4ffff;font-weight:750;}.visualCopy span{color:#ebfff1;}
 .courseScope a{border:2px solid var(--color-border);border-bottom-width:4px;border-radius:14px;}.courseScope a span{font-weight:900;}.courseScope .courseScopeActive{border-color:var(--color-brand);border-bottom-color:var(--color-brand-strong);background:var(--color-brand-soft);}
 .summary{font-weight:850;color:var(--color-text-muted);}
+
+/* Mostrar primero las preguntas; los demás modos quedan accesibles bajo demanda. */
+.moduleScope{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:12px 14px;margin-bottom:15px;border:1px solid var(--color-border);border-radius:12px;background:var(--color-surface-subtle);font-size:12px;}
+.moduleScope a{color:var(--color-brand-strong);font-weight:800;}
+.modeDisclosure{border:1px solid var(--color-border);border-radius:13px;padding:0 14px;margin:12px 0;background:var(--color-surface);}
+.modeDisclosure>summary{cursor:pointer;padding:13px 0;font-size:13px;font-weight:800;color:var(--color-text);}
+.modeDisclosure[open]>summary{border-bottom:1px solid var(--color-border);}
+.modeDisclosure .practiceModes{margin:13px 0;}
