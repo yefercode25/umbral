@@ -140,13 +140,6 @@ const specific: Record<string, ProcuraduriaCaseProfile> = {
     change: 'La estudiante comprueba en la fuente que la indagación previa se relaciona con la identificación del autor y que puede existir extensión especial del término en el supuesto legal previsto.',
     pressure: 'Quedan pocos minutos de simulacro; debe preferirse el razonamiento normativo al reconocimiento rápido de una cifra familiar.',
   },
-  'pgn-m17': {
-    setting: 'Una dependencia recibe una petición ciudadana que mezcla una consulta jurídica y una solicitud de copias de documentos.',
-    document: 'El gestor documental conserva el sello de radicación y registra dos categorías de solicitudes en una misma comunicación.',
-    conflict: 'La dependencia destinataria posee parte de la información, pero otra corresponde a una oficina diferente.',
-    change: 'Antes de responder, el peticionario solicita conocer el fundamento de una eventual reserva de un anexo.',
-    pressure: 'Se acerca el vencimiento del término aplicable y una respuesta uniforme para todo el escrito parece la opción más rápida.',
-  },
   'pgn-m18': {
     setting: 'Una veeduría solicita informes de seguimiento de una contratación pública y un archivo contiene datos personales de terceros.',
     document: 'Existe una versión integral del informe y otra con campos susceptibles de ocultamiento, sin justificación de reserva incorporada todavía.',
