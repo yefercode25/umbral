@@ -4,11 +4,9 @@ import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { LessonRenderer } from '../../components/learning/LessonRenderer'
 import { LessonNarrator } from '../../components/learning/LessonNarrator'
 import { LessonQuickReview } from '../../components/learning/LessonQuickReview'
-import { LessonSupportGraphic } from '../../components/learning/LessonSupportGraphic'
 import { Button } from '../../components/ui/Button'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { getCourseBySlug } from '../../lib/courses'
-import { getLessonSupportGraphic } from '../../lib/supportGraphics'
 import { useProgressStore } from '../../stores/progressStore'
 import styles from './LessonPage.module.css'
 
@@ -44,7 +42,6 @@ export function LessonPage() {
   const previous = allPublished[index-1]
   const isBookmarked = progress?.bookmarks.includes(lesson.id) ?? false
   const globalPercent = Math.round(((index+1)/allPublished.length)*100)
-  const supportGraphic = getLessonSupportGraphic(lesson.id)
 
   const finish = () => {
     complete(course, lesson.id, lesson.durationMinutes)
@@ -64,8 +61,7 @@ export function LessonPage() {
       <nav className={styles.breadcrumb}><Link to={`/courses/${course.slug}`}>{course.shortTitle}</Link><span>›</span><span>{module.code}</span></nav>
       <div className={styles.lessonMeta}><span>{module.title}</span><span><Clock3 size={14}/> {lesson.durationMinutes} min</span></div>
       <h1>{lesson.title}</h1><p className={styles.subtitle}>{lesson.subtitle}</p>
-      <LessonNarrator course={course} lesson={lesson} supportGraphic={supportGraphic} />
-      {supportGraphic ? <LessonSupportGraphic graphic={supportGraphic} /> : null}
+      <LessonNarrator course={course} lesson={lesson} />
       <LessonRenderer key={`${course.id}:${lesson.id}`} course={course} blocks={lesson.blocks}/>
       <LessonQuickReview course={course} lesson={lesson} />
       <div className={styles.finish}>
