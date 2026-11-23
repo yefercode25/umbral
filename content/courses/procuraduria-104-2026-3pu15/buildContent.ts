@@ -8,6 +8,7 @@ import { foundationModuleBlocks, foundationModuleExtraSourceIds } from './founda
 import { auditedModuleBlocks, auditedModuleSourceIds } from './auditedModulesM3M5'
 import { auditedModuleBlocksM6M8, auditedModuleSourcesM6M8 } from './auditedModulesM6M8'
 import { auditedModuleBlocksM9M11, auditedModuleSourcesM9M11 } from './auditedModulesM9M11'
+import { auditedModuleBlocksM12M14, auditedModuleSourcesM12M14 } from './auditedModulesM12M14'
 
 const ACCENT = '#5F9E80'
 const VERIFIED_AT = '2026-09-14'
@@ -157,7 +158,7 @@ function buildQuestions(blueprint: ProcuraduriaModuleBlueprint): Question[] {
 }
 
 function lessonSources(blueprint: ProcuraduriaModuleBlueprint) {
-  return { type: 'sources' as const, sourceIds: [...new Set([...blueprint.sourceIds, ...transversalOfficeSources(blueprint.id), ...foundationModuleExtraSourceIds(blueprint.id), ...auditedModuleSourceIds(blueprint.id), ...auditedModuleSourcesM6M8(blueprint.id), ...auditedModuleSourcesM9M11(blueprint.id)])] }
+  return { type: 'sources' as const, sourceIds: [...new Set([...blueprint.sourceIds, ...transversalOfficeSources(blueprint.id), ...foundationModuleExtraSourceIds(blueprint.id), ...auditedModuleSourceIds(blueprint.id), ...auditedModuleSourcesM6M8(blueprint.id), ...auditedModuleSourcesM9M11(blueprint.id), ...auditedModuleSourcesM12M14(blueprint.id)])] }
 }
 
 function specializedFoundationBlocks(blueprint: ProcuraduriaModuleBlueprint): LessonBlock[] {
@@ -1035,6 +1036,7 @@ function buildLessons(blueprint: ProcuraduriaModuleBlueprint): Lesson[] {
       ...auditedModuleBlocks(blueprint.id, 1),
       ...auditedModuleBlocksM6M8(blueprint.id, 1),
       ...auditedModuleBlocksM9M11(blueprint.id, 1),
+      ...auditedModuleBlocksM12M14(blueprint.id, 1),
       { type: 'comparison', title: 'Tres reglas que debes poder recuperar sin mirar apuntes', columns: ['Regla', 'Qué evita'], rows: blueprint.keyPoints.map((point, index) => [point, index === 0 ? 'Confundir el concepto básico.' : index === 1 ? 'Aplicar un atajo aparentemente razonable.' : 'Exceder la evidencia, la etapa o la competencia.']) },
       { type: 'example', title: 'Expediente para analizar', text: scene.setting + ' ' + scene.document + ' Separa hechos, etapa y competencia antes de seleccionar la actuación procedente.' },
       { type: 'trap', title: 'Distractor frecuente', text: 'Una alternativa puede sonar eficiente, pero debe descartarse si desconoce un presupuesto esencial, omite evidencia relevante o atribuye a una autoridad competencias que no tiene.' },
@@ -1058,6 +1060,7 @@ function buildLessons(blueprint: ProcuraduriaModuleBlueprint): Lesson[] {
       ...auditedModuleBlocks(blueprint.id, 2),
       ...auditedModuleBlocksM6M8(blueprint.id, 2),
       ...auditedModuleBlocksM9M11(blueprint.id, 2),
+      ...auditedModuleBlocksM12M14(blueprint.id, 2),
       { type: 'comparison', title: 'Expediente: lectura antes de la decisión', columns: ['Elemento', 'Información disponible'], rows: [
         ['Situación', scene.setting],
         ['Soportes', scene.document],
@@ -1089,6 +1092,7 @@ function buildLessons(blueprint: ProcuraduriaModuleBlueprint): Lesson[] {
       ...auditedModuleBlocks(blueprint.id, 3),
       ...auditedModuleBlocksM6M8(blueprint.id, 3),
       ...auditedModuleBlocksM9M11(blueprint.id, 3),
+      ...auditedModuleBlocksM12M14(blueprint.id, 3),
       { type: 'tip', title: 'Señal de dominio', text: `Dominas este módulo cuando puedes explicar por qué “${blueprint.distractors[0] ?? 'el atajo más intuitivo'}” resulta tentador, qué presupuesto ignora y qué hecho adicional podría cambiar legítimamente la respuesta.` },
       { type: 'checkpoint', questionId: q5 },
       { type: 'checkpoint', questionId: q6 },
