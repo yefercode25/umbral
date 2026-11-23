@@ -1,6 +1,7 @@
 import type { Question, QuestionOption } from '../../../src/types/course'
 import type { ProcuraduriaModuleBlueprint } from './blueprints'
 import { caseProfileFor } from './caseProfiles'
+import { prioritySituationalOverrides } from './prioritySituationalQuestions'
 
 /**
  * Preguntas de transferencia distintas de las comprobaciones de lección.
@@ -173,5 +174,21 @@ export function buildProcuraduriaSituationalQuestions(bp: ProcuraduriaModuleBlue
     },
   ]
 
-  return c.map((challenge, index) => buildQuestion(bp, challenge, index + 1))
+  return c.map((challenge, index) => {
+    const generated = buildQuestion(bp, challenge, index + 1)
+    const override = prioritySituationalOverrides[bp.id]?.find((item) => item.number === index + 1)
+    if (!override) return generated
+    return {
+      ...generated,
+      case: override.caseText,
+      stem: override.stem,
+      options: override.options.map((text, optionIndex) => ({
+        id: IDS[optionIndex]!,
+        text,
+        rationale: override.rationales[optionIndex]!,
+      })),
+      correctOptionId: override.correctOptionId,
+      explanation: override.explanation,
+    }
+  })
 }
