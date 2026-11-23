@@ -14,6 +14,57 @@ export type PrioritySituationalOverride = {
 }
 
 export const prioritySituationalOverrides: Record<string, PrioritySituationalOverride[]> = {
+  'pgn-m3': [{
+    number: 1,
+    caseText: 'En la preparación para la Convocatoria 104-2026, un aspirante al nivel profesional realiza 40 preguntas de diagnóstico. Obtiene 17/20 respuestas correctas en Constitución y 9/20 en pruebas disciplinarias. Recuerda que el puntaje mínimo aprobatorio de conocimientos es 65/100 y que su peso en el concurso es 70 %. Un compañero le propone suspender la revisión porque su resultado promedio está cerca de esa cifra y afirma que ese 70 % equivale a una nota mínima adicional.',
+    stem: '¿Qué decisión de estudio interpreta correctamente el resultado diagnóstico y las reglas de evaluación?',
+    options: [
+      'Conservar exactamente el mismo tiempo para todos los temas, pues los porcentajes por módulo no orientan el repaso y el promedio indica suficiente preparación.',
+      'Concentrarse solo en Constitución porque el área con más aciertos permite maximizar la sensación de dominio y compensará cualquier debilidad restante.',
+      'Distinguir 65/100 como umbral eliminatorio y 70 % como ponderación, estudiar por causas los errores del área probatoria y mantener recuperación periódica de Constitución, sin atribuir al simulacro un resultado oficial.',
+    ],
+    rationales: [
+      'La distribución idéntica de tiempo no responde a debilidades comprobadas; tampoco asegura transferencia del aprendizaje.',
+      'Mejorar solo la fortaleza descuida una función misional relevante y no resuelve los errores de prueba detectados.',
+      'Aplica correctamente los dos datos normativos y prioriza aprendizaje a partir de evidencias sin presuponer distribución oficial por temas.',
+    ],
+    correctOptionId: 'c',
+    explanation: 'Resolución 076 de 2026 y sus modificaciones: para el nivel profesional conocimientos es eliminatoria con mínimo 65/100 y pondera el 70 % del concurso; no son umbrales idénticos. Un diagnóstico de práctica no garantiza la elegibilidad ni demuestra el número de preguntas oficiales que se dedicarán a cada tema.',
+  }],
+  'pgn-m4': [{
+    number: 1,
+    caseText: 'En una actuación de apoyo a la instrucción, se revisa un registro de acceso a un sistema de documentos. El evento aparece a las 08:15 y se asocia a una cuenta de servicio utilizada por tareas automatizadas. El archivo exportado carece de constancia de su origen; otros registros muestran actividad desde una sesión VPN y un procedimiento programado. El jefe solicita que el informe identifique por nombre al autor de una falta disciplinaria porque el profesional que lo redacta conoce el funcionamiento del servidor.',
+    stem: '¿Cuál producto demuestra competencia técnica sin atribuir conclusiones que el dato disponible no acredita?',
+    options: [
+      'Identificar al administrador del servidor como autor personal por ser responsable del sistema, dejando la comprobación de sesiones para la etapa de juzgamiento.',
+      'Preservar y contextualizar los registros, documentar origen, integridad y zona horaria, correlacionar hipótesis alternativas y expresar en el informe lo observado, lo inferido y lo que debe decidir la autoridad competente.',
+      'Destruir la exportación por carecer de certificación inicial, absteniéndose de registrar cualquier hallazgo técnico hasta que se conozca al responsable.',
+    ],
+    rationales: [
+      'La administración de un sistema o una cuenta no demuestra ejecución personal ni atribución disciplinaria.',
+      'El método separa evidencia de hipótesis, reconoce limitaciones de adquisición y respeta competencias jurídicas.',
+      'Una fuente con debilidades de trazabilidad debe evaluarse y preservarse según corresponda, no descartarse o destruirse de manera automática.',
+    ],
+    correctOptionId: 'b',
+    explanation: 'En el empleo 3PU-15, el profesional puede apoyar con análisis técnico y documentación, pero la identificación personal y la responsabilidad disciplinaria no se deducen de un solo registro. La autoridad debe valorar las pruebas según el proceso y las garantías aplicables.',
+  }],
+  'pgn-m5': [{
+    number: 1,
+    caseText: 'Una dependencia estatal examina una actuación con afectación posible de derechos individuales. El expediente contiene pruebas de una irregularidad aparente, pero falta realizar una comunicación exigida por el procedimiento para que la persona interesada pueda ejercer defensa. La jefatura ordena avanzar porque hay presión ciudadana y el interés general exige resolver rápidamente. La persona encargada advierte que la Constitución reconoce el debido proceso en actuaciones administrativas y limita a cada autoridad a sus competencias.',
+    stem: '¿Cuál actuación armoniza los fines del Estado con las garantías constitucionales que rigen la decisión?',
+    options: [
+      'Comprobar la competencia, cumplir la comunicación y demás garantías procesales exigibles en esa etapa, valorar las pruebas y elegir una actuación oportuna motivada que no sacrifica defensa por celeridad.',
+      'Omitir la comunicación porque la gravedad de la irregularidad y el interés general prevalecen siempre sobre las garantías individuales.',
+      'Omitir la comunicación solo si la entidad considera las pruebas suficientes; la oportunidad de contradicción depende exclusivamente de la confianza de la jefatura.',
+    ],
+    rationales: [
+      'Respeta los artículos 6, 29, 121 y 209 y vincula celeridad con debido proceso y competencia.',
+      'El interés general no es una habilitación absoluta para desconocer procedimientos y derechos fundamentales.',
+      'La suficiencia aparente de una prueba no dispensa automáticamente de las oportunidades legales de contradicción y defensa.',
+    ],
+    correctOptionId: 'a',
+    explanation: 'Constitución: artículos 1 y 2 sobre fines y organización, 6 y 121 sobre responsabilidad y atribuciones, 29 sobre debido proceso judicial y administrativo, y 209 sobre función administrativa. Celeridad y eficacia operan junto a las garantías, no en su lugar.',
+  }],
   'pgn-m0': [{
     number: 1,
     caseText: 'Una profesional se vincula al cargo 3PU-15 en una procuraduría territorial. Recibe una queja sobre omisiones en la gestión documental, una matriz de seguimiento y la orden de preparar un informe. Su formación es técnica, pero el despacho solicita que además declare, en el propio informe, la responsabilidad disciplinaria de un servidor. La profesional conoce los sistemas y los registros, aunque no le han conferido atribución para adoptar una decisión disciplinaria.',
