@@ -155,11 +155,11 @@ const specific: Record<string, ProcuraduriaCaseProfile> = {
     pressure: 'Se busca publicar las condiciones definitivas sin examinar el impacto sobre la pluralidad de oferentes.',
   },
   'pgn-m52': {
-    setting: 'Durante la ejecución de un contrato de equipos, el supervisor firma un recibido parcial por elementos cuya entrega está discutida.',
-    document: 'La factura, el inventario y el acta de recibo registran cantidades diferentes en fechas cercanas.',
-    conflict: 'El contratista propone subsanar las diferencias mediante un correo posterior sin dejar acta.',
-    change: 'Una verificación física evidencia que algunos equipos fueron prestados temporalmente a otra sede.',
-    pressure: 'El área financiera solicita tramitar pago total mientras se completa la conciliación.',
+    setting: 'Una alcaldía contrató el uso temporal de maquinaria de un proveedor externo para intervenir una vía. Durante la permanencia de una excavadora que había ingresado temporalmente al país se produce un incendio y el equipo queda fuera de servicio.',
+    document: 'El expediente contiene contrato, póliza, actas de recibo, registros de mantenimiento, fotografías, informe inicial de la emergencia y documentos sobre la situación del bien. Ninguno de esos soportes identifica todavía una causa definitiva.',
+    conflict: 'Se pretende atribuir automáticamente responsabilidad disciplinaria al supervisor e imponerle además las obligaciones aduaneras del titular de la operación, sin separar los regímenes ni las competencias.',
+    change: 'Un dictamen técnico posterior señala varias causas posibles y un acta de entrega registra una falla anterior, aunque la causalidad y el cumplimiento de cada obligación siguen discutidos.',
+    pressure: 'La entidad solicita liquidar y pagar de inmediato, mientras el proveedor pide que se declare que el incendio lo exime de toda obligación. La actuación exige distinguir supervisión, cumplimiento contractual, prueba y autoridad competente.',
   },
   'pgn-m53': {
     setting: 'Un integrante del equipo evaluador mantiene un vínculo personal relevante con uno de los proponentes.',
