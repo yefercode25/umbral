@@ -8,6 +8,7 @@ import { ModuleReview } from '../../components/learning/ModuleReview'
 import { Button } from '../../components/ui/Button'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { getCourseBySlug } from '../../lib/courses'
+import { priorModuleLessonsCompleted } from '../../lib/moduleReview'
 import { useProgressStore } from '../../stores/progressStore'
 import styles from './LessonPage.module.css'
 
@@ -52,9 +53,7 @@ export function LessonPage() {
   const checkedCount = firstTwoCheckpoints.filter(id => (progress?.questionStats?.[id]?.attempts ?? 0) > 0).length
   const checkpointsComplete = firstTwoCheckpoints.length > 0 && checkedCount === firstTwoCheckpoints.length
   const isModuleClosing = isPgn && lesson.order === 3
-  const earlierLessonsComplete = !isModuleClosing || course.lessons
-    .filter(item => item.moduleId === module.id && item.order < 3)
-    .every(item => progress?.lessons[item.id]?.status === 'completed')
+  const earlierLessonsComplete = !isModuleClosing || priorModuleLessonsCompleted(course, module.id, progress)
   const mayComplete = !isPgn || alreadyCompleted || (isModuleClosing
     ? approvedLesson === lesson.id
     : checkpointsComplete)
