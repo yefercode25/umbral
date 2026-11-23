@@ -1,7 +1,8 @@
 import { AlertTriangle, BookMarked, CheckCircle2, CircleDot, ExternalLink, Lightbulb, Scale } from 'lucide-react'
 import type { Course, LessonBlock } from '../../types/course'
 import { ProcessFlow } from './ProcessFlow'
-import { ProcuraduriaStepFlow } from './ProcuraduriaVisualAids'
+import { ProcuraduriaLessonDiagram, ProcuraduriaStepFlow } from './ProcuraduriaVisualAids'
+import { getProcuraduriaVisualInsertAfter } from '../../lib/procuraduriaVisualPlacement'
 import { PrescriptionSimulator } from './PrescriptionSimulator'
 import { CoactiveDecisionSimulator } from './CoactiveDecisionSimulator'
 import { AccountReconciliationSimulator } from './AccountReconciliationSimulator'
@@ -14,9 +15,24 @@ import { SequenceExercise } from './SequenceExercise'
 import { LegalDecisionSimulator } from './LegalDecisionSimulator'
 import styles from './LessonRenderer.module.css'
 
-export function LessonRenderer({ course, blocks, moduleId }: { course: Course; blocks: LessonBlock[]; moduleId?: string }) {
+export function LessonRenderer({ course, blocks, moduleId, lessonOrder }: { course: Course; blocks: LessonBlock[]; moduleId?: string; lessonOrder?: number }) {
+  const isProcuraduria = course.id === 'procuraduria-104-2026-3pu15' && Boolean(moduleId)
+  const insertAfter = isProcuraduria ? getProcuraduriaVisualInsertAfter(blocks, lessonOrder) : null
+
+  // Add the illustration after its relevant theory block, never ahead of the lesson.
+  // Preserve original indices so QuestionCard keys and state behavior remain stable.
+  const renderItems: { block: LessonBlock | null; originalIndex: number }[] = []
+  blocks.forEach((block, index) => {
+    renderItems.push({ block, originalIndex: index })
+    if (index === insertAfter) renderItems.push({ block: null, originalIndex: index })
+  })
+
   return <div className={styles.content}>
-    {blocks.map((block, index) => {
+    {renderItems.map(({ block, originalIndex }) => {
+      if (block === null) return moduleId && lessonOrder
+        ? <ProcuraduriaLessonDiagram key={`pgn-inline-visual-${lessonOrder}`} moduleId={moduleId} lessonOrder={lessonOrder}/>
+        : null
+      const index = originalIndex
       const key = `${block.type}-${index}`
       if (block.type === 'lead') return <p className={styles.lead} key={key}>{block.text}</p>
       if (block.type === 'paragraph') return <p key={key}>{block.text}</p>

@@ -21,7 +21,7 @@ export function ProcuraduriaVisualCatalog({ course }: { course: Course }) {
       <div className={styles.icon}><FileImage size={23} aria-hidden="true"/></div>
       <div>
         <h2>Atlas visual · Procuraduría 104-2026</h2>
-        <p>255 gráficos específicos: conceptos, procedimientos y situaciones de los 85 módulos. Se abren solo cuando los necesitas.</p>
+        <p>255 gráficos específicos: conceptos, procedimientos y casos de los 85 módulos. También están integrados directamente en el contenido de cada lección.</p>
       </div>
     </div>
     <label className={styles.search}><Search size={19} aria-hidden="true"/><input type="search" value={filter} onChange={event => setFilter(event.target.value)} placeholder="Buscar módulo o tema" aria-label="Buscar esquemas de Procuraduría"/></label>
