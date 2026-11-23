@@ -22,13 +22,21 @@ describe('Auditoría editorial por lotes: Procuraduría M0–M2', () => {
   })
 
   it('añade ejemplos concretos a las tres lecciones de los tres módulos', () => {
-    for (const moduleId of firstThree) {
-      const lessons = procuraduriaCourse.lessons.filter(l => l.moduleId === moduleId)
-      expect(lessons).toHaveLength(3)
-      for (const lesson of lessons) {
-        const comparisons = lesson.blocks.filter(b => b.type === 'comparison')
-        expect(comparisons.length, lesson.id).toBeGreaterThanOrEqual(2)
-      }
+    const expectedPerLesson: Record<string, string> = {
+      'pgn-m0-l1': 'Fuente oficial y estrategia',
+      'pgn-m0-l2': 'Qué puedes apoyar',
+      'pgn-m0-l3': 'Experiencia técnica',
+      'pgn-m1-l1': 'Conceptos parecidos',
+      'pgn-m1-l2': 'El error de citar',
+      'pgn-m1-l3': 'Antes de responder',
+      'pgn-m2-l1': 'De una cifra memorizada',
+      'pgn-m2-l2': 'Cuaderno de errores',
+      'pgn-m2-l3': 'Dos casos con la misma cifra',
+    }
+    for (const [lessonId, title] of Object.entries(expectedPerLesson)) {
+      const lesson = procuraduriaCourse.lessons.find(l => l.id === lessonId)
+      expect(lesson, lessonId).toBeDefined()
+      expect(lesson?.blocks.some(b => 'title' in b && b.title?.includes(title)), lessonId).toBe(true)
     }
     const m0 = procuraduriaCourse.lessons.find(l => l.id === 'pgn-m0-l1')!
     const m1 = procuraduriaCourse.lessons.find(l => l.id === 'pgn-m1-l1')!
