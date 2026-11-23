@@ -64,5 +64,6 @@
     "procuraduria",
     "disciplinary-law",
     "public-sector-exams"
-  ]
+  ],
+  "packageManager": "pnpm@10.30.3"
 }
