@@ -1,5 +1,6 @@
 import type { Course, Question } from '../types/course'
 import type { CourseProgress } from '../types/progress'
+import { practiceQuestionPool } from './practiceQuestionPool'
 
 function daysSince(iso?: string) {
   if (!iso) return Number.POSITIVE_INFINITY
@@ -48,9 +49,10 @@ function stableTiebreaker(id: string, seed: number) {
 }
 
 export function buildAdaptiveSession(course: Course, progress?: CourseProgress, size = 12, seed = Date.now()) {
-  return [...course.questions]
+  const available = practiceQuestionPool(course)
+  return available
     .map((question) => ({ question, score: adaptiveQuestionScore(question, progress, course), tie: stableTiebreaker(question.id, seed) }))
     .sort((a, b) => b.score - a.score || a.tie - b.tie)
-    .slice(0, Math.min(size, course.questions.length))
+    .slice(0, Math.min(size, available.length))
     .map((item) => item.question)
 }
