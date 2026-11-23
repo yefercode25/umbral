@@ -14,6 +14,27 @@ export type ProcuraduriaCaseProfile = {
 }
 
 const specific: Record<string, ProcuraduriaCaseProfile> = {
+  'pgn-m12': {
+    setting: 'En un municipio se adelanta una contratación de equipos para la atención ciudadana. Antes de adjudicar, varias personas advierten una especificación técnica que podría restringir injustificadamente la participación.',
+    document: 'La carpeta contiene estudios previos, un proyecto de pliegos, observaciones de proponentes y una respuesta preliminar de la entidad. No existe fallo ni conducta disciplinaria probada.',
+    conflict: 'Un servidor propone formular cargos disciplinarios como mecanismo de prevención, mientras otro sostiene que PGN no puede actuar sin esperar a una adjudicación irregular o a un daño cierto.',
+    change: 'Se incorpora un soporte que muestra que el requisito de marca podría reemplazarse por condiciones funcionales; la entidad anuncia una corrección, pero aún no se acredita que se haya publicado y aplicado.',
+    pressure: 'Se aproxima el cierre de la selección y se necesita proteger la transparencia sin sustituir el proceso de contratación ni anticipar sanciones.',
+  },
+  'pgn-m13': {
+    setting: 'Una procuraduría recibe el encargo formal de practicar una declaración dentro de una investigación disciplinaria instruida por otro despacho.',
+    document: 'El acto de comisión identifica testigo, objeto, diligencia, plazo y despacho comitente; el expediente contiene registros de citación y documentos que serán referidos durante el testimonio.',
+    conflict: 'La persona comisionada descubre otra posible irregularidad y quiere ampliar por cuenta propia el objeto de la diligencia y formular cargos antes de devolver el acta.',
+    change: 'Durante la declaración surge información sobre un segundo contrato y un documento no listado en la comisión, además de una solicitud de garantías que debe atenderse conforme al régimen probatorio aplicable.',
+    pressure: 'El término de la comisión es corto, pero el funcionario debe mantener integridad del testimonio, garantías procesales y límites del encargo.',
+  },
+  'pgn-m14': {
+    setting: 'Un profesional de Sistemas asignado a la etapa de instrucción analiza cambios de estado de un expediente electrónico que otra dependencia reportó como posiblemente irregulares.',
+    document: 'Recibe una exportación CSV de eventos, una hoja Excel de seguimiento, registros de una cuenta de servicio y un oficio con la pregunta técnica concreta que debe responder.',
+    conflict: 'La coordinación solicita que el informe técnico declare intencionalidad y culpabilidad porque el cambio ocurrió fuera del horario y la cuenta de acceso tiene un titular identificado.',
+    change: 'Una nueva bitácora sugiere una tarea automática que pudo ejecutar el cambio; además la zona horaria del sistema no coincide con la del archivo exportado y requiere reconciliación.',
+    pressure: 'El informe debe emitirse a tiempo y permitir revisión, sin ocultar hipótesis alternativas ni usurpar la valoración jurídica del instructor.',
+  },
   'pgn-m9': {
     setting: 'Un proyecto de atención a puestos de salud se desarrolla en dos municipios de un departamento. La ejecución la coordina una secretaría departamental mediante convenio y los municipios reciben insumos y elaboran actas.',
     document: 'La carpeta contiene convenios, designaciones de supervisión, certificaciones de entrega municipal, un informe departamental y una queja presentada en una oficina territorial de PGN cercana al sitio del proyecto.',
