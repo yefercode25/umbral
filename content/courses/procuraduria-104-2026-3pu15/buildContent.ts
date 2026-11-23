@@ -1,6 +1,7 @@
 import type { CourseModule, Lesson, LessonBlock, Question, QuestionOption } from '../../../src/types/course'
 import { procuraduriaModuleBlueprints, type ProcuraduriaModuleBlueprint } from './blueprints'
 import { buildProcuraduriaSituationalQuestions } from './situationalQuestions'
+import { caseProfileFor } from './caseProfiles'
 
 const ACCENT = '#5F9E80'
 const VERIFIED_AT = '2026-09-14'
@@ -1007,8 +1008,7 @@ function buildLessons(blueprint: ProcuraduriaModuleBlueprint): Lesson[] {
   const q4 = `${blueprint.id}-q4`
   const q5 = `${blueprint.id}-q5`
   const q6 = `${blueprint.id}-q6`
-  const ordered = blueprint.steps.map((label, index) => ({ id: String.fromCharCode(97 + index), label }))
-  const shuffled = [ordered[2], ordered[0], ordered[3], ordered[1]].filter((item): item is { id: string; label: string } => Boolean(item))
+  const scene = caseProfileFor(blueprint)
 
   const l1: Lesson = {
     id: `${lessonPrefix}-l1`, moduleId: blueprint.id, order: 1,
@@ -1023,8 +1023,8 @@ function buildLessons(blueprint: ProcuraduriaModuleBlueprint): Lesson[] {
       ...specializedAuditBlocks(blueprint),
       ...verifiedLegalArticleBlocks(blueprint),
       { type: 'comparison', title: 'Tres reglas que debes poder recuperar sin mirar apuntes', columns: ['Regla', 'Qué evita'], rows: blueprint.keyPoints.map((point, index) => [point, index === 0 ? 'Confundir el concepto básico.' : index === 1 ? 'Aplicar un atajo aparentemente razonable.' : 'Exceder la evidencia, la etapa o la competencia.']) },
-      { type: 'example', title: 'Llévalo a un expediente', text: `${blueprint.scenario} Una respuesta profesional comienza por reconstruir los presupuestos del problema. La orientación correcta es: ${blueprint.correct}` },
-      { type: 'trap', title: 'Distractor frecuente', text: `Evita razonar así: “${blueprint.distractors[0] ?? 'actuar primero y justificar después'}”. Una opción puede sonar decidida o eficiente y aun así ser incorrecta si omite competencia, etapa, evidencia o garantía.` },
+      { type: 'example', title: 'Expediente para analizar', text: scene.setting + ' ' + scene.document + ' Separa hechos, etapa y competencia antes de seleccionar la actuación procedente.' },
+      { type: 'trap', title: 'Distractor frecuente', text: 'Una alternativa puede sonar eficiente, pero debe descartarse si desconoce un presupuesto esencial, omite evidencia relevante o atribuye a una autoridad competencias que no tiene.' },
       { type: 'checkpoint', questionId: q1 },
       { type: 'checkpoint', questionId: q2 },
       lessonSources(blueprint),
@@ -1040,10 +1040,11 @@ function buildLessons(blueprint: ProcuraduriaModuleBlueprint): Lesson[] {
       { type: 'lead', text: `Ahora pasamos de “saber qué significa” a “saber qué hacer”. En la prueba, varias opciones pueden mencionar instituciones reales. Lo que las separa suele ser el orden: quién actúa, en qué etapa, con qué soporte y con qué límites.` },
       { type: 'steps', title: 'Método operativo', items: blueprint.steps },
       { type: 'rule', title: 'Regla de control', text: `${blueprint.keyPoints[0] ?? blueprint.core} Antes de elegir una respuesta, verifica si la alternativa respeta esta regla y si ocurre en el momento correcto.` },
-      { type: 'decision-simulator', title: `Laboratorio · ${blueprint.title}`, text: 'No busques la opción más fuerte ni la más amable. Busca la que encaje simultáneamente con hechos, competencia, etapa y evidencia.', scenario: blueprint.scenario, prompt: '¿Qué actuación escogerías y por qué?', options: [
-        { id: 'a', text: blueprint.correct, correct: true, rationale: `Es la alternativa que mejor respeta el método del módulo y evita anticipar una conclusión sin los presupuestos necesarios.` },
-        { id: 'b', text: blueprint.distractors[0] ?? 'Adoptar inmediatamente una conclusión sin completar las verificaciones.', correct: false, rationale: 'El distractor adelanta una conclusión, omite una verificación o excede la competencia.' },
-        { id: 'c', text: blueprint.distractors[1] ?? 'No realizar ninguna actuación aunque exista una vía procedente.', correct: false, rationale: 'Evitar toda actuación también puede ser incorrecto cuando existe un deber o una herramienta jurídicamente disponible.' },
+      { type: 'comparison', title: 'Expediente: lectura antes de la decisión', columns: ['Elemento', 'Información disponible'], rows: [
+        ['Situación', scene.setting],
+        ['Soportes', scene.document],
+        ['Conflicto', scene.conflict],
+        ['Dato nuevo posible', scene.change],
       ] },
       { type: 'tip', title: 'Cómo pensar bajo tiempo', text: `Resume el caso en una frase y recorre mentalmente: ${blueprint.steps.join(' → ')}. Si una opción salta uno de esos filtros, exige una justificación especialmente fuerte.` },
       { type: 'checkpoint', questionId: q3 },
@@ -1065,12 +1066,7 @@ function buildLessons(blueprint: ProcuraduriaModuleBlueprint): Lesson[] {
         ['Evidencia', blueprint.keyPoints[2] ?? '¿Qué soporte permite sostener la inferencia y qué sigue abierto?'],
         ['Actuación', `¿La respuesta conserva el método ${blueprint.steps.join(' → ')}?`],
       ] },
-      { type: 'sequence-exercise', title: 'Reconstruye el orden antes de decidir', text: 'Ordena los movimientos para evitar aplicar una regla correcta en el momento equivocado.', items: shuffled, correctOrder: ordered.map((item) => item.id), explanation: `El método completo es: ${blueprint.steps.join(' → ')}.` },
-      { type: 'decision-simulator', title: 'Variante avanzada', text: 'Supón que aparece una nueva fuente que debilita una premisa de tu hipótesis inicial. La respuesta madura debe poder cambiar sin borrar la trazabilidad de lo ya hecho.', scenario: `${blueprint.scenario} Luego aparece información adicional que obliga a revisar un supuesto inicial.`, prompt: '¿Cuál es el enfoque más robusto?', options: [
-        { id: 'a', text: `Reevaluar el supuesto afectado, contrastar la nueva información y mantener como guía: ${blueprint.correct}`, correct: true, rationale: 'Actualizar una hipótesis frente a nueva evidencia es parte del razonamiento profesional y no invalida lo actuado que siga siendo correcto.' },
-        { id: 'b', text: blueprint.distractors[0] ?? 'Mantener la decisión original sin revisar la nueva información.', correct: false, rationale: 'Persistir pese a evidencia relevante refleja sesgo de confirmación y puede deteriorar la motivación de la decisión.' },
-        { id: 'c', text: 'Desechar todo lo actuado y reiniciar automáticamente el expediente o análisis desde cero.', correct: false, rationale: 'La revisión debe ser proporcional al efecto de la nueva información; no todo lo previo pierde validez.' },
-      ] },
+      { type: 'example', title: 'Cambio de premisa', text: scene.change + ' ' + scene.conflict + ' Delimita qué conclusiones dependen del dato modificado; no supongas que toda la actuación anterior pierde validez ni que ya existe responsabilidad.' },
       { type: 'tip', title: 'Señal de dominio', text: `Dominas este módulo cuando puedes explicar por qué “${blueprint.distractors[0] ?? 'el atajo más intuitivo'}” resulta tentador, qué presupuesto ignora y qué hecho adicional podría cambiar legítimamente la respuesta.` },
       { type: 'checkpoint', questionId: q5 },
       { type: 'checkpoint', questionId: q6 },
