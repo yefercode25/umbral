@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="1000" height="650" role="img" aria-labelledby="title desc">
+<title id="title">M43 · Inspección disciplinaria y prueba trasladada · Ruta de aplicación</title>
+<desc id="desc">Esquema pedagógico del módulo 43 de Procuraduría, lección 2. Apoya el texto normativo, sin sustituirlo.</desc>
+<style>
+.bg{fill:#F8FBF9}.main{fill:#22372D}.title{font:700 29px Arial,sans-serif;fill:#22372D}.sub{font:17px Arial,sans-serif;fill:#556D62}
+.eyebrow{font:700 14px Arial,sans-serif;letter-spacing:.8px;fill:#356F8E}.badge{font:700 14px Arial,sans-serif;fill:#356F8E}
+.panelTitle{font:700 17px Arial,sans-serif;fill:#20372B}.body{font:16px Arial,sans-serif;fill:#3D5448}.bodySmall{font:15px Arial,sans-serif;fill:#3D5448}.foot{font:13px Arial,sans-serif;fill:#65766E}
+</style>
+<rect width="1000" height="650" rx="24" fill="#F8FBF9"/>
+<rect width="1000" height="197" rx="24" fill="#EDF7FA"/>
+<rect x="0" y="173" width="1000" height="24" fill="#EDF7FA"/>
+<text x="46" y="42" class="eyebrow">UMBRAL · PROCURADURÍA · M43 / LECCIÓN 2</text>
+<text x="46" y="94" class="title">Inspección disciplinaria y prueba trasladada</text>
+<text x="46" y="131" class="sub">Método de actuación: secuencia específica de este módulo</text>
+<rect x="46" y="219" width="439" height="179" rx="14" fill="#FFF" stroke="#D4E6DA"/>
+<circle cx="77" cy="257" r="18" fill="#EDF7FA"/><text x="77" y="263" class="badge" text-anchor="middle">1</text>
+<text x="111" y="264" class="panelTitle">Delimitar</text>
+<text x="70" y="312" class="body">Define objeto y alcance.</text><rect x="515" y="219" width="439" height="179" rx="14" fill="#FFF" stroke="#D4E6DA"/>
+<circle cx="546" cy="257" r="18" fill="#EDF7FA"/><text x="546" y="263" class="badge" text-anchor="middle">2</text>
+<text x="580" y="264" class="panelTitle">Preparar</text>
+<text x="539" y="312" class="body">Documenta participantes, circunstancias y</text><text x="539" y="335" class="body">hallazgos.</text><rect x="46" y="424" width="439" height="179" rx="14" fill="#FFF" stroke="#D4E6DA"/>
+<circle cx="77" cy="462" r="18" fill="#EDF7FA"/><text x="77" y="468" class="badge" text-anchor="middle">3</text>
+<text x="111" y="469" class="panelTitle">Contrastar</text>
+<text x="70" y="517" class="body">Si proviene de otro proceso, identifica origen</text><text x="70" y="540" class="body">y forma de incorporación.</text><rect x="515" y="424" width="439" height="179" rx="14" fill="#FFF" stroke="#D4E6DA"/>
+<circle cx="546" cy="462" r="18" fill="#EDF7FA"/><text x="546" y="468" class="badge" text-anchor="middle">4</text>
+<text x="580" y="469" class="panelTitle">Documentar</text>
+<text x="539" y="517" class="body">Permite contradicción y valora autónomamente.</text><path d="M489 310 H507" stroke="#356F8E" stroke-width="3" stroke-linecap="round"/><path d="M500 304 L507 310 L500 316" stroke="#356F8E" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M489 516 H507" stroke="#356F8E" stroke-width="3" stroke-linecap="round"/><path d="M500 510 L507 516 L500 522" stroke="#356F8E" stroke-width="2.5" fill="none"/>
+<text x="46" y="628" class="foot">Ayuda visual de estudio; las reglas, excepciones y términos se verifican en las fuentes de la lección.</text>
+</svg>
