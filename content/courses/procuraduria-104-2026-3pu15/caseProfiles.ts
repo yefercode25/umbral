@@ -294,5 +294,17 @@ function thematicProfile(blueprint: ProcuraduriaModuleBlueprint): ProcuraduriaCa
 }
 
 export function caseProfileFor(blueprint: ProcuraduriaModuleBlueprint): ProcuraduriaCaseProfile {
-  return specific[blueprint.id] ?? thematicProfile(blueprint)
+  const manual = specific[blueprint.id]
+  if (manual) return manual
+
+  // Los demás módulos también necesitan hechos propios: no reutilizar
+  // literalmente el mismo expediente temático en varias unidades.
+  const theme = thematicProfile(blueprint)
+  return {
+    setting: theme.setting + ' El asunto específico es: ' + blueprint.description,
+    document: theme.document + ' El plan del equipo registra este movimiento: ' + (blueprint.steps[1] ?? blueprint.steps[0] ?? 'verificar el soporte'),
+    conflict: theme.conflict + ' La discrepancia afecta el análisis de ' + blueprint.title.toLowerCase() + '.',
+    change: theme.change + ' Además se recibe una propuesta discutible: ' + (blueprint.distractors[0] ?? 'anticipar la conclusión'),
+    pressure: theme.pressure,
+  }
 }
