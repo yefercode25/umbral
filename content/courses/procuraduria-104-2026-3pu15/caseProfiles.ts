@@ -14,6 +14,27 @@ export type ProcuraduriaCaseProfile = {
 }
 
 const specific: Record<string, ProcuraduriaCaseProfile> = {
+  'pgn-m15': {
+    setting: 'En una oficina administrativa se elaboró una resolución individual para decidir una solicitud ciudadana. El archivo está firmado y guardado, pero aún no consta cómo se informó formalmente a su destinatario.',
+    document: 'El expediente reúne un PDF firmado, un correo interno que anuncia la existencia del acto, una citación y una hoja de seguimiento que marca «notificado», sin evidencia suficiente de diligencia o aviso.',
+    conflict: 'Un servidor quiere contar el plazo de los recursos desde la firma, mientras otro sostiene que todo correo emitido por una entidad ya es acto definitivo y produce firmeza automática.',
+    change: 'Aparece una constancia posterior de notificación con fecha verificable; también se cuestiona que la decisión no explicaba suficientemente uno de sus fundamentos.',
+    pressure: 'La dependencia debe actualizar el expediente y decidir qué hechos acreditan expedición, comunicación, notificación y firmeza sin declarar automáticamente nulidad.',
+  },
+  'pgn-m16': {
+    setting: 'Un equipo de apoyo jurídico revisa una investigación disciplinaria y un trámite administrativo ordinario iniciados por hechos relacionados, pero sometidos a marcos procedimentales distintos.',
+    document: 'La carpeta contiene un auto de la etapa disciplinaria, un cronograma tomado del CPACA, la norma especial del Código General Disciplinario y un cuadro en Excel con plazos calculados de ambos procedimientos.',
+    conflict: 'Una persona propone aplicar a la fase disciplinaria el término general de CPACA porque es más corto; otra busca promediar los términos y declarar la nulidad de todo el expediente por una inconsistencia menor.',
+    change: 'La consulta de fuentes revela que el CGD regula expresamente la etapa discutida, aunque una petición separada de copias tiene objeto y reglas diferentes.',
+    pressure: 'Se requiere decidir qué régimen gobierna cada actuación y cómo tramitar cualquier defecto, sin mezclar por conveniencia reglas de procedimiento especial y general.',
+  },
+  'pgn-m17': {
+    setting: 'En una alcaldía se recibe por correo una petición ciudadana que combina copias de documentos, consulta jurídica y solicitud de explicación sobre una decisión de otra autoridad.',
+    document: 'La hoja de correspondencia registra la petición como «general, 15 días», tiene anexos parcialmente protegidos y marca «respondido» pese a que una respuesta quedó en borradores y no hay constancia de envío.',
+    conflict: 'Un funcionario quiere negar todo por presencia de datos personales, otro plantea enviar el archivo completo por transparencia y un tercero propone aplicar un plazo único a las tres pretensiones.',
+    change: 'Se verifica que la oficina no es competente para la consulta sobre la otra autoridad y que sí custodia documentos públicos de acceso potencialmente parcial; el traslado debe realizarse conforme a la ley.',
+    pressure: 'La ciudadanía exige información oportuna y la entidad debe separar términos, competencias, reserva, fondo de la respuesta y prueba de comunicación.',
+  },
   'pgn-m12': {
     setting: 'En un municipio se adelanta una contratación de equipos para la atención ciudadana. Antes de adjudicar, varias personas advierten una especificación técnica que podría restringir injustificadamente la participación.',
     document: 'La carpeta contiene estudios previos, un proyecto de pliegos, observaciones de proponentes y una respuesta preliminar de la entidad. No existe fallo ni conducta disciplinaria probada.',
@@ -118,13 +139,6 @@ const specific: Record<string, ProcuraduriaCaseProfile> = {
     conflict: 'Un compañero propone marcar siempre la alternativa que mencione seis meses, sin comparar el supuesto de procedencia ni la excepción legal para violaciones a derechos humanos o al derecho internacional humanitario.',
     change: 'La estudiante comprueba en la fuente que la indagación previa se relaciona con la identificación del autor y que puede existir extensión especial del término en el supuesto legal previsto.',
     pressure: 'Quedan pocos minutos de simulacro; debe preferirse el razonamiento normativo al reconocimiento rápido de una cifra familiar.',
-  },
-  'pgn-m17': {
-    setting: 'Una dependencia recibe una petición ciudadana que mezcla una consulta jurídica y una solicitud de copias de documentos.',
-    document: 'El gestor documental conserva el sello de radicación y registra dos categorías de solicitudes en una misma comunicación.',
-    conflict: 'La dependencia destinataria posee parte de la información, pero otra corresponde a una oficina diferente.',
-    change: 'Antes de responder, el peticionario solicita conocer el fundamento de una eventual reserva de un anexo.',
-    pressure: 'Se acerca el vencimiento del término aplicable y una respuesta uniforme para todo el escrito parece la opción más rápida.',
   },
   'pgn-m18': {
     setting: 'Una veeduría solicita informes de seguimiento de una contratación pública y un archivo contiene datos personales de terceros.',
