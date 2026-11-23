@@ -1,6 +1,7 @@
 import { AlertTriangle, BookMarked, CheckCircle2, CircleDot, ExternalLink, Lightbulb, Scale } from 'lucide-react'
 import type { Course, LessonBlock } from '../../types/course'
 import { ProcessFlow } from './ProcessFlow'
+import { ProcuraduriaStepFlow } from './ProcuraduriaVisualAids'
 import { PrescriptionSimulator } from './PrescriptionSimulator'
 import { CoactiveDecisionSimulator } from './CoactiveDecisionSimulator'
 import { AccountReconciliationSimulator } from './AccountReconciliationSimulator'
@@ -29,7 +30,7 @@ export function LessonRenderer({ course, blocks }: { course: Course; blocks: Les
         const source = course.sources.find((s) => s.id === block.sourceId)
         return <section className={styles.article} key={key}><div className={styles.articleHead}><span>{block.article}</span><strong>{block.title}</strong></div><p>{block.text}</p>{source && <a href={source.url} target="_blank" rel="noreferrer">Ver fuente oficial <ExternalLink size={14}/></a>}</section>
       }
-      if (block.type === 'steps') return <section className={styles.steps} key={key}><h3>{block.title}</h3><ol>{block.items.map((item) => <li key={item}>{item}</li>)}</ol></section>
+      if (block.type === 'steps') return course.id === 'procuraduria-104-2026-3pu15' ? <ProcuraduriaStepFlow key={key} title={block.title} steps={block.items}/> : <section className={styles.steps} key={key}><h3>{block.title}</h3><ol>{block.items.map((item) => <li key={item}>{item}</li>)}</ol></section>
       if (block.type === 'process') return <ProcessFlow key={key} block={block}/>
       if (block.type === 'sequence-exercise') return <SequenceExercise key={key} title={block.title} text={block.text} items={block.items} correctOrder={block.correctOrder} {...(block.explanation !== undefined ? { explanation: block.explanation } : {})}/>
       if (block.type === 'comparison') return <section className={styles.tableWrap} key={key}><h3>{block.title}</h3><div className={styles.tableScroller}><table><thead><tr>{block.columns.map((col) => <th key={col}>{col}</th>)}</tr></thead><tbody>{block.rows.map((row, rowIndex) => <tr key={rowIndex}>{row.map((cell, cellIndex) => <td key={`${rowIndex}-${cellIndex}`}>{cell}</td>)}</tr>)}</tbody></table></div></section>
