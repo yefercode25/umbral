@@ -80,12 +80,14 @@ describe('Auditoría editorial de Procuraduría M3–M5', () => {
   })
 
   it('preserva la posición de la alternativa correcta en los nueve reactivos reescritos', () => {
-    for (const [moduleId, correct] of [
-      ['pgn-m3','c'], ['pgn-m4','b'], ['pgn-m5','a'],
+    for (const [moduleId, situational, transfer1, transfer2] of [
+      ['pgn-m3','c','c','b'],
+      ['pgn-m4','b','b','a'],
+      ['pgn-m5','a','a','c'],
     ] as const) {
-      for (const suffix of ['situational-1', 'transfer-1', 'transfer-2']) {
-        expect(procuraduriaCourse.questions.find(q => q.id === `${moduleId}-${suffix}`)?.correctOptionId).toBe(correct)
-      }
+      expect(procuraduriaCourse.questions.find(q => q.id === `${moduleId}-situational-1`)?.correctOptionId).toBe(situational)
+      expect(procuraduriaCourse.questions.find(q => q.id === `${moduleId}-transfer-1`)?.correctOptionId).toBe(transfer1)
+      expect(procuraduriaCourse.questions.find(q => q.id === `${moduleId}-transfer-2`)?.correctOptionId).toBe(transfer2)
     }
   })
 
