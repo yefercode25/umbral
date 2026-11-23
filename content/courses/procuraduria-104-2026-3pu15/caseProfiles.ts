@@ -14,6 +14,27 @@ export type ProcuraduriaCaseProfile = {
 }
 
 const specific: Record<string, ProcuraduriaCaseProfile> = {
+  'pgn-m3': {
+    setting: 'Una aspirante a la Convocatoria 104-2026 revisa un diagnóstico de cuarenta preguntas: obtuvo 17/20 en Constitución y 9/20 en derecho probatorio disciplinario.',
+    document: 'Su cuaderno registra los ítems fallados, las respuestas elegidas y el soporte oficial de que conocimientos es eliminatoria con 65/100 y pesa 70 % del resultado de concurso para nivel profesional.',
+    conflict: 'Un compañero dice que el promedio de aciertos permite dejar de estudiar, pues 65/100 equivale al peso del 70 % en la calificación final.',
+    change: 'Una revisión de errores demuestra que la mayoría de fallos disciplinarios surgieron de confundir prueba, atribución de autoría y etapa de actuación.',
+    pressure: 'La prueba se aproxima y la estudiante necesita reasignar sus sesiones sin abandonar las competencias que ya domina.',
+  },
+  'pgn-m4': {
+    setting: 'Una oficina de apoyo de la Procuraduría recibe un reporte de cambio en un sistema institucional firmado con una cuenta compartida de servicio.',
+    document: 'El reporte incluye bitácoras con zona horaria, un archivo exportado y una captura de pantalla; falta documentar la procedencia de la exportación y las condiciones de integridad.',
+    conflict: 'Un superior propone identificar al usuario titular de la cuenta como autor de una conducta disciplinaria y firmar la conclusión en el informe técnico.',
+    change: 'Aparece el registro de una tarea automática y dos accesos simultáneos que pueden explicar el evento, pero aún requieren comprobación.',
+    pressure: 'La oficina solicita el informe de apoyo ese mismo día, conservando la posibilidad de verificar técnicamente la hipótesis y su incertidumbre.',
+  },
+  'pgn-m5': {
+    setting: 'Una oficina tramita una actuación de interés público y ha reunido varias evidencias; el expediente involucra derechos de una persona que debe intervenir en la fase correspondiente.',
+    document: 'El expediente incluye el acto de inicio, soportes documentales y un proyecto de comunicación exigida por el trámite que todavía no se ha emitido.',
+    conflict: 'Para acelerar la gestión, la coordinación pide omitir la comunicación porque considera suficientemente demostrados los hechos y sostiene que el interés general basta.',
+    change: 'El asesor jurídico recuerda que el artículo 29 extiende el debido proceso a actuaciones administrativas y que deben comprobarse competencia, fase y garantías antes de una decisión.',
+    pressure: 'Existe urgencia de proteger el interés público, pero la autoridad necesita elegir una medida oportuna y jurídicamente viable.',
+  },
   'pgn-m0': {
     setting: 'En una procuraduría territorial, un profesional recién vinculado recibe una queja ciudadana, un reporte de gestión y un oficio que solicita apoyo en la etapa de instrucción.',
     document: 'El expediente contiene una relación de funciones del 3PU-15, las actuaciones pendientes y un memorando que distingue actividades de apoyo profesional de las decisiones de la autoridad competente.',
