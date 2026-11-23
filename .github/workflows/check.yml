@@ -18,6 +18,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Actualizar npm para evitar fallo de resolución Arborist en npm 10
+        run: npm install -g npm@11
       - name: Instalar dependencias
         run: npm install --no-audit --no-fund
       - name: Comprobar TypeScript
