@@ -36,16 +36,16 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     caseText: 'Una población informa fallas repetidas del acueducto y un hospital alerta riesgo operativo. La alcaldía presenta un plan de contingencia, aunque no demuestra todavía su ejecución. Una persona pide a la Procuraduría sancionar preventivamente al gerente de la entidad prestadora; otro funcionario considera que debe abstenerse de toda vigilancia hasta comprobar una falta disciplinaria. También llega una petición de intervención dentro de un proceso judicial cuya procedencia es distinta.',
     stem: '¿Cómo debería diferenciar la Procuraduría las actuaciones preventiva, disciplinaria y de intervención ante estos hechos?',
     options: [
-      'Requerir y verificar medidas de gestión dentro del alcance preventivo, separar la posible noticia disciplinaria para su análisis con competencia y garantías, y examinar la intervención judicial por sus requisitos específicos.',
       'Sancionar de inmediato al gerente mediante el seguimiento preventivo porque toda alerta de continuidad demuestra falta disciplinaria.',
+      'Requerir y verificar medidas de gestión dentro del alcance preventivo, separar la posible noticia disciplinaria para su análisis con competencia y garantías, y examinar la intervención judicial por sus requisitos específicos.',
       'Aplazar cualquier actuación sobre el servicio hasta existir prueba suficiente para formular cargos, usando mientras tanto la intervención judicial como sustituto de prevención.',
     ],
     rationales: [
-      'Cada ruta tiene una finalidad y presupuestos propios; vigilancia preventiva puede valorar riesgo antes de una decisión sancionatoria.',
       'Prevenir un riesgo no es sancionar ni atribuir automáticamente responsabilidad individual.',
+      'Cada ruta tiene una finalidad y presupuestos propios; vigilancia preventiva puede valorar riesgo antes de una decisión sancionatoria.',
       'La función preventiva no exige esperar la consumación de una falta, y la intervención judicial no reemplaza el control de gestión.',
     ],
-    correctOptionId: 'a',
+    correctOptionId: 'b',
     explanation: 'Artículos 118 y 277 constitucionales y Decreto Ley 262 de 2000: la Procuraduría ejerce tareas de vigilancia, defensa de derechos, intervención y disciplina en ámbitos diferenciados. Los riesgos sustentan seguimiento preventivo; la sanción exige su procedimiento y prueba, y una intervención requiere competencia y trámite propios.',
   }],
   'pgn-m11': [{
@@ -53,16 +53,16 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     caseText: 'Una procuraduría provincial recibe un escrito que menciona un servidor departamental y dos funcionarios municipales. Existe una actuación de instrucción iniciada en otra oficina y documentos que sugieren hechos conexos. Un funcionario afirma que, por ser la sede receptora la más cercana, debe investigar y fallar la totalidad; otro quiere remitirlo sin identificar siquiera a los sujetos. La coordinación solicita una ruta de reparto sustentada.',
     stem: '¿Qué secuencia permite ubicar el asunto dentro de la estructura de PGN respetando funciones, fase y criterios de conexidad?',
     options: [
-      'Conservar todos los hechos por proximidad, adelantar instrucción y dictar el fallo desde la misma oficina, pues el reparto es solo un asunto interno de archivo.',
       'Identificar materia y sujetos, verificar circunscripción, etapa, actuaciones previas y reglas vigentes de competencia y conexidad; remitir o repartir con motivación y trazabilidad a la dependencia habilitada.',
+      'Conservar todos los hechos por proximidad, adelantar instrucción y dictar el fallo desde la misma oficina, pues el reparto es solo un asunto interno de archivo.',
       'Trasladar el asunto sin registrar hechos o antecedentes a cualquier delegada central, dado que esa denominación siempre desplaza automáticamente la competencia territorial.',
     ],
     rationales: [
-      'La recepción no otorga competencia y la normativa distingue instrucción de juzgamiento.',
       'Las atribuciones de cada dependencia se determinan por norma y actos aplicables, factores de competencia y las condiciones de conexidad, no por cercanía.',
+      'La recepción no otorga competencia y la normativa distingue instrucción de juzgamiento.',
       'Las competencias preferentes o especiales de delegadas tienen presupuestos y procedimientos, no se activan por el solo nombre de una dependencia.',
     ],
-    correctOptionId: 'b',
+    correctOptionId: 'a',
     explanation: 'Decretos Ley 262 de 2000 y 1851 de 2021: distinción entre oficinas centrales, regionales, distritales y provinciales, y entre instrucción y juzgamiento. Cuando existe conexidad pueden regir reglas específicas de conocimiento; la eventual competencia preferente exige sus condiciones legales. El cargo 3PU-15 presta apoyo sin habilitar por sí mismo potestad de reparto o fallo.',
   }],
   'pgn-m6': [{
