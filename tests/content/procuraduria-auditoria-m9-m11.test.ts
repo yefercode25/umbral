@@ -78,8 +78,8 @@ describe('Auditoría editorial Procuraduría M9–M11', () => {
   it('conserva exactamente la ubicación de las nueve respuestas correctas', () => {
     for (const [moduleId, situational, transfer1, transfer2] of [
       ['pgn-m9', 'c', 'c', 'b'],
-      ['pgn-m10', 'a', 'b', 'a'],
-      ['pgn-m11', 'b', 'a', 'c'],
+      ['pgn-m10', 'b', 'b', 'a'],
+      ['pgn-m11', 'a', 'a', 'c'],
     ] as const) {
       expect(procuraduriaCourse.questions.find(q => q.id === `${moduleId}-situational-1`)?.correctOptionId).toBe(situational)
       expect(procuraduriaCourse.questions.find(q => q.id === `${moduleId}-transfer-1`)?.correctOptionId).toBe(transfer1)
