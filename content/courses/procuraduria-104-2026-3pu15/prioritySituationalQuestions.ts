@@ -14,6 +14,57 @@ export type PrioritySituationalOverride = {
 }
 
 export const prioritySituationalOverrides: Record<string, PrioritySituationalOverride[]> = {
+  'pgn-m9': [{
+    number: 1,
+    caseText: 'Una secretaría departamental y dos municipios participan en un convenio para dotar puestos de salud. La queja sobre pagos y entrega se radica en la sede provincial de la Procuraduría situada cerca de una de las obras. La carpeta muestra órdenes impartidas por el departamento y actas firmadas en los municipios. El receptor sostiene que el lugar de radicación determina toda la competencia y que la autonomía municipal impide examinar posibles deberes de servidores departamentales.',
+    stem: '¿Cuál verificación permite determinar correctamente competencia territorial y funcional sin desconocer autonomía y coordinación?',
+    options: [
+      'Asignar definitivamente todos los hechos a la oficina que recibió la queja porque la cercanía territorial prevalece sobre sujeto, materia y nivel del servidor.',
+      'Trasladar íntegramente el asunto a los municipios porque la autonomía del artículo 287 excluye cualquier competencia departamental en un proyecto ejecutado en sus territorios.',
+      'Identificar sujetos y deberes por entidad, materia y nivel; revisar circunscripción, reglas internas de PGN y posibles supuestos de conexidad, dejando constancia de reparto y soportes.',
+    ],
+    rationales: [
+      'El lugar de recepción del escrito no sustituye las reglas legales de competencia orgánica y territorial.',
+      'La autonomía no equivale a soberanía ni extingue atribuciones del departamento derivadas de la ley o de un convenio.',
+      'La Constitución y la Ley 1454 de 2011 exigen distinguir las competencias y articulación de los niveles; en PGN se aplican además criterios de sujeto, materia, fase y territorio.',
+    ],
+    correctOptionId: 'c',
+    explanation: 'Constitución arts. 1, 286 a 288: república unitaria descentralizada con entidades territoriales autónomas dentro de Constitución y ley. La Ley 1454 de 2011 desarrolla coordinación, concurrencia y subsidiariedad. Decreto 262 de 2000 modificado por Decreto 1851 de 2021 establece distribuciones internas que no se reducen a la oficina más próxima.',
+  }],
+  'pgn-m10': [{
+    number: 1,
+    caseText: 'Una población informa fallas repetidas del acueducto y un hospital alerta riesgo operativo. La alcaldía presenta un plan de contingencia, aunque no demuestra todavía su ejecución. Una persona pide a la Procuraduría sancionar preventivamente al gerente de la entidad prestadora; otro funcionario considera que debe abstenerse de toda vigilancia hasta comprobar una falta disciplinaria. También llega una petición de intervención dentro de un proceso judicial cuya procedencia es distinta.',
+    stem: '¿Cómo debería diferenciar la Procuraduría las actuaciones preventiva, disciplinaria y de intervención ante estos hechos?',
+    options: [
+      'Sancionar de inmediato al gerente mediante el seguimiento preventivo porque toda alerta de continuidad demuestra falta disciplinaria.',
+      'Requerir y verificar medidas de gestión dentro del alcance preventivo, separar la posible noticia disciplinaria para su análisis con competencia y garantías, y examinar la intervención judicial por sus requisitos específicos.',
+      'Aplazar cualquier actuación sobre el servicio hasta existir prueba suficiente para formular cargos, usando mientras tanto la intervención judicial como sustituto de prevención.',
+    ],
+    rationales: [
+      'Prevenir un riesgo no es sancionar ni atribuir automáticamente responsabilidad individual.',
+      'Cada ruta tiene una finalidad y presupuestos propios; vigilancia preventiva puede valorar riesgo antes de una decisión sancionatoria.',
+      'La función preventiva no exige esperar la consumación de una falta, y la intervención judicial no reemplaza el control de gestión.',
+    ],
+    correctOptionId: 'b',
+    explanation: 'Artículos 118 y 277 constitucionales y Decreto Ley 262 de 2000: la Procuraduría ejerce tareas de vigilancia, defensa de derechos, intervención y disciplina en ámbitos diferenciados. Los riesgos sustentan seguimiento preventivo; la sanción exige su procedimiento y prueba, y una intervención requiere competencia y trámite propios.',
+  }],
+  'pgn-m11': [{
+    number: 1,
+    caseText: 'Una procuraduría provincial recibe un escrito que menciona un servidor departamental y dos funcionarios municipales. Existe una actuación de instrucción iniciada en otra oficina y documentos que sugieren hechos conexos. Un funcionario afirma que, por ser la sede receptora la más cercana, debe investigar y fallar la totalidad; otro quiere remitirlo sin identificar siquiera a los sujetos. La coordinación solicita una ruta de reparto sustentada.',
+    stem: '¿Qué secuencia permite ubicar el asunto dentro de la estructura de PGN respetando funciones, fase y criterios de conexidad?',
+    options: [
+      'Identificar materia y sujetos, verificar circunscripción, etapa, actuaciones previas y reglas vigentes de competencia y conexidad; remitir o repartir con motivación y trazabilidad a la dependencia habilitada.',
+      'Conservar todos los hechos por proximidad, adelantar instrucción y dictar el fallo desde la misma oficina, pues el reparto es solo un asunto interno de archivo.',
+      'Trasladar el asunto sin registrar hechos o antecedentes a cualquier delegada central, dado que esa denominación siempre desplaza automáticamente la competencia territorial.',
+    ],
+    rationales: [
+      'Las atribuciones de cada dependencia se determinan por norma y actos aplicables, factores de competencia y las condiciones de conexidad, no por cercanía.',
+      'La recepción no otorga competencia y la normativa distingue instrucción de juzgamiento.',
+      'Las competencias preferentes o especiales de delegadas tienen presupuestos y procedimientos, no se activan por el solo nombre de una dependencia.',
+    ],
+    correctOptionId: 'a',
+    explanation: 'Decretos Ley 262 de 2000 y 1851 de 2021: distinción entre oficinas centrales, regionales, distritales y provinciales, y entre instrucción y juzgamiento. Cuando existe conexidad pueden regir reglas específicas de conocimiento; la eventual competencia preferente exige sus condiciones legales. El cargo 3PU-15 presta apoyo sin habilitar por sí mismo potestad de reparto o fallo.',
+  }],
   'pgn-m6': [{
     number: 1,
     caseText: 'Una alcaldía recibe tres requerimientos sobre la contratación de mobiliario: la Contraloría examina el uso de recursos públicos, la Procuraduría verifica actuaciones de servidores y la Fiscalía solicita datos relativos a un posible delito. Existe un acta con bienes no entregados, una inconsistencia en los pagos y una denuncia que acusa a todos los funcionarios. La dirección municipal afirma que solo debe responder a Fiscalía porque ella «investiga todo»; otro servidor propone pedir a Procuraduría que decida directamente la responsabilidad fiscal.',
