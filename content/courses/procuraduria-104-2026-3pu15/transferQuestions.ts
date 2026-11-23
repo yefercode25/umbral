@@ -2,6 +2,7 @@ import type { Question, QuestionOption } from '../../../src/types/course'
 import type { ProcuraduriaModuleBlueprint } from './blueprints'
 import { caseProfileFor } from './caseProfiles'
 import { foundationTransferOverrides } from './foundationTransferOverrides'
+import { auditedTransferOverridesM3M5 } from './auditedTransferOverridesM3M5'
 
 type Choice = { text: string; reason: string }
 
@@ -80,7 +81,7 @@ export function buildProcuraduriaTransferQuestions(bp: ProcuraduriaModuleBluepri
     },
   ]
 
-  const adaptedCases = foundationTransferOverrides[bp.id] ?? cases
+  const adaptedCases = auditedTransferOverridesM3M5[bp.id] ?? foundationTransferOverrides[bp.id] ?? cases
 
   return adaptedCases.map((item, index) => {
     const choices = [item.correct, ...item.other]
