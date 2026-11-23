@@ -53,16 +53,16 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     caseText: 'Una ciudadana envía una solicitud con tres puntos: obtener copia de un expediente con datos de terceros, consultar el significado de una norma y pedir información sobre un asunto que conoce otra autoridad. En la alcaldía el correo se marca «petición general, 15 días» y luego «respondido», aunque únicamente existe un borrador de respuesta de la consulta. La oficina reconoce que no es competente sobre el tercer punto y considera negar todo por la presencia de una dirección personal en un anexo.',
     stem: '¿Qué gestión conserva los términos y derechos de la peticionaria frente a esta solicitud mixta?',
     options: [
-      'Clasificar los tres componentes, comprobar los términos aplicables a copias e información, consulta y traslado por falta de competencia, analizar entrega parcial de datos públicos y asegurar respuesta de fondo con constancias reales.',
       'Fijar 15 días para todo por estar en un único correo y cerrar el radicado al redactar la consulta, aunque no se envíe ni se tramiten las copias.',
+      'Clasificar los tres componentes, comprobar los términos aplicables a copias e información, consulta y traslado por falta de competencia, analizar entrega parcial de datos públicos y asegurar respuesta de fondo con constancias reales.',
       'Negar íntegramente el acceso porque cualquier dato personal vuelve reservado todo el expediente; omitir el traslado por tratarse de una petición mixta.',
     ],
     rationales: [
-      'La Ley 1755 distingue plazos de 10, 15 y 30 días según modalidad, y el art. 21 regula autoridades incompetentes; la respuesta debe acreditarse y la restricción de acceso motivarse.',
       'Un único radicado puede contener pretensiones diferentes; una etiqueta administrativa o un borrador no sustituye cumplimiento de cada punto.',
+      'La Ley 1755 distingue plazos de 10, 15 y 30 días según modalidad, y el art. 21 regula autoridades incompetentes; la respuesta debe acreditarse y la restricción de acceso motivarse.',
       'La reserva exige fundamento específico y valoración de acceso parcial; la falta de competencia sobre un componente activa el trámite legal correspondiente.',
     ],
-    correctOptionId: 'a',
+    correctOptionId: 'b',
     explanation: 'Ley 1755 de 2015, arts. 14 y 21: regla general 15 días; información y documentos 10; consultas 30, con excepciones previstas legalmente; cuando falta competencia, informar y remitir en el plazo aplicable. Leyes 1712 y 1581: distinguir información accesible y datos protegidos. Responder de fondo no implica conceder automáticamente la petición.',
   }],
   'pgn-m12': [{
@@ -319,23 +319,6 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     ],
     correctOptionId: 'a',
     explanation: 'El artículo 208 de la Ley 1952 de 2019, modificado por el artículo 34 de la Ley 2094 de 2021, vincula la indagación previa a dudas sobre identificación del posible autor, fija seis meses y prevé una posible extensión especial por violaciones a derechos humanos o derecho internacional humanitario. La clave es analizar supuesto, norma, término y decisión, no reconocer solo el número.',
-  }],
-  'pgn-m17': [{
-    number: 1,
-    caseText: 'Una ciudadana radica un escrito único ante una procuraduría regional. Solicita copia de las actas de una visita preventiva, pregunta por el estado de la actuación y pide un concepto sobre la legalidad de una decisión de otra entidad. El archivo de la visita contiene datos personales de terceros; además, parte de los documentos se encuentra en una dependencia distinta. El equipo propone contestar todo junto al finalizar el plazo de una consulta para evitar respuestas separadas.',
-    stem: '¿Qué orientación responde mejor al escrito sin confundir clases de petición, competencia y reserva?',
-    options: [
-      'Esperar un pronunciamiento integral que incluya el concepto, porque una sola radicación siempre impone un solo término para toda la respuesta.',
-      'Identificar los componentes del escrito y sus términos aplicables, gestionar el traslado de lo que no corresponda, resolver cada solicitud de fondo y examinar si procede una entrega parcial de documentos con protección de los datos.',
-      'Entregar íntegramente las actas por el principio de publicidad, y responder después las demás solicitudes únicamente si la ciudadana insiste.',
-    ],
-    rationales: [
-      'La unidad de radicación no convierte solicitudes de naturaleza distinta en una única consulta ni suspende por sí sola los plazos.',
-      'Distingue solicitudes y competencias, permite responder oportunamente y exige motivar el tratamiento de datos y eventuales reservas.',
-      'La publicidad no elimina los límites legales sobre datos personales ni exonera de resolver las otras solicitudes.',
-    ],
-    correctOptionId: 'b',
-    explanation: 'La Ley 1755 de 2015 diferencia términos y trámites según el objeto de la solicitud; el acceso a documentos y la protección de datos deben armonizarse. No debe suponerse que un escrito mixto tiene un único tratamiento indiscriminado.',
   }],
   'pgn-m18': [{
     number: 1,
