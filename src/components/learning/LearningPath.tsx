@@ -20,7 +20,6 @@ export function LearningPath({ course, progress }: { course: Course; progress?: 
 }
 
 function UnitPath({ course, unit, progress, index, activeId }: { course: Course; unit: CourseUnit; progress?: CourseProgress | undefined; index: number; activeId?: string | undefined }) {
-  const [previewOpen, setPreviewOpen] = useState(false)
   const tint = colorNames[index % colorNames.length]!
   const modules = unit.moduleIds.map((id) => course.modules.find((item) => item.id === id)).filter((item) => item !== undefined)
   const done = modules.filter((module) => moduleCompletion(course, module.id, progress) === 100).length
