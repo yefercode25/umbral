@@ -1,6 +1,6 @@
 import type { Course } from '../../../src/types/course'
 import { procuraduriaUnits } from './blueprints'
-import { procuraduriaLessons, procuraduriaModules, procuraduriaQuestions } from './buildContent'
+import { procuraduriaLessons, procuraduriaModules, procuraduriaQuestions, procuraduriaSituationalQuestions } from './buildContent'
 import { procuraduriaSources } from './sources'
 import { procuraduriaIntegratedQuestions } from './integratedCases'
 
@@ -17,8 +17,8 @@ export const procuraduriaCourse: Course = {
   description: 'Preparación integral desde cero para el empleo Profesional Universitario 3PU-15: alfabetización jurídica, Estado y Procuraduría, instrucción disciplinaria, derecho probatorio, función preventiva, contratación, gestión pública, sistemas de información, evidencia digital, fundamentos profesionales de Ingeniería de Sistemas y competencias comportamentales.',
   disclaimer: 'Preparación educativa independiente. Umbral no está afiliado, patrocinado, avalado ni publicado por la Procuraduría General de la Nación. El curso se construye con la Convocatoria 104-2026 versión 4 y fuentes oficiales vigentes, y se versionará cuando existan orientaciones oficiales más específicas sobre la prueba.',
   accent: '#5F9E80',
-  version: '2026.09.14-alpha.2',
-  updatedAt: '2026-09-14',
+  version: '2026.11.22-beta.1',
+  updatedAt: '2026-11-22',
   officialGuideStatus: 'pending',
   jobCode: '3PU-15',
   salaryLabel: '$6.889.867 · vigencia 2025',
@@ -41,6 +41,6 @@ export const procuraduriaCourse: Course = {
   units: procuraduriaUnits,
   modules: procuraduriaModules,
   lessons: procuraduriaLessons,
-  questions: [...procuraduriaQuestions, ...procuraduriaIntegratedQuestions],
+  questions: [...procuraduriaQuestions, ...procuraduriaSituationalQuestions, ...procuraduriaIntegratedQuestions],
   sources: procuraduriaSources,
 }
