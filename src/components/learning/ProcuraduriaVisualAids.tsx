@@ -1,4 +1,4 @@
-import { ArrowRight, BookOpenOpen, ExternalLink, Map, Route } from 'lucide-react'
+import { ArrowRight, BookOpen, ExternalLink, Map, Route } from 'lucide-react'
 import { getProcuraduriaTopicVisual } from '../../lib/procuraduriaVisualGuides'
 import styles from './ProcuraduriaVisualAids.module.css'
 
@@ -27,7 +27,7 @@ export function ProcuraduriaStepFlow({ title, steps }: { title: string; steps: s
     <ol>
       {steps.map((step, index) => <li key={index} className={styles.step}>
         <span className={styles.stepNumber} aria-hidden="true">{index + 1}</span>
-        <BookOpenOpen size={16} className={styles.stepIcon} aria-hidden="true"/>
+        <BookOpen size={16} className={styles.stepIcon} aria-hidden="true"/>
         <span>{step}</span>
         {index !== steps.length - 1 && <ArrowRight size={17} className={styles.arrow} aria-hidden="true"/>}
       </li>)}
