@@ -1,4 +1,5 @@
 import type { Course } from '../types/course'
+import { practiceQuestionPool } from './practiceQuestionPool'
 import type { CourseProgress, QuestionProgress } from '../types/progress'
 
 /** Wilson score 95% interval. Formative range only; not an IRT/official psychometric score. */
@@ -12,7 +13,7 @@ export function wilsonInterval(successes: number, attempts: number) {
 export function getPracticeAnalytics(course: Course, progress: CourseProgress | undefined) {
   const stats = progress?.questionStats ?? {}
   type AttemptedRow = { question: Course['questions'][number]; stat: QuestionProgress }
-  const rows = course.questions
+  const rows = practiceQuestionPool(course)
     .map((question) => ({ question, stat: stats[question.id] }))
     .filter((row): row is AttemptedRow => (row.stat?.attempts ?? 0) > 0)
   const attempts = rows.reduce((sum,row) => sum + row.stat.attempts, 0)
@@ -27,11 +28,11 @@ export function getPracticeAnalytics(course: Course, progress: CourseProgress | 
     return { level, unique: selected.length, attempts: total, correct: hits, percent: total ? Math.round(100 * hits / total) : null }
   })
   const byModule = course.modules.filter((m) => m.status === 'published').map((module) => {
-    const all = course.questions.filter((q) => q.moduleId === module.id)
+    const all = rows.filter((q) => q.moduleId === module.id)
     const attempted = all.filter((q) => (stats[q.id]?.attempts ?? 0) > 0)
     const total = attempted.reduce((sum,q) => sum + (stats[q.id]?.attempts ?? 0),0)
     const hits = attempted.reduce((sum,q) => sum + (stats[q.id]?.correct ?? 0),0)
     return { module, available: all.length, unique: attempted.length, attempts: total, correct: hits, percent: total ? Math.round(100 * hits / total) : null }
   })
-  return { attempts, correct, unique, repeats, available: course.questions.length, sessions, byDifficulty, byModule, interval: wilsonInterval(correct,attempts) }
+  return { attempts, correct, unique, repeats, available: rows.length, sessions, byDifficulty, byModule, interval: wilsonInterval(correct,attempts) }
 }
