@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { procuraduriaCourse } from '../../content/courses/procuraduria-104-2026-3pu15/course'
 import { dianGestorCourse } from '../../content/courses/dian-2676-gestor-ii/course'
-import { moduleReviewQuestions, MODULE_PASS_SCORE, MODULE_REVIEW_COUNT } from '../../src/lib/moduleReview'
+import { moduleReviewQuestions, priorModuleLessonsCompleted, MODULE_PASS_SCORE, MODULE_REVIEW_COUNT } from '../../src/lib/moduleReview'
 import { practiceQuestionPool } from '../../src/lib/practiceQuestionPool'
 
 describe('Procuraduría: aprendizaje y evaluación dentro de cada módulo', () => {
@@ -54,6 +54,23 @@ describe('Procuraduría: aprendizaje y evaluación dentro de cada módulo', () =
       for (const question of questions.slice(1)) {
         expect(question.case?.length ?? 0, question.id).toBeGreaterThan(90)
       }
+    }
+  })
+
+  it('solo habilita el salto automático al siguiente módulo tras las dos lecciones anteriores', () => {
+    for (const module of procuraduriaCourse.modules) {
+      const l1 = procuraduriaCourse.lessons.find(l => l.moduleId === module.id && l.order === 1)!
+      const l2 = procuraduriaCourse.lessons.find(l => l.moduleId === module.id && l.order === 2)!
+      expect(priorModuleLessonsCompleted(procuraduriaCourse, module.id), module.id).toBe(false)
+      expect(priorModuleLessonsCompleted(procuraduriaCourse, module.id, {
+        lessons: { [l1.id]: { status: 'completed', readPercent: 100 } },
+      }), module.id).toBe(false)
+      expect(priorModuleLessonsCompleted(procuraduriaCourse, module.id, {
+        lessons: {
+          [l1.id]: { status: 'completed', readPercent: 100 },
+          [l2.id]: { status: 'completed', readPercent: 100 },
+        },
+      }), module.id).toBe(true)
     }
   })
 
