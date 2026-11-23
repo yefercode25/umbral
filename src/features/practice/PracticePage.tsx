@@ -26,7 +26,9 @@ export function PracticePage() {
   const [visibleCount, setVisibleCount] = useState(20)
   const progress = useProgressStore((state) => state.courses[course.id])
   const config = course.practiceConfig
-  const available = useMemo(() => practiceQuestionPool(course), [course])
+  // Guardadas y errores también pueden contener IDs históricos de ejercicios de lección.
+  // Se conservan accesibles solo cuando el estudiante los solicita explícitamente.
+  const available = useMemo(() => mode === 'saved' || mode === 'errors' ? course.questions : practiceQuestionPool(course), [course, mode])
   const coreModules = useMemo(() => new Set(config?.coreModuleIds ?? []), [config?.coreModuleIds])
   const transversalModules = useMemo(() => new Set(config?.transversalModuleIds ?? []), [config?.transversalModuleIds])
 
