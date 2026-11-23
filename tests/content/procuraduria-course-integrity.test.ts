@@ -9,7 +9,7 @@ const activeBlockTypes = new Set([
 
 describe('Procuraduría 104-2026 · 3PU-15 course integrity', () => {
   it('matches the beta.3 common-competencies curriculum', () => {
-    expect(procuraduriaCourse.version).toBe('2026.11.23-beta.6')
+    expect(procuraduriaCourse.version).toBe('2026.11.23-beta.7')
     expect(procuraduriaCourse.units).toHaveLength(17)
     expect(procuraduriaCourse.modules).toHaveLength(85)
     expect(procuraduriaCourse.lessons).toHaveLength(255)
