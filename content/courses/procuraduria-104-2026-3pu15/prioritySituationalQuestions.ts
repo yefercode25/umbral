@@ -14,6 +14,57 @@ export type PrioritySituationalOverride = {
 }
 
 export const prioritySituationalOverrides: Record<string, PrioritySituationalOverride[]> = {
+  'pgn-m12': [{
+    number: 1,
+    caseText: 'Durante una selección para adquirir equipos municipales, una veeduría advierte que el pliego exige una marca particular sin justificar su necesidad. Aún no hay adjudicación ni evidencia suficiente de una falta disciplinaria. Una oficina propone formular cargos para impedir que continúe el proceso; otra recomienda ignorar la alerta hasta que exista un daño. La entidad prepara una posible corrección técnica, pero no hay constancia de que haya sido publicada.',
+    stem: '¿Qué ruta misional corresponde en este momento y cómo deben preservarse los límites de las otras funciones de Procuraduría?',
+    options: [
+      'Formular cargos como medida preventiva directa, porque el riesgo de favorecimiento reemplaza la prueba de una conducta y el procedimiento disciplinario.',
+      'Abstenerse de intervenir hasta la adjudicación y posible daño patrimonial; solo entonces pueden ejercerse atribuciones preventivas.',
+      'Examinar el riesgo y requerir soportes o verificar correcciones dentro de la función preventiva, separando cualquier hecho disciplinario verificable y cualquier intervención procesal para sus trámites propios.',
+    ],
+    rationales: [
+      'Una alerta preventiva no equivale a imputación probada ni autoriza a saltar garantías disciplinarias.',
+      'La vigilancia preventiva puede operar ante riesgos sin esperar una falta consumada o un daño definitivo.',
+      'Distingue el objetivo preventivo, la noticia disciplinaria y el eventual escenario de intervención sin desplazar a la autoridad contractual.',
+    ],
+    correctOptionId: 'c',
+    explanation: 'Constitución arts. 118 y 277, Decreto Ley 262/2000 y lineamientos de función preventiva PGN: se identifican riesgos y se da seguimiento dentro de competencia. Para instrucción y juzgamiento disciplinario se exige su procedimiento y prueba; intervenir ante otra autoridad requiere su habilitación propia.',
+  }],
+  'pgn-m13': [{
+    number: 1,
+    caseText: 'Un despacho competente comisiona la recepción de una declaración en un expediente disciplinario. El acto identifica objeto, testigo y plazo. Durante la diligencia, el testigo menciona un contrato diferente y entrega una copia documental. El comisionado considera que puede extender la actuación al nuevo asunto, decretar otras pruebas y formular cargos de inmediato, porque conoce detalles que el despacho de origen aún no tiene.',
+    stem: '¿Qué actuación diferencia correctamente el encargo probatorio de la competencia para decidir el expediente?',
+    options: [
+      'Ampliar unilateralmente la investigación y formular cargos, pues la comisión transforma al comisionado en autoridad competente para todas las etapas.',
+      'Practicar la diligencia dentro del objeto y garantías aplicables, registrar y preservar la novedad, comunicarla al comitente y tramitar cualquier ampliación o decisión mediante la autoridad habilitada.',
+      'Suprimir del acta toda referencia a información diferente del objeto inicial y destruir el documento nuevo para evitar cuestiones sobre competencia.',
+    ],
+    rationales: [
+      'Una comisión para una diligencia delimitada no transfiere todas las atribuciones decisorias del proceso.',
+      'Preserva el objeto de comisión, prueba y garantías, y permite que la novedad sea evaluada sin asumir competencia impropia.',
+      'Omitir o destruir información recibida impide valoración y contradicción adecuada; se documenta su alcance y tratamiento.',
+    ],
+    correctOptionId: 'b',
+    explanation: 'Código General Disciplinario, reformado por Ley 2094 de 2021, y régimen orgánico PGN: la comisión, el reparto y la competencia son conceptos distintos. Las diligencias deben seguir las condiciones y garantías del medio probatorio; la autoridad competente conserva la definición del alcance y las decisiones de cada fase.',
+  }],
+  'pgn-m14': [{
+    number: 1,
+    caseText: 'Un Profesional Universitario 3PU-15 de formación en Sistemas analiza una exportación de registros: un expediente cambió de estado después de las 22:00 y la acción aparece asociada a una cuenta de servicio compartida. El informe preliminar dice que el titular de la cuenta actuó dolosamente. Sin embargo, hay diferencias de zona horaria entre archivos y se encontró una tarea automática programada para la misma franja, sin confirmarse todavía su autorización.',
+    stem: '¿Qué producto de apoyo debe entregar el profesional para que la instrucción pueda valorar los hechos sin que el informe suplante la decisión jurídica?',
+    options: [
+      'Documentar origen, extracción y tiempo de los registros; contrastar la tarea automatizada y las sesiones, diferenciar observaciones de hipótesis y explicitar qué autoría o intencionalidad no está demostrada.',
+      'Certificar dolo del titular de la cuenta porque los privilegios de acceso y la hora del evento equivalen a prueba suficiente de la intención.',
+      'Negarse a examinar los logs porque la investigación tiene naturaleza jurídica y solo los abogados pueden analizar cualquier dato digital.',
+    ],
+    rationales: [
+      'Conserva trazabilidad y límites técnicos para una valoración jurídica autónoma, haciendo útil el conocimiento profesional de Sistemas.',
+      'Una cuenta técnica y la existencia de un evento no demuestran identidad física ni estado subjetivo disciplinario.',
+      'La formación de Sistemas puede contribuir al análisis y recaudo dentro de atribuciones; no implica capacidad de decidir jurídicamente ni prohibición de aportar.',
+    ],
+    correctOptionId: 'a',
+    explanation: 'Convocatoria 104-2026 versión 4 y Manual de Funciones V9, junto al Código General Disciplinario: el profesional apoya la instrucción con pruebas, análisis e informes en sus funciones. Debe aportar método verificable y explicar incertidumbre; la valoración subjetiva y las decisiones corresponden a la autoridad competente.',
+  }],
   'pgn-m9': [{
     number: 1,
     caseText: 'Una secretaría departamental y dos municipios participan en un convenio para dotar puestos de salud. La queja sobre pagos y entrega se radica en la sede provincial de la Procuraduría situada cerca de una de las obras. La carpeta muestra órdenes impartidas por el departamento y actas firmadas en los municipios. El receptor sostiene que el lugar de radicación determina toda la competencia y que la autonomía municipal impide examinar posibles deberes de servidores departamentales.',
