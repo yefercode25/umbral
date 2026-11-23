@@ -19,7 +19,7 @@ export const procuraduriaCourse: Course = {
   disclaimer: 'Preparación educativa independiente. Umbral no está afiliado, patrocinado, avalado ni publicado por la Procuraduría General de la Nación. El curso se construye con la Convocatoria 104-2026 versión 4 y fuentes oficiales vigentes, y se versionará cuando existan orientaciones oficiales más específicas sobre la prueba.',
   accent: '#5F9E80',
   version: '2026.11.23-beta.5',
-  updatedAt: '2026-11-22',
+  updatedAt: '2026-11-23',
   officialGuideStatus: 'pending',
   jobCode: '3PU-15',
   salaryLabel: '$6.889.867 · vigencia 2025',
