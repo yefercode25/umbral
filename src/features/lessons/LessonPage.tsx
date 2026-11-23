@@ -52,6 +52,9 @@ export function LessonPage() {
   const checkedCount = firstTwoCheckpoints.filter(id => (progress?.questionStats?.[id]?.attempts ?? 0) > 0).length
   const checkpointsComplete = firstTwoCheckpoints.length > 0 && checkedCount === firstTwoCheckpoints.length
   const isModuleClosing = isPgn && lesson.order === 3
+  const earlierLessonsComplete = !isModuleClosing || course.lessons
+    .filter(item => item.moduleId === module.id && item.order < 3)
+    .every(item => progress?.lessons[item.id]?.status === 'completed')
   const mayComplete = !isPgn || alreadyCompleted || (isModuleClosing
     ? approvedLesson === lesson.id
     : checkpointsComplete)
@@ -60,6 +63,10 @@ export function LessonPage() {
   const finish = () => {
     if (!mayComplete) return
     complete(course, lesson.id, lesson.durationMinutes)
+    if (isModuleClosing && !earlierLessonsComplete) {
+      navigate(`/courses/${course.slug}/module/${module.id}`)
+      return
+    }
     if (next) navigate(`/courses/${course.slug}/lesson/${next.id}`)
     else navigate(`/courses/${course.slug}`)
   }
@@ -84,17 +91,19 @@ export function LessonPage() {
       <div className={styles.finish}>
         <div>
           <span>Lección {index+1} de {allPublished.length}</span>
-          <strong>{isModuleClosing && !mayComplete
-            ? 'Resuelve el cierre del módulo para continuar'
+          <strong>{isModuleClosing && mayComplete && !earlierLessonsComplete
+            ? 'Cierre aprobado. Completa las dos lecciones anteriores antes de avanzar'
+            : isModuleClosing && !mayComplete
+              ? 'Resuelve el cierre del módulo para continuar'
             : isPgn && !isModuleClosing && !mayComplete
               ? `Comprueba tus respuestas de esta lección (${checkedCount}/${firstTwoCheckpoints.length})`
               : next ? `Siguiente: ${next.title}` : 'Has llegado al final del contenido publicado.'}</strong>
         </div>
-        <Button size="lg" disabled={!mayComplete} onClick={finish} icon={<ArrowRight size={18}/>}>{next ? 'Completar y continuar' : 'Completar lección'}</Button>
+        <Button size="lg" disabled={!mayComplete} onClick={finish} icon={<ArrowRight size={18}/>}>{isModuleClosing && !earlierLessonsComplete ? 'Guardar cierre y volver al módulo' : next ? 'Completar y continuar' : 'Completar lección'}</Button>
       </div>
       <div className={styles.prevNext}>
         {previous ? <Link to={`/courses/${course.slug}/lesson/${previous.id}`}><ArrowLeft size={16}/> {previous.title}</Link> : <span/>}
-        {next && (!isPgn || mayComplete) ? <Link to={`/courses/${course.slug}/lesson/${next.id}`}>{next.title} <ArrowRight size={16}/></Link> : null}
+        {next && (!isPgn || (mayComplete && earlierLessonsComplete)) ? <Link to={`/courses/${course.slug}/lesson/${next.id}`}>{next.title} <ArrowRight size={16}/></Link> : null}
       </div>
     </article>
   </div>
