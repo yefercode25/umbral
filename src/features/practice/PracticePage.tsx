@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react'
 import { useEffect, useMemo, useState } from 'react'
-import { BookOpenCheck, BrainCircuit, ClipboardCheck, Filter, Gauge, Network, NotebookPen, Route, Shuffle, Sparkles } from 'lucide-react'
+import { BookOpenCheck, BrainCircuit, ClipboardCheck, Filter, Gauge, NotebookPen, Route, Shuffle, Sparkles } from 'lucide-react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { QuestionCard } from '../../components/learning/QuestionCard'
 import { Button } from '../../components/ui/Button'
@@ -19,6 +19,7 @@ export function PracticePage() {
   const [searchParams, setSearchParams] = useSearchParams()
   const course = getCourseFromSearchParams(searchParams)
   const requestedMode = searchParams.get('mode') as Mode | null
+  const selectedModule = course.modules.find((item) => item.id === searchParams.get('module'))
   const mode: Mode = requestedMode && modes.includes(requestedMode) ? requestedMode : 'all'
   const [seed, setSeed] = useState(0)
   const [visibleCount, setVisibleCount] = useState(20)
@@ -35,6 +36,7 @@ export function PracticePage() {
 
   const questions = useMemo(() => {
     const filtered = course.questions.filter((question) => {
+      if (selectedModule && question.moduleId !== selectedModule.id) return false
       if (mode === 'all') return true
       if (mode === 'advanced') return question.id.startsWith('q-goa26-') || question.id.startsWith('q-master-2026-') || question.id.startsWith('q-transversal-2026-')
       if (mode === 'pjs') return question.type === 'pjs'
@@ -46,11 +48,11 @@ export function PracticePage() {
       return Boolean(error && !error.resolvedAt)
     })
     return deterministicOrder(filtered, `practice:${course.id}:${seed}`, (question) => question.id)
-  }, [course, coreModules, mode, progress, seed, transversalModules])
+  }, [course, coreModules, mode, progress, seed, selectedModule, transversalModules])
 
   useEffect(() => {
     setVisibleCount(20)
-  }, [course.id, mode, seed])
+  }, [course.id, mode, seed, selectedModule?.id])
 
   const visibleQuestions = useMemo(() => questions.slice(0, visibleCount), [questions, visibleCount])
   const hasIntegrated = course.questions.some((question) => question.integrated)
@@ -58,7 +60,7 @@ export function PracticePage() {
   const hasCaseLabs = config?.hasCaseLabs !== false
 
   return <div className="page page--narrow" style={{ '--course-accent': course.accent } as CSSProperties}>
-    <PageHeader eyebrow="Entrenamiento" title="Practicar" subtitle={`Banco activo: ${course.shortTitle}. Primero precisión; después velocidad. Cada tarjeta incluye tachado de distractores, guía PJS y fuentes verificadas.`} />
+    <PageHeader eyebrow="Entrenamiento" title={selectedModule ? `Practicar · ${selectedModule.code}` : 'Practicar'} subtitle={selectedModule ? selectedModule.title : `Preguntas de ${course.shortTitle}. Responde y revisa la explicación y las fuentes.`} />
 
     <nav className={styles.courseScope} aria-label="Curso para practicar">
       {courses.map((item) => <Link key={item.id} to={withCourse('/practice', item)} className={item.id === course.id ? styles.courseScopeActive : ''}>
@@ -66,14 +68,7 @@ export function PracticePage() {
       </Link>)}
     </nav>
 
-    <section className={styles.visualIntro} aria-label="Práctica aplicada">
-      <div className={styles.visualCopy}>
-        <span>{course.shortTitle}</span>
-        <strong>Casos, descarte activo de distractores y retroalimentación con fuente</strong>
-        <p>Usa la tijera junto a cada opción para descartar distractores y activa «Guía PJS» si necesitas repasar los filtros de competencia, etapa y soporte antes de responder.</p>
-      </div>
-      <img src="/media/editorial/practice-adaptive.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" />
-    </section>
+    {selectedModule && <div className={styles.moduleScope}><span>Solo preguntas de {selectedModule.title}</span><Link to={withCourse('/practice', course)}>Ver banco completo</Link></div>}
 
     <div className={styles.toolbar}>
       <div className={styles.segment} aria-label="Filtro de práctica">
@@ -89,20 +84,16 @@ export function PracticePage() {
       <Button variant="secondary" size="sm" icon={<Shuffle size={15}/>} onClick={() => setSeed((value) => value + 1)}>Mezclar</Button>
     </div>
 
-    <div className={styles.practiceModes}>
+    <details className={styles.modeDisclosure}><summary>Otras formas de practicar</summary><div className={styles.practiceModes}>
       {course.id === 'dian-2676-gestor-ii' && (
         <div className={styles.examCta}><div><Sparkles size={18}/><span><strong>Gimnasio Interactivo DIAN</strong><small>Expediente en vivo, caza el vicio en el acto, flashcards 3D, Rayos X PJS y calculadora ET.</small></span></div><Link to="/practice/workout">Entrenar</Link></div>
-      )}
-      {course.id === 'dian-2676-gestor-ii' && (
-        <div className={styles.examCta}><div><Network size={18}/><span><strong>Atlas Visual y Comparativas</strong><small>Mapa conceptual de 6 nodos, escalímetro de términos y 27 infografías HD.</small></span></div><Link to="/library?tab=mapas">Explorar</Link></div>
       )}
       <div className={styles.examCta}><div><NotebookPen size={18}/><span><strong>Cuaderno de errores</strong><small>Clasifica fallos, guarda tu regla y comprueba después.</small></span></div><Link to={withCourse('/practice/errors', course)}>Revisar</Link></div>
       <div className={styles.examCta}><div><ClipboardCheck size={18}/><span><strong>Diagnóstico inicial</strong><small>20 preguntas para detectar prioridades antes de estudiar.</small></span></div><Link to={withCourse('/practice/diagnostic', course)}>Evaluarme</Link></div>
       <div className={styles.examCta}><div><BrainCircuit size={18}/><span><strong>Sesión recomendada</strong><small>12 preguntas priorizadas por errores, debilidades y cobertura nueva.</small></span></div><Link to={withCourse('/practice/adaptive', course)}>Practicar</Link></div>
       <div className={styles.examCta}><div><Gauge size={18}/><span><strong>Simulacros</strong><small>10, 20 o 40 preguntas sin feedback durante la sesión.</small></span></div><Link to={withCourse('/practice/mock', course)}>Configurar</Link></div>
       {hasCaseLabs ? <div className={styles.examCta}><div><Route size={18}/><span><strong>Casos integradores</strong><small>Expedientes largos que cruzan varios módulos del curso.</small></span></div><Link to={withCourse('/practice/cases', course)}>Resolver</Link></div> : null}
-      <div className={styles.examCta}><div><BookOpenCheck size={18}/><span><strong>Volver al contenido</strong><small>Revisa los módulos antes de seguir entrenando.</small></span></div><Link to={`/courses/${course.slug}`}>Curso</Link></div>
-    </div>
+    </div></details>
 
     <div className={styles.summary}><Filter size={16}/><span>{questions.length} preguntas disponibles en este filtro</span></div>
     <div className={styles.list}>
