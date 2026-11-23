@@ -14,6 +14,57 @@ export type PrioritySituationalOverride = {
 }
 
 export const prioritySituationalOverrides: Record<string, PrioritySituationalOverride[]> = {
+  'pgn-m15': [{
+    number: 1,
+    caseText: 'Una entidad firma una resolución individual y la guarda en la carpeta del proceso. El mismo día remite al grupo de trabajo un correo que dice «resolución expedida» y actualiza una tabla con el estado «notificado». La carpeta carece de constancia de notificación personal o por aviso al destinatario. El área jurídica quiere computar los recursos desde la firma, porque estima que el interesado pudo conocer informalmente el documento.',
+    stem: '¿Qué comprobación distingue correctamente expedición, notificación y firmeza antes de calcular la oportunidad de los recursos?',
+    options: [
+      'Dar por notificada y en firme la resolución desde la fecha de firma porque la carpeta contiene un PDF y el estado de la matriz dice «notificado».',
+      'Empezar a contar recursos desde el correo interno de trabajo, pues cualquier comunicación electrónica sustituye la notificación legalmente exigida.',
+      'Identificar la naturaleza del acto, el mecanismo de publicidad o notificación que corresponde, su constancia válida y los recursos procedentes; solo entonces verificar el término y la causal de firmeza.',
+    ],
+    rationales: [
+      'La expedición no prueba por sí sola notificación a la persona interesada ni firmeza del acto.',
+      'Un mensaje interno no es necesariamente una notificación personal o electrónica válida; su eficacia depende de los requisitos aplicables.',
+      'El CPACA distingue clases de actos, notificación, recursos y causales de firmeza; el análisis parte del efecto real de cada actuación.',
+    ],
+    correctOptionId: 'c',
+    explanation: 'CPACA, arts. 43, 65, 67–69, 74 y 87: naturaleza del acto, publicación/notificación, recursos y firmeza se verifican por separado. La firma y el registro en una tabla no reemplazan automáticamente la diligencia o modalidad válida de notificación.',
+  }],
+  'pgn-m16': [{
+    number: 1,
+    caseText: 'Durante una actuación disciplinaria, una profesional encuentra un término de la etapa establecido en el Código General Disciplinario, mientras una plantilla de oficina aplica el plazo de un trámite administrativo ordinario del CPACA. Para ahorrar tiempo, el equipo plantea utilizar el menor de los dos y declarar nulo todo lo actuado si detecta cualquier diferencia formal. Hay además una petición de copias radicada por un ciudadano, que debe distinguirse de la investigación disciplinaria.',
+    stem: '¿Cuál método aplica correctamente el régimen general frente al especial sin mezclar términos ni consecuencias procesales?',
+    options: [
+      'Seleccionar el término más corto entre CPACA y CGD, porque la celeridad permite prescindir de la regulación especial de la etapa.',
+      'Identificar cada procedimiento y su norma propia, aplicar el término expresamente previsto en el CGD para esa fase y examinar separadamente la petición de copias y cualquier defecto según sus reglas aplicables.',
+      'Promediar ambos términos y declarar automáticamente la nulidad de todas las actuaciones por cualquier irregularidad, aun sin estudiar su naturaleza ni garantías.',
+    ],
+    rationales: [
+      'El régimen general no deroga por simple conveniencia una regla especial vigente para la actuación.',
+      'Distingue objeto, etapa, fuente, términos y consecuencias de cada procedimiento y permite tratar aparte la petición ciudadana.',
+      'No existe una regla general que autorice promediar plazos; los efectos de defectos deben examinarse por vías y presupuestos jurídicos específicos.',
+    ],
+    correctOptionId: 'b',
+    explanation: 'CPACA, art. 34, reconoce los procedimientos regulados en leyes especiales. El Código General Disciplinario, reformado por Ley 2094 de 2021, gobierna las etapas que regula expresamente. La solicitud autónoma de copias y los defectos procesales exigen clasificación y análisis propios.',
+  }],
+  'pgn-m17': [{
+    number: 1,
+    caseText: 'Una ciudadana envía una solicitud con tres puntos: obtener copia de un expediente con datos de terceros, consultar el significado de una norma y pedir información sobre un asunto que conoce otra autoridad. En la alcaldía el correo se marca «petición general, 15 días» y luego «respondido», aunque únicamente existe un borrador de respuesta de la consulta. La oficina reconoce que no es competente sobre el tercer punto y considera negar todo por la presencia de una dirección personal en un anexo.',
+    stem: '¿Qué gestión conserva los términos y derechos de la peticionaria frente a esta solicitud mixta?',
+    options: [
+      'Clasificar los tres componentes, comprobar los términos aplicables a copias e información, consulta y traslado por falta de competencia, analizar entrega parcial de datos públicos y asegurar respuesta de fondo con constancias reales.',
+      'Fijar 15 días para todo por estar en un único correo y cerrar el radicado al redactar la consulta, aunque no se envíe ni se tramiten las copias.',
+      'Negar íntegramente el acceso porque cualquier dato personal vuelve reservado todo el expediente; omitir el traslado por tratarse de una petición mixta.',
+    ],
+    rationales: [
+      'La Ley 1755 distingue plazos de 10, 15 y 30 días según modalidad, y el art. 21 regula autoridades incompetentes; la respuesta debe acreditarse y la restricción de acceso motivarse.',
+      'Un único radicado puede contener pretensiones diferentes; una etiqueta administrativa o un borrador no sustituye cumplimiento de cada punto.',
+      'La reserva exige fundamento específico y valoración de acceso parcial; la falta de competencia sobre un componente activa el trámite legal correspondiente.',
+    ],
+    correctOptionId: 'a',
+    explanation: 'Ley 1755 de 2015, arts. 14 y 21: regla general 15 días; información y documentos 10; consultas 30, con excepciones previstas legalmente; cuando falta competencia, informar y remitir en el plazo aplicable. Leyes 1712 y 1581: distinguir información accesible y datos protegidos. Responder de fondo no implica conceder automáticamente la petición.',
+  }],
   'pgn-m12': [{
     number: 1,
     caseText: 'Durante una selección para adquirir equipos municipales, una veeduría advierte que el pliego exige una marca particular sin justificar su necesidad. Aún no hay adjudicación ni evidencia suficiente de una falta disciplinaria. Una oficina propone formular cargos para impedir que continúe el proceso; otra recomienda ignorar la alerta hasta que exista un daño. La entidad prepara una posible corrección técnica, pero no hay constancia de que haya sido publicada.',
