@@ -40,7 +40,7 @@ export function CoursePage() {
       </div>
       <div className={styles.actions}>
         <Link to={`/courses/${course.slug}/plan`}><CalendarRange size={17}/>{course.studyPlanLabel ?? 'Plan de estudio'}</Link>
-        {isDian && <Link to="/library"><Network size={17}/>Biblioteca DIAN</Link>}
+        {isDian ? <Link to="/library"><Network size={17}/>Biblioteca DIAN</Link> : <Link to={`/library?course=${course.slug}`}><Network size={17}/>Atlas de Procuraduría</Link>}
         <Link to={`/courses/${course.slug}/sources`}><FileCheck2 size={17}/>Fuentes</Link>
         <Link to={`/practice?course=${course.slug}`}><Target size={17}/>Practicar</Link>
       </div>

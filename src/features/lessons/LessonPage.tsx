@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { LessonRenderer } from '../../components/learning/LessonRenderer'
 import { LessonNarrator } from '../../components/learning/LessonNarrator'
 import { LessonQuickReview } from '../../components/learning/LessonQuickReview'
-import { ProcuraduriaTopicDiagram } from '../../components/learning/ProcuraduriaVisualAids'
+import { ProcuraduriaLessonDiagram } from '../../components/learning/ProcuraduriaVisualAids'
 import { Button } from '../../components/ui/Button'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { getCourseBySlug } from '../../lib/courses'
@@ -63,8 +63,8 @@ export function LessonPage() {
       <div className={styles.lessonMeta}><span>{module.title}</span><span><Clock3 size={14}/> {lesson.durationMinutes} min</span></div>
       <h1>{lesson.title}</h1><p className={styles.subtitle}>{lesson.subtitle}</p>
       <LessonNarrator course={course} lesson={lesson} />
-      {course.id === 'procuraduria-104-2026-3pu15' && lesson.order === 1 && <ProcuraduriaTopicDiagram moduleId={module.id}/>}
-      <LessonRenderer key={`${course.id}:${lesson.id}`} course={course} blocks={lesson.blocks}/>
+      {course.id === 'procuraduria-104-2026-3pu15' && lesson.order !== 2 && <ProcuraduriaLessonDiagram moduleId={module.id} lessonOrder={lesson.order}/>}
+      <LessonRenderer key={`${course.id}:${lesson.id}`} course={course} blocks={lesson.blocks} moduleId={module.id}/>
       <LessonQuickReview course={course} lesson={lesson} />
       <div className={styles.finish}>
         <div><span>Lección {index+1} de {allPublished.length}</span><strong>{next ? `Siguiente: ${next.title}` : 'Has llegado al final del contenido publicado.'}</strong></div>
