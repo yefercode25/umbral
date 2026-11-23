@@ -1,6 +1,7 @@
 import type { Question, QuestionOption } from '../../../src/types/course'
 import type { ProcuraduriaModuleBlueprint } from './blueprints'
 import { caseProfileFor } from './caseProfiles'
+import { foundationTransferOverrides } from './foundationTransferOverrides'
 
 type Choice = { text: string; reason: string }
 
@@ -79,7 +80,9 @@ export function buildProcuraduriaTransferQuestions(bp: ProcuraduriaModuleBluepri
     },
   ]
 
-  return cases.map((item, index) => {
+  const adaptedCases = foundationTransferOverrides[bp.id] ?? cases
+
+  return adaptedCases.map((item, index) => {
     const choices = [item.correct, ...item.other]
     const offset = (bp.order + index + 1) % 3
     const rotated = choices.slice(offset).concat(choices.slice(0, offset))
