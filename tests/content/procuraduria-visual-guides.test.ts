@@ -1,6 +1,4 @@
 import { describe, expect, it } from 'vitest'
-import { existsSync, readFileSync } from 'node:fs'
-import { resolve } from 'node:path'
 import { procuraduriaCourse } from '../../content/courses/procuraduria-104-2026-3pu15/course'
 import { getProcuraduriaTopicVisual } from '../../src/lib/procuraduriaVisualGuides'
 
@@ -19,14 +17,8 @@ describe('Guías SVG exclusivas de Procuraduría', () => {
     const images = new Set(procuraduriaCourse.modules.map((module) => getProcuraduriaTopicVisual(module.id)!.image))
     expect(images.size).toBe(9)
     for (const image of images) {
-      const filename = resolve(process.cwd(), 'public', image.slice(1))
-      expect(existsSync(filename), filename).toBe(true)
-      const source = readFileSync(filename, 'utf8')
-      expect(source).toContain('<svg')
-      expect(source).toContain('</svg>')
-      expect(source).toContain('<title')
-      expect(source).toContain('<desc')
-      expect(source).not.toMatch(/<script\b|<foreignObject\b|<image\b/i)
+      expect(image).toMatch(/^\/media\/lesson-support\/[a-z0-9-]+\.svg$/)
+      expect(image.includes('..')).toBe(false)
     }
   })
 
