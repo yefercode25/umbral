@@ -14,6 +14,27 @@ export type ProcuraduriaCaseProfile = {
 }
 
 const specific: Record<string, ProcuraduriaCaseProfile> = {
+  'pgn-m9': {
+    setting: 'Un proyecto de atención a puestos de salud se desarrolla en dos municipios de un departamento. La ejecución la coordina una secretaría departamental mediante convenio y los municipios reciben insumos y elaboran actas.',
+    document: 'La carpeta contiene convenios, designaciones de supervisión, certificaciones de entrega municipal, un informe departamental y una queja presentada en una oficina territorial de PGN cercana al sitio del proyecto.',
+    conflict: 'El funcionario receptor considera que la oficina físicamente más próxima debe decidir cualquier posible conducta, mientras otra persona asume que la autonomía municipal desplaza todas las responsabilidades departamentales.',
+    change: 'Se acredita que una parte de la actividad correspondía a una dependencia departamental y otra a un contratista designado por un municipio; el nuevo soporte obliga a diferenciar sujetos y funciones.',
+    pressure: 'El ciudadano solicita respuesta inmediata y el expediente exige identificar competencia funcional y territorial sin resolver apresuradamente la atribución de deberes.',
+  },
+  'pgn-m10': {
+    setting: 'La comunidad advierte que el servicio de agua de una cabecera municipal es intermitente. Un centro de salud reporta riesgo de interrupción de operaciones y la administración anuncia un plan de contingencia.',
+    document: 'Se allegan peticiones ciudadanas, registros de continuidad, cronograma preventivo sin soportes de ejecución y una queja que atribuye la situación a omisiones de varios servidores.',
+    conflict: 'Una oficina propone sancionar directamente a los servidores como medida preventiva; otra considera que no puede hacerse seguimiento hasta probarse una falta disciplinaria.',
+    change: 'Un reporte posterior demuestra avances parciales del plan, pero también revela una actividad crítica que no se ejecutó y cuya responsabilidad funcional todavía debe verificarse.',
+    pressure: 'Las personas necesitan protección oportuna y un seguimiento documentado, sin sustituir a la administración en la operación del servicio ni anticipar conclusiones disciplinarias.',
+  },
+  'pgn-m11': {
+    setting: 'Una procuraduría provincial recibe un escrito sobre actuaciones de un servidor departamental y de funcionarios de dos municipios; existe una instrucción iniciada en una dependencia diferente.',
+    document: 'El expediente reúne la denuncia, documentos de designación, fechas de los hechos, una constancia de reparto anterior y una petición de que la dependencia receptora adopte de inmediato una decisión de fondo.',
+    conflict: 'La oficina pretende asumir toda la actuación por cercanía territorial sin comprobar materia, calidad del sujeto, conexidad y fase de instrucción o juzgamiento.',
+    change: 'Llega un oficio que demuestra conexidad entre hechos de competencia potencialmente regional y provincial, junto a una solicitud de intervención de una delegada especializada cuya procedencia debe contrastarse con la regla vigente.',
+    pressure: 'Se debe encauzar oportunamente el expediente, preservar la trazabilidad del reparto y no transformar la simple recepción documental en una competencia decisoria.',
+  },
   'pgn-m6': {
     setting: 'Tras una auditoría a un contrato municipal de equipos escolares, un ciudadano presenta denuncias ante Contraloría, Procuraduría y Fiscalía por los mismos hechos aparentes.',
     document: 'La carpeta contiene un acta de supervisión, un informe de pagos, comprobantes de entrega y tres comunicaciones de entidades distintas que requieren aclarar los hechos y sus posibles efectos.',
