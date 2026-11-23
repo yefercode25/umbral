@@ -65,7 +65,7 @@ describe('Procuraduría · práctica independiente de las lecciones', () => {
   })
 
   it('no modifica la selección DIAN', async () => {
-    const { dianCourse } = await import('../../content/courses/dian-2676-gestor-ii/course')
-    expect(practiceQuestionPool(dianCourse)).toBe(dianCourse.questions)
+    const { dianGestorCourse } = await import('../../content/courses/dian-2676-gestor-ii/course')
+    expect(practiceQuestionPool(dianGestorCourse)).toBe(dianGestorCourse.questions)
   })
 })
