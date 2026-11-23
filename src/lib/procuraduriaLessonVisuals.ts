@@ -17,7 +17,7 @@ export function getProcuraduriaLessonVisual(moduleId: string, lessonOrder: numbe
   const index = Number(match[1])
   if (index > 84) return null
   const order = lessonOrder as 1 | 2 | 3
-  const label = labels[order - 1]
+  const label = labels[order - 1]!
   return {
     image: `/media/procuraduria/module-diagrams/pgn-m${index}-l${order}.svg`,
     lessonOrder: order,
