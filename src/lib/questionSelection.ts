@@ -1,4 +1,5 @@
 import type { Course, Question } from '../types/course'
+import { practiceQuestionPool } from './practiceQuestionPool'
 
 export type ExamProfileId = 'functional-quick' | 'functional-training' | 'functional-extended' | 'functional-deep' | 'study-mix' | 'transversal-check'
 
@@ -183,18 +184,19 @@ export function selectExamQuestions(course: Course, profileId: ExamProfileId): Q
   const studyModuleIds = new Set(config?.studyModuleIds ?? course.modules.map((module) => module.id))
   const transversalModuleIds = new Set(config?.transversalModuleIds ?? [])
   const priorityModuleIds = new Set(config?.priorityModuleIds ?? config?.coreModuleIds ?? [])
+  const available = practiceQuestionPool(course)
 
   if (profile.kind === 'study') {
-    return selectBalancedQuestions(course.questions.filter((question) => studyModuleIds.has(question.moduleId)), profile.size)
+    return selectBalancedQuestions(available.filter((question) => studyModuleIds.has(question.moduleId)), profile.size)
   }
 
   if (profile.kind === 'transversal') {
-    const pool = course.questions.filter((question) => transversalModuleIds.has(question.moduleId))
-    return selectBalancedQuestions(pool.length ? pool : course.questions, profile.size)
+    const pool = available.filter((question) => transversalModuleIds.has(question.moduleId))
+    return selectBalancedQuestions(pool.length ? pool : available, profile.size)
   }
 
   // La GOA de DIAN 2676 establece tres opciones de juicio situacional en funcionales.
   // Los ítems conceptuales se conservan en estudio y repaso mixto, no en el simulacro funcional.
-  const pool = course.questions.filter((question) => examModuleIds.has(question.moduleId) && (course.id !== 'dian-2676-gestor-ii' || question.type === 'pjs') && (profile.id !== 'functional-deep' || question.id.startsWith('q-goa26-') || question.id.startsWith('q-master-2026-') || question.id.startsWith('q-transversal-2026-')))
+  const pool = available.filter((question) => examModuleIds.has(question.moduleId) && (course.id !== 'dian-2676-gestor-ii' || question.type === 'pjs') && (profile.id !== 'functional-deep' || question.id.startsWith('q-goa26-') || question.id.startsWith('q-master-2026-') || question.id.startsWith('q-transversal-2026-')))
   return takeWeightedByModule(pool, profile.size, priorityModuleIds, profile.size >= Math.min(examModuleIds.size, profile.size), profile.integratedTarget ?? 0)
 }

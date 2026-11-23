@@ -9,11 +9,11 @@ const activeBlockTypes = new Set([
 
 describe('Procuraduría 104-2026 · 3PU-15 course integrity', () => {
   it('matches the alpha.2 audited curriculum snapshot', () => {
-    expect(procuraduriaCourse.version).toBe('2026.09.14-alpha.2')
+    expect(procuraduriaCourse.version).toBe('2026.11.22-beta.1')
     expect(procuraduriaCourse.units).toHaveLength(17)
     expect(procuraduriaCourse.modules).toHaveLength(85)
     expect(procuraduriaCourse.lessons).toHaveLength(255)
-    expect(procuraduriaCourse.questions).toHaveLength(880)
+    expect(procuraduriaCourse.questions).toHaveLength(1730)
     expect(procuraduriaCourse.sources).toHaveLength(37)
     expect(procuraduriaCourse.practiceConfig?.hasCaseLabs).toBe(true)
   })
@@ -72,7 +72,7 @@ describe('Procuraduría 104-2026 · 3PU-15 course integrity', () => {
     const checkpointOwners = new Map<string, string>()
 
     for (const module of procuraduriaCourse.modules) {
-      const baseQuestions = procuraduriaCourse.questions.filter((question) => question.moduleId === module.id && !question.integrated)
+      const baseQuestions = procuraduriaCourse.questions.filter((question) => question.moduleId === module.id && /^pgn-m\d+-q\d+$/.test(question.id))
       expect(baseQuestions, module.id).toHaveLength(10)
       expect(baseQuestions.some((question) => question.type === 'pjs'), `${module.id} PJS`).toBe(true)
       expect(baseQuestions.some((question) => question.difficulty === 5), `${module.id} advanced question`).toBe(true)

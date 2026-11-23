@@ -9,6 +9,7 @@ import { courses } from '../../lib/courses'
 import { getCourseFromSearchParams, withCourse } from '../../lib/courseQuery'
 import { useProgressStore } from '../../stores/progressStore'
 import { deterministicOrder } from '../../lib/questionPresentation'
+import { practiceQuestionPool } from '../../lib/practiceQuestionPool'
 import styles from './PracticePage.module.css'
 
 type Mode = 'all' | 'advanced' | 'pjs' | 'integrated' | 'core' | 'transversal' | 'errors' | 'saved'
@@ -25,6 +26,9 @@ export function PracticePage() {
   const [visibleCount, setVisibleCount] = useState(20)
   const progress = useProgressStore((state) => state.courses[course.id])
   const config = course.practiceConfig
+  // Guardadas y errores también pueden contener IDs históricos de ejercicios de lección.
+  // Se conservan accesibles solo cuando el estudiante los solicita explícitamente.
+  const available = useMemo(() => mode === 'saved' || mode === 'errors' ? course.questions : practiceQuestionPool(course), [course, mode])
   const coreModules = useMemo(() => new Set(config?.coreModuleIds ?? []), [config?.coreModuleIds])
   const transversalModules = useMemo(() => new Set(config?.transversalModuleIds ?? []), [config?.transversalModuleIds])
 
@@ -36,7 +40,7 @@ export function PracticePage() {
   }
 
   const questions = useMemo(() => {
-    const filtered = course.questions.filter((question) => {
+    const filtered = available.filter((question) => {
       if (selectedModule && question.moduleId !== selectedModule.id) return false
       if (mode === 'all') return true
       if (mode === 'advanced') return question.id.startsWith('q-goa26-') || question.id.startsWith('q-master-2026-') || question.id.startsWith('q-transversal-2026-')
@@ -49,14 +53,14 @@ export function PracticePage() {
       return Boolean(error && !error.resolvedAt)
     })
     return deterministicOrder(filtered, `practice:${course.id}:${seed}`, (question) => question.id)
-  }, [course, coreModules, mode, progress, seed, selectedModule, transversalModules])
+  }, [available, course, coreModules, mode, progress, seed, selectedModule, transversalModules])
 
   useEffect(() => {
     setVisibleCount(20)
   }, [course.id, mode, seed, selectedModule?.id])
 
   const visibleQuestions = useMemo(() => questions.slice(0, visibleCount), [questions, visibleCount])
-  const hasIntegrated = course.questions.some((question) => question.integrated)
+  const hasIntegrated = available.some((question) => question.integrated)
   const hasTransversal = transversalModules.size > 0
   const hasCaseLabs = config?.hasCaseLabs !== false
 
@@ -65,7 +69,7 @@ export function PracticePage() {
 
     <nav className={styles.courseScope} aria-label="Curso para practicar">
       {courses.map((item) => <Link key={item.id} to={withCourse('/practice', item)} className={item.id === course.id ? styles.courseScopeActive : ''}>
-        <span>{item.shortTitle}</span><small>{item.questions.length} preguntas</small>
+        <span>{item.shortTitle}</span><small>{practiceQuestionPool(item).length} preguntas</small>
       </Link>)}
     </nav>
 

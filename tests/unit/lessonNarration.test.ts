@@ -46,18 +46,20 @@ describe('lesson narration', () => {
     }
   })
 
-  it('does not narrate the answer rationale of PGN decision simulators before the learner answers', () => {
-    const lesson = procuraduriaCourse.lessons.find((item) => item.blocks.some((block) => block.type === 'decision-simulator'))
-    expect(lesson).toBeTruthy()
-    if (!lesson) return
-
-    const simulator = lesson.blocks.find((block) => block.type === 'decision-simulator')
-    expect(simulator?.type).toBe('decision-simulator')
-    if (!simulator || simulator.type !== 'decision-simulator') return
-
-    const narration = buildLessonNarration(procuraduriaCourse, lesson).join(' ')
-    expect(narration).toContain(simulator.scenario)
-    expect(narration).toContain(simulator.prompt)
-    for (const option of simulator.options) expect(narration).not.toContain(option.rationale)
+  it('does not reintroduce redundant PGN decision simulators or narrate checkpoint explanations', () => {
+    for (const lesson of procuraduriaCourse.lessons) {
+      expect(lesson.blocks.some((block) => block.type === 'decision-simulator'), lesson.id).toBe(false)
+      const narration = buildLessonNarration(procuraduriaCourse, lesson).join(' ')
+      for (const block of lesson.blocks) {
+        if (block.type !== 'checkpoint') continue
+        const question = procuraduriaCourse.questions.find((item) => item.id === block.questionId)
+        expect(question, block.questionId).toBeTruthy()
+        if (question) {
+          expect(narration).toContain('Pregunta de práctica')
+          expect(narration).not.toContain(question.explanation)
+          for (const option of question.options) expect(narration).not.toContain(option.rationale)
+        }
+      }
+    }
   })
 })

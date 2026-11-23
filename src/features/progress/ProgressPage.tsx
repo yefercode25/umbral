@@ -4,6 +4,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { PageHeader } from '../../components/ui/PageHeader'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { courseCompletion, moduleCompletion, publishedLessons } from '../../lib/course'
+import { practiceQuestionPool } from '../../lib/practiceQuestionPool'
 import { courses } from '../../lib/courses'
 import { getCourseFromSearchParams, withCourse } from '../../lib/courseQuery'
 import { useProgressStore } from '../../stores/progressStore'
@@ -30,7 +31,7 @@ export function ProgressPage() {
   const savedQuestions = progress?.questionBookmarks?.length ?? 0
 
   const modulePerformance = course.modules.map((module) => {
-    const questionIds = new Set(course.questions.filter((question) => question.moduleId === module.id).map((question) => question.id))
+    const questionIds = new Set(practiceQuestionPool(course).filter((question) => question.moduleId === module.id).map((question) => question.id))
     const stats = Object.entries(progress?.questionStats ?? {}).filter(([questionId]) => questionIds.has(questionId)).map(([, stat]) => stat)
     const moduleAttempts = stats.reduce((sum, stat) => sum + stat.attempts, 0)
     const moduleCorrect = stats.reduce((sum, stat) => sum + stat.correct, 0)

@@ -3,6 +3,7 @@ import { ArrowLeft, BookOpenCheck, CalendarRange, CheckCircle2, Clock3, Dumbbell
 import { Link, useParams } from 'react-router-dom'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { moduleCompletion } from '../../lib/course'
+import { practiceQuestionPool } from '../../lib/practiceQuestionPool'
 import { getCourseBySlug } from '../../lib/courses'
 import { withCourse } from '../../lib/courseQuery'
 import { getStudyPlan } from '../../lib/studyPlans'
@@ -22,7 +23,7 @@ export function StudyPlanPage() {
     const uniqueModuleIds = new Set(modules.map((module) => module.id))
     const lessons = course.lessons.filter((lesson) => uniqueModuleIds.has(lesson.moduleId) && lesson.status === 'published')
     const minutes = lessons.reduce((sum, lesson) => sum + lesson.durationMinutes, 0)
-    const questionCount = course.questions.filter((question) => uniqueModuleIds.has(question.moduleId)).length
+    const questionCount = practiceQuestionPool(course).filter((question) => uniqueModuleIds.has(question.moduleId)).length
     const completion = modules.length ? Math.round(modules.reduce((sum, module) => sum + moduleCompletion(course, module.id, progress), 0) / modules.length) : 0
     return { phase, modules, lessons, minutes, questionCount, completion }
   })
@@ -44,7 +45,7 @@ export function StudyPlanPage() {
       <div className={styles.summary}>
         <div><Clock3 size={18}/><span><strong>{Math.round(totalMinutes / 60)} h</strong> de lectura guiada</span></div>
         <div><BookOpenCheck size={18}/><span><strong>{course.lessons.length}</strong> lecciones</span></div>
-        <div><Dumbbell size={18}/><span><strong>{course.questions.length}</strong> preguntas</span></div>
+        <div><Dumbbell size={18}/><span><strong>{practiceQuestionPool(course).length}</strong> preguntas</span></div>
         <div><Target size={18}/><span><strong>≈ {studyDays} días</strong> a {dailyGoal} min/día</span></div>
       </div>
     </header>

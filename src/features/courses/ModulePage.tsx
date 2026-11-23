@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, BookOpenCheck, Check, Clock3, Play, Target } fro
 import { Link, useParams } from 'react-router-dom'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { moduleCompletion } from '../../lib/course'
+import { practiceQuestionPool } from '../../lib/practiceQuestionPool'
 import { getCourseBySlug } from '../../lib/courses'
 import { useProgressStore } from '../../stores/progressStore'
 import { useSettingsStore } from '../../stores/settingsStore'
@@ -20,7 +21,7 @@ export function ModulePage() {
 
   const lessons = module.lessonIds.map((id) => course.lessons.find((lesson) => lesson.id === id))
     .filter((lesson): lesson is Lesson => Boolean(lesson && lesson.status === 'published')).sort((a,b) => a.order - b.order)
-  const questions = course.questions.filter((question) => question.moduleId === module.id)
+  const questions = practiceQuestionPool(course).filter((question) => question.moduleId === module.id)
   const minutes = lessons.reduce((total, lesson) => total + lesson.durationMinutes, 0)
   const completion = moduleCompletion(course, module.id, progress)
   const completed = lessons.filter((lesson) => progress?.lessons[lesson.id]?.status === 'completed').length

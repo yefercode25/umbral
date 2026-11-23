@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom'
 import { LearningPath } from '../../components/learning/LearningPath'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { courseCompletion, publishedLessons } from '../../lib/course'
+import { practiceQuestionPool } from '../../lib/practiceQuestionPool'
 import { getCourseBySlug } from '../../lib/courses'
 import { useProgressStore } from '../../stores/progressStore'
 import { useSettingsStore } from '../../stores/settingsStore'
@@ -29,7 +30,7 @@ export function CoursePage() {
           <p className={styles.subtitle}>{course.description}</p>
           <div className={styles.metrics}>
             <span><BookOpenText size={18}/>{publishedLessons(course).length} lecciones</span>
-            <span><Target size={18}/>{course.questions.length} preguntas</span>
+            <span><Target size={18}/>{practiceQuestionPool(course).length} preguntas</span>
             <span>⭐ {course.units.length} secciones</span>
             {course.opec ? <span>🏛️ OPEC {course.opec}</span> : null}
           </div>
