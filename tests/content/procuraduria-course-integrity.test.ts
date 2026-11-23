@@ -72,7 +72,7 @@ describe('Procuraduría 104-2026 · 3PU-15 course integrity', () => {
     const checkpointOwners = new Map<string, string>()
 
     for (const module of procuraduriaCourse.modules) {
-      const baseQuestions = procuraduriaCourse.questions.filter((question) => question.moduleId === module.id && !question.integrated)
+      const baseQuestions = procuraduriaCourse.questions.filter((question) => question.moduleId === module.id && /^pgn-m\d+-q\d+$/.test(question.id))
       expect(baseQuestions, module.id).toHaveLength(10)
       expect(baseQuestions.some((question) => question.type === 'pjs'), `${module.id} PJS`).toBe(true)
       expect(baseQuestions.some((question) => question.difficulty === 5), `${module.id} advanced question`).toBe(true)
