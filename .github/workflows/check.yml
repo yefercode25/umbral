@@ -1,0 +1,30 @@
+name: Verificación de cambios
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  calidad:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Obtener código
+        uses: actions/checkout@v4
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Instalar dependencias
+        run: npm install --no-audit --no-fund
+      - name: Comprobar TypeScript
+        run: npm run typecheck
+      - name: Comprobar ESLint
+        run: npm run lint
+      - name: Ejecutar pruebas
+        run: npm run test
+      - name: Generar PWA
+        run: npm run build
