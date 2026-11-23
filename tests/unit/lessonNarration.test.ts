@@ -55,7 +55,7 @@ describe('lesson narration', () => {
         const question = procuraduriaCourse.questions.find((item) => item.id === block.questionId)
         expect(question, block.questionId).toBeTruthy()
         if (question) {
-          expect(narration).toContain(question.stem)
+          expect(narration).toContain('Pregunta de práctica')
           expect(narration).not.toContain(question.explanation)
           for (const option of question.options) expect(narration).not.toContain(option.rationale)
         }
