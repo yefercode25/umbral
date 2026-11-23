@@ -21,7 +21,8 @@ export function ModulePage() {
 
   const lessons = module.lessonIds.map((id) => course.lessons.find((lesson) => lesson.id === id))
     .filter((lesson): lesson is Lesson => Boolean(lesson && lesson.status === 'published')).sort((a,b) => a.order - b.order)
-  const questions = practiceQuestionPool(course).filter((question) => question.moduleId === module.id)
+  const isPgn = course.id === 'procuraduria-104-2026-3pu15'
+  const questions = !isPgn ? practiceQuestionPool(course).filter((question) => question.moduleId === module.id) : []
   const minutes = lessons.reduce((total, lesson) => total + lesson.durationMinutes, 0)
   const completion = moduleCompletion(course, module.id, progress)
   const completed = lessons.filter((lesson) => progress?.lessons[lesson.id]?.status === 'completed').length
@@ -41,7 +42,8 @@ export function ModulePage() {
       <div className={styles.metrics}>
         <span><BookOpenCheck size={18}/>{lessons.length} lecciones</span>
         <span><Clock3 size={18}/>{minutes} min aprox.</span>
-        <span><Target size={18}/>{questions.length} preguntas ({attemptedQuestions.length} practicadas{moduleAccuracy !== null ? ` · ${moduleAccuracy}% aciertos` : ''})</span>
+        {isPgn ? <span><Target size={18}/>4 comprobaciones en las primeras dos lecciones + cierre de 3 casos</span>
+          : <span><Target size={18}/>{questions.length} preguntas ({attemptedQuestions.length} practicadas{moduleAccuracy !== null ? ` · ${moduleAccuracy}% aciertos` : ''})</span>}
       </div>
       <div className={styles.progress}><ProgressBar value={completion} label="Progreso del módulo"/></div>
       <div className={styles.heroActions}>
@@ -64,7 +66,10 @@ export function ModulePage() {
       </div>
     </section>
 
-    {questions.length > 0 && <section className={styles.practiceCard}>
+    {isPgn && <section className={styles.practiceCard}>
+      <div><h2>Aprende, aplica y comprueba aquí mismo</h2><p>Las preguntas se responden dentro de las tres lecciones. La tercera termina con un cierre de tres casos: necesitas dos respuestas correctas para avanzar.</p></div>
+    </section>}
+    {!isPgn && questions.length > 0 && <section className={styles.practiceCard}>
       <div><h2>Practicar este módulo</h2><p>{questions.length} preguntas relacionadas con {module.code}.</p></div>
       <Link to={`/practice?course=${course.slug}&module=${module.id}`}>Practicar <ArrowRight size={17}/></Link>
     </section>}

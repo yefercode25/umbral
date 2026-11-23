@@ -30,6 +30,7 @@ function scenarioOptions(blueprint: ProcuraduriaModuleBlueprint): QuestionOption
 }
 
 function buildQuestions(blueprint: ProcuraduriaModuleBlueprint): Question[] {
+  const profile = caseProfileFor(blueprint)
   const [s1, s2, s3, s4] = blueprint.steps
   const coreSources = blueprint.sourceIds
   const qBase = `${blueprint.id}-q`
@@ -37,22 +38,23 @@ function buildQuestions(blueprint: ProcuraduriaModuleBlueprint): Question[] {
   const questions: Question[] = [
     {
       id: `${qBase}1`, moduleId: blueprint.id, skillIds: blueprint.skillIds, type: 'single', difficulty: 2,
-      stem: `Al estudiar “${blueprint.title}”, ¿cuál idea conviene conservar como regla de base?`,
+      stem: `En «${blueprint.title}», ${blueprint.description} ¿Qué regla permite explicar este problema sin confundirlo con una actuación posterior?`,
       options: conceptOptions(blueprint, 0), correctOptionId: 'a',
       explanation: `La regla correcta es: ${blueprint.keyPoints[0] ?? blueprint.core} Esta idea debe comprenderse antes de memorizar detalles o excepciones.`,
       sourceIds: coreSources, verifiedAt: VERIFIED_AT,
     },
     {
       id: `${qBase}2`, moduleId: blueprint.id, skillIds: blueprint.skillIds, type: 'pjs', difficulty: 3,
-      case: blueprint.scenario,
-      stem: '¿Cuál es la actuación más sólida frente a la situación descrita?',
+      case: `${blueprint.scenario} ${profile.document} ${profile.pressure}`,
+      stem: 'Antes de optar por una medida, ¿qué actuación respeta mejor el objeto, los soportes y los límites de competencia de este expediente?',
       options: scenarioOptions(blueprint), correctOptionId: 'a',
       explanation: `${blueprint.correct} La clave es no saltar directamente a la conclusión: el razonamiento debe respetar la competencia, la etapa, el soporte y los límites propios del rol.`,
       sourceIds: coreSources, verifiedAt: VERIFIED_AT,
     },
     {
       id: `${qBase}3`, moduleId: blueprint.id, skillIds: blueprint.skillIds, type: 'single', difficulty: 2,
-      stem: `Dentro del método de análisis de “${blueprint.title}”, ¿qué debe hacerse primero?`,
+      case: `${profile.setting} ${profile.document}`,
+      stem: `Frente a esos antecedentes de «${blueprint.title}», ¿cuál es la primera acción verificable del método antes de adelantar el análisis o el cierre?`,
       options: [
         option('a', s1 ?? 'Identificar primero el problema y sus presupuestos.', 'Es el punto de partida del método propuesto en el módulo.'),
         option('b', s3 ?? 'Escoger una conclusión antes de revisar la evidencia.', 'Esta actuación pertenece a una etapa posterior o presupone verificaciones previas.'),
@@ -64,14 +66,15 @@ function buildQuestions(blueprint: ProcuraduriaModuleBlueprint): Question[] {
     },
     {
       id: `${qBase}4`, moduleId: blueprint.id, skillIds: blueprint.skillIds, type: 'single', difficulty: 3,
-      stem: `¿Cuál afirmación es compatible con el enfoque correcto de “${blueprint.title}”?`,
+      case: `${profile.conflict} ${profile.change}`,
+      stem: `¿Qué regla de «${blueprint.title}» permite resolver la contradicción sin omitir el presupuesto que todavía debe verificarse?`,
       options: conceptOptions(blueprint, 1), correctOptionId: 'a',
       explanation: `La afirmación compatible es: ${blueprint.keyPoints[1] ?? blueprint.core} Los distractores trasladan al caso atajos que el módulo enseña a evitar.`,
       sourceIds: coreSources, verifiedAt: VERIFIED_AT,
     },
     {
       id: `${qBase}5`, moduleId: blueprint.id, skillIds: blueprint.skillIds, type: 'pjs', difficulty: 4,
-      case: `${blueprint.scenario} Antes de adoptar una decisión definitiva aparece información adicional que obliga a revisar uno de los supuestos iniciales.`,
+      case: `${blueprint.scenario} ${profile.document} ${profile.change} Antes de decidir se advierte que el supuesto inicial podría estar incompleto.`,
       stem: '¿Qué enfoque preserva mejor la calidad jurídica y técnica de la actuación?',
       options: [
         option('a', `Reevaluar el supuesto afectado, contrastar la nueva información y mantener como guía esta regla: ${blueprint.correct}`, 'Una decisión profesional debe poder actualizarse cuando cambia un hecho relevante y seguir anclada en la regla aplicable.'),
@@ -108,7 +111,7 @@ function buildQuestions(blueprint: ProcuraduriaModuleBlueprint): Question[] {
     },
     {
       id: `${qBase}8`, moduleId: blueprint.id, skillIds: blueprint.skillIds, type: 'pjs', difficulty: 4,
-      case: `${blueprint.scenario} Un compañero propone como salida: “${blueprint.distractors[0] ?? 'actuar inmediatamente sin verificar los presupuestos'}”.`,
+      case: `${blueprint.scenario} ${profile.conflict} Un compañero propone como salida: “${blueprint.distractors[0] ?? 'actuar inmediatamente sin verificar los presupuestos'}”.`,
       stem: '¿Cuál es la mejor forma de evaluar esa propuesta?',
       options: [
         option('a', `Contrastar la propuesta con hechos, competencia, etapa y evidencia, y corregirla si desconoce esta orientación: ${blueprint.correct}`, 'La respuesta evalúa la actuación con el método del módulo en lugar de aceptarla por su apariencia de seguridad.'),
@@ -121,7 +124,7 @@ function buildQuestions(blueprint: ProcuraduriaModuleBlueprint): Question[] {
     },
     {
       id: `${qBase}9`, moduleId: blueprint.id, skillIds: blueprint.skillIds, type: 'pjs', difficulty: 5,
-      case: `${blueprint.scenario} Dos fuentes del expediente parecen conducir a conclusiones diferentes y ninguna puede descartarse de manera inmediata.`,
+      case: `${blueprint.scenario} ${profile.document} ${profile.change} Dos fuentes del expediente parecen conducir a conclusiones diferentes y ninguna puede descartarse de manera inmediata.`,
       stem: '¿Qué actuación demuestra un nivel avanzado de razonamiento?',
       options: [
         option('a', `Precisar qué afirma cada fuente, verificar su alcance, buscar la explicación de la contradicción y decidir solo después de aplicar el método ${blueprint.steps.join(' → ')}.`, 'La contradicción se gestiona delimitando alcance, confiabilidad y relación con el hecho a probar.'),

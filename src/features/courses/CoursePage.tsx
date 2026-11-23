@@ -30,7 +30,7 @@ export function CoursePage() {
           <p className={styles.subtitle}>{course.description}</p>
           <div className={styles.metrics}>
             <span><BookOpenText size={18}/>{publishedLessons(course).length} lecciones</span>
-            <span><Target size={18}/>{practiceQuestionPool(course).length} preguntas</span>
+            {isDian ? <span><Target size={18}/>{practiceQuestionPool(course).length} preguntas</span> : <span><Target size={18}/>Evaluación dentro de cada módulo</span>}
             <span>⭐ {course.units.length} secciones</span>
             {course.opec ? <span>🏛️ OPEC {course.opec}</span> : null}
           </div>
