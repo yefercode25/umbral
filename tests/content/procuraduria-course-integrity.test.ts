@@ -8,13 +8,13 @@ const activeBlockTypes = new Set([
 ])
 
 describe('Procuraduría 104-2026 · 3PU-15 course integrity', () => {
-  it('matches the alpha.2 audited curriculum snapshot', () => {
-    expect(procuraduriaCourse.version).toBe('2026.11.22-beta.1')
+  it('matches the beta.3 common-competencies curriculum', () => {
+    expect(procuraduriaCourse.version).toBe('2026.11.22-beta.3')
     expect(procuraduriaCourse.units).toHaveLength(17)
     expect(procuraduriaCourse.modules).toHaveLength(85)
     expect(procuraduriaCourse.lessons).toHaveLength(255)
-    expect(procuraduriaCourse.questions).toHaveLength(1730)
-    expect(procuraduriaCourse.sources).toHaveLength(37)
+    expect(procuraduriaCourse.questions).toHaveLength(1948)
+    expect(procuraduriaCourse.sources).toHaveLength(42)
     expect(procuraduriaCourse.practiceConfig?.hasCaseLabs).toBe(true)
   })
 
@@ -171,7 +171,7 @@ describe('Procuraduría 104-2026 · 3PU-15 course integrity', () => {
     }
   })
 
-  it('keeps conditional specialties out while including the systems-profession reinforcement', () => {
+  it('keeps optional specializations outside the common exam while retaining technical practice', () => {
     const conditional = new Set(Array.from({ length: 5 }, (_, index) => `pgn-m${75 + index}`))
     const systems = new Set(Array.from({ length: 5 }, (_, index) => `pgn-m${80 + index}`))
     const exam = new Set(procuraduriaCourse.practiceConfig?.examModuleIds ?? [])
@@ -184,8 +184,8 @@ describe('Procuraduría 104-2026 · 3PU-15 course integrity', () => {
       expect(transversal.has(moduleId), `${moduleId} transversal`).toBe(false)
     }
     for (const moduleId of systems) {
-      expect(exam.has(moduleId), `${moduleId} exam`).toBe(true)
-      expect(study.has(moduleId), `${moduleId} study`).toBe(true)
+      expect(exam.has(moduleId), `${moduleId} exam`).toBe(false)
+      expect(study.has(moduleId), `${moduleId} study`).toBe(false)
       expect(transversal.has(moduleId), `${moduleId} transversal`).toBe(true)
     }
   })

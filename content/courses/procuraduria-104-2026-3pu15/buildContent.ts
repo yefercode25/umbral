@@ -1,7 +1,9 @@
 import type { CourseModule, Lesson, LessonBlock, Question, QuestionOption } from '../../../src/types/course'
 import { procuraduriaModuleBlueprints, type ProcuraduriaModuleBlueprint } from './blueprints'
 import { buildProcuraduriaSituationalQuestions } from './situationalQuestions'
+import { buildProcuraduriaTransferQuestions } from './transferQuestions'
 import { caseProfileFor } from './caseProfiles'
+import { transversalOfficeLessonBlocks, transversalOfficeSources } from './transversalOfficeLessons'
 
 const ACCENT = '#5F9E80'
 const VERIFIED_AT = '2026-09-14'
@@ -148,7 +150,7 @@ function buildQuestions(blueprint: ProcuraduriaModuleBlueprint): Question[] {
 }
 
 function lessonSources(blueprint: ProcuraduriaModuleBlueprint) {
-  return { type: 'sources' as const, sourceIds: blueprint.sourceIds }
+  return { type: 'sources' as const, sourceIds: [...new Set([...blueprint.sourceIds, ...transversalOfficeSources(blueprint.id)])] }
 }
 
 function specializedFoundationBlocks(blueprint: ProcuraduriaModuleBlueprint): LessonBlock[] {
@@ -1040,6 +1042,7 @@ function buildLessons(blueprint: ProcuraduriaModuleBlueprint): Lesson[] {
       { type: 'lead', text: `Ahora pasamos de “saber qué significa” a “saber qué hacer”. En la prueba, varias opciones pueden mencionar instituciones reales. Lo que las separa suele ser el orden: quién actúa, en qué etapa, con qué soporte y con qué límites.` },
       { type: 'steps', title: 'Método operativo', items: blueprint.steps },
       { type: 'rule', title: 'Regla de control', text: `${blueprint.keyPoints[0] ?? blueprint.core} Antes de elegir una respuesta, verifica si la alternativa respeta esta regla y si ocurre en el momento correcto.` },
+      ...transversalOfficeLessonBlocks(blueprint.id),
       { type: 'comparison', title: 'Expediente: lectura antes de la decisión', columns: ['Elemento', 'Información disponible'], rows: [
         ['Situación', scene.setting],
         ['Soportes', scene.document],
@@ -1092,6 +1095,7 @@ export const procuraduriaModules: CourseModule[] = procuraduriaModuleBlueprints.
 export const procuraduriaLessons: Lesson[] = procuraduriaModuleBlueprints.flatMap(buildLessons)
 export const procuraduriaQuestions: Question[] = procuraduriaModuleBlueprints.flatMap(buildQuestions)
 export const procuraduriaSituationalQuestions: Question[] = procuraduriaModuleBlueprints.flatMap(buildProcuraduriaSituationalQuestions)
+export const procuraduriaTransferQuestions: Question[] = procuraduriaModuleBlueprints.flatMap(buildProcuraduriaTransferQuestions)
 
 export const procuraduriaContentStats = {
   modules: procuraduriaModules.length,

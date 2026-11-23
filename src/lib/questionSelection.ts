@@ -24,6 +24,17 @@ export function examProfilesForCourse(course: Course): ExamProfile[] {
   const hasIntegratedCases = course.questions.some((question) => question.integrated && (question.relatedModuleIds?.length ?? 0) > 0)
 
   return [
+    ...(course.id === 'procuraduria-104-2026-3pu15' ? [{
+      id: 'functional-deep' as const,
+      title: 'Expedientes complejos · Procuraduría',
+      shortTitle: 'Expedientes',
+      description: '20 decisiones con contexto amplio, datos contradictorios y efectos de cambiar hechos. Incluye ofimática y gestión institucional dentro de situaciones de trabajo.',
+      size: 20,
+      scopeLabel: 'Casos de transferencia de conocimientos comunes y específicos del empleo',
+      questionTypeLabel: 'Situaciones profesionales · 3 alternativas de entrenamiento',
+      kind: 'functional' as const,
+      integratedTarget: 4,
+    }] : []),
     ...(course.id === 'dian-2676-gestor-ii' ? [{
       id: 'functional-deep' as const,
       title: 'Expedientes profesionales · PJS',
@@ -197,6 +208,8 @@ export function selectExamQuestions(course: Course, profileId: ExamProfileId): Q
 
   // La GOA de DIAN 2676 establece tres opciones de juicio situacional en funcionales.
   // Los ítems conceptuales se conservan en estudio y repaso mixto, no en el simulacro funcional.
-  const pool = available.filter((question) => examModuleIds.has(question.moduleId) && (course.id !== 'dian-2676-gestor-ii' || question.type === 'pjs') && (profile.id !== 'functional-deep' || question.id.startsWith('q-goa26-') || question.id.startsWith('q-master-2026-') || question.id.startsWith('q-transversal-2026-')))
+  const pool = available.filter((question) => examModuleIds.has(question.moduleId) && (course.id !== 'dian-2676-gestor-ii' || question.type === 'pjs') && (profile.id !== 'functional-deep' || (course.id === 'dian-2676-gestor-ii'
+    ? (question.id.startsWith('q-goa26-') || question.id.startsWith('q-master-2026-') || question.id.startsWith('q-transversal-2026-'))
+    : (question.integrated || question.id.startsWith('pgn-dossier-') || question.id.includes('-transfer-')))))
   return takeWeightedByModule(pool, profile.size, priorityModuleIds, profile.size >= Math.min(examModuleIds.size, profile.size), profile.integratedTarget ?? 0)
 }
