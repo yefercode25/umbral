@@ -27,7 +27,7 @@ export function ProcuraduriaLessonDiagram({ moduleId, lessonOrder }: { moduleId:
 }
 
 /** Sustituye la lista repetida de pasos por una ruta visual específica de cada módulo. */
-export function ProcuraduriaStepFlow({ title, steps, moduleId }: { title: string; steps: string[]; moduleId?: string }) {
+export function ProcuraduriaStepFlow({ title, steps, moduleId }: { title: string; steps: string[]; moduleId?: string | undefined }) {
   const diagram = moduleId ? getProcuraduriaLessonVisual(moduleId, 2) : null
   return <section className={styles.flow} aria-label={title}>
     <h3><Route size={19} aria-hidden="true"/>{title}</h3>
