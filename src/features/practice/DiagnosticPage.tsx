@@ -6,6 +6,7 @@ import { Button } from '../../components/ui/Button'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { getCourseFromSearchParams, withCourse } from '../../lib/courseQuery'
 import { selectBalancedQuestions } from '../../lib/questionSelection'
+import { practiceQuestionPool } from '../../lib/practiceQuestionPool'
 import { useProgressStore } from '../../stores/progressStore'
 import type { Question } from '../../types/course'
 import { optionLabel, questionOptionsForDisplay } from '../../lib/questionPresentation'
@@ -22,9 +23,10 @@ function formatElapsed(seconds: number) {
 
 function buildDiagnosticPool(course: ReturnType<typeof getCourseFromSearchParams>) {
   const configuredIds = course.practiceConfig?.diagnosticModuleIds
-  if (!configuredIds?.length) return course.questions
+  const available = practiceQuestionPool(course)
+  if (!configuredIds?.length) return available
   const modules = new Set(configuredIds)
-  return course.questions.filter((question) => modules.has(question.moduleId))
+  return available.filter((question) => modules.has(question.moduleId))
 }
 
 export function DiagnosticPage() {
