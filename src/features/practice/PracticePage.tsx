@@ -30,6 +30,7 @@ export function PracticePage() {
 
   const setMode = (next: Mode) => {
     const params = new URLSearchParams({ course: course.slug })
+    if (selectedModule) params.set('module', selectedModule.id)
     if (next !== 'all') params.set('mode', next)
     setSearchParams(params, { replace: true })
   }
