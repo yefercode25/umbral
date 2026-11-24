@@ -1371,6 +1371,417 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "12, 14, 160, 222"
     ]
+  ],
+  "pgn-m20": [
+    [
+      "Una entidad abrió investigación por una conducta realizada cuando estaba vigente una norma disciplinaria que la tipificaba. Antes del fallo entra en vigor una disposición sustancial que elimina la infracción, sin que exista un régimen especial que impida examinar la favorabilidad.",
+      "¿Qué efecto debe analizar el funcionario ante esa sucesión normativa?",
+      [
+        "Aplicar preferentemente la disposición posterior favorable y motivar su incidencia.",
+        "Aplicar exclusivamente la norma vigente al momento de la conducta investigada.",
+        "Aplicar la disposición posterior solo cuando se haya ejecutado la sanción."
+      ],
+      [
+        "La favorabilidad permite aplicar la norma posterior más benigna.",
+        "La legalidad temporal no excluye la favorabilidad.",
+        "No se exige que la sanción haya sido ejecutada."
+      ],
+      "4, 8"
+    ],
+    [
+      "Un equipo propone sancionar al responsable de una dependencia porque una pérdida patrimonial ocurrió durante su gestión. Los soportes prueban el resultado, pero no acreditan una infracción funcional personalmente imputable ni su modalidad subjetiva.",
+      "¿Qué principio impide fundamentar la sanción únicamente en el resultado?",
+      [
+        "La culpabilidad y la proscripción de responsabilidad objetiva.",
+        "La proporcionalidad como criterio exclusivo de graduación de sanciones.",
+        "La economía procesal como regla de distribución de cargas probatorias."
+      ],
+      [
+        "La sanción exige dolo o culpa sancionable.",
+        "Graduar no resuelve si existe responsabilidad.",
+        "Economía no autoriza presumir culpabilidad."
+      ],
+      "9–10"
+    ],
+    [
+      "Una funcionaria es investigada por hechos que también estudia una autoridad penal. El equipo disciplinario propone archivar de inmediato porque la Fiscalía inició una actuación por la misma conducta, aunque todavía no existe ninguna decisión de fondo.",
+      "¿Qué relación existe entre ambas acciones frente a ese único dato?",
+      [
+        "La acción disciplinaria es independiente y debe examinar sus propios presupuestos.",
+        "La apertura penal extingue la acción disciplinaria por identidad de hechos.",
+        "La actuación disciplinaria queda suspendida hasta la decisión penal definitiva."
+      ],
+      [
+        "Cada acción protege bienes y aplica reglas propias.",
+        "La apertura penal no extingue la acción disciplinaria.",
+        "No existe suspensión automática por esa sola circunstancia."
+      ],
+      "2"
+    ],
+    [
+      "El despacho cuenta con indicios de cargo y una prueba de descargo que no logra desvirtuar. Terminada la etapa de juicio, persiste una duda razonable insuperable sobre la responsabilidad; no hay otra diligencia pertinente que permita resolverla.",
+      "¿Qué consecuencia tiene esa duda en la decisión de fondo?",
+      [
+        "Resolver la duda razonable en favor de la persona disciplinada.",
+        "Imponer la sanción mínima debido a la incertidumbre probatoria.",
+        "Exigir que la defensa demuestre su inocencia para evitar el fallo sancionatorio."
+      ],
+      [
+        "La presunción de inocencia impone resolver la duda razonable favorablemente.",
+        "La graduación no remedia insuficiencia probatoria.",
+        "La carga probatoria corresponde al Estado."
+      ],
+      "14, 147, 160"
+    ],
+    [
+      "Una oficina propone aumentar la sanción por encima del máximo legal porque el hecho generó amplia cobertura mediática y numerosas críticas ciudadanas. La falta y su modalidad subjetiva ya fueron determinadas conforme a la ley aplicable.",
+      "¿Qué límite debe respetar el funcionario al individualizar la sanción?",
+      [
+        "Mantener la sanción dentro del marco legal con criterios de proporcionalidad.",
+        "Exceder el máximo cuando la exposición pública haya afectado la entidad.",
+        "Aplicar una sanción diferente a la prevista para asegurar prevención general."
+      ],
+      [
+        "La proporcionalidad opera dentro del marco normativo aplicable.",
+        "La cobertura mediática no amplía el máximo legal.",
+        "La finalidad preventiva no permite inventar sanciones."
+      ],
+      "4–6, 48"
+    ],
+    [
+      "El investigado recibe un fallo sancionatorio de primera instancia y presenta oportunamente el recurso procedente. La oficina de talento humano registra que ya existe responsabilidad ejecutoriada, aunque la segunda instancia está pendiente y el recurso fue concedido.",
+      "¿En qué momento cesa la presunción de inocencia del disciplinado?",
+      [
+        "Cuando queda ejecutoriada una decisión que declara su responsabilidad disciplinaria.",
+        "Cuando se notifica cualquier fallo sancionatorio de primera instancia.",
+        "Cuando el instructor formula cargos y remite el expediente a juicio."
+      ],
+      [
+        "La presunción se mantiene hasta fallo ejecutoriado.",
+        "La notificación no equivale necesariamente a ejecutoria.",
+        "El pliego no declara responsabilidad definitiva."
+      ],
+      "14"
+    ],
+    [
+      "Una autoridad pretende utilizar una declaración obtenida mediante vulneración acreditada de garantías fundamentales porque coincide con otras fuentes del expediente. La defensa identifica el defecto durante el juicio y pide examinar su efecto probatorio.",
+      "¿Qué tratamiento corresponde a esa declaración obtenida de manera ilícita?",
+      [
+        "Excluir la prueba vulneratoria y valorar por separado los medios restantes.",
+        "Mantenerla por su coincidencia con las demás fuentes incorporadas legalmente.",
+        "Reducir su peso probatorio y conservarla como indicio secundario del hecho."
+      ],
+      [
+        "La cláusula de exclusión impide emplear la prueba ilícita.",
+        "La corroboración no sana la vulneración fundamental.",
+        "Menor peso no reemplaza la exclusión legal."
+      ],
+      "21, 158"
+    ],
+    [
+      "Dos servidores son investigados por hechos similares. En uno de los expedientes se propone limitar la contradicción probatoria por la afiliación política del investigado, pese a que ambos casos se encuentran en condiciones procesales equivalentes.",
+      "¿Qué regla debe orientar el tratamiento de ambos expedientes?",
+      [
+        "Garantizar igualdad procesal sin restringir derechos por afiliación política.",
+        "Establecer garantías distintas según la posición política del servidor investigado.",
+        "Compensar la diferencia de trato mediante una sanción de menor gravedad."
+      ],
+      [
+        "La igualdad proscribe discriminación durante el proceso.",
+        "La afiliación no justifica trato procesal desigual.",
+        "Una sanción menor no repara la privación de defensa."
+      ],
+      "7"
+    ],
+    [
+      "Un despacho conoce una actuación contra un servidor que ya fue juzgado mediante fallo disciplinario ejecutoriado por el mismo hecho y fundamento. No se invoca ninguna excepción legal ni mecanismo extraordinario que permita revisar esa decisión.",
+      "¿Qué principio impide iniciar nuevamente el juicio disciplinario descrito?",
+      [
+        "La prohibición de doble juzgamiento por el mismo hecho disciplinario.",
+        "La favorabilidad, porque toda decisión anterior resulta necesariamente más benigna.",
+        "La prescripción, aun cuando no haya transcurrido el término legal."
+      ],
+      [
+        "La cosa juzgada protege frente a un nuevo juzgamiento idéntico.",
+        "No depende de comparar normas sucesivas.",
+        "No exige que haya prescrito la acción."
+      ],
+      "16"
+    ]
+  ],
+  "pgn-m21": [
+    [
+      "Una entidad detecta una posible falta cometida por un funcionario mientras ejercía su cargo. Al momento de recibir la noticia el servidor ya se retiró de la administración; la acción sigue vigente y los documentos permiten identificarlo plenamente.",
+      "¿Qué efecto tiene el retiro sobre su condición de destinatario disciplinario?",
+      [
+        "Puede ser investigado por la conducta realizada mientras ejercía el cargo.",
+        "Solo puede ser investigado si vuelve a vincularse a la entidad.",
+        "El retiro extingue la acción por desaparecer la relación de servicio."
+      ],
+      [
+        "El art. 25 comprende servidores retirados.",
+        "Una nueva vinculación no es presupuesto de la acción.",
+        "El retiro no es causal legal de extinción."
+      ],
+      "25, 32"
+    ],
+    [
+      "Una persona natural presta mantenimiento de impresoras mediante contrato estatal. No ejerce potestades públicas, no administra recursos públicos, no supervisa contratos ni actúa como auxiliar de justicia. Se reporta un posible incumplimiento contractual.",
+      "¿Qué conclusión procede respecto de su calidad disciplinable bajo el régimen de particulares?",
+      [
+        "No se configura por la sola celebración de un contrato estatal.",
+        "Se configura porque cualquier contratista recibe pagos de origen público.",
+        "Se configura porque todo mantenimiento equivale a ejercer función pública."
+      ],
+      [
+        "El art. 70 exige alguno de sus supuestos específicos.",
+        "Recibir un pago no equivale a administrar recursos públicos.",
+        "El soporte técnico no implica prerrogativas exclusivas del Estado."
+      ],
+      "70"
+    ],
+    [
+      "Un particular contratado como interventor certifica actividades ejecutadas en una obra estatal. Se denuncia una posible infracción propia de esa labor y el informe acredita su identidad y las obligaciones asumidas mediante el contrato de interventoría.",
+      "¿Qué presupuesto subjetivo se cumple para estudiar el caso disciplinariamente?",
+      [
+        "La condición de particular que realiza labores de interventoría contractual estatal.",
+        "La calidad de servidor público de carrera por supervisar recursos estatales.",
+        "La condición de auxiliar de justicia por emitir certificaciones técnicas contractuales."
+      ],
+      [
+        "La interventoría está prevista expresamente en el art. 70.",
+        "No se transforma por ello en empleado de carrera.",
+        "Certificar obras no implica auxiliar a un juez."
+      ],
+      "69–70"
+    ],
+    [
+      "Una empresa privada presta un servicio público domiciliario mediante actividad ordinaria de operación. La denuncia cuestiona un incumplimiento operativo, pero no acredita que la persona investigada haya ejercido una función pública ni otro supuesto del artículo 70.",
+      "¿Qué criterio distingue servicio público de función pública disciplinable en este supuesto?",
+      [
+        "Verificar si ejerció prerrogativas estatales o concurre otro supuesto legal.",
+        "Considerar disciplinable a todo operador por prestar un servicio público.",
+        "Descartar cualquier responsabilidad de particulares sin revisar sus funciones efectivas."
+      ],
+      [
+        "El servicio público no equivale necesariamente a función pública.",
+        "El art. 70 distingue ambas actividades.",
+        "Los particulares sí pueden ser disciplinables bajo condiciones legales."
+      ],
+      "70"
+    ],
+    [
+      "Una fundación privada recibe recursos públicos destinados a un programa específico y su representante decide su uso. Una revisión identifica soportes de disposición de esos fondos que podrían acreditar una conducta incluida en el régimen disciplinario especial.",
+      "¿Qué circunstancia sustenta examinar su condición de particular disciplinable?",
+      [
+        "La administración o disposición de recursos públicos destinados a fines específicos.",
+        "La existencia de cualquier relación comercial con una entidad del Estado.",
+        "La sola inscripción de la fundación como persona jurídica sin ánimo de lucro."
+      ],
+      [
+        "Administrar recursos públicos constituye un supuesto del art. 70.",
+        "Una relación comercial no demuestra administración de recursos.",
+        "La naturaleza jurídica de la entidad no basta por sí sola."
+      ],
+      "70"
+    ],
+    [
+      "Durante una investigación por falta atribuida a un particular disciplinable y a un servidor público se acredita que ambos participaron en hechos conexos. La oficina de control interno pretende asumir todo el expediente porque el servidor pertenece a su entidad.",
+      "¿Qué autoridad debe conocer los hechos conexos de ambos disciplinables?",
+      [
+        "La Procuraduría General de la Nación, conforme a su competencia exclusiva.",
+        "La oficina de control disciplinario interno por la pertenencia del servidor.",
+        "La personería municipal por la naturaleza territorial de los hechos investigados."
+      ],
+      [
+        "La conexidad entre particular y servidor activa competencia exclusiva de PGN.",
+        "El vínculo del servidor no desplaza la regla especial.",
+        "La territorialidad tampoco sustituye la competencia exclusiva."
+      ],
+      "92"
+    ],
+    [
+      "Un particular ejerce una función pública transitoria y se acredita esa condición. El proyecto de cargos pretende imputarle una falta leve prevista para servidores públicos, sin identificar ninguna conducta del catálogo especial del régimen de particulares.",
+      "¿Qué límite material debe observarse antes de formular esa imputación?",
+      [
+        "Verificar si la conducta corresponde a las faltas gravísimas del catálogo especial.",
+        "Aplicar directamente las faltas leves de servidores por ejercer una función pública.",
+        "Escoger cualquier falta general que tenga una descripción semejante a los hechos."
+      ],
+      [
+        "Los particulares de ese título responden por su catálogo especial.",
+        "Ejercer función pública no elimina el régimen diferenciado.",
+        "La semejanza no sustituye la tipicidad legal."
+      ],
+      "69, 72"
+    ],
+    [
+      "Un servidor público es enviado temporalmente al exterior en cumplimiento de sus funciones. Durante la comisión se reporta una conducta que podría vulnerar sus deberes funcionales. El equipo descarta estudiar los hechos por haber sucedido fuera de Colombia.",
+      "¿Qué regla determina el ámbito territorial de la ley disciplinaria?",
+      [
+        "Se aplica a sus destinatarios incluso por faltas cometidas fuera del país.",
+        "Solo se aplica a hechos realizados en territorio colombiano durante el servicio.",
+        "Se aplica en el exterior únicamente cuando existe una condena penal previa."
+      ],
+      [
+        "El art. 24 prevé ámbito dentro y fuera del territorio nacional.",
+        "La ubicación geográfica no excluye la acción.",
+        "No se exige condena penal previa."
+      ],
+      "24"
+    ],
+    [
+      "Una queja identificada motivó una actuación por una posible falta disciplinaria. Posteriormente el quejoso presenta desistimiento escrito y solicita que se cierre todo el expediente, aunque permanecen elementos de relevancia disciplinaria por esclarecer.",
+      "¿Qué efecto jurídico tiene el desistimiento sobre la acción disciplinaria?",
+      [
+        "No extingue la acción; debe continuarse o decidirse según sus presupuestos.",
+        "Extingue la acción cuando el quejoso es la única fuente inicial.",
+        "Obliga a archivar salvo que exista una denuncia penal por los hechos."
+      ],
+      [
+        "El parágrafo del art. 32 excluye ese efecto extintivo.",
+        "El origen de la noticia no altera la regla.",
+        "La acción disciplinaria no depende de denuncia penal."
+      ],
+      "32, 85–86"
+    ]
+  ],
+  "pgn-m22": [
+    [
+      "El informe demuestra que un servidor omitió impedir una alteración de datos. Su cargo incluía el deber jurídico de evitarla y disponía de medios efectivos para hacerlo; el expediente aún debe establecer los demás elementos de la falta y la responsabilidad.",
+      "¿Qué relación normativa existe entre esa omisión y el resultado producido?",
+      [
+        "No impedir el resultado pudiendo hacerlo equivale jurídicamente a producirlo.",
+        "Toda omisión equivale a producir el resultado aunque falte deber jurídico.",
+        "La omisión solo puede sancionarse cuando existe daño patrimonial cuantificado."
+      ],
+      [
+        "La equivalencia exige deber jurídico y posibilidad de impedir el resultado.",
+        "No toda omisión cumple esos presupuestos.",
+        "El daño patrimonial no es requisito universal."
+      ],
+      "27"
+    ],
+    [
+      "Un funcionario conoce los hechos que constituyen la falta, entiende que su conducta es ilícita y decide ejecutarla deliberadamente. El equipo debe calificar la modalidad subjetiva sin confundirla con los criterios de gravedad de la infracción.",
+      "¿Qué modalidad subjetiva describen los elementos expresamente acreditados en el caso?",
+      [
+        "Dolo, por conocimiento de la falta y voluntad de realizarla.",
+        "Culpa gravísima, por cualquier infracción manifiesta de una regla obligatoria.",
+        "Culpa grave, por ausencia del cuidado ordinario en las actuaciones."
+      ],
+      [
+        "El art. 28 exige conocimiento y voluntad.",
+        "La culpa no describe la voluntad ilícita acreditada.",
+        "La negligencia no equivale a querer el hecho."
+      ],
+      "28–29"
+    ],
+    [
+      "Un servidor prevé que omitir una verificación obligatoria puede generar una inconsistencia, pero confía en que logrará evitarla mediante otro control. Finalmente incumple el deber de cuidado y se produce el hecho, sin que se acredite voluntad de realizar la falta.",
+      "¿Qué modalidad debe examinarse conforme a esa previsión del resultado?",
+      [
+        "Culpa, porque previó el hecho y confió en poder evitarlo.",
+        "Dolo, porque toda previsión del resultado equivale a voluntad de realizarlo.",
+        "Responsabilidad objetiva, porque el resultado se produjo durante el ejercicio funcional."
+      ],
+      [
+        "La culpa comprende previsión con confianza de evitación.",
+        "Prever no equivale necesariamente a querer.",
+        "El resultado no basta para atribuir responsabilidad."
+      ],
+      "10, 28–29"
+    ],
+    [
+      "El expediente acredita un incumplimiento funcional, pero la modalidad subjetiva que logra demostrarse corresponde únicamente a culpa leve. No existe prueba que permita calificarla como culpa grave, gravísima o dolo bajo los presupuestos del Código.",
+      "¿Qué efecto tiene esa modalidad subjetiva en materia disciplinaria?",
+      [
+        "La culpa leve no resulta sancionable conforme al Código disciplinario.",
+        "La culpa leve permite imponer la amonestación escrita prevista para faltas leves.",
+        "La culpa leve se convierte automáticamente en culpa grave si existe afectación funcional."
+      ],
+      [
+        "Solo la culpa grave y gravísima son sancionables.",
+        "Falta leve y culpa leve son categorías diferentes.",
+        "La afectación no cambia automáticamente la modalidad de culpa."
+      ],
+      "29, 48"
+    ],
+    [
+      "Una autoridad comprueba que un servidor incumplió una regla por una orden de su superior que era manifiestamente ilegítima. La defensa invoca obediencia jerárquica como causal automática de exclusión, aunque no acredita otros supuestos de exclusión.",
+      "¿Qué presupuesto falta para aplicar la causal de cumplimiento de una orden?",
+      [
+        "Que la orden sea legítima, de autoridad competente y legalmente formalizada.",
+        "Que la orden provenga de un superior, con independencia de su legitimidad.",
+        "Que el servidor haya documentado posteriormente que actuó por instrucciones recibidas."
+      ],
+      [
+        "La causal exige legitimidad, competencia y formalidades legales.",
+        "La jerarquía sola no exonera.",
+        "Documentar una orden ilegítima no la transforma en legítima."
+      ],
+      "31.4"
+    ],
+    [
+      "El disciplinado incumplió una obligación porque se produjo un evento externo, irresistible e imprevisible que hizo imposible cumplirla y no existía una alternativa razonable. El hecho y la imposibilidad están plenamente acreditados en el expediente.",
+      "¿Qué causal de exclusión corresponde examinar en este supuesto acreditado?",
+      [
+        "La fuerza mayor como circunstancia excluyente de responsabilidad disciplinaria.",
+        "La favorabilidad como criterio para reducir automáticamente la sanción disciplinaria.",
+        "La culpa grave por no haber previsto cualquier contingencia operativa posible."
+      ],
+      [
+        "La fuerza mayor excluye responsabilidad en los términos legales.",
+        "No se trata de sucesión normativa.",
+        "El supuesto acreditado niega una alternativa razonable de cumplimiento."
+      ],
+      "31.1"
+    ],
+    [
+      "Un servidor adopta una actuación bajo un error de hecho vencible. La autoridad comprueba que la conducta está prevista como falta, pero el análisis normativo demuestra que dicha falta no admite la modalidad culposa; no existe prueba de dolo.",
+      "¿Qué límite tiene la sanción por error de hecho vencible?",
+      [
+        "Solo puede sancionarse a título de culpa si la falta admite esa modalidad.",
+        "Se sanciona necesariamente como dolo porque el error era superable.",
+        "Se sanciona siempre a título de culpa, aunque la falta no la admita."
+      ],
+      [
+        "El art. 31 condiciona sanción culposa a la modalidad admitida.",
+        "Error vencible no acredita voluntad dolosa.",
+        "No se puede crear una modalidad no prevista."
+      ],
+      "31.8"
+    ],
+    [
+      "Un servidor incumple una obligación de menor relevancia para atender estrictamente un deber legal de mayor importancia que no podía satisfacer simultáneamente. El expediente acredita el conflicto concreto y la necesidad de sacrificar el deber menor.",
+      "¿Qué causal de exclusión debe valorar la autoridad disciplinaria?",
+      [
+        "El cumplimiento estricto de un deber constitucional o legal de mayor importancia.",
+        "La obediencia jerárquica, aunque no exista ninguna orden de un superior.",
+        "El error invencible de derecho, aunque el servidor conozca ambas obligaciones."
+      ],
+      [
+        "La prevalencia del deber superior está prevista como causal autónoma.",
+        "No se describe cumplimiento de orden jerárquica.",
+        "No se acredita error sobre la regla aplicable."
+      ],
+      "31.3"
+    ],
+    [
+      "Una falta se atribuye a un servidor cuya conducta presenta una desviación formal. El expediente acredita que no se afectó sustancialmente el deber funcional; solo se contrarió en menor grado el orden administrativo interno de la dependencia.",
+      "¿Qué respuesta distingue el caso de una falta disciplinaria sancionable?",
+      [
+        "Adoptar medidas correctivas internas pertinentes sin generar antecedente disciplinario.",
+        "Imponer amonestación escrita porque toda desviación formal es una falta leve.",
+        "Formular cargos y graduar la sanción únicamente por el bajo impacto."
+      ],
+      [
+        "El art. 68 contempla preservación del orden interno sin afectación sustancial.",
+        "No toda desviación configura falta disciplinaria.",
+        "Graduar no suple la ausencia de ilicitud sustancial."
+      ],
+      "9, 68"
+    ]
   ]
 }
 

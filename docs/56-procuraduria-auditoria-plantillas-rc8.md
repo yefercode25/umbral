@@ -19,3 +19,6 @@ Se sustituyen frases repetidas por supuestos concretos, distractores de figuras 
 
 ## Lote 1E (M33–M34)
 18 reactivos adicionales; acumulado 90/765 (11,76 %), quedan 675. M33: comisión fuera de sede, límites de comisión, pruebas derivadas, ampliación, remisión electrónica, notificación comisionada. M34: separación funcional, integridad de entrega, elección de juicio, variación de cargos por error frente a prueba sobreviniente, confesión y valoración independiente. CGD arts. 12–14, 90, 124, 127, 148, 152, 160–162, 202–203, 223, 225, 225A y 225D; consulta de compilación oficial PGN. Se añade referencia C-570/2019 al reactivo pertinente del lote previo. Regresión acumulativa de 90 casos; no se cambia selección de simulacros.
+
+## Lote 1F (M20–M22)
+27 reactivos adicionales; acumulado 117/765 (15,29 %), quedan 648. M20: principios, favorabilidad, independencia, culpabilidad, igualdad, exclusión, presunción y cosa juzgada. M21: destinatarios retirados, particulares, recursos, conexidad y extinción. M22: acción/omisión, dolo, culpa, error, fuerza mayor, deber prevalente, orden legítima y orden interno. Contraste: [CGD consolidado PGN](https://apps.procuraduria.gov.co/normograma/compilacion/docs/ley_1952_2019.htm), arts. 2–21, 24–32, 68–72, 92, 147, 158 y 160. Se mantienen IDs, claves, metadatos y selección histórica.
