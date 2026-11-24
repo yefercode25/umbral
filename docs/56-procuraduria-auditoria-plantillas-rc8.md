@@ -34,3 +34,6 @@ Se sustituyen frases repetidas por supuestos concretos, distractores de figuras 
 
 ## Lote 2C (M40–M41)
 18 adicionales; acumulado 198/765 (25,88 %), quedan 567. M40: noticia y anexos, original/copia, autenticidad, documentos reservados, requerimientos, tacha, informes y mensajes de datos. M41: excepción constitucional, renuencia, secreto profesional, examen separado, interrogatorio, certificación, requisitos y oportunidad de confesión. CGD arts. 149, 159, 161–175, 187–195 y Ley 527/1999 arts. 10–11 ([Gestor Normativo](https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=4276)). Mantiene claves y selección histórica.
+
+## Lote 2D (M42–M44)
+27 adicionales; acumulado 225/765 (29,41 %), quedan 540. Cierra derecho probatorio M35–M44 (90 reactivos). M42: idoneidad, corrección, traslado, objeción, discrepancia, responsabilidad, impedimentos y valoración de dictámenes. M43: decreto de inspección, ampliación, testimonios, cadena de custodia, designación y traslado. M44: integridad, alcance de hash, custodia, UTC, preservación, discrepancias, legalidad, transformación y reproducibilidad. Contraste CGD arts. 21, 148–159, 177–186; referencias técnicas (no normas procesales colombianas) [NIST SP 800-86](https://csrc.nist.gov/pubs/sp/800/86/final) y [NIST SP 800-92](https://csrc.nist.gov/pubs/sp/800/92/final). Mantiene claves y selección histórica.

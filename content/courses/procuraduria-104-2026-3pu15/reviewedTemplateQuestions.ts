@@ -3015,6 +3015,417 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "162"
     ]
+  ],
+  "pgn-m42": [
+    [
+      "La autoridad requiere un dictamen para establecer si un registro informático fue alterado. El experto designado tiene experiencia en análisis contable, pero no acredita conocimientos sobre sistemas, metadatos ni reconstrucción de eventos digitales.",
+      "¿Qué debe verificar el despacho antes de permitir que el experto rinda el dictamen?",
+      [
+        "Su idoneidad y experiencia específicas en la materia objeto de prueba.",
+        "Su antigüedad como profesional, sin considerar la especialidad de la prueba.",
+        "La sola aceptación del encargo, que reemplaza la acreditación de conocimientos técnicos."
+      ],
+      [
+        "El art. 179 exige idoneidad y experiencia en la materia.",
+        "La antigüedad no sustituye competencia específica.",
+        "Aceptar el encargo no demuestra idoneidad."
+      ],
+      "177, 179"
+    ],
+    [
+      "Un dictamen pericial presenta una conclusión sobre alteración de archivos, pero no identifica las muestras examinadas, los procedimientos aplicados ni las razones técnicas que sustentan el resultado. El despacho recibe el documento antes de correr traslado.",
+      "¿Qué actuación corresponde antes de trasladar el dictamen a los sujetos procesales?",
+      [
+        "Devolverlo al perito para que corrija o complete los requisitos incumplidos.",
+        "Correr traslado inmediatamente y dejar toda revisión metodológica para los alegatos.",
+        "Aceptar la conclusión como suficiente por tratarse de un perito posesionado."
+      ],
+      [
+        "El art. 180 exige verificar cumplimiento antes del traslado.",
+        "No se omite el examen previo por existir contradicción posterior.",
+        "La posesión no reemplaza motivación y metodología."
+      ],
+      "179–180"
+    ],
+    [
+      "El perito designado acredita experiencia y presenta un dictamen que satisface todos los requisitos. La decisión se notifica por estado durante la investigación y debe abrirse la oportunidad para que los sujetos soliciten aclaraciones o complementaciones.",
+      "¿Qué término común corresponde al traslado del dictamen pericial en este supuesto?",
+      [
+        "Tres días para solicitar aclaración, complementación o adición.",
+        "Cinco días para solicitar aclaración, complementación o adición.",
+        "Diez días para solicitar aclaración, complementación o adición."
+      ],
+      [
+        "El art. 180 fija traslado común de tres días.",
+        "Cinco días corresponden al término máximo concedido al perito para aclarar.",
+        "Diez días no es el término de traslado pericial."
+      ],
+      "177, 180"
+    ],
+    [
+      "Dos sujetos procesales presentan solicitudes distintas frente al mismo dictamen: uno solicita aclaración y otro formula una objeción motivada por error grave. Ambas cumplen las exigencias legales y la autoridad debe resolver su orden de trámite.",
+      "¿Cuál solicitud debe decidir primero el funcionario competente en este supuesto?",
+      [
+        "La objeción por error grave antes de resolver la solicitud de aclaración.",
+        "La aclaración, porque siempre debe agotarse antes de cualquier objeción técnica.",
+        "Ambas simultáneamente mediante un nuevo dictamen sin resolver previamente las solicitudes."
+      ],
+      [
+        "El art. 180 da prioridad a la objeción cuando concurren solicitudes.",
+        "No se exige agotar primero la aclaración.",
+        "La concurrencia tiene un orden legal específico."
+      ],
+      "180"
+    ],
+    [
+      "La autoridad acepta una objeción por error grave y designa a un nuevo perito conforme al procedimiento. Al recibirse el segundo dictamen, la defensa pretende formular otra objeción por error grave contra ese nuevo documento.",
+      "¿Qué medio de contradicción permite el Código frente a ese nuevo dictamen?",
+      [
+        "Solicitar aclaración o complementación, pues el nuevo dictamen es inobjetable.",
+        "Formular otra objeción por error grave bajo idénticas reglas del dictamen inicial.",
+        "Excluir el dictamen sin solicitar aclaración por haberse producido tras una objeción."
+      ],
+      [
+        "El art. 180 dispone inobjetabilidad con posibilidad de aclarar o complementar.",
+        "No cabe repetir la objeción contra ese nuevo dictamen.",
+        "La inobjetabilidad no implica exclusión."
+      ],
+      "180, 183"
+    ],
+    [
+      "Dos peritos fueron designados para estudiar conjuntamente una inconsistencia técnica. Ambos practicaron las diligencias y examinaron los datos, pero llegaron a conclusiones diferentes sobre el origen de la modificación investigada.",
+      "¿Cómo deben presentar sus conclusiones ante la discrepancia técnica descrita?",
+      [
+        "Cada perito debe rendir su dictamen por separado ante la discrepancia.",
+        "El perito con mayor experiencia debe imponer su conclusión al otro experto.",
+        "Ambos deben presentar un dictamen único omitiendo las diferencias técnicas relevantes."
+      ],
+      [
+        "El art. 179 contempla dictámenes separados en caso de discrepancia.",
+        "La experiencia no autoriza imponer una conclusión a otro perito.",
+        "Ocultar diferencias impide conocer el desacuerdo."
+      ],
+      "179"
+    ],
+    [
+      "Un experto informático identifica que un archivo fue modificado utilizando determinada cuenta y concluye que el servidor titular actuó con dolo disciplinario. El instructor debe valorar el informe sin confundir el hallazgo técnico y la decisión jurídica.",
+      "¿Qué límite legal debe observar el perito al rendir su dictamen técnico?",
+      [
+        "Abstenerse de emitir juicios de responsabilidad disciplinaria y delimitar sus conclusiones técnicas.",
+        "Determinar la responsabilidad disciplinaria cuando su análisis identifica una cuenta institucional.",
+        "Calificar jurídicamente el dolo si el funcionario aún no ha formulado cargos."
+      ],
+      [
+        "El art. 179 prohíbe juicios de responsabilidad disciplinaria en dictámenes.",
+        "Identificar una cuenta no atribuye competencia jurídica al experto.",
+        "La etapa no modifica esa prohibición."
+      ],
+      "179, 182"
+    ],
+    [
+      "Un perito designado reconoce antes de tomar posesión que mantiene un interés directo en el resultado de la actuación. Aporta documentos que acreditan la situación y consulta si puede rendir el dictamen mientras se estudia su declaración.",
+      "¿Qué trámite debe seguir respecto de la causal que afecta su imparcialidad?",
+      [
+        "Manifestar el impedimento antes de posesionarse y permitir que la autoridad resuelva.",
+        "Posesionarse y rendir el dictamen, revelando el impedimento al presentar sus conclusiones.",
+        "Solicitar autorización informal de los sujetos procesales para conservar la designación."
+      ],
+      [
+        "El art. 178 exige manifestar la causal antes de la posesión.",
+        "No debe diferir el impedimento hasta el dictamen.",
+        "La decisión corresponde a la autoridad competente."
+      ],
+      "178"
+    ],
+    [
+      "El despacho cuenta con dos dictámenes legalmente practicados sobre una misma cuestión. El segundo utiliza un método diferente y no ha prosperado objeción por error grave contra el primero. El proyecto propone valorar únicamente el más reciente.",
+      "¿Qué regla debe aplicar al apreciar los dos dictámenes disponibles?",
+      [
+        "Valorarlos conjuntamente atendiendo su fundamentación, precisión e idoneidad de los expertos.",
+        "Sustituir automáticamente el primero por el segundo debido a su fecha posterior.",
+        "Asignar idéntico mérito a ambos sin analizar sus métodos o fundamentos."
+      ],
+      [
+        "El art. 182 ordena apreciación conjunta salvo la excepción indicada.",
+        "El segundo no sustituye automáticamente al primero.",
+        "La apreciación conjunta exige valorar calidad técnica."
+      ],
+      "182–183"
+    ]
+  ],
+  "pgn-m43": [
+    [
+      "Se investiga la desaparición de varios equipos y se requiere verificar directamente las condiciones del almacén donde fueron registrados. El despacho competente considera ordenar una diligencia para observar bienes, lugares y otros efectos materiales relevantes.",
+      "¿Qué medio de prueba permite realizar esa verificación directa conforme al Código?",
+      [
+        "Inspección disciplinaria decretada de oficio o a petición de parte.",
+        "Prueba trasladada mediante copias de actuaciones judiciales o administrativas anteriores.",
+        "Certificación jurada dirigida al responsable del almacén como sustituto de la observación."
+      ],
+      [
+        "El art. 185 permite inspección sobre cosas, lugares y bienes.",
+        "El traslado incorpora pruebas de otra actuación.",
+        "La certificación jurada no sustituye observación directa."
+      ],
+      "185"
+    ],
+    [
+      "Una providencia dispone practicar inspección disciplinaria, pero solo señala que debe visitarse una dependencia sin identificar qué debe verificarse ni su lugar concreto. El funcionario desea subsanar el proyecto antes de notificar la diligencia.",
+      "¿Qué elementos debe expresar con claridad la providencia que decreta la inspección?",
+      [
+        "El objeto y lugar de la diligencia, informando al disciplinable fecha y hora.",
+        "La conclusión probatoria esperada y el posible sentido del fallo disciplinario.",
+        "La sanción probable y el nombre de la persona que debe ser declarada responsable."
+      ],
+      [
+        "El art. 186 exige objeto y lugar, e informar fecha y hora.",
+        "La providencia no anticipa el resultado.",
+        "No corresponde prejuzgar responsabilidad ni sanción."
+      ],
+      "186"
+    ],
+    [
+      "Durante una inspección comisionada se encuentra un testigo presencial que puede comparecer de inmediato y aportar información útil. El funcionario desea recibir su declaración y conservar correctamente la documentación de ambos medios de prueba.",
+      "¿Cómo debe registrar el testimonio recibido durante la inspección disciplinaria?",
+      [
+        "Recibirlo y recogerlo en un formulario distinto del acta de inspección.",
+        "Incluirlo únicamente como una observación material sin distinguir el medio testimonial.",
+        "Diferirlo obligatoriamente a una actuación independiente fuera de toda inspección."
+      ],
+      [
+        "El art. 185 autoriza ese testimonio y exige formulario separado.",
+        "La declaración conserva naturaleza testimonial.",
+        "No es necesario diferirla si cumple los requisitos."
+      ],
+      "185"
+    ],
+    [
+      "En una inspección se identifican elementos materiales útiles para esclarecer los hechos. La autoridad cuenta con autorización para recogerlos y requiere conservarlos de modo que pueda demostrarse su identidad en análisis posteriores.",
+      "¿Qué procedimiento debe observar al recoger y conservar esos elementos útiles?",
+      [
+        "Aplicar los procedimientos de cadena de custodia y documentar el recaudo.",
+        "Trasladarlos sin registro individual hasta que el experto solicite su identificación.",
+        "Registrar únicamente su descripción en el acta y omitir su conservación material."
+      ],
+      [
+        "El art. 185 exige procedimientos de cadena de custodia.",
+        "La identificación posterior no sustituye la trazabilidad inicial.",
+        "La descripción no reemplaza conservar los elementos recogidos."
+      ],
+      "185"
+    ],
+    [
+      "Una inspección se practica con un objeto inicialmente limitado a comprobar un registro. Durante la diligencia aparece un aspecto directamente relacionado que requiere ampliación, y un sujeto procesal solicita incluirlo antes de finalizar la actuación.",
+      "¿Qué facultad contempla el Código durante el trámite de esa inspección?",
+      [
+        "Ampliar los aspectos objeto de la diligencia de oficio o a petición de parte.",
+        "Limitarse siempre al objeto inicial aunque la ampliación esté legalmente justificada.",
+        "Convertir la inspección en una investigación distinta sin delimitar los nuevos aspectos."
+      ],
+      [
+        "El art. 186 permite ampliar aspectos durante el trámite.",
+        "La delimitación inicial no impide ampliación legal.",
+        "La ampliación no habilita cambiar indiscriminadamente de asunto."
+      ],
+      "186"
+    ],
+    [
+      "Durante una inspección el funcionario encuentra una cuestión que exige conocimiento especializado. No se había designado perito en la providencia inicial y el funcionario competente se encuentra practicando personalmente la diligencia.",
+      "¿Qué facultad puede ejercer en ese momento respecto de la necesidad técnica?",
+      [
+        "Designar un perito al momento de practicar la inspección si resulta necesario.",
+        "Suspender definitivamente la diligencia porque la designación solo procede en la providencia inicial.",
+        "Delegar en el experto la decisión de fondo sobre la falta investigada."
+      ],
+      [
+        "El art. 186 permite designar perito durante la diligencia.",
+        "La designación inicial no es la única oportunidad.",
+        "La peritación no transfiere competencia decisoria."
+      ],
+      "186"
+    ],
+    [
+      "Una autoridad requiere incorporar una prueba practicada válidamente en una actuación judicial de otro país. El despacho conoce la autoridad responsable y dispone de una vía regular para obtener copia autorizada del elemento de interés.",
+      "¿Qué criterio determina su eventual traslado a la actuación disciplinaria colombiana?",
+      [
+        "Obtener copia autorizada y apreciarla de acuerdo con las reglas del Código.",
+        "Excluirla por haber sido practicada fuera del territorio nacional colombiano.",
+        "Aceptar como vinculante la valoración jurídica realizada por la autoridad extranjera."
+      ],
+      [
+        "El art. 154 contempla traslado de pruebas válidas del exterior.",
+        "El origen extranjero no impide automáticamente traslado.",
+        "Se realiza valoración autónoma conforme al CGD."
+      ],
+      "154, 159"
+    ],
+    [
+      "La Procuraduría necesita información de una investigación penal en curso sobre evidencias que aún no fueron descubiertas. La autoridad disciplinaria prepara una solicitud y desea evitar que el traslado comprometa las diligencias penales pendientes.",
+      "¿Qué autoridad evalúa qué información puede entregar en ese supuesto especial?",
+      [
+        "El fiscal del caso, considerando la protección y éxito de la investigación penal.",
+        "El juez de conocimiento, en todos los casos antes del descubrimiento de pruebas.",
+        "El funcionario disciplinario, quien determina unilateralmente qué evidencias penales deben entregarse."
+      ],
+      [
+        "El art. 154 asigna esa evaluación al fiscal del caso.",
+        "No exige acudir necesariamente al juez en ese supuesto.",
+        "El requerimiento no elimina la evaluación del fiscal."
+      ],
+      "154"
+    ],
+    [
+      "Se incorpora copia autorizada de una inspección practicada en otro proceso. El documento acredita determinadas condiciones físicas del lugar, pero la decisión de origen atribuye una responsabilidad jurídica distinta a la materia disciplinaria actualmente investigada.",
+      "¿Qué tratamiento corresponde al mérito de esa prueba trasladada y a la conclusión externa?",
+      [
+        "Valorar autónomamente los hallazgos conforme a las reglas disciplinarias y el objeto actual.",
+        "Adoptar la conclusión jurídica externa como obligatoria por provenir de otra autoridad.",
+        "Descartar todos los hallazgos porque el proceso de origen perseguía una finalidad distinta."
+      ],
+      [
+        "El traslado permite valorar pruebas, no importar automáticamente decisiones.",
+        "La conclusión externa no sustituye el examen disciplinario.",
+        "La diferencia de objeto exige delimitar pertinencia, no exclusión general."
+      ],
+      "154, 159"
+    ]
+  ],
+  "pgn-m44": [
+    [
+      "Un equipo recibe una exportación original de registros de acceso. Antes de ordenar filas y convertir campos de fecha para analizarlos, el responsable debe garantizar que los resultados puedan compararse con los datos recibidos originalmente.",
+      "¿Qué procedimiento preserva mejor la integridad y reproducibilidad del análisis digital?",
+      [
+        "Conservar el original, verificar su huella y transformar solo una copia documentada.",
+        "Ordenar el archivo original y recalcular su huella después de cada modificación.",
+        "Conservar únicamente el resultado tabular porque facilita reproducir las conclusiones del analista."
+      ],
+      [
+        "Separar original y copia permite verificar cambios y repetir el análisis.",
+        "Modificar el original elimina la referencia inicial.",
+        "El resultado procesado no sustituye los datos originales."
+      ],
+      "155, 185; NIST SP 800-86"
+    ],
+    [
+      "Dos archivos obtenidos mediante un procedimiento autorizado presentan la misma huella SHA-256 al compararlos. El investigador propone concluir que ambos fueron creados por la misma persona y exactamente en el mismo instante.",
+      "¿Qué conclusión técnica permite sostener razonablemente esa coincidencia de huellas?",
+      [
+        "Que sus contenidos binarios coinciden con alta confianza, no necesariamente su autoría.",
+        "Que ambos archivos fueron producidos por la misma persona en idéntico momento.",
+        "Que los archivos fueron obtenidos legalmente porque sus huellas digitales son iguales."
+      ],
+      [
+        "La huella permite verificar identidad de contenido con alta confianza.",
+        "La igualdad de bytes no demuestra autoría ni tiempo de creación.",
+        "El hash no acredita legalidad de adquisición."
+      ],
+      "159, 185; NIST SP 800-86"
+    ],
+    [
+      "Una copia de evidencia cambia de custodio entre la adquisición y el análisis. La institución conserva la huella de integridad, pero no cuenta con registro del traslado, fecha, responsable receptor ni condiciones de entrega.",
+      "¿Qué aspecto de la preservación debe documentarse para reducir ese vacío de trazabilidad?",
+      [
+        "El historial de custodia, responsables, fechas y condiciones de cada transferencia.",
+        "Únicamente la última huella, porque sustituye toda documentación de la custodia.",
+        "Solo el nombre del analista final, sin reconstruir los movimientos anteriores."
+      ],
+      [
+        "La cadena de custodia permite rastrear manejo y transferencias.",
+        "La huella no documenta por sí sola quién manipuló la evidencia.",
+        "Identificar al último analista no reconstruye los traspasos."
+      ],
+      "185; NIST SP 800-86"
+    ],
+    [
+      "Un registro de autenticación utiliza UTC y marca un evento a las 14:30. Un servidor institucional configurado con hora colombiana UTC-5 registra otro evento a las 09:30 del mismo día. No se han verificado los desfases de reloj.",
+      "¿Qué conclusión temporal es válida al comparar inicialmente las dos marcas horarias?",
+      [
+        "Representan la misma hora nominal tras conversión; debe comprobarse la sincronización real.",
+        "Los eventos ocurrieron con cinco horas de diferencia por mostrar horas distintas.",
+        "Los eventos son necesariamente simultáneos porque la conversión de zona horaria coincide."
+      ],
+      [
+        "Convertir zonas permite comparar tiempos nominales, no garantiza exactitud del reloj.",
+        "La diferencia visual se explica por la zona horaria.",
+        "La coincidencia nominal no prueba simultaneidad efectiva."
+      ],
+      "159; NIST SP 800-92"
+    ],
+    [
+      "Un servidor de aplicaciones puede sobrescribir registros antiguos y se aproxima la fecha de rotación. El instructor conoce el riesgo y cuenta con una vía legal para asegurar los elementos, pero aún no tiene definido el método de análisis.",
+      "¿Qué actuación conserva la disponibilidad de los registros sin anticipar su valoración?",
+      [
+        "Asegurar oportunamente los registros autorizados y documentar su adquisición antes del análisis.",
+        "Esperar a definir todas las hipótesis para preservar los registros una vez rotados.",
+        "Modificar la configuración y reconstruir posteriormente los registros sin conservar la fuente actual."
+      ],
+      [
+        "El aseguramiento previene pérdida de elementos probatorios.",
+        "La demora puede hacer imposible recuperar los registros.",
+        "La modificación no sustituye una adquisición trazable."
+      ],
+      "155; NIST SP 800-86, NIST SP 800-92"
+    ],
+    [
+      "Se recibe un archivo de registros cuya huella actual difiere de la huella calculada durante la adquisición. La oficina conoce la identidad de los custodios, pero no sabe si existió una conversión autorizada, un error o una modificación no documentada.",
+      "¿Qué respuesta técnica permite evaluar la discrepancia sin prejuzgar su causa?",
+      [
+        "Preservar ambas versiones, investigar la diferencia y documentar su impacto en la integridad.",
+        "Reemplazar la huella anterior por la actual para continuar con una referencia actualizada.",
+        "Afirmar manipulación dolosa por el solo hecho de que las huellas no coinciden."
+      ],
+      [
+        "La discrepancia requiere investigar cambios y conservar las referencias.",
+        "Reemplazar la huella elimina la posibilidad de verificar el cambio.",
+        "La diferencia no demuestra intención ni identifica autor."
+      ],
+      "159, 185; NIST SP 800-86"
+    ],
+    [
+      "Un tercero entrega un archivo de datos y una huella de integridad calculada antes de la entrega. El despacho verifica la coincidencia, pero aún debe examinar cómo obtuvo el tercero la información y si se respetaron garantías fundamentales.",
+      "¿Qué distinción debe conservarse antes de valorar el archivo como prueba disciplinaria?",
+      [
+        "Integridad técnica y legalidad de obtención requieren verificaciones distintas.",
+        "La coincidencia de huella acredita simultáneamente integridad y legalidad del recaudo.",
+        "La información entregada por terceros se excluye siempre sin examinar su origen."
+      ],
+      [
+        "El hash no demuestra cumplimiento de garantías legales.",
+        "Son dimensiones independientes de valoración.",
+        "La entrega por terceros no implica ilicitud automática."
+      ],
+      "21, 158–159; NIST SP 800-86"
+    ],
+    [
+      "Una entidad usa un registro de accesos de una aplicación que fue exportado a una hoja de cálculo. Al abrirlo, algunas fechas se convirtieron automáticamente y ciertos identificadores perdieron ceros iniciales. El analista conserva la exportación original.",
+      "¿Qué procedimiento permite reconstruir el análisis sin perder el contexto de los datos?",
+      [
+        "Importar nuevamente desde el original con tipos de datos controlados y registrar transformaciones.",
+        "Corregir manualmente las celdas sin consultar la exportación original ni registrar los cambios.",
+        "Usar el resultado actual porque las conversiones automáticas no alteran el significado probatorio."
+      ],
+      [
+        "Los tipos controlados y el registro de cambios preservan reproducibilidad.",
+        "La corrección manual sin referencia no permite comprobar los valores.",
+        "Las conversiones pueden alterar datos relevantes."
+      ],
+      "159, 185; NIST SP 800-86"
+    ],
+    [
+      "Un informe técnico contiene resultados obtenidos mediante una búsqueda sobre una copia de evidencia. No indica la versión de la herramienta, filtros, parámetros, fechas ni los archivos examinados, aunque conserva la evidencia original y su huella.",
+      "¿Qué información adicional debe documentar el analista para hacer verificable su conclusión?",
+      [
+        "Método, herramientas, parámetros, datos examinados, transformaciones y límites de los resultados.",
+        "Únicamente la huella de la evidencia original y una conclusión resumida del análisis.",
+        "Solo los resultados coincidentes con la hipótesis para facilitar la revisión posterior."
+      ],
+      [
+        "La documentación metodológica permite reproducir y controvertir el análisis.",
+        "La huella verifica contenido, no describe cómo se obtuvo la conclusión.",
+        "La selección sesgada impide evaluar el conjunto."
+      ],
+      "148–159, 179; NIST SP 800-86"
+    ]
   ]
 }
 
@@ -3033,7 +3444,7 @@ export function reviewedTemplateQuestion(question: Question, number: number): Qu
       return { id: o.id, text: choices[i]!, rationale: rationales[i]! }
     }),
     explanation: 'Código General Disciplinario, art(s). ' + articles + '. ' + rationales.join(' '),
-    sourceIds: [...new Set([...question.sourceIds, 'ley-1952-2019', 'ley-2094-2021', ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : [])])],
+    sourceIds: [...new Set([...question.sourceIds, 'ley-1952-2019', 'ley-2094-2021', ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : []), ...(articles.includes('NIST SP 800-86') ? ['nist-sp-800-86'] : []), ...(articles.includes('NIST SP 800-92') ? ['nist-sp-800-92'] : [])])],
     verifiedAt: '2026-11-24',
   }
 }
