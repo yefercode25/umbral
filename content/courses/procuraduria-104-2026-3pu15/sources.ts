@@ -372,4 +372,13 @@ export const procuraduriaSources: SourceRef[] = [
     verifiedAt: '2026-11-23',
     note: 'Naturaleza administrativa de la potestad disciplinaria de la PGN y garantía judicial especial para sanciones que afectan derechos políticos de servidores de elección popular. Consultar el régimen vigente para su aplicación concreta.',
   },
+  {
+    id: 'ley-2365-2024',
+    title: 'Ley 2365 de 2024 · prevención, protección y atención del acoso sexual',
+    publisher: 'Congreso de Colombia',
+    url: 'https://apps.procuraduria.gov.co/normograma/compilacion/docs/ley_2365_2024.htm',
+    type: 'official',
+    verifiedAt: '2026-11-23',
+    note: 'Art. 19 adiciona art. 160A del CGD: enfoque diferencial e interseccional en valoración de casos del art. 53.5 y protección de derechos durante decreto y práctica de prueba.',
+  },
 ]
