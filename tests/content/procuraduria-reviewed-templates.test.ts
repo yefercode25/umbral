@@ -5,11 +5,11 @@ import { hasPgnLengthCue } from '../../src/lib/procuraduriaBankAudit'
 
 describe('RC.8 · revisión individual de plantillas', () => {
   it('mantiene claves e IDs históricos, con nueve casos distintos por módulo y fuentes legales', () => {
-    expect(reviewedTemplateModuleIds).toEqual(["pgn-m25","pgn-m26","pgn-m27","pgn-m28","pgn-m29","pgn-m30","pgn-m31","pgn-m32","pgn-m33","pgn-m34","pgn-m20","pgn-m21","pgn-m22","pgn-m23","pgn-m24","pgn-m35","pgn-m36","pgn-m37","pgn-m38","pgn-m39","pgn-m40","pgn-m41","pgn-m42","pgn-m43","pgn-m44","pgn-m45","pgn-m46","pgn-m47","pgn-m48","pgn-m49","pgn-m50","pgn-m51","pgn-m52"])
+    expect(reviewedTemplateModuleIds).toEqual(["pgn-m25","pgn-m26","pgn-m27","pgn-m28","pgn-m29","pgn-m30","pgn-m31","pgn-m32","pgn-m33","pgn-m34","pgn-m20","pgn-m21","pgn-m22","pgn-m23","pgn-m24","pgn-m35","pgn-m36","pgn-m37","pgn-m38","pgn-m39","pgn-m40","pgn-m41","pgn-m42","pgn-m43","pgn-m44","pgn-m45","pgn-m46","pgn-m47","pgn-m48","pgn-m49","pgn-m50","pgn-m51","pgn-m52","pgn-m53","pgn-m54"])
     const questions = procuraduriaCourse.questions.filter(q => reviewedTemplateModuleIds.includes(q.moduleId) && /-situational-(10|[2-9])$/.test(q.id))
-    expect(questions).toHaveLength(297)
-    expect(new Set(questions.map(q => q.stem)).size).toBe(297)
-    expect(new Set(questions.map(q => q.case)).size).toBe(297)
+    expect(questions).toHaveLength(315)
+    expect(new Set(questions.map(q => q.stem)).size).toBe(315)
+    expect(new Set(questions.map(q => q.case)).size).toBe(315)
     for (const q of questions) {
       const module = procuraduriaCourse.modules.find(m => m.id === q.moduleId)!
       const number = Number(q.id.split('-').at(-1))

@@ -4522,6 +4522,280 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "Ley 1474/2011 art. 85"
     ]
+  ],
+  "pgn-m53": [
+    [
+      "Un servidor público en ejercicio desea presentar personalmente una propuesta para suministrar equipos a una entidad estatal sometida a la Ley 80. No actúa por obligación legal ni concurre ninguna de las excepciones previstas en el artículo 10.",
+      "¿Qué restricción debe verificarse antes de admitir la propuesta del servidor?",
+      [
+        "La inhabilidad legal de los servidores públicos para participar y celebrar esos contratos.",
+        "La incompatibilidad aplicable exclusivamente cuando trabaja en la misma entidad contratante.",
+        "La posibilidad de contratar si se abstiene de evaluar personalmente su propia oferta."
+      ],
+      [
+        "El artículo 8 incluye a servidores públicos dentro de las inhabilidades.",
+        "La restricción no se limita al empleo en la contratante.",
+        "Abstenerse de evaluar no elimina la inhabilidad."
+      ],
+      "Ley 80/1993 arts. 8.1.f y 10"
+    ],
+    [
+      "Durante la ejecución de un contrato ordinario sobreviene una inhabilidad legal del contratista. No corresponde al literal j del numeral 1 del artículo 8 ni existe una sanción administrativa por corrupción que active el régimen especial.",
+      "¿Qué alternativa general dispone la ley frente a esa inhabilidad sobreviniente?",
+      [
+        "Ceder el contrato previa autorización escrita de la entidad o renunciar si ello no es posible.",
+        "Continuar el contrato hasta su vencimiento, pues al momento de la firma estaba habilitado.",
+        "Transferir el contrato libremente a un tercero sin autorización de la entidad contratante."
+      ],
+      [
+        "El artículo 9 regula cesión autorizada o renuncia en ese supuesto general.",
+        "La validez inicial no elimina los efectos sobrevinientes.",
+        "La cesión requiere autorización escrita."
+      ],
+      "Ley 80/1993 art. 9"
+    ],
+    [
+      "Una empresa que presentó oferta válida adquiere una incompatibilidad legal durante el proceso de selección, antes de la adjudicación. La entidad confirma que la causal aplica a ese procedimiento y no concurre una excepción que permita continuar.",
+      "¿Qué consecuencia prevé el artículo 9 para ese proponente antes de la adjudicación?",
+      [
+        "Se entiende que renuncia a su participación y a los derechos surgidos del proceso.",
+        "Debe ceder su oferta a otro proveedor previa autorización escrita de la entidad.",
+        "Puede continuar porque la habilitación se verifica únicamente al presentar la oferta."
+      ],
+      [
+        "La incompatibilidad sobreviniente del proponente implica renuncia a participación y derechos.",
+        "La cesión contractual corresponde a otra etapa.",
+        "La causal sobreviniente produce efectos durante la selección."
+      ],
+      "Ley 80/1993 art. 9"
+    ],
+    [
+      "Uno de los miembros de una unión temporal contratista incurre en una inhabilidad sobreviniente ordinaria. La entidad verifica que no se trata de una causal especial por corrupción y que el contrato continúa ejecutándose con los demás integrantes.",
+      "¿Cómo dispone la ley gestionar la participación de ese miembro inhabilitado?",
+      [
+        "Ceder su participación a un tercero previa autorización escrita, sin cesión entre integrantes.",
+        "Transferir su participación libremente a otro integrante de la misma unión temporal.",
+        "Declarar necesariamente terminado todo el contrato sin examinar la posibilidad de cesión."
+      ],
+      [
+        "El artículo 9 prevé cesión a tercero y prohíbe cesión entre integrantes.",
+        "La cesión interna no es la alternativa permitida.",
+        "La norma contempla una solución distinta a terminación automática."
+      ],
+      "Ley 80/1993 art. 9"
+    ],
+    [
+      "Una persona utiliza un servicio que una entidad estatal ofrece a todo el público en condiciones comunes. La oficina considera negarle el acceso invocando una inhabilidad contractual del artículo 8, aunque el negocio se limita al uso de ese servicio.",
+      "¿Qué disposición debe examinar antes de extender la restricción a esa operación?",
+      [
+        "La excepción legal para contratar bienes o servicios ofrecidos al público en condiciones comunes.",
+        "La eliminación definitiva de todas las inhabilidades por ser usuario de un servicio público.",
+        "La obligación de exigir autorización judicial previa a cualquier usuario con inhabilidad contractual."
+      ],
+      [
+        "El artículo 10 prevé una excepción para ese negocio concreto.",
+        "No elimina restricciones para otros negocios.",
+        "No establece autorización judicial general para esa excepción."
+      ],
+      "Ley 80/1993 art. 10"
+    ],
+    [
+      "Un integrante del comité evaluador posee una participación económica en una empresa proponente y puede obtener beneficio directo de la decisión. El procedimiento se rige por las reglas administrativas y el interés particular está acreditado.",
+      "¿Qué debe hacer el evaluador al identificar ese conflicto antes de continuar la actuación?",
+      [
+        "Manifestar su impedimento motivado y someterlo al trámite de la autoridad competente.",
+        "Continuar evaluando mientras no participe en la firma del acto de adjudicación.",
+        "Solicitar al proponente que retire su oferta para conservar la integración del comité."
+      ],
+      [
+        "El interés particular y directo exige declarar impedimento.",
+        "La sustanciación también queda comprendida en la regla.",
+        "La solución no consiste en desplazar al proponente."
+      ],
+      "CPACA arts. 11–12"
+    ],
+    [
+      "Un funcionario advierte una causal de impedimento en una actuación administrativa contractual. El equipo propone aplicar los términos especiales de recusación del Código General Disciplinario, pese a que se trata de gestión administrativa, no de instrucción disciplinaria.",
+      "¿Qué plazo tiene el servidor para remitir la actuación con su escrito de impedimento?",
+      [
+        "Tres días siguientes al conocimiento de la causal, conforme al CPACA.",
+        "Dos días desde el conocimiento de la causal conforme al régimen disciplinario.",
+        "Diez días desde la causal, por ser el término de decisión de la autoridad."
+      ],
+      [
+        "El CPACA fija tres días para la remisión motivada.",
+        "Los términos disciplinarios no rigen este supuesto.",
+        "Diez días corresponden a la decisión de la autoridad competente."
+      ],
+      "CPACA art. 12"
+    ],
+    [
+      "La autoridad competente recibe una actuación administrativa contractual remitida por un evaluador que se declara impedido. Debe decidir de plano la causal invocada y, si la acepta, determinar quién asume el conocimiento del asunto.",
+      "¿Qué plazo establece el CPACA para resolver el impedimento en este trámite administrativo?",
+      [
+        "Diez días siguientes a la fecha de recibo de la actuación.",
+        "Tres días siguientes al recibo, como en el régimen disciplinario especial.",
+        "Cinco días siguientes al recibo, por aplicación del plazo de remisión de peticiones."
+      ],
+      [
+        "El artículo 12 fija diez días desde el recibo.",
+        "El trámite disciplinario tiene reglas distintas.",
+        "La remisión de peticiones no gobierna este incidente."
+      ],
+      "CPACA art. 12"
+    ],
+    [
+      "Un informe de vigilancia identifica que dos oferentes tienen vínculos comerciales previos, pero no acredita una causal legal de inhabilidad, incompatibilidad ni acuerdo anticompetitivo. Se propone excluirlos únicamente por ese vínculo comercial.",
+      "¿Qué criterio debe orientar la revisión antes de concluir que existe una restricción contractual?",
+      [
+        "Identificar una causal legal aplicable y verificar sus hechos y ámbito temporal.",
+        "Crear una inhabilidad preventiva mediante analogía con restricciones de parentesco.",
+        "Excluir a ambos por precaución sin motivar una causal jurídica específica."
+      ],
+      [
+        "Las restricciones requieren fundamento legal y hechos acreditados.",
+        "La analogía no crea una inhabilidad contractual.",
+        "La precaución no sustituye motivación ni procedimiento."
+      ],
+      "Ley 80/1993 arts. 8–10; Constitución art. 29"
+    ]
+  ],
+  "pgn-m54": [
+    [
+      "Un tablero preventivo detecta que cuatro contratos pequeños corresponden a bienes similares adquiridos durante un mes. No se ha revisado la unidad de necesidad, planeación, fechas, mercado ni circunstancias de las adquisiciones documentadas.",
+      "¿Qué actuación corresponde antes de concluir que existió fraccionamiento indebido?",
+      [
+        "Contrastar objetos, necesidad, planificación y contexto temporal para establecer si hay fundamento jurídico.",
+        "Declarar acreditado el fraccionamiento porque todos los contratos tienen valores pequeños.",
+        "Descartar el patrón por existir cuatro documentos contractuales independientes y firmados."
+      ],
+      [
+        "El patrón es una alerta que necesita contexto y evidencia.",
+        "La cuantía individual no demuestra por sí sola infracción.",
+        "La pluralidad formal no descarta una posible irregularidad."
+      ],
+      "Ley 80/1993 arts. 24–26; Ley 1474/2011"
+    ],
+    [
+      "Una entidad recibe una solicitud de información sobre un contrato. El documento contiene datos amparados por una excepción legal, pero la mayor parte de su contenido puede divulgarse sin afectar el interés protegido por esa excepción.",
+      "¿Qué respuesta exige la regla de divulgación parcial para ese documento mixto?",
+      [
+        "Elaborar una versión pública reservando únicamente la parte indispensable protegida por la excepción.",
+        "Negar el acceso a todo el documento porque contiene algún dato legalmente protegido.",
+        "Entregar todo el contenido porque la publicidad contractual elimina cualquier reserva legal aplicable."
+      ],
+      [
+        "La Ley 1712 exige acceso parcial cuando es posible separar lo protegido.",
+        "Una excepción parcial no justifica reserva integral automática.",
+        "La publicidad no elimina las excepciones legales."
+      ],
+      "Ley 1712/2014 art. 21"
+    ],
+    [
+      "Un ciudadano solicita saber si existe un expediente contractual cuyo contenido se encuentra sujeto a una reserva legal aplicable. El funcionario propone negar incluso la existencia del documento por considerar que la reserva comprende cualquier información sobre él.",
+      "¿Qué diferencia establece la ley entre la existencia y el contenido reservado del documento?",
+      [
+        "La reserva recae sobre el contenido protegido y no sobre la existencia del documento.",
+        "La reserva del contenido obliga a negar que el documento existe en cualquier supuesto.",
+        "La existencia del documento convierte automáticamente su contenido completo en información pública."
+      ],
+      [
+        "El artículo 21 distingue existencia de contenido reservado.",
+        "La reserva no permite negar existencia por sí sola.",
+        "Confirmar existencia no levanta la reserva del contenido."
+      ],
+      "Ley 1712/2014 art. 21"
+    ],
+    [
+      "Una entidad pública mantiene un archivo denominado plan anticorrupción con actividades aisladas y sin mecanismos para identificar, controlar y monitorear los riesgos de corrupción. Debe actualizar su gestión conforme al régimen de transparencia y ética pública.",
+      "¿Qué instrumento debe estructurar e implementar de acuerdo con el marco vigente aplicable?",
+      [
+        "El Programa de Transparencia y Ética Pública, incorporando gestión y monitoreo de riesgos.",
+        "Un informe anual de actividades que sustituya la identificación y tratamiento de los riesgos.",
+        "Un programa exclusivamente disciplinario que se active después de confirmarse conductas corruptas."
+      ],
+      [
+        "La Ley 2195 y el Decreto 1122 regulan los PTEP.",
+        "El informe de actividades no sustituye controles y gestión de riesgo.",
+        "El programa tiene finalidad preventiva, no exclusivamente sancionatoria."
+      ],
+      "Ley 1474/2011 art. 73 modificado por Ley 2195/2022 art. 31; Decreto 1122/2024"
+    ],
+    [
+      "Un canal institucional de denuncias recibe información identificable sobre un posible caso de corrupción. La dependencia necesita remitirla a funcionarios competentes y elaborar un boletín de gestión para el público general sin exponer al denunciante.",
+      "¿Qué tratamiento diferencia la gestión del reporte y la divulgación de resultados institucionales?",
+      [
+        "Remitir por canales autorizados y publicar estadísticas sin identificación innecesaria del denunciante.",
+        "Publicar el reporte íntegro para permitir que la ciudadanía compruebe su contenido y autor.",
+        "Retener toda la información incluso frente a autoridades competentes que deban conocer el asunto."
+      ],
+      [
+        "La gestión del reporte requiere finalidad, confidencialidad y competencia.",
+        "La transparencia no implica divulgar datos protegidos.",
+        "La confidencialidad no impide remisión legalmente autorizada."
+      ],
+      "Ley 1474/2011 art. 73; Ley 1712/2014; Ley 1581/2012 art. 4"
+    ],
+    [
+      "Una matriz de riesgos clasifica todos los contratos con adiciones como casos de corrupción comprobada. El profesional observa que varias adiciones fueron justificadas y otras presentan inconsistencias documentales que requieren revisión adicional.",
+      "¿Qué ajuste debe realizarse al significado de la clasificación utilizada por la matriz?",
+      [
+        "Tratar las adiciones como señal de revisión, diferenciando justificación, irregularidad y responsabilidad acreditada.",
+        "Mantener la clasificación como corrupción porque cualquier adición implica un incumplimiento legal.",
+        "Eliminar el indicador porque las adiciones pueden estar legalmente permitidas en algunos contratos."
+      ],
+      [
+        "Una alerta no equivale a conclusión jurídica individual.",
+        "La adición puede estar permitida bajo sus condiciones legales.",
+        "El indicador puede conservar utilidad si se interpreta correctamente."
+      ],
+      "Ley 80/1993 art. 40; Ley 2195/2022 art. 31"
+    ],
+    [
+      "Un reporte indica que un proveedor concentra el setenta por ciento del valor contratado durante el periodo. No considera el tipo de mercado, instrumentos de compra obligatorios, número de oferentes disponibles ni naturaleza de los objetos adquiridos.",
+      "¿Qué verificación mejora la interpretación de ese indicador antes de emitir una alerta motivada?",
+      [
+        "Desagregar por objeto, modalidad y mercado, contrastando explicaciones alternativas de la concentración.",
+        "Atribuir favorecimiento indebido porque la participación porcentual supera la mitad del valor.",
+        "Descartar toda concentración porque un proveedor puede celebrar varios contratos con la entidad."
+      ],
+      [
+        "El contexto permite distinguir una señal de una conclusión injustificada.",
+        "La concentración no prueba favorecimiento por sí sola.",
+        "La posibilidad legal de varios contratos no elimina el riesgo analizable."
+      ],
+      "Ley 80/1993 arts. 24–26; Ley 1150/2007 art. 5"
+    ],
+    [
+      "Un organismo formula un PTEP y registra como único indicador el número de capacitaciones de integridad realizadas. Los riesgos de corrupción identificados no cuentan con responsables, controles verificables ni evidencia sobre el funcionamiento de estos.",
+      "¿Qué componente debe fortalecerse para que la gestión de riesgos no sea meramente formal?",
+      [
+        "Asignar controles y responsables, verificar su operación y monitorear el riesgo residual.",
+        "Aumentar el número de capacitaciones sin examinar los controles que operan sobre los riesgos.",
+        "Reemplazar la gestión preventiva por una lista de sanciones disciplinarias impuestas durante la vigencia."
+      ],
+      [
+        "El programa exige gestión y monitoreo de riesgos, no solo actividades formativas.",
+        "Las capacitaciones no demuestran eficacia de los controles.",
+        "Las sanciones no sustituyen prevención."
+      ],
+      "Ley 2195/2022 art. 31; Decreto 1122/2024"
+    ],
+    [
+      "Un equipo recibe una alerta algorítmica de alto riesgo sobre un contrato y prepara un comunicado público que identifica al responsable como corrupto. Solo cuenta con variables de priorización y todavía no ha contrastado los soportes del expediente.",
+      "¿Qué debe hacer antes de formular cualquier conclusión de responsabilidad individual?",
+      [
+        "Verificar los soportes, documentar límites de la alerta y remitir según la competencia correspondiente.",
+        "Publicar la identificación como responsable mientras la persona demuestra que la alerta es incorrecta.",
+        "Cerrar la revisión porque las herramientas de riesgo no constituyen prueba definitiva de una infracción."
+      ],
+      [
+        "La herramienta prioriza revisión; no declara responsabilidad.",
+        "La presunción de inocencia y carga probatoria impiden esa inversión.",
+        "Una alerta puede justificar revisión sin prejuzgar."
+      ],
+      "Constitución art. 29; Ley 2195/2022 art. 31; CGD arts. 14, 147"
+    ]
   ]
 }
 
@@ -4540,7 +4814,7 @@ export function reviewedTemplateQuestion(question: Question, number: number): Qu
       return { id: o.id, text: choices[i]!, rationale: rationales[i]! }
     }),
     explanation: (Number(question.moduleId.slice(5)) >= 45 ? 'Fundamento: ' : 'Código General Disciplinario, art(s). ') + articles + '. ' + rationales.join(' '),
-    sourceIds: [...new Set([...question.sourceIds, ...(articles.includes('Constitución') ? ['constitucion'] : []), ...(articles.includes('Resolución PGN 132/2014') ? ['pgn-res-132-2014'] : []), ...(articles.includes('Decreto 1499/2017') ? ['decreto-1499-2017'] : []), ...(articles.includes('CPACA') ? ['cpaca'] : []), ...(Number(question.moduleId.slice(5)) < 45 ? ['ley-1952-2019', 'ley-2094-2021'] : []), ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : []), ...(articles.includes('NIST SP 800-86') ? ['nist-sp-800-86'] : []), ...(articles.includes('NIST SP 800-92') ? ['nist-sp-800-92'] : [])])],
+    sourceIds: [...new Set([...question.sourceIds, ...(articles.includes('Constitución') ? ['constitucion'] : []), ...(articles.includes('Resolución PGN 132/2014') ? ['pgn-res-132-2014'] : []), ...(articles.includes('Decreto 1499/2017') ? ['decreto-1499-2017'] : []), ...(articles.includes('CPACA') ? ['cpaca'] : []), ...(articles.includes('Ley 80/1993') ? ['ley-80-1993'] : []), ...(articles.includes('Ley 1150/2007') ? ['ley-1150-2007'] : []), ...(articles.includes('Ley 1474/2011') ? ['ley-1474-2011'] : []), ...(articles.includes('Ley 2195/2022') ? ['ley-2195-2022'] : []), ...(articles.includes('Ley 1712/2014') ? ['ley-1712-2014'] : []), ...(articles.includes('Ley 1581/2012') ? ['ley-1581-2012'] : []), ...(articles.includes('CGD') ? ['ley-1952-2019'] : []), ...(Number(question.moduleId.slice(5)) < 45 ? ['ley-1952-2019', 'ley-2094-2021'] : []), ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : []), ...(articles.includes('NIST SP 800-86') ? ['nist-sp-800-86'] : []), ...(articles.includes('NIST SP 800-92') ? ['nist-sp-800-92'] : [])])],
     verifiedAt: '2026-11-24',
   }
 }
