@@ -189,8 +189,8 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     caseText: 'Una oficina mantiene una matriz de correspondencia con número de radicado y fecha. El jefe pide tramitar primero la solicitud de un conocido, sin soporte para alterar el orden. Otro expediente contiene un documento que podría justificar legalmente una atención prioritaria; hay datos personales en las dos carpetas. La oficina afirma que la celeridad y publicidad del artículo 209 justifican tanto el cambio informal de orden como publicar todas las solicitudes sin revisión.',
     stem: '¿Qué decisión permite aplicar simultáneamente igualdad, imparcialidad, celeridad y publicidad sin convertirlos en excusas para arbitrariedades?',
     options: [
-      "Atender primero las solicitudes que la jefatura identifique como urgentes, registrar su instrucción y compensar las demoras mediante el turno ordinario.",
-      "Aplicar criterios legales de prioridad, documentar excepciones y divulgar únicamente información cuyo acceso esté permitido.",
+      "Atender primero las solicitudes que la jefatura identifique como urgentes y registrar el cambio de turno.",
+      "Aplicar criterios legales de atención prioritaria, documentar las excepciones y revisar qué información puede divulgarse conforme al régimen de acceso.",
       "Mantener el orden de llegada en ambos expedientes para asegurar igualdad formal y entregar a terceros una copia completa de cada solicitud."
     ],
     rationales: [
@@ -308,7 +308,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     caseText: 'Una estudiante prepara el simulacro de Procuraduría. Recuerda que el artículo 208 del Código General Disciplinario contempla una indagación previa de seis meses. En una pregunta se desconoce quién sería el presunto autor; en otra, el posible autor ya está individualizado. Un compañero afirma que cualquier queja exige los mismos seis meses, y otro sostiene que el plazo siempre puede ampliarse porque existen derechos fundamentales involucrados.',
     stem: '¿Cómo debe utilizarse la regla del artículo 208 para resolver ambos casos sin depender de una cifra memorizada?',
     options: [
-      "Verificar duda de individualización, término de seis meses y extensión especial prevista para violaciones de derechos humanos o DIH.",
+      "Verificar la duda de individualización, aplicar el término general de seis meses y examinar la extensión especial para violaciones de DD. HH. o DIH.",
       "Abrir indagación por seis meses en ambos casos, porque conocer preliminarmente la identidad no impide agotar la fase de indagación.",
       "Ampliar la indagación cuando se alegue un derecho fundamental, si el despacho considera que la complejidad del caso requiere tiempo adicional."
     ],
@@ -346,8 +346,8 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "stem": "¿Qué criterio permite escoger el acto propio de la etapa sin anticipar la decisión definitiva?",
     "options": [
       "Proyectar una sanción como propuesta de instrucción y remitirla al juzgador para que confirme o modifique la decisión tras revisar el expediente.",
-      "Completar diligencias o evaluar archivo o cargos según el estándar aplicable; reservar el fallo al juzgador.",
-      "Remitir una propuesta de absolución al juzgador, considerando que la controversia sobre responsabilidad impide adoptar cualquier decisión de evaluación por el instructor."
+      "Completar diligencias pendientes o evaluar archivo y cargos conforme a sus requisitos, sin anticipar el fallo reservado al juzgador.",
+      "Remitir una propuesta de absolución, pues la controversia impide al instructor adoptar una decisión de evaluación."
     ],
     "rationales": [
       "La instrucción no puede anticipar un fallo sancionatorio ni atribuir al juzgador una mera confirmación.",
@@ -402,8 +402,8 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una dependencia presenta un informe tardío durante una interrupción técnica. El expediente contiene el deber de reporte, la bitácora de indisponibilidad y un correo sobre el procedimiento alterno, pero no prueba si el servidor tenía acceso a dicho canal. La dirección plantea sancionar por el retraso para mejorar el indicador de cumplimiento. El reporte no cuantifica ninguna afectación del servicio.",
     "stem": "¿Qué decisión de apoyo evita confundir un indicador de gestión con responsabilidad disciplinaria?",
     "options": [
-      "Calificar el atraso como culpa grave con base en el deber de reporte y utilizar el correo del canal alterno como prueba suficiente de su disponibilidad.",
-      "Examinar deber, ilicitud sustancial, justificación y culpabilidad, incluida la posibilidad real de usar el canal alterno.",
+      "Calificar el atraso como culpa grave, usando el correo del canal alterno como prueba de su disponibilidad.",
+      "Examinar el deber incumplido, la afectación sustancial, la justificación y la culpabilidad, incluida la posibilidad real de usar el canal alterno.",
       "Reconocer la interrupción como justificación suficiente de la conducta, pues una falla documentada del servicio permite descartar el incumplimiento del deber."
     ],
     "rationales": [
@@ -459,8 +459,8 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "La PGN recibe una queja sobre registros de contratación eliminados. Una captura señala a un administrador, pero el informe de seguridad indica que varios operadores usaban la misma cuenta. Se cuenta con fechas, documentos y un posible deber funcional comprometido, aunque no se individualiza a quien actuó. El peticionario pide una sanción inmediata y la oficina debe definir el trámite inicial según su competencia.",
     "stem": "¿Qué actuación distingue correctamente una noticia disciplinaria verificable de una responsabilidad acreditada?",
     "options": [
-      "Proyectar decisión inhibitoria por falta de individualización, dejando la reapertura condicionada a que el denunciante suministre el nombre completo de quien operó la cuenta.",
-      "Delimitar hechos y competencia, preservar soportes y adelantar indagación previa si subsiste duda sobre la identidad del posible autor.",
+      "Proyectar una decisión inhibitoria por falta de individualización y esperar que el denunciante aporte la identidad del operador.",
+      "Delimitar hechos y competencia, preservar los soportes y adelantar indagación previa si persiste duda sobre la identificación del posible autor.",
       "Abrir investigación contra el administrador identificado en la captura y tratar la identidad de los demás usuarios como un asunto para la etapa de juzgamiento."
     ],
     "rationales": [
@@ -593,8 +593,8 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "stem": "¿Qué distinción establece el Código entre estas dos decisiones?",
     "options": [
       "Reconocer reposición contra ambas providencias, pues comparten la misma causal de nulidad y los efectos sobre la actuación pueden ser equivalentes.",
-      "Reconocer reposición frente a la decisión de una solicitud; no procede recurso contra la declaratoria oficiosa del art. 204.",
-      "Excluir reposición en ambas decisiones, considerando que el régimen especial de nulidades prevalece sobre el catálogo general de recursos disciplinarios."
+      "Reconocer reposición frente a la decisión de una solicitud de nulidad; no procede recurso contra la declaratoria oficiosa del artículo 204.",
+      "Excluir reposición en ambos casos porque el régimen especial de nulidades prevalece sobre el catálogo de recursos."
     ],
     "rationales": [
       "El art. 204 contiene una regla especial para la declaratoria oficiosa, aunque la causal material sea la misma.",
@@ -649,7 +649,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Un expediente contiene evidencia suficiente de una irregularidad administrativa y un registro que identifica una cuenta de servicio compartida, pero no al operador. Ya se practicaron las diligencias disponibles y se discute la decisión de evaluación. La jefatura sostiene que el daño institucional acredita todos los elementos y que el eventual juzgador puede llenar cualquier vacío sobre responsabilidad.",
     "stem": "¿Qué criterio diferencia el estándar de evaluación de una sanción basada solo en el resultado?",
     "options": [
-      "Verificar falta objetivamente demostrada y prueba que comprometa al disciplinado; distinguir cargos de certeza sancionatoria.",
+      "Verificar demostración objetiva de la falta y prueba que comprometa al disciplinado antes de formular cargos; distinguir ese estándar de la certeza sancionatoria.",
       "Formular cargos por la irregularidad demostrada y usar el juzgamiento para establecer si la cuenta compartida corresponde materialmente al disciplinado.",
       "Exigir certeza de responsabilidad personal para formular cargos y archivar si subsiste cualquier duda, aun cuando la prueba comprometa al disciplinado."
     ],
@@ -668,9 +668,9 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Durante una investigación se niega una prueba solicitada porque el despacho la considera impertinente. En el proyecto no se describe qué hecho pretendía demostrar ni por qué carecía de relación con el expediente. El defensor identifica una conexión con el posible deber funcional y la providencia aún no ha sido notificada. La secretaría prepara una plantilla sin recurso.",
     "stem": "¿Qué ajuste exige una negativa que pueda ser revisada conforme al régimen disciplinario?",
     "options": [
-      "Justificar la impertinencia relacionándola con el hecho investigado y conceder apelación por ser una decisión que limita el derecho a solicitar pruebas.",
+      "Motivar la impertinencia y conceder apelación por tratarse de una decisión que limita la solicitud de pruebas.",
       "Explicar la falta de utilidad del medio y notificar sin recurso, dejando que el interesado reproduzca la solicitud cuando llegue el juzgamiento.",
-      "Motivar la negativa según hecho y criterios del art. 151, reconociendo la reposición aplicable en investigación."
+      "Motivar la negativa según el hecho y los criterios del artículo 151, reconociendo la reposición prevista para la etapa de investigación."
     ],
     "rationales": [
       "La motivación es necesaria, pero la apelación no es el recurso previsto para la negativa durante investigación.",
@@ -687,9 +687,9 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una prueba documental fue obtenida con desconocimiento acreditado de derechos fundamentales del investigado. El expediente contiene además documentos independientes obtenidos legalmente, y el funcionario propone conservar la primera como fundamento porque coincide con las otras fuentes. Existe acta de obtención y se discute el alcance de la consecuencia procesal antes de evaluar la investigación.",
     "stem": "¿Qué criterio corresponde aplicar a la prueba cuestionada y al resto de la evidencia?",
     "options": [
-      "Conservar el documento como elemento corroborativo, excluyéndolo únicamente como fundamento autónomo de la decisión debido a su forma irregular de obtención.",
+      "Conservar el documento como corroboración, excluyéndolo únicamente como fundamento autónomo por su forma irregular de obtención.",
       "Apartar también los documentos independientes, dado que se refieren al mismo hecho, y repetir la práctica completa antes de valorar nuevamente el expediente.",
-      "Tener por inexistente la prueba del art. 158 y valorar las fuentes lícitas, revisando el alcance del defecto."
+      "Tener por inexistente la prueba que satisface el artículo 158 y valorar de manera autónoma las fuentes lícitas, examinando el alcance concreto del defecto."
     ],
     "rationales": [
       "La prueba obtenida con desconocimiento de derechos fundamentales no se sanea por corroboración ni por uso subsidiario.",
@@ -706,9 +706,9 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una matriz probatoria enumera veinte diligencias para investigar una alteración, pero no identifica qué hecho demuestra cada una. Una nueva copia de seguridad descarta la hora originalmente atribuida y el equipo propone conservar todas las tareas, sin ajustar hipótesis ni fechas. La jefatura pide un producto que permita a otro profesional revisar el razonamiento y continuar el trabajo.",
     "stem": "¿Cómo debe actualizarse la matriz para orientar diligencias y evitar acumulación sin propósito?",
     "options": [
-      "Vincular hechos, hipótesis, fuentes y vacíos; ajustar cronología y prioridades con la copia y documentar el cambio.",
+      "Vincular hechos, hipótesis, fuentes, pruebas de contraste y vacíos; ajustar cronología y prioridades a partir de la copia, registrando las razones del cambio.",
       "Mantener la hipótesis temporal como referencia principal y añadir una diligencia de validación del respaldo al listado inicial, sin revisar las relaciones entre las pruebas.",
-      "Sustituir la hipótesis temporal por la del respaldo y concentrar las diligencias en confirmarla, dejando la identificación personal para el informe final."
+      "Sustituir la hipótesis temporal por la del respaldo y dejar la identificación personal para el informe final."
     ],
     "rationales": [
       "El plan relaciona diligencias con hechos e hipótesis y registra evidencia contradictoria.",
@@ -744,8 +744,8 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Durante una investigación se incorporan documentos sometidos a reserva legal en cuaderno separado. El defensor reconocido solicita consultarlos y obtener copia íntegra para su archivo personal. La secretaría considera que, por ser sujeto procesal, puede llevarse una copia sin controles. No existe excepción específica acreditada para expedir copias de estos documentos reservados.",
     "stem": "¿Qué tratamiento debe aplicarse a la consulta y a la expedición de copias en el supuesto del art. 192?",
     "options": [
-      "Permitir consulta y entregar copia controlada al defensor previa firma de compromiso de confidencialidad, conservando los originales en el cuaderno separado.",
-      "Permitir consulta al sujeto procesal, mantener reserva y cuaderno separado, y abstenerse de expedir copias según el art. 192.",
+      "Permitir consulta y copia al defensor previo compromiso de confidencialidad, conservando originales en el cuaderno separado.",
+      "Permitir consulta al sujeto procesal, conservar documentos separados y reservados y abstenerse de expedir copias conforme al supuesto del artículo 192.",
       "Restringir consulta y copias hasta que termine la investigación, aunque el defensor haya sido reconocido y solicite conocer los documentos."
     ],
     "rationales": [
@@ -763,9 +763,9 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "En una versión libre un disciplinable acepta que estuvo presente en la oficina, pero no admite ejecutar la conducta investigada y decide guardar silencio sobre una pregunta. El acta no contiene confesión formal ni acreditación de que se cumplieran sus requisitos. El funcionario propone calificar la afirmación parcial como confesión completa y recomendar automáticamente una rebaja de sanción.",
     "stem": "¿Qué distinción debe hacerse entre versión libre y confesión con efectos procesales?",
     "options": [
-      "Valorar la admisión parcial y respetar el silencio; verificar requisitos y oportunidad legales antes de reconocer confesión o beneficios.",
+      "Valorar la admisión parcial en conjunto, respetar el silencio y comprobar requisitos y oportunidad de los artículos 161–163 antes de reconocer confesión o beneficios.",
       "Tratar la presencia admitida como confesión de la conducta y diferir la revisión de los requisitos formales hasta el momento de graduar la sanción.",
-      "Valorar únicamente pruebas ajenas a la versión libre porque el silencio parcial impide otorgar mérito a las afirmaciones que el disciplinable sí realizó."
+      "Valorar exclusivamente pruebas externas a la versión libre, considerando que el silencio parcial afecta el mérito de las afirmaciones realizadas."
     ],
     "rationales": [
       "Los arts. 161–163 exigen condiciones legales; la admisión parcial se valora sin anticipar efectos.",
@@ -801,8 +801,8 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "En una inspección ordenada para verificar el estado de un archivo institucional, una persona presente ofrece un testimonio útil y se encuentran elementos documentales relevantes. El comisionado propone resumir sus declaraciones dentro del acta, sin formulario testimonial separado, y llevarse los soportes sin inventario. La autoridad había informado fecha y hora al disciplinable.",
     "stem": "¿Cómo documentar los hallazgos y el testimonio conforme a las reglas de inspección?",
     "options": [
-      "Incorporar las declaraciones en el acta de inspección como prueba testimonial, anexar los documentos y dejar su identificación detallada para la devolución de la comisión.",
-      "Levantar acta, recibir el testimonio útil en formulario separado y preservar los elementos conforme a los arts. 185–186.",
+      "Incorporar declaraciones en el acta como prueba testimonial y dejar la identificación detallada de soportes para la devolución de la comisión.",
+      "Levantar acta, recibir el testimonio útil en formulario separado, y recoger, identificar y preservar soportes conforme a los artículos 185–186.",
       "Solicitar al instructor una nueva orden para cualquier testimonio o documento hallado, aunque sea pertinente al objeto de la inspección y se encuentre legalmente disponible."
     ],
     "rationales": [
@@ -915,8 +915,8 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una petición solicita actuación urgente ante una amenaza documentada a la integridad de una persona. La oficina tiene información suficiente para identificar el riesgo y la autoridad que debe intervenir, pero el trámite general tiene un plazo ordinario de respuesta. El responsable propone limitarse a asignar la petición a la cola normal sin valorar las circunstancias ni documentar medidas inmediatas.",
     "stem": "¿Qué ruta debe examinarse para responder de manera adecuada al riesgo?",
     "options": [
-      "Radicar con el plazo general, comunicar el caso a la autoridad competente y valorar la prioridad cuando se reciba una respuesta sobre la amenaza.",
-      "Examinar prioridad y peligro inminente del art. 20, adoptar medidas inmediatas dentro de competencia y documentar la remisión.",
+      "Radicar con plazo general, remitir a la autoridad competente y valorar la prioridad cuando responda sobre la amenaza.",
+      "Examinar atención prioritaria y peligro inminente del artículo 20, adoptar medidas inmediatas dentro de competencia y documentar la remisión.",
       "Asumir la medida de protección solicitada con carácter transitorio hasta que la autoridad competente confirme si corresponde mantenerla en el caso concreto."
     ],
     "rationales": [
@@ -991,9 +991,9 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Un integrante de una unión temporal incurre en una inhabilidad sobreviniente bajo la regla general del artículo 9. Los demás miembros ofrecen recibir directamente su participación y solicitan aprobación para redistribuirla entre ellos. El expediente no acredita excepción especial y la entidad debe revisar el mecanismo antes de adoptar una decisión sobre la continuidad del contrato.",
     "stem": "¿Cuál alternativa corresponde al supuesto específico de integrante de unión temporal?",
     "options": [
-      "Evaluar cesión de participación a tercero habilitado con autorización escrita, sin transferirla entre integrantes de la unión temporal.",
+      "Examinar cesión de la participación a un tercero habilitado previa autorización escrita de la entidad, sin permitir transferirla entre miembros de la unión temporal.",
       "Redistribuir la participación entre integrantes habilitados con autorización escrita, puesto que ellos ya acreditaron requisitos dentro del proceso de selección contractual.",
-      "Examinar la terminación de todo el contrato como primera salida, sin considerar la cesión a un tercero mientras continúe vigente la unión temporal."
+      "Examinar primero la terminación del contrato, descartando la cesión a un tercero mientras siga vigente la unión temporal."
     ],
     "rationales": [
       "El art. 9 establece cesión a tercero autorizada y prohíbe cesión entre miembros.",
@@ -1010,9 +1010,9 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una entidad recibe denuncias por un patrón de pagos atípicos y las registra en un archivo accesible a todo el personal, con nombres y teléfonos de informantes. El equipo de riesgos identifica operaciones que requieren contraste documental, pero su director quiere publicar los datos completos y clasificar como responsables a quienes figuran en el tablero antes de revisar los soportes.",
     "stem": "¿Qué actuación concilia transparencia, protección de información y análisis de señales?",
     "options": [
-      "Divulgar las operaciones individualizadas y los nombres de los denunciados como alerta de transparencia, manteniendo bajo reserva solo los datos de contacto de informantes.",
+      "Divulgar operaciones y nombres de denunciados como alerta pública, reservando solo los datos de contacto de informantes.",
       "Restringir completamente el acceso al expediente y suspender el contraste de operaciones hasta que se obtenga autorización de todos los titulares de los datos.",
-      "Proteger identificadores, preservar fuentes, contrastar operaciones y controles, y comunicar resultados autorizados sin prejuzgar."
+      "Restringir identificadores protegidos, preservar las fuentes, contrastar operaciones y controles, y comunicar resultados autorizados y hechos relevantes por competencia, sin prejuzgar."
     ],
     "rationales": [
       "La transparencia no justifica identificar responsables sin verificar hechos ni habilitación de acceso.",
@@ -1029,8 +1029,8 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "En un expediente aparecen una captura de visor público, el plano anexo a un acuerdo y una capa descargada sin metadatos. La captura sitúa aparentemente una obra fuera de un perímetro; el plano tiene otra escala. La jefatura pide declarar incumplimiento antes de verificar qué cartografía fue adoptada y si la precisión permite ubicar la construcción. Existe acceso autorizado al archivo oficial.",
     "stem": "¿Qué producto técnico permite sustentar el riesgo territorial sin confundir una visualización con el instrumento normativo adoptado?",
     "options": [
-      "Tomar la captura del visor como referencia oficial por su fecha y solicitar una validación de coordenadas únicamente si la entidad cuestiona la conclusión.",
-      "Verificar acto y plano adoptados, validar escala y referencia espacial, y documentar incertidumbre antes de concluir.",
+      "Tomar la captura reciente como referencia oficial y validar coordenadas si la entidad objeta la conclusión.",
+      "Verificar el acto y plano formalmente adoptados, validar escala y sistema de referencia, y documentar incertidumbre antes de emitir el informe.",
       "Usar solo el texto del acuerdo y excluir el plano y las capas, ya que las normas urbanísticas deben interpretarse sin evidencia cartográfica."
     ],
     "rationales": [
@@ -1049,8 +1049,8 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "stem": "¿Cómo interpretar el cambio en puntos porcentuales, la variación relativa y la brecha frente a la meta institucional?",
     "options": [
       "Mejora de 15 puntos, equivalente a 25 % relativo; faltan 15 puntos para la meta.",
-      "La mejora es de 15 % relativo y 25 puntos porcentuales; debe mantenerse el plan hasta alcanzar el 90 % de oportunidad.",
-      "La reducción del incumplimiento es de 25 puntos porcentuales y la brecha frente a la meta equivale a 15 % relativo."
+      "Mejora relativa de 15 % y aumento de 25 puntos; faltan 15 puntos para la meta.",
+      "Reducción del incumplimiento de 25 puntos y brecha frente a la meta de 15 % relativo."
     ],
     "rationales": [
       "75−60 = 15 puntos; 15/60 = 25 %; 90−75 = 15 puntos de brecha.",
@@ -1086,8 +1086,8 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Un archivo de gestión se queda sin espacio y propone eliminar expedientes electrónicos con más de cinco años. La TRD establece tiempos diferentes según serie y existen trámites todavía abiertos. El inventario permite individualizar los expedientes, pero no se comprobó el cierre ni la autorización de disposición final. La oficina quiere liberar almacenamiento antes de hacer la revisión archivística.",
     "stem": "¿Qué controles archivísticos deben verificarse antes de autorizar transferencia o disposición final de los expedientes?",
     "options": [
-      "Aplicar cinco años como plazo común, verificando el inventario y conservando los expedientes abiertos únicamente hasta que concluyan sus actuaciones pendientes.",
-      "Verificar serie, TRD, cierre y restricciones; realizar transferencia o disposición autorizada, con inventario y constancias.",
+      "Aplicar cinco años como plazo común, verificando inventario y conservando los expedientes abiertos hasta su cierre.",
+      "Verificar serie, TRD, cierre y restricciones; ejecutar transferencia o disposición autorizada con inventario y constancias del procedimiento realizado.",
       "Trasladar los expedientes de mayor antigüedad a almacenamiento temporal y registrar como ejecutada la disposición final mientras se revisan las tablas de retención."
     ],
     "rationales": [
@@ -1105,8 +1105,8 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Un informe de cuarenta páginas presenta diferencias de una base institucional, pero omite consultas, filtros, versión y filas de soporte. La copia Word incluye comentarios con datos personales de terceros. La dirección pide enviarla fuera de la institución sin revisar la autorización ni el expediente. Se conservan las fuentes y el analista puede describir los parámetros de procesamiento utilizados.",
     "stem": "¿Qué ajustes hacen reproducible el informe y protegen los datos que no deben llegar al destinatario externo?",
     "options": [
-      "Documentar fuentes, método, resultados y límites; incorporar anexos trazables y verificar reserva y metadatos de la copia de entrega.",
-      "Mantener el informe íntegro con comentarios y cambios internos, adjuntando una advertencia de confidencialidad al destinatario en lugar de examinar la autorización de acceso.",
+      "Documentar encargo, fuentes, método, resultados y límites; incorporar anexos trazables, revisar autorización, reserva y metadatos de una copia de entrega separada.",
+      "Mantener el informe íntegro con comentarios internos y adjuntar advertencia de confidencialidad en vez de examinar autorización de acceso.",
       "Preparar una versión con conclusiones y cifras agregadas, retirando método y anexos de todas las versiones para que no puedan reconstruirse los datos individuales."
     ],
     "rationales": [
