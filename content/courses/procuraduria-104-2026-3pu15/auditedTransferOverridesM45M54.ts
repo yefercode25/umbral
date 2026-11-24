@@ -31,7 +31,7 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Dar por finalizada la prevención inicial y trasladar todos los hechos a disciplina, dejando el seguimiento del plan a la espera de sus resultados.",
+          "text": "Cerrar la prevención y trasladar los hechos a disciplina, dejando pendiente el seguimiento.",
           "reason": "El daño materializado no elimina la función preventiva."
         },
         {
@@ -99,7 +99,7 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
           "reason": "Actividad y cobertura no son equivalentes."
         },
         {
-          "text": "Calcular 80/120 como cobertura y usar el total de atenciones registradas como denominador, aunque la ficha define una población elegible de 200.",
+          "text": "Calcular cobertura como 80/120, utilizando las atenciones realizadas como denominador.",
           "reason": "El denominador legal o metodológico es la población objetivo definida."
         }
       ],
@@ -137,11 +137,11 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Preparar y expedir desde la oficina de apoyo una orden cautelar temporal, informando después al juez sobre las medidas adoptadas para proteger los recursos.",
+          "text": "Expedir una orden cautelar temporal desde la oficina y comunicarla después al juez.",
           "reason": "El interés público no transfiere la potestad judicial."
         },
         {
-          "text": "Limitar el apoyo al envío de documentos sin concepto técnico, porque intervenir sobre el análisis de la medida supondría ejercer la competencia del juez.",
+          "text": "Limitarse a remitir documentos sin concepto, para no invadir la competencia judicial.",
           "reason": "La autonomía judicial no excluye la intervención legal."
         }
       ],
@@ -221,7 +221,7 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Usar mínima cuantía porque los 35 SMMLV solicitados no superan la menor cuantía de 280 SMMLV definida para el presupuesto de la entidad.",
+          "text": "Aplicar mínima cuantía porque 35 SMMLV no supera la menor cuantía de 280 SMMLV.",
           "reason": "Menor cuantía y mínima cuantía no son equivalentes."
         },
         {
@@ -245,7 +245,7 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
           "reason": "La fecha ficticia no subsana la actuación ni preserva trazabilidad."
         },
         {
-          "text": "Declarar urgencia manifiesta por el cierre próximo de vigencia, con motivación basada en la demora administrativa y sin comprobar los supuestos extraordinarios legales.",
+          "text": "Declarar urgencia manifiesta por la demora administrativa y la proximidad del cierre presupuestal.",
           "reason": "La urgencia manifiesta exige presupuestos de los arts. 42–43."
         }
       ],
@@ -305,11 +305,11 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Atribuir al interventor todas las verificaciones del pago, pues la contratación de vigilancia técnica permite delegar las obligaciones administrativas y financieras de la entidad.",
+          "text": "Atribuir al interventor técnico todas las verificaciones del pago, incluidas las financieras.",
           "reason": "El alcance técnico no transfiere automáticamente todas las funciones."
         },
         {
-          "text": "Exigir que ambos repitan íntegramente las verificaciones y aceptar el certificado del primero que firme, sin aplicar la distribución contractual de responsabilidades de vigilancia.",
+          "text": "Duplicar verificaciones y aceptar la certificación del primero que firme, sin aplicar la distribución contractual.",
           "reason": "La firma aislada no acredita la verificación coordinada."
         }
       ],
@@ -409,7 +409,7 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Contar cada fila como contratación independiente y divulgar una conclusión de corrupción por concentración, dado que las modificaciones también generan registros en SECOP.",
+          "text": "Contar cada modificación como contrato independiente y concluir corrupción por concentración.",
           "reason": "La duplicación distorsiona la concentración y no prueba una falta."
         },
         {

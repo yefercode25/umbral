@@ -11,11 +11,11 @@ export const auditedTransferOverridesM65M74: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Actualizar manualmente páginas y numeración del índice, mantener los títulos con negrita y comprobar visualmente que el documento conserva la diagramación aprobada.",
+          "text": "Actualizar números del índice manualmente y conservar títulos con negrita.",
           "reason": "La edición manual no resuelve dependencia entre títulos y páginas."
         },
         {
-          "text": "Convertir las páginas a imágenes para mantener el aspecto y numeración existentes, y usar el archivo original como único soporte con contenido editable.",
+          "text": "Convertir páginas a imágenes para fijar diagramación y referencias, conservando aparte el original.",
           "reason": "Las imágenes de páginas dificultan navegación, búsqueda y accesibilidad."
         }
       ],
@@ -31,7 +31,7 @@ export const auditedTransferOverridesM65M74: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Guardar el archivo en vista Sin marcas y remitirlo como versión definitiva, considerando que esa configuración impide recuperar eliminaciones y comentarios del documento.",
+          "text": "Guardar en vista Sin marcas y considerar eliminadas revisiones y comentarios.",
           "reason": "Sin marcas cambia presentación, no contenido de revisión."
         },
         {
@@ -115,11 +115,11 @@ export const auditedTransferOverridesM65M74: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Media 3, mediana 8 y rango 28 días; retirar el valor extremo para que el indicador represente únicamente los casos habituales.",
+          "text": "Media 3, mediana 8 y rango 28 días; retirar el extremo.",
           "reason": "Intercambia medidas y confunde máximo con rango."
         },
         {
-          "text": "Media 8 y mediana 8 días, considerando que las dos medidas centrales deben coincidir cuando se trata de observaciones del mismo procedimiento.",
+          "text": "Media y mediana 8 días porque representan el mismo tiempo central.",
           "reason": "La mediana no tiene que coincidir con la media."
         }
       ],
@@ -305,7 +305,7 @@ export const auditedTransferOverridesM65M74: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Conservar la meta actual hasta que la dirección modifique formalmente el indicador, aunque existan oportunidades comprobables de mejora mediante redistribución autorizada de recursos.",
+          "text": "Mantener la meta vigente aunque existan oportunidades verificables de mejora.",
           "reason": "No aprovecha capacidad de mejorar resultados institucionales."
         },
         {
@@ -371,7 +371,7 @@ export const auditedTransferOverridesM65M74: Record<string, [FoundationTransferO
           "reason": "Confunde lealtad con ocultamiento de un riesgo."
         },
         {
-          "text": "Invertir automáticamente la respuesta a toda frase que contenga una negación, sin examinar la conducta que describe ni las instrucciones del ejercicio formativo.",
+          "text": "Invertir automáticamente toda frase negativa sin analizar la conducta ni instrucciones.",
           "reason": "La negación no determina por sí sola una respuesta de frecuencia."
         }
       ],
@@ -409,11 +409,11 @@ export const auditedTransferOverridesM65M74: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Enviar primero el expediente al juzgador para que evalúe la suficiencia de pruebas y decida si corresponde cerrar o formular cargos contra el servidor.",
+          "text": "Remitir primero al juzgador para que evalúe el mérito y formule cargos si corresponde.",
           "reason": "El juzgador no sustituye evaluación del instructor."
         },
         {
-          "text": "Formular cargos con la prueba de cargo disponible y omitir el traslado precalificatorio, dado que el investigado tendrá oportunidad de controvertir en juicio.",
+          "text": "Formular cargos y omitir traslado porque todavía habrá defensa en juicio.",
           "reason": "La defensa posterior no reemplaza el traslado previo."
         }
       ],

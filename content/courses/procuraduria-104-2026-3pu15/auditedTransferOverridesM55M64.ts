@@ -31,11 +31,11 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Adoptar la capa municipal más reciente y justificar el resultado por la fecha de actualización, sin examinar los actos que delimitan la determinante ambiental.",
+          "text": "Preferir la capa municipal reciente y resolver la discrepancia por la fecha de actualización.",
           "reason": "La actualidad de un mapa no resuelve jerarquía."
         },
         {
-          "text": "Calificar desde la actuación preventiva toda el área como suelo de protección y requerir su incorporación al instrumento territorial, sin intervención de la autoridad competente.",
+          "text": "Clasificar desde PGN el polígono como suelo protegido y requerir su incorporación al instrumento territorial.",
           "reason": "La competencia de ordenamiento no se transfiere al operador."
         }
       ],
@@ -53,11 +53,11 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Aplicar a PGN las obligaciones del modelo ejecutivo en su integridad, dado que administra recursos públicos y es una entidad del orden nacional.",
+          "text": "Imponer a PGN el modelo ejecutivo por ser entidad nacional que administra recursos públicos.",
           "reason": "Ser nacional no equivale a integrar la Rama Ejecutiva."
         },
         {
-          "text": "Excluir a PGN de las políticas de control interno por su autonomía, y utilizar únicamente la lista de obligaciones del modelo aplicado al municipio.",
+          "text": "Excluir a PGN de control interno por su autonomía y régimen institucional.",
           "reason": "La política de control interno sí corresponde a órganos de control."
         }
       ],
@@ -73,11 +73,11 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "18/25 = 72 %, incorporando todas las respuestas oportunas tramitadas en el mes aunque pertenezcan a peticiones exigibles en períodos distintos.",
+          "text": "18/25 = 72 %, incluyendo respuestas de otros períodos.",
           "reason": "Incluye respuestas fuera de la población definida."
         },
         {
-          "text": "18/18 = 100 %, usando solo las respuestas emitidas y excluyendo las peticiones pendientes del universo definido por la ficha institucional.",
+          "text": "18/18 = 100 %, excluyendo las peticiones pendientes del universo definido por la ficha.",
           "reason": "Excluir pendientes distorsiona el indicador."
         }
       ],
@@ -137,7 +137,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Cerrar el expediente con los enlaces actuales a cada archivo, considerando que la consulta de carpetas y correos reemplaza su incorporación al SGDEA.",
+          "text": "Cerrar con enlaces actuales a archivos y considerar cumplida la incorporación al SGDEA.",
           "reason": "Visualizar no equivale a gestionar archivísticamente."
         },
         {
@@ -183,7 +183,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
           "reason": "La consulta no transforma la solicitud de copias."
         },
         {
-          "text": "Asignar quince días a ambos componentes por tratarse de una petición ciudadana, sin distinguir el objeto de cada solicitud ni la regla especial.",
+          "text": "Asignar quince días a todo por tratarse de derecho de petición.",
           "reason": "El término general no desplaza los específicos."
         }
       ],
@@ -199,7 +199,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Esperar el plazo general de quince días para comunicar la incompetencia y solicitar al ciudadano que presente otra vez los documentos ante la autoridad correspondiente.",
+          "text": "Esperar quince días para informar incompetencia y solicitar una nueva radicación.",
           "reason": "No debe imponerse reiniciar el trámite al ciudadano."
         },
         {
@@ -221,7 +221,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Eliminar la cuenta junto con su historial para impedir nuevas consultas y atribuir el evento registrado al titular que figura en el nombre de usuario.",
+          "text": "Eliminar la cuenta y su historial; atribuir por nombre de usuario.",
           "reason": "El borrado pierde evidencia y la cuenta no acredita autoría."
         },
         {
@@ -283,11 +283,11 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Considerar que ambos eventos son una misma operación porque las horas convertidas coinciden nominalmente, aunque no se haya comprobado el vínculo entre sus identificadores.",
+          "text": "Equiparar eventos por coincidencia de hora nominal sin contrastar identificadores.",
           "reason": "Autenticación y cambio son eventos distintos."
         },
         {
-          "text": "Promediar las marcas de ambas fuentes para compensar diferencias temporales y usar el resultado como hora de ocurrencia sin documentar el desfase conocido.",
+          "text": "Promediar las marcas sin corregir ni documentar el desfase conocido en los relojes.",
           "reason": "Promediar no corrige errores de reloj."
         }
       ],
@@ -325,7 +325,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Atribuir los cambios al administrador del motor porque la cuenta de servicio es administrada desde la base, sin comprobar las solicitudes y tareas de aplicación.",
+          "text": "Atribuir los cambios al administrador del motor por gestionar la cuenta técnica.",
           "reason": "Administrar el motor no acredita ejecución de cada cambio."
         },
         {
@@ -347,11 +347,11 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Utilizar únicamente el mensaje reenviado como texto, dado que el remitente y la fecha visibles permiten reconstruir la totalidad de cabeceras y eventos de entrega.",
+          "text": "Usar el texto reenviado porque fecha y remitente visibles preservan los metadatos.",
           "reason": "El reenvío no preserva necesariamente encabezados."
         },
         {
-          "text": "Excluir toda evidencia de correo porque los reenvíos pueden modificar su presentación, incluso si se conserva el mensaje original y existen trazas del servidor.",
+          "text": "Excluir el correo porque el reenvío puede modificar su presentación y su contenido.",
           "reason": "Ley 527 admite mensajes de datos sujetos a valoración."
         }
       ],
@@ -367,7 +367,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Tratar el resultado DKIM válido del dominio institucional como prueba de que el titular físico del buzón redactó y envió personalmente el mensaje.",
+          "text": "Tratar DKIM válido como prueba de autoría personal del titular del buzón.",
           "reason": "Dominio y persona son distintos."
         },
         {
@@ -409,11 +409,11 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Sustituir el valor del informe por el nuevo resultado y retirar la versión previa, pues conservar dos cifras puede generar dudas en la valoración posterior.",
+          "text": "Sustituir el resultado y retirar la versión previa para evitar cifras contradictorias.",
           "reason": "Ocultar versiones elimina trazabilidad."
         },
         {
-          "text": "Mantener el valor inicial de 48 para no alterar la actuación ya registrada, aun cuando se reproduzca el cálculo y se compruebe un error metodológico.",
+          "text": "Mantener 48 para no alterar el informe, aun comprobado el error metodológico.",
           "reason": "Una corrección documentada mejora el soporte."
         }
       ],

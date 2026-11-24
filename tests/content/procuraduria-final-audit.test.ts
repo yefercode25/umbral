@@ -110,6 +110,24 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
     }
     expect(audit.authoredOutlier).toEqual([])
   })
+  it('evita invertir sistemáticamente la señal de longitud en las cuarenta transferencias revisadas', () => {
+    const ids = new Set(["pgn-m42-transfer-2","pgn-m43-transfer-1","pgn-m44-transfer-2","pgn-m45-transfer-2","pgn-m47-transfer-1","pgn-m48-transfer-1","pgn-m48-transfer-2","pgn-m50-transfer-1","pgn-m50-transfer-2","pgn-m52-transfer-1","pgn-m53-transfer-2","pgn-m54-transfer-2","pgn-m55-transfer-2","pgn-m56-transfer-1","pgn-m56-transfer-2","pgn-m58-transfer-1","pgn-m59-transfer-1","pgn-m59-transfer-2","pgn-m60-transfer-1","pgn-m61-transfer-2","pgn-m62-transfer-2","pgn-m63-transfer-1","pgn-m63-transfer-2","pgn-m64-transfer-2","pgn-m65-transfer-1","pgn-m65-transfer-2","pgn-m67-transfer-2","pgn-m69-transfer-1","pgn-m72-transfer-1","pgn-m73-transfer-2","pgn-m74-transfer-2","pgn-m76-transfer-1","pgn-m77-transfer-2","pgn-m78-transfer-1","pgn-m78-transfer-2","pgn-m80-transfer-1","pgn-m80-transfer-2","pgn-m82-transfer-1","pgn-m82-transfer-2","pgn-m84-transfer-2"])
+    const items = course.questions.filter(q=>ids.has(q.id))
+    expect(items).toHaveLength(40)
+    const count = (text:string) => text.trim().split(/\s+/).length
+    const ranks = {longest:0,shortest:0,other:0}
+    for (const q of items) {
+      const correct = count(q.options.find(o=>o.id===q.correctOptionId)!.text)
+      const wrong = q.options.filter(o=>o.id!==q.correctOptionId).map(o=>count(o.text))
+      if (correct>Math.max(...wrong)) ranks.longest++
+      else if (correct<Math.min(...wrong)) ranks.shortest++
+      else ranks.other++
+    }
+    expect(ranks.longest).toBeGreaterThan(0)
+    expect(ranks.shortest).toBeGreaterThan(0)
+    expect(ranks.other).toBeGreaterThan(0)
+    expect(Math.max(...Object.values(ranks))).toBeLessThanOrEqual(26)
+  })
   it('mantiene cobertura de casos redactados en los 85 módulos', () => {
     const pool = practiceQuestionPool(course).filter(isPgnAuthored)
     for (const m of course.modules) for (const suffix of ['situational-1','transfer-1','transfer-2']) {

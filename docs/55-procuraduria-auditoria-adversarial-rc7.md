@@ -37,3 +37,6 @@ Segunda revisión: 40 transferencias (M42–M84), con ajustes semánticos de opc
 
 
 Cierre editorial: 21 restantes (19 integradoras, 2 expedientes); claves conservadas. Regresión de cero diferencias pronunciadas de longitud en redacción individual. IDs: pgn-int-data-03, pgn-int-data-04, pgn-int-data-05, pgn-int-proc-02, pgn-int-pet-02, pgn-int-pet-03, pgn-int-pet-04, pgn-int-pet-05, pgn-int-prev-01, pgn-int-prev-02, pgn-int-prev-03, pgn-int-prev-04, pgn-int-prev-05, pgn-int-comp-02, pgn-int-comp-03, pgn-int-comp-05, pgn-int-sw-03, pgn-int-sw-04, pgn-int-sw-05, pgn-dossier-peticion-mixta-3, pgn-dossier-alteracion-log-2. Distribución preliminar: {"longest":6,"shortest":10,"other":5}. La señal no certifica calibración psicométrica.
+
+
+Control contra inversión del patrón en las 40 transferencias: {"longest":15,"shortest":5,"other":20}. Se conservaron versiones completas cuando la condensación de ambos distractores reintroducía la señal de longitud; 1 ajustes de ese tipo. La longitud no acredita por sí sola plausibilidad ni dificultad.

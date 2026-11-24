@@ -53,11 +53,11 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Concluir que no existe obligación formal si la liquidación no genera pago, porque la declaración depende necesariamente del valor de la obligación sustancial.",
+          "text": "Concluir que saldo cero elimina también la obligación de declarar.",
           "reason": "El saldo no elimina automáticamente un deber de declarar."
         },
         {
-          "text": "Considerar la declaración con saldo cero como prueba de infracción formal, aun sin verificar qué obligación correspondía al sujeto durante el período respectivo.",
+          "text": "Presumir infracción formal sin verificar sujeto, período ni norma aplicable.",
           "reason": "Una declaración en cero no es por sí sola irregular."
         }
       ],
@@ -115,7 +115,7 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Considerar suficiente el CDP previo, ya que la disponibilidad acreditada permite tener por registrado el compromiso definitivo con el proveedor sin otro soporte presupuestal.",
+          "text": "Considerar el CDP soporte suficiente de registro definitivo del compromiso.",
           "reason": "Un certificado de disponibilidad no sustituye el registro."
         },
         {
@@ -137,11 +137,11 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Aplicar el estatuto policial a las dos personas porque ambas están vinculadas a la dependencia de Policía, sin distinguir el carácter civil o uniformado.",
+          "text": "Aplicar régimen policial a ambos por pertenecer a la misma dependencia.",
           "reason": "La adscripción institucional no basta para aplicar el mismo estatuto."
         },
         {
-          "text": "Excluir el poder preferente de PGN frente a ambos sujetos por la existencia de órganos disciplinarios policiales, sin examinar los límites legales de competencia.",
+          "text": "Excluir toda intervención de PGN por existir órganos disciplinarios policiales.",
           "reason": "La competencia policial coexiste con el poder preferente legal."
         }
       ],
@@ -157,7 +157,7 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Aplicar el DIH en cuanto interviene la Fuerza Pública, considerando esa circunstancia suficiente para clasificar cualquier situación de violencia como conflicto armado.",
+          "text": "Aplicar DIH por la sola intervención de Fuerza Pública sin clasificar el contexto.",
           "reason": "La intervención estatal no demuestra por sí misma conflicto armado."
         },
         {
@@ -221,7 +221,7 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Reiniciar la base de lectura y verificar después los mensajes pendientes, considerando que la ausencia de expedientes en pantalla indica una falla del motor.",
+          "text": "Reiniciar la base y examinar después la cola de integración.",
           "reason": "La interfaz no identifica por sí sola el componente defectuoso."
         },
         {
@@ -241,7 +241,7 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Desactivar la repetición de mensajes ante cualquier fallo de acuse, aunque no se conozca si cada operación inicial se ejecutó o se perdió.",
+          "text": "Desactivar reintentos aunque no se confirme ejecución del mensaje inicial.",
           "reason": "Eliminar reintentos puede reducir confiabilidad."
         },
         {
@@ -305,11 +305,11 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Formatear los equipos relacionados como medida inmediata de contención y recuperar después los registros disponibles, sin confirmar antes la extensión del incidente ni preservar fuentes.",
+          "text": "Formatear equipos para contener y recuperar registros después.",
           "reason": "Destruir registros limita investigación y puede afectar servicios."
         },
         {
-          "text": "Mantener privilegios y sesiones intactos hasta identificar a la persona responsable, considerando que una restricción previa puede interferir con la atribución definitiva.",
+          "text": "Esperar identificación definitiva antes de restringir privilegios o sesiones de la cuenta.",
           "reason": "El riesgo activo permite medidas proporcionadas mientras continúa análisis."
         }
       ],
@@ -409,11 +409,11 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Aceptar la asociación actual porque la clave foránea valida que el expediente existe, considerando que la restricción también comprueba el vínculo real con la actuación.",
+          "text": "Aceptar la asociación porque la FK valida la existencia del expediente.",
           "reason": "Una referencia existente puede ser incorrecta para el caso."
         },
         {
-          "text": "Desactivar las restricciones para reasignar los registros y no conservar historial de cambios, pues la revisión manual ya acreditó cuál es el expediente correcto.",
+          "text": "Desactivar restricciones y reasignar sin registrar el cambio, pues el soporte ya fue verificado.",
           "reason": "Eliminar restricciones no resuelve exactitud y puede crear otros errores."
         }
       ],

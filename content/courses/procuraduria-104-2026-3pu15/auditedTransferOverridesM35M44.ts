@@ -325,11 +325,11 @@ export const auditedTransferOverridesM35M44: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Rechazar la objeción por haber vencido el traslado de tres días del dictamen, aplicando a ambos mecanismos la misma oportunidad de contradicción.",
+          "text": "Rechazar la objeción porque comparte el plazo de tres días previsto para aclarar el dictamen.",
           "reason": "Los plazos de aclaración y objeción no son intercambiables."
         },
         {
-          "text": "Aceptar el error alegado como probado por la diferencia de zonas horarias y adoptar las consecuencias contra el perito sin examinar sus explicaciones.",
+          "text": "Aceptar el error como probado y decidir consecuencias sin examinar las explicaciones del perito.",
           "reason": "La objeción requiere evaluación y decisión conforme a ley."
         }
       ],
@@ -409,7 +409,7 @@ export const auditedTransferOverridesM35M44: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "Considerar que la huella coincidente autentica la cuenta registrada como autora personal y acredita que los archivos se obtuvieron por un medio legalmente autorizado.",
+          "text": "Considerar que la huella coincidente acredita autoría personal y legalidad de la adquisición.",
           "reason": "La huella no acredita autorización ni identidad humana."
         },
         {
