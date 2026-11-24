@@ -22,3 +22,6 @@ Se sustituyen frases repetidas por supuestos concretos, distractores de figuras 
 
 ## Lote 1F (M20–M22)
 27 reactivos adicionales; acumulado 117/765 (15,29 %), quedan 648. M20: principios, favorabilidad, independencia, culpabilidad, igualdad, exclusión, presunción y cosa juzgada. M21: destinatarios retirados, particulares, recursos, conexidad y extinción. M22: acción/omisión, dolo, culpa, error, fuerza mayor, deber prevalente, orden legítima y orden interno. Contraste: [CGD consolidado PGN](https://apps.procuraduria.gov.co/normograma/compilacion/docs/ley_1952_2019.htm), arts. 2–21, 24–32, 68–72, 92, 147, 158 y 160. Se mantienen IDs, claves, metadatos y selección histórica.
+
+## Lote 1G (M23–M24)
+18 adicionales; acumulado 135/765 (17,65 %), quedan 630. Cierra M20–M34 (15 módulos). M23: interés particular/directo, impedimento y recusación, términos, suspensión, deberes, designación y revisión. M24: puntos iniciales por tipo de conducta, cómputo independiente, notificación interruptiva, reclasificación, sanciones y prescripción de sanción. Contraste CGD consolidado PGN, arts. 33, 36, 38, 40, 44, 47–48, 56, 104–108. Los ejercicios temporales suponen expresamente el régimen vigente del art. 33 desde el 29/12/2023. No se cambia selección histórica de simulacros.

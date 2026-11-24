@@ -1782,6 +1782,280 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "9, 68"
     ]
+  ],
+  "pgn-m23": [
+    [
+      "Una servidora debe evaluar una solicitud contractual que beneficiaría directamente a su hermano. Conoce la relación familiar antes de participar en la decisión y considera que su criterio técnico es suficiente para garantizar objetividad.",
+      "¿Qué actuación exige el conflicto de intereses acreditado en el supuesto?",
+      [
+        "Declararse impedida y tramitar la decisión ante la autoridad competente.",
+        "Emitir evaluación técnica y abstenerse únicamente de firmar el acto definitivo.",
+        "Revelar la relación al terminar el trámite para garantizar transparencia posterior."
+      ],
+      [
+        "El interés directo de un hermano está dentro del grado legal.",
+        "La gestión también está comprendida en el conflicto.",
+        "La revelación tardía no reemplaza el impedimento."
+      ],
+      "44"
+    ],
+    [
+      "Un funcionario que conoce una actuación disciplinaria advierte que tiene amistad íntima con el disciplinado reconocido como sujeto procesal. La situación se encuentra acreditada; el despacho propone conservar al funcionario para evitar cambiar el cronograma.",
+      "¿Cómo debe gestionar el funcionario la causal que acaba de advertir?",
+      [
+        "Declararse inmediatamente impedido mediante escrito motivado con la causal y soportes posibles.",
+        "Solicitar al defensor que se retire para mantener al funcionario en el asunto.",
+        "Continuar hasta el cierre y presentar el impedimento al remitir a juzgamiento."
+      ],
+      [
+        "La amistad íntima con sujeto procesal es causal; debe declararse de inmediato.",
+        "No corresponde desplazar al defensor para evitar el trámite.",
+        "No puede diferirse la declaración hasta el cierre."
+      ],
+      "104–105"
+    ],
+    [
+      "Un disciplinado presenta recusación escrita contra quien instruye su expediente y aporta prueba de una causal legal. El servidor recusado estima que la causal no se configura y necesita responder conforme al procedimiento especial.",
+      "¿Dentro de qué término debe manifestar si acepta o no la causal?",
+      [
+        "Dos días siguientes a la formulación de la recusación.",
+        "Tres días siguientes a la formulación de la recusación.",
+        "Cinco días siguientes al recibo de la recusación."
+      ],
+      [
+        "El recusado dispone de dos días para manifestarse.",
+        "Tres días corresponden a la decisión del superior.",
+        "Cinco días no es el plazo general aplicable al recusado."
+      ],
+      "106–107"
+    ],
+    [
+      "Un instructor se declara impedido y remite de inmediato la actuación al superior. Este recibe el expediente con la explicación y los soportes correspondientes; no se trata del régimen especial del Procurador General.",
+      "¿Qué término tiene el superior para decidir de plano ese impedimento?",
+      [
+        "Tres días siguientes al recibo de la actuación disciplinaria.",
+        "Dos días siguientes a la recepción de la actuación disciplinaria.",
+        "Cinco días hábiles desde la formulación del impedimento."
+      ],
+      [
+        "El art. 107 fija tres días desde el recibo.",
+        "Dos días regulan la manifestación del recusado.",
+        "No se aplica aquí el supuesto especial del Procurador General."
+      ],
+      "107–108"
+    ],
+    [
+      "El superior recibe la actuación disciplinaria de un instructor que se declaró impedido. Al revisar las razones y las pruebas considera acreditada la causal y acepta el impedimento; el expediente permanece suspendido mientras se resuelve.",
+      "¿Qué debe determinar el superior al aceptar la causal de impedimento?",
+      [
+        "A quién corresponde el conocimiento de las diligencias disciplinarias.",
+        "Si el disciplinado cometió la falta objeto de la actuación.",
+        "Si procede terminar definitivamente la actuación por pérdida de competencia."
+      ],
+      [
+        "El superior debe determinar quién conoce las diligencias.",
+        "La decisión de impedimento no resuelve responsabilidad.",
+        "Aceptar la causal no extingue la acción."
+      ],
+      "107"
+    ],
+    [
+      "Un instructor recibió recusación debidamente formulada y estima que debe rechazarla. Mientras el superior resuelve, la secretaría propone practicar una diligencia ordinaria ya programada y proseguir con el cómputo de la actuación.",
+      "¿Qué estado tiene la actuación desde la presentación de la recusación?",
+      [
+        "Se suspende hasta que se decida la recusación conforme al procedimiento.",
+        "Continúa hasta que el superior acepte expresamente la causal invocada.",
+        "Se suspende únicamente si el instructor manifiesta aceptar la causal."
+      ],
+      [
+        "La presentación activa la suspensión de la actuación.",
+        "No se requiere aceptación previa del superior.",
+        "No depende de que el recusado acepte la causal."
+      ],
+      "107"
+    ],
+    [
+      "Un servidor público utiliza un bien institucional asignado exclusivamente para su trabajo en un asunto personal ajeno al servicio. La investigación debe identificar qué clase de regla funcional se encuentra comprometida antes de evaluar los restantes elementos.",
+      "¿Qué categoría normativa describe el mandato de destinar bienes a su finalidad pública?",
+      [
+        "Un deber funcional respecto del uso de bienes y recursos asignados.",
+        "Una inhabilidad para acceder al empleo público por su vínculo contractual.",
+        "Una causal de recusación de quien instruye el proceso por interés directo."
+      ],
+      [
+        "El art. 38 exige destinar bienes a sus fines asignados.",
+        "No se describe restricción de acceso al cargo.",
+        "No se describe una causal del operador disciplinario."
+      ],
+      "38"
+    ],
+    [
+      "En una entidad, un nominador interviene en la designación de una persona pese a saber que existe una inhabilidad legal vigente para ese empleo. La oficina analiza la conducta del nominador, no la eventual responsabilidad del aspirante.",
+      "¿Qué supuesto debe examinarse en el régimen disciplinario del nominador?",
+      [
+        "La falta relacionada con designar a sabiendas de la causal de inhabilidad.",
+        "El conflicto de intereses únicamente si el aspirante es pariente del nominador.",
+        "La falta por uso indebido de bienes institucionales asignados al nominador."
+      ],
+      [
+        "El art. 56 contempla intervenir en designación con conocimiento de la causal.",
+        "La inhabilidad no exige parentesco con el nominador.",
+        "No se describe utilización de bienes institucionales."
+      ],
+      "40, 56.2"
+    ],
+    [
+      "Un servidor que ejerce funciones disciplinarias debe revisar una decisión que él mismo profirió cuando ocupaba otro cargo. El equipo considera que conoce mejor los hechos y propone que resuelva la revisión sin examinar el impedimento.",
+      "¿Qué causal concreta debe tramitar antes de asumir esa revisión?",
+      [
+        "Haber proferido la decisión que ahora corresponde revisar.",
+        "Tener enemistad grave con el sujeto procesal que recurre.",
+        "Haber dejado vencer injustificadamente el término de la actuación."
+      ],
+      [
+        "La revisión de la propia decisión está prevista como causal.",
+        "El caso no acredita enemistad grave.",
+        "No se describe vencimiento injustificado de términos."
+      ],
+      "104.2, 105"
+    ]
+  ],
+  "pgn-m24": [
+    [
+      "Un servidor comete una falta instantánea ordinaria el 10 de febrero de 2024. La entidad conoce la noticia en agosto de 2025 y abre investigación en octubre de ese año. Se aplica el artículo 33 vigente, sin régimen especial.",
+      "¿Qué fecha determina el inicio del término ordinario de prescripción?",
+      [
+        "El 10 de febrero de 2024, fecha de consumación de la falta.",
+        "La fecha de agosto de 2025 en que se conoció la noticia.",
+        "La fecha de octubre de 2025 en que se abrió la investigación."
+      ],
+      [
+        "En faltas instantáneas se cuenta desde la consumación.",
+        "El conocimiento posterior no inicia el cómputo.",
+        "La apertura no es el punto inicial legal."
+      ],
+      "33"
+    ],
+    [
+      "Una conducta permanente ordinaria comienza el 3 de marzo de 2024 y su último acto ocurre el 12 de septiembre de 2024. La queja llega en junio de 2025 y se verifica que la regla vigente del artículo 33 es aplicable al supuesto.",
+      "¿Desde cuándo comienza el término de cinco años de prescripción?",
+      [
+        "Desde el 12 de septiembre de 2024, último acto de la conducta.",
+        "Desde el 3 de marzo de 2024, primer acto de la conducta.",
+        "Desde la fecha de junio de 2025 en que se recibió la queja."
+      ],
+      [
+        "En conductas permanentes o continuadas se cuenta desde el último hecho o acto.",
+        "El inicio de la permanencia no determina ese cómputo.",
+        "La noticia posterior no desplaza el punto legal."
+      ],
+      "33"
+    ],
+    [
+      "Una obligación funcional permanece incumplida desde abril de 2024 hasta que cesa jurídicamente el deber de actuar el 18 de diciembre de 2024. Se trata de una falta omisiva ordinaria sujeta al artículo 33 vigente.",
+      "¿Cuál es el punto inicial de prescripción aplicable a esa omisión?",
+      [
+        "El 18 de diciembre de 2024, cuando cesó el deber de actuar.",
+        "La primera fecha de abril de 2024 en que se omitió actuar.",
+        "La fecha en que el funcionario investigador conoció el incumplimiento."
+      ],
+      [
+        "La prescripción de faltas omisivas se cuenta al cesar el deber.",
+        "La primera omisión no es el punto inicial previsto.",
+        "El conocimiento del investigador no inicia ese plazo."
+      ],
+      "33"
+    ],
+    [
+      "En un expediente se juzgan dos faltas ordinarias instantáneas consumadas el 8 de enero y el 20 de noviembre de 2024, respectivamente. No existen reglas especiales ni eventos interruptivos. El equipo proyecta un único vencimiento para ambas.",
+      "¿Cómo deben tratarse los términos de prescripción de esas dos conductas?",
+      [
+        "Computarlos independientemente desde la fecha de consumación de cada falta.",
+        "Computarlos conjuntamente desde la fecha de consumación de la última falta.",
+        "Computarlos conjuntamente desde la apertura del expediente que reúne ambas."
+      ],
+      [
+        "La prescripción se cumple por separado para cada conducta.",
+        "La última fecha no prolonga el término de la primera.",
+        "La unidad del expediente no unifica los cómputos."
+      ],
+      "33"
+    ],
+    [
+      "En una actuación por falta ordinaria se firma fallo de primera instancia antes de vencer el término de cinco años, pero su notificación válida se practica después de que ese término ya había transcurrido. No existe otro evento legal interruptivo.",
+      "¿Qué efecto tiene la firma oportuna frente a la prescripción de la acción?",
+      [
+        "No interrumpe por sí sola, pues el evento exigido es la notificación.",
+        "Interrumpe desde la firma aunque la notificación se practique posteriormente al vencimiento.",
+        "Interrumpe retroactivamente desde la fecha en que se proyectó el fallo sancionatorio."
+      ],
+      [
+        "El art. 33 exige notificación de primera instancia.",
+        "Expedir no equivale a notificar.",
+        "El proyecto de fallo no tiene efecto interruptivo."
+      ],
+      "33"
+    ],
+    [
+      "Un servidor público ordinario, no elegido popularmente, cometió una falta que coincide objetivamente con una descripción taxativa gravísima. La prueba demuestra culpa grave, no dolo ni culpa gravísima, y no concurre otro régimen especial.",
+      "¿Cómo se clasifica la falta objetivamente gravísima cometida con culpa grave?",
+      [
+        "Como falta grave conforme al criterio especial de clasificación del Código.",
+        "Como falta gravísima porque su descripción típica permanece en el catálogo legal.",
+        "Como falta leve porque no se ha demostrado la intención de cometerla."
+      ],
+      [
+        "El numeral 9 del art. 47 prevé la reclasificación.",
+        "La tipicidad objetiva no elimina ese criterio especial.",
+        "Ausencia de dolo no implica levedad."
+      ],
+      "47.9"
+    ],
+    [
+      "Un servidor de carrera es declarado responsable de una falta grave dolosa, sin reducción especial aplicable. La autoridad debe identificar el tipo y rango legal de sanción antes de valorar agravantes y atenuantes del expediente.",
+      "¿Qué sanción establece el Código para esa clasificación y modalidad subjetiva?",
+      [
+        "Suspensión de tres a dieciocho meses e inhabilidad especial por igual término.",
+        "Suspensión de uno a doce meses sin inhabilidad especial por ese concepto.",
+        "Destitución e inhabilidad general de ocho a diez años por esa conducta."
+      ],
+      [
+        "El art. 48.3 regula la falta grave dolosa.",
+        "El segundo rango corresponde a falta grave culposa.",
+        "La destitución descrita corresponde a gravísima con culpa gravísima."
+      ],
+      "48"
+    ],
+    [
+      "Una servidora es declarada responsable de una falta leve dolosa. No concurre una regla especial de reducción y el funcionario debe aplicar la sanción ordinaria legal, tomando como referencia el salario básico de la época de los hechos.",
+      "¿Qué sanción corresponde a esa falta leve cometida con dolo?",
+      [
+        "Multa de diez a ciento ochenta días del salario básico de la época.",
+        "Amonestación escrita por la sola clasificación de la falta como leve.",
+        "Suspensión de uno a doce meses sin inhabilidad especial por ese concepto."
+      ],
+      [
+        "El art. 48.5 establece multa para la leve dolosa.",
+        "La amonestación corresponde a leve culposa.",
+        "La suspensión citada corresponde a grave culposa."
+      ],
+      "48"
+    ],
+    [
+      "Una sanción disciplinaria quedó ejecutoriada el 15 de marzo de 2024. La oficina de ejecución confunde el término para ejecutar la sanción con el de prescripción de la acción, que había sido interrumpido por notificación del fallo inicial.",
+      "¿Qué término y punto inicial rigen la prescripción de la sanción impuesta?",
+      [
+        "Cinco años contados a partir de la ejecutoria del fallo disciplinario.",
+        "Dos años contados a partir de la notificación del fallo de primera instancia.",
+        "Cinco años contados a partir de la fecha de consumación de la falta."
+      ],
+      [
+        "El art. 36 fija cinco años desde ejecutoria.",
+        "Dos años regulan la acción ordinaria tras interrupción.",
+        "La consumación determina el inicio de la acción instantánea."
+      ],
+      "33, 36"
+    ]
   ]
 }
 
