@@ -2467,6 +2467,280 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "21, 158–160, 205"
     ]
+  ],
+  "pgn-m38": [
+    [
+      "Un equipo investiga una modificación de un registro institucional. La bitácora de eventos se sobrescribe cada siete días y las declaraciones pueden recibirse posteriormente. La autoridad competente dispone de un mecanismo legal de preservación inmediata.",
+      "¿Qué prioridad debe establecer el plan probatorio para evitar pérdida de evidencia?",
+      [
+        "Preservar primero la bitácora mediante adquisición documentada y autorizada.",
+        "Recibir primero todos los testimonios antes de asegurar los registros.",
+        "Esperar a la evaluación de cargos para solicitar la bitácora definitiva."
+      ],
+      [
+        "El riesgo de pérdida justifica priorizar aseguramiento legal.",
+        "Los testimonios no sustituyen un registro próximo a desaparecer.",
+        "La espera podría impedir su recuperación."
+      ],
+      "147–148, 155"
+    ],
+    [
+      "Una investigación debe establecer si la omisión de una respuesta ocurrió antes de que el servidor fuera reasignado. El expediente contiene correos de solicitud, una resolución de reasignación y un historial de asignaciones con fechas distintas.",
+      "¿Qué pregunta probatoria conecta mejor las fuentes con el deber funcional investigado?",
+      [
+        "Determinar quién tenía el deber de responder cuando venció el plazo aplicable.",
+        "Determinar cuántas comunicaciones recibió cada servidor durante toda la vigencia.",
+        "Determinar quién ocupaba el cargo cuando llegó la queja a Procuraduría."
+      ],
+      [
+        "El deber se analiza para el momento relevante de la conducta.",
+        "El volumen general no determina la asignación concreta.",
+        "La noticia posterior no identifica al obligado cuando venció el plazo."
+      ],
+      "9, 27, 148"
+    ],
+    [
+      "La hipótesis inicial atribuye una transacción a una persona por el nombre de usuario registrado. Se documenta que las credenciales pudieron compartirse y existe una fuente independiente de control de acceso físico que cubre el mismo intervalo.",
+      "¿Qué diligencia discrimina mejor entre la hipótesis de autoría y la alternativa?",
+      [
+        "Contrastar accesos, sesiones y circunstancias con los registros independientes disponibles.",
+        "Solicitar nuevamente el mismo registro de usuario en un formato de exportación diferente.",
+        "Entrevistar solamente a quienes ya respaldan la atribución inicial de la transacción."
+      ],
+      [
+        "El contraste de fuentes permite probar alternativas de atribución.",
+        "Cambiar formato no genera una fuente independiente.",
+        "Seleccionar testigos confirmatorios introduce sesgo."
+      ],
+      "147–148, 159"
+    ],
+    [
+      "Una matriz probatoria marca como acreditada la autoría de un cambio porque existe una captura con el nombre del usuario. No se verificó si el usuario era compartido ni si la captura corresponde al sistema y momento investigados.",
+      "¿Cómo debe actualizarse la matriz para representar el estado real del conocimiento?",
+      [
+        "Registrar el dato observado, la inferencia provisional y las verificaciones pendientes.",
+        "Mantener autoría acreditada y añadir una advertencia general sobre incertidumbre técnica.",
+        "Eliminar la captura de la matriz hasta lograr una prueba directa de autoría."
+      ],
+      [
+        "La matriz distingue observación, inferencia y vacío.",
+        "Una advertencia no corrige la clasificación errónea.",
+        "Puede registrarse un elemento aún pendiente de contextualización."
+      ],
+      "147–148, 159"
+    ],
+    [
+      "Dos documentos relevantes presentan horas distintas para un evento. Uno usa UTC y el otro hora colombiana; ambas fuentes conservan los registros originales. Antes de comparar el orden de eventos, el equipo necesita establecer si la diferencia es real.",
+      "¿Qué comprobación debe integrarse primero en el plan de análisis cronológico?",
+      [
+        "Normalizar las zonas horarias en copia y comprobar los desfases de reloj.",
+        "Promediar ambos horarios para fijar una hora aproximada del evento investigado.",
+        "Priorizar la hora del sistema que registró el evento con mayor precisión decimal."
+      ],
+      [
+        "La comparación exige una referencia temporal común y control de sincronización.",
+        "Promediar marcas no equivalentes carece de fundamento.",
+        "Los decimales no prueban exactitud temporal."
+      ],
+      "148, 156, 159"
+    ],
+    [
+      "Una investigación sobre incumplimiento contractual tiene una matriz de pruebas centrada en el pago. Surge un acta que demuestra una suspensión válida del contrato durante parte del periodo investigado. El plazo de investigación permite practicar nuevas diligencias.",
+      "¿Cómo debe modificarse el plan frente a ese hecho temporal relevante?",
+      [
+        "Revisar deberes y periodos afectados, ajustando las diligencias a la nueva premisa.",
+        "Mantener el plan inicial y anexar el acta únicamente como documento de contexto.",
+        "Repetir todo el recaudo anterior sin distinguir qué hipótesis resulta afectada."
+      ],
+      [
+        "El hecho nuevo cambia la delimitación del deber y las preguntas probatorias.",
+        "Anexar sin valorar deja intacta una premisa cuestionada.",
+        "No se justifica repetir evidencia que conserva validez y utilidad."
+      ],
+      "9, 148, 159"
+    ],
+    [
+      "En un expediente se desconoce si una demora obedeció a una falla institucional o a inacción del responsable. Existen reportes de disponibilidad, solicitudes de soporte y registros de trabajo que podrían contrastar ambas explicaciones.",
+      "¿Qué diseño probatorio es más apropiado para distinguir entre las dos hipótesis?",
+      [
+        "Examinar tanto la disponibilidad del sistema como las actuaciones posibles del servidor.",
+        "Revisar exclusivamente reportes de falla para determinar que toda demora estuvo justificada.",
+        "Verificar solamente el plazo vencido y descartar los factores operativos del caso."
+      ],
+      [
+        "Ambas hipótesis requieren pruebas sobre posibilidad y deber de actuar.",
+        "La falla no demuestra por sí sola imposibilidad de cumplimiento.",
+        "La fecha vencida no explica culpabilidad ni justificación."
+      ],
+      "9–10, 31, 148"
+    ],
+    [
+      "En una investigación por cambios en un documento, los testigos difieren respecto de su fecha. El expediente cuenta con un historial de versiones y copias de correos remitidos a destinatarios independientes que permiten contrastar el orden de los cambios.",
+      "¿Qué diseño de recaudo permite verificar la secuencia con mayor capacidad explicativa?",
+      [
+        "Contrastar versiones y fechas de envío con las declaraciones sobre cada cambio.",
+        "Elegir la declaración más detallada y utilizarla como cronología oficial del expediente.",
+        "Contar cuántos testigos respaldan cada fecha y adoptar la versión mayoritaria."
+      ],
+      [
+        "La secuencia puede contrastarse mediante fuentes documentales independientes y relatos.",
+        "Detalle narrativo no garantiza exactitud.",
+        "La mayoría no reemplaza comprobación cronológica."
+      ],
+      "148, 159"
+    ],
+    [
+      "Un despacho recibe veinte documentos sobre una posible omisión. Quedan dos hechos decisivos sin fuente asignada: la fecha de conocimiento de una obligación y la posibilidad efectiva de cumplirla. Se aproxima el vencimiento de la etapa.",
+      "¿Cómo debe priorizarse el ajuste final del plan de investigación?",
+      [
+        "Asignar diligencias pertinentes a los dos vacíos y verificar el término disponible.",
+        "Solicitar nuevos documentos generales de la dependencia para aumentar el volumen probatorio.",
+        "Cerrar el plan por haberse alcanzado una cantidad suficiente de documentos recaudados."
+      ],
+      [
+        "Los vacíos deben vincularse a hechos relevantes y tiempo legal.",
+        "El volumen no garantiza resolver la cuestión pendiente.",
+        "El número de anexos no determina suficiencia."
+      ],
+      "147–148, 151, 213"
+    ]
+  ],
+  "pgn-m39": [
+    [
+      "Un expediente contiene cuatro informes que citan literalmente una única denuncia y otro registro independiente que cuestiona su contenido. El equipo contabiliza cinco fuentes y considera que cuatro respaldan la hipótesis de responsabilidad.",
+      "¿Qué valoración distingue adecuadamente corroboración independiente de repetición documental?",
+      [
+        "Reconocer el origen común de cuatro informes y contrastar el registro independiente.",
+        "Asignar cuatro votos probatorios a la denuncia frente a un voto contrario.",
+        "Descartar la fuente independiente porque su versión aparece en menos documentos del expediente."
+      ],
+      [
+        "Repetir una misma información no multiplica su independencia.",
+        "La sana crítica no consiste en votación documental.",
+        "La cantidad no determina por sí sola el mérito."
+      ],
+      "149, 159"
+    ],
+    [
+      "Un registro de ingreso acredita que una persona entró al edificio donde se modificó un documento. No existe prueba directa de acceso al equipo ni de intervención en el documento. El instructor propone usar el ingreso como demostración de autoría.",
+      "¿Qué alcance permite atribuir razonadamente al hecho indicador acreditado?",
+      [
+        "Sostener presencia en el lugar, sin concluir automáticamente autoría de la modificación.",
+        "Sostener autoría de la modificación porque el ingreso se encuentra documentalmente acreditado.",
+        "Descartar el registro de ingreso porque no demuestra por sí solo la responsabilidad."
+      ],
+      [
+        "La presencia es un indicador cuya inferencia requiere premisas adicionales.",
+        "El salto desde presencia hasta autoría no está justificado.",
+        "Un indicio limitado puede conservar utilidad."
+      ],
+      "149, 159"
+    ],
+    [
+      "Una decisión disciplinaria enumera ocho pruebas legalmente practicadas y afirma que todas resultan suficientes. No explica el mérito de cada elemento, las contradicciones entre fuentes ni cómo sustentan la conclusión de responsabilidad.",
+      "¿Qué componente de motivación probatoria debe incorporarse a la decisión?",
+      [
+        "Exponer razonadamente el mérito de las pruebas y su valoración conjunta.",
+        "Agregar el texto íntegro de las pruebas para sustituir el análisis de mérito.",
+        "Aumentar las citas normativas sin explicar la relación entre pruebas y conclusión."
+      ],
+      [
+        "El art. 159 exige motivación razonada del mérito probatorio.",
+        "Transcribir no equivale a valorar.",
+        "Citar normas no explica inferencias fácticas."
+      ],
+      "159"
+    ],
+    [
+      "Dos testimonios discrepan en detalles periféricos sobre el color de una carpeta, pero coinciden en la entrega y existe un registro independiente que confirma su fecha. No se identifican contradicciones materiales sobre el hecho central.",
+      "¿Cómo debe evaluarse esa discrepancia dentro del conjunto probatorio?",
+      [
+        "Examinar su relevancia y conservar el mérito corroborado del hecho central.",
+        "Excluir ambos relatos porque toda diferencia periférica destruye su fuerza probatoria.",
+        "Considerar los testimonios plenamente exactos en todos sus detalles por la corroboración."
+      ],
+      [
+        "La discrepancia se valora según su incidencia en el hecho debatido.",
+        "No toda diferencia elimina la credibilidad del relato.",
+        "Corroborar la entrega no confirma todos los detalles."
+      ],
+      "159"
+    ],
+    [
+      "Una prueba técnica indica que una transacción se ejecutó desde una cuenta autorizada, pero el análisis del sistema demuestra que esa cuenta podía ser utilizada por varios operadores. El proyecto de decisión atribuye la acción al titular nominal.",
+      "¿Qué inferencia respeta el alcance técnico de los datos acreditados?",
+      [
+        "Acreditar el uso de la cuenta y mantener abierta la identidad del operador.",
+        "Acreditar la autoría personal del titular por la sola identificación de su cuenta.",
+        "Descartar toda evidencia del sistema por no individualizar directamente a la persona."
+      ],
+      [
+        "La identidad de cuenta no demuestra necesariamente identidad de quien operó.",
+        "La titularidad no resuelve el uso compartido.",
+        "La prueba sigue aportando información sobre la transacción."
+      ],
+      "147, 159–160"
+    ],
+    [
+      "Un informe de auditoría identifica una omisión de control y concluye que hubo dolo. La fuente acredita la ausencia de la verificación, pero no presenta datos sobre conocimiento de la ilicitud ni voluntad del servidor investigado.",
+      "¿Qué distinción debe efectuar el funcionario al valorar la conclusión del informe?",
+      [
+        "Separar el incumplimiento acreditado de la modalidad subjetiva que requiere prueba adicional.",
+        "Aceptar el dolo porque la auditoría acredita objetivamente la falta de control.",
+        "Reducir la conducta a culpa leve porque el informe no acredita voluntad ilícita."
+      ],
+      [
+        "El dolo exige elementos propios distintos del incumplimiento objetivo.",
+        "El hallazgo técnico no acredita por sí mismo dolo.",
+        "La ausencia de prueba de dolo no acredita automáticamente culpa leve."
+      ],
+      "10, 28–29, 159"
+    ],
+    [
+      "En una investigación por presunto acoso sexual laboral tipificado en el numeral 5 del artículo 53, la autoridad debe valorar una situación de subordinación entre la víctima y la persona investigada. El equipo propone excluir ese factor del análisis.",
+      "¿Qué enfoque debe aplicar al valorar las pruebas en ese supuesto específico?",
+      [
+        "Enfoque diferencial e interseccional, considerando las relaciones de poder pertinentes.",
+        "Un estándar de responsabilidad objetiva basado únicamente en la posición de subordinación.",
+        "Un criterio que excluya toda circunstancia de vulnerabilidad por igualdad formal."
+      ],
+      [
+        "El art. 160A exige ese enfoque en el supuesto indicado.",
+        "La posición de poder no prueba automáticamente responsabilidad.",
+        "La igualdad no impide considerar circunstancias pertinentes de vulnerabilidad."
+      ],
+      "10, 53.5, 159–160A"
+    ],
+    [
+      "Un expediente presenta dos explicaciones incompatibles de un hecho decisivo. La fuente que respalda una de ellas es íntegra, pero su alcance temporal no cubre el momento investigado; la otra explicación cuenta con soportes que sí cubren ese intervalo.",
+      "¿Qué criterio permite asignar mérito a las fuentes sin depender de su apariencia técnica?",
+      [
+        "Valorar integridad, alcance temporal y relación de cada fuente con el hecho.",
+        "Priorizar la fuente íntegra aunque no cubra el momento investigado.",
+        "Asignar igual mérito a ambas fuentes por provenir de sistemas institucionales."
+      ],
+      [
+        "Integridad no equivale a cobertura del hecho que se pretende demostrar.",
+        "La fuente íntegra puede no resolver la cuestión temporal.",
+        "El origen institucional no iguala automáticamente su valor."
+      ],
+      "149, 159"
+    ],
+    [
+      "Una defensa acredita que el hecho indicador central utilizado por el instructor nunca ocurrió, aunque permanecen dos datos secundarios compatibles con la acusación. El proyecto de fallo conserva la inferencia original sin analizar el efecto de la nueva prueba.",
+      "¿Qué revisión exige la sana crítica ante la pérdida de esa premisa central?",
+      [
+        "Reexaminar la inferencia y verificar si las pruebas restantes sostienen la conclusión.",
+        "Mantener la inferencia porque dos datos secundarios todavía coinciden con la acusación.",
+        "Excluir todo el expediente por haber quedado desvirtuado uno de sus hechos indicadores."
+      ],
+      [
+        "La inferencia pierde soporte si su premisa se desvirtúa.",
+        "La coincidencia secundaria no conserva automáticamente la conclusión.",
+        "El efecto se examina sobre cada prueba e inferencia."
+      ],
+      "149, 159–160"
+    ]
   ]
 }
 

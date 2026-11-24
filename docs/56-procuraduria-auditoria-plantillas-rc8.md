@@ -28,3 +28,6 @@ Se sustituyen frases repetidas por supuestos concretos, distractores de figuras 
 
 ## Lote 2A (M35–M37)
 27 adicionales; acumulado 162/765 (21,18 %), quedan 603. M35: necesidad, carga, imparcialidad, oficiosidad, libertad probatoria, indicios y certeza. M36: pertinencia, conducencia, utilidad, superfluidad, límites de recaudo y prueba ilegal. M37: exclusión, inexistencia, contradicción, traslado de actuaciones penales y administrativas, fuentes independientes. Contraste CGD consolidado PGN arts. 14, 21, 147–160, 205 y 222. Se mantiene selección histórica y se incorporan racionales individuales.
+
+## Lote 2B (M38–M39)
+18 adicionales; acumulado 180/765 (23,53 %), quedan 585. M38: priorización por riesgo de pérdida, matrices, preguntas discriminantes, cronología y actualización por hechos nuevos. M39: independencia de fuentes, indicios, motivación, contradicciones, inferencia de autoría, modalidad subjetiva y enfoque diferencial del art. 160A (Ley 2365/2024). Contraste CGD consolidado arts. 9–10, 27–31, 147–160A, 213. Se distingue el método analítico de las reglas legales. Mantiene claves y selección histórica.
