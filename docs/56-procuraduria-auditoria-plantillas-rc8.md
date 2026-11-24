@@ -52,3 +52,6 @@ Se sustituyen frases repetidas por supuestos concretos, distractores de figuras 
 
 ## RC.9 · Lote 4A (M15–M19)
 45 adicionales; acumulado 360/765 (47,06 %). Cada grupo de tres casos corresponde a fundamentos, aplicación y cierre acumulativo de las lecciones revisadas (M15 acto administrativo; M16 CPACA; M17 petición; M18 transparencia y datos; M19 teoría procesal). Contraste CPACA arts. 34–45, 65–76, 87 y 97, Ley 1755 arts. 13–28, Ley 1712 arts. 2, 18–21 y 28, Ley 1581 arts. 4 y 10, CGD arts. 12–14, 109–115, 120–137, 147–161, 202–205 y 222. Nuevos casos mantienen sus claves e IDs, y se asignan en orden de lección a la evaluación de cinco preguntas.
+
+## RC.9 · Lote 4B (M5–M9)
+45 adicionales; acumulado 405/765 (52,94 %). Tres casos por lección en orden: Estado social y garantías, estructura constitucional y control, principios de función administrativa, servidor y deber funcional, autonomía y distribución territorial. Fuentes: Constitución (arts. 1–6, 13, 29, 113–124, 209, 250, 267, 277, 282, 286–288), CPACA, Ley 1755, Ley 1712, CGD, Decreto Ley 262/2000, Decreto Ley 1851/2021 y Ley 1454/2011 art. 27. No confunde control fiscal, disciplinario y penal; no atribuye competencia por proximidad. Conserva los IDs y claves.

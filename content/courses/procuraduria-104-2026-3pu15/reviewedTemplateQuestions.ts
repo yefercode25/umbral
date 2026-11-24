@@ -5481,6 +5481,691 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "CGD arts. 14, 160, 222"
     ]
+  ],
+  "pgn-m5": [
+    [
+      "Un municipio organiza su atención ciudadana para atender únicamente a personas que pueden realizar trámites por internet. Una comunidad sin conectividad solicita una alternativa y la entidad alega que la eficiencia administrativa basta para mantener el canal único.",
+      "¿Qué fundamento constitucional exige revisar esa barrera de acceso?",
+      [
+        "El Estado social de derecho y la efectividad material de los derechos.",
+        "La autonomía territorial entendida como facultad de excluir usuarios de los servicios.",
+        "La separación de poderes como impedimento para ofrecer canales alternativos de atención."
+      ],
+      [
+        "La dignidad y efectividad de derechos orientan la actuación estatal.",
+        "La autonomía opera dentro de Constitución y ley.",
+        "La separación de poderes no impide corregir barreras."
+      ],
+      "Constitución arts. 1–2, 13"
+    ],
+    [
+      "Un funcionario afirma que sus actuaciones solo pueden generar responsabilidad si infringe una prohibición expresa. El expediente muestra que dejó de ejercer una función que la ley le asignaba y que tenía posibilidad de cumplir en el momento relevante.",
+      "¿Qué regla constitucional permite examinar esa omisión funcional?",
+      [
+        "Los servidores responden también por omisión o extralimitación en sus funciones.",
+        "Los servidores responden únicamente por ejecutar actos expresamente prohibidos por la ley.",
+        "Los servidores responden por omisión solo cuando otra autoridad les ordena actuar."
+      ],
+      [
+        "El art. 6 incluye omisiones y extralimitaciones.",
+        "La infracción activa no es el único supuesto.",
+        "El deber legal puede existir sin una orden adicional."
+      ],
+      "Constitución art. 6"
+    ],
+    [
+      "Una dependencia quiere impedir que una persona controvierta una prueba administrativa para resolver más rápido una solicitud. La actuación no es judicial, pero la decisión puede afectar de manera directa los derechos de esa persona.",
+      "¿Qué garantía constitucional resulta aplicable a esa actuación administrativa?",
+      [
+        "El debido proceso, incluida la defensa y contradicción conforme al procedimiento.",
+        "El debido proceso únicamente cuando un juez asume conocimiento de la controversia.",
+        "El derecho a controvertir pruebas solo después de ejecutarse la decisión administrativa."
+      ],
+      [
+        "El art. 29 también rige las actuaciones administrativas.",
+        "No se limita a procesos judiciales.",
+        "La contradicción debe garantizarse en su oportunidad legal."
+      ],
+      "Constitución art. 29"
+    ],
+    [
+      "Un superior pide a un profesional de apoyo expedir una decisión que la ley reserva a otro funcionario. La orden se comunica verbalmente y la persona que la imparte afirma que actúa para proteger el interés general y cumplir una meta urgente.",
+      "¿Qué verificación debe preceder a la actuación solicitada en ese caso?",
+      [
+        "Confirmar que existe una atribución legal para ejercer esa función concreta.",
+        "Comprobar que la orden proviene de un superior, pues eso sustituye la atribución legal.",
+        "Verificar que la medida es rápida y beneficiosa, con independencia de la competencia."
+      ],
+      [
+        "Ninguna autoridad ejerce funciones distintas de las conferidas por Constitución y ley.",
+        "La jerarquía no crea atribuciones.",
+        "El objetivo público no reemplaza competencia."
+      ],
+      "Constitución arts. 6, 121"
+    ],
+    [
+      "Una autoridad tramita una solicitud que puede afectar un derecho fundamental. Tiene dos actuaciones legalmente permitidas: una medida que protege el derecho con garantías y otra que logra el objetivo más rápido pero omite una formalidad sustancial exigible.",
+      "¿Qué criterio debe guiar la elección entre esas alternativas disponibles?",
+      [
+        "Adoptar la actuación competente, proporcionada y respetuosa de las garantías exigibles.",
+        "Preferir la vía más breve porque la celeridad prevalece sobre las formalidades sustanciales.",
+        "Elegir la actuación más restrictiva para demostrar que se protege el interés general."
+      ],
+      [
+        "La eficacia se armoniza con legalidad y debido proceso.",
+        "La celeridad no autoriza omitir garantías.",
+        "La intensidad no garantiza proporcionalidad."
+      ],
+      "Constitución arts. 29, 121, 209"
+    ],
+    [
+      "Una oficina compara dos solicitudes en condiciones equivalentes. Una pertenece a un ciudadano conocido de la jefatura y otra a un ciudadano sin vínculos con la entidad. No concurre una prioridad legal diferente entre las dos peticiones.",
+      "¿Qué principio exige aplicar criterios objetivos en la atención de ambas personas?",
+      [
+        "Igualdad e imparcialidad de la actuación administrativa.",
+        "Publicidad de las decisiones sin necesidad de examinar criterios de atención.",
+        "Autonomía administrativa para distribuir beneficios según la cercanía con la jefatura."
+      ],
+      [
+        "La igualdad y la imparcialidad proscriben preferencias injustificadas.",
+        "Publicidad no sustituye el trato objetivo.",
+        "La autonomía no permite privilegios personales."
+      ],
+      "Constitución arts. 13, 209"
+    ],
+    [
+      "Un funcionario conoce una queja grave que todavía no ha sido corroborada. El equipo propone publicar al presunto autor como responsable y después permitirle presentar sus explicaciones, alegando que la transparencia exige informar cuanto antes.",
+      "¿Qué límite constitucional debe preservarse frente a esa comunicación pública?",
+      [
+        "La presunción de inocencia y el respeto de las garantías antes de atribuir responsabilidad.",
+        "La publicidad absoluta de cualquier afirmación formulada por quien presenta una queja.",
+        "La atribución provisional de responsabilidad pública mientras se recibe la explicación del señalado."
+      ],
+      [
+        "La presunción impide tratar una imputación no probada como responsabilidad.",
+        "La publicidad tiene límites constitucionales y legales.",
+        "La defensa posterior no justifica una atribución anticipada."
+      ],
+      "Constitución arts. 29, 209"
+    ],
+    [
+      "Existe riesgo verificable de afectación de un derecho y una autoridad dispone de facultades legales para recaudar información y adoptar una medida preventiva proporcionada. Un funcionario propone esperar hasta tener certeza de que ya se produjo una infracción.",
+      "¿Qué decisión armoniza prevención, competencia y garantías constitucionales?",
+      [
+        "Ejercer las facultades preventivas habilitadas sin prejuzgar responsabilidad individual.",
+        "Postergar toda actuación hasta obtener certeza sancionatoria sobre la posible infracción.",
+        "Declarar responsable al servidor preventivamente para justificar la protección del derecho."
+      ],
+      [
+        "La protección oportuna puede ejercerse sin sancionar anticipadamente.",
+        "La certeza sancionatoria no es presupuesto universal de prevención.",
+        "Prevenir no equivale a declarar responsabilidad."
+      ],
+      "Constitución arts. 2, 121, 277"
+    ],
+    [
+      "Una entidad expide una instrucción interna que limita el acceso a un servicio público de manera contraria a una norma constitucional directamente aplicable. El funcionario debe resolver un caso concreto y comprueba la incompatibilidad entre ambas disposiciones.",
+      "¿Qué regla de jerarquía normativa orienta su decisión en el caso concreto?",
+      [
+        "Aplicar la Constitución frente a la disposición incompatible, dentro de su competencia.",
+        "Aplicar siempre la instrucción interna por ser posterior y específica para la entidad.",
+        "Aplicar ambas indistintamente según cuál permita responder más rápido a la solicitud."
+      ],
+      [
+        "La Constitución es norma de normas y prevalece en caso de incompatibilidad.",
+        "Posterioridad y especialidad no superan supremacía constitucional.",
+        "La rapidez no resuelve la contradicción jerárquica."
+      ],
+      "Constitución art. 4"
+    ]
+  ],
+  "pgn-m6": [
+    [
+      "Un ciudadano dirige a la Procuraduría una solicitud para que imponga una pena privativa de libertad por un posible delito cometido por un servidor público. La oficina debe identificar qué institución desarrolla la investigación penal y cuál decide judicialmente.",
+      "¿Qué institución tiene a su cargo la investigación penal en el supuesto ordinario?",
+      [
+        "La Fiscalía General de la Nación, que integra la Rama Judicial.",
+        "La Contraloría General, por ejercer vigilancia sobre la gestión fiscal del Estado.",
+        "La Procuraduría General, por pertenecer constitucionalmente al Ministerio Público."
+      ],
+      [
+        "La Fiscalía investiga delitos y ejerce la acción penal según sus competencias.",
+        "La Contraloría ejerce control fiscal.",
+        "La PGN no sustituye la investigación penal."
+      ],
+      "Constitución arts. 116, 250"
+    ],
+    [
+      "Una entidad está preparando un mapa de organismos de control para orientar ciudadanos. El borrador ubica a la Procuraduría dentro de la Rama Ejecutiva porque sus servidores realizan actuaciones administrativas y atienden solicitudes de interés público.",
+      "¿Qué ubicación constitucional corresponde a la Procuraduría en ese mapa?",
+      [
+        "Organismo del Ministerio Público, distinto de las ramas del poder público.",
+        "Ministerio de la Rama Ejecutiva encargado de coordinar la vigilancia administrativa.",
+        "Dependencia de la Rama Judicial que decide todas las controversias contra servidores."
+      ],
+      [
+        "La PGN pertenece al Ministerio Público, órgano de control.",
+        "No es un ministerio del Gobierno.",
+        "La función disciplinaria no la convierte en rama judicial."
+      ],
+      "Constitución arts. 113, 117–118"
+    ],
+    [
+      "Un equipo de vigilancia detecta una posible afectación al patrimonio estatal derivada de la gestión fiscal y prepara una orientación para el ciudadano. El documento confunde el control fiscal con la potestad disciplinaria sobre deberes funcionales.",
+      "¿Qué órgano ejerce constitucionalmente la vigilancia y el control fiscal en su ámbito?",
+      [
+        "La Contraloría, conforme a la distribución constitucional y legal de competencias.",
+        "La Procuraduría, por ser el máximo organismo del Ministerio Público.",
+        "La Fiscalía, por investigar conductas que pueden constituir delitos contra la administración."
+      ],
+      [
+        "El control fiscal corresponde a contralorías en sus ámbitos.",
+        "La PGN tiene atribuciones diferentes.",
+        "La investigación penal no equivale a control fiscal."
+      ],
+      "Constitución arts. 117–119, 267"
+    ],
+    [
+      "Una revisión de un contrato estatal revela una posible omisión del supervisor, un eventual daño patrimonial y hechos que podrían ser delito. El funcionario debe orientar la información sin asumir que una sola autoridad decide todas esas dimensiones.",
+      "¿Qué ruta distingue correctamente los objetos de las posibles actuaciones?",
+      [
+        "Disciplinaria por deber funcional, fiscal por gestión fiscal y penal por posible delito.",
+        "Fiscal por omisión funcional, disciplinaria por daño patrimonial y penal por cualquier incumplimiento contractual.",
+        "Penal por todo el contrato, excluyendo las demás actuaciones hasta obtener una sentencia."
+      ],
+      [
+        "Cada régimen examina presupuestos y finalidades diferentes.",
+        "La clasificación intercambia los objetos de control.",
+        "La dimensión penal no excluye automáticamente otras rutas."
+      ],
+      "Constitución arts. 250, 267, 277; CGD art. 2"
+    ],
+    [
+      "Un ciudadano solicita asistencia para ejercer un derecho fundamental y no pretende que se declare responsabilidad fiscal ni penal. La oficina estudia a qué institución puede acudir para recibir orientación y apoyo en la defensa de sus derechos.",
+      "¿Qué institución cumple funciones constitucionales de promoción y defensa de derechos humanos?",
+      [
+        "La Defensoría del Pueblo, dentro del Ministerio Público.",
+        "La Contraloría General, dentro de la vigilancia de la gestión fiscal.",
+        "La Fiscalía General, dentro de la investigación y acusación penal."
+      ],
+      [
+        "La Defensoría promueve y divulga derechos y orienta a las personas.",
+        "La Contraloría tiene objeto fiscal.",
+        "La Fiscalía ejerce competencias penales."
+      ],
+      "Constitución arts. 118, 282"
+    ],
+    [
+      "Una autoridad municipal y un organismo de control requieren información sobre un mismo proyecto. La entidad propone entregar toda la dirección del proyecto al organismo de control para evitar actuaciones duplicadas entre las instituciones que intervienen.",
+      "¿Qué principio permite coordinar actuaciones sin trasladar competencias propias de cada organismo?",
+      [
+        "Colaboración armónica entre órganos con funciones constitucionalmente separadas.",
+        "Subordinación automática de las autoridades administrativas a cualquier órgano de control.",
+        "Unidad de mando para que una sola institución concentre todas las funciones relacionadas."
+      ],
+      [
+        "Los órganos colaboran armónicamente conservando funciones propias.",
+        "El control no supone asumir administración ajena.",
+        "La unidad de asunto no elimina separación funcional."
+      ],
+      "Constitución art. 113"
+    ],
+    [
+      "La Fiscalía abre investigación sobre una conducta que también podría constituir falta disciplinaria. No existe fallo penal y la autoridad disciplinaria recibe información concreta que permite examinar sus propias atribuciones conforme al Código.",
+      "¿Qué efecto tiene la apertura penal sobre la decisión disciplinaria de iniciar su propia actuación?",
+      [
+        "No impide examinar los presupuestos disciplinarios por la independencia de ambas acciones.",
+        "Obliga a suspender cualquier actuación disciplinaria hasta que concluya el juicio penal.",
+        "Demuestra la falta disciplinaria y permite formular cargos sin valorar otras pruebas."
+      ],
+      [
+        "La acción disciplinaria es independiente de otras acciones.",
+        "La apertura penal no impone suspensión automática.",
+        "La noticia penal no prueba por sí sola la falta."
+      ],
+      "CGD art. 2; Constitución art. 277"
+    ],
+    [
+      "Una contraloría comunica un hallazgo fiscal a una autoridad disciplinaria. La documentación puede ser útil, pero el informe no analiza todos los elementos subjetivos y funcionales que exige el régimen disciplinario respecto del servidor.",
+      "¿Qué valor debe asignarse al hallazgo fiscal dentro de la actuación disciplinaria?",
+      [
+        "Examinar los soportes y su incorporación, valorando autónomamente los elementos disciplinarios.",
+        "Adoptar el hallazgo como prueba automática de responsabilidad disciplinaria definitiva.",
+        "Descartar todos los soportes porque provienen de una autoridad de naturaleza fiscal."
+      ],
+      [
+        "El hallazgo puede orientar y aportar evidencia, sin sustituir valoración propia.",
+        "Los presupuestos de responsabilidad no son idénticos.",
+        "El origen fiscal no impide examinar evidencia legalmente incorporada."
+      ],
+      "CGD arts. 147, 154, 159"
+    ],
+    [
+      "Una actuación penal termina sin condena respecto de un servidor. La autoridad disciplinaria tiene un expediente por posible incumplimiento de deberes, con fundamentos propios, y debe determinar el alcance de la decisión penal en ese asunto.",
+      "¿Qué análisis corresponde antes de inferir que el resultado debe ser idéntico?",
+      [
+        "Examinar fundamentos, hechos y efectos jurídicos de la decisión penal frente al régimen disciplinario.",
+        "Archivar necesariamente porque cualquier decisión penal favorable extingue la acción disciplinaria.",
+        "Sancionar necesariamente porque el proceso disciplinario es independiente del proceso penal."
+      ],
+      [
+        "La independencia no permite trasladar automáticamente resultados ni ignorar su fundamento.",
+        "No existe extinción automática por cualquier decisión penal favorable.",
+        "La independencia tampoco autoriza sanción sin prueba."
+      ],
+      "CGD arts. 2, 147, 160"
+    ]
+  ],
+  "pgn-m7": [
+    [
+      "Una oficina recibe solicitudes equivalentes y aplica reglas diferentes por afinidad personal con uno de los ciudadanos. El jefe sostiene que ambas serán respondidas dentro del plazo legal, por lo que no existe problema con modificar arbitrariamente sus turnos.",
+      "¿Qué principio de la función administrativa resulta comprometido por esa preferencia?",
+      [
+        "Igualdad e imparcialidad al aplicar criterios objetivos de atención.",
+        "Economía por reducir el número de actuaciones necesarias para responder.",
+        "Publicidad por comunicar a los solicitantes que las respuestas están en trámite."
+      ],
+      [
+        "El trato preferente sin fundamento afecta igualdad e imparcialidad.",
+        "Economía no justifica favoritismo.",
+        "Informar el trámite no corrige el criterio desigual."
+      ],
+      "Constitución art. 209; CPACA art. 3"
+    ],
+    [
+      "Un procedimiento interno exige documentos que la entidad ya tiene en sus archivos. El responsable reconoce que puede consultarlos directamente sin afectar garantías ni desconocer una exigencia legal, pero insiste en pedirlos de nuevo al ciudadano.",
+      "¿Qué principio justifica evitar esa carga administrativa innecesaria sobre el interesado?",
+      [
+        "Economía, mediante el uso razonable de recursos y la simplificación compatible con la ley.",
+        "Publicidad, mediante la publicación de todos los documentos que reposan en los archivos.",
+        "Imparcialidad, mediante la obligación de exigir siempre los mismos documentos a cada persona."
+      ],
+      [
+        "La economía procura optimizar actuaciones sin perder garantías.",
+        "Publicar archivos no resuelve la duplicidad de exigencias.",
+        "Trato igual no exige cargas innecesarias."
+      ],
+      "Constitución art. 209; CPACA art. 3"
+    ],
+    [
+      "Una entidad reporta cien trámites cerrados, pero las verificaciones muestran que varias respuestas no resolvieron las solicitudes de los ciudadanos. La oficina considera cumplida su finalidad porque superó la meta numérica de cierres del mes.",
+      "¿Qué principio exige examinar si se alcanzó el resultado material del servicio?",
+      [
+        "Eficacia, orientada a la finalidad de la actuación y la efectividad de derechos.",
+        "Celeridad, entendida como cierre de cualquier actuación dentro del tiempo disponible.",
+        "Publicidad, entendida como registro de los trámites cerrados en el tablero."
+      ],
+      [
+        "La eficacia no se reduce a contabilizar actividad.",
+        "La rapidez no demuestra respuesta material suficiente.",
+        "Publicar un conteo no satisface el objeto del trámite."
+      ],
+      "Constitución art. 209; CPACA art. 3"
+    ],
+    [
+      "Un solicitante conocido del funcionario pide que su trámite sea atendido antes que los demás. En el mismo momento otra persona acredita sumariamente riesgo de perjuicio irremediable y titularidad de un derecho fundamental cuya protección requiere prioridad.",
+      "¿Qué criterio permite ordenar la atención de los dos asuntos conforme a la ley?",
+      [
+        "Aplicar la prioridad legal acreditada y conservar criterios objetivos para los demás trámites.",
+        "Atender primero al conocido porque su solicitud fue informalmente recomendada por la jefatura.",
+        "Mantener siempre el orden cronológico aunque se acrediten los presupuestos de atención prioritaria."
+      ],
+      [
+        "La prioridad legal es compatible con igualdad material.",
+        "La relación personal no configura excepción.",
+        "El turno ordinario cede ante la prioridad prevista en la ley."
+      ],
+      "Ley 1755/2015 art. 20; CPACA art. 3"
+    ],
+    [
+      "Una respuesta administrativa contiene información de interés público y datos privados de terceros que no son necesarios para satisfacer la solicitud. El equipo propone publicar el expediente completo invocando el principio constitucional de publicidad.",
+      "¿Cómo debe aplicarse la publicidad ante información con límites legales de acceso?",
+      [
+        "Facilitar acceso a lo público y proteger los datos legalmente restringidos.",
+        "Divulgar íntegramente todo el expediente porque la publicidad no admite excepciones legales.",
+        "Negar cualquier información relacionada con el expediente por contener datos de terceros."
+      ],
+      [
+        "Publicidad se armoniza con reservas y protección de derechos.",
+        "Existen excepciones legales.",
+        "La restricción parcial no exige negar todo."
+      ],
+      "Constitución art. 209; Ley 1712/2014 art. 21"
+    ],
+    [
+      "Una dependencia recibe un asunto con componentes que deben ser tramitados por otra autoridad. El responsable puede compartir información necesaria por canales autorizados, pero propone asumir la decisión ajena para acelerar la atención al ciudadano.",
+      "¿Qué principio permite organizar el trámite sin sustituir la autoridad competente?",
+      [
+        "Coordinación, articulando actuaciones y remisiones dentro de las atribuciones de cada entidad.",
+        "Celeridad, que permite a cualquier dependencia decidir cuando otra autoridad demora.",
+        "Eficacia, que convierte toda solicitud urgente en competencia de la oficina receptora."
+      ],
+      [
+        "La coordinación armoniza funciones sin trasladarlas arbitrariamente.",
+        "La rapidez no crea competencia.",
+        "El objetivo no altera atribuciones legales."
+      ],
+      "Constitución arts. 121, 209; CPACA art. 3"
+    ],
+    [
+      "Una jefatura ordena alterar una fecha de radicación para que la entidad parezca haber cumplido el término de una solicitud. La corrección propuesta no corresponde a un error real y los soportes originales contienen la fecha efectiva de recepción.",
+      "¿Qué principio de la función administrativa obliga a conservar la fecha verdadera?",
+      [
+        "Moralidad, mediante una actuación íntegra y fiel a la información verificable.",
+        "Economía, mediante la eliminación de registros que generan trabajo adicional al funcionario.",
+        "Celeridad, mediante la adaptación de fechas para alcanzar indicadores de oportunidad."
+      ],
+      [
+        "La moralidad exige rectitud e integridad en el ejercicio público.",
+        "El ahorro no autoriza eliminar soportes reales.",
+        "La meta no justifica alterar registros."
+      ],
+      "Constitución art. 209; CPACA art. 3"
+    ],
+    [
+      "Un ciudadano inicialmente solicita acceso a un documento público. Durante la revisión aparece un anexo cuya reserva legal está acreditada, pero el resto del documento puede divulgarse sin revelar el contenido protegido de manera directa o indirecta.",
+      "¿Qué ajuste permite mantener publicidad y legalidad al responder esa solicitud?",
+      [
+        "Preparar una versión pública que suprima únicamente la información legalmente protegida.",
+        "Mantener la decisión inicial de entrega íntegra porque la reserva fue detectada posteriormente.",
+        "Cambiar la decisión a negativa total aunque el resto pueda divulgarse de forma separada."
+      ],
+      [
+        "La divulgación parcial protege el contenido exceptuado.",
+        "La reserva detectada debe valorarse antes de divulgar.",
+        "La negativa total no se justifica si existe parte separable."
+      ],
+      "Ley 1712/2014 art. 21"
+    ],
+    [
+      "Un procedimiento ordinario está próximo a vencer y la autoridad advierte una irregularidad que puede corregirse antes de decidir. El defecto afecta la oportunidad de intervención de un tercero y aún es posible garantizarla dentro del marco legal.",
+      "¿Qué actuación armoniza celeridad, eficacia y debido proceso en esa circunstancia?",
+      [
+        "Corregir oportunamente la irregularidad y permitir intervención antes de decidir.",
+        "Expedir la decisión sin corregir y considerar la garantía después de su ejecución.",
+        "Reiniciar automáticamente todo el procedimiento aunque sea suficiente corregir el defecto."
+      ],
+      [
+        "El art. 41 permite corregir antes de decidir y proteger garantías.",
+        "La corrección posterior no reemplaza la participación oportuna.",
+        "No toda irregularidad exige reinicio total."
+      ],
+      "CPACA arts. 3, 37, 41"
+    ]
+  ],
+  "pgn-m8": [
+    [
+      "Un concejal sostiene que no es servidor público porque no tiene un empleo de planta en la alcaldía. Durante el análisis de una actuación se necesita determinar si la Constitución incluye a los miembros de corporaciones públicas dentro de esa categoría.",
+      "¿Qué regla constitucional corresponde a la calidad del concejal en ese supuesto?",
+      [
+        "Es servidor público por ser miembro de una corporación pública.",
+        "Es particular porque no tiene vínculo laboral con la administración municipal.",
+        "Es trabajador oficial exclusivamente si recibe remuneración por asistir a sesiones."
+      ],
+      [
+        "El art. 123 incluye miembros de corporaciones públicas.",
+        "No se exige empleo de planta para esa categoría.",
+        "La remuneración no lo convierte en trabajador oficial."
+      ],
+      "Constitución art. 123"
+    ],
+    [
+      "Una persona presta servicios técnicos por contrato estatal sin ejercer funciones públicas, administrar recursos públicos ni realizar interventoría o supervisión. El equipo la clasifica como servidora pública por el solo origen estatal de sus honorarios.",
+      "¿Qué distinción debe aplicar al establecer la calidad jurídica de esa persona?",
+      [
+        "El contrato no la convierte automáticamente en servidora pública ni en sujeto disciplinable.",
+        "Todo contratista es empleado público cuando recibe honorarios de una entidad estatal.",
+        "Toda persona contratada ejerce función pública porque realiza una tarea para la administración."
+      ],
+      [
+        "El vínculo contractual y las categorías de servidor o disciplinable son distintos.",
+        "El pago no crea empleo público.",
+        "Prestar servicios no equivale necesariamente a ejercer función pública."
+      ],
+      "Constitución art. 123; CGD arts. 25, 70"
+    ],
+    [
+      "Una entidad analiza la actuación de un empleado que adoptó una decisión fuera de las atribuciones de su cargo. El empleado alega que el resultado benefició a la institución y por eso no puede examinarse su eventual responsabilidad funcional.",
+      "¿Qué regla permite evaluar esa extralimitación aun cuando se invoque un resultado favorable?",
+      [
+        "Los servidores responden también por extralimitación en el ejercicio de sus funciones.",
+        "El beneficio institucional sustituye la competencia legal para adoptar cualquier decisión pública.",
+        "La responsabilidad únicamente procede si la actuación genera un daño patrimonial cuantificable."
+      ],
+      [
+        "El art. 6 incluye extralimitación como supuesto de responsabilidad.",
+        "El beneficio no atribuye funciones.",
+        "La responsabilidad disciplinaria no exige siempre daño patrimonial."
+      ],
+      "Constitución arts. 6, 121"
+    ],
+    [
+      "Un informe atribuye la pérdida de un expediente al jefe de una dependencia. Los documentos muestran que había delegación de tareas y un manual vigente que distribuye obligaciones, pero no identifican qué deber concreto correspondía a cada servidor.",
+      "¿Qué debe establecer primero el profesional antes de atribuir una omisión a una persona?",
+      [
+        "El deber funcional aplicable al momento del hecho y su asignación jurídica efectiva.",
+        "La ubicación del servidor en el organigrama como prueba suficiente de cualquier incumplimiento.",
+        "El valor estimado de la pérdida como criterio único para determinar quién tenía el deber."
+      ],
+      [
+        "El deber concreto precede al análisis de conducta imputable.",
+        "La jefatura no prueba automáticamente autoría u omisión.",
+        "El daño no define por sí solo la atribución funcional."
+      ],
+      "Constitución arts. 6, 122; CGD arts. 9, 27"
+    ],
+    [
+      "Una funcionaria no realiza una actuación durante un periodo en que el sistema institucional estuvo fuera de servicio. El expediente contiene un procedimiento de contingencia y debe verificarse si podía utilizarlo para cumplir su deber oportunamente.",
+      "¿Qué cuestión debe examinarse para determinar el alcance de la posible omisión?",
+      [
+        "Si existía deber de actuar y posibilidad efectiva de cumplirlo en esas circunstancias.",
+        "Si la caída del sistema exonera automáticamente cualquier conducta de todos los funcionarios.",
+        "Si el resultado tardío permite atribuir responsabilidad sin analizar las circunstancias operativas."
+      ],
+      [
+        "La omisión exige examinar deber y posibilidad de actuar.",
+        "La falla técnica no elimina necesariamente alternativas de cumplimiento.",
+        "El resultado no prueba responsabilidad objetiva."
+      ],
+      "CGD arts. 9–10, 27, 31"
+    ],
+    [
+      "Un servidor aparece como titular de una cuenta que ejecutó una modificación de datos. El informe técnico acredita que varios operadores tenían acceso a la misma cuenta y todavía no existen registros que individualicen a quien realizó el cambio.",
+      "¿Qué conclusión puede sostener el profesional acerca de la responsabilidad personal?",
+      [
+        "La operación está registrada, pero la identidad del operador requiere comprobaciones adicionales.",
+        "El titular de la cuenta realizó la operación porque su nombre aparece en el registro.",
+        "Todos los usuarios autorizados son responsables en partes iguales de la modificación registrada."
+      ],
+      [
+        "La atribución personal requiere prueba adicional cuando la cuenta es compartida.",
+        "Titularidad no demuestra ejecución.",
+        "El acceso compartido no prueba participación de todos."
+      ],
+      "CGD arts. 10, 147–148"
+    ],
+    [
+      "Una investigación contractual documenta un posible daño fiscal y una conducta que podría afectar el deber funcional del supervisor. El profesional debe remitir un informe a las autoridades pertinentes sin confundir sus atribuciones decisorias.",
+      "¿Qué diferencia debe conservar al describir las dos dimensiones de responsabilidad?",
+      [
+        "Separar el análisis del deber disciplinario del examen del daño fiscal según cada régimen.",
+        "Declarar responsabilidad fiscal en el informe disciplinario cuando el daño parezca cuantificable.",
+        "Tratar toda afectación funcional como daño fiscal aunque no se acredite pérdida patrimonial."
+      ],
+      [
+        "Los objetos y presupuestos de ambos regímenes son diferentes.",
+        "El informe no sustituye la decisión fiscal competente.",
+        "Afectación funcional no equivale siempre a daño patrimonial."
+      ],
+      "Constitución arts. 6, 267, 277"
+    ],
+    [
+      "Un servidor que se retiró de la entidad antes de recibirse la queja realizó la conducta cuestionada cuando estaba en ejercicio del cargo. La acción permanece vigente y la autoridad conoce el deber funcional que pudo haber infringido.",
+      "¿Qué consecuencia tiene el retiro sobre el análisis de esa conducta previa?",
+      [
+        "Puede ser objeto de actuación disciplinaria pese a no continuar vinculado a la entidad.",
+        "El retiro extingue automáticamente toda acción disciplinaria relacionada con el cargo anterior.",
+        "Solo puede examinarse la conducta si el servidor obtiene un nuevo nombramiento público."
+      ],
+      [
+        "El CGD comprende servidores retirados por hechos de su servicio.",
+        "El retiro no es causal de extinción.",
+        "No se exige una nueva vinculación."
+      ],
+      "CGD arts. 25, 32"
+    ],
+    [
+      "Un informe demuestra una irregularidad y cuantifica el daño, pero no acredita la culpabilidad del servidor a quien se pretende atribuirla. La autoridad analiza si el resultado desfavorable es suficiente para imponer una sanción disciplinaria.",
+      "¿Qué presupuesto adicional impide sancionar exclusivamente por el resultado irregular?",
+      [
+        "Acreditar culpabilidad y los demás elementos de la responsabilidad disciplinaria personal.",
+        "Acreditar solamente que el servidor ocupaba el cargo durante el periodo investigado.",
+        "Acreditar que otro órgano de control recibió el informe sobre el mismo hecho."
+      ],
+      [
+        "El CGD proscribe responsabilidad objetiva.",
+        "La ocupación del cargo no acredita culpabilidad.",
+        "La recepción del informe no demuestra responsabilidad."
+      ],
+      "CGD arts. 9–10, 160"
+    ]
+  ],
+  "pgn-m9": [
+    [
+      "Un municipio dicta una medida contraria a una ley nacional argumentando que su autonomía le permite organizar todos los asuntos locales sin límites externos. La autoridad debe examinar la relación entre autonomía territorial y unidad del Estado.",
+      "¿Qué alcance tiene la autonomía territorial según el orden constitucional colombiano?",
+      [
+        "Se ejerce dentro de los límites establecidos por Constitución y ley.",
+        "Equivale a soberanía plena para inaplicar cualquier ley nacional en el territorio.",
+        "Desaparece completamente porque Colombia está organizada como república unitaria."
+      ],
+      [
+        "La autonomía está reconocida, pero no es soberanía.",
+        "La entidad territorial permanece sujeta al ordenamiento.",
+        "La unidad estatal admite descentralización y autonomía."
+      ],
+      "Constitución arts. 1, 287"
+    ],
+    [
+      "Varios municipios crean una asociación para ejecutar proyectos regionales y comparten recursos conforme a un convenio. Un informe afirma que la asociación se convierte automáticamente en una nueva entidad territorial del mismo nivel que un departamento.",
+      "¿Qué distinción exige el artículo 286 frente a esa afirmación del informe?",
+      [
+        "La asociación no adquiere automáticamente calidad de entidad territorial por su creación.",
+        "Toda asociación de municipios es una entidad territorial autónoma reconocida por la Constitución.",
+        "Las entidades territoriales pueden crear departamentos mediante convenios administrativos entre sus alcaldes."
+      ],
+      [
+        "Las entidades territoriales responden al régimen constitucional y legal correspondiente.",
+        "La asociación es un esquema de cooperación, no necesariamente entidad territorial.",
+        "Un convenio no crea por sí solo un departamento."
+      ],
+      "Constitución art. 286; Ley 1454/2011"
+    ],
+    [
+      "Una entidad territorial prepara su presupuesto y elige autoridades propias dentro del ordenamiento. Un asesor sostiene que esas facultades dependen exclusivamente de una autorización discrecional anual del Gobierno nacional y no de derechos constitucionales.",
+      "¿Qué garantía reconoce el artículo 287 para las entidades territoriales?",
+      [
+        "Gobernarse por autoridades propias y gestionar recursos y competencias dentro de la ley.",
+        "Administrar recursos sin controles legales por tratarse de ingresos del territorio correspondiente.",
+        "Ejercer exclusivamente funciones que el Gobierno decida autorizar cada año mediante instrucciones."
+      ],
+      [
+        "El art. 287 reconoce autoridades, competencias y administración de recursos.",
+        "La autonomía conserva límites legales.",
+        "Las competencias tienen fundamento normativo, no mera autorización anual."
+      ],
+      "Constitución art. 287"
+    ],
+    [
+      "Un departamento y varios municipios ejecutan un proyecto compartido. Cada uno conserva sus obligaciones legales y se reúnen para armonizar cronogramas, información y metas, de forma que las actuaciones no sean contradictorias entre sí.",
+      "¿Qué principio de distribución territorial describe principalmente esa armonización de actuaciones?",
+      [
+        "Coordinación entre autoridades de distintos niveles dentro de sus competencias.",
+        "Subsidiariedad porque el departamento necesariamente reemplaza a los municipios en el proyecto.",
+        "Concurrencia entendida como transferencia total de atribuciones al departamento coordinador."
+      ],
+      [
+        "La coordinación armoniza el ejercicio de atribuciones propias.",
+        "No se acredita incapacidad que active apoyo subsidiario.",
+        "Concurrir no equivale a transferir todas las competencias."
+      ],
+      "Constitución art. 288; Ley 1454/2011 art. 27"
+    ],
+    [
+      "Una competencia sobre un servicio se distribuye legalmente entre el departamento y los municipios. Cada nivel debe aportar recursos o actividades específicas y ambos intervienen de manera articulada para alcanzar el resultado público previsto.",
+      "¿Qué principio explica la participación conjunta de esos niveles en el ejercicio de la competencia?",
+      [
+        "Concurrencia, de acuerdo con la distribución y condiciones establecidas por la ley.",
+        "Subsidiariedad, porque uno de los niveles asume todas las competencias del otro.",
+        "Autonomía, entendida como ejercicio aislado sin relación con los demás niveles."
+      ],
+      [
+        "La concurrencia permite actuación articulada de niveles habilitados.",
+        "No implica reemplazo completo del otro nivel.",
+        "La autonomía no elimina coordinación y concurrencia."
+      ],
+      "Constitución art. 288; Ley 1454/2011 art. 27"
+    ],
+    [
+      "Un municipio demuestra que no puede ejercer debidamente una competencia por limitaciones institucionales concretas. La ley permite que una instancia habilitada lo apoye temporal y parcialmente, conservando los límites de esa intervención.",
+      "¿Qué principio fundamenta ese apoyo temporal bajo los presupuestos descritos?",
+      [
+        "Subsidiariedad, cuando se acredita imposibilidad de ejercer adecuadamente la competencia.",
+        "Centralización permanente, que elimina la competencia del municipio beneficiario del apoyo.",
+        "Coordinación entendida como asistencia obligatoria sin comprobar la necesidad ni las reglas legales."
+      ],
+      [
+        "La subsidiariedad permite apoyo transitorio y parcial en el supuesto legal.",
+        "No equivale a supresión permanente de competencias.",
+        "La asistencia subsidiaria requiere presupuestos específicos."
+      ],
+      "Ley 1454/2011 art. 27; Constitución art. 288"
+    ],
+    [
+      "Una queja disciplinaria llega a la sede de Procuraduría más cercana al lugar de los hechos. El servidor involucrado pertenece a una entidad departamental y una regla orgánica especial puede atribuir el asunto a otra dependencia.",
+      "¿Qué verificación debe realizarse antes de decidir qué despacho asume la instrucción?",
+      [
+        "Examinar sujeto, nivel, materia, territorio, etapa y reglas orgánicas aplicables.",
+        "Asignar automáticamente la queja a la sede físicamente más cercana al hecho investigado.",
+        "Asignar el asunto al último despacho que recibió el escrito con los documentos anexos."
+      ],
+      [
+        "La competencia combina factores legales y orgánicos.",
+        "La distancia física no determina por sí sola atribución.",
+        "La recepción material no confiere competencia."
+      ],
+      "Decreto Ley 262/2000; Decreto Ley 1851/2021"
+    ],
+    [
+      "Un asunto disciplinario reúne hechos relacionados ocurridos en dos municipios y posibles intervinientes sujetos a reglas orgánicas diferentes. Una dependencia propone escoger el despacho únicamente con base en el municipio que registra el último hecho.",
+      "¿Qué aspecto adicional debe examinar para resolver correctamente la distribución del asunto?",
+      [
+        "Conexidad y factores de competencia, incluyendo las reglas especiales que resulten aplicables.",
+        "La fecha más reciente como factor exclusivo que desplaza todas las reglas de competencia.",
+        "La cercanía de un despacho a ambos municipios como criterio decisorio único del reparto."
+      ],
+      [
+        "La conexidad puede activar reglas específicas de distribución.",
+        "El último hecho no resuelve todas las atribuciones.",
+        "La proximidad no sustituye competencia orgánica."
+      ],
+      "Decreto Ley 262/2000; CGD arts. 91–98"
+    ],
+    [
+      "Una dependencia territorial de instrucción concluye su actuación y remite cargos. El equipo propone mantener el expediente en la misma autoridad para el juzgamiento porque todos los hechos ocurrieron dentro de su circunscripción.",
+      "¿Qué límite debe observarse además del factor territorial al asignar la etapa siguiente?",
+      [
+        "Verificar la competencia de juzgamiento y separación funcional respecto de la instrucción.",
+        "Mantener siempre el mismo funcionario si la competencia territorial no ha cambiado.",
+        "Asignar automáticamente el fallo al despacho que recibió inicialmente la queja."
+      ],
+      [
+        "La etapa y separación funcional son factores decisivos.",
+        "El territorio no elimina imparcialidad estructural.",
+        "La recepción inicial no determina quién juzga."
+      ],
+      "CGD art. 12; Decreto Ley 1851/2021"
+    ]
   ]
 }
 
@@ -5499,7 +6184,7 @@ export function reviewedTemplateQuestion(question: Question, number: number): Qu
       return { id: o.id, text: choices[i]!, rationale: rationales[i]! }
     }),
     explanation: (Number(question.moduleId.slice(5)) >= 20 && Number(question.moduleId.slice(5)) < 45 ? 'Código General Disciplinario, art(s). ' : 'Fundamento: ') + articles + '. ' + rationales.join(' '),
-    sourceIds: [...new Set([...question.sourceIds, ...(articles.includes('Constitución') ? ['constitucion'] : []), ...(articles.includes('Resolución PGN 132/2014') ? ['pgn-res-132-2014'] : []), ...(articles.includes('Decreto 1499/2017') ? ['decreto-1499-2017'] : []), ...(articles.includes('CPACA') ? ['cpaca'] : []), ...(articles.includes('Ley 1755/2015') ? ['ley-1755-2015'] : []), ...(articles.includes('Ley 80/1993') ? ['ley-80-1993'] : []), ...(articles.includes('Ley 1150/2007') ? ['ley-1150-2007'] : []), ...(articles.includes('Ley 1474/2011') ? ['ley-1474-2011'] : []), ...(articles.includes('Ley 2195/2022') ? ['ley-2195-2022'] : []), ...(articles.includes('Ley 1712/2014') ? ['ley-1712-2014'] : []), ...(articles.includes('Ley 1581/2012') ? ['ley-1581-2012'] : []), ...(articles.includes('CGD') ? ['ley-1952-2019'] : []), ...(Number(question.moduleId.slice(5)) >= 20 && Number(question.moduleId.slice(5)) < 45 ? ['ley-1952-2019', 'ley-2094-2021'] : []), ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : []), ...(articles.includes('NIST SP 800-86') ? ['nist-sp-800-86'] : []), ...(articles.includes('NIST SP 800-92') ? ['nist-sp-800-92'] : [])])],
+    sourceIds: [...new Set([...question.sourceIds, ...(articles.includes('Constitución') ? ['constitucion'] : []), ...(articles.includes('Resolución PGN 132/2014') ? ['pgn-res-132-2014'] : []), ...(articles.includes('Decreto 1499/2017') ? ['decreto-1499-2017'] : []), ...(articles.includes('CPACA') ? ['cpaca'] : []), ...(articles.includes('Ley 1454/2011') ? ['ley-1454-2011'] : []), ...(articles.includes('Decreto Ley 262/2000') ? ['decreto-262-2000'] : []), ...(articles.includes('Decreto Ley 1851/2021') ? ['decreto-1851-2021'] : []), ...(articles.includes('Ley 1755/2015') ? ['ley-1755-2015'] : []), ...(articles.includes('Ley 80/1993') ? ['ley-80-1993'] : []), ...(articles.includes('Ley 1150/2007') ? ['ley-1150-2007'] : []), ...(articles.includes('Ley 1474/2011') ? ['ley-1474-2011'] : []), ...(articles.includes('Ley 2195/2022') ? ['ley-2195-2022'] : []), ...(articles.includes('Ley 1712/2014') ? ['ley-1712-2014'] : []), ...(articles.includes('Ley 1581/2012') ? ['ley-1581-2012'] : []), ...(articles.includes('CGD') ? ['ley-1952-2019'] : []), ...(Number(question.moduleId.slice(5)) >= 20 && Number(question.moduleId.slice(5)) < 45 ? ['ley-1952-2019', 'ley-2094-2021'] : []), ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : []), ...(articles.includes('NIST SP 800-86') ? ['nist-sp-800-86'] : []), ...(articles.includes('NIST SP 800-92') ? ['nist-sp-800-92'] : [])])],
     verifiedAt: '2026-11-24',
   }
 }
