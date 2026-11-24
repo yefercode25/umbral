@@ -15,7 +15,7 @@ import { SequenceExercise } from './SequenceExercise'
 import { LegalDecisionSimulator } from './LegalDecisionSimulator'
 import styles from './LessonRenderer.module.css'
 
-export function LessonRenderer({ course, blocks, moduleId, lessonOrder }: { course: Course; blocks: LessonBlock[]; moduleId?: string; lessonOrder?: number }) {
+export function LessonRenderer({ course, blocks, moduleId, lessonOrder, deferCheckpoints = false }: { course: Course; blocks: LessonBlock[]; moduleId?: string; lessonOrder?: number; deferCheckpoints?: boolean }) {
   const isProcuraduria = course.id === 'procuraduria-104-2026-3pu15' && Boolean(moduleId)
   const insertAfter = isProcuraduria ? getProcuraduriaVisualInsertAfter(blocks, lessonOrder) : null
 
@@ -61,7 +61,7 @@ export function LessonRenderer({ course, blocks, moduleId, lessonOrder }: { cour
       if (block.type === 'checkpoint') {
         // La tercera lección PGN termina con un solo cierre integrado de 3 casos;
         // las dos preguntas históricas de esta lección se conservan en el banco.
-        if (isProcuraduria && lessonOrder === 3) return null
+        if (isProcuraduria && (deferCheckpoints || lessonOrder === 3)) return null
         const q = course.questions.find((question) => question.id === block.questionId)
         return q ? <QuestionCard key={`checkpoint-${block.questionId}-${index}`} course={course} question={q}/> : null
       }

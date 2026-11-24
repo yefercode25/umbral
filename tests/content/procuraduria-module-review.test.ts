@@ -1,83 +1,77 @@
 import { describe, expect, it } from 'vitest'
-import { procuraduriaCourse } from '../../content/courses/procuraduria-104-2026-3pu15/course'
+import { procuraduriaCourse as course } from '../../content/courses/procuraduria-104-2026-3pu15/course'
 import { dianGestorCourse } from '../../content/courses/dian-2676-gestor-ii/course'
-import { moduleReviewQuestions, priorModuleLessonsCompleted, MODULE_PASS_SCORE, MODULE_REVIEW_COUNT } from '../../src/lib/moduleReview'
+import { lessonAssessmentQuestions, LESSON_PASS_SCORE, LESSON_REVIEW_COUNT } from '../../src/lib/lessonAssessment'
+import { isPgnAuthored } from '../../src/lib/procuraduriaScopes'
+import { priorModuleLessonsCompleted } from '../../src/lib/moduleReview'
 import { practiceQuestionPool } from '../../src/lib/practiceQuestionPool'
+import { useProgressStore } from '../../src/stores/progressStore'
 
-describe('Procuraduría: aprendizaje y evaluación dentro de cada módulo', () => {
-  it('elige tres preguntas ya existentes de cada uno de los 85 módulos sin aumentar el banco', () => {
-    expect(procuraduriaCourse.modules).toHaveLength(85)
-    expect(procuraduriaCourse.questions).toHaveLength(2062)
-    const pool = new Set(practiceQuestionPool(procuraduriaCourse).map(q => q.id))
-    for (const module of procuraduriaCourse.modules) {
-      const selected = moduleReviewQuestions(procuraduriaCourse, module.id)
-      expect(selected, module.id).toHaveLength(MODULE_REVIEW_COUNT)
-      expect(new Set(selected.map(q => q.id)).size).toBe(MODULE_REVIEW_COUNT)
-      for (const question of selected) {
-        expect(question.moduleId, question.id).toBe(module.id)
-        expect(pool.has(question.id), question.id).toBe(true)
-        expect(question.type, question.id).toBe('pjs')
-        expect(question.case?.length ?? 0, question.id).toBeGreaterThan(180)
-        expect(question.difficulty).toBeGreaterThanOrEqual(3)
+describe('Procuraduría · evaluación posterior a cada lección', () => {
+  it('entrega cinco reactivos por lección en 255 lecciones, 15 distintos por módulo, sin ampliar el banco', () => {
+    expect(course.questions).toHaveLength(2062)
+    expect(course.lessons).toHaveLength(255)
+    const seen = new Set<string>()
+    let situations = 0
+    for (const lesson of course.lessons) {
+      const qs = lessonAssessmentQuestions(course, lesson)
+      expect(qs, lesson.id).toHaveLength(5)
+      const checkpoints = lesson.blocks.flatMap(b => b.type === 'checkpoint' ? [b.questionId] : [])
+      expect(qs.slice(0,2).map(q => q.id)).toEqual(checkpoints)
+      for (const q of qs) {
+        expect(q.moduleId).toBe(lesson.moduleId)
+        expect(seen.has(q.id), q.id).toBe(false)
+        expect(isPgnAuthored(q), q.id).toBe(false)
+        seen.add(q.id)
+        if (q.id.includes('-situational-')) situations++
       }
     }
+    expect(seen.size).toBe(1275)
+    expect(situations).toBe(765)
+    expect(LESSON_PASS_SCORE).toBe(4)
+    expect(LESSON_REVIEW_COUNT).toBe(5)
   })
 
-  it('usa combinaciones alternativas de las mismas preguntas para practicar errores', () => {
-    for (const module of procuraduriaCourse.modules) {
-      const first = moduleReviewQuestions(procuraduriaCourse, module.id, 0)
-      const retry = moduleReviewQuestions(procuraduriaCourse, module.id, 1)
-      expect(first.map(q => q.id).join(','), module.id).not.toBe(retry.map(q => q.id).join(','))
-      expect(retry).toHaveLength(3)
-    }
-    expect(MODULE_PASS_SCORE).toBe(2)
-    expect(MODULE_REVIEW_COUNT).toBe(3)
-  })
-
-  it('mantiene dos checkpoints por lección y preserva las lecciones y claves históricas', () => {
-    expect(procuraduriaCourse.lessons).toHaveLength(255)
-    for (const lesson of procuraduriaCourse.lessons) {
-      const checkpoints = lesson.blocks.filter(b => b.type === 'checkpoint')
-      expect(checkpoints, lesson.id).toHaveLength(2)
-      for (const block of checkpoints) {
-        if (block.type !== 'checkpoint') continue
-        expect(procuraduriaCourse.questions.some(q => q.id === block.questionId && q.moduleId === lesson.moduleId), block.questionId).toBe(true)
-      }
+  it('alinea prescripción y sanciones con sus lecciones, y rota los mismos IDs en el reintento', () => {
+    const l1 = course.lessons.find(l => l.id === 'pgn-m24-l1')!
+    const l2 = course.lessons.find(l => l.id === 'pgn-m24-l2')!
+    expect(lessonAssessmentQuestions(course,l1).slice(2).map(q=>q.id)).toEqual([7,8,9].map(n=>'pgn-m24-situational-'+n))
+    expect(lessonAssessmentQuestions(course,l2).slice(2).map(q=>q.id)).toEqual([2,3,4].map(n=>'pgn-m24-situational-'+n))
+    for (const lesson of course.lessons) {
+      const ids = lessonAssessmentQuestions(course,lesson).map(q=>q.id)
+      const retry = lessonAssessmentQuestions(course,lesson,1).map(q=>q.id)
+      expect(retry).not.toEqual(ids)
+      expect([...retry].sort()).toEqual([...ids].sort())
     }
   })
 
-  it('refuerza con el contexto específico del módulo las preguntas de las dos primeras lecciones', () => {
-    for (const module of procuraduriaCourse.modules) {
-      const questions = procuraduriaCourse.questions.filter(q => q.moduleId === module.id && /^pgn-m\d+-q[1-4]$/.test(q.id))
-      expect(questions, module.id).toHaveLength(4)
-      expect(questions[0]!.stem, module.id).toContain(module.title)
-      for (const question of questions.slice(1)) {
-        expect(question.case?.length ?? 0, question.id).toBeGreaterThan(90)
-      }
-    }
+  it('conserva el avance, aprobación y mejor resultado sin modificar DIAN', () => {
+    const store = useProgressStore.getState()
+    store.resetCourse(course.id)
+    store.ensureCourse(course)
+    store.markLessonCompleted(course,'pgn-m24-l1')
+    store.recordLessonAssessment(course,'pgn-m24-l2',4)
+    store.recordLessonAssessment(course,'pgn-m24-l2',2)
+    store.recordLessonAssessment(dianGestorCourse,dianGestorCourse.lessons[0]!.id,5)
+    const p = useProgressStore.getState().courses[course.id]!
+    expect(p.lessons['pgn-m24-l1']?.status).toBe('completed')
+    expect(p.lessonAssessments?.['pgn-m24-l2']).toMatchObject({attempts:2,lastScore:2,bestScore:4})
+    expect(useProgressStore.getState().courses[dianGestorCourse.id]?.lessonAssessments).toBeUndefined()
+    store.resetCourse(course.id)
   })
 
-  it('solo habilita el salto automático al siguiente módulo tras las dos lecciones anteriores', () => {
-    for (const module of procuraduriaCourse.modules) {
-      const l1 = procuraduriaCourse.lessons.find(l => l.moduleId === module.id && l.order === 1)!
-      const l2 = procuraduriaCourse.lessons.find(l => l.moduleId === module.id && l.order === 2)!
-      expect(priorModuleLessonsCompleted(procuraduriaCourse, module.id), module.id).toBe(false)
-      expect(priorModuleLessonsCompleted(procuraduriaCourse, module.id, {
-        lessons: { [l1.id]: { status: 'completed', readPercent: 100 } },
-      }), module.id).toBe(false)
-      expect(priorModuleLessonsCompleted(procuraduriaCourse, module.id, {
-        lessons: {
-          [l1.id]: { status: 'completed', readPercent: 100 },
-          [l2.id]: { status: 'completed', readPercent: 100 },
-        },
-      }), module.id).toBe(true)
+  it('mantiene el control de las dos lecciones previas y el banco DIAN', () => {
+    for (const module of course.modules) {
+      const l1 = course.lessons.find(l=>l.moduleId===module.id && l.order===1)!
+      const l2 = course.lessons.find(l=>l.moduleId===module.id && l.order===2)!
+      expect(priorModuleLessonsCompleted(course,module.id)).toBe(false)
+      expect(priorModuleLessonsCompleted(course,module.id,{lessons:{
+        [l1.id]:{status:'completed',readPercent:100},
+        [l2.id]:{status:'completed',readPercent:100}
+      }})).toBe(true)
     }
-  })
-
-  it('se aplica solo a Procuraduría, no altera los perfiles o el banco DIAN', () => {
-    expect(moduleReviewQuestions(dianGestorCourse, 'm9')).toEqual([])
-    expect(moduleReviewQuestions(procuraduriaCourse, 'pgn-m100')).toEqual([])
-    expect(moduleReviewQuestions(procuraduriaCourse, 'pgn-m0')).toHaveLength(3)
+    expect(lessonAssessmentQuestions(dianGestorCourse,dianGestorCourse.lessons[0]!)).toEqual([])
     expect(practiceQuestionPool(dianGestorCourse)).toBe(dianGestorCourse.questions)
+    expect(practiceQuestionPool(course)).toHaveLength(1212)
   })
 })

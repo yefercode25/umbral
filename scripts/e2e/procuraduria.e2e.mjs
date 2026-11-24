@@ -88,3 +88,57 @@ test('Simulacro integral PGN no muestra pistas antes de entregar', async ({page}
   await expect(page.getByText('Por qué cada alternativa',{exact:true})).toHaveCount(30)
   await expect.poll(async()=> (await readCourses(page))[PGN]?.practiceSessions?.[0]?.profileId).toBe('functional-blind')
 })
+
+test('PGN: cinco preguntas por lección, reintento, aprobación y progreso persistente', async ({ page }) => {
+  const errors = []
+  page.on('pageerror', error => errors.push(error.message))
+  page.on('console', message => { if (message.type() === 'error' && /same key|unique.*key/i.test(message.text())) errors.push(message.text()) })
+  await page.goto(mock(DIAN))
+  await expect.poll(async () => Boolean((await readCourses(page))[DIAN])).toBe(true)
+  const beforeDian = (await readCourses(page))[DIAN]
+  const lessonId = 'pgn-m24-l1'
+  const route = '/courses/' + PGN + '/lesson/' + lessonId
+  await page.goto(route)
+  const review = page.getByRole('region', { name: 'Comprueba lo aprendido' })
+  const finish = page.getByRole('button', { name: 'Completar y continuar', exact: true })
+  const submit = review.getByRole('button', { name: 'Evaluar mis cinco respuestas' })
+  await expect(review.locator('fieldset')).toHaveCount(5)
+  await expect(finish).toBeDisabled()
+  await expect(submit).toBeDisabled()
+  await expect(review.getByText(/Distractor:/)).toHaveCount(0)
+  const correct = { 'pgn-m24-q1': 'a', 'pgn-m24-q2': 'a', 'pgn-m24-situational-7': 'c', 'pgn-m24-situational-8': 'b', 'pgn-m24-situational-9': 'a' }
+  for (const [id, choice] of Object.entries(correct)) {
+    const wrong = choice === 'a' ? 'b' : 'a'
+    await review.locator('input[name="' + id + '"][value="' + wrong + '"]').check()
+  }
+  await submit.click()
+  await expect(review.getByText('0/5 correctas · Revisar y volver a intentar')).toBeVisible()
+  await expect(review.getByText(/Distractor:/)).toHaveCount(10)
+  await expect(finish).toBeDisabled()
+  await expect.poll(async () => (await readCourses(page))[PGN]?.lessonAssessments?.[lessonId]?.lastScore).toBe(0)
+  await review.getByRole('button', { name: 'Volver a intentar' }).click()
+  await expect(review.getByText(/Distractor:/)).toHaveCount(0)
+  for (const [id, choice] of Object.entries(correct)) {
+    await review.locator('input[name="' + id + '"][value="' + choice + '"]').check()
+  }
+  await submit.click()
+  await expect(review.getByText('5/5 correctas · Evaluación aprobada')).toBeVisible()
+  await expect(finish).toBeEnabled()
+  await expect.poll(async () => (await readCourses(page))[PGN]?.lessonAssessments?.[lessonId]).toMatchObject({ attempts: 2, lastScore: 5, bestScore: 5 })
+  await page.reload()
+  await expect(finish).toBeEnabled()
+  await expect(review.getByText(/Tu aprobación quedó guardada/)).toBeVisible()
+  await finish.click()
+  await expect(page).toHaveURL(/\/lesson\/pgn-m24-l2$/)
+  await expect(review).toHaveCount(1)
+  await expect(review.locator('fieldset')).toHaveCount(5)
+  await expect(review.locator('input[name="pgn-m24-q1"]')).toHaveCount(0)
+  await expect(review.locator('input[name="pgn-m24-q3"]')).toHaveCount(3)
+  await expect(finish).toBeDisabled()
+  expect((await readCourses(page))[PGN].lessons[lessonId].status).toBe('completed')
+  await page.goto(route)
+  await expect(finish).toBeEnabled()
+  await expect(review.getByText(/Esta lección ya está completada/)).toBeVisible()
+  expect((await readCourses(page))[DIAN]).toEqual(beforeDian)
+  expect(errors).toEqual([])
+})
