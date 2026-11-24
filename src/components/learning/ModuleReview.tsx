@@ -21,6 +21,7 @@ export function LessonAssessment({ course, lesson, alreadyCompleted, assessmentP
   const [result, setResult] = useState<ReviewResult | null>(null)
   const recordAnswer = useProgressStore(s => s.recordAnswer)
   const recordLessonAssessment = useProgressStore(s => s.recordLessonAssessment)
+  const priorAssessment = useProgressStore(s => s.courses[course.id]?.lessonAssessments?.[lesson.id])
   const questions = useMemo(() => lessonAssessmentQuestions(course, lesson, round), [course, lesson, round])
   const answered = questions.filter(q => Boolean(selected[q.id])).length
   const canSubmit = questions.length === LESSON_REVIEW_COUNT && answered === LESSON_REVIEW_COUNT && !result
@@ -84,7 +85,7 @@ export function LessonAssessment({ course, lesson, alreadyCompleted, assessmentP
           <strong>{answer?.correct ? 'Bien razonado' : 'Revisa la regla del expediente'}</strong>
           <p>{question.explanation}</p>
           {displayOptions.map((o, i) => <p key={o.id}><b>{optionLabel(i)} · {o.id === question.correctOptionId ? 'Correcta' : 'Distractor'}:</b> {o.rationale}</p>)}
-          <div className={styles.sources}>{question.sourceIds.slice(0, 3).map(id => {
+          <div className={styles.sources}>{question.sourceIds.map(id => {
             const source = course.sources.find(s => s.id === id)
             return source ? <a key={id} href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a> : null
           })}</div>
@@ -103,6 +104,7 @@ export function LessonAssessment({ course, lesson, alreadyCompleted, assessmentP
     </div> : <button type="button" className={styles.submit} disabled={!canSubmit} onClick={submit}>
       Evaluar mis cinco respuestas <ArrowRight size={16} aria-hidden="true"/>
     </button>}
+    {priorAssessment && <p className={styles.notice}>Último intento: {priorAssessment.lastScore}/5 · Mejor resultado: {priorAssessment.bestScore}/5 · Intentos: {priorAssessment.attempts}</p>}
     {alreadyCompleted ? <p className={styles.notice}>Esta lección ya está completada en tu historial. Puedes evaluarte de forma voluntaria sin perder el avance.</p> : assessmentPassed && <p className={styles.notice}>Tu aprobación quedó guardada en este dispositivo. Puedes continuar o repasar.</p>}
   </section>
 }
