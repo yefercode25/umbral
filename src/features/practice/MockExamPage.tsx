@@ -125,7 +125,7 @@ export function MockExamPage() {
       const correct = answers[question.id] === question.correctOptionId
       recordAnswer(course, question.id, question.skillIds, correct)
     }
-    if (course.id === 'dian-2676-gestor-ii') recordPracticeSession(course, {
+    if (course.id === 'dian-2676-gestor-ii' || course.id === 'procuraduria-104-2026-3pu15') recordPracticeSession(course, {
       id: `${course.id}-${profileId}-${Date.now()}`,
       recordedAt: new Date().toISOString(),
       profileId,
@@ -166,7 +166,7 @@ export function MockExamPage() {
         <header className={styles.setupHeader}>
           <span>Entrenamiento sin retroalimentación inmediata</span>
           <h1>Configura tu simulacro</h1>
-          <p>Elige la profundidad de la sesión para <strong>{course.shortTitle}</strong>. Los perfiles se construyen con la configuración de este curso y nunca mezclan preguntas de otra convocatoria. {course.id === 'dian-2676-gestor-ii' ? 'En DIAN 2676 los simulacros funcionales incluyen únicamente PJS; el repaso mixto mantiene preguntas de estudio.' : 'Los tipos de pregunta se ajustan a los contenidos disponibles para esta convocatoria.'} La ponderación interna de Umbral es formativa y <strong>no reemplaza la calificación psicométrica ni una distribución oficial</strong>.</p>
+          <p>Elige la profundidad de la sesión para <strong>{course.shortTitle}</strong>. Los perfiles se construyen con la configuración de este curso y nunca mezclan preguntas de otra convocatoria. {course.id === 'dian-2676-gestor-ii' ? 'En DIAN 2676 los simulacros funcionales incluyen únicamente PJS; el repaso mixto mantiene preguntas de estudio.' : 'Los simulacros de Procuraduría usan casos redactados individualmente; competencias y fundamentos técnicos tienen sesiones independientes.'} La ponderación interna de Umbral es formativa y <strong>no reemplaza la calificación psicométrica ni una distribución oficial</strong>.</p>
         </header>
 
         <div className={styles.profileGrid} role="radiogroup" aria-label="Tipo de simulacro">
@@ -217,7 +217,7 @@ export function MockExamPage() {
           <span>{profile.title} completado</span>
           <div className={styles.score}>{score}<small>%</small></div>
           <h1>{results.correct} de {questions.length} respuestas correctas</h1>
-          <p>Resultado formativo de Umbral para {course.shortTitle}. No equivale a la calificación oficial ni presupone cantidad, duración o ponderación definitiva de la prueba.</p>
+          <p>Resultado formativo de Umbral para {course.shortTitle}. No equivale a la calificación oficial ni presupone cantidad, duración o ponderación definitiva de la prueba. {profile.kind === 'behavior' && 'Esta sesión revisa decisiones didácticas, no personalidad ni competencias medidas psicométricamente.'}</p>
           <div className={styles.resultMeta}>
             <span><Clock3 size={15}/>{formatElapsed(elapsed)}</span>
             <span><Target size={15}/>{answeredCount}/{questions.length} respondidas</span>
@@ -249,6 +249,7 @@ export function MockExamPage() {
                 <div className={styles.answerLine}><span>Tu respuesta</span><strong>{selectedOption?.text ?? 'Sin respuesta'}</strong></div>
                 {!correct && <div className={styles.answerLine}><span>Respuesta correcta</span><strong>{correctOption?.text}</strong></div>}
                 <p className={styles.explanation}>{question.explanation}</p>
+                {course.id === 'procuraduria-104-2026-3pu15' && <div className={styles.answerLine}><span>Por qué cada alternativa</span><div>{questionOptionsForDisplay(question).map((option, optionIndex) => <p key={option.id}><strong>{optionLabel(optionIndex)} · {option.id === question.correctOptionId ? 'Correcta' : 'Incorrecta'}</strong> — {option.rationale}</p>)}</div></div>}
                 <div className={styles.reviewSources}>
                   <span>Fuentes</span>
                   <div>{question.sourceIds.map((sourceId) => {

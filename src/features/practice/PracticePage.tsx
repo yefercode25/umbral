@@ -10,6 +10,7 @@ import { getCourseFromSearchParams, withCourse } from '../../lib/courseQuery'
 import { useProgressStore } from '../../stores/progressStore'
 import { deterministicOrder } from '../../lib/questionPresentation'
 import { practiceQuestionPool } from '../../lib/practiceQuestionPool'
+import { PGN_COURSE_ID, isPgnAuthored } from '../../lib/procuraduriaScopes'
 import styles from './PracticePage.module.css'
 
 type Mode = 'all' | 'advanced' | 'pjs' | 'integrated' | 'core' | 'transversal' | 'errors' | 'saved'
@@ -43,7 +44,7 @@ export function PracticePage() {
     const filtered = available.filter((question) => {
       if (selectedModule && question.moduleId !== selectedModule.id) return false
       if (mode === 'all') return true
-      if (mode === 'advanced') return question.id.startsWith('q-goa26-') || question.id.startsWith('q-master-2026-') || question.id.startsWith('q-transversal-2026-')
+      if (mode === 'advanced') return course.id === PGN_COURSE_ID ? isPgnAuthored(question) : question.id.startsWith('q-goa26-') || question.id.startsWith('q-master-2026-') || question.id.startsWith('q-transversal-2026-')
       if (mode === 'pjs') return question.type === 'pjs'
       if (mode === 'integrated') return Boolean(question.integrated)
       if (mode === 'core') return coreModules.size ? coreModules.has(question.moduleId) : true
@@ -78,7 +79,7 @@ export function PracticePage() {
     <div className={styles.toolbar}>
       <div className={styles.segment} aria-label="Filtro de práctica">
         <button type="button" aria-pressed={mode === 'all'} className={mode === 'all' ? styles.active : ''} onClick={() => setMode('all')}>Todas</button>
-        {course.id === 'dian-2676-gestor-ii' && <button type="button" aria-pressed={mode === 'advanced'} className={mode === 'advanced' ? styles.active : ''} onClick={() => setMode('advanced')}>Casos nuevos · 2026</button>}
+        {(course.id === 'dian-2676-gestor-ii' || course.id === PGN_COURSE_ID) && <button type="button" aria-pressed={mode === 'advanced'} className={mode === 'advanced' ? styles.active : ''} onClick={() => setMode('advanced')}>{course.id === PGN_COURSE_ID ? 'Casos revisados' : 'Casos nuevos · 2026'}</button>}
         <button type="button" aria-pressed={mode === 'pjs'} className={mode === 'pjs' ? styles.active : ''} onClick={() => setMode('pjs')}>Situacionales</button>
         {hasIntegrated ? <button type="button" aria-pressed={mode === 'integrated'} className={mode === 'integrated' ? styles.active : ''} onClick={() => setMode('integrated')}>Integradoras</button> : null}
         <button type="button" aria-pressed={mode === 'core'} className={mode === 'core' ? styles.active : ''} onClick={() => setMode('core')}>{config?.coreLabel ?? 'Núcleo'}</button>

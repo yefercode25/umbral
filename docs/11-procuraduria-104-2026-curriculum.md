@@ -120,7 +120,7 @@ Refuerzo disciplinar específico para la profesión con la que se accede al carg
 
 La configuración inicial da mayor peso a M20–M44 porque concentran Derecho Disciplinario, instrucción y prueba. Esto no significa que el resto sea prescindible: significa que, ante tiempo limitado, el algoritmo adaptativo y la selección de simulacros no deben tratar todas las materias como si tuvieran idéntica conexión con las funciones 1, 4 y 5 del empleo.
 
-El banco predeterminado de examen utiliza M0–M74 y M80–M84. M75–M79 queda fuera del examen general hasta que exista una razón oficial para integrarlo. El refuerzo M80–M84 se etiqueta pedagógicamente como preparación prudente del área profesional y no como ponderación oficial conocida.
+Actualización RC.1: el examen de conocimientos utiliza M1, M4–M69 y M74 (se excluyen orientación M0/M2/M3 y comportamental M70–M73). M75–M79 queda fuera del examen general. M80–M84 tiene sesión técnica independiente y puede aparecer como conocimiento aplicado en expedientes de otros módulos; no constituye una ponderación oficial. El repaso mixto conserva M0–M74.
 
 ## Metodología de preguntas
 

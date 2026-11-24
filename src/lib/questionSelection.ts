@@ -1,7 +1,8 @@
 import type { Course, Question } from '../types/course'
 import { practiceQuestionPool } from './practiceQuestionPool'
+import { PGN_COURSE_ID, isPgnAuthored, isPgnBehavior, pgnBehaviorModuleIds, pgnSystemsModuleIds } from './procuraduriaScopes'
 
-export type ExamProfileId = 'functional-quick' | 'functional-training' | 'functional-extended' | 'functional-deep' | 'study-mix' | 'transversal-check'
+export type ExamProfileId = 'functional-quick' | 'functional-training' | 'functional-extended' | 'functional-deep' | 'study-mix' | 'transversal-check' | 'behavior-check' | 'systems-check'
 
 export type ExamProfile = {
   id: ExamProfileId
@@ -11,7 +12,7 @@ export type ExamProfile = {
   size: number
   scopeLabel: string
   questionTypeLabel: string
-  kind: 'functional' | 'study' | 'transversal'
+  kind: 'functional' | 'study' | 'transversal' | 'behavior' | 'systems'
   integratedTarget?: number
 }
 
@@ -20,7 +21,7 @@ export function examProfilesForCourse(course: Course): ExamProfile[] {
   const core = config?.coreLabel ?? 'Núcleo principal'
   const transversal = config?.transversalLabel ?? 'Complementario'
   const coreCount = config?.examModuleIds?.length ?? config?.coreModuleIds.length ?? course.modules.length
-  const transversalCount = config?.transversalModuleIds.length ?? 0
+  const transversalCount = course.id === PGN_COURSE_ID ? (config?.transversalModuleIds.filter(id => !isPgnBehavior(id) && !pgnSystemsModuleIds.includes(id)).length ?? 0) : config?.transversalModuleIds.length ?? 0
   const hasIntegratedCases = course.questions.some((question) => question.integrated && (question.relatedModuleIds?.length ?? 0) > 0)
 
   return [
@@ -78,6 +79,20 @@ export function examProfilesForCourse(course: Course): ExamProfile[] {
       kind: 'functional',
       integratedTarget: hasIntegratedCases ? 10 : 0,
     },
+    ...(course.id === PGN_COURSE_ID ? [
+      {
+        id: 'behavior-check' as const, title: 'Competencias comportamentales · práctica formativa',
+        shortTitle: 'Competencias', description: '12 casos de reflexión de M70–M73. No simula una escala psicométrica oficial ni calcula personalidad o percentiles.',
+        size: 12, scopeLabel: '4 módulos · 6 competencias del perfil y preparación',
+        questionTypeLabel: 'Conductas y decisiones didácticas', kind: 'behavior' as const,
+      },
+      {
+        id: 'systems-check' as const, title: 'Fundamentos de Ingeniería de Sistemas',
+        shortTitle: 'Sistemas', description: '15 preguntas aplicadas de arquitectura, redes, ciberseguridad, software y datos. Complemento profesional, sin ponderación oficial supuesta.',
+        size: 15, scopeLabel: 'M80–M84 · complemento profesional',
+        questionTypeLabel: 'Casos técnicos aplicados', kind: 'systems' as const,
+      },
+    ] : []),
     {
       id: 'transversal-check',
       title: transversal,
@@ -187,6 +202,45 @@ function takeWeightedByModule(pool: Question[], size: number, priorityModuleIds:
   return shuffle(selected)
 }
 
+/** Select authored PGN cases without changing option IDs or scoring.
+ * Priority is a pedagogical quota, not a published official blueprint.
+ * Diversity of dossiers and modules is preferred within each quota.
+ */
+function selectPgnDiverse(pool: Question[], size: number, selected: Question[] = []): Question[] {
+  const remaining = shuffle(pool.filter(q => !selected.some(s => s.id === q.id)))
+  const result = [...selected]
+  const moduleCounts = new Map<string, number>()
+  const scenarioCounts = new Map<string, number>()
+  const count = (q: Question) => {
+    moduleCounts.set(q.moduleId, (moduleCounts.get(q.moduleId) ?? 0) + 1)
+    if (q.scenarioId) scenarioCounts.set(q.scenarioId, (scenarioCounts.get(q.scenarioId) ?? 0) + 1)
+  }
+  result.forEach(count)
+  while (result.length < size && remaining.length) {
+    // Stable sort retains the shuffled order for ties. Prefer unseen scenarios
+    // and modules; repeat only as needed to fill the requested session.
+    remaining.sort((a, b) =>
+      (scenarioCounts.get(a.scenarioId ?? '') ?? 0) - (scenarioCounts.get(b.scenarioId ?? '') ?? 0) ||
+      (moduleCounts.get(a.moduleId) ?? 0) - (moduleCounts.get(b.moduleId) ?? 0))
+    const q = remaining.shift()
+    if (!q) break
+    result.push(q)
+    count(q)
+  }
+  return result
+}
+
+function selectPgnFunctional(pool: Question[], size: number, priority: Set<string>, target: number) {
+  const integrated = selectPgnDiverse(pool.filter(q => q.integrated), Math.min(size, target))
+  const regular = pool.filter(q => !q.integrated)
+  // At least half of the remaining questions are from priority modules,
+  // provided the authored bank can supply them. Other slots cover the wider scope.
+  const priorityGoal = integrated.length + Math.ceil((size - integrated.length) / 2)
+  const focus = selectPgnDiverse(regular.filter(q => priority.has(q.moduleId)), priorityGoal, integrated)
+  const broad = selectPgnDiverse(regular.filter(q => !priority.has(q.moduleId)), size, focus)
+  return shuffle(selectPgnDiverse(pool, size, broad))
+}
+
 export function selectExamQuestions(course: Course, profileId: ExamProfileId): Question[] {
   const profiles = examProfilesForCourse(course)
   const profile = profiles.find((item) => item.id === profileId) ?? profiles[0]!
@@ -196,6 +250,25 @@ export function selectExamQuestions(course: Course, profileId: ExamProfileId): Q
   const transversalModuleIds = new Set(config?.transversalModuleIds ?? [])
   const priorityModuleIds = new Set(config?.priorityModuleIds ?? config?.coreModuleIds ?? [])
   const available = practiceQuestionPool(course)
+
+  if (course.id === PGN_COURSE_ID) {
+    const authored = available.filter(isPgnAuthored)
+    if (profile.kind === 'behavior') {
+      return shuffle(selectPgnDiverse(authored.filter(q => pgnBehaviorModuleIds.includes(q.moduleId)), profile.size))
+    }
+    if (profile.kind === 'systems') {
+      return shuffle(selectPgnDiverse(authored.filter(q => pgnSystemsModuleIds.includes(q.moduleId)), profile.size))
+    }
+    if (profile.kind === 'study') {
+      return shuffle(selectPgnDiverse(authored.filter(q => studyModuleIds.has(q.moduleId)), profile.size))
+    }
+    if (profile.kind === 'transversal') {
+      return shuffle(selectPgnDiverse(authored.filter(q => transversalModuleIds.has(q.moduleId) && !isPgnBehavior(q.moduleId) && !pgnSystemsModuleIds.includes(q.moduleId)), profile.size))
+    }
+    const pool = authored.filter(q => examModuleIds.has(q.moduleId) &&
+      (profile.id !== 'functional-deep' || (q.difficulty >= 4 && (q.integrated || q.id.startsWith('pgn-dossier-') || q.id.includes('-transfer-')))))
+    return selectPgnFunctional(pool, profile.size, priorityModuleIds, profile.integratedTarget ?? 0)
+  }
 
   if (profile.kind === 'study') {
     return selectBalancedQuestions(available.filter((question) => studyModuleIds.has(question.moduleId)), profile.size)
