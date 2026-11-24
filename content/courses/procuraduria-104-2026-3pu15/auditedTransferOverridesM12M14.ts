@@ -49,10 +49,10 @@ export const auditedTransferOverridesM12M14: Record<string, [FoundationTransferO
   ],
   'pgn-m13': [
     {
-      caseText: 'El titular de una actuación disciplinaria comisiona formalmente una diligencia de declaración de un testigo. El encargo identifica objeto, expediente, persona y plazo. El comisionado recibe una solicitud de una nueva diligencia no comprendida en el acto y la sugerencia de que decida una eventual formulación de cargos porque conoce ya los hechos. La autoridad de origen no ha autorizado extender el encargo.',
+      caseText: 'El titular de una actuación disciplinaria comisiona formalmente una diligencia de declaración de un testigo. El encargo identifica objeto, expediente, persona y plazo. El comisionado recibe una solicitud de una nueva diligencia ajena al objeto y no derivada directamente de la declaración, y la sugerencia de que decida una eventual formulación de cargos porque conoce ya los hechos. La autoridad de origen no ha autorizado extender el encargo.',
       stem: '¿Qué debe ejecutar y qué decisión debe reservar para el despacho que conserva la competencia?',
       correct: {
-        text: 'Cumplir la declaración según objeto, formalidades y garantías, registrar las solicitudes y remitir acta y soportes; consultar al comitente cualquier ampliación y no decidir cargos por el solo hecho de estar comisionado.',
+        text: 'Cumplir la declaración según objeto, formalidades y garantías, registrar las solicitudes y remitir acta y soportes; consultar al comitente la ampliación ajena al objeto y no decidir cargos por el solo hecho de estar comisionado.',
         reason: 'Una comisión probatoria habilita actuaciones definidas y no convierte al comisionado en instructor o juzgador de todo el expediente.',
       },
       other: [
@@ -65,7 +65,7 @@ export const auditedTransferOverridesM12M14: Record<string, [FoundationTransferO
           reason: 'La novedad no extingue por sí sola el encargo válido ni las obligaciones de registrar la diligencia.',
         },
       ],
-      explanation: 'La competencia debe verificarse por órgano y etapa. El comisionado actúa dentro de la autorización aplicable y preserva el testimonio con las garantías legales; el acto de comisión no le otorga potestades para reformular la investigación por sí mismo.',
+      explanation: 'La competencia debe verificarse por órgano y etapa. El comisionado actúa dentro de la autorización aplicable, incluida la facultad del art. 152 sobre pruebas directamente derivadas salvo prohibición expresa, y preserva el testimonio con las garantías legales; el acto de comisión no le otorga potestades para reformular la investigación por sí mismo.',
       difficulty: 4,
     },
     {

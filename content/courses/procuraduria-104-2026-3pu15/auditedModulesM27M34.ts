@@ -70,7 +70,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
       {
         "type": "example",
         "title": "Aplicación: Términos y medidas durante la investigación",
-        "text": "No se prorroga por acumulación de trabajo ni se suspende al servidor por el solo inicio de investigación. Cada extensión o medida tiene presupuesto propio."
+        "text": "No se prorroga por acumulación de trabajo ni se suspende al servidor por el solo inicio de investigación. El art. 217 fija inicialmente tres meses de suspensión, con posible prórroga por igual período y otros tres meses después del fallo de primera o única instancia, bajo los presupuestos legales; las decisiones de suspensión y prórroga están sujetas a consulta, sin perjuicio de cumplimiento inmediato."
       }
     ],
     "3": [
@@ -131,7 +131,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
           ],
           [
             "Quejoso ordinario",
-            "No es sujeto procesal por regla general; puede presentar/ampliar queja, aportar pruebas y recurrir archivo y fallo absolutorio conforme al art. 110."
+            "No es sujeto procesal por regla general; puede presentar/ampliar queja, aportar pruebas y recurrir archivo y fallo absolutorio. Para esos efectos puede conocer el expediente en secretaría del despacho que profirió la decisión (art. 110)."
           ]
         ]
       },
@@ -152,7 +152,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
         "rows": [
           [
             "Versión libre",
-            "Medio de defensa del disciplinable, voluntario; puede ofrecer su explicación sin declarar contra sí mismo."
+            "Medio voluntario de defensa del disciplinable; puede rendirse hasta antes del traslado de alegatos previos al fallo de primera o única instancia (art. 112), sin obligación de declarar contra sí mismo."
           ],
           [
             "Silencio",
@@ -164,14 +164,14 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
           ],
           [
             "Confesión/aceptación",
-            "Requisitos del art. 161: asistencia de defensor, información de derechos y manifestación libre, consciente e informada; verificar oportunidad y beneficios del art. 162."
+            "Art. 161: ante autoridad competente, comisionado o designado; con defensor, información de derechos y manifestación libre, consciente e informada. Art. 162: en investigación, hasta antes de ejecutoria del cierre; en juicio, hasta antes de ejecutoria del traslado para alegatos de conclusión."
           ]
         ]
       },
       {
         "type": "example",
         "title": "Aplicación: Versión libre, testimonio y confesión",
-        "text": "Una frase de un investigado en un correo de trabajo no se convierte por sí sola en confesión formal con efectos de beneficios."
+        "text": "Una frase de un investigado en un correo de trabajo no se convierte por sí sola en confesión formal. Si procede el art. 162, en investigación la rebaja de inhabilidad, suspensión o multa es hasta la mitad; en juicio, una tercera parte. No aplica a faltas gravísimas del art. 52; la aceptación parcial exige examinar ruptura de unidad procesal. En instrucción el acta equivalente al pliego debe elaborarse dentro de diez días improrrogables y el juzgador falla en cuarenta y cinco días desde recibo; en juicio, decisión dentro de quince días."
       }
     ],
     "3": [
@@ -261,7 +261,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
           ],
           [
             "Cómputo",
-            "Verificar modalidad de comunicación/notificación, constancia, calendario aplicable y vencimiento; no contar desde el borrador."
+            "Aplicar el trámite de notificación del art. 123 al cierre y traslado (comunicación y eventual estado); verificar constancias y calendario aplicable, no contar desde el borrador ni confundir expedición con notificación."
           ],
           [
             "Evaluación (221)",
@@ -395,7 +395,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
           ],
           [
             "Efecto (224)",
-            "Verificar cosa juzgada de la decisión y distinguir el archivo de indagación del art. 208, que tiene regla propia."
+            "El archivo definitivo del art. 224 hace tránsito a cosa juzgada; si no fue posible identificar e individualizar al presunto autor, el efecto es formal. Distinguir el archivo de indagación del art. 208, sin cosa juzgada material."
           ],
           [
             "Comunicación y recurso",
@@ -488,7 +488,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
         "rows": [
           [
             "Regla (131)",
-            "Reposición y apelación desde expedición hasta cinco días posteriores a notificación, salvo regla aplicable."
+            "Reposición y apelación: regla general desde expedición hasta cinco días posteriores a notificación (131). Excepción: apelación del fallo de primera instancia en juicio ordinario, por escrito y sustentada dentro de diez días siguientes a notificación (225G)."
           ],
           [
             "Estrados",
@@ -500,7 +500,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
           ],
           [
             "Pliego (225)",
-            "Notificar en forma prevista; una vez cumplidas notificaciones, remisión al juzgador en tres días improrrogables."
+            "Notificación personal al disciplinado o defensor; si no comparecen dentro de cinco días desde el día siguiente a la entrega de la comunicación en última dirección y correo electrónico, designar defensor público o estudiante de consultorio jurídico conforme al art. 225. Completadas las notificaciones, remisión en tres días improrrogables."
           ]
         ]
       },
@@ -593,7 +593,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
           ],
           [
             "Solicitud",
-            "Identificar causal y razones; controlar oportunidad y trámite de los arts. 206–207."
+            "Art. 206: solicitud antes del traslado de alegatos de conclusión, con causal concreta y fundamentos. Art. 207: resolver en cinco días desde recibo o en la misma audiencia si allí se presenta."
           ],
           [
             "Reposición (133)",
@@ -770,7 +770,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
           ],
           [
             "Prueba sobreviniente",
-            "Agotada etapa probatoria, el juzgador puede variar cargos en el supuesto legal, con notificación y oportunidad de defensa previstas; no significa prejuicio."
+            "Agotada etapa probatoria, el juzgador puede variar cargos por prueba sobreviniente en el supuesto legal. La variación se notifica como pliego y se conceden diez días para descargos y pruebas; el período probatorio no supera dos meses (225D)."
           ]
         ]
       },
@@ -857,7 +857,8 @@ const sources: Record<string, string[]> = {
   "pgn-m34": [
     "ley-1952-2019",
     "ley-2094-2021",
-    "pgn-guia-disciplinaria"
+    "pgn-guia-disciplinaria",
+    "cc-c030-2023"
   ]
 }
 export function auditedModuleBlocksM27M34(moduleId: string, lessonOrder: 1 | 2 | 3): LessonBlock[] { return blocks[moduleId]?.[lessonOrder] ?? [] }

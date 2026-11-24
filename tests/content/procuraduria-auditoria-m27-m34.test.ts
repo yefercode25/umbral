@@ -144,7 +144,8 @@ describe('Auditoría integral M27–M34', () => {
     "refs": [
       "ley-1952-2019",
       "ley-2094-2021",
-      "pgn-guia-disciplinaria"
+      "pgn-guia-disciplinaria",
+      "cc-c030-2023"
     ],
     "keys": [
       "b",

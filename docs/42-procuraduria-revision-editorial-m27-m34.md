@@ -34,4 +34,4 @@ Profesional Universitario 3PU-15, Convocatoria 104-2026. Ocho módulos, 24 lecci
 
 ## Control de regresión
 
-85 módulos, 255 lecciones, 1948 registros, 1098 preguntas de práctica; verificación de títulos, casos únicos, tres opciones y racionales específicos, referencias y claves históricas. Pendiente de CI y vista previa antes de integración.
+85 módulos, 255 lecciones, 1948 registros, 1098 preguntas de práctica; verificación de títulos, casos únicos, tres opciones y racionales específicos, referencias y claves históricas. Segunda revisión: se incorpora la referencia directa C-030/2023 (43 fuentes en catálogo), se precisa M13 conforme al art. 152, se añaden las excepciones de apelación en juicio ordinario, los términos de confesión y nulidad y la notificación del cierre. Pendiente de CI y vista previa antes de integración.
