@@ -823,6 +823,280 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "90, 110, 134"
     ]
+  ],
+  "pgn-m31": [
+    [
+      "Un despacho expide auto de apertura de investigación y la secretaría plantea publicarlo únicamente en el estado electrónico ordinario porque el disciplinado ya conoce informalmente que existe una queja. Aún no ha surtido notificación ni se configura conducta concluyente.",
+      "¿Qué modalidad de notificación corresponde inicialmente al auto de apertura?",
+      [
+        "Notificación personal, con aplicación de las alternativas legales si no se logra.",
+        "Notificación directa por estado electrónico como cualquier providencia de trámite.",
+        "Comunicación informal por el medio más eficaz sin constancia de notificación."
+      ],
+      [
+        "El art. 121 exige notificación personal de la apertura.",
+        "El estado ordinario no sustituye sin más la regla especial.",
+        "Comunicar informalmente no equivale a notificar."
+      ],
+      "111, 120–121"
+    ],
+    [
+      "La defensa facilitó una dirección electrónica en una actuación, pero no aceptó previamente por escrito ser notificada por ese medio. La oficina envía allí un fallo y propone certificar la notificación personal electrónica con el mero comprobante de salida.",
+      "¿Qué presupuesto debe verificar antes de utilizar esa modalidad de notificación?",
+      [
+        "Aceptación previa por escrito y las condiciones legales de recepción y constancia.",
+        "La existencia de cualquier dirección electrónica mencionada durante la investigación.",
+        "La disponibilidad de un reporte interno que acredite únicamente el envío."
+      ],
+      [
+        "El art. 122 exige aceptación previa escrita y debe atenderse el condicionamiento constitucional.",
+        "Informar una dirección no equivale automáticamente a aceptar esa modalidad.",
+        "El envío aislado no acredita todos los requisitos."
+      ],
+      "122; C-570/2019"
+    ],
+    [
+      "Una providencia fue notificada irregularmente. El defensor no reclama el defecto y, en un escrito posterior, identifica expresamente la decisión, reproduce su contenido y solicita que se reconsidere. El despacho debe determinar el efecto procesal de esa intervención.",
+      "¿Qué figura permite considerar cumplida la notificación en el supuesto descrito?",
+      [
+        "Notificación por conducta concluyente conforme a la actuación posterior del defensor.",
+        "Notificación por edicto presumida desde la fecha de expedición de la providencia.",
+        "Notificación personal electrónica presumida por haber presentado un escrito posterior."
+      ],
+      [
+        "El art. 128 contempla actuación o referencia posterior sin reclamo.",
+        "El edicto exige su trámite específico.",
+        "Presentar escrito no acredita aceptación electrónica previa."
+      ],
+      "128"
+    ],
+    [
+      "El instructor niega mediante decisión notificada una solicitud de prueba de la defensa durante la etapa de investigación. La defensa presenta recurso oportuno y solicita determinar el trámite aplicable, sin que se trate todavía de la fase de juicio.",
+      "¿Qué recurso ordinario procede contra esa negativa de prueba en investigación?",
+      [
+        "Reposición ante el funcionario que profirió la decisión de investigación.",
+        "Apelación ante el superior funcional como si fuera negativa en juicio.",
+        "Queja directamente ante el superior sin rechazo previo de apelación."
+      ],
+      [
+        "La negativa de pruebas en investigación admite reposición.",
+        "La apelación corresponde a la negativa de pruebas en juicio.",
+        "La queja presupone rechazo de apelación."
+      ],
+      "133–136"
+    ],
+    [
+      "Durante la etapa de juicio, el juzgador niega parcialmente las pruebas solicitadas por la defensa. Las demás fueron decretadas y el disciplinado desea recurrir oportunamente la negativa parcial. La secretaría debe determinar recurso y efecto.",
+      "¿En qué efecto procede el recurso contra esa negativa parcial en juicio?",
+      [
+        "Apelación en el efecto devolutivo por tratarse de negativa parcial.",
+        "Apelación en el efecto suspensivo porque toda negativa impide continuar.",
+        "Reposición en el efecto suspensivo por tratarse de una solicitud probatoria."
+      ],
+      [
+        "El art. 134 prevé efecto devolutivo para negativa parcial.",
+        "El suspensivo no aplica a toda negativa.",
+        "La reposición por negativa probatoria corresponde a investigación."
+      ],
+      "133–134"
+    ],
+    [
+      "El funcionario de juicio notifica válidamente un fallo de primera instancia en el procedimiento ordinario regulado por los artículos 225B y siguientes. El equipo utiliza un formato general de recursos que asigna cinco días para cualquier apelación.",
+      "¿Qué plazo especial debe aplicar a la apelación escrita de ese fallo?",
+      [
+        "Diez días siguientes a la notificación para interponer y sustentar.",
+        "Cinco días siguientes a la notificación según la regla general.",
+        "Quince días siguientes a la notificación según el término de descargos."
+      ],
+      [
+        "El art. 225G establece diez días para ese fallo.",
+        "La regla general de cinco días cede ante la especial.",
+        "Quince días corresponden a descargos en juicio ordinario."
+      ],
+      "131, 225B, 225G"
+    ],
+    [
+      "Una defensa interpuso apelación contra una providencia que legalmente admite ese recurso. El funcionario lo rechazó por considerarlo improcedente. Dentro del término de ejecutoria de esa decisión, la defensa quiere que el superior examine el rechazo.",
+      "¿Qué recurso está previsto específicamente contra el rechazo de la apelación?",
+      [
+        "Queja, interpuesta y sustentada dentro del término de ejecutoria del rechazo.",
+        "Reposición, porque todo rechazo de apelación admite exclusivamente ese recurso.",
+        "Una nueva apelación contra la decisión que rechazó la primera apelación."
+      ],
+      [
+        "Los arts. 136–137 regulan queja contra rechazo de apelación.",
+        "La reposición no es el recurso específico previsto.",
+        "No se interpone una apelación sucesiva contra su propio rechazo."
+      ],
+      "136–137"
+    ],
+    [
+      "Una sanción de primera instancia fue apelada únicamente por el disciplinado. No existen otros apelantes. Al estudiar los argumentos del recurso, el superior considera que la sanción inicial fue demasiado leve y plantea aumentarla en la decisión.",
+      "¿Qué límite rige la resolución de esa apelación del disciplinado único apelante?",
+      [
+        "No agravar la sanción impuesta al resolver el recurso del apelante único.",
+        "Agravar la sanción si explica detalladamente el criterio de graduación utilizado.",
+        "Aumentar la sanción únicamente si la conducta fue calificada como gravísima."
+      ],
+      [
+        "El art. 135 prohíbe agravar con investigado apelante único.",
+        "La motivación no elimina la prohibición.",
+        "La gravedad no constituye excepción general a esa regla."
+      ],
+      "135"
+    ],
+    [
+      "Una providencia de sustanciación no tiene forma especial de notificación prevista en el Código y constituye una actuación de simple trámite. El despacho necesita informar su contenido a los sujetos procesales y dejar constancia de ello.",
+      "¿Qué trámite corresponde a la comunicación y los recursos de esta providencia?",
+      [
+        "Comunicar por el medio más eficaz, dejar constancia y no conceder recursos.",
+        "Notificar necesariamente en forma personal y conceder apelación ante el superior.",
+        "Publicar exclusivamente por edicto y conceder reposición contra el simple trámite."
+      ],
+      [
+        "El art. 129 ordena comunicación y el 130 excluye recursos en simple trámite.",
+        "No existe mandato general de notificación personal para esa providencia.",
+        "El edicto y la reposición no corresponden a este supuesto."
+      ],
+      "129–130"
+    ]
+  ],
+  "pgn-m32": [
+    [
+      "Una constancia presenta un error de digitación en la fecha, pero los soportes permiten identificar inequívocamente el momento de la diligencia. El acto cumplió su finalidad y la defensa ejerció oportunamente todas sus facultades. El equipo propone anular por el error formal.",
+      "¿Qué criterio debe orientar la respuesta a esa irregularidad formal?",
+      [
+        "Conservar el acto que cumplió su finalidad sin vulnerar la defensa.",
+        "Declarar nulidad de toda la actuación por cualquier error de digitación.",
+        "Invalidar todas las pruebas anteriores aunque el defecto sea subsanable."
+      ],
+      [
+        "El art. 203 protege el acto que cumple finalidad sin afectar defensa.",
+        "No toda irregularidad formal configura nulidad.",
+        "La invalidez no se extiende automáticamente a pruebas válidas."
+      ],
+      "202–203"
+    ],
+    [
+      "El funcionario que profirió el fallo disciplinario carecía de competencia para hacerlo. La parte interesada demuestra esta circunstancia y no existe otro mecanismo procesal para subsanar el defecto dentro de la actuación. La oficina propone conservar el fallo por celeridad.",
+      "¿Qué causal específica debe analizarse ante ese defecto de competencia?",
+      [
+        "Falta de competencia del funcionario para proferir el fallo.",
+        "Simple irregularidad de trámite convalidada por la existencia de motivación.",
+        "Defecto de notificación que solo afecta el término de impugnación."
+      ],
+      [
+        "El numeral primero del art. 202 contempla esa causal.",
+        "La motivación y celeridad no sustituyen competencia legal.",
+        "La irregularidad descrita es de competencia, no de notificación."
+      ],
+      "202–203"
+    ],
+    [
+      "La defensa solicita nulidad por una diferencia de formato en una comunicación. Reconoce que recibió el contenido oportunamente y pudo actuar, pero no identifica ninguna garantía afectada ni una irregularidad sustancial. El despacho debe examinar su fundamentación.",
+      "¿Qué carga exige el régimen a quien alega la nulidad?",
+      [
+        "Demostrar la afectación de garantías o de bases fundamentales del proceso.",
+        "Indicar cualquier diferencia formal sin explicar su relevancia para la actuación.",
+        "Aportar exclusivamente una copia de la comunicación que considera irregular."
+      ],
+      [
+        "El art. 203 exige demostrar trascendencia del defecto sustancial.",
+        "La diferencia formal por sí sola no satisface esa carga.",
+        "Una copia no demuestra automáticamente afectación de garantías."
+      ],
+      "203, 206"
+    ],
+    [
+      "En una investigación se advierte que una actuación sustancial impidió ejercer defensa y no existe otro medio procesal para subsanar el defecto. Ningún sujeto ha solicitado formalmente nulidad, pero el funcionario competente conoce las circunstancias y su trascendencia.",
+      "¿Puede la autoridad declarar la nulidad sin solicitud de los sujetos?",
+      [
+        "Declararla de oficio al verificar la causal legal de nulidad.",
+        "Esperar una solicitud formal porque la nulidad depende siempre de parte.",
+        "Continuar hasta el fallo y reservar el examen exclusivamente para apelación."
+      ],
+      [
+        "El art. 204 permite declaratoria oficiosa en cualquier estado.",
+        "La solicitud de parte no es requisito indispensable.",
+        "La autoridad no debe diferir una causal comprobada sin alternativa de subsanación."
+      ],
+      "202–204"
+    ],
+    [
+      "Una irregularidad sustancial surgió en una providencia de la fase de investigación. Se declara su nulidad y existen decisiones posteriores que dependen de ella, además de actuaciones previas válidas. La autoridad debe precisar qué segmento del expediente se repone.",
+      "¿Cuál es el alcance temporal que debe señalar la declaratoria de nulidad?",
+      [
+        "Reponer la actuación desde la causal y las actuaciones que dependan de ella.",
+        "Anular necesariamente todo el expediente desde la recepción de la queja.",
+        "Repetir solo la providencia sin examinar las actuaciones posteriores dependientes."
+      ],
+      [
+        "El art. 205 delimita efectos desde el momento de la causal.",
+        "La nulidad no borra por defecto lo anterior válido.",
+        "Se reponen las actuaciones que dependen de la decisión nula."
+      ],
+      "205"
+    ],
+    [
+      "Al declararse una nulidad por vulneración de defensa en una decisión posterior, el expediente conserva documentos y testimonios que fueron allegados y practicados legalmente antes del defecto. La oficina propone volver a recaudar absolutamente toda la prueba por precaución.",
+      "¿Qué efecto produce la nulidad sobre esas pruebas legalmente incorporadas?",
+      [
+        "Conservan validez conforme a la regla del art. 205.",
+        "Pierden validez por la sola declaratoria de nulidad de la actuación.",
+        "Conservan validez únicamente si las partes ratifican todas las pruebas."
+      ],
+      [
+        "La nulidad de la actuación no invalida las pruebas legalmente allegadas y practicadas.",
+        "No se pierde validez por una nulidad posterior sin nexo con la prueba.",
+        "El art. 205 no condiciona su conservación a ratificación general."
+      ],
+      "205"
+    ],
+    [
+      "Antes de dar traslado para alegatos de conclusión, la defensa presenta solicitud de nulidad. Identifica la causal concreta y explica los hechos y fundamentos jurídicos que la sustentan. El funcionario considera que únicamente puede examinarla durante el fallo.",
+      "¿Qué trámite corresponde a esa solicitud presentada en oportunidad legal?",
+      [
+        "Resolverla conforme al término especial de cinco días desde su recibo.",
+        "Reservar su estudio para el fallo aunque cumpla requisitos y oportunidad.",
+        "Rechazarla por presentarse después del cierre de la investigación disciplinaria."
+      ],
+      [
+        "Los arts. 206–207 regulan oportunidad y término de resolución.",
+        "La solicitud no debe diferirse automáticamente hasta el fallo.",
+        "El cierre de investigación no es el límite legal para solicitar nulidad."
+      ],
+      "206–207"
+    ],
+    [
+      "Durante una audiencia, la defensa formula solicitud de nulidad con fundamento de hecho y de derecho. La autoridad está en condiciones de resolver y debe adoptar la decisión conforme al procedimiento especial, sin diferir innecesariamente el debate.",
+      "¿Cuándo se debe resolver una solicitud de nulidad presentada en audiencia?",
+      [
+        "En la misma audiencia conforme al régimen especial de resolución.",
+        "Dentro de cinco días posteriores a la finalización de la audiencia.",
+        "Al proferir el fallo definitivo como cuestión previa de motivación."
+      ],
+      [
+        "El art. 207 dispone resolver en audiencia si allí se presenta.",
+        "Los cinco días corresponden a la regla fuera de audiencia.",
+        "No se difiere automáticamente hasta el fallo."
+      ],
+      "207"
+    ],
+    [
+      "El funcionario competente dicta una providencia que niega una solicitud de nulidad planteada por la defensa. La decisión fue notificada válidamente y el disciplinado busca impugnarla. No se trata de una nulidad declarada de oficio.",
+      "¿Qué recurso procede contra la decisión que resuelve la solicitud?",
+      [
+        "Reposición conforme a la regla específica de los artículos 133 y 207.",
+        "Apelación por tratarse de una cuestión sustancial del debido proceso.",
+        "Ningún recurso porque toda decisión relacionada con nulidad es irrecurrible."
+      ],
+      [
+        "La decisión sobre solicitud de nulidad admite reposición.",
+        "La apelación no es la vía prevista para esa decisión.",
+        "La irrecurribilidad del art. 204 corresponde a declaratoria oficiosa."
+      ],
+      "133, 204, 207"
+    ]
   ]
 }
 

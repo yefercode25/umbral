@@ -13,3 +13,6 @@ Se sustituyen frases repetidas por supuestos concretos, distractores de figuras 
 
 ## Lote 1C (M29–M30)
 18 reactivos adicionales; acumulado 54/765 (7,06 %), quedan 711. M29: cierre, plazo y efectos de alegatos, diferencia entre alegatos y descargos, prueba pendiente y evaluación posterior. M30: estándar de cargos, falta de prueba personal, contenido del pliego, ilicitud, valoración individual, recursos, cosa juzgada, comunicación y remisión. CGD arts. 9–12, 90, 110–112, 133–134, 147–148, 160–161, 213, 220–225, 225B y 225E; consulta del texto consolidado PGN. Conserva claves y agrega regresión acumulativa de 54 casos.
+
+## Lote 1D (M31–M32)
+18 reactivos adicionales; acumulado 72/765 (9,41 %), quedan 693. M31: notificación personal, aceptación electrónica, conducta concluyente, recursos por etapa, plazo especial del fallo ordinario, queja y no agravación. M32: trascendencia, competencia, carga, oficio, alcance, pruebas válidas, oportunidad, resolución y recurso. CGD arts. 111, 120–138, 202–207, 225B y 225G; C-570/2019. Regresión acumulativa de 72 casos; se preserva la clave histórica.

@@ -5,11 +5,11 @@ import { hasPgnLengthCue } from '../../src/lib/procuraduriaBankAudit'
 
 describe('RC.8 · revisión individual de plantillas', () => {
   it('mantiene claves e IDs históricos, con nueve casos distintos por módulo y fuentes legales', () => {
-    expect(reviewedTemplateModuleIds).toEqual(['pgn-m25','pgn-m26','pgn-m27','pgn-m28','pgn-m29','pgn-m30'])
+    expect(reviewedTemplateModuleIds).toEqual(['pgn-m25','pgn-m26','pgn-m27','pgn-m28','pgn-m29','pgn-m30','pgn-m31','pgn-m32'])
     const questions = procuraduriaCourse.questions.filter(q => reviewedTemplateModuleIds.includes(q.moduleId) && /-situational-(10|[2-9])$/.test(q.id))
-    expect(questions).toHaveLength(54)
-    expect(new Set(questions.map(q => q.stem)).size).toBe(54)
-    expect(new Set(questions.map(q => q.case)).size).toBe(54)
+    expect(questions).toHaveLength(72)
+    expect(new Set(questions.map(q => q.stem)).size).toBe(72)
+    expect(new Set(questions.map(q => q.case)).size).toBe(72)
     for (const q of questions) {
       const module = procuraduriaCourse.modules.find(m => m.id === q.moduleId)!
       const number = Number(q.id.split('-').at(-1))
