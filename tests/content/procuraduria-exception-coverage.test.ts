@@ -8,6 +8,24 @@ import { isPgnException } from '../../src/lib/procuraduriaScopes'
 const lessonSourceIds = (moduleId: string) => procuraduriaCourse.lessons.find(l => l.moduleId === moduleId && l.order === 3)?.blocks.flatMap(b => b.type === 'sources' ? b.sourceIds : []) ?? []
 
 describe('Casos límite: reglas especiales y cambios de presupuesto', () => {
+  it('evita convertir la longitud en una pista sistemática en el bloque RC.5', () => {
+    const ids = new Set(["pgn-exception-suspension-provisional-1","pgn-exception-suspension-provisional-2","pgn-exception-conflicto-disciplinario-1","pgn-exception-conflicto-disciplinario-2","pgn-exception-terminos-especiales-1","pgn-exception-terminos-especiales-2","pgn-exception-testigo-no-disponible-1","pgn-exception-testigo-no-disponible-2","pgn-exception-prevencion-emergencia-1","pgn-exception-prevencion-emergencia-2","pgn-exception-bienes-fiscal-1","pgn-exception-bienes-fiscal-2","pgn-exception-control-interno-1","pgn-exception-control-interno-2","pgn-exception-evidencia-inaccesible-1","pgn-exception-evidencia-inaccesible-2","pgn-exception-firma-terceros-1","pgn-exception-firma-terceros-2","pgn-exception-excel-cruces-1","pgn-exception-excel-cruces-2","pgn-exception-datos-denominadores-1","pgn-exception-datos-denominadores-2","pgn-exception-dilemas-competencias-1","pgn-exception-dilemas-competencias-2"])
+    const latest = procuraduriaExceptionQuestions.filter(q=>ids.has(q.id))
+    expect(latest).toHaveLength(24)
+    const rank = { longest: 0, shortest: 0, other: 0 }
+    const count = (text: string) => text.trim().split(/\s+/).length
+    for (const q of latest) {
+      const correct = count(q.options.find(o=>o.id===q.correctOptionId)!.text)
+      const wrong = q.options.filter(o=>o.id!==q.correctOptionId).map(o=>count(o.text))
+      if (correct > Math.max(...wrong)) rank.longest++
+      else if (correct < Math.min(...wrong)) rank.shortest++
+      else rank.other++
+    }
+    for (const value of Object.values(rank)) {
+      expect(value).toBeGreaterThan(0)
+      expect(value).toBeLessThanOrEqual(14)
+    }
+  })
   it('incluye 60 supuestos independientes en treinta temas, con fuentes y claves válidas', () => {
     const qs = procuraduriaExceptionQuestions
     const pool = practiceQuestionPool(procuraduriaCourse)

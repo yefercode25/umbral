@@ -26,3 +26,5 @@ Fuentes nuevas:
 - [Power Query · Data types](https://learn.microsoft.com/en-us/power-query/data-types)
 
 Pendiente: completar revisión de los 90 casos antiguos señalados, revisar más dilemas de investigación y pensamiento conceptual, practicar otras variantes de notificación y términos y obtener guía específica oficial. No se certifica cobertura total de la prueba.
+
+Control adicional de RC.5: las 24 nuevas alternativas correctas se distribuyen por longitud en 7 más largas, 4 más cortas y 13 intermedias o empatadas. El control evita introducir una pista inversa; no certifica dificultad psicométrica. Se añade regresión específica.

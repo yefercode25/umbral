@@ -1612,7 +1612,7 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
     "options": [
       {
         "id": "a",
-        "text": "Evaluar motivadamente el archivo definitivo conforme al artículo 213, sin transformar una insuficiencia probatoria en nuevos períodos de investigación.",
+        "text": "Proyectar el archivo definitivo motivado conforme al artículo 213, dejando constancia del agotamiento del término y de la insuficiencia probatoria para formular cargos.",
         "rationale": "La norma dispone archivo si vencido el término adicional no surge prueba para cargos."
       },
       {
@@ -1657,7 +1657,7 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
       },
       {
         "id": "b",
-        "text": "Valorar el testimonio legalmente practicado y controvertido junto con los demás elementos, registrando los límites de eventuales aclaraciones adicionales.",
+        "text": "Valorar el testimonio legalmente practicado y contradicho junto con las demás pruebas, dejando constancia del fallecimiento y de los límites de una eventual ampliación.",
         "rationale": "La valoración conjunta permite considerar la declaración con su contexto y límites."
       },
       {
@@ -1702,7 +1702,7 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
       },
       {
         "id": "c",
-        "text": "Examinar su naturaleza, legalidad y contradicción posible como elemento disponible, explicitar límites y buscar fuentes independientes de corroboración.",
+        "text": "Examinar la naturaleza y legalidad de la grabación, permitir contradicción sobre el soporte, explicitar la imposibilidad de interrogar al fallecido y buscar corroboración independiente.",
         "rationale": "La valoración exige identificar el medio real y no afirmar una contradicción que no existió."
       }
     ],
@@ -1732,7 +1732,7 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
     "options": [
       {
         "id": "a",
-        "text": "Activar seguimiento de mitigación, requerir medidas a responsables, coordinar remisiones pertinentes y verificar resultados con información y plazos definidos.",
+        "text": "Activar seguimiento de mitigación, requerir medidas a responsables, coordinar remisiones pertinentes y verificar resultados con indicadores de cobertura, plazos y atención diferencial.",
         "rationale": "La prevención puede actuar ante afectación actual y exigir respuesta dentro de competencias."
       },
       {
@@ -1823,7 +1823,7 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
       },
       {
         "id": "c",
-        "text": "Verificar daño, funciones de gestión fiscal, relación directa y demás presupuestos fiscales; examinar separadamente el deber de custodia disciplinario.",
+        "text": "Verificar daño, funciones de gestión fiscal, relación directa y demás presupuestos fiscales; examinar separadamente deber de custodia, conducta y culpabilidad disciplinaria.",
         "rationale": "El art. 7 exige relación directa con actos propios de gestión fiscal; los regímenes tienen presupuestos distintos."
       }
     ],
@@ -1895,7 +1895,7 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
       },
       {
         "id": "b",
-        "text": "Implementar controles operativos bajo responsables del proceso y mantener a control interno en evaluación, recomendación y seguimiento de su eficacia.",
+        "text": "Implementar controles operativos a cargo de responsables del proceso y mantener a control interno en evaluación independiente, recomendación y seguimiento de la eficacia.",
         "rationale": "La administración aplica los controles; el evaluador conserva independencia para verificar su funcionamiento."
       },
       {
@@ -1968,7 +1968,7 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
     "options": [
       {
         "id": "a",
-        "text": "Registrar que la copia conserva sus bytes respecto de la referencia; probar recuperación aislada, buscar fuentes alternativas y documentar datos inaccesibles.",
+        "text": "Registrar la coincidencia de bytes respecto de la referencia, preservar la copia, probar recuperación aislada, buscar fuentes alternativas y documentar datos inaccesibles.",
         "rationale": "La huella coincide con bytes de referencia, pero no verifica estructura ni capacidad de restauración."
       },
       {
@@ -2061,7 +2061,7 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
       },
       {
         "id": "c",
-        "text": "Verificar integridad, sello temporal, cadena y estado histórico del certificado conforme a la política aplicable; documentar el resultado y límites.",
+        "text": "Verificar integridad, sello temporal, cadena y estado histórico de revocación del certificado conforme a la política aplicable, dejando constancia de evidencias y límites.",
         "rationale": "La validación histórica distingue fecha de análisis de fecha de firma con evidencia confiable."
       }
     ],
@@ -2182,7 +2182,7 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
       },
       {
         "id": "c",
-        "text": "Reimportar el texto original con configuración regional del archivo, verificar que sea 4 de marzo y documentar la conversión.",
+        "text": "Reimportar el texto original con la configuración regional estadounidense, verificar que la fecha corresponda al 4 de marzo y documentar la conversión aplicada.",
         "rationale": "El formato conocido permite interpretar correctamente el dato y conservar trazabilidad."
       }
     ],
@@ -2211,7 +2211,7 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
     "options": [
       {
         "id": "a",
-        "text": "Dividir 95 respuestas oportunas entre 110 solicitudes: aproximadamente 86,36 %, indicando los tamaños de las dos sedes.",
+        "text": "Sumar los numeradores y denominadores compatibles: 95 respuestas oportunas de 110 solicitudes, aproximadamente 86,36 %, informando también los resultados por sede.",
         "rationale": "El denominador global es 110 y el numerador compatible es 95."
       },
       {
@@ -2299,7 +2299,7 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
       },
       {
         "id": "c",
-        "text": "Acordar un avance interno verificable, reorganizar recursos y coordinar el cotejo pendiente para entregar la versión definitiva dentro de parámetros.",
+        "text": "Acordar un avance interno verificable, reorganizar recursos disponibles y coordinar el cotejo pendiente con responsables y plazo para la entrega definitiva conforme al procedimiento.",
         "rationale": "Combina entrega útil, gestión proactiva de recursos, coordinación y cumplimiento de controles."
       }
     ],
