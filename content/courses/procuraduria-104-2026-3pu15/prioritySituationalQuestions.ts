@@ -1403,21 +1403,194 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "explanation": "Fundamento: CGD arts. 208–211, 220–225; perfil 104; método didáctico propio de Umbral. La decisión requiere analizar régimen, hechos y medida proporcionada. Primera alternativa incorrecta: La reserva parcial no obliga a negar información separable. Segunda alternativa incorrecta: La transparencia no elimina restricciones legalmente previstas."
   }
 ],
-  'pgn-m82': [{
-    number: 1,
-    caseText: 'Un sistema de expedientes registra accesos inusuales desde una cuenta válida a documentos con datos sensibles. La oficina plantea apagar todas las aplicaciones y borrar sesiones para bloquear el riesgo. Otro equipo advierte que la entidad presta un servicio crítico y que los logs se sobrescriben en pocos días. No se ha determinado si existe acceso indebido o si se trata de actividad legítima desde un nuevo dispositivo.',
-    stem: '¿Qué respuesta inicial equilibra seguridad, continuidad y conservación de evidencia?',
-    options: [
-      'Eliminar registros y credenciales sin inventario; la reducción inmediata de actividad demuestra que el incidente quedó resuelto.',
-      'Esperar a contar con certeza absoluta sobre autoría antes de tomar cualquier medida de contención.',
-      'Preservar eventos y alcance, verificar identidades y permisos, aplicar contención proporcionada según el riesgo y documentar las acciones para mantener o recuperar la continuidad del servicio.',
+  'pgn-m75': [
+  {
+    "number": 1,
+    "caseText": "Un tablero compara el saldo de deuda pública registrado al cierre del año con los ingresos recaudados durante doce meses. El analista los denomina ambos ingresos disponibles y propone sumarlos para evaluar la capacidad de financiar un programa. La documentación permite identificar fechas, períodos, fuentes y servicio de la deuda. La autoridad solicita una explicación metodológica antes de interpretar el riesgo financiero.",
+    "stem": "¿Qué distinción debe incorporar el informe para no mezclar magnitudes económicas incompatibles?",
+    "options": [
+      "Sumar saldo de deuda e ingresos como si fueran recursos líquidos de libre uso.",
+      "Excluir toda información de deuda porque solo los ingresos aportan al diagnóstico.",
+      "Distinguir saldo de deuda como stock e ingresos como flujo del período; analizar financiación y servicio por separado, con indicadores definidos."
     ],
-    rationales: [
-      'Borrar registros impide reconstruir el incidente y la ausencia de planificación puede afectar la continuidad.',
-      'La incertidumbre no impide adoptar medidas proporcionadas de gestión del riesgo.',
-      'Distingue contención, confirmación del incidente, preservación de evidencia y servicio institucional.',
+    "rationales": [
+      "El saldo de deuda representa obligaciones, no efectivo disponible.",
+      "La deuda y su servicio pueden ser relevantes para sostenibilidad.",
+      "Stock y flujo tienen referencias temporales y significados diferentes."
     ],
-    correctOptionId: 'c',
-    explanation: 'El análisis de seguridad debe valorar confidencialidad, integridad, disponibilidad, trazabilidad de decisiones y protección de datos sin concluir autoría automáticamente.',
-  }],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Perfil 104; Constitución arts. 345–352; Decreto 111/1996. Stock y flujo tienen referencias temporales y significados diferentes. Las alternativas restantes deben examinarse por sus errores específicos: El saldo de deuda representa obligaciones, no efectivo disponible. La deuda y su servicio pueden ser relevantes para sostenibilidad."
+  }
+],
+  'pgn-m76': [
+  {
+    "number": 1,
+    "caseText": "Un municipio anuncia por circular interna una nueva tarifa de un impuesto local sin identificar acto de la corporación competente ni fundamento legal. Un funcionario solicita a la PGN confirmar que la tarifa es válida porque el sistema de recaudo ya la aplica. Los soportes muestran la fecha de parametrización, pero no la fuente normativa que autoriza la modificación. Aún se puede requerir la documentación pertinente.",
+    "stem": "¿Qué debe comprobarse antes de aceptar la aplicación de la tarifa registrada en el sistema?",
+    "options": [
+      "Aceptar la tarifa por estar configurada en el sistema institucional.",
+      "Verificar fundamento legal y acto competente conforme al art. 338, elementos del tributo y vigencia; contrastar la parametrización con ellos.",
+      "Ordenar desde PGN una tarifa alternativa sin estudiar atribuciones ni actos aplicables."
+    ],
+    "rationales": [
+      "El sistema ejecuta reglas, no las crea válidamente.",
+      "La configuración técnica no reemplaza la fuente jurídica del tributo.",
+      "El control no habilita sustituir a la autoridad tributaria."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Constitución arts. 338, 363; Estatuto Tributario art. 1; fundamentos económicos. La configuración técnica no reemplaza la fuente jurídica del tributo. Las alternativas restantes deben examinarse por sus errores específicos: El sistema ejecuta reglas, no las crea válidamente. El control no habilita sustituir a la autoridad tributaria."
+  }
+],
+  'pgn-m77': [
+  {
+    "number": 1,
+    "caseText": "Al cierre de la vigencia, una entidad nacional tiene un compromiso legalmente contraído de 40 millones: se recibieron y reconocieron bienes por 25 millones sin pago, y queda pendiente de entrega el resto. La oficina propone clasificar los 40 millones como pagados porque se registró el compromiso. El expediente contiene actas de recibo y estados presupuestales que permiten revisar las condiciones de cierre.",
+    "stem": "¿Qué clasificación debe examinarse conforme al art. 89, sin confundir compromiso, obligación y pago?",
+    "options": [
+      "Verificar 25 millones como posible cuenta por pagar y 15 como posible reserva, si cumplen condiciones legales; ninguno se presume pagado.",
+      "Clasificar todo como pagado por existir registro presupuestal.",
+      "Clasificar todo como cuenta por pagar aunque parte no se haya recibido ni corresponda a anticipo pactado."
+    ],
+    "rationales": [
+      "La constitución de reserva o cuenta por pagar depende del estado y requisitos al cierre.",
+      "El registro no acredita desembolso.",
+      "La obligación pendiente de cumplimiento no equivale automáticamente a cuenta por pagar."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Decreto 111/1996 arts. 71, 89; Marco Normativo CGN Resolución 533/2015 y modificaciones. La constitución de reserva o cuenta por pagar depende del estado y requisitos al cierre. Las alternativas restantes deben examinarse por sus errores específicos: El registro no acredita desembolso. La obligación pendiente de cumplimiento no equivale automáticamente a cuenta por pagar."
+  }
+],
+  'pgn-m78': [
+  {
+    "number": 1,
+    "caseText": "Durante una revisión preventiva aparecen discrepancias en un inventario de bienes sujetos a control especial. Los soportes contienen información de acceso restringido y datos de responsables. El equipo tiene autorización para cotejar actas, registros de movimiento y devoluciones, pero no ha concluido si la diferencia corresponde al corte de información o a un faltante real. Se propone divulgar íntegramente los registros a terceros para agilizar la revisión.",
+    "stem": "¿Qué actuación permite verificar el riesgo de gestión manteniendo reserva, competencia y garantías?",
+    "options": [
+      "Divulgar la totalidad de los registros por considerar que todo control público elimina la reserva.",
+      "Atribuir responsabilidad al último custodio sin revisar fechas, movimientos ni soportes.",
+      "Conciliar inventarios, movimientos y responsables con fuentes autorizadas, preservar soportes y restringir divulgación; informar hallazgos a la autoridad competente."
+    ],
+    "rationales": [
+      "La función pública no elimina restricciones legales.",
+      "La asignación de custodia no demuestra por sí sola una conducta.",
+      "El control exige trazabilidad y tratamiento conforme al régimen de acceso."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Constitución arts. 217–218, 277; Leyes 1862/2017, 2196/2022; DDHH y DIH. El control exige trazabilidad y tratamiento conforme al régimen de acceso. Las alternativas restantes deben examinarse por sus errores específicos: La función pública no elimina restricciones legales. La asignación de custodia no demuestra por sí sola una conducta."
+  }
+],
+  'pgn-m79': [
+  {
+    "number": 1,
+    "caseText": "Una auditoría comprueba que las 255 lecciones tienen al menos una referencia registrada. La dirección desea anunciar que se conoce el 100 % de los contenidos del examen, aunque todavía no dispone de una guía que establezca la distribución concreta de preguntas. Además, algunas referencias apoyan temas pedagógicos complementarios y no requisitos explícitos. Existe una matriz de cobertura del perfil.",
+    "stem": "¿Qué conclusión distingue completitud editorial de cobertura comprobada de la evaluación oficial?",
+    "options": [
+      "Afirmar cobertura total del examen porque todas las lecciones tienen una fuente.",
+      "Informar la cobertura curricular comprobada contra fuentes disponibles, marcar brechas e incertidumbre y evitar afirmar una distribución o cobertura oficial desconocida.",
+      "Considerar inútil toda preparación hasta conocer las preguntas oficiales."
+    ],
+    "rationales": [
+      "Completitud editorial no equivale a representatividad del examen.",
+      "Las referencias acreditan soporte del curso, no conocimiento de la prueba real.",
+      "El perfil permite preparación fundada aunque falte detalle de la guía."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Convocatoria 104 y actos modificatorios; Resolución PGN 243/2026. Las referencias acreditan soporte del curso, no conocimiento de la prueba real. Las alternativas restantes deben examinarse por sus errores específicos: Completitud editorial no equivale a representatividad del examen. El perfil permite preparación fundada aunque falte detalle de la guía."
+  }
+],
+  'pgn-m80': [
+  {
+    "number": 1,
+    "caseText": "Una entidad desea adquirir una solución para reducir tiempos de atención. El proyecto solo enumera características de servidores y almacenamiento, sin describir proceso, usuarios, datos, integraciones ni indicadores de servicio. El equipo de arquitectura tiene acceso al mapa de procesos y a los responsables de información. Se solicita revisar si el diseño tecnológico responde realmente a la necesidad institucional.",
+    "stem": "¿Qué revisión de arquitectura empresarial conecta la inversión tecnológica con el propósito del servicio?",
+    "options": [
+      "Relacionar objetivos y proceso con información, aplicaciones, tecnología, seguridad, dependencias e indicadores de resultado.",
+      "Seleccionar la infraestructura de mayor capacidad sin conocer el flujo ni los usuarios.",
+      "Medir éxito únicamente por número de equipos instalados, sin observar el servicio."
+    ],
+    "rationales": [
+      "El MRAE orienta alineación de arquitectura y valor institucional.",
+      "Capacidad técnica no acredita adecuación al proceso.",
+      "Productos tecnológicos no equivalen a resultado de servicio."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: MRAE v3 MinTIC; perfil 104; arquitectura de sistemas. El MRAE orienta alineación de arquitectura y valor institucional. Las alternativas restantes deben examinarse por sus errores específicos: Capacidad técnica no acredita adecuación al proceso. Productos tecnológicos no equivalen a resultado de servicio."
+  }
+],
+  'pgn-m81': [
+  {
+    "number": 1,
+    "caseText": "Un registro externo identifica una IP pública y puerto asociados a una sede que utiliza traducción de direcciones. La bitácora de NAT conserva asignaciones por intervalo y el aplicativo dispone de identificadores de sesión. Dos personas utilizaron la misma estación en turnos sucesivos. El informe pretende señalar al responsable solo por identificar la estación, sin comparar autenticación, sesión y tiempo de cada operación.",
+    "stem": "¿Qué correlación permite aproximarse a la atribución sin convertir un dispositivo o dirección en prueba personal definitiva?",
+    "options": [
+      "Atribuir automáticamente toda operación al usuario asignado a la estación.",
+      "Descartar todos los datos de red porque varias personas usan la sede.",
+      "Cruzar intervalo, puerto, NAT, dispositivo, autenticación y sesión, verificar relojes y turnos y declarar límites de atribución."
+    ],
+    "rationales": [
+      "La asignación no acredita uso efectivo en un instante.",
+      "Los registros de red aportan información útil con otras fuentes.",
+      "La correlación une eventos técnicos con contexto, pero no garantiza autoría humana."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Fundamentos TCP/IP, DNS y correlación; RFC 9293 y 1034; NIST SP 800-92. La correlación une eventos técnicos con contexto, pero no garantiza autoría humana. Las alternativas restantes deben examinarse por sus errores específicos: La asignación no acredita uso efectivo en un instante. Los registros de red aportan información útil con otras fuentes."
+  }
+],
+  'pgn-m82': [
+  {
+    "number": 1,
+    "caseText": "Una oficina detecta que una exportación de datos personales estuvo disponible mediante un enlace abierto. Ya se revocó el enlace y se preservaron registros de acceso; aún debe determinarse exposición efectiva, personas afectadas y medidas adicionales. El equipo propone declarar cerrado el incidente por haber eliminado el enlace sin evaluar obligaciones institucionales ni revisar la causa de configuración del acceso.",
+    "stem": "¿Qué actuaciones restantes permiten gestionar recuperación, obligaciones de datos personales y mejora del control?",
+    "options": [
+      "Cerrar inmediatamente porque revocar el enlace elimina cualquier consecuencia previa.",
+      "Publicar la exportación y los datos de personas afectadas para advertir a toda la comunidad.",
+      "Evaluar alcance y accesos, aplicar ruta institucional y obligaciones legales pertinentes, verificar controles corregidos y documentar lecciones y seguimiento."
+    ],
+    "rationales": [
+      "La exposición pasada puede requerir acciones adicionales.",
+      "Difundir datos agrava el riesgo y no sustituye canales autorizados.",
+      "La contención no reemplaza evaluación, recuperación ni gestión legal del incidente."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: MSPI 2025; NIST CSF 2.0; SP 800-61 Rev. 3 (2025); Ley 1581/2012. La contención no reemplaza evaluación, recuperación ni gestión legal del incidente. Las alternativas restantes deben examinarse por sus errores específicos: La exposición pasada puede requerir acciones adicionales. Difundir datos agrava el riesgo y no sustituye canales autorizados."
+  }
+],
+  'pgn-m83': [
+  {
+    "number": 1,
+    "caseText": "Una versión nueva de un aplicativo modifica el esquema de la base y transforma datos existentes. Tras detectar un error, el equipo quiere revertir únicamente el ejecutable a la versión anterior, sin revisar si esa versión puede operar sobre el esquema nuevo. Existe respaldo verificado, plan de cambio y ambiente aislado de pruebas. La dirección solicita una recuperación rápida que conserve datos y trazabilidad.",
+    "stem": "¿Qué revisión debe preceder al rollback para evitar daños adicionales y preservar continuidad?",
+    "options": [
+      "Evaluar compatibilidad de esquema y datos, ensayar reversión o recuperación en entorno aislado, obtener autorización y preservar evidencia y cambios.",
+      "Revertir solo el ejecutable porque toda versión anterior funciona con cualquier esquema posterior.",
+      "Borrar la base y crear una nueva sin examinar respaldos ni datos afectados."
+    ],
+    "rationales": [
+      "La reversión depende de código, configuración y migraciones.",
+      "El esquema puede ser incompatible con la aplicación anterior.",
+      "Destruir datos compromete servicio y evidencia."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: MRAE v3; MSPI 2025; NIST SP 800-218 SSDF 1.1 (referencia técnica). La reversión depende de código, configuración y migraciones. Las alternativas restantes deben examinarse por sus errores específicos: El esquema puede ser incompatible con la aplicación anterior. Destruir datos compromete servicio y evidencia."
+  }
+],
+  'pgn-m84': [
+  {
+    "number": 1,
+    "caseText": "Un registro crítico cambia entre dos respaldos diarios. El motor registra operaciones bajo una cuenta de servicio compartida, mientras la aplicación conserva identificadores de solicitud y existen tareas automatizadas que actualizan la misma tabla. El responsable quiere atribuir el cambio al dueño funcional del dato por aparecer en la ficha de gobierno, aunque no se ha revisado historial transaccional, sesiones ni procesos programados.",
+    "stem": "¿Qué reconstrucción distingue responsabilidad de gobierno del dato y posible autoría técnica de la operación?",
+    "options": [
+      "Atribuir el cambio al dueño funcional porque su responsabilidad sobre calidad demuestra que ejecutó la operación.",
+      "Restaurar el respaldo sobre producción sin preservar estado actual ni contrastar logs.",
+      "Correlacionar estados, auditoría, transacciones, sesiones de aplicación, automatismos y permisos; documentar intervalos y límites sin atribución por rol."
+    ],
+    "rationales": [
+      "El rol de gobierno no demuestra ejecución de cada operación.",
+      "Sobrescribir producción compromete evidencia y continuidad.",
+      "La responsabilidad funcional no acredita autoría material; se necesitan fuentes de cambio."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: MRAE v3; MSPI 2025; Ley 1581/2012; fundamentos relacionales y ACID. La responsabilidad funcional no acredita autoría material; se necesitan fuentes de cambio. Las alternativas restantes deben examinarse por sus errores específicos: El rol de gobierno no demuestra ejecución de cada operación. Sobrescribir producción compromete evidencia y continuidad."
+  }
+],
 }
