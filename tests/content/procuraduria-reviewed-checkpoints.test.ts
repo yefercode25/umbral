@@ -4,12 +4,12 @@ import { reviewedCheckpointIds } from '../../content/courses/procuraduria-104-20
 import { lessonAssessmentQuestions } from '../../src/lib/lessonAssessment'
 import { hasPgnLengthCue } from '../../src/lib/procuraduriaBankAudit'
 
-describe('PGN · comprobaciones de lección revisadas M15–M19',()=>{
-  it('revisa las 30 preguntas originales y mantiene claves y referencias',()=>{
-    expect(reviewedCheckpointIds).toHaveLength(30)
+describe('PGN · comprobaciones de lección revisadas M15–M24',()=>{
+  it('revisa las 60 preguntas originales y mantiene claves y referencias',()=>{
+    expect(reviewedCheckpointIds).toHaveLength(60)
     const seen=new Set<string>()
     const sources=new Set(course.sources.map(s=>s.id))
-    for(let n=15;n<=19;n++) for(let l=1;l<=3;l++){
+    for(let n=15;n<=24;n++) for(let l=1;l<=3;l++){
       const lesson=course.lessons.find(x=>x.id===`pgn-m${n}-l${l}`)!
       const qs=lessonAssessmentQuestions(course,lesson)
       expect(qs).toHaveLength(5)
@@ -24,6 +24,6 @@ describe('PGN · comprobaciones de lección revisadas M15–M19',()=>{
         seen.add(q.stem)
       }
     }
-    expect(seen.size).toBe(30)
+    expect(seen.size).toBe(60)
   })
 })
