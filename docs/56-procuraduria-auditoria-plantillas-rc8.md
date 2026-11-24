@@ -25,3 +25,6 @@ Se sustituyen frases repetidas por supuestos concretos, distractores de figuras 
 
 ## Lote 1G (M23–M24)
 18 adicionales; acumulado 135/765 (17,65 %), quedan 630. Cierra M20–M34 (15 módulos). M23: interés particular/directo, impedimento y recusación, términos, suspensión, deberes, designación y revisión. M24: puntos iniciales por tipo de conducta, cómputo independiente, notificación interruptiva, reclasificación, sanciones y prescripción de sanción. Contraste CGD consolidado PGN, arts. 33, 36, 38, 40, 44, 47–48, 56, 104–108. Los ejercicios temporales suponen expresamente el régimen vigente del art. 33 desde el 29/12/2023. No se cambia selección histórica de simulacros.
+
+## Lote 2A (M35–M37)
+27 adicionales; acumulado 162/765 (21,18 %), quedan 603. M35: necesidad, carga, imparcialidad, oficiosidad, libertad probatoria, indicios y certeza. M36: pertinencia, conducencia, utilidad, superfluidad, límites de recaudo y prueba ilegal. M37: exclusión, inexistencia, contradicción, traslado de actuaciones penales y administrativas, fuentes independientes. Contraste CGD consolidado PGN arts. 14, 21, 147–160, 205 y 222. Se mantiene selección histórica y se incorporan racionales individuales.

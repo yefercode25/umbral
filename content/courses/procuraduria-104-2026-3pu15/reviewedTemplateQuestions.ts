@@ -2056,6 +2056,417 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "33, 36"
     ]
+  ],
+  "pgn-m35": [
+    [
+      "Un informe de control interno identifica un faltante de inventario. El funcionario encargado tenía acceso al almacén, al igual que otros tres servidores. No se aportan registros que permitan establecer qué persona retiró los bienes ni cómo ocurrió el hecho.",
+      "¿Qué debe hacer la autoridad antes de atribuir responsabilidad personal?",
+      [
+        "Obtener pruebas que vinculen al investigado con la conducta y valorar alternativas.",
+        "Atribuir el faltante al encargado porque tenía acceso funcional al almacén.",
+        "Exigir al encargado demostrar quién retiró los elementos para desvirtuar responsabilidad."
+      ],
+      [
+        "El Estado debe probar la responsabilidad individual.",
+        "Tener acceso no acredita ejecución de la conducta.",
+        "La carga no se traslada al disciplinado."
+      ],
+      "147–148"
+    ],
+    [
+      "La defensa identifica un registro institucional que podría demostrar que el servidor no estaba presente cuando se realizó la conducta. Ninguna parte ha solicitado formalmente su incorporación y el instructor conoce su existencia y relevancia.",
+      "¿Qué facultad permite al instructor obtener ese elemento probatorio favorable?",
+      [
+        "Decretar de oficio la prueba relevante y garantizar su contradicción.",
+        "Esperar exclusivamente a que la defensa presente la solicitud probatoria correspondiente.",
+        "Omitirla porque el instructor únicamente debe sustentar la hipótesis de responsabilidad."
+      ],
+      [
+        "La búsqueda imparcial incluye pruebas de oficio favorables.",
+        "La iniciativa de parte no es indispensable.",
+        "La instrucción no busca solamente sustentar cargos."
+      ],
+      "148"
+    ],
+    [
+      "En una actuación disciplinaria el único sustento para sancionar es una afirmación del instructor sobre la conducta atribuida al servidor. Aunque conoce personalmente el contexto institucional, no se produjo ni incorporó prueba legal del hecho decisivo.",
+      "¿Qué exigencia debe satisfacerse antes de adoptar el fallo disciplinario?",
+      [
+        "Fundar el fallo en pruebas legalmente producidas y aportadas al proceso.",
+        "Fundar el fallo en el conocimiento personal documentado del instructor del expediente.",
+        "Complementar el fallo con la experiencia profesional de quien dirige la investigación."
+      ],
+      [
+        "La decisión exige material probatorio producido e incorporado legalmente.",
+        "El conocimiento personal no sustituye las pruebas del proceso.",
+        "La experiencia orienta valoración, no suple prueba faltante."
+      ],
+      "147, 160"
+    ],
+    [
+      "El instructor tiene una declaración que atribuye al servidor una omisión y una certificación que demuestra que otra persona ejercía temporalmente la función. Su coordinador recomienda concentrar las diligencias en confirmar el relato acusatorio para cerrar pronto el expediente.",
+      "¿Qué criterio debe guiar la investigación de esas dos versiones contrapuestas?",
+      [
+        "Examinar con igual rigor la hipótesis de responsabilidad y la de descargo.",
+        "Dar prioridad a la versión acusatoria por haber motivado la apertura del expediente.",
+        "Aceptar la certificación sin comprobar su alcance porque favorece al investigado."
+      ],
+      [
+        "El art. 148 exige búsqueda imparcial de la verdad real.",
+        "El origen de la investigación no otorga prioridad probatoria.",
+        "La imparcialidad tampoco significa aceptar sin análisis el descargo."
+      ],
+      "148"
+    ],
+    [
+      "Un despacho analiza una falta cuya ocurrencia puede acreditarse con documentos, testimonios y una inspección, sin que una regla especial exija determinado medio. Un asesor sostiene que solo un dictamen pericial puede demostrar legalmente el hecho.",
+      "¿Qué principio permite utilizar distintos medios reconocidos para demostrar la falta?",
+      [
+        "Libertad probatoria dentro de los medios legalmente reconocidos y garantías aplicables.",
+        "Tarifa legal que exige siempre dictamen experto en toda actuación disciplinaria.",
+        "Prevalencia documental que excluye otros medios cuando existen registros escritos."
+      ],
+      [
+        "El art. 150 permite cualquiera de los medios legalmente reconocidos.",
+        "No existe la exigencia universal planteada.",
+        "La existencia de documentos no impide otros medios."
+      ],
+      "149–150"
+    ],
+    [
+      "Durante el juicio se propone utilizar un medio probatorio no regulado expresamente en el Código General Disciplinario. Existe regulación legal específica de ese medio y el despacho debe determinar si es posible practicarlo en la actuación.",
+      "¿Qué condición permite utilizar ese medio no previsto expresamente por el Código?",
+      [
+        "Aplicar las disposiciones que lo regulan respetando los derechos fundamentales.",
+        "Aplicar las reglas del testimonio sin importar la naturaleza del medio propuesto.",
+        "Excluirlo por no aparecer expresamente enumerado en el Código General Disciplinario."
+      ],
+      [
+        "El art. 149 permite medios no previstos bajo su regulación propia.",
+        "No corresponde aplicar indiscriminadamente reglas de otro medio.",
+        "La enumeración no constituye exclusión absoluta."
+      ],
+      "149"
+    ],
+    [
+      "En una investigación existen dos indicios de que el servidor conocía una instrucción, pero ningún soporte directo acredita su intervención. La defensa solicita que el funcionario explique cómo se relacionan los hechos indicadores con la hipótesis de autoría.",
+      "¿Qué tratamiento exige el Código al apreciar los indicios dentro del expediente?",
+      [
+        "Valorar los indicios mediante sana crítica, explicando su alcance inferencial.",
+        "Excluir los indicios porque no figuran como medios autónomos del artículo 149.",
+        "Asignar a los indicios valor equivalente al de una confesión expresa."
+      ],
+      [
+        "Los indicios se consideran al apreciar las pruebas conforme a sana crítica.",
+        "La norma los admite en la valoración.",
+        "No tienen equivalencia automática con confesión."
+      ],
+      "149, 159"
+    ],
+    [
+      "Un despacho dispone de datos financieros que requieren conocimiento especializado para interpretarse. Una entidad estatal cuenta con personal idóneo y puede colaborar, pero el instructor considera contratar obligatoriamente un particular sin explorar esa posibilidad.",
+      "¿Qué mecanismo de colaboración contempla el Código para esa necesidad técnica?",
+      [
+        "Solicitar gratuitamente la colaboración técnica necesaria a los organismos del Estado.",
+        "Delegar la decisión disciplinaria a la entidad que dispone de los expertos.",
+        "Exigir a la defensa que contrate al experto para demostrar su inocencia."
+      ],
+      [
+        "El art. 156 prevé colaboración técnica gratuita de organismos estatales.",
+        "El apoyo no transfiere la decisión jurídica.",
+        "La carga probatoria sigue en cabeza del Estado."
+      ],
+      "147, 156"
+    ],
+    [
+      "La autoridad tiene pruebas legalmente incorporadas que demuestran una irregularidad administrativa, pero persiste una duda razonable sobre la responsabilidad del disciplinado al concluir el juicio. El proyecto de fallo propone imponer una sanción reducida.",
+      "¿Qué estándar probatorio impide sancionar en esas condiciones de incertidumbre?",
+      [
+        "La certeza acerca de la existencia de la falta y la responsabilidad.",
+        "La mera probabilidad de responsabilidad que permitió formular inicialmente cargos.",
+        "La existencia de indicios suficientes para justificar la apertura de investigación."
+      ],
+      [
+        "El fallo sancionatorio exige certeza de ambos elementos.",
+        "El estándar de cargos no es el de sanción.",
+        "El umbral inicial tampoco satisface el fallo."
+      ],
+      "14, 160, 222"
+    ]
+  ],
+  "pgn-m36": [
+    [
+      "Se investiga la modificación de una fecha en un registro de inventario durante marzo. La defensa pide verificar los registros de acceso del día de la modificación; otra solicitud pretende obtener los historiales de vacaciones de servidores sin relación con el asunto.",
+      "¿Qué criterio permite diferenciar las dos solicitudes por su relación con los hechos?",
+      [
+        "La pertinencia de cada prueba respecto del hecho disciplinariamente relevante.",
+        "La autenticidad documental de ambas fuentes por proceder de la misma entidad.",
+        "La cantidad de registros que podrían obtenerse mediante cada solicitud probatoria."
+      ],
+      [
+        "La pertinencia exige conexión material con el hecho a probar.",
+        "La autenticidad no establece pertinencia.",
+        "El volumen no determina relación con el objeto."
+      ],
+      "151"
+    ],
+    [
+      "Una inspección ya verificó y documentó íntegramente el estado de un equipo. Se solicita repetirla en idénticas condiciones sin hechos nuevos, cuestiones pendientes ni finalidad adicional; el despacho dispone de la diligencia y todos sus soportes.",
+      "¿Qué fundamento permite negar motivadamente la repetición solicitada en este supuesto?",
+      [
+        "Su carácter superfluo por no aportar información adicional relevante.",
+        "Su carácter ilícito porque las diligencias repetidas vulneran necesariamente garantías.",
+        "Su falta de autenticidad porque ya existe otra inspección sobre el mismo equipo."
+      ],
+      [
+        "El art. 151 ordena negar las pruebas superfluas.",
+        "Repetir no constituye por sí solo ilicitud.",
+        "La duplicación no demuestra falsedad o inautenticidad."
+      ],
+      "151"
+    ],
+    [
+      "Una defensa solicita incorporar un registro técnico vinculado directamente con la identificación de quien ejecutó una transacción. El instructor propone negarlo únicamente porque la hipótesis oficial ya considera demostrada la autoría y el registro podría contradecirla.",
+      "¿Qué criterio debe aplicar al resolver la petición de prueba de descargo?",
+      [
+        "Examinar su pertinencia, conducencia y utilidad sin prejuzgar su resultado.",
+        "Negarla si contradice la hipótesis sustentada en el auto de apertura.",
+        "Decretarla únicamente cuando se haya formulado pliego de cargos contra el servidor."
+      ],
+      [
+        "El mérito anticipado no reemplaza el examen de admisibilidad.",
+        "La contradicción de una hipótesis justifica evaluarla, no descartarla.",
+        "Los sujetos pueden solicitar pruebas en investigación."
+      ],
+      "148, 151"
+    ],
+    [
+      "En una investigación se solicita un medio para demostrar un hecho respecto del cual existe una exigencia legal específica de prueba. El medio propuesto no satisface esa exigencia, aunque la información que podría aportar guarda relación con el hecho.",
+      "¿Qué criterio concreto debe analizarse respecto de esa limitación jurídica del medio?",
+      [
+        "Conducencia, por la idoneidad legal del medio para acreditar el hecho.",
+        "Pertinencia, porque toda relación temática garantiza idoneidad jurídica del medio.",
+        "Utilidad, porque el medio debe aceptarse siempre que aporte información novedosa."
+      ],
+      [
+        "La conducencia examina aptitud jurídica del medio.",
+        "La relación temática no sustituye exigencias legales.",
+        "La novedad no elimina un requisito normativo."
+      ],
+      "149–151"
+    ],
+    [
+      "En un expediente se solicita un documento que acredita la propiedad de un bien directamente relacionado con los hechos. El instructor considera negar la solicitud por tratarse de un documento presentado por el investigado y no por una autoridad pública.",
+      "¿Qué fundamento debe utilizar para resolver la petición de incorporación documental?",
+      [
+        "Evaluar las condiciones legales del documento y su relación con los hechos.",
+        "Negarlo por provenir de un sujeto procesal interesado en el resultado.",
+        "Exigir que toda prueba solicitada por la defensa sea decretada de oficio."
+      ],
+      [
+        "Los sujetos procesales pueden aportar y solicitar pruebas pertinentes y conducentes.",
+        "El interés del aportante no es causal automática de rechazo.",
+        "La iniciativa de parte está prevista por el Código."
+      ],
+      "147, 151"
+    ],
+    [
+      "Se investigan accesos no autorizados a una carpeta institucional el 5 de mayo. El equipo propone recaudar indiscriminadamente mensajes privados de todo el personal durante varios años, pese a existir registros acotados que permiten estudiar el evento.",
+      "¿Qué delimitación probatoria se ajusta mejor a los hechos investigados y las garantías?",
+      [
+        "Solicitar los registros relevantes del evento mediante un procedimiento legalmente autorizado.",
+        "Recopilar todos los mensajes para seleccionar posteriormente los que parezcan relevantes.",
+        "Abandonar las pruebas digitales porque su obtención siempre afecta derechos fundamentales."
+      ],
+      [
+        "La búsqueda debe ser pertinente y respetar garantías.",
+        "La recolección indiscriminada no se justifica por mera conveniencia.",
+        "La evidencia digital puede obtenerse respetando las reglas aplicables."
+      ],
+      "149, 151, 158"
+    ],
+    [
+      "Un testigo presencial puede aclarar quién entregó un expediente en una fecha discutida. La autoridad ya cuenta con una fotografía del lugar, pero esta no permite establecer quién realizó la entrega. Se plantea negar el testimonio por existir una imagen.",
+      "¿Qué criterio permite reconocer el aporte adicional del testimonio en ese supuesto?",
+      [
+        "Utilidad probatoria para esclarecer una cuestión que la fotografía no resuelve.",
+        "Carácter superfluo porque ya se incorporó una prueba sobre el lugar.",
+        "Falta de pertinencia porque la entrega ocurrió en un espacio fotografiado."
+      ],
+      [
+        "El testimonio puede aportar información no contenida en la imagen.",
+        "Referirse al mismo hecho no implica redundancia.",
+        "El testigo se relaciona directamente con la cuestión investigada."
+      ],
+      "151"
+    ],
+    [
+      "Se aporta al proceso una prueba que guarda relación directa con la conducta investigada. Sin embargo, se acredita que fue practicada ilegalmente y que su obtención vulneró derechos fundamentales del disciplinado. El equipo estima que resulta muy esclarecedora.",
+      "¿Qué consecuencia prevalece frente a la utilidad de esa prueba ilegal?",
+      [
+        "No atender la prueba obtenida ilegalmente y aplicar la regla de exclusión.",
+        "Incorporarla por su pertinencia y asignarle menor valor en el fallo.",
+        "Decretarla nuevamente como prueba de oficio sin subsanar el origen ilícito."
+      ],
+      [
+        "La utilidad no elimina la ilegalidad ni la cláusula de exclusión.",
+        "La disminución de peso no sustituye exclusión.",
+        "El decreto posterior no sana por sí solo el origen."
+      ],
+      "21, 151, 158"
+    ],
+    [
+      "Una solicitud probatoria pretende obtener doce copias idénticas de un mismo informe certificado ya incorporado. No se cuestionan autenticidad, integridad o contenido, y el solicitante no explica qué información distinta pretende demostrar con las copias.",
+      "¿Qué motivo permite negar esa solicitud sin afectar la investigación del hecho?",
+      [
+        "La falta de utilidad adicional de las copias idénticas solicitadas.",
+        "La impertinencia del informe original respecto de todos los hechos investigados.",
+        "La inconducencia de todo documento como medio de prueba disciplinaria."
+      ],
+      [
+        "La multiplicación de copias no aporta información adicional.",
+        "El caso no demuestra impertinencia del informe original.",
+        "Los documentos son medios reconocidos de prueba."
+      ],
+      "149, 151"
+    ]
+  ],
+  "pgn-m37": [
+    [
+      "Un archivo electrónico contiene información muy relevante sobre una presunta falta y su integridad técnica se verifica mediante una huella digital. Posteriormente se acredita que su recaudo desconoció derechos fundamentales del disciplinado.",
+      "¿Qué consecuencia jurídica corresponde pese a la integridad técnica del archivo?",
+      [
+        "Tener la prueba como inexistente y no fundamentar decisiones en ella.",
+        "Conservar la prueba porque su integridad demuestra autenticidad y legalidad.",
+        "Utilizarla con valor reducido por haber sido obtenida fuera del procedimiento."
+      ],
+      [
+        "La vulneración fundamental activa el art. 158 y la exclusión.",
+        "Integridad y legalidad son cuestiones diferentes.",
+        "El menor valor no subsana la vulneración."
+      ],
+      "21, 158"
+    ],
+    [
+      "En una actuación ya se practicó una prueba antes de vincular formalmente a un servidor. El auto de vinculación acaba de notificarse válidamente y la defensa solicita conocer y controvertir el material incorporado al expediente.",
+      "¿Desde qué momento reconoce el Código la oportunidad de controvertir las pruebas?",
+      [
+        "Desde la notificación del auto de apertura o de la orden de vinculación.",
+        "Desde la notificación del pliego de cargos, aunque exista vinculación anterior.",
+        "Desde el traslado para alegar de conclusión en la etapa de juzgamiento."
+      ],
+      [
+        "El art. 157 fija la notificación de apertura o vinculación.",
+        "La contradicción no se pospone hasta cargos.",
+        "El traslado final no es el inicio del derecho."
+      ],
+      "157"
+    ],
+    [
+      "Un proceso penal llegó a la presentación del escrito de acusación y la Fiscalía descubrió evidencias físicas que todavía no se introdujeron ni controvirtieron en juicio. La autoridad disciplinaria requiere trasladar esos elementos relevantes.",
+      "¿Qué condición debe satisfacer su utilización dentro de la actuación disciplinaria?",
+      [
+        "Someter los elementos trasladados a contradicción dentro del proceso disciplinario.",
+        "Considerarlos automáticamente pruebas plenas por haber sido descubiertos por la Fiscalía.",
+        "Esperar necesariamente a que exista sentencia penal condenatoria ejecutoriada para trasladarlos."
+      ],
+      [
+        "El art. 154 permite traslado con contradicción disciplinaria.",
+        "El descubrimiento no equivale a práctica y contradicción en juicio.",
+        "La ley permite trasladarlos antes de sentencia."
+      ],
+      "154"
+    ],
+    [
+      "En un proceso penal en curso existen evidencias que no han sido descubiertas por la Fiscalía. El despacho disciplinario considera que pueden esclarecer un hecho y propone solicitarlas directamente al custodio, sin informar al fiscal responsable.",
+      "¿A quién corresponde evaluar la solicitud de entrega en este supuesto especial?",
+      [
+        "Al fiscal del caso, quien decide qué puede entregar sin comprometer la investigación.",
+        "Al custodio de las evidencias, quien debe entregarlas por la sola solicitud disciplinaria.",
+        "Al defensor del investigado, quien decide qué información penal puede trasladarse."
+      ],
+      [
+        "El art. 154 atribuye la evaluación al fiscal del caso.",
+        "El custodio no sustituye esa competencia.",
+        "La defensa no autoriza por sí sola la entrega."
+      ],
+      "154"
+    ],
+    [
+      "Una autoridad disciplinaria requiere un testimonio practicado válidamente en otra actuación administrativa. Dispone de una copia informal enviada por un tercero, pero todavía no cuenta con copia autorizada por el funcionario responsable de la actuación de origen.",
+      "¿Qué mecanismo de traslado debe gestionar para incorporar la prueba conforme al Código?",
+      [
+        "Obtener copia autorizada por el funcionario respectivo y valorar según el CGD.",
+        "Adoptar la copia informal como prueba plena por proceder de otro proceso.",
+        "Pedir que el funcionario de origen decida la responsabilidad disciplinaria del servidor."
+      ],
+      [
+        "El traslado exige copias autorizadas de la prueba válidamente practicada.",
+        "La copia informal no acredita por sí sola el requisito.",
+        "La autoridad de origen no decide este asunto disciplinario."
+      ],
+      "154"
+    ],
+    [
+      "Se constata que un medio de prueba fue recaudado sin una formalidad sustancial exigible. El documento conserva su contenido original y varios servidores reconocen que parece auténtico, pero el defecto sustancial está plenamente demostrado.",
+      "¿Cómo califica el Código la prueba afectada por esa omisión sustancial?",
+      [
+        "Como inexistente para efectos de la actuación disciplinaria.",
+        "Como plenamente válida por conservar su contenido original.",
+        "Como prueba de valor reducido por la sola omisión formal."
+      ],
+      [
+        "El art. 158 comprende la falta de formalidades sustanciales.",
+        "Autenticidad no corrige la omisión sustancial.",
+        "No corresponde simplemente reducir valor."
+      ],
+      "158"
+    ],
+    [
+      "La defensa fue notificada de la apertura, recibió acceso oportuno a una prueba válida y contó con una oportunidad efectiva para controvertirla, pero decidió no formular observaciones. Después sostiene que la prueba es inexistente exclusivamente por no haberla contradicho.",
+      "¿Qué distinción debe aplicar el funcionario frente a esa alegación de inexistencia?",
+      [
+        "Diferenciar la oportunidad efectiva no utilizada de la privación de contradicción.",
+        "Excluir la prueba porque solo es válida si la defensa formula observaciones.",
+        "Declarar que el silencio de la defensa confirma todos los hechos contenidos en la prueba."
+      ],
+      [
+        "La garantía exige oportunidad efectiva, no ejercicio obligatorio.",
+        "No controvertir no vuelve inexistente una prueba válida.",
+        "El silencio no equivale a aceptación de su contenido."
+      ],
+      "157–159"
+    ],
+    [
+      "Un informe técnico legalmente incorporado contiene registros y una interpretación del experto. La defensa identifica un error en el método y solicita examinar las fuentes y cuestionar la conclusión, sin alegar que el recaudo haya vulnerado garantías fundamentales.",
+      "¿Qué alcance tiene la contradicción frente a esa interpretación técnica incorporada?",
+      [
+        "Permitir cuestionar el método y valorar razonadamente su efecto en la conclusión.",
+        "Excluir automáticamente todo el informe porque se controvirtió una de sus inferencias.",
+        "Impedir el cuestionamiento porque la prueba ya fue incorporada de forma legal."
+      ],
+      [
+        "La contradicción comprende el contenido y alcance de la prueba.",
+        "Una objeción metodológica no implica automáticamente exclusión integral.",
+        "La legalidad del recaudo no elimina el derecho de contradicción."
+      ],
+      "157, 159"
+    ],
+    [
+      "Una decisión de fondo utiliza un registro obtenido con vulneración fundamental acreditada y además cita dos documentos independientes recaudados legalmente. Al revisar el defecto, el funcionario debe distinguir la situación de cada elemento probatorio.",
+      "¿Qué análisis corresponde respecto de las demás pruebas independientes y la decisión?",
+      [
+        "Excluir el registro afectado y valorar legalidad y suficiencia de las pruebas restantes.",
+        "Invalidar automáticamente toda prueba del expediente sin establecer ninguna relación causal.",
+        "Mantener el registro ilícito porque existen otros documentos que corroboran parcialmente sus datos."
+      ],
+      [
+        "La exclusión del registro no elimina necesariamente evidencia independiente válida.",
+        "Se debe examinar el alcance concreto del defecto.",
+        "La corroboración no convierte la prueba ilícita en lícita."
+      ],
+      "21, 158–160, 205"
+    ]
   ]
 }
 

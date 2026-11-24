@@ -5,11 +5,11 @@ import { hasPgnLengthCue } from '../../src/lib/procuraduriaBankAudit'
 
 describe('RC.8 · revisión individual de plantillas', () => {
   it('mantiene claves e IDs históricos, con nueve casos distintos por módulo y fuentes legales', () => {
-    expect(reviewedTemplateModuleIds).toEqual(["pgn-m25","pgn-m26","pgn-m27","pgn-m28","pgn-m29","pgn-m30","pgn-m31","pgn-m32","pgn-m33","pgn-m34","pgn-m20","pgn-m21","pgn-m22","pgn-m23","pgn-m24"])
+    expect(reviewedTemplateModuleIds).toEqual(["pgn-m25","pgn-m26","pgn-m27","pgn-m28","pgn-m29","pgn-m30","pgn-m31","pgn-m32","pgn-m33","pgn-m34","pgn-m20","pgn-m21","pgn-m22","pgn-m23","pgn-m24","pgn-m35","pgn-m36","pgn-m37"])
     const questions = procuraduriaCourse.questions.filter(q => reviewedTemplateModuleIds.includes(q.moduleId) && /-situational-(10|[2-9])$/.test(q.id))
-    expect(questions).toHaveLength(135)
-    expect(new Set(questions.map(q => q.stem)).size).toBe(135)
-    expect(new Set(questions.map(q => q.case)).size).toBe(135)
+    expect(questions).toHaveLength(162)
+    expect(new Set(questions.map(q => q.stem)).size).toBe(162)
+    expect(new Set(questions.map(q => q.case)).size).toBe(162)
     for (const q of questions) {
       const module = procuraduriaCourse.modules.find(m => m.id === q.moduleId)!
       const number = Number(q.id.split('-').at(-1))
