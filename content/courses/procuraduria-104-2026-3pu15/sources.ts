@@ -642,4 +642,31 @@ export const procuraduriaSources: SourceRef[] = [
     "verifiedAt": "2026-11-23",
     "note": "Suspensión/reinicio, recibo final y amparos postcontractuales; comprobar régimen aplicable a la entidad."
   },
+  {
+    "id": "ley-610-2000",
+    "title": "Ley 610 de 2000 · Responsabilidad fiscal",
+    "publisher": "Función Pública",
+    "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=5725",
+    "type": "official",
+    "verifiedAt": "2026-11-23",
+    "note": "Arts. 5, 7 y 16; pérdida de bienes, gestión fiscal y resarcimiento. Consultar texto vigente y jurisprudencia."
+  },
+  {
+    "id": "office-power-query-merge",
+    "title": "Power Query · Merge queries overview",
+    "publisher": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/power-query/merge-queries-overview",
+    "type": "reference",
+    "verifiedAt": "2026-11-23",
+    "note": "Combinación por claves, cardinalidad y tipos de unión."
+  },
+  {
+    "id": "office-power-query-types",
+    "title": "Power Query · Data types",
+    "publisher": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/power-query/data-types",
+    "type": "reference",
+    "verifiedAt": "2026-11-23",
+    "note": "Conversión de tipos y configuración regional; preservar dato original."
+  },
 ]

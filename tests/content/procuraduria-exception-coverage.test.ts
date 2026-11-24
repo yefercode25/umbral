@@ -8,12 +8,12 @@ import { isPgnException } from '../../src/lib/procuraduriaScopes'
 const lessonSourceIds = (moduleId: string) => procuraduriaCourse.lessons.find(l => l.moduleId === moduleId && l.order === 3)?.blocks.flatMap(b => b.type === 'sources' ? b.sourceIds : []) ?? []
 
 describe('Casos límite: reglas especiales y cambios de presupuesto', () => {
-  it('incluye 36 supuestos independientes en dieciocho temas, con fuentes y claves válidas', () => {
+  it('incluye 60 supuestos independientes en treinta temas, con fuentes y claves válidas', () => {
     const qs = procuraduriaExceptionQuestions
     const pool = practiceQuestionPool(procuraduriaCourse)
     const sourceIds = new Set(procuraduriaCourse.sources.map(s => s.id))
-    expect(qs).toHaveLength(36)
-    expect(new Set(qs.map(q=>q.scenarioId)).size).toBe(18)
+    expect(qs).toHaveLength(60)
+    expect(new Set(qs.map(q=>q.scenarioId)).size).toBe(30)
     expect(pool.filter(isPgnException)).toEqual(qs)
     const audit = auditPgnBank(qs, sourceIds)
     expect(audit.missingSource).toEqual([])
