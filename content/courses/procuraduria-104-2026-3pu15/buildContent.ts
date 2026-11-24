@@ -22,6 +22,7 @@ import { auditedModuleBlocksM75M84, auditedModuleSourcesM75M84 } from './audited
 
 import { exceptionLessonBlocks, exceptionLessonSources } from './exceptionQuestions'
 import { pgnLessonAssessmentIds } from './lessonAssessmentPlan'
+import { reviewedLessonCheckpoint } from './reviewedLessonCheckpoints'
 
 const ACCENT = '#5F9E80'
 const VERIFIED_AT = '2026-09-14'
@@ -167,7 +168,7 @@ function buildQuestions(blueprint: ProcuraduriaModuleBlueprint): Question[] {
     },
   ]
 
-  return questions
+  return questions.map(reviewedLessonCheckpoint)
 }
 
 function lessonSources(blueprint: ProcuraduriaModuleBlueprint) {
