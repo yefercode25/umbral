@@ -549,6 +549,280 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "10, 112, 147, 161"
     ]
+  ],
+  "pgn-m29": [
+    [
+      "En una investigación ordinaria, todas las pruebas ordenadas fueron practicadas al cuarto mes y no hay diligencias pendientes. El instructor estima necesario esperar el vencimiento de los seis meses para que el cierre pueda considerarse válido.",
+      "¿Qué actuación corresponde al haberse agotado el recaudo de pruebas?",
+      [
+        "Declarar cerrada la investigación y ordenar el traslado de alegatos precalificatorios.",
+        "Esperar el vencimiento de los seis meses para declarar formalmente el cierre.",
+        "Evaluar directamente el mérito y formular cargos antes de disponer traslado."
+      ],
+      [
+        "La culminación del recaudo es supuesto de cierre.",
+        "No es necesario esperar el término cuando se recaudaron las pruebas.",
+        "Debe respetarse el traslado antes de la evaluación."
+      ],
+      "220–221"
+    ],
+    [
+      "La investigación llegó al vencimiento de su término legal, incluidas las ampliaciones aplicables. El instructor prepara el cierre y propone conceder cinco días para argumentos porque considera que esa oportunidad equivale a la interposición de un recurso.",
+      "¿Qué término corresponde al traslado de alegatos previos a la evaluación?",
+      [
+        "Diez días para los sujetos procesales conforme al régimen especial.",
+        "Cinco días para los sujetos procesales conforme al régimen de recursos.",
+        "Quince días para presentar descargos conforme al procedimiento de juicio."
+      ],
+      [
+        "El art. 220 establece diez días para alegatos precalificatorios.",
+        "El término de recursos regula otra actuación.",
+        "Los quince días de descargos corresponden a juicio ordinario."
+      ],
+      "220, 225B"
+    ],
+    [
+      "En un proyecto de cierre de investigación se anuncia que el disciplinado es definitivamente responsable porque existe prueba suficiente para evaluar el expediente. Todavía no se ha dado traslado para alegatos precalificatorios ni se ha formulado pliego de cargos.",
+      "¿Qué debe corregirse en el alcance de esa decisión de cierre?",
+      [
+        "Limitar el cierre a finalizar la investigación y habilitar los alegatos.",
+        "Mantener la declaración de responsabilidad como conclusión preliminar del cierre.",
+        "Convertir el cierre en pliego de cargos para que opere simultáneamente."
+      ],
+      [
+        "El cierre es una decisión de sustanciación, no sancionatoria.",
+        "No corresponde declarar responsabilidad definitiva en instrucción.",
+        "La evaluación de mérito es posterior al traslado."
+      ],
+      "220–222"
+    ],
+    [
+      "Al finalizar el recaudo, el investigado presenta argumentos que cuestionan la conexión entre su deber y el hecho. El equipo afirma que solo considerará esos argumentos si se reiteran como descargos después de la formulación de cargos.",
+      "¿Cómo deben tratarse esos argumentos en la evaluación de la investigación?",
+      [
+        "Analizarlos junto con las pruebas y motivar la evaluación del mérito.",
+        "Reservarlos para que el juzgador los examine después de formular cargos.",
+        "Excluirlos si el disciplinado no aporta simultáneamente una nueva prueba."
+      ],
+      [
+        "El art. 220 permite alegatos antes de evaluar; deben considerarse.",
+        "No se difiere una garantía que opera en instrucción.",
+        "Alegar no exige aportar prueba nueva."
+      ],
+      "112, 220–223"
+    ],
+    [
+      "El despacho cerró la investigación, concedió el traslado legal y recibió alegatos oportunamente. Aún no ha emitido decisión de evaluación. El coordinador propone trasladar al funcionario de juzgamiento para que decida si hay mérito para formular cargos.",
+      "¿Quién debe efectuar la evaluación en esta fase de la actuación?",
+      [
+        "El instructor, mediante decisión motivada de cargos o terminación y archivo.",
+        "El juzgador, mediante decisión sobre la suficiencia para formular cargos.",
+        "La secretaría, mediante constancia de que venció el traslado de alegatos."
+      ],
+      [
+        "La evaluación corresponde al funcionario de conocimiento en instrucción.",
+        "Juzgamiento no reemplaza la evaluación del instructor.",
+        "Una constancia de secretaría no es decisión de mérito."
+      ],
+      "12, 220–221"
+    ],
+    [
+      "Se declaró cerrada una investigación y se concedió traslado para alegatos. Ningún sujeto procesal presentó escrito dentro de los diez días. La autoridad debe decidir si la ausencia de argumentos altera el estándar probatorio para adoptar la decisión siguiente.",
+      "¿Qué efecto tiene la falta de alegatos en la evaluación posterior?",
+      [
+        "Evaluar el mérito de las pruebas sin inferir aceptación de responsabilidad.",
+        "Formular cargos porque la falta de alegatos implica aceptación tácita.",
+        "Archivar automáticamente porque no se produjo controversia durante el traslado."
+      ],
+      [
+        "El vencimiento del traslado habilita evaluación; no prueba responsabilidad.",
+        "La inactividad no sustituye los requisitos de confesión.",
+        "La ausencia de controversia no es causal automática de archivo."
+      ],
+      "10, 161, 220–222"
+    ],
+    [
+      "Un auxiliar confunde los alegatos precalificatorios del cierre de investigación con los alegatos de conclusión de un juicio ordinario. En su cronograma registra una única oportunidad común para ambas actuaciones, aunque el proceso aún permanece en instrucción.",
+      "¿Qué ajuste distingue correctamente las dos oportunidades de defensa?",
+      [
+        "Mantener alegatos antes de evaluar investigación y otros antes del fallo.",
+        "Utilizar solo los alegatos previos al fallo para evitar duplicar términos.",
+        "Usar los alegatos precalificatorios como sustituto de los descargos en juicio."
+      ],
+      [
+        "El Código prevé oportunidades diferenciadas antes de evaluar y fallar.",
+        "Los alegatos del juicio no sustituyen los de instrucción.",
+        "Los descargos tienen finalidad y oportunidad propias."
+      ],
+      "112, 220, 225B, 225E"
+    ],
+    [
+      "Antes de cerrar una investigación ordinaria, queda pendiente una prueba ordenada que puede modificar la situación jurídica del disciplinado. El término aún está vigente y la diligencia puede practicarse oportunamente. La jefatura propone cerrar porque la entrega interna vence mañana.",
+      "¿Qué debe priorizar el instructor ante esa prueba decretada pendiente?",
+      [
+        "Practicar la prueba dentro del término aplicable antes de disponer el cierre.",
+        "Cerrar de inmediato y reservar toda práctica pendiente para el juzgador.",
+        "Considerar agotado el recaudo porque la meta interna vence al día siguiente."
+      ],
+      [
+        "El plazo interno no elimina la prueba pendiente ni el término legal.",
+        "El juicio no sustituye automáticamente el recaudo de instrucción.",
+        "La meta de gestión no equivale a la culminación del recaudo."
+      ],
+      "147–148, 213, 220"
+    ],
+    [
+      "Una decisión de cierre concede los diez días de alegatos precalificatorios. Al vencerse el traslado, el expediente contiene hechos acreditados y otros inciertos. El proyecto de evaluación cita el cierre como razón suficiente para acusar al disciplinado.",
+      "¿Qué análisis adicional exige la evaluación para decidir sobre los cargos?",
+      [
+        "Valorar si las pruebas satisfacen el estándar de formulación de cargos.",
+        "Considerar el cierre como prueba suficiente de que la falta ocurrió.",
+        "Aplicar el estándar de certeza del fallo para decidir si procede acusar."
+      ],
+      [
+        "El cierre no sustituye el examen del mérito exigido para cargos.",
+        "Una providencia de trámite no prueba la conducta.",
+        "El estándar de fallo es diferente del de acusación."
+      ],
+      "160, 220–222"
+    ]
+  ],
+  "pgn-m30": [
+    [
+      "Tras el cierre y traslado de alegatos, se encuentra objetivamente demostrada una posible falta disciplinaria y existe prueba que compromete la responsabilidad del servidor. No se ha alcanzado todavía el grado de certeza necesario para un fallo sancionatorio.",
+      "¿Qué decisión de evaluación resulta procedente bajo ese estándar legal?",
+      [
+        "Formular pliego de cargos motivado y respetar la etapa de juzgamiento.",
+        "Archivar hasta obtener certeza suficiente para proferir un fallo sancionatorio.",
+        "Imponer sanción desde instrucción porque está demostrada la falta objetiva."
+      ],
+      [
+        "El art. 222 diferencia estándar de cargos del estándar de fallo.",
+        "No se exige certeza sancionatoria para formular cargos.",
+        "El instructor no declara responsabilidad definitiva."
+      ],
+      "12, 160, 221–222"
+    ],
+    [
+      "La investigación culminó después de agotar el término aplicable y las ampliaciones legales. Existe prueba de un hecho irregular, pero ninguna compromete personalmente la responsabilidad del disciplinado. El instructor considera formular cargos por la gravedad institucional del hecho.",
+      "¿Qué decisión corresponde ante la insuficiencia del presupuesto de cargos?",
+      [
+        "Terminar la actuación y archivar motivadamente por insuficiencia del estándar.",
+        "Formular cargos por la gravedad objetiva y trasladar la duda al juzgador.",
+        "Formular cargos condicionados a que el disciplinado pruebe su inocencia."
+      ],
+      [
+        "La falta objetiva sin prueba que comprometa responsabilidad no basta.",
+        "La gravedad no sustituye la conexión personal.",
+        "La carga probatoria corresponde al Estado."
+      ],
+      "147, 213, 221–222"
+    ],
+    [
+      "El proyecto de pliego identifica al servidor y describe la actuación, pero se limita a copiar una lista de deberes generales sin explicar la relación entre cada norma presuntamente vulnerada y la conducta concreta investigada. Ya se surtieron los alegatos.",
+      "¿Qué elemento debe completar el instructor para delimitar jurídicamente la acusación?",
+      [
+        "Precisar las normas presuntamente violadas y el concepto específico de violación.",
+        "Agregar antecedentes disciplinarios sin desarrollar el nexo normativo de la conducta.",
+        "Transcribir la sanción máxima sin identificar la modalidad de la infracción."
+      ],
+      [
+        "El art. 223 exige identificar normas y concepto de violación.",
+        "Los antecedentes no sustituyen la imputación normativa.",
+        "La sanción abstracta no explica el comportamiento imputado."
+      ],
+      "223"
+    ],
+    [
+      "En un proyecto de cargos se describe un incumplimiento formal, pero no se analiza su afectación al deber funcional ni una justificación aportada por el disciplinado. El instructor considera que basta con acreditar la fecha del incumplimiento.",
+      "¿Qué análisis sustantivo falta en la motivación del pliego?",
+      [
+        "Analizar ilicitud sustancial en relación con el deber funcional y justificación.",
+        "Calcular únicamente la gravedad con base en los días de incumplimiento.",
+        "Reservar la afectación del deber exclusivamente para la motivación del fallo."
+      ],
+      [
+        "La ilicitud sustancial exige afectación sustancial del deber sin justificación.",
+        "La duración no demuestra por sí sola ilicitud.",
+        "El pliego exige expresamente analizarla."
+      ],
+      "9, 223"
+    ],
+    [
+      "Un proyecto de pliego fundamenta dos cargos diferentes con una lista común de documentos y no identifica cuáles respaldan cada imputación. Las circunstancias temporales y los deberes presuntamente afectados son distintos para los dos cargos.",
+      "¿Qué corrección debe hacerse a la motivación probatoria del pliego?",
+      [
+        "Analizar las pruebas que fundamentan cada cargo y su relación con los hechos.",
+        "Mantener una lista global porque los documentos pertenecen al mismo expediente.",
+        "Trasladar todo análisis individual de pruebas al futuro funcionario de juzgamiento."
+      ],
+      [
+        "El art. 223 exige fundamentación probatoria de cada cargo.",
+        "La pertenencia al expediente no prueba cada imputación.",
+        "La evaluación del instructor no se traslada al juzgador."
+      ],
+      "221–223"
+    ],
+    [
+      "Después de la notificación válida del pliego, la defensa intenta interponer apelación contra su formulación, alegando que toda providencia que compromete la responsabilidad debe admitir impugnación inmediata. La secretaría debe revisar el régimen especial de recursos.",
+      "¿Qué tratamiento corresponde al recurso interpuesto contra el pliego de cargos?",
+      [
+        "Aplicar la improcedencia de recursos prevista expresamente para esa decisión.",
+        "Conceder apelación porque el pliego equivale al fallo de primera instancia.",
+        "Conceder reposición porque todas las decisiones del instructor son recurribles."
+      ],
+      [
+        "El art. 222 excluye recursos contra la formulación.",
+        "El pliego no equivale a fallo.",
+        "La reposición solo procede en supuestos legales."
+      ],
+      "133–134, 222"
+    ],
+    [
+      "En una investigación, mediante decisión motivada y firme, se archivó porque se demostró plenamente que el disciplinado no cometió la conducta. No se trata de autor sin individualizar. Un funcionario plantea iniciar de nuevo la misma actuación por idénticos hechos.",
+      "¿Qué efecto debe examinarse antes de reabrir ese mismo asunto?",
+      [
+        "La cosa juzgada del archivo definitivo respecto del disciplinado y hechos decididos.",
+        "La ausencia de cosa juzgada material propia de toda indagación previa.",
+        "La posibilidad de reiniciar automáticamente por tratarse de una decisión del instructor."
+      ],
+      [
+        "El art. 224 atribuye cosa juzgada al archivo de investigación.",
+        "La indagación previa tiene régimen distinto.",
+        "La autoridad debe respetar el efecto de la decisión firme."
+      ],
+      "90, 208, 224"
+    ],
+    [
+      "Se formuló pliego de cargos dentro de una actuación ordinaria y se cumplieron todas las notificaciones correspondientes. El instructor considera conservar el expediente durante quince días para preparar un informe adicional que recomiende al juzgador el tipo de fallo.",
+      "¿Qué plazo legal tiene el instructor para remitir el expediente al juzgador?",
+      [
+        "Tres días improrrogables contados una vez cumplidas las notificaciones.",
+        "Cinco días contados desde la firma del pliego aunque no esté notificado.",
+        "Quince días contados desde el vencimiento de los alegatos precalificatorios."
+      ],
+      [
+        "El art. 225 fija tres días improrrogables tras notificar.",
+        "La firma no es el hecho que inicia la remisión.",
+        "El plazo no se cuenta desde alegatos de instrucción."
+      ],
+      "225"
+    ],
+    [
+      "La autoridad de instrucción proyecta archivo definitivo al demostrar una causal del artículo 90. Existe quejoso ordinario identificado y un funcionario propone omitir toda comunicación porque la decisión no lo declara responsable ni le impone obligación alguna.",
+      "¿Qué garantía debe observarse frente al quejoso al ordenar el archivo?",
+      [
+        "Comunicarle la decisión para que pueda ejercer las facultades legales correspondientes.",
+        "Notificarlo únicamente cuando también ostente la calidad plena de sujeto procesal.",
+        "Omitir comunicación porque el archivo solo produce efectos para el disciplinado."
+      ],
+      [
+        "El art. 90 ordena comunicación al quejoso; puede recurrir archivo.",
+        "No necesita calidad plena para esa facultad.",
+        "La ausencia de sanción no elimina el deber de comunicar."
+      ],
+      "90, 110, 134"
+    ]
   ]
 }
 

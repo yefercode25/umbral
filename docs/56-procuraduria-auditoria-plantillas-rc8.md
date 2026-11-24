@@ -10,3 +10,6 @@ Se sustituyen frases repetidas por supuestos concretos, distractores de figuras 
 
 ## Lote 1B (M27–M28)
 18 reactivos adicionales; acumulado 36/765 (4,71 %), quedan 729. M27: cómputo de investigación, pluralidad, ampliación, cierre anticipado, objeto, imparcialidad, versión libre, ruptura y contenido de apertura. M28: calidad y facultades de los sujetos, víctimas de acoso laboral, defensa técnica, prueba durante notificación, reserva, versión libre, recursos del quejoso y silencio. CGD arts. 90, 109–115, 147–148, 161, 211–215, 222; fuente consolidada PGN. Mantiene claves, estructura y cohortes históricas de simulacro. Regresión acumulativa de 36 casos.
+
+## Lote 1C (M29–M30)
+18 reactivos adicionales; acumulado 54/765 (7,06 %), quedan 711. M29: cierre, plazo y efectos de alegatos, diferencia entre alegatos y descargos, prueba pendiente y evaluación posterior. M30: estándar de cargos, falta de prueba personal, contenido del pliego, ilicitud, valoración individual, recursos, cosa juzgada, comunicación y remisión. CGD arts. 9–12, 90, 110–112, 133–134, 147–148, 160–161, 213, 220–225, 225B y 225E; consulta del texto consolidado PGN. Conserva claves y agrega regresión acumulativa de 54 casos.
