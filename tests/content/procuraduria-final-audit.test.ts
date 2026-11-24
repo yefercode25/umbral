@@ -11,12 +11,12 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
   it('audita todo el banco sin confundir señales editoriales con validez psicométrica', () => {
     const pool = practiceQuestionPool(course)
     const audit = auditPgnBank(pool, new Set(course.sources.map(s => s.id)))
-    expect(audit.total).toBe(1158)
-    expect(audit.authored).toBe(393)
+    expect(audit.total).toBe(1186)
+    expect(audit.authored).toBe(421)
     expect(audit.generated).toBe(765)
     expect(audit.missingSource).toEqual([])
     expect(audit.invalidOptions).toEqual([])
-    expect(audit.displayedCorrectPositions.reduce((a,b)=>a+b,0)).toBe(1158)
+    expect(audit.displayedCorrectPositions.reduce((a,b)=>a+b,0)).toBe(1186)
     console.info('PGN_BANK_AUDIT', JSON.stringify({
       total: audit.total, authored: audit.authored, generated: audit.generated,
       weakRationale: audit.weakRationale.length, shortStem: audit.shortStem.length,
@@ -110,14 +110,17 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
       }
       if (profile.kind === 'behavior') {
         expect(qs.every(q=>isPgnBehavior(q.moduleId))).toBe(true)
-        expect(qs.filter(isPgnException).length).toBeGreaterThanOrEqual(2)
+        expect(qs.filter(isPgnException).length).toBeGreaterThanOrEqual(3)
       }
       if (profile.kind === 'systems') expect(qs.every(q=>pgnSystemsModuleIds.includes(q.moduleId))).toBe(true)
-      if (profile.kind === 'transversal') expect(qs.every(q=>!isPgnBehavior(q.moduleId) && !pgnSystemsModuleIds.includes(q.moduleId))).toBe(true)
+      if (profile.kind === 'transversal') {
+        expect(qs.every(q=>!isPgnBehavior(q.moduleId) && !pgnSystemsModuleIds.includes(q.moduleId))).toBe(true)
+        expect(qs.filter(isPgnException).length).toBeGreaterThanOrEqual(Math.ceil(profile.size/5))
+      }
     }
   })
   it('excluye especialidades condicionales de adaptativa, conserva el banco y deja DIAN intacto', () => {
-    const qs = buildAdaptiveSession(course, undefined, 1158, 17)
+    const qs = buildAdaptiveSession(course, undefined, 1186, 17)
     expect(qs.every(q=>!isPgnConditional(q.moduleId))).toBe(true)
     expect(practiceQuestionPool(course).some(q=>isPgnConditional(q.moduleId))).toBe(true)
     expect(practiceQuestionPool(dianGestorCourse)).toBe(dianGestorCourse.questions)

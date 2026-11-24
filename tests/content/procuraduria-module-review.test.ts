@@ -7,7 +7,7 @@ import { practiceQuestionPool } from '../../src/lib/practiceQuestionPool'
 describe('Procuraduría: aprendizaje y evaluación dentro de cada módulo', () => {
   it('elige tres preguntas ya existentes de cada uno de los 85 módulos sin aumentar el banco', () => {
     expect(procuraduriaCourse.modules).toHaveLength(85)
-    expect(procuraduriaCourse.questions).toHaveLength(2008)
+    expect(procuraduriaCourse.questions).toHaveLength(2036)
     const pool = new Set(practiceQuestionPool(procuraduriaCourse).map(q => q.id))
     for (const module of procuraduriaCourse.modules) {
       const selected = moduleReviewQuestions(procuraduriaCourse, module.id)

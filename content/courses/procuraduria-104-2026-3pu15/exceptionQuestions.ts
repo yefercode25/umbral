@@ -2349,6 +2349,1100 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
       "pgn-convocatoria-104-v4"
     ],
     "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-transicion-procesal-1",
+    "moduleId": "pgn-m20",
+    "relatedModuleIds": [
+      "pgn-m19",
+      "pgn-m20",
+      "pgn-m27",
+      "pgn-m34"
+    ],
+    "scenarioId": "pgn-exception-transicion-procesal",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un expediente ordinario se abrió en 2021 y el pliego de cargos fue firmado el 25 de marzo de 2022. Al 29 de marzo de 2022 todavía no se había notificado a ningún sujeto procesal ni se había instalado audiencia verbal. El funcionario argumenta que la firma del pliego basta para continuar bajo la Ley 734.",
+    "stem": "¿Qué procedimiento corresponde por la transición descrita?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aplicar el procedimiento del CGD, porque al entrar en vigor no se había surtido la notificación del pliego ni instalado audiencia verbal.",
+        "rationale": "El artículo 263 toma como hito la notificación del pliego o instalación de la audiencia verbal."
+      },
+      {
+        "id": "b",
+        "text": "Continuar bajo Ley 734 porque la investigación se abrió antes de la vigencia general y el pliego ya estaba firmado.",
+        "rationale": "La fecha de apertura y la firma no satisfacen el presupuesto legal de continuidad del trámite anterior."
+      },
+      {
+        "id": "c",
+        "text": "Reiniciar íntegramente la actuación bajo el CGD y descartar las diligencias anteriores sin examinar su validez ni sus efectos.",
+        "rationale": "La transición procesal no invalida automáticamente todas las diligencias previamente practicadas."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, art. 263; Ley 2094/2021, arts. 71 y 73. El artículo 263 toma como hito la notificación del pliego o instalación de la audiencia verbal. La fecha de apertura y la firma no satisfacen el presupuesto legal de continuidad del trámite anterior. La transición procesal no invalida automáticamente todas las diligencias previamente practicadas.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-transicion-procesal-2",
+    "moduleId": "pgn-m20",
+    "relatedModuleIds": [
+      "pgn-m19",
+      "pgn-m20",
+      "pgn-m27",
+      "pgn-m34"
+    ],
+    "scenarioId": "pgn-exception-transicion-procesal",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una investigación ordinaria iniciada en 2021 tiene constancia válida de notificación del pliego el 23 de marzo de 2022. En abril de ese año el expediente pasa a una nueva autoridad competente. No existe decisión de nulidad ni un supuesto especial que altere la transición; se discute el procedimiento para finalizar.",
+    "stem": "¿Qué régimen procesal conserva el expediente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aplicar integralmente el procedimiento nuevo porque el expediente cambió de despacho con posterioridad al 29 de marzo de 2022.",
+        "rationale": "El cambio de despacho no elimina la regla especial de transición procesal."
+      },
+      {
+        "id": "b",
+        "text": "Continuar el procedimiento de Ley 734 de 2002 hasta finalizar, sin omitir el examen separado de favorabilidad sustancial.",
+        "rationale": "La notificación anterior al hito de vigencia satisface la regla de continuidad del artículo 263."
+      },
+      {
+        "id": "c",
+        "text": "Aplicar el CGD al trámite restante porque las normas procesales nuevas siempre desplazan las disposiciones anteriores sin excepción transitoria.",
+        "rationale": "Existe una disposición transitoria expresa que prevalece sobre esa generalización."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, art. 263; Ley 2094/2021, arts. 71 y 73. La notificación anterior al hito de vigencia satisface la regla de continuidad del artículo 263. El cambio de despacho no elimina la regla especial de transición procesal. Existe una disposición transitoria expresa que prevalece sobre esa generalización.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-favorabilidad-temporal-1",
+    "moduleId": "pgn-m20",
+    "relatedModuleIds": [
+      "pgn-m20",
+      "pgn-m22",
+      "pgn-m24"
+    ],
+    "scenarioId": "pgn-exception-favorabilidad-temporal",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Durante una actuación por hechos anteriores a una reforma, el despacho comprueba que una disposición posterior sustancial elimina la sanción prevista para el supuesto concreto. La defensa solicita aplicación favorable y el instructor reconoce que ambas reglas son comparables y que no hay régimen especial que excluya el análisis.",
+    "stem": "¿Qué principio debe orientar la evaluación de la nueva disposición?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mantener la disposición anterior únicamente por ser la vigente en la fecha de la conducta, sin comparar las consecuencias jurídicas posteriores.",
+        "rationale": "La legalidad temporal no excluye el principio constitucional de favorabilidad disciplinaria."
+      },
+      {
+        "id": "b",
+        "text": "Aplicar la reforma solo si se inició una nueva investigación después de su vigencia, porque los expedientes anteriores quedan excluidos de favorabilidad.",
+        "rationale": "La fecha de apertura no restringe por sí sola el alcance del principio."
+      },
+      {
+        "id": "c",
+        "text": "Aplicar preferentemente la disposición posterior favorable, motivando su incidencia sustancial sobre el caso y diferenciándola de la transición del procedimiento.",
+        "rationale": "El artículo 8 permite preferir la norma posterior favorable en los supuestos previstos."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, arts. 4 y 8; Constitución, art. 29. El artículo 8 permite preferir la norma posterior favorable en los supuestos previstos. La legalidad temporal no excluye el principio constitucional de favorabilidad disciplinaria. La fecha de apertura no restringe por sí sola el alcance del principio.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "constitucion"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-favorabilidad-temporal-2",
+    "moduleId": "pgn-m20",
+    "relatedModuleIds": [
+      "pgn-m20",
+      "pgn-m22",
+      "pgn-m24"
+    ],
+    "scenarioId": "pgn-exception-favorabilidad-temporal",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una actuación examina una conducta consumada antes de la vigencia de una reforma hipotética que aumenta el mínimo sancionatorio aplicable. La autoridad comprueba que la norma anterior era más favorable y que no existen otras reformas relevantes. Se propone usar el nuevo mínimo porque la decisión se proyectará cuando la reforma ya esté vigente.",
+    "stem": "¿Qué límite impone la aplicación temporal en este supuesto?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conservar la regla sustancial anterior más favorable para esa conducta y explicar por qué el aumento posterior no opera retroactivamente.",
+        "rationale": "Los artículos 4 y 8 y el artículo 29 constitucional impiden la retroactividad desfavorable."
+      },
+      {
+        "id": "b",
+        "text": "Aplicar el mínimo posterior porque la sanción nace con el fallo y por tanto toda reforma vigente al decidir resulta aplicable.",
+        "rationale": "La fecha del fallo no transforma una norma sustancial posterior gravosa en aplicable al hecho anterior."
+      },
+      {
+        "id": "c",
+        "text": "Aplicar el aumento posterior solamente cuando la autoridad estime que la gravedad del caso exige actualizar la respuesta disciplinaria.",
+        "rationale": "La apreciación de gravedad no autoriza desconocer legalidad y favorabilidad temporal."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, arts. 4 y 8; Constitución, art. 29. Los artículos 4 y 8 y el artículo 29 constitucional impiden la retroactividad desfavorable. La fecha del fallo no transforma una norma sustancial posterior gravosa en aplicable al hecho anterior. La apreciación de gravedad no autoriza desconocer legalidad y favorabilidad temporal.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "constitucion"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-notificacion-rebote-1",
+    "moduleId": "pgn-m31",
+    "relatedModuleIds": [
+      "pgn-m28",
+      "pgn-m31",
+      "pgn-m32",
+      "pgn-m63"
+    ],
+    "scenarioId": "pgn-exception-notificacion-rebote",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "El defensor aceptó por escrito la notificación personal por correo electrónico y la secretaría remitió una decisión a la dirección registrada. El servidor de correo devolvió un mensaje de rechazo definitivo porque el buzón no existía. No hay evidencia de recepción por otro destinatario ni actuación posterior que sanee la irregularidad.",
+    "stem": "¿Cómo debe actuar la secretaría antes de computar términos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contar desde el envío porque la aceptación escrita del canal traslada al defensor cualquier consecuencia de un fallo de entrega.",
+        "rationale": "El mero envío rechazado no satisface la condición constitucional de recepción."
+      },
+      {
+        "id": "b",
+        "text": "Documentar el rebote y practicar la notificación por la vía legal procedente, sin computar el término desde un envío no recibido.",
+        "rationale": "La aceptación del canal no acredita recepción; C-570/2019 protege la publicidad efectiva."
+      },
+      {
+        "id": "c",
+        "text": "Esperar el vencimiento ordinario del recurso y considerar subsanado el defecto por falta de reclamación de quien no recibió el mensaje.",
+        "rationale": "La ausencia de reclamo sin conocimiento ni actuación posterior no prueba conducta concluyente."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, art. 122; Sentencia C-570/2019. La aceptación del canal no acredita recepción; C-570/2019 protege la publicidad efectiva. El mero envío rechazado no satisface la condición constitucional de recepción. La ausencia de reclamo sin conocimiento ni actuación posterior no prueba conducta concluyente.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "cc-c570-2019"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-notificacion-rebote-2",
+    "moduleId": "pgn-m31",
+    "relatedModuleIds": [
+      "pgn-m28",
+      "pgn-m31",
+      "pgn-m32",
+      "pgn-m63"
+    ],
+    "scenarioId": "pgn-exception-notificacion-rebote",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "En otro expediente el investigado aceptó previamente por escrito el correo electrónico. La plataforma de notificaciones registra de forma verificable que el mensaje íntegro ingresó al buzón autorizado; no hay devolución ni controversia sobre su recepción. El destinatario indica que no abrió el mensaje durante varios días por motivos personales.",
+    "stem": "¿Cuál distinción debe tener en cuenta el despacho para fijar el hito de notificación?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fijar siempre el hito en el momento en que el destinatario decida abrir el archivo adjunto, aunque conste recepción previa.",
+        "rationale": "Exigir lectura voluntaria permitiría condicionar el trámite a una decisión unilateral del destinatario."
+      },
+      {
+        "id": "b",
+        "text": "Usar exclusivamente el registro de salida institucional, pues la aceptación del medio hace innecesario conservar soportes de entrega o recepción.",
+        "rationale": "El registro de salida por sí solo no acredita que el mensaje haya llegado al buzón."
+      },
+      {
+        "id": "c",
+        "text": "Examinar la recepción efectiva acreditada conforme al artículo 122 y su condicionamiento constitucional, sin hacer depender la notificación de la lectura voluntaria.",
+        "rationale": "La recepción comprobable se distingue de la apertura voluntaria; debe conservarse el soporte de notificación."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, art. 122; Sentencia C-570/2019. La recepción comprobable se distingue de la apertura voluntaria; debe conservarse el soporte de notificación. Exigir lectura voluntaria permitiría condicionar el trámite a una decisión unilateral del destinatario. El registro de salida por sí solo no acredita que el mensaje haya llegado al buzón.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "cc-c570-2019"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-conducta-recursos-1",
+    "moduleId": "pgn-m31",
+    "relatedModuleIds": [
+      "pgn-m19",
+      "pgn-m28",
+      "pgn-m31",
+      "pgn-m32",
+      "pgn-m36"
+    ],
+    "scenarioId": "pgn-exception-conducta-recursos",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una providencia que debía notificarse personalmente presenta un defecto de notificación. El defensor obtiene copia íntegra, radica dentro del expediente un escrito posterior que identifica la decisión y discute sus fundamentos sin reclamar el defecto, y actúa en una diligencia posterior relacionada con ella. La secretaría revisa la eficacia de la notificación.",
+    "stem": "¿Qué figura especial debe examinarse con esos hechos acreditados?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reconocer la conducta concluyente conforme al artículo 128, dejando constancia del acto posterior y del conocimiento demostrado respecto de esa providencia.",
+        "rationale": "El artículo 128 prevé el cumplimiento de la exigencia en supuestos de actuación posterior sin reclamo."
+      },
+      {
+        "id": "b",
+        "text": "Declarar automáticamente la nulidad de toda la actuación, aunque exista una intervención posterior sin reclamación y conocimiento de la decisión.",
+        "rationale": "El defecto no impone necesariamente nulidad total; existe una figura legal específica."
+      },
+      {
+        "id": "c",
+        "text": "Considerar la notificación válida desde la fecha original de la firma, pues todo conocimiento posterior convalida retroactivamente los términos ya vencidos.",
+        "rationale": "El conocimiento posterior no convierte la firma anterior en un hito de notificación acreditado."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, arts. 128, 130, 133–134. El artículo 128 prevé el cumplimiento de la exigencia en supuestos de actuación posterior sin reclamo. El defecto no impone necesariamente nulidad total; existe una figura legal específica. El conocimiento posterior no convierte la firma anterior en un hito de notificación acreditado.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-conducta-recursos-2",
+    "moduleId": "pgn-m31",
+    "relatedModuleIds": [
+      "pgn-m19",
+      "pgn-m28",
+      "pgn-m31",
+      "pgn-m32",
+      "pgn-m36"
+    ],
+    "scenarioId": "pgn-exception-conducta-recursos",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "En una investigación disciplinaria el instructor niega motivadamente una prueba solicitada por el defensor. Este presenta un recurso denominado apelación contra esa providencia, dentro del plazo de impugnación. En el expediente existe una decisión semejante de otro caso, adoptada durante juzgamiento, que sí era apelable.",
+    "stem": "¿Qué regla debe aplicar el profesional al verificar procedencia del recurso?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conceder apelación porque la negativa de una prueba afecta el derecho de defensa con independencia de la etapa procesal en curso.",
+        "rationale": "El perjuicio alegado no altera el catálogo especial de recursos según etapa."
+      },
+      {
+        "id": "b",
+        "text": "Identificar que en investigación procede reposición y examinar el escrito conforme al régimen especial, sin conceder apelación por analogía con el juzgamiento.",
+        "rationale": "Los artículos 133 y 134 diferencian investigación y juicio al definir el recurso procedente."
+      },
+      {
+        "id": "c",
+        "text": "Conceder simultáneamente reposición y apelación como recursos ordinarios contra cualquier negativa probatoria, para asegurar una revisión completa de la decisión.",
+        "rationale": "No existe una habilitación general de ambos recursos contra toda negativa de prueba."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, arts. 128, 130, 133–134. Los artículos 133 y 134 diferencian investigación y juicio al definir el recurso procedente. El perjuicio alegado no altera el catálogo especial de recursos según etapa. No existe una habilitación general de ambos recursos contra toda negativa de prueba.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-particular-conexidad-1",
+    "moduleId": "pgn-m21",
+    "relatedModuleIds": [
+      "pgn-m13",
+      "pgn-m21",
+      "pgn-m22",
+      "pgn-m52",
+      "pgn-m53"
+    ],
+    "scenarioId": "pgn-exception-particular-conexidad",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una entidad contrata a un técnico externo para instalar actualizaciones. El contrato no le asigna supervisión ni interventoría, administración de recursos públicos o ejercicio de función pública; sus accesos están limitados al soporte. Se detecta una modificación no autorizada que puede constituir incumplimiento contractual. La oficina quiere vincularlo disciplinariamente solo por tener credenciales.",
+    "stem": "¿Qué presupuesto debe verificarse antes de atribuir calidad de particular disciplinable?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vincularlo bajo el CGD por prestar servicios tecnológicos a una entidad, y verificar durante juzgamiento si tenía alguna función pública.",
+        "rationale": "El acceso técnico no configura por sí solo las funciones o labores del artículo 70."
+      },
+      {
+        "id": "b",
+        "text": "Considerarlo servidor público para efectos disciplinarios porque accedió a información institucional bajo instrucciones de un supervisor de la entidad contratante.",
+        "rationale": "La existencia de instrucciones contractuales no transforma automáticamente al contratista en servidor público."
+      },
+      {
+        "id": "c",
+        "text": "Comprobar un supuesto legal del artículo 70 y separar el eventual incumplimiento contractual, sin deducir calidad disciplinable de las credenciales.",
+        "rationale": "La condición de particular disciplinable exige un presupuesto legal diferente de la simple relación contractual."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, arts. 25, 70 y 92; Ley 1474/2011, art. 83. La condición de particular disciplinable exige un presupuesto legal diferente de la simple relación contractual. El acceso técnico no configura por sí solo las funciones o labores del artículo 70. La existencia de instrucciones contractuales no transforma automáticamente al contratista en servidor público.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-1474-2011"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-particular-conexidad-2",
+    "moduleId": "pgn-m21",
+    "relatedModuleIds": [
+      "pgn-m13",
+      "pgn-m21",
+      "pgn-m22",
+      "pgn-m52",
+      "pgn-m53"
+    ],
+    "scenarioId": "pgn-exception-particular-conexidad",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un interventor particular y un servidor responsable del contrato habrían participado en faltas disciplinarias conexas relacionadas con la certificación de avance. Está acreditada la labor contractual de interventoría. La oficina de control disciplinario interno propone investigar al servidor y remitir al particular a otra autoridad, sin estudiar el vínculo entre hechos.",
+    "stem": "¿Qué regla de competencia especial debe comprobarse ante la conexidad descrita?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aplicar la competencia exclusiva de la PGN para las faltas conexas de servidores y particulares disciplinables, individualizando la conducta de cada uno.",
+        "rationale": "El CGD establece competencia exclusiva PGN en este supuesto y remite a reglas de competencia de los servidores."
+      },
+      {
+        "id": "b",
+        "text": "Mantener necesariamente dos expedientes ante autoridades diferentes, porque la vinculación del particular impide que la Procuraduría conozca la conducta del servidor.",
+        "rationale": "La diferencia de calidad no elimina la regla legal especial de conexidad."
+      },
+      {
+        "id": "c",
+        "text": "Asignar el asunto completo al control disciplinario interno, considerando que el interventor queda sometido a esa oficina por su relación contractual.",
+        "rationale": "El contratista particular no queda bajo control interno por la sola relación contractual."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, arts. 25, 70 y 92; Ley 1474/2011, art. 83. El CGD establece competencia exclusiva PGN en este supuesto y remite a reglas de competencia de los servidores. La diferencia de calidad no elimina la regla legal especial de conexidad. El contratista particular no queda bajo control interno por la sola relación contractual.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-1474-2011"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-retiro-suspension-1",
+    "moduleId": "pgn-m24",
+    "relatedModuleIds": [
+      "pgn-m21",
+      "pgn-m24",
+      "pgn-m30"
+    ],
+    "scenarioId": "pgn-exception-retiro-suspension",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una sanción de suspensión queda ejecutoriada cuando el servidor ya cesó en sus funciones. Se comprueba que no es posible ejecutar materialmente la suspensión en el cargo y que resulta aplicable la regla general del artículo 48. La oficina propone cerrar el registro de sanción porque no existe salario actual en la entidad.",
+    "stem": "¿Qué consecuencia especial debe examinarse antes de cerrar la ejecución?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dar por extinguida la sanción por ausencia de vínculo vigente, dejando únicamente la anotación histórica del fallo para futuras consultas institucionales.",
+        "rationale": "El retiro no es causal autónoma de extinción de la sanción en este supuesto."
+      },
+      {
+        "id": "b",
+        "text": "Convertir el término de suspensión no ejecutable conforme al salario básico devengado al cometer la falta, sin perjuicio de la inhabilidad aplicable.",
+        "rationale": "El artículo 48 contempla conversión por cese de funciones cuando la suspensión no puede ejecutarse."
+      },
+      {
+        "id": "c",
+        "text": "Convertir la suspensión al salario mínimo vigente al momento de la ejecutoria, pues el servidor dejó de recibir el salario del cargo.",
+        "rationale": "La base legal se refiere al salario básico devengado al momento de cometer la falta."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, arts. 25, 48 y 89. El artículo 48 contempla conversión por cese de funciones cuando la suspensión no puede ejecutarse. El retiro no es causal autónoma de extinción de la sanción en este supuesto. La base legal se refiere al salario básico devengado al momento de cometer la falta.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-retiro-suspension-2",
+    "moduleId": "pgn-m24",
+    "relatedModuleIds": [
+      "pgn-m21",
+      "pgn-m24",
+      "pgn-m30"
+    ],
+    "scenarioId": "pgn-exception-retiro-suspension",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un servidor comenzó a cumplir una suspensión de seis meses y cesó definitivamente sus funciones después de ejecutar dos meses. No es posible continuar la suspensión material y se conserva la constancia de los dos meses efectivamente cumplidos. La oficina propone convertir los seis meses completos al salario básico de la época de la falta.",
+    "stem": "¿Qué duración corresponde considerar en la conversión legal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Convertir los seis meses inicialmente impuestos porque el cese posterior impide reconocer como ejecución efectiva los dos meses cumplidos en el cargo.",
+        "rationale": "Convertir toda la suspensión desconocería el período de ejecución ya acreditado."
+      },
+      {
+        "id": "b",
+        "text": "Excluir cualquier conversión porque una sanción parcialmente cumplida pierde la posibilidad de ejecutarse cuando el servidor se retira definitivamente.",
+        "rationale": "La ejecución parcial no impide la conversión legal del saldo pendiente."
+      },
+      {
+        "id": "c",
+        "text": "Convertir únicamente los cuatro meses pendientes de suspensión, con la base salarial legal y sin desconocer los efectos de inhabilidad que correspondan.",
+        "rationale": "El artículo 48 se refiere al término de suspensión o al que falte por cumplir, según el caso."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, arts. 25, 48 y 89. El artículo 48 se refiere al término de suspensión o al que falte por cumplir, según el caso. Convertir toda la suspensión desconocería el período de ejecución ya acreditado. La ejecución parcial no impide la conversión legal del saldo pendiente.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-testigo-renuente-1",
+    "moduleId": "pgn-m41",
+    "relatedModuleIds": [
+      "pgn-m36",
+      "pgn-m37",
+      "pgn-m41"
+    ],
+    "scenarioId": "pgn-exception-testigo-renuente",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un testigo debidamente citado no comparece a una diligencia. Dos días después aporta constancia hospitalaria verificable que demuestra imposibilidad de asistir y solicita nueva fecha. No existe controversia sobre la autenticidad de la justificación. El instructor considera imponer de inmediato la multa máxima por haber incumplido la citación.",
+    "stem": "¿Qué efecto tiene la justificación satisfactoria presentada dentro del término legal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No imponer la multa por renuencia en ese supuesto y evaluar nueva citación, documentando la justificación y su oportunidad.",
+        "rationale": "El artículo 165 exceptúa la inasistencia satisfactoriamente justificada dentro de tres días."
+      },
+      {
+        "id": "b",
+        "text": "Imponer la multa y reducirla posteriormente como beneficio por colaboración, porque toda inasistencia consuma la renuencia desde la fecha señalada.",
+        "rationale": "La justificación oportuna excluye el presupuesto indicado; no es una mera atenuante de multa."
+      },
+      {
+        "id": "c",
+        "text": "Ordenar conducción policial en la nueva fecha para garantizar asistencia, aunque no exista urgencia ni riesgo acreditado de pérdida probatoria.",
+        "rationale": "La conducción excepcional exige urgencia y necesidad de evitar pérdida de prueba en PGN."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, arts. 164–167 y 210; Constitución, art. 33. El artículo 165 exceptúa la inasistencia satisfactoriamente justificada dentro de tres días. La justificación oportuna excluye el presupuesto indicado; no es una mera atenuante de multa. La conducción excepcional exige urgencia y necesidad de evitar pérdida de prueba en PGN.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "constitucion"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-testigo-renuente-2",
+    "moduleId": "pgn-m41",
+    "relatedModuleIds": [
+      "pgn-m36",
+      "pgn-m37",
+      "pgn-m41"
+    ],
+    "scenarioId": "pgn-exception-testigo-renuente",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una testigo citada es cónyuge del disciplinable y manifiesta expresamente que no desea declarar en su contra. El vínculo está acreditado. El instructor considera que la necesidad del testimonio le permite imponer multa por renuencia, aun cuando la testigo invoca oportunamente la garantía constitucional.",
+    "stem": "¿Cómo debe examinarse la negativa a declarar en el caso descrito?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aplicar la multa con posterior posibilidad de reposición, porque el vínculo familiar solo afecta la valoración del testimonio y no la obligación.",
+        "rationale": "El artículo 165 excluye a quienes tienen excepción constitucional o legal al deber de declarar."
+      },
+      {
+        "id": "b",
+        "text": "Respetar la excepción constitucional acreditada, abstenerse de sancionar por renuencia y buscar otros medios de prueba legalmente disponibles.",
+        "rationale": "El artículo 33 constitucional y el CGD reconocen excepción al deber de declarar contra el cónyuge."
+      },
+      {
+        "id": "c",
+        "text": "Obligar a contestar bajo juramento las preguntas sobre el cónyuge, dejando que la defensa discuta posteriormente la admisibilidad de las respuestas.",
+        "rationale": "La necesidad probatoria no desplaza la garantía constitucional de no declarar contra el cónyuge."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, arts. 164–167 y 210; Constitución, art. 33. El artículo 33 constitucional y el CGD reconocen excepción al deber de declarar contra el cónyuge. El artículo 165 excluye a quienes tienen excepción constitucional o legal al deber de declarar. La necesidad probatoria no desplaza la garantía constitucional de no declarar contra el cónyuge.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "constitucion"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-contradiccion-prueba-1",
+    "moduleId": "pgn-m37",
+    "relatedModuleIds": [
+      "pgn-m28",
+      "pgn-m32",
+      "pgn-m35",
+      "pgn-m37",
+      "pgn-m41"
+    ],
+    "scenarioId": "pgn-exception-contradiccion-prueba",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "El defensor fue debidamente informado de una declaración, recibió acceso oportuno a sus soportes y tuvo posibilidad real de formular preguntas. Decidió no asistir y no aportó justificación ni solicitó aplazamiento. La diligencia cumplió las formalidades exigibles y la grabación está disponible. Después sostiene que su ausencia vuelve inexistente el testimonio.",
+    "stem": "¿Qué criterio diferencia la ausencia voluntaria de un defecto del trámite?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tener por inexistente toda declaración practicada sin presencia física del defensor, aunque se hubiera garantizado oportunamente su participación y acceso.",
+        "rationale": "La ausencia voluntaria no demuestra por sí sola desconocimiento de una garantía fundamental."
+      },
+      {
+        "id": "b",
+        "text": "Otorgar mérito concluyente al testimonio porque el defensor no acudió a la diligencia y con ello aceptó necesariamente todos los hechos declarados.",
+        "rationale": "No ejercer preguntas no equivale a confesión ni elimina la valoración conjunta del medio."
+      },
+      {
+        "id": "c",
+        "text": "Examinar la oportunidad efectiva que se garantizó y valorar la prueba conforme al régimen aplicable, sin excluirla por la sola inasistencia voluntaria.",
+        "rationale": "La contradicción exige una oportunidad real, no necesariamente que el interesado decida ejercerla en cada ocasión."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, arts. 157–159 y 202. La contradicción exige una oportunidad real, no necesariamente que el interesado decida ejercerla en cada ocasión. La ausencia voluntaria no demuestra por sí sola desconocimiento de una garantía fundamental. No ejercer preguntas no equivale a confesión ni elimina la valoración conjunta del medio.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-contradiccion-prueba-2",
+    "moduleId": "pgn-m37",
+    "relatedModuleIds": [
+      "pgn-m28",
+      "pgn-m32",
+      "pgn-m35",
+      "pgn-m37",
+      "pgn-m41"
+    ],
+    "scenarioId": "pgn-exception-contradiccion-prueba",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "En otro expediente se acredita que una prueba fue recaudada desconociendo un derecho fundamental del investigado y que no se cumplieron formalidades sustanciales exigibles. El instructor cuenta además con documentos obtenidos de fuentes independientes y lícitas. Se propone utilizar la prueba defectuosa únicamente como respaldo indirecto de los documentos.",
+    "stem": "¿Qué tratamiento corresponde al medio afectado y a las fuentes independientes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tener por inexistente el medio según el artículo 158 y evaluar separadamente la evidencia lícita, revisando la incidencia del defecto en actuaciones dependientes.",
+        "rationale": "El medio afectado por el supuesto legal no puede fundamentar la decisión; examinar independencia y alcance."
+      },
+      {
+        "id": "b",
+        "text": "Mantener el medio como prueba corroborativa secundaria, siempre que la motivación principal se construya a partir de documentos independientes obtenidos legalmente.",
+        "rationale": "El uso subsidiario no sanea un medio que debe tenerse por inexistente conforme a la ley."
+      },
+      {
+        "id": "c",
+        "text": "Declarar automáticamente inexistentes todos los documentos del expediente, sin examinar si su obtención fue independiente ni qué decisiones dependieron de la prueba.",
+        "rationale": "La coincidencia temática no demuestra dependencia entre todas las pruebas ni invalidez total automática."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, arts. 157–159 y 202. El medio afectado por el supuesto legal no puede fundamentar la decisión; examinar independencia y alcance. El uso subsidiario no sanea un medio que debe tenerse por inexistente conforme a la ley. La coincidencia temática no demuestra dependencia entre todas las pruebas ni invalidez total automática.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-relojes-distribuidos-1",
+    "moduleId": "pgn-m61",
+    "relatedModuleIds": [
+      "pgn-m44",
+      "pgn-m61",
+      "pgn-m63",
+      "pgn-m64",
+      "pgn-m81"
+    ],
+    "scenarioId": "pgn-exception-relojes-distribuidos",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Dos servicios registran una misma operación. A marca 10:02:00 y su reloj estaba adelantado 90 segundos; B marca 10:01:10 y estaba atrasado 30 segundos. Los desfases fueron medidos en el intervalo pertinente y pueden tratarse como exactos para el ejercicio. Las zonas horarias son iguales y las fuentes originales se conservan.",
+    "stem": "¿Cuál es el orden temporal corregido de los dos eventos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "B a las 10:00:40 y A a las 10:03:30; B antecede a A tras aplicar los desfases medidos.",
+        "rationale": "Aplica los signos de las correcciones al revés respecto del reloj de referencia."
+      },
+      {
+        "id": "b",
+        "text": "A a las 10:00:30 y B a las 10:01:40; A ocurrió 70 segundos antes de B según los datos del supuesto.",
+        "rationale": "Restar el adelanto de A y sumar el atraso de B da una diferencia de 70 segundos."
+      },
+      {
+        "id": "c",
+        "text": "B a las 10:01:10 y A a las 10:02:00; B antecede a A porque las marcas se registraron directamente.",
+        "rationale": "Las marcas originales no representan una comparación válida cuando hay desfases conocidos."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: NIST SP 800-92; RFC 5905. Restar el adelanto de A y sumar el atraso de B da una diferencia de 70 segundos. Aplica los signos de las correcciones al revés respecto del reloj de referencia. Las marcas originales no representan una comparación válida cuando hay desfases conocidos.",
+    "sourceIds": [
+      "nist-sp-800-92",
+      "rfc-5905"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-relojes-distribuidos-2",
+    "moduleId": "pgn-m61",
+    "relatedModuleIds": [
+      "pgn-m44",
+      "pgn-m61",
+      "pgn-m63",
+      "pgn-m64",
+      "pgn-m81"
+    ],
+    "scenarioId": "pgn-exception-relojes-distribuidos",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una aplicación distribuida registra dos eventos después de normalizar su reloj: el primero está estimado entre 09:59:58 y 10:00:04, y el segundo entre 10:00:01 y 10:00:07. No hay identificador común ni información de secuencia disponible todavía. El informe preliminar pretende asegurar que el primero sucedió antes del segundo.",
+    "stem": "¿Qué límite debe quedar explícito en la reconstrucción temporal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Afirmar que el primero ocurrió antes porque el punto medio de su intervalo es menor, aunque los márgenes de incertidumbre se superpongan.",
+        "rationale": "Comparar estimaciones centrales no elimina la incertidumbre de los intervalos de ocurrencia."
+      },
+      {
+        "id": "b",
+        "text": "Declarar que ambos eventos ocurrieron simultáneamente, porque la intersección de los intervalos contiene al menos un instante compatible con los dos.",
+        "rationale": "La superposición demuestra posibilidad de coincidencia, no simultaneidad efectiva."
+      },
+      {
+        "id": "c",
+        "text": "Los intervalos se superponen; no afirmar orden definitivo solo por las marcas y buscar correlación causal mediante identificadores, mensajes o secuencias.",
+        "rationale": "La superposición impide determinar orden con certeza solo por esas marcas; otras fuentes pueden resolverlo."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: NIST SP 800-92; RFC 5905. La superposición impide determinar orden con certeza solo por esas marcas; otras fuentes pueden resolverlo. Comparar estimaciones centrales no elimina la incertidumbre de los intervalos de ocurrencia. La superposición demuestra posibilidad de coincidencia, no simultaneidad efectiva.",
+    "sourceIds": [
+      "nist-sp-800-92",
+      "rfc-5905"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-sello-tiempo-1",
+    "moduleId": "pgn-m63",
+    "relatedModuleIds": [
+      "pgn-m40",
+      "pgn-m44",
+      "pgn-m63",
+      "pgn-m64"
+    ],
+    "scenarioId": "pgn-exception-sello-tiempo",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Se aporta un documento y un token de sello de tiempo emitido por una autoridad de sellado. Se valida la firma del token, la cadena y la coincidencia de su huella con el documento. El sello corresponde al 12 de mayo a las 14:00 UTC. No existen elementos que identifiquen quién redactó el documento ni cuándo empezó a elaborarlo.",
+    "stem": "¿Qué conclusión permite sostener el token validado sin exceder su alcance?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sustentar que los datos correspondientes a la huella existían a más tardar en el instante acreditado, sin atribuir autoría o veracidad del contenido.",
+        "rationale": "El RFC 3161 aporta evidencia temporal de existencia, no certificación de autoría o verdad material."
+      },
+      {
+        "id": "b",
+        "text": "Afirmar que el documento fue creado exactamente en ese instante por el titular de la cuenta que solicitó el sello de tiempo.",
+        "rationale": "El sellado no acredita el momento exacto de creación ni identifica necesariamente al autor del contenido."
+      },
+      {
+        "id": "c",
+        "text": "Certificar la veracidad de todas las afirmaciones del documento porque la autoridad de sellado verificó criptográficamente la huella y firmó el token.",
+        "rationale": "La validación de huella demuestra vinculación con datos, no exactitud de las afirmaciones del documento."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: RFC 3161; Ley 527/1999, arts. 8–12. El RFC 3161 aporta evidencia temporal de existencia, no certificación de autoría o verdad material. El sellado no acredita el momento exacto de creación ni identifica necesariamente al autor del contenido. La validación de huella demuestra vinculación con datos, no exactitud de las afirmaciones del documento.",
+    "sourceIds": [
+      "rfc-3161",
+      "ley-527-1999",
+      "nist-sp-800-86"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-sello-tiempo-2",
+    "moduleId": "pgn-m63",
+    "relatedModuleIds": [
+      "pgn-m40",
+      "pgn-m44",
+      "pgn-m63",
+      "pgn-m64"
+    ],
+    "scenarioId": "pgn-exception-sello-tiempo",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un archivo exportado presenta fecha de creación local y el equipo informa que tenía sincronización NTP activa. Sin embargo, no se conservaron registros históricos de sincronización ni un token de sello temporal, y existen indicios de que el archivo fue copiado de otro sistema. El analista necesita establecer la fecha original de creación.",
+    "stem": "¿Qué conclusión es técnicamente defendible con los soportes disponibles?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Certificar la fecha original de creación a partir del estado NTP actual, pues la sincronización sustituye la necesidad de conservar evidencia temporal histórica.",
+        "rationale": "El estado actual no prueba precisión histórica ni equivale a token de una autoridad de sellado."
+      },
+      {
+        "id": "b",
+        "text": "Describir la marca observada y su procedencia, buscar registros históricos independientes y declarar que no se acredita criptográficamente la fecha original de creación.",
+        "rationale": "La marca local y NTP no prueban por sí solos creación original, especialmente después de una copia."
+      },
+      {
+        "id": "c",
+        "text": "Descartar el archivo completo por falta de sello temporal, aunque existan otros medios válidos para evaluar su origen, integridad y contexto.",
+        "rationale": "La falta de sello no invalida automáticamente una fuente que puede evaluarse mediante otros medios."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: RFC 3161; Ley 527/1999, arts. 8–12. La marca local y NTP no prueban por sí solos creación original, especialmente después de una copia. El estado actual no prueba precisión histórica ni equivale a token de una autoridad de sellado. La falta de sello no invalida automáticamente una fuente que puede evaluarse mediante otros medios.",
+    "sourceIds": [
+      "rfc-3161",
+      "ley-527-1999",
+      "nist-sp-800-86"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-probabilidad-conjuntos-1",
+    "moduleId": "pgn-m67",
+    "relatedModuleIds": [
+      "pgn-m66",
+      "pgn-m67",
+      "pgn-m68"
+    ],
+    "scenarioId": "pgn-exception-probabilidad-conjuntos",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "En 200 expedientes, 40 fueron marcados por una alerta automática y 20 contienen una irregularidad comprobada con criterios independientes. De esos 20, 12 habían generado alerta. Se elige al azar un expediente del grupo que generó alerta para revisar la utilidad de ese filtro. No se pretende establecer responsabilidad personal.",
+    "stem": "¿Cuál es la proporción de irregularidades comprobadas entre los expedientes alertados?",
+    "options": [
+      {
+        "id": "a",
+        "text": "60 %: se dividen los 12 casos coincidentes entre las 20 irregularidades comprobadas, porque ese es el grupo de hechos confirmados.",
+        "rationale": "12/20 calcula P(alerta|irregularidad), una pregunta distinta de la planteada."
+      },
+      {
+        "id": "b",
+        "text": "6 %: se dividen los 12 expedientes coincidentes entre los 200 del universo, para representar el porcentaje global de coincidencias.",
+        "rationale": "12/200 calcula la proporción conjunta en toda la población, no la condicional."
+      },
+      {
+        "id": "c",
+        "text": "30 %: hay 12 expedientes con irregularidad entre los 40 alertados; el denominador corresponde al grupo condicionado por la alerta.",
+        "rationale": "P(irregularidad|alerta)=12/40=0,30; se condiciona sobre las alertas."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: OpenStax, Introductory Statistics 2e, cap. 3. P(irregularidad|alerta)=12/40=0,30; se condiciona sobre las alertas. 12/20 calcula P(alerta|irregularidad), una pregunta distinta de la planteada. 12/200 calcula la proporción conjunta en toda la población, no la condicional.",
+    "sourceIds": [
+      "openstax-probability"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-probabilidad-conjuntos-2",
+    "moduleId": "pgn-m67",
+    "relatedModuleIds": [
+      "pgn-m66",
+      "pgn-m67",
+      "pgn-m68"
+    ],
+    "scenarioId": "pgn-exception-probabilidad-conjuntos",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una base contiene 180 expedientes únicos. Se registran 65 con una alerta de plazo, 50 con una alerta de documentación y 20 con ambas. Las alertas no son mutuamente excluyentes; el equipo debe estimar cuántos expedientes diferentes requieren revisar por tener al menos una de las dos condiciones.",
+    "stem": "¿Cuál es el número de expedientes distintos con al menos una alerta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "95 expedientes: sumar 65 y 50, restando una sola vez los 20 que aparecen en los dos conjuntos.",
+        "rationale": "La unión es 65+50−20=95 e incluye los expedientes con ambas alertas una sola vez."
+      },
+      {
+        "id": "b",
+        "text": "115 expedientes: sumar los 65 con alerta de plazo y los 50 con alerta documental, porque cada alerta corresponde a un criterio diferente.",
+        "rationale": "La suma directa cuenta dos veces cada expediente presente en la intersección."
+      },
+      {
+        "id": "c",
+        "text": "75 expedientes: restar la intersección de cada uno de los dos conjuntos, para evitar contabilizar expedientes que aparecen dos veces.",
+        "rationale": "Restar la intersección dos veces excluye indebidamente los expedientes que tienen ambas alertas."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: OpenStax, Introductory Statistics 2e, cap. 3. La unión es 65+50−20=95 e incluye los expedientes con ambas alertas una sola vez. La suma directa cuenta dos veces cada expediente presente en la intersección. Restar la intersección dos veces excluye indebidamente los expedientes que tienen ambas alertas.",
+    "sourceIds": [
+      "openstax-probability"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-muestreo-logica-1",
+    "moduleId": "pgn-m68",
+    "relatedModuleIds": [
+      "pgn-m67",
+      "pgn-m68",
+      "pgn-m69"
+    ],
+    "scenarioId": "pgn-exception-muestreo-logica",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una entidad tiene 5.000 expedientes. Para una revisión inicial se seleccionan deliberadamente 100 de mayor riesgo según alertas previas, de los cuales 30 presentan defectos. La coordinación desea afirmar que el 30 % de todos los expedientes tiene defectos. No existen probabilidades de inclusión conocidas ni muestra de los expedientes sin alerta.",
+    "stem": "¿Qué diseño o interpretación permite evitar una generalización sesgada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Multiplicar 30 % por los 5.000 expedientes y presentar 1.500 defectos como estimación representativa, dado que el tamaño seleccionado supera cien casos.",
+        "rationale": "El tamaño de la muestra no corrige selección intencional de casos con mayor riesgo."
+      },
+      {
+        "id": "b",
+        "text": "Informar 30 % en la muestra dirigida y, para estimar prevalencia general, diseñar una muestra probabilística con cobertura y ponderación apropiadas.",
+        "rationale": "El diseño por riesgo es útil para detectar, no garantiza inferencia representativa del universo."
+      },
+      {
+        "id": "c",
+        "text": "Aplicar un intervalo de confianza de muestra aleatoria simple a los 100 expedientes, porque ese cálculo elimina el sesgo de selección por alertas.",
+        "rationale": "Un intervalo aleatorio no repara la ausencia de un diseño probabilístico compatible."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: OpenStax, Introductory Statistics 2e, cap. 1. El diseño por riesgo es útil para detectar, no garantiza inferencia representativa del universo. El tamaño de la muestra no corrige selección intencional de casos con mayor riesgo. Un intervalo aleatorio no repara la ausencia de un diseño probabilístico compatible.",
+    "sourceIds": [
+      "openstax-sampling",
+      "openstax-probability"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-muestreo-logica-2",
+    "moduleId": "pgn-m68",
+    "relatedModuleIds": [
+      "pgn-m67",
+      "pgn-m68",
+      "pgn-m69"
+    ],
+    "scenarioId": "pgn-exception-muestreo-logica",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un control institucional establece que todo trámite aprobado por la ruta X debe generar un registro R. Se sabe además que la ruta Y también puede generar R. En un expediente se observa R, pero los identificadores de ruta se perdieron. No hay evidencia adicional que permita distinguir X de Y y el informe pretende atribuir la aprobación a X.",
+    "stem": "¿Qué conclusión sigue lógicamente de la premisa y del registro observado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La presencia de R demuestra que el trámite siguió X, ya que todos los trámites de esa ruta generan obligatoriamente ese registro.",
+        "rationale": "La afirmación del consecuente confunde una condición necesaria con una suficiente."
+      },
+      {
+        "id": "b",
+        "text": "La presencia de R demuestra que el trámite siguió Y, porque la pérdida del identificador impide acreditar de manera directa la ruta X.",
+        "rationale": "No acreditar X tampoco acredita Y sin evidencia que distinga las dos rutas."
+      },
+      {
+        "id": "c",
+        "text": "La presencia de R es compatible con X, pero no demuestra X porque Y también puede generarlo; buscar evidencia discriminante.",
+        "rationale": "De X implica R no se deduce R implica X; existe una explicación alternativa concreta."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: OpenStax, Introductory Statistics 2e, cap. 1. De X implica R no se deduce R implica X; existe una explicación alternativa concreta. La afirmación del consecuente confunde una condición necesaria con una suficiente. No acreditar X tampoco acredita Y sin evidencia que distinga las dos rutas.",
+    "sourceIds": [
+      "openstax-sampling",
+      "openstax-probability"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-competencia-investigacion-1",
+    "moduleId": "pgn-m71",
+    "relatedModuleIds": [
+      "pgn-m68",
+      "pgn-m69",
+      "pgn-m70",
+      "pgn-m71",
+      "pgn-m73"
+    ],
+    "scenarioId": "pgn-exception-competencia-investigacion",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un equipo debe explicar un aumento de expedientes vencidos. Los responsables atribuyen el incremento a falta de personal, pero los registros muestran cambios de clasificación y posibles errores en fechas de cierre. Existe tiempo limitado para analizar la información y es posible contrastar una muestra de expedientes con las dos fuentes.",
+    "stem": "¿Qué conducta integra mejor investigación y pensamiento conceptual en el ejercicio formativo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Formular hipótesis alternativas, contrastar una muestra con fuentes independientes y distinguir cambios reales de errores de clasificación antes de recomendar acciones.",
+        "rationale": "Prioriza evidencia discriminante y construye una explicación verificable sin desperdiciar recursos disponibles."
+      },
+      {
+        "id": "b",
+        "text": "Ampliar la revisión a todos los informes históricos disponibles y esperar a terminar la recopilación antes de establecer hipótesis sobre el incremento.",
+        "rationale": "Recopilar indiscriminadamente consume el tiempo sin orientar las verificaciones por hipótesis."
+      },
+      {
+        "id": "c",
+        "text": "Usar la explicación del equipo operativo como hipótesis principal y solicitar mayor personal, dejando la revisión de clasificación para un informe posterior.",
+        "rationale": "La explicación inicial merece contraste; recomendar recursos antes de examinar alternativas puede tratar la causa equivocada."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Diccionario de competencias PGN: Investigación B y Pensamiento Conceptual A. Prioriza evidencia discriminante y construye una explicación verificable sin desperdiciar recursos disponibles. Recopilar indiscriminadamente consume el tiempo sin orientar las verificaciones por hipótesis. La explicación inicial merece contraste; recomendar recursos antes de examinar alternativas puede tratar la causa equivocada.",
+    "sourceIds": [
+      "pgn-diccionario-competencias",
+      "pgn-convocatoria-104-v4"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-competencia-investigacion-2",
+    "moduleId": "pgn-m71",
+    "relatedModuleIds": [
+      "pgn-m68",
+      "pgn-m69",
+      "pgn-m70",
+      "pgn-m71",
+      "pgn-m73"
+    ],
+    "scenarioId": "pgn-exception-competencia-investigacion",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una profesional presenta un concepto preliminar sobre retrasos de un sistema. Después recibe registros verificados que contradicen la asociación inicial entre las fallas y una actualización de software. El concepto todavía no es definitivo, la coordinación espera una respuesta hoy y existen dos fuentes que podrían comprobar la hipótesis alternativa.",
+    "stem": "¿Qué conducta demuestra mejor capacidad de investigar y revisar un modelo explicativo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conservar la hipótesis inicial como explicación principal y anexar los nuevos registros como observación para no alterar la estructura del concepto preliminar.",
+        "rationale": "Anexar datos contradictorios sin revisar la inferencia mantiene una conclusión que ya requiere reevaluación."
+      },
+      {
+        "id": "b",
+        "text": "Actualizar la hipótesis, contrastar las fuentes decisivas y comunicar hoy los resultados comprobados y las incertidumbres, explicando el cambio de criterio.",
+        "rationale": "Integra nueva evidencia, contraste dirigido y comunicación oportuna de límites."
+      },
+      {
+        "id": "c",
+        "text": "Retirar el concepto y aplazar cualquier comunicación hasta resolver cada inconsistencia, aunque pueda entregar hallazgos parciales verificados con límites claros.",
+        "rationale": "Aplazar todo no aprovecha la posibilidad de comunicar información comprobada con alcance explícito."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Diccionario de competencias PGN: Investigación B y Pensamiento Conceptual A. Integra nueva evidencia, contraste dirigido y comunicación oportuna de límites. Anexar datos contradictorios sin revisar la inferencia mantiene una conclusión que ya requiere reevaluación. Aplazar todo no aprovecha la posibilidad de comunicar información comprobada con alcance explícito.",
+    "sourceIds": [
+      "pgn-diccionario-competencias",
+      "pgn-convocatoria-104-v4"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-responsabilidad-institucional-1",
+    "moduleId": "pgn-m70",
+    "relatedModuleIds": [
+      "pgn-m59",
+      "pgn-m70",
+      "pgn-m71",
+      "pgn-m72",
+      "pgn-m73"
+    ],
+    "scenarioId": "pgn-exception-responsabilidad-institucional",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Dos dependencias solicitan al mismo profesional apoyo para informes que vencen esa semana. Una entrega tiene término legal fijo; la otra permite negociar alcance, pero requiere información del primer equipo. El profesional conoce su capacidad, puede solicitar apoyo y dispone de una reunión breve para acordar responsabilidades con ambas coordinaciones.",
+    "stem": "¿Qué conducta refleja mejor responsabilidad institucional y organización del trabajo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Atender primero la solicitud con término legal y notificar a la otra dependencia cuando finalice, para evitar interrupciones durante la concentración.",
+        "rationale": "La prioridad legal es razonable, pero posponer la coordinación agrava un riesgo conocido."
+      },
+      {
+        "id": "b",
+        "text": "Repartir inicialmente el tiempo en partes iguales y solicitar ayuda solo si se verifica un incumplimiento en alguno de los dos informes.",
+        "rationale": "Distribuir uniformemente ignora las diferencias de urgencia y posterga la gestión del apoyo."
+      },
+      {
+        "id": "c",
+        "text": "Concertar prioridades según términos y dependencias, acordar apoyo y entregables verificables, e informar oportunamente los riesgos que no pueda resolver.",
+        "rationale": "Integra el objetivo común, los términos, las dependencias y la planificación de recursos."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Diccionario de competencias PGN: Responsabilidad con la Organización B y Organización del Trabajo B. Integra el objetivo común, los términos, las dependencias y la planificación de recursos. La prioridad legal es razonable, pero posponer la coordinación agrava un riesgo conocido. Distribuir uniformemente ignora las diferencias de urgencia y posterga la gestión del apoyo.",
+    "sourceIds": [
+      "pgn-diccionario-competencias",
+      "pgn-convocatoria-104-v4"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-responsabilidad-institucional-2",
+    "moduleId": "pgn-m70",
+    "relatedModuleIds": [
+      "pgn-m59",
+      "pgn-m70",
+      "pgn-m71",
+      "pgn-m72",
+      "pgn-m73"
+    ],
+    "scenarioId": "pgn-exception-responsabilidad-institucional",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una dependencia necesita datos para terminar un informe institucional, pero el responsable de una fuente autorizada está ausente. Hay un procedimiento vigente de suplencia, y parte de la información puede verificarse por otra fuente autorizada. El profesional de apoyo puede coordinar con el suplente, identificar los datos faltantes y comunicar el estado a la coordinación.",
+    "stem": "¿Cuál actuación aporta mejor continuidad institucional sin exceder las atribuciones del cargo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Coordinar con el suplente, aprovechar fuentes autorizadas, documentar los faltantes y acordar plazos de validación con quienes dependen del informe.",
+        "rationale": "Activa una ruta institucional permitida y combina continuidad, calidad y coordinación de responsabilidades."
+      },
+      {
+        "id": "b",
+        "text": "Esperar al responsable habitual y concentrarse en los apartados ya redactados, informando el retraso al aproximarse el plazo definitivo de entrega.",
+        "rationale": "Es prudente no acceder sin permiso, pero existe una suplencia habilitada y el bloqueo debe comunicarse temprano."
+      },
+      {
+        "id": "c",
+        "text": "Pedir a otro equipo un informe equivalente ya elaborado y adoptar sus cifras provisionalmente, sin verificar si la población coincide con la solicitada.",
+        "rationale": "Reutilizar cifras sin verificar población puede producir resultados incompatibles con el encargo."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Diccionario de competencias PGN: Responsabilidad con la Organización B y Organización del Trabajo B. Activa una ruta institucional permitida y combina continuidad, calidad y coordinación de responsabilidades. Es prudente no acceder sin permiso, pero existe una suplencia habilitada y el bloqueo debe comunicarse temprano. Reutilizar cifras sin verificar población puede producir resultados incompatibles con el encargo.",
+    "sourceIds": [
+      "pgn-diccionario-competencias",
+      "pgn-convocatoria-104-v4"
+    ],
+    "verifiedAt": "2026-11-23"
   }
 ]
 
@@ -2686,6 +3780,160 @@ const lessons = [
     "contrast": [
       "Plazo exigente con control pendiente: reorganizar recursos y acordar entrega verificable.",
       "Resultado parcial con incertidumbre: comunicar alcance y gestionar validación, sin ocultar límites."
+    ],
+    "sourceId": "pgn-diccionario-competencias"
+  },
+  {
+    "moduleId": "pgn-m20",
+    "title": "Régimen procesal de transición",
+    "article": "CGD, art. 263; Ley 2094/2021, arts. 71 y 73",
+    "rule": "La entrada general del CGD ocurrió el 29 de marzo de 2022. Si para entonces se había notificado el pliego o instalado la audiencia del proceso verbal, continúa el procedimiento de Ley 734/2002; en los demás casos se aplica el nuevo procedimiento. No confundir firma con notificación, ni regla procesal con favorabilidad sustancial.",
+    "contrast": [
+      "Pliego notificado antes de vigencia: procedimiento anterior.",
+      "Pliego firmado pero no notificado: aplicar la regla de transición del nuevo procedimiento."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m20",
+    "title": "Favorabilidad y sucesión de leyes",
+    "article": "CGD, arts. 4 y 8; Constitución, art. 29",
+    "rule": "Identificar la norma vigente en la época de la conducta y la sucesión normativa. La disposición posterior permisiva o favorable, sustancial o procesal con efectos sustanciales, se aplica preferentemente a la desfavorable, incluso frente al cumplimiento de sanciones conforme a la ley. Comparar consecuencias aplicables al caso concreto; no usar una norma posterior desfavorable retroactivamente ni confundir favorabilidad con selección arbitraria de fragmentos.",
+    "contrast": [
+      "Norma posterior favorable: comparar y motivar aplicación preferente.",
+      "Norma posterior más gravosa: no aplicarla retroactivamente por ser la más reciente."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m31",
+    "title": "Notificación electrónica y recepción efectiva",
+    "article": "CGD, art. 122; Sentencia C-570/2019",
+    "rule": "La notificación personal por medio electrónico requiere aceptación previa escrita del investigado o defensor. La interpretación constitucional de la regla exige recepción efectiva del mensaje, no el mero envío. Conservar constancias verificables, atender rebotes y acudir a la modalidad legal procedente; no confundir aceptación del canal con recepción ni recepción con lectura voluntaria.",
+    "contrast": [
+      "Aceptación escrita y rebote: no dar por surtida automáticamente la notificación.",
+      "Aceptación y recepción acreditadas: documentar la fecha legalmente relevante, sin exigir lectura voluntaria."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m31",
+    "title": "Conducta concluyente y recursos según etapa",
+    "article": "CGD, arts. 128, 130, 133–134",
+    "rule": "Si la notificación personal o ficta falta o es irregular, la conducta concluyente exige los supuestos del art. 128, como actuación posterior sin reclamo o interposición de recurso contra la decisión. Verificar el acto concreto y el momento. La negativa de pruebas en investigación se controvierte por reposición, en juzgamiento por apelación; no trasladar automáticamente el catálogo CPACA.",
+    "contrast": [
+      "Conocimiento demostrado por actuación sin reclamo: examinar conducta concluyente.",
+      "Negativa de prueba: el recurso depende de investigación o juicio, no de la importancia subjetiva de la prueba."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m21",
+    "title": "Particulares disciplinables y conexidad",
+    "article": "CGD, arts. 25, 70 y 92; Ley 1474/2011, art. 83",
+    "rule": "La prestación de servicios por sí sola no hace disciplinable a cualquier contratista. Verificar ejercicio de función pública, administración de recursos, labores de supervisión o interventoría o calidad de auxiliar de justicia. Cuando concurren servidores y particulares disciplinables en faltas conexas, la competencia exclusiva corresponde a PGN y se determina según reglas de los servidores. Individualizar conductas y distinguir responsabilidad contractual, fiscal y disciplinaria.",
+    "contrast": [
+      "Contratista de soporte sin función especial acreditada: no presumir calidad disciplinable.",
+      "Interventor particular y servidor en faltas conexas: verificar competencia exclusiva PGN e imputaciones individuales."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m24",
+    "title": "Exservidor y ejecución de suspensión",
+    "article": "CGD, arts. 25, 48 y 89",
+    "rule": "El retiro no extingue acción por hechos disciplinables. Cuando al quedar ejecutoriado el fallo o durante ejecución el sancionado cesó funciones y no es posible ejecutar suspensión, el CGD contempla conversión del término o del saldo a salarios básicos devengados al cometer la falta, sin perjuicio de inhabilidad cuando corresponda. Distinguir imposibilidad de ejecutar materialmente y extinción.",
+    "contrast": [
+      "Retiro antes del fallo: continuar si procede, sin presumir extinción.",
+      "Suspensión no ejecutable por cese: examinar conversión legal del saldo y demás efectos."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m41",
+    "title": "Testigo renuente y justificación",
+    "article": "CGD, arts. 164–167 y 210; Constitución, art. 33",
+    "rule": "El deber general de testimoniar admite excepciones constitucionales y legales. Frente a inasistencia, el art. 165 contempla multa hasta cincuenta salarios mínimos diarios de la época del hecho salvo justificación satisfactoria dentro de tres días; requiere procedimiento del art. 210. En PGN la conducción policial es excepcional ante urgencia y necesidad de evitar pérdida de prueba; no aplica al exceptuado.",
+    "contrast": [
+      "Inasistencia justificada oportunamente: no sancionar por renuencia.",
+      "Invocación de excepción constitucional: examinarla antes de cualquier medida de compulsión."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m37",
+    "title": "Contradicción omitida y prueba inexistente",
+    "article": "CGD, arts. 157–159 y 202",
+    "rule": "Diferenciar ausencia de oportunidad de contradicción atribuible al trámite de no ejercicio voluntario de una oportunidad efectiva. Examinar formalidades sustanciales, derechos fundamentales, incidencia y remedios legalmente procedentes. La prueba recaudada con desconocimiento de derechos fundamentales o sin formalidades sustanciales se tiene por inexistente según art. 158; la nulidad de actuaciones requiere causal y alcance, no propagación automática.",
+    "contrast": [
+      "Oportunidad efectiva no utilizada: no equivale por sí sola a privación de contradicción.",
+      "Privación acreditada de garantía fundamental al recaudar: art. 158; examinar efectos sobre actos dependientes."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m61",
+    "title": "Desfase de relojes y orden causal",
+    "article": "NIST SP 800-92; RFC 5905",
+    "rule": "Conservar registros originales, zona horaria, correcciones y margen de incertidumbre. Si reloj A está adelantado 90 segundos, restar 90 a su marca; si B está atrasado 30, sumar 30. No afirmar orden entre eventos cuyos intervalos corregidos se superponen sin otra evidencia causal; correlacionar IDs, secuencias, solicitudes y respuestas. NTP sincroniza relojes, no certifica por sí solo la autoría ni el instante histórico de un archivo.",
+    "contrast": [
+      "Desfase conocido y estable: corregir en copia de análisis y conservar original.",
+      "Intervalos superpuestos: buscar orden causal por identificadores y declarar incertidumbre."
+    ],
+    "sourceId": "nist-sp-800-92"
+  },
+  {
+    "moduleId": "pgn-m63",
+    "title": "Sellado temporal y evidencia digital incompleta",
+    "article": "RFC 3161; Ley 527/1999, arts. 8–12",
+    "rule": "El sello de tiempo RFC 3161 vincula una huella con un instante acreditado por una autoridad de sellado, sujeto a validación del token, firma, política y cadena. No certifica por sí mismo autoría, exactitud del contenido ni el momento original de creación. El estado NTP del dispositivo y un sello criptográfico son controles distintos.",
+    "contrast": [
+      "Token válido y huella coincidente: evidencia temporal de existencia de los datos correspondientes, con sus límites.",
+      "Solo fecha del sistema o token no verificable: no afirmar prueba criptográfica del instante."
+    ],
+    "sourceId": "rfc-3161"
+  },
+  {
+    "moduleId": "pgn-m67",
+    "title": "Probabilidad condicional y unión de conjuntos",
+    "article": "OpenStax, Introductory Statistics 2e, cap. 3",
+    "rule": "P(A|B)=P(A∩B)/P(B), con P(B)>0. La unión se calcula sumando ambos conjuntos y restando la intersección una vez. Distinguir sensibilidad, probabilidad posterior, porcentaje global y solapamiento; no trasladar una probabilidad descriptiva a una declaración individual de responsabilidad.",
+    "contrast": [
+      "Condición fija el denominador: cambiar la condición cambia la pregunta.",
+      "Dos conjuntos solapados: restar la intersección para contar personas o expedientes distintos."
+    ],
+    "sourceId": "openstax-probability"
+  },
+  {
+    "moduleId": "pgn-m68",
+    "title": "Muestreo, sesgo y lógica de inferencia",
+    "article": "OpenStax, Introductory Statistics 2e, cap. 1",
+    "rule": "El muestreo dirigido por riesgo sirve para hallar problemas, no permite por sí solo estimar prevalencia poblacional. Para estimar tasas usar diseño probabilístico apropiado y ponderar estratos si se muestrean con distinta fracción. En lógica distinguir condición necesaria y suficiente: A implica B no significa B implica A; la ausencia de B permite negar A cuando la premisa es verdadera y aplicable.",
+    "contrast": [
+      "Muestra de riesgo: reportar hallazgos de la selección, no tasa general sin diseño.",
+      "Implicación: no afirmar el antecedente a partir del consecuente."
+    ],
+    "sourceId": "openstax-sampling"
+  },
+  {
+    "moduleId": "pgn-m71",
+    "title": "Investigación y pensamiento conceptual bajo incertidumbre",
+    "article": "Diccionario de competencias PGN: Investigación B y Pensamiento Conceptual A",
+    "rule": "Ejercicios formativos: investigar exige identificar fuentes y validar información; pensamiento conceptual integra hechos y patrones sin confundir hipótesis con conclusión. Priorizar evidencia que discrimine explicaciones alternativas, documentar límites y ajustar el modelo cuando aparece información contraria.",
+    "contrast": [
+      "Dos hipótesis plausibles: buscar prueba discriminante antes de ampliar indiscriminadamente.",
+      "Evidencia contraria: revisar hipótesis y explicar el cambio de conclusión."
+    ],
+    "sourceId": "pgn-diccionario-competencias"
+  },
+  {
+    "moduleId": "pgn-m70",
+    "title": "Responsabilidad institucional y coordinación bajo presión",
+    "article": "Diccionario de competencias PGN: Responsabilidad con la Organización B y Organización del Trabajo B",
+    "rule": "Los dilemas formativos comparan conductas razonables: responder al objetivo institucional, acordar prioridades, informar riesgos a tiempo, proteger continuidad y conservar límites de competencia. No confundir compromiso con aceptar cualquier instrucción ni organización con trabajar de manera aislada.",
+    "contrast": [
+      "Prioridades incompatibles: acordar capacidad, responsables y riesgos antes de comprometer entregas.",
+      "Dependencia crítica: compartir información autorizada, coordinar solución y escalar bloqueos oportunamente."
     ],
     "sourceId": "pgn-diccionario-competencias"
   }
