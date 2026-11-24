@@ -1330,6 +1330,457 @@ const items: Record<string, Item> = {
       "ley-1952-2019",
       "ley-2094-2021"
     ]
+  ],
+  "pgn-m30-q1": [
+    "",
+    "¿Qué estándar distingue la formulación de cargos de la apertura de investigación?",
+    "La falta objetivamente demostrada y prueba que comprometa la responsabilidad del disciplinado.",
+    "La identificación del posible autor mediante una noticia que merece credibilidad.",
+    "La certeza de falta y responsabilidad exigida para proferir fallo sancionatorio.",
+    "El artículo 222 exige prueba de falta y compromiso personal.",
+    "La identificación es presupuesto de apertura.",
+    "La certeza es el estándar del fallo.",
+    "CGD, arts. 160,211,222",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m30-q2": [
+    "Una investigación acredita objetivamente un hecho, pero una prueba demuestra plenamente que el disciplinado no lo cometió.",
+    "¿Qué salida establece el Código respecto de ese disciplinado?",
+    "Terminación de la actuación y archivo definitivo mediante decisión motivada.",
+    "Formulación de cargos por haberse acreditado objetivamente el hecho investigado.",
+    "Suspensión provisional hasta establecer cuál persona cometió la conducta.",
+    "La no autoría demostrada es causal de terminación.",
+    "No basta la ocurrencia del hecho para acusar.",
+    "La suspensión exige presupuestos propios.",
+    "CGD, arts. 90,222,224",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m30-q3": [
+    "Un proyecto de pliego individualiza al servidor por su cargo actual, pero los hechos corresponden a un cargo distinto que ocupaba dos años antes.",
+    "¿Qué dato exige el artículo 223 para delimitar la imputación?",
+    "El cargo o función desempeñada en la época de comisión de la conducta.",
+    "El cargo ocupado por el servidor al momento de notificar el pliego de cargos.",
+    "La dependencia que actualmente tiene competencia para efectuar el juzgamiento.",
+    "La función relevante es la de la época del hecho.",
+    "El cargo actual puede ser diferente.",
+    "El juzgador no determina el deber funcional histórico.",
+    "CGD, arts. 223",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m30-q4": [
+    "El pliego contiene el relato de los hechos y cita las normas presuntamente violadas, pero no desarrolla la modalidad subjetiva ni los argumentos presentados por la defensa.",
+    "¿Qué dos componentes exige completar el artículo 223?",
+    "El análisis de culpabilidad y de los argumentos de los sujetos procesales.",
+    "La determinación definitiva de la sanción y su ejecución presupuestal.",
+    "La identificación de la segunda instancia y la liquidación de una eventual multa.",
+    "Son componentes expresos del pliego.",
+    "La sanción no se impone mediante cargos.",
+    "Estos datos no sustituyen el análisis exigido.",
+    "CGD, arts. 223",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m30-q5": [
+    "La investigación se archiva definitivamente en el supuesto del artículo 224 en que no fue posible identificar ni individualizar al presunto autor.",
+    "¿Qué efecto específico atribuye la norma a ese archivo?",
+    "Cosa juzgada formal, de acuerdo con la excepción prevista en el artículo.",
+    "Cosa juzgada material en idénticos términos de un fallo de responsabilidad ejecutoriado.",
+    "Ausencia de cualquier efecto procesal que permita ignorar la decisión de archivo.",
+    "El artículo 224 distingue el supuesto de autor no identificado.",
+    "No tiene el efecto material ordinario.",
+    "La decisión conserva efecto formal.",
+    "CGD, arts. 224",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m30-q6": [
+    "Un quejoso identificado recibe comunicación del archivo definitivo de una investigación y desea impugnarlo dentro de la oportunidad prevista.",
+    "¿Qué recurso puede ejercer frente al archivo en ese supuesto?",
+    "Apelación contra la decisión de archivo conforme al régimen especial.",
+    "Queja directamente contra el archivo sin rechazo previo de una apelación.",
+    "Reposición como única impugnación prevista para toda decisión de archivo.",
+    "El archivo admite apelación y el quejoso tiene esa facultad.",
+    "La queja exige rechazo de apelación.",
+    "La reposición no es el recurso previsto aquí.",
+    "CGD, arts. 110,134",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m31-q1": [
+    "",
+    "¿Cuál conjunto contiene decisiones sometidas inicialmente a notificación personal por el CGD?",
+    "Apertura de investigación, vinculación, pliego de cargos y fallos de instancia.",
+    "Auto de simple trámite, informe de secretaría y comunicación general al quejoso.",
+    "Traslado del dictamen en investigación, informe técnico y toda decisión de sustanciación.",
+    "El artículo 121 enumera decisiones de notificación personal.",
+    "El trámite simple y las comunicaciones son distintos.",
+    "El traslado pericial en investigación tiene regla especial.",
+    "CGD, arts. 121,123,129",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m31-q2": [
+    "Una providencia se dicta durante una audiencia y queda notificada en la propia sesión a los sujetos procesales.",
+    "¿Qué modalidad de notificación corresponde a ese acto?",
+    "Notificación en estrados, de acuerdo con la regla de las decisiones en audiencia.",
+    "Notificación por estado electrónico, que debe insertarse al finalizar toda la audiencia.",
+    "Notificación por edicto, que debe permanecer fijado durante el plazo legal.",
+    "Las decisiones adoptadas en audiencia se notifican en estrados.",
+    "No se exige estado adicional en ese supuesto.",
+    "El edicto tiene otros presupuestos.",
+    "CGD, arts. 126",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m31-q3": [
+    "El juzgador niega totalmente la práctica de las pruebas solicitadas por un sujeto procesal durante juicio.",
+    "¿Qué recurso y efecto prevé el artículo 134 para esa negativa total?",
+    "Apelación en efecto suspensivo por tratarse de una negativa total en juicio.",
+    "Apelación en efecto devolutivo como para la negativa parcial en juicio.",
+    "Reposición en efecto suspensivo como para la negativa probatoria en investigación.",
+    "La negativa total en juicio admite apelación suspensiva.",
+    "La parcial tiene efecto devolutivo.",
+    "En investigación corresponde reposición.",
+    "CGD, arts. 133,134",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m31-q4": [
+    "El funcionario rechaza la apelación que había interpuesto oportunamente la defensa contra una providencia.",
+    "¿Qué finalidad tiene el recurso de queja en ese supuesto?",
+    "Permitir al superior decidir si debe concederse la apelación rechazada.",
+    "Permitir al mismo funcionario decidir otra vez el fondo de la providencia apelada.",
+    "Permitir al ciudadano formular una nueva noticia disciplinaria contra el servidor investigado.",
+    "La queja controla el rechazo de apelación.",
+    "No es una repetición del estudio de fondo.",
+    "No equivale a denuncia disciplinaria.",
+    "CGD, arts. 136,137",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m31-q5": [
+    "Una apelación sometida al régimen general fue interpuesta oportunamente, pero no se sustentó dentro del término exigible.",
+    "¿Qué consecuencia prevé el Código por la falta de sustentación oportuna?",
+    "Declarar desierto el recurso conforme a los requisitos del artículo 132.",
+    "Concederlo al superior para que supla de oficio los argumentos del recurrente.",
+    "Tramitarlo como queja por haber vencido el término de sustentación ordinario.",
+    "La sustentación es presupuesto de trámite.",
+    "El superior no sustituye al recurrente.",
+    "No hay rechazo de apelación que habilite automáticamente queja.",
+    "CGD, arts. 131,132",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m31-q6": [
+    "El auto de apertura se expidió el lunes, pero el trámite de notificación personal aún no se ha completado. Se planea practicar pruebas durante esos días.",
+    "¿Qué regla distingue la notificación de la actividad probatoria de investigación?",
+    "El trámite no suspende la prueba; procede ampliarla o reiterarla en los puntos solicitados.",
+    "La expedición habilita presumir la notificación y elimina toda posibilidad de reiteración de pruebas.",
+    "La investigación debe suspenderse por completo hasta que exista notificación personal efectiva.",
+    "El artículo 111 permite continuar prueba y prevé ampliación o reiteración.",
+    "La expedición no equivale a notificación.",
+    "No hay suspensión probatoria automática.",
+    "CGD, arts. 111,121",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m32-q1": [
+    "",
+    "¿Cuál de estos defectos corresponde a una causal expresa de nulidad del artículo 202?",
+    "La falta de competencia del funcionario que profirió el fallo disciplinario.",
+    "La existencia de una corrección tipográfica que no afecta garantías procesales.",
+    "La presentación de alegatos que discrepan de las conclusiones del instructor.",
+    "La competencia para fallar es causal expresa.",
+    "Un error inocuo no es causal automática.",
+    "Discrepar es parte del derecho de defensa.",
+    "CGD, arts. 202,203",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m32-q2": [
+    "Se impidió a un investigado ejercer defensa frente a una actuación sustancial y no existe otro remedio procesal que permita subsanar el defecto.",
+    "¿Qué causal de nulidad debe examinarse frente a ese supuesto?",
+    "Violación del derecho de defensa del investigado conforme al artículo 202.",
+    "Falta de competencia para proferir el fallo por la sola restricción de defensa.",
+    "Falta de oportunidad de la queja presentada inicialmente por un ciudadano.",
+    "La privación de defensa es una causal propia.",
+    "No se demuestra defecto de competencia para fallar.",
+    "La noticia no es el defecto descrito.",
+    "CGD, arts. 202",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m32-q3": [
+    "Un acto presenta una irregularidad sustancial y existe un mecanismo procesal idóneo que permite subsanarla sin sacrificar garantías constitucionales.",
+    "¿Qué principio condiciona la decisión de declarar nulidad en ese caso?",
+    "Subsidiariedad: la nulidad procede cuando no existe otro medio procesal de subsanación.",
+    "Trascendencia: toda irregularidad sustancial debe anularse aunque exista un remedio adecuado.",
+    "Convalidación: basta la voluntad del funcionario para mantener válido cualquier acto irregular.",
+    "La nulidad es último remedio procesal.",
+    "Debe examinarse la vía de subsanación.",
+    "La voluntad del funcionario no reemplaza garantías.",
+    "CGD, arts. 203",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m32-q4": [
+    "Una persona consiente una actuación irregular que no compromete garantías constitucionales. El despacho estudia si ese consentimiento tiene efectos de saneamiento.",
+    "¿Qué condición limita la convalidación prevista por el Código?",
+    "El consentimiento del perjudicado debe respetar las garantías constitucionales de la actuación.",
+    "El consentimiento de la autoridad sustituye el del sujeto procesal perjudicado.",
+    "El consentimiento permite subsanar cualquier vulneración de garantías constitucionales sin límites.",
+    "El artículo 203 condiciona la convalidación al respeto constitucional.",
+    "Debe consentir el perjudicado.",
+    "El consentimiento no habilita desconocer garantías.",
+    "CGD, arts. 203",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m32-q5": [
+    "Antes de los alegatos de conclusión se radica una solicitud de nulidad con una causal concreta y fundamentos de hecho y de derecho.",
+    "¿Qué diferencia existe entre esta petición y la declaratoria oficiosa de nulidad?",
+    "La decisión sobre la solicitud admite reposición; la declaratoria oficiosa no admite recurso.",
+    "Ambas decisiones admiten apelación por tratarse de irregularidades sustanciales del procedimiento.",
+    "Ninguna admite recurso por estar sometidas exclusivamente a control del fallo definitivo.",
+    "Los artículos 204 y 207 establecen reglas distintas.",
+    "No se prevé apelación en esos supuestos.",
+    "La decisión sobre solicitud sí admite reposición.",
+    "CGD, arts. 204,206,207",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m32-q6": [
+    "Se anula una providencia posterior a la incorporación legal de un testimonio. El testimonio no depende de la providencia afectada.",
+    "¿Qué debe hacerse respecto de esa prueba ya practicada legalmente?",
+    "Conservar su validez y reponer las actuaciones que dependan del acto nulo.",
+    "Repetir necesariamente todos los testimonios obtenidos antes de la providencia declarada nula.",
+    "Excluir el testimonio porque la nulidad de una actuación elimina todo su soporte probatorio.",
+    "El artículo 205 preserva pruebas legalmente practicadas.",
+    "No exige repetirlas por regla general.",
+    "La nulidad no invalida automáticamente las pruebas válidas.",
+    "CGD, arts. 205",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m33-q1": [
+    "",
+    "¿Qué elementos delimitan el alcance de una comisión para practicar pruebas?",
+    "Las diligencias objeto del encargo y el término para su práctica.",
+    "El sentido probable del fallo y el rango de sanción previsto.",
+    "La totalidad de facultades del instructor y las del futuro juzgador.",
+    "El artículo 152 exige objeto y término.",
+    "La comisión no anticipa la sanción.",
+    "No transfiere todas las facultades de fondo.",
+    "CGD, arts. 152",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m33-q2": [
+    "El Procurador General de la Nación requiere que un funcionario de otra entidad practique una diligencia probatoria específica.",
+    "¿Qué facultad especial reconoce el artículo 152 al Procurador General?",
+    "Puede comisionar a cualquier funcionario para la práctica de pruebas.",
+    "Solo puede comisionar a servidores adscritos a su propia dependencia.",
+    "Puede transferir el juzgamiento completo mediante cualquier encargo de prueba.",
+    "La regla especial le permite comisionar a cualquier funcionario.",
+    "La restricción corresponde a otros servidores en ciertos supuestos.",
+    "La facultad se refiere a pruebas, no al traslado de juzgamiento.",
+    "CGD, arts. 152",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m33-q3": [
+    "En una comisión para recibir un testimonio se conoce una noticia sobre un hecho sin relación directa con las diligencias encargadas.",
+    "¿Qué debe hacer el comisionado respecto de esa nueva línea de investigación ajena al encargo?",
+    "Informar al comitente y solicitar la decisión competente sin ampliar unilateralmente el objeto.",
+    "Recaudar cualquier prueba sobre la nueva noticia porque toda comisión abarca hechos posteriores.",
+    "Formular cargos por el hecho nuevo mientras se encuentra vigente el término de la comisión.",
+    "La prueba adicional debe surgir directamente del objeto.",
+    "El plazo no amplía materialmente el encargo.",
+    "La comisión no confiere competencia para cargos.",
+    "CGD, arts. 152",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m33-q4": [
+    "Durante una declaración comisionada la defensa ejerce una facultad de contradicción prevista para la práctica del testimonio.",
+    "¿Qué regla debe aplicar el comisionado al gestionar esa intervención?",
+    "Respetar las reglas del medio probatorio y registrar la intervención en la diligencia.",
+    "Negar toda intervención porque el derecho de contradicción se ejerce únicamente ante el comitente.",
+    "Trasladar la decisión sobre responsabilidad al defensor para resolver el incidente probatorio.",
+    "La comisión no suprime las garantías de la prueba.",
+    "La contradicción no se pospone necesariamente.",
+    "El defensor no adopta la decisión de fondo.",
+    "CGD, arts. 112,152,157",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m33-q5": [
+    "El comisionado finaliza la prueba y dispone de acta, anexos y una novedad sobre una diligencia adicional autorizada.",
+    "¿Qué debe quedar documentado en la entrega al comitente?",
+    "La actuación practicada, sus anexos, incidencias y constancias de remisión y recibo.",
+    "Solo el resultado favorable a la hipótesis que justificó originalmente el encargo.",
+    "El proyecto de fallo sancionatorio sin identificar los soportes obtenidos en la diligencia.",
+    "La entrega documentada permite controlar alcance e integridad.",
+    "No se seleccionan soportes por su sentido incriminatorio.",
+    "La comisión no habilita fallo.",
+    "CGD, arts. 148,152,159",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m33-q6": [
+    "El comisionado recibe una solicitud que requiere decidir si la investigación debe terminar definitivamente. El encargo se limita a una inspección.",
+    "¿Qué límite debe observar frente a esa solicitud de terminación?",
+    "Registrar y remitir la petición a la autoridad competente sin decidir el fondo.",
+    "Declarar terminado el proceso por tener temporalmente los elementos probatorios del expediente.",
+    "Negar definitivamente la solicitud porque no está incluida en el objeto de la inspección.",
+    "El encargo se limita a la prueba.",
+    "Tener soportes no otorga competencia decisoria.",
+    "La solicitud debe llegar a la autoridad competente.",
+    "CGD, arts. 90,152",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m34-q1": [
+    "",
+    "¿Qué funcionario fija motivadamente el procedimiento de juicio después de recibir el expediente con cargos?",
+    "El funcionario de juzgamiento, competente y distinto del instructor.",
+    "El funcionario instructor que realizó la calificación inicial de la conducta.",
+    "El secretario que organizó la remisión de las actuaciones disciplinarias.",
+    "El artículo 225A atribuye esa decisión al juzgador.",
+    "El instructor no define la modalidad de juicio.",
+    "La secretaría no decide ese asunto.",
+    "CGD, arts. 12,225A",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m34-q2": [
+    "El pliego se ha notificado conforme a la ley y el instructor debe transferir el expediente al funcionario de juzgamiento.",
+    "¿Qué término prevé el artículo 225 para remitir las actuaciones?",
+    "Tres días improrrogables una vez se cumplen las notificaciones.",
+    "Cinco días hábiles desde la fecha de expedición del pliego.",
+    "Quince días contados desde el traslado de alegatos precalificatorios.",
+    "El artículo 225 fija tres días tras notificar.",
+    "La expedición no es el hito de remisión.",
+    "Los alegatos corresponden a un momento anterior.",
+    "CGD, arts. 225",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m34-q3": [
+    "Vencidos los descargos en juicio ordinario, el juzgador advierte un error de calificación y devuelve motivadamente el expediente al instructor.",
+    "¿Qué plazo máximo establece la ley para que el instructor efectúe la nueva calificación?",
+    "Quince días contados conforme a la decisión de devolución.",
+    "Diez días, como para descargos posteriores a la variación de cargos.",
+    "Treinta días hábiles, como para proferir el fallo del juicio ordinario.",
+    "El numeral 1 del artículo 225D fija quince días.",
+    "Diez días corresponden a otra oportunidad.",
+    "El plazo de fallo no aplica a esta devolución.",
+    "CGD, arts. 225D,225F",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m34-q4": [
+    "Agotado el período probatorio del juicio ordinario, aparece una prueba sobreviniente que obliga a variar el pliego. El juzgador realiza la variación.",
+    "¿Qué término de defensa debe otorgarse después de notificarla como pliego?",
+    "Diez días para presentar descargos, solicitar y aportar pruebas.",
+    "Quince días para presentar descargos según el término ordinario inicial.",
+    "Cinco días para presentar exclusivamente recurso de reposición contra la variación.",
+    "El numeral 5 del artículo 225D fija diez días.",
+    "La variación tiene regla especial.",
+    "El trámite no se sustituye por reposición.",
+    "CGD, arts. 225D",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m34-q5": [
+    "Una presentación institucional afirma que el juzgador disciplinario de la Procuraduría ejerce jurisdicción judicial por el solo hecho de estar separado del instructor.",
+    "¿Qué corrección corresponde según la Sentencia C-030 de 2023?",
+    "La función disciplinaria de la PGN es administrativa, pese a la separación interna.",
+    "La separación interna convierte a cada juzgador en juez de la República.",
+    "La sentencia suprimió toda función disciplinaria de la Procuraduría General de la Nación.",
+    "La Corte excluyó el carácter jurisdiccional atribuido por la reforma.",
+    "La separación es garantía administrativa.",
+    "No desapareció toda potestad disciplinaria.",
+    "CGD, arts. 2,12; C-030/2023",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021",
+      "cc-c030-2023"
+    ]
+  ],
+  "pgn-m34-q6": [
+    "Al remitir un expediente de instrucción, el profesional encuentra documentos de descargo y constancias de notificación que el instructor considera poco relevantes para su hipótesis.",
+    "¿Qué criterio preserva la independencia y las garantías del juzgamiento?",
+    "Entregar el expediente íntegro con cargo, descargo, índice y estado de notificaciones.",
+    "Remitir solo la prueba de cargo y reservar el descargo para una petición futura.",
+    "Incluir una instrucción vinculante sobre la sanción que debe adoptar el juzgador.",
+    "El juzgador requiere acceso integral para valorar independientemente.",
+    "Omitir descargo desconoce investigación integral.",
+    "La instrucción no predetermina el fallo.",
+    "CGD, arts. 12,13,148,225",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
   ]
 }
 
