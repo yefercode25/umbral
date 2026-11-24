@@ -26,20 +26,20 @@ export const auditedTransferOverridesM24M26: Record<string, [FoundationTransferO
       "caseText": "Un expediente por una conducta instantánea consumada el 10 de enero de 2024 se rige por la regla general vigente de cinco años, sin particularidades de transición ni del art. 52. El fallo de primera instancia se firmó el 1 de diciembre de 2028 y se notificó el 5 de diciembre. Se interpuso recurso y la segunda instancia se firmó en noviembre de 2030, pero su notificación ocurrió el 12 de diciembre de 2030. El cuadro institucional solo registra las firmas.",
       "stem": "¿Qué dato determina si la segunda instancia se notificó dentro del límite posterior a la interrupción?",
       "correct": {
-        "text": "La notificación del 5 de diciembre de 2028 inicia el control de dos años; la notificación del 12 de diciembre de 2030 supera ese intervalo, por lo que corresponde examinar y declarar la prescripción conforme a la regla dada.",
-        "reason": "La norma vincula interrupción y control posterior a las notificaciones, no solo a la firma."
+        "text": "Contar dos años desde la notificación del 5 de diciembre de 2028; la del 12 de diciembre de 2030 es extemporánea y procede declarar prescripción.",
+        "reason": "El art. 33 toma la notificación de primera instancia como interrupción y exige notificar segunda instancia dentro de dos años en el supuesto dado."
       },
       "other": [
         {
-          "text": "La firma de noviembre de 2030 basta para descartar prescripción, aunque la notificación sea posterior.",
-          "reason": "Una decisión firmada no acredita su notificación dentro del plazo."
+          "text": "Tomar la firma de noviembre de 2030 como acto que satisface el límite de dos años, aunque su notificación se produzca después del vencimiento.",
+          "reason": "La firma dentro del intervalo no acredita que la providencia se haya notificado oportunamente."
         },
         {
-          "text": "El recurso reinicia siempre un término completo de cinco años desde su presentación.",
-          "reason": "El recurso no crea un nuevo período general de cinco años."
+          "text": "Contar un nuevo término de cinco años desde la presentación del recurso, considerando que la impugnación reabre el plazo ordinario para decidir y notificar.",
+          "reason": "El recurso no crea un nuevo período general de cinco años; debe aplicarse el límite posterior a la interrupción."
         }
       ],
-      "explanation": "Art. 33 CGD: la notificación de primera instancia interrumpe; si pasan dos años sin notificar segunda instancia, prescribe en el supuesto general descrito.",
+      "explanation": "El art. 33 toma la notificación de primera instancia como interrupción y exige notificar segunda instancia dentro de dos años en el supuesto dado. La firma dentro del intervalo no acredita que la providencia se haya notificado oportunamente. El recurso no crea un nuevo período general de cinco años; debe aplicarse el límite posterior a la interrupción.",
       "difficulty": 5
     }
   ],
@@ -68,20 +68,20 @@ export const auditedTransferOverridesM24M26: Record<string, [FoundationTransferO
       "caseText": "Después de una denuncia genérica sobre supuesto abuso, se recibe un informe independiente de auditoría. Describe tres alteraciones concretas de registros, señala fechas y adjunta originales y extractos de bitácora. La cuenta técnica era compartida; todavía no se sabe quién ejecutó los cambios. La jefatura pide mantener la evaluación anterior porque el primer escrito no aportaba elementos suficientes y ya fue objeto de decisión inhibitoria.",
       "stem": "¿Cómo debe tratarse el informe independiente a la luz del nuevo grado de información disponible?",
       "correct": {
-        "text": "Evaluar la nueva noticia, su credibilidad, relevancia y competencia; si se mantienen los presupuestos y la duda sobre identidad, disponer indagación previa por la autoridad habilitada.",
-        "reason": "La nueva fuente exige evaluación propia; no prueba autoría individual por sí sola."
+        "text": "Evaluar la credibilidad, relevancia y competencia frente al informe nuevo; si persiste duda de identificación y procede investigar, disponer indagación previa.",
+        "reason": "Arts. 86 y 208–211: la información independiente merece evaluación propia y la duda sobre autoría activa la ruta de indagación si procede."
       },
       "other": [
         {
-          "text": "Ignorar el nuevo soporte porque toda inhibición impide examinar información posterior independiente.",
-          "reason": "Una decisión sobre una queja inconcreta no elimina el deber de evaluar hechos verificables nuevos."
+          "text": "Mantener la decisión inhibitoria hasta que el informe individualice plenamente al responsable, porque cualquier actuación posterior requiere que se desvirtúe primero la evaluación inicial.",
+          "reason": "La inhibición sobre el escrito inconcreto no impide examinar una noticia posterior sustentada; no se exige autor identificado para indagación."
         },
         {
-          "text": "Formular cargos a los administradores del sistema porque el informe identifica la cuenta técnica utilizada.",
-          "reason": "Una cuenta compartida y una noticia no acreditan requisitos para cargos."
+          "text": "Abrir investigación contra los administradores registrados como titulares de la cuenta compartida y resolver quién realizó cada modificación después de vincularlos formalmente.",
+          "reason": "La titularidad de cuenta técnica compartida no individualiza automáticamente al operador ni demuestra presupuesto para abrir contra todos los administradores."
         }
       ],
-      "explanation": "CGD arts. 86, 208, 209 y 211: el nuevo soporte puede modificar la evaluación y la ruta procesal, sin anticipar responsabilidad.",
+      "explanation": "Arts. 86 y 208–211: la información independiente merece evaluación propia y la duda sobre autoría activa la ruta de indagación si procede. La inhibición sobre el escrito inconcreto no impide examinar una noticia posterior sustentada; no se exige autor identificado para indagación. La titularidad de cuenta técnica compartida no individualiza automáticamente al operador ni demuestra presupuesto para abrir contra todos los administradores.",
       "difficulty": 5
     }
   ],
@@ -90,40 +90,40 @@ export const auditedTransferOverridesM24M26: Record<string, [FoundationTransferO
       "caseText": "En una indagación previa ordinaria iniciada hace dos meses, la autoridad examina la alteración de un documento público desde una cuenta compartida. Se obtiene una bitácora individualizada, un registro de asignación de credenciales y una declaración que, contrastados entre sí, permiten identificar al posible autor. La jefatura propone esperar cuatro meses más para usar todo el término disponible antes de adoptar cualquier decisión.",
       "stem": "¿Qué actuación corresponde cuando el medio probatorio ya permite individualizar al posible autor y procede investigar?",
       "correct": {
-        "text": "Emitir inmediatamente el auto de apertura de investigación por la autoridad competente, documentando el fundamento y reservando la valoración de responsabilidad para las etapas siguientes.",
-        "reason": "El art. 208 exige apertura inmediata una vez satisfecha la identificación y el presupuesto de investigación."
+        "text": "Abrir inmediatamente investigación por autoridad competente, motivando la identificación del posible autor y dejando la responsabilidad para la evaluación posterior.",
+        "reason": "El art. 208 ordena apertura inmediata cuando se identifica o individualiza al posible autor y procede investigar."
       },
       "other": [
         {
-          "text": "Mantener la indagación hasta completar seis meses porque el término es obligatorio en todos los casos.",
-          "reason": "Los seis meses son límite de duración, no espera obligatoria."
+          "text": "Continuar la indagación hasta completar seis meses para consolidar elementos sobre responsabilidad, pues la identificación no permite finalizar anticipadamente esa fase.",
+          "reason": "El plazo de seis meses es máximo; no es una espera obligatoria una vez satisfecho el objeto de la indagación."
         },
         {
-          "text": "Formular cargos inmediatamente porque identificar al posible autor equivale a probar responsabilidad.",
-          "reason": "La identificación no acredita por sí sola el estándar de formulación de cargos."
+          "text": "Cerrar la indagación con formulación directa de cargos, considerando que las tres fuentes coincidentes sustituyen las diligencias de la etapa investigativa posterior.",
+          "reason": "La identificación no satisface automáticamente el estándar del art. 222 ni permite omitir la investigación."
         }
       ],
-      "explanation": "CGD art. 208 modificado por Ley 2094: el soporte de identificación conduce a la apertura, no al agotamiento artificial del plazo ni a cargos automáticos.",
+      "explanation": "El art. 208 ordena apertura inmediata cuando se identifica o individualiza al posible autor y procede investigar. El plazo de seis meses es máximo; no es una espera obligatoria una vez satisfecho el objeto de la indagación. La identificación no satisface automáticamente el estándar del art. 222 ni permite omitir la investigación.",
       "difficulty": 4
     },
     {
       "caseText": "Una indagación previa ordinaria por posibles alteraciones de inventario llega al término de seis meses sin identificar al operador. Se practicaron los medios de prueba disponibles y no se trata de violaciones a derechos humanos ni DIH. El equipo solicita ampliar otros seis meses únicamente por la complejidad de las bitácoras. El informe de cierre acredita la duda persistente y enumera las diligencias efectivamente practicadas.",
       "stem": "¿Cuál decisión corresponde al escenario descrito, sin extender una excepción a un supuesto ordinario?",
       "correct": {
-        "text": "Ordenar el archivo conforme al art. 208, parágrafo, y registrar sus fundamentos y efectos; no aplicar por analogía la extensión especial de derechos humanos o DIH.",
-        "reason": "El archivo corresponde a la ausencia de identificación en este supuesto; el parágrafo no produce cosa juzgada material."
+        "text": "Archivar motivadamente según el parágrafo del artículo 208, sin cosa juzgada material, al agotarse el plazo sin individualizar al posible autor.",
+        "reason": "El art. 208 establece archivo sin cosa juzgada material cuando no se logra identificar al posible autor en el supuesto descrito."
       },
       "other": [
         {
-          "text": "Prorrogar seis meses por cualquier dificultad técnica, sin necesidad de una habilitación legal.",
-          "reason": "La dificultad técnica no activa automáticamente la excepción del art. 208."
+          "text": "Extender seis meses adicionales mediante motivación técnica, considerando que la complejidad de los registros permite aplicar la regla especial aunque no exista supuesto DDHH o DIH.",
+          "reason": "La extensión especial corresponde a violaciones de DDHH o DIH; la complejidad informática no habilita su uso por analogía."
         },
         {
-          "text": "Abrir investigación contra todos los servidores con acceso para evitar archivar al vencimiento.",
-          "reason": "La presión temporal no sustituye el presupuesto de identificación."
+          "text": "Abrir investigación contra el grupo de servidores con acceso y completar después su individualización, para conservar la posibilidad de practicar nuevas pruebas.",
+          "reason": "La apertura exige individualización del posible autor conforme al art. 211; la presión del vencimiento no sustituye esa condición."
         }
       ],
-      "explanation": "CGD art. 208: seis meses en general, extensión especial para DDHH/DIH, archivo en el supuesto del parágrafo sin cosa juzgada material.",
+      "explanation": "El art. 208 establece archivo sin cosa juzgada material cuando no se logra identificar al posible autor en el supuesto descrito. La extensión especial corresponde a violaciones de DDHH o DIH; la complejidad informática no habilita su uso por analogía. La apertura exige individualización del posible autor conforme al art. 211; la presión del vencimiento no sustituye esa condición.",
       "difficulty": 5
     }
   ]

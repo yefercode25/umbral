@@ -48,20 +48,20 @@ export const auditedTransferOverridesM18M20: Record<string, [FoundationTransferO
       "caseText": "Un equipo de instrucción de la PGN encuentra actas y testimonios contradictorios. La jefatura solicita pasar directamente a un proyecto de sanción porque el plazo de investigación está próximo a vencer; todavía no se ha adoptado decisión de evaluación ni se ha dado el trámite de juzgamiento. El inventario probatorio registra también una declaración de descargo pendiente de contraste.",
       "stem": "¿Cuál actuación distingue la etapa de instrucción y la decisión que le corresponde a la autoridad competente?",
       "correct": {
-        "text": "Completar las verificaciones procedentes dentro del término legal y evaluar el mérito de la investigación según el CGD, sin sustituir el juzgamiento por una sanción anticipada.",
-        "reason": "CGD, arts. 12, 160 y 222: etapa, competencia y estándares probatorios cumplen funciones diferentes; el vencimiento próximo no autoriza saltar garantías."
+        "text": "Completar verificaciones procedentes dentro del término y evaluar archivo o cargos conforme al estándar de instrucción, preservando el trámite de juzgamiento.",
+        "reason": "Arts. 12, 160 y 222: la instrucción evalúa mérito y el juzgador decide responsabilidad bajo estándar diferente."
       },
       "other": [
         {
-          "text": "Proyectar el fallo sancionatorio para que el investigado pueda controvertirlo después mediante recursos.",
-          "reason": "La alternativa adelanta una conclusión o desconoce un requisito específico del supuesto descrito."
+          "text": "Proyectar una sanción condicionada a la revisión del juzgador y permitir que el investigado controvierta las pruebas al recurrir el fallo.",
+          "reason": "Un proyecto de sanción en instrucción anticipa la decisión y desplaza indebidamente la contradicción a los recursos."
         },
         {
-          "text": "Enviar el expediente al juzgador sin la decisión de evaluación exigible, dejando que este reconstruya la investigación.",
-          "reason": "La alternativa omite la valoración de los elementos relevantes o restringe garantías sin fundamento suficiente."
+          "text": "Remitir directamente los elementos al juzgador, dejando que este complete las verificaciones de descargo y determine la formulación de los cargos.",
+          "reason": "El juzgador no sustituye la decisión de evaluación del instructor ni puede asumir sus atribuciones por proximidad del vencimiento."
         }
       ],
-      "explanation": "CGD, arts. 12, 160 y 222: etapa, competencia y estándares probatorios cumplen funciones diferentes; el vencimiento próximo no autoriza saltar garantías.",
+      "explanation": "Arts. 12, 160 y 222: la instrucción evalúa mérito y el juzgador decide responsabilidad bajo estándar diferente. Un proyecto de sanción en instrucción anticipa la decisión y desplaza indebidamente la contradicción a los recursos. El juzgador no sustituye la decisión de evaluación del instructor ni puede asumir sus atribuciones por proximidad del vencimiento.",
       "difficulty": 4
     },
     {

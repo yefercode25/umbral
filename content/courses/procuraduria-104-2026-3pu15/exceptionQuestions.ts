@@ -1401,6 +1401,954 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
       "ley-80-1993"
     ],
     "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-suspension-provisional-1",
+    "moduleId": "pgn-m27",
+    "relatedModuleIds": [
+      "pgn-m27",
+      "pgn-m30",
+      "pgn-m31"
+    ],
+    "scenarioId": "pgn-exception-suspension-provisional",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un instructor competente investiga una falta calificada provisionalmente como grave. Hay registros independientes de que el servidor continúa usando sus atribuciones para interferir en la conservación de documentos. Se acredita riesgo serio y la autoridad adopta motivadamente la suspensión provisional. La secretaría consulta al superior y pregunta si debe esperar su respuesta para ejecutar la medida.",
+    "stem": "¿Cuál es el efecto de la consulta sobre la ejecución de la suspensión provisional?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Diferir la ejecución hasta que el superior confirme la medida, pues una consulta pendiente impide la eficacia de cualquier auto interlocutorio.",
+        "rationale": "El art. 217 establece expresamente cumplimiento inmediato pese a la consulta."
+      },
+      {
+        "id": "b",
+        "text": "Cumplir inmediatamente la suspensión y tramitar la consulta, sin tratar la medida cautelar como una declaración definitiva de responsabilidad.",
+        "rationale": "La medida tiene finalidad cautelar y su control no suspende automáticamente la ejecución."
+      },
+      {
+        "id": "c",
+        "text": "Ejecutar la suspensión y sustituir la consulta por reposición si el servidor manifiesta desacuerdo dentro del plazo de impugnación.",
+        "rationale": "La reposición no reemplaza el grado de consulta legalmente previsto."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, arts. 217–218. La medida tiene finalidad cautelar y su control no suspende automáticamente la ejecución. El art. 217 establece expresamente cumplimiento inmediato pese a la consulta. La reposición no reemplaza el grado de consulta legalmente previsto.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-suspension-provisional-2",
+    "moduleId": "pgn-m27",
+    "relatedModuleIds": [
+      "pgn-m27",
+      "pgn-m30",
+      "pgn-m31"
+    ],
+    "scenarioId": "pgn-exception-suspension-provisional",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Dos meses después de decretarse una suspensión provisional, el despacho verifica que desaparecieron todos los motivos que la justificaban: se preservaron los soportes y el investigado ya no puede interferir ni continuar o reiterar la conducta. La investigación sigue pendiente y no existe fallo. La oficina quiere mantener la medida hasta agotar los tres meses iniciales.",
+    "stem": "¿Qué corresponde hacer respecto de la medida si sus motivos desaparecieron?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mantenerla hasta el vencimiento del término inicial, dejando que la decisión de prórroga determine si subsiste alguna razón para su continuidad.",
+        "rationale": "La duración máxima no sustituye la necesidad actual de la medida cautelar."
+      },
+      {
+        "id": "b",
+        "text": "Solicitar que el investigado renuncie a impugnar las futuras decisiones para poder levantar anticipadamente la suspensión sin afectar el trámite.",
+        "rationale": "La revocatoria no está condicionada a renunciar a garantías procesales."
+      },
+      {
+        "id": "c",
+        "text": "Revocarla por la autoridad habilitada, sin esperar al plazo inicial; continuar el proceso y examinar separadamente los efectos del reintegro.",
+        "rationale": "El art. 217 exige revocación cuando desaparecen los motivos; el art. 218 regula efectos específicos."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, arts. 217–218. El art. 217 exige revocación cuando desaparecen los motivos; el art. 218 regula efectos específicos. La duración máxima no sustituye la necesidad actual de la medida cautelar. La revocatoria no está condicionada a renunciar a garantías procesales.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-conflicto-disciplinario-1",
+    "moduleId": "pgn-m13",
+    "relatedModuleIds": [
+      "pgn-m13",
+      "pgn-m16",
+      "pgn-m23",
+      "pgn-m27"
+    ],
+    "scenarioId": "pgn-exception-conflicto-disciplinario",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Dos funcionarios disciplinarios del mismo nivel de la PGN tienen un superior común inmediato. El primero, mediante decisión motivada, remite una actuación al segundo por considerarse incompetente. El segundo también considera que no le corresponde y propone devolverla sin más. El expediente está en investigación y no hay regla especial distinta del artículo 99.",
+    "stem": "¿A quién debe remitirse el conflicto para impedir devoluciones sucesivas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remitir la actuación al superior común inmediato para que dirima la competencia, exponiendo las razones de la discrepancia entre funcionarios.",
+        "rationale": "El art. 99 establece el superior común inmediato en este supuesto especial."
+      },
+      {
+        "id": "b",
+        "text": "Remitirla al tribunal administrativo de la sede donde ocurrieron los hechos, aplicando el procedimiento general de conflictos administrativos territoriales.",
+        "rationale": "El CPACA general no desplaza el procedimiento disciplinario que regula este conflicto."
+      },
+      {
+        "id": "c",
+        "text": "Devolverla al primer funcionario para que continúe por prevención hasta que alguna de las partes interponga un recurso sobre competencia.",
+        "rationale": "La prevención no permite ignorar el trámite legal una vez suscitado el conflicto."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, art. 99. El art. 99 establece el superior común inmediato en este supuesto especial. El CPACA general no desplaza el procedimiento disciplinario que regula este conflicto. La prevención no permite ignorar el trámite legal una vez suscitado el conflicto.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-conflicto-disciplinario-2",
+    "moduleId": "pgn-m13",
+    "relatedModuleIds": [
+      "pgn-m13",
+      "pgn-m16",
+      "pgn-m23",
+      "pgn-m27"
+    ],
+    "scenarioId": "pgn-exception-conflicto-disciplinario",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un funcionario de nivel inferior recibe de su superior una actuación disciplinaria y considera, con razones jurídicas documentadas, que corresponde al despacho superior. El expediente conserva las decisiones de asignación. Un compañero recomienda promover conflicto negativo formal contra el superior para obligar a un tercero a decidir.",
+    "stem": "¿Qué vía prevé el artículo 99 para la discrepancia del inferior con su superior?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Promover conflicto negativo ante el superior común de ambos niveles, mediante el mismo procedimiento usado cuando dos funcionarios pares rechazan competencia.",
+        "rationale": "La ley excluye la promoción de conflicto del inferior frente al superior."
+      },
+      {
+        "id": "b",
+        "text": "Exponer las razones al superior para que resuelva de plano lo pertinente, sin promover conflicto de competencia contra él.",
+        "rationale": "El art. 99 permite exponer razones y atribuye al superior la resolución de plano."
+      },
+      {
+        "id": "c",
+        "text": "Solicitar una decisión del tribunal administrativo, pues la diferencia jerárquica impide aplicar la competencia interna de los órganos disciplinarios.",
+        "rationale": "La existencia de jerarquía no convierte el conflicto especial en uno general del CPACA."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, art. 99. El art. 99 permite exponer razones y atribuye al superior la resolución de plano. La ley excluye la promoción de conflicto del inferior frente al superior. La existencia de jerarquía no convierte el conflicto especial en uno general del CPACA.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-terminos-especiales-1",
+    "moduleId": "pgn-m27",
+    "relatedModuleIds": [
+      "pgn-m24",
+      "pgn-m26",
+      "pgn-m27",
+      "pgn-m29"
+    ],
+    "scenarioId": "pgn-exception-terminos-especiales",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una investigación ordinaria se inició contra un único servidor por una única falta. Al acercarse el sexto mes, queda pendiente un dictamen que el despacho ha justificado como capaz de modificar su situación jurídica. No existe pluralidad de faltas ni de disciplinables y no se investiga una infracción al DIDH o al DIH.",
+    "stem": "¿Qué extensión puede examinarse por la prueba pendiente descrita?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prorrogar hasta otros seis meses por complejidad técnica, considerando que todo dictamen pendiente configura pluralidad de actuaciones de investigación.",
+        "rationale": "La complejidad por sí sola no configura la pluralidad exigida para la prórroga ordinaria."
+      },
+      {
+        "id": "b",
+        "text": "Aplicar el término especial de dieciocho meses porque el uso de prueba técnica compromete el derecho fundamental al debido proceso.",
+        "rationale": "La regla especial DIDH/DIH no se activa por cualquier mención al debido proceso."
+      },
+      {
+        "id": "c",
+        "text": "Evaluar la extensión de hasta tres meses adicionales por prueba capaz de modificar la situación jurídica, motivando su necesidad.",
+        "rationale": "El inciso final del art. 213 contempla esa extensión probatoria específica."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, art. 213. El inciso final del art. 213 contempla esa extensión probatoria específica. La complejidad por sí sola no configura la pluralidad exigida para la prórroga ordinaria. La regla especial DIDH/DIH no se activa por cualquier mención al debido proceso.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-terminos-especiales-2",
+    "moduleId": "pgn-m27",
+    "relatedModuleIds": [
+      "pgn-m24",
+      "pgn-m26",
+      "pgn-m27",
+      "pgn-m29"
+    ],
+    "scenarioId": "pgn-exception-terminos-especiales",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una investigación por dos faltas contra dos disciplinables agotó el término ordinario y su prórroga válidamente concedida. También se agotaron los tres meses adicionales por una prueba potencialmente decisiva. La prueba fue practicada, pero el conjunto disponible no permite formular cargos. No existe otro supuesto especial aplicable.",
+    "stem": "¿Qué decisión corresponde al agotarse el término adicional sin prueba suficiente para cargos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Proyectar el archivo definitivo motivado conforme al artículo 213, dejando constancia del agotamiento del término y de la insuficiencia probatoria para formular cargos.",
+        "rationale": "La norma dispone archivo si vencido el término adicional no surge prueba para cargos."
+      },
+      {
+        "id": "b",
+        "text": "Abrir una nueva investigación por los mismos hechos para recuperar el término inicial, conservando las actuaciones del expediente anterior como antecedentes.",
+        "rationale": "Un nuevo expediente no permite eludir los límites del procedimiento ni la seguridad jurídica."
+      },
+      {
+        "id": "c",
+        "text": "Formular cargos para que el juzgador disponga de una nueva fase probatoria y determine si puede completarse la evidencia faltante.",
+        "rationale": "Formular cargos requiere el estándar del art. 222; no es mecanismo para suplir su ausencia."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, art. 213. La norma dispone archivo si vencido el término adicional no surge prueba para cargos. Un nuevo expediente no permite eludir los límites del procedimiento ni la seguridad jurídica. Formular cargos requiere el estándar del art. 222; no es mecanismo para suplir su ausencia.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-testigo-no-disponible-1",
+    "moduleId": "pgn-m41",
+    "relatedModuleIds": [
+      "pgn-m35",
+      "pgn-m37",
+      "pgn-m39",
+      "pgn-m41",
+      "pgn-m43"
+    ],
+    "scenarioId": "pgn-exception-testigo-no-disponible",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un testigo rindió declaración formal dentro de la investigación con observancia de las garantías aplicables y el defensor formuló preguntas. La grabación y el acta están íntegras. Meses después el testigo fallece, antes de que se evalúe el mérito de la investigación. Existen otros documentos pertinentes que permiten contrastar lo narrado.",
+    "stem": "¿Qué efecto produce el fallecimiento posterior sobre la declaración ya practicada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Excluir la declaración porque la imposibilidad de convocar nuevamente al testigo elimina la contradicción ya realizada durante su práctica original.",
+        "rationale": "La muerte posterior no invalida por sí misma una contradicción que ya tuvo lugar."
+      },
+      {
+        "id": "b",
+        "text": "Valorar el testimonio legalmente practicado y contradicho junto con las demás pruebas, dejando constancia del fallecimiento y de los límites de una eventual ampliación.",
+        "rationale": "La valoración conjunta permite considerar la declaración con su contexto y límites."
+      },
+      {
+        "id": "c",
+        "text": "Conferir valor concluyente a la declaración por haber fallecido el testigo, sin necesidad de examinar consistencia o fuentes de corroboración.",
+        "rationale": "La imposibilidad de ampliar no convierte la declaración en prueba concluyente."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, arts. 147, 154, 157–159. La valoración conjunta permite considerar la declaración con su contexto y límites. La muerte posterior no invalida por sí misma una contradicción que ya tuvo lugar. La imposibilidad de ampliar no convierte la declaración en prueba concluyente.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-testigo-no-disponible-2",
+    "moduleId": "pgn-m41",
+    "relatedModuleIds": [
+      "pgn-m35",
+      "pgn-m37",
+      "pgn-m39",
+      "pgn-m41",
+      "pgn-m43"
+    ],
+    "scenarioId": "pgn-exception-testigo-no-disponible",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un investigador recibe de un tercero una grabación de una conversación informal con una persona que falleció antes de ser citada. El archivo tiene origen identificado, pero no fue obtenido como testimonio procesal, no existe juramento ni interrogatorio y la defensa no pudo hacer preguntas al fallecido. Hay posibles fuentes documentales independientes.",
+    "stem": "¿Cómo debe tratarse la grabación sin fingir una garantía que no ocurrió?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Incorporarla como testimonio formal completo, dado que la muerte vuelve innecesarios los requisitos que normalmente se exigen al declarar ante autoridad.",
+        "rationale": "Una conversación informal no adquiere calidad de testimonio formal por el fallecimiento."
+      },
+      {
+        "id": "b",
+        "text": "Excluir todo archivo y todo documento relacionado únicamente por la muerte, sin analizar la naturaleza de los soportes ni su obtención.",
+        "rationale": "La muerte no determina por sí sola la exclusión de todas las fuentes relacionadas."
+      },
+      {
+        "id": "c",
+        "text": "Examinar la naturaleza y legalidad de la grabación, permitir contradicción sobre el soporte, explicitar la imposibilidad de interrogar al fallecido y buscar corroboración independiente.",
+        "rationale": "La valoración exige identificar el medio real y no afirmar una contradicción que no existió."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, arts. 147, 154, 157–159. La valoración exige identificar el medio real y no afirmar una contradicción que no existió. Una conversación informal no adquiere calidad de testimonio formal por el fallecimiento. La muerte no determina por sí sola la exclusión de todas las fuentes relacionadas.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-prevencion-emergencia-1",
+    "moduleId": "pgn-m45",
+    "relatedModuleIds": [
+      "pgn-m45",
+      "pgn-m46",
+      "pgn-m48",
+      "pgn-m49",
+      "pgn-m52"
+    ],
+    "scenarioId": "pgn-exception-prevencion-emergencia",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un municipio enfrenta una interrupción prolongada de agua potable que afecta a hogares vulnerables. La PGN recibe alertas verificables de que los planes de contingencia no se están ejecutando. La autoridad municipal tiene competencias y recursos para actuar; el profesional de apoyo dispone de indicadores, reportes sanitarios y contactos de organismos de control.",
+    "stem": "¿Qué respuesta preventiva permite atender el riesgo sin asumir la administración del servicio?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Activar seguimiento de mitigación, requerir medidas a responsables, coordinar remisiones pertinentes y verificar resultados con indicadores de cobertura, plazos y atención diferencial.",
+        "rationale": "La prevención puede actuar ante afectación actual y exigir respuesta dentro de competencias."
+      },
+      {
+        "id": "b",
+        "text": "Diseñar y ordenar directamente las rutas de abastecimiento y seleccionar proveedores temporales, porque la urgencia permite asumir funciones del municipio.",
+        "rationale": "La urgencia no transfiere las atribuciones administrativas y contractuales al profesional PGN."
+      },
+      {
+        "id": "c",
+        "text": "Limitarse a remitir la noticia disciplinaria y esperar una decisión sancionatoria antes de efectuar seguimiento a las medidas de contingencia.",
+        "rationale": "La eventual disciplina no impide una actuación preventiva paralela de mitigación."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Constitución, art. 277; Resolución PGN 132/2014; CGD, art. 219. La prevención puede actuar ante afectación actual y exigir respuesta dentro de competencias. La urgencia no transfiere las atribuciones administrativas y contractuales al profesional PGN. La eventual disciplina no impide una actuación preventiva paralela de mitigación.",
+    "sourceIds": [
+      "constitucion",
+      "pgn-res-132-2014",
+      "ley-1952-2019"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-prevencion-emergencia-2",
+    "moduleId": "pgn-m45",
+    "relatedModuleIds": [
+      "pgn-m45",
+      "pgn-m46",
+      "pgn-m48",
+      "pgn-m49",
+      "pgn-m52"
+    ],
+    "scenarioId": "pgn-exception-prevencion-emergencia",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "En diligencias disciplinarias a cargo de la PGN aparecen elementos que permiten inferir que la ejecución de un contrato vulnera el ordenamiento y puede causar perjuicio patrimonial. El contrato continúa activo. La autoridad disciplinaria estudia una actuación inmediata, pero el profesional sostiene que debe declarar por sí mismo la nulidad del contrato.",
+    "stem": "¿Qué facultad específica corresponde examinar en este supuesto disciplinario?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Declarar de oficio la nulidad contractual mediante el auto disciplinario, y ordenar directamente al supervisor liquidar el negocio jurídico.",
+        "rationale": "El art. 219 no atribuye una potestad general de anular contratos."
+      },
+      {
+        "id": "b",
+        "text": "Solicitar la suspensión de la ejecución en los términos del artículo 219, motivando el riesgo y respetando las competencias correspondientes.",
+        "rationale": "La regla permite solicitar suspensión durante diligencias disciplinarias para evitar efectos y perjuicios."
+      },
+      {
+        "id": "c",
+        "text": "Esperar a que se profiera fallo sancionatorio ejecutoriado, pues antes de esa decisión no puede solicitarse ninguna medida sobre el contrato.",
+        "rationale": "La facultad no exige una declaración definitiva de responsabilidad disciplinaria."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Constitución, art. 277; Resolución PGN 132/2014; CGD, art. 219. La regla permite solicitar suspensión durante diligencias disciplinarias para evitar efectos y perjuicios. El art. 219 no atribuye una potestad general de anular contratos. La facultad no exige una declaración definitiva de responsabilidad disciplinaria.",
+    "sourceIds": [
+      "constitucion",
+      "pgn-res-132-2014",
+      "ley-1952-2019"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-bienes-fiscal-1",
+    "moduleId": "pgn-m56",
+    "relatedModuleIds": [
+      "pgn-m22",
+      "pgn-m45",
+      "pgn-m54",
+      "pgn-m56"
+    ],
+    "scenarioId": "pgn-exception-bienes-fiscal",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Desaparece un portátil institucional asignado a un servidor para su trabajo. El inventario acredita la entrega, pero no se ha esclarecido quién autorizaba la disposición de bienes ni si el usuario ejercía actos propios de gestión fiscal. Existe una posible infracción de deberes de custodia y una alerta remitida a los organismos de control.",
+    "stem": "¿Qué análisis permite separar las eventuales responsabilidades por la pérdida?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Concluir responsabilidad fiscal del usuario por figurar como custodio, dejando la comprobación de sus atribuciones sobre bienes para la ejecución del fallo.",
+        "rationale": "La asignación material no acredita por sí sola el ejercicio de gestión fiscal."
+      },
+      {
+        "id": "b",
+        "text": "Tramitar únicamente la investigación disciplinaria, pues los bienes de uso administrativo no pueden generar responsabilidad fiscal aunque exista gestión fiscal.",
+        "rationale": "La naturaleza administrativa del bien no excluye responsabilidad fiscal si concurren los requisitos legales."
+      },
+      {
+        "id": "c",
+        "text": "Verificar daño, funciones de gestión fiscal, relación directa y demás presupuestos fiscales; examinar separadamente deber de custodia, conducta y culpabilidad disciplinaria.",
+        "rationale": "El art. 7 exige relación directa con actos propios de gestión fiscal; los regímenes tienen presupuestos distintos."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Ley 610/2000, arts. 5, 7 y 16; CGD, arts. 9–10. El art. 7 exige relación directa con actos propios de gestión fiscal; los regímenes tienen presupuestos distintos. La asignación material no acredita por sí sola el ejercicio de gestión fiscal. La naturaleza administrativa del bien no excluye responsabilidad fiscal si concurren los requisitos legales.",
+    "sourceIds": [
+      "ley-610-2000",
+      "ley-1952-2019"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-bienes-fiscal-2",
+    "moduleId": "pgn-m56",
+    "relatedModuleIds": [
+      "pgn-m22",
+      "pgn-m45",
+      "pgn-m54",
+      "pgn-m56"
+    ],
+    "scenarioId": "pgn-exception-bienes-fiscal",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "En un proceso fiscal por pérdida de bienes, se acredita mediante soportes que el daño investigado fue resarcido totalmente. Paralelamente, la PGN instruye una actuación por posible incumplimiento sustancial de deberes de custodia. La defensa solicita cerrar ambas actuaciones alegando que ya no existe saldo económico por recuperar.",
+    "stem": "¿Qué consecuencia debe diferenciarse entre las dos actuaciones?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aplicar el archivo fiscal si se verifica el resarcimiento total y evaluar autónomamente los presupuestos de responsabilidad en la actuación disciplinaria.",
+        "rationale": "El art. 16 contempla archivo fiscal por resarcimiento total; la disciplina protege deberes funcionales."
+      },
+      {
+        "id": "b",
+        "text": "Archivar ambas por desaparición del perjuicio económico, porque el daño patrimonial es requisito necesario de cualquier falta disciplinaria relacionada con bienes.",
+        "rationale": "La ilicitud disciplinaria no requiere necesariamente un daño patrimonial subsistente."
+      },
+      {
+        "id": "c",
+        "text": "Continuar el proceso fiscal para imponer una consecuencia punitiva por el hecho original, dejando el resarcimiento como criterio de graduación.",
+        "rationale": "El proceso fiscal tiene finalidad resarcitoria y la regla específica de archivo no se sustituye por castigo."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Ley 610/2000, arts. 5, 7 y 16; CGD, arts. 9–10. El art. 16 contempla archivo fiscal por resarcimiento total; la disciplina protege deberes funcionales. La ilicitud disciplinaria no requiere necesariamente un daño patrimonial subsistente. El proceso fiscal tiene finalidad resarcitoria y la regla específica de archivo no se sustituye por castigo.",
+    "sourceIds": [
+      "ley-610-2000",
+      "ley-1952-2019"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-control-interno-1",
+    "moduleId": "pgn-m57",
+    "relatedModuleIds": [
+      "pgn-m45",
+      "pgn-m56",
+      "pgn-m57"
+    ],
+    "scenarioId": "pgn-exception-control-interno",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una auditoría interna identifica pagos tramitados sin un soporte obligatorio. La gerencia propone que el jefe de control interno refrende cada pago futuro para asegurar que no se repita. El responsable financiero mantiene sus atribuciones y existe capacidad para incorporar una verificación previa en el propio proceso de pagos.",
+    "stem": "¿Qué diseño preserva la independencia del evaluador y fortalece el proceso?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Asignar al auditor interno la refrendación de cada pago mientras se normaliza la operación, con evaluación posterior a cargo de su oficina.",
+        "rationale": "La refrendación por el auditor está prohibida por el parágrafo del art. 12."
+      },
+      {
+        "id": "b",
+        "text": "Implementar controles operativos a cargo de responsables del proceso y mantener a control interno en evaluación independiente, recomendación y seguimiento de la eficacia.",
+        "rationale": "La administración aplica los controles; el evaluador conserva independencia para verificar su funcionamiento."
+      },
+      {
+        "id": "c",
+        "text": "Asignar al auditor interno la aprobación de los soportes y al área financiera únicamente el registro posterior de las decisiones adoptadas.",
+        "rationale": "Cambiar el nombre de la autorización no elimina la participación indebida del auditor."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Ley 87/1993, arts. 6 y 12. La administración aplica los controles; el evaluador conserva independencia para verificar su funcionamiento. La refrendación por el auditor está prohibida por el parágrafo del art. 12. Cambiar el nombre de la autorización no elimina la participación indebida del auditor.",
+    "sourceIds": [
+      "ley-87-1993",
+      "pgn-manual-calidad"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-control-interno-2",
+    "moduleId": "pgn-m57",
+    "relatedModuleIds": [
+      "pgn-m45",
+      "pgn-m56",
+      "pgn-m57"
+    ],
+    "scenarioId": "pgn-exception-control-interno",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un hallazgo por expedientes incompletos se cerró después de anexar los documentos faltantes. En el siguiente trimestre aparecen deficiencias iguales en trámites diferentes, pese a que todos los responsables recibieron una circular de recordatorio. El proceso no cuenta con verificación de campos obligatorios ni evaluación de eficacia del control.",
+    "stem": "¿Qué actuación de mejora corresponde ante la reiteración del hallazgo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cerrar nuevamente cada caso con la carga de documentos, manteniendo la circular como evidencia suficiente de acción correctiva institucional ejecutada.",
+        "rationale": "Completar documentos corrige el efecto, no acredita eliminación de la causa."
+      },
+      {
+        "id": "b",
+        "text": "Aumentar la frecuencia del informe de control sin modificar el procedimiento, porque detectar más expedientes incompletos demuestra eficacia preventiva.",
+        "rationale": "La detección más frecuente no demuestra que el riesgo esté siendo prevenido."
+      },
+      {
+        "id": "c",
+        "text": "Identificar la causa, ajustar controles del proceso, asignar responsables y medir si la recurrencia disminuye después de implementar la acción.",
+        "rationale": "La acción correctiva exige tratar causas y comprobar eficacia con evidencia posterior."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Ley 87/1993, arts. 6 y 12. La acción correctiva exige tratar causas y comprobar eficacia con evidencia posterior. Completar documentos corrige el efecto, no acredita eliminación de la causa. La detección más frecuente no demuestra que el riesgo esté siendo prevenido.",
+    "sourceIds": [
+      "ley-87-1993",
+      "pgn-manual-calidad"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-evidencia-inaccesible-1",
+    "moduleId": "pgn-m44",
+    "relatedModuleIds": [
+      "pgn-m37",
+      "pgn-m38",
+      "pgn-m44",
+      "pgn-m62",
+      "pgn-m64"
+    ],
+    "scenarioId": "pgn-exception-evidencia-inaccesible",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Se obtiene un respaldo cuya huella coincide con la registrada por el custodio en la fecha de adquisición. Al restaurarlo en un entorno de pruebas, el motor informa corrupción interna de una tabla que contiene datos relevantes. Existen copias anteriores y registros transaccionales parciales. El informe preliminar afirma que el hash garantiza que todos los datos son recuperables.",
+    "stem": "¿Qué conclusión y actuación distinguen integridad binaria de recuperabilidad?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Registrar la coincidencia de bytes respecto de la referencia, preservar la copia, probar recuperación aislada, buscar fuentes alternativas y documentar datos inaccesibles.",
+        "rationale": "La huella coincide con bytes de referencia, pero no verifica estructura ni capacidad de restauración."
+      },
+      {
+        "id": "b",
+        "text": "Declarar que la corrupción es posterior a la adquisición y atribuirla al custodio, dado que una huella coincidente garantiza datos internos válidos.",
+        "rationale": "Un archivo puede estar ya corrupto cuando se calculó la huella; no demuestra autoría ni momento."
+      },
+      {
+        "id": "c",
+        "text": "Certificar recuperación completa de la tabla a partir de la coincidencia de hash, dejando la restauración para cuando se requiera consultar registros.",
+        "rationale": "La recuperabilidad requiere comprobar efectivamente el acceso y consistencia de los datos."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: NIST SP 800-86; Ley 527/1999, arts. 9–12. La huella coincide con bytes de referencia, pero no verifica estructura ni capacidad de restauración. Un archivo puede estar ya corrupto cuando se calculó la huella; no demuestra autoría ni momento. La recuperabilidad requiere comprobar efectivamente el acceso y consistencia de los datos.",
+    "sourceIds": [
+      "nist-sp-800-86",
+      "ley-527-1999",
+      "ley-1952-2019"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-evidencia-inaccesible-2",
+    "moduleId": "pgn-m44",
+    "relatedModuleIds": [
+      "pgn-m37",
+      "pgn-m38",
+      "pgn-m44",
+      "pgn-m62",
+      "pgn-m64"
+    ],
+    "scenarioId": "pgn-exception-evidencia-inaccesible",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Durante una diligencia autorizada se obtiene un contenedor cifrado del sistema institucional. El custodio entrega la copia, pero no dispone de la clave en ese momento. El archivo y su huella pueden preservarse; existe una ruta institucional para solicitar acceso y otras fuentes de información disponibles. El despacho pide certificar que el contenedor no incluye registros relevantes.",
+    "stem": "¿Qué respuesta técnica refleja el alcance real del examen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Certificar ausencia de registros relevantes porque la herramienta de análisis no pudo leer el contenido y no produjo resultados al consultar.",
+        "rationale": "No poder leer el contenido no significa que el contenido esté vacío o sea irrelevante."
+      },
+      {
+        "id": "b",
+        "text": "Preservar el contenedor y huella, gestionar acceso autorizado, contrastar fuentes disponibles y declarar que el contenido aún no pudo examinarse.",
+        "rationale": "La preservación y documentación permiten mantener la fuente y gestionar acceso dentro de la autorización."
+      },
+      {
+        "id": "c",
+        "text": "Transformar el contenedor original a otro formato para facilitar su apertura y sustituir el soporte preservado por la nueva versión resultante.",
+        "rationale": "Modificar el original sin preservar su versión inicial compromete trazabilidad y reproducibilidad."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: NIST SP 800-86; Ley 527/1999, arts. 9–12. La preservación y documentación permiten mantener la fuente y gestionar acceso dentro de la autorización. No poder leer el contenido no significa que el contenido esté vacío o sea irrelevante. Modificar el original sin preservar su versión inicial compromete trazabilidad y reproducibilidad.",
+    "sourceIds": [
+      "nist-sp-800-86",
+      "ley-527-1999",
+      "ley-1952-2019"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-firma-terceros-1",
+    "moduleId": "pgn-m63",
+    "relatedModuleIds": [
+      "pgn-m40",
+      "pgn-m44",
+      "pgn-m60",
+      "pgn-m61",
+      "pgn-m63",
+      "pgn-m64"
+    ],
+    "scenarioId": "pgn-exception-firma-terceros",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un PDF firmado digitalmente hace dos años fue incorporado al expediente. El certificado aparece vencido al consultarlo hoy; existe un sello temporal verificable y documentación histórica de la cadena y estado de revocación. El archivo conserva la firma original. Un analista propone declarar falso el PDF únicamente por la fecha actual de vencimiento.",
+    "stem": "¿Qué comprobación corresponde antes de concluir sobre la validez de la firma?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rechazar la firma por la expiración actual del certificado y pedir al firmante que vuelva a firmar el PDF para darle validez retrospectiva.",
+        "rationale": "La expiración actual no determina automáticamente el estado del certificado en el momento de firma."
+      },
+      {
+        "id": "b",
+        "text": "Aceptar el PDF como auténtico por contener un sello temporal, sin validar la integridad, la cadena ni el estado del certificado al firmar.",
+        "rationale": "El sello temporal es un elemento que también debe verificarse y no sustituye los demás controles."
+      },
+      {
+        "id": "c",
+        "text": "Verificar integridad, sello temporal, cadena y estado histórico de revocación del certificado conforme a la política aplicable, dejando constancia de evidencias y límites.",
+        "rationale": "La validación histórica distingue fecha de análisis de fecha de firma con evidencia confiable."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Ley 527/1999, arts. 7–12, 28 y 35; NIST SP 800-92. La validación histórica distingue fecha de análisis de fecha de firma con evidencia confiable. La expiración actual no determina automáticamente el estado del certificado en el momento de firma. El sello temporal es un elemento que también debe verificarse y no sustituye los demás controles.",
+    "sourceIds": [
+      "ley-527-1999",
+      "nist-sp-800-92",
+      "nist-sp-800-86"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-firma-terceros-2",
+    "moduleId": "pgn-m63",
+    "relatedModuleIds": [
+      "pgn-m40",
+      "pgn-m44",
+      "pgn-m60",
+      "pgn-m61",
+      "pgn-m63",
+      "pgn-m64"
+    ],
+    "scenarioId": "pgn-exception-firma-terceros",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un proveedor de software en la nube entrega registros con hora UTC y retención de treinta días. La entidad conserva eventos locales expresados en hora de Colombia y registros de solicitudes del mismo sistema. Un intervalo está fuera de retención del proveedor. El analista interpreta la falta de eventos como prueba de que no ocurrió actividad en ese intervalo.",
+    "stem": "¿Qué tratamiento permite correlacionar los registros sin confundir ausencia de evidencia y ausencia de actividad?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Normalizar las marcas temporales, verificar retención y alcance de exportación, correlacionar identificadores y declarar el intervalo sin cobertura del proveedor.",
+        "rationale": "La normalización y cobertura deben verificarse antes de interpretar vacíos o asociar eventos."
+      },
+      {
+        "id": "b",
+        "text": "Convertir los registros locales a UTC y asumir que la ausencia del evento externo confirma que la solicitud nunca llegó al servicio.",
+        "rationale": "La conversión temporal no recupera registros que ya no están disponibles por retención."
+      },
+      {
+        "id": "c",
+        "text": "Usar únicamente la fuente del proveedor por ser externa e independiente, descartando todos los registros locales cuya zona horaria sea diferente.",
+        "rationale": "Una diferencia de zona horaria es tratable y no invalida por sí sola una fuente local."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Ley 527/1999, arts. 7–12, 28 y 35; NIST SP 800-92. La normalización y cobertura deben verificarse antes de interpretar vacíos o asociar eventos. La conversión temporal no recupera registros que ya no están disponibles por retención. Una diferencia de zona horaria es tratable y no invalida por sí sola una fuente local.",
+    "sourceIds": [
+      "ley-527-1999",
+      "nist-sp-800-92",
+      "nist-sp-800-86"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-excel-cruces-1",
+    "moduleId": "pgn-m66",
+    "relatedModuleIds": [
+      "pgn-m60",
+      "pgn-m62",
+      "pgn-m66",
+      "pgn-m67"
+    ],
+    "scenarioId": "pgn-exception-excel-cruces",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una tabla contiene una fila por expediente y un valor de 100 millones para el expediente A. La tabla de actuaciones contiene tres filas válidas asociadas a A. En Power Query se combinan ambas por expediente y se expanden las tres coincidencias. El tablero suma la columna original de valor y presenta 300 millones para A.",
+    "stem": "¿Qué corrección conserva las actuaciones sin multiplicar el valor del expediente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eliminar dos actuaciones duplicadas por identificador de expediente y conservar la restante para que la suma vuelva a cien millones.",
+        "rationale": "Las tres actuaciones son legítimas y no deben eliminarse solo por compartir identificador."
+      },
+      {
+        "id": "b",
+        "text": "Mantener la granularidad de actuaciones y calcular importes desde la tabla de expedientes o una agregación que no duplique su valor.",
+        "rationale": "La expansión uno a varios replica el importe; el cálculo debe respetar la unidad de análisis."
+      },
+      {
+        "id": "c",
+        "text": "Dividir todos los importes de la tabla resultante entre tres, aplicando ese factor a expedientes con cualquier número de actuaciones.",
+        "rationale": "El factor tres es particular de A y no corrige cardinalidades diferentes."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Microsoft Learn, Power Query: combinación y tipos de datos. La expansión uno a varios replica el importe; el cálculo debe respetar la unidad de análisis. Las tres actuaciones son legítimas y no deben eliminarse solo por compartir identificador. El factor tres es particular de A y no corrige cardinalidades diferentes.",
+    "sourceIds": [
+      "office-power-query-merge",
+      "office-power-query-types"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-excel-cruces-2",
+    "moduleId": "pgn-m66",
+    "relatedModuleIds": [
+      "pgn-m60",
+      "pgn-m62",
+      "pgn-m66",
+      "pgn-m67"
+    ],
+    "scenarioId": "pgn-exception-excel-cruces",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un archivo CSV estadounidense registra la fecha 03/04/2026 con formato mes/día/año. Un libro institucional usa día/mes/año. Al importar con configuración regional colombiana, el valor aparece como 3 de abril sin error de conversión. Se necesita calcular vencimientos y se conserva el texto original del CSV y su especificación de formato.",
+    "stem": "¿Cómo corregir la interpretación antes de calcular los términos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cambiar el formato visual de la fecha ya convertida a mes/día/año, confiando en que Excel ajustará el significado de la fecha almacenada.",
+        "rationale": "Cambiar formato de pantalla no modifica necesariamente el valor de fecha ya interpretado."
+      },
+      {
+        "id": "b",
+        "text": "Mantener la fecha importada porque ambos números son válidos y el motor no produjo un error que indique una conversión incorrecta.",
+        "rationale": "Una conversión válida sintácticamente puede representar una fecha distinta de la fuente."
+      },
+      {
+        "id": "c",
+        "text": "Reimportar el texto original con la configuración regional estadounidense, verificar que la fecha corresponda al 4 de marzo y documentar la conversión aplicada.",
+        "rationale": "El formato conocido permite interpretar correctamente el dato y conservar trazabilidad."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Microsoft Learn, Power Query: combinación y tipos de datos. El formato conocido permite interpretar correctamente el dato y conservar trazabilidad. Cambiar formato de pantalla no modifica necesariamente el valor de fecha ya interpretado. Una conversión válida sintácticamente puede representar una fecha distinta de la fuente.",
+    "sourceIds": [
+      "office-power-query-merge",
+      "office-power-query-types"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-datos-denominadores-1",
+    "moduleId": "pgn-m67",
+    "relatedModuleIds": [
+      "pgn-m66",
+      "pgn-m67",
+      "pgn-m68",
+      "pgn-m69"
+    ],
+    "scenarioId": "pgn-exception-datos-denominadores",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "La sede A resolvió oportunamente 90 de 100 solicitudes y la sede B, 5 de 10. Ambas usan la misma definición y las poblaciones no se superponen. El informe calcula el promedio simple de 90 % y 50 % y anuncia un cumplimiento global de 70 %. Se requiere informar la proporción sobre todas las solicitudes.",
+    "stem": "¿Qué cálculo representa el cumplimiento global del conjunto descrito?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sumar los numeradores y denominadores compatibles: 95 respuestas oportunas de 110 solicitudes, aproximadamente 86,36 %, informando también los resultados por sede.",
+        "rationale": "El denominador global es 110 y el numerador compatible es 95."
+      },
+      {
+        "id": "b",
+        "text": "Promediar 90 % y 50 % para obtener 70 %, porque ambas sedes deben tener el mismo peso como unidades organizacionales.",
+        "rationale": "El promedio simple describe una media entre sedes, no la proporción de solicitudes global."
+      },
+      {
+        "id": "c",
+        "text": "Dividir las 95 respuestas oportunas entre las 100 solicitudes de la sede mayor, porque esta representa la mayor parte de la población.",
+        "rationale": "Excluir el denominador de B mientras se incluye su numerador distorsiona la proporción."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Método estadístico descriptivo; Microsoft Excel y Power Query. El denominador global es 110 y el numerador compatible es 95. El promedio simple describe una media entre sedes, no la proporción de solicitudes global. Excluir el denominador de B mientras se incluye su numerador distorsiona la proporción.",
+    "sourceIds": [
+      "office-excel-sumifs",
+      "office-power-query-types"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-datos-denominadores-2",
+    "moduleId": "pgn-m67",
+    "relatedModuleIds": [
+      "pgn-m66",
+      "pgn-m67",
+      "pgn-m68",
+      "pgn-m69"
+    ],
+    "scenarioId": "pgn-exception-datos-denominadores",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un informe sobre tiempos de respuesta registra 80 expedientes con tiempo medido y 20 sin dato por una falla del sistema. El analista reemplaza los veinte vacíos con cero días y obtiene una media inferior a la anterior. No existe evidencia de que esos expedientes se hayan resuelto el mismo día ni de que los faltantes sean aleatorios.",
+    "stem": "¿Cómo informar el resultado sin convertir valores desconocidos en respuestas instantáneas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Imputar cero en los faltantes para mantener el denominador de cien y declarar que todos los expedientes están representados en la media.",
+        "rationale": "Cero es un valor observado o imputado bajo una hipótesis, no un dato desconocido."
+      },
+      {
+        "id": "b",
+        "text": "Calcular la media observada sobre los 80 casos, informar cobertura y faltantes, y revisar su posible sesgo antes de generalizar.",
+        "rationale": "El cálculo sobre casos observados debe acompañarse de cobertura y limitaciones de representatividad."
+      },
+      {
+        "id": "c",
+        "text": "Eliminar de la base original los veinte registros sin dato y publicar el resultado de los casos completos como promedio de toda la población.",
+        "rationale": "Eliminar registros oculta el faltante y no justifica generalizar el resultado."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Método estadístico descriptivo; Microsoft Excel y Power Query. El cálculo sobre casos observados debe acompañarse de cobertura y limitaciones de representatividad. Cero es un valor observado o imputado bajo una hipótesis, no un dato desconocido. Eliminar registros oculta el faltante y no justifica generalizar el resultado.",
+    "sourceIds": [
+      "office-excel-sumifs",
+      "office-power-query-types"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-dilemas-competencias-1",
+    "moduleId": "pgn-m72",
+    "relatedModuleIds": [
+      "pgn-m70",
+      "pgn-m71",
+      "pgn-m72",
+      "pgn-m73"
+    ],
+    "scenarioId": "pgn-exception-dilemas-competencias",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una coordinación necesita un informe de resultados antes de una reunión. La mayoría de las cifras está validada, pero dos indicadores requieren cotejo con otra dependencia y el procedimiento exige revisión antes de publicación. Existe posibilidad de entregar un avance interno claramente identificado y acordar una fecha breve para el informe definitivo. El equipo dispone de apoyo temporal.",
+    "stem": "¿Qué conducta integra mejor orientación a resultados y cumplimiento de parámetros en este ejercicio formativo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Concentrar recursos en terminar el informe definitivo y pedir aplazar la reunión, evitando entregar cualquier avance hasta concluir todas las verificaciones.",
+        "rationale": "Aplazar puede ser razonable, pero no aprovecha la alternativa permitida para atender la necesidad inmediata."
+      },
+      {
+        "id": "b",
+        "text": "Entregar un avance interno con cifras validadas y mantener la programación inicial de revisiones, esperando que la otra dependencia responda por su canal habitual.",
+        "rationale": "El avance es útil, pero mantener sin ajuste la programación no aborda el riesgo de demora."
+      },
+      {
+        "id": "c",
+        "text": "Acordar un avance interno verificable, reorganizar recursos disponibles y coordinar el cotejo pendiente con responsables y plazo para la entrega definitiva conforme al procedimiento.",
+        "rationale": "Combina entrega útil, gestión proactiva de recursos, coordinación y cumplimiento de controles."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Diccionario de competencias PGN: Orientación a Resultados A y Cumplimiento de Parámetros B. Combina entrega útil, gestión proactiva de recursos, coordinación y cumplimiento de controles. Aplazar puede ser razonable, pero no aprovecha la alternativa permitida para atender la necesidad inmediata. El avance es útil, pero mantener sin ajuste la programación no aborda el riesgo de demora.",
+    "sourceIds": [
+      "pgn-diccionario-competencias",
+      "pgn-convocatoria-104-v4"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-dilemas-competencias-2",
+    "moduleId": "pgn-m72",
+    "relatedModuleIds": [
+      "pgn-m70",
+      "pgn-m71",
+      "pgn-m72",
+      "pgn-m73"
+    ],
+    "scenarioId": "pgn-exception-dilemas-competencias",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una oficina supera su meta de número de expedientes revisados, pero una muestra revela que los tiempos de revisión bajaron a costa de omitir comprobaciones que luego generan reprocesos. La coordinación solicita mantener la productividad. El profesional puede analizar causas, proponer ajustes de flujo y acordar indicadores de calidad sin reducir el objetivo institucional.",
+    "stem": "¿Qué conducta desarrolla mejor un resultado sostenible dentro de parámetros?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Analizar causas y reprocesos, acordar mejoras del flujo y medir productividad y calidad para sostener metas exigentes sin omitir controles.",
+        "rationale": "Integra meta, calidad, recursos y mejora verificable, sin sacrificar parámetros."
+      },
+      {
+        "id": "b",
+        "text": "Reforzar la revisión de calidad mediante una segunda revisión de todos los expedientes, manteniendo el flujo y los recursos actuales sin evaluar capacidad.",
+        "rationale": "Una segunda revisión puede ayudar, pero no analiza causa ni capacidad y puede aumentar reproceso."
+      },
+      {
+        "id": "c",
+        "text": "Mantener el indicador de volumen y añadir un reporte de errores separado, dejando los cambios del proceso para la evaluación anual.",
+        "rationale": "Reportar errores mejora visibilidad, pero posterga una acción de mejora disponible ahora."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Diccionario de competencias PGN: Orientación a Resultados A y Cumplimiento de Parámetros B. Integra meta, calidad, recursos y mejora verificable, sin sacrificar parámetros. Una segunda revisión puede ayudar, pero no analiza causa ni capacidad y puede aumentar reproceso. Reportar errores mejora visibilidad, pero posterga una acción de mejora disponible ahora.",
+    "sourceIds": [
+      "pgn-diccionario-competencias",
+      "pgn-convocatoria-104-v4"
+    ],
+    "verifiedAt": "2026-11-23"
   }
 ]
 
@@ -1608,6 +2556,138 @@ const lessons = [
       "Hallazgo fiscal sobre uso indebido: posible solicitud de investigación y traslado, no fallo disciplinario anticipado."
     ],
     "sourceId": "ley-80-1993"
+  },
+  {
+    "moduleId": "pgn-m27",
+    "title": "Suspensión provisional y desaparición del riesgo",
+    "article": "CGD, arts. 217–218",
+    "rule": "En investigación o juzgamiento por faltas graves o gravísimas, la autoridad puede suspender motivadamente al servidor sin remuneración si existen elementos serios de riesgo de interferencia, continuación o reiteración. Tres meses prorrogables hasta otro tanto; otros tres tras fallo de primera o única instancia. Auto y prórrogas sujetos a consulta sin perjuicio de cumplimiento inmediato. Revocar cuando desaparezcan los motivos; distinguir reintegro y remuneraciones en los supuestos del art. 218.",
+    "contrast": [
+      "Riesgo serio acreditado: evaluar medida motivada y consulta, sin anticipar responsabilidad.",
+      "Motivos desaparecidos: revocar; no mantener la medida hasta el término por simple inercia."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m13",
+    "title": "Conflicto disciplinario y relación jerárquica",
+    "article": "CGD, art. 99",
+    "rule": "El conflicto especial se tramita con el funcionario que recibe la actuación y, si no acepta competencia, ante el superior común inmediato. El inferior no puede promover conflicto al superior, pero puede exponer sus razones para que este resuelva de plano. No trasladar automáticamente la regla del art. 39 CPACA al proceso disciplinario.",
+    "contrast": [
+      "Dos funcionarios del mismo nivel rechazan competencia: superior común inmediato.",
+      "Inferior discrepa del superior: expone razones, sin promover conflicto contra este."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m27",
+    "title": "Términos de investigación y prueba decisiva pendiente",
+    "article": "CGD, art. 213",
+    "rule": "Investigación ordinaria de seis meses; posible prórroga hasta otro tanto por varias faltas o dos o más disciplinables en la misma actuación. En infracciones al DIDH o DIH, límite de dieciocho meses. Si faltan pruebas que pueden modificar la situación jurídica, el art. 213 permite hasta tres meses adicionales; verificar requisitos, motivación y prescripción. Si vencido ese término no surge prueba que permita formular cargos, procede archivo definitivo.",
+    "contrast": [
+      "Pluralidad real de faltas o disciplinables: examinar prórroga ordinaria motivada.",
+      "Prueba decisiva pendiente: evaluar la extensión adicional específica, no una prórroga genérica por carga laboral."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m41",
+    "title": "Fallecimiento del testigo y contradicción imposible",
+    "article": "CGD, arts. 147, 154, 157–159",
+    "rule": "La muerte de un testigo no anula automáticamente una declaración válidamente practicada y controvertida. Distinguir esa prueba de una manifestación informal no recibida como testimonio ni sometida a contradicción. Preservar documentos, evaluar naturaleza, legalidad, oportunidad de contradicción y corroboración; no convertir una entrevista privada en testimonio procesal por la sola imposibilidad de repetirla.",
+    "contrast": [
+      "Testimonio practicado legalmente y controvertido antes del fallecimiento: valorar junto a las demás pruebas.",
+      "Relato informal sin contradicción: examinar naturaleza, admisibilidad y límites, buscar corroboración."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m45",
+    "title": "Mitigación de emergencia y solicitud de suspensión",
+    "article": "Constitución, art. 277; Resolución PGN 132/2014; CGD, art. 219",
+    "rule": "La prevención distingue anticipación, mitigación/restitución y orientación. Ante amenaza actual, requerir actuación de responsables, verificar respuesta y coordinar remisiones sin sustituir gestión. Diferenciar la vigilancia preventiva general de la facultad del art. 219: en diligencias disciplinarias PGN o personerías pueden solicitar suspensión de procedimientos, actos, contratos o ejecución ante indicios legales, sin asumir la competencia decisoria del administrador.",
+    "contrast": [
+      "Amenaza actual: actuación preventiva de mitigación y seguimiento a competentes.",
+      "Diligencia disciplinaria con riesgo legal o patrimonial: examinar solicitud de suspensión del art. 219."
+    ],
+    "sourceId": "constitucion"
+  },
+  {
+    "moduleId": "pgn-m56",
+    "title": "Pérdida de bienes y resarcimiento fiscal",
+    "article": "Ley 610/2000, arts. 5, 7 y 16; CGD, arts. 9–10",
+    "rule": "La pérdida o daño distinto del desgaste natural de bienes en servicio o no dados de baja requiere relación directa con actos propios de gestión fiscal para derivar responsabilidad fiscal (art. 7). Examinar daño, conducta y nexo; la guarda material no basta para identificar gestor fiscal. Resarcimiento total acreditado permite archivo fiscal según art. 16; no extingue automáticamente una acción disciplinaria autónoma.",
+    "contrast": [
+      "Pérdida de bien: verificar funciones de gestión fiscal y deberes individuales de custodia.",
+      "Resarcimiento total: efecto fiscal específico, sin automatizar el cierre disciplinario."
+    ],
+    "sourceId": "ley-610-2000"
+  },
+  {
+    "moduleId": "pgn-m57",
+    "title": "Independencia de control interno y fallas reiteradas",
+    "article": "Ley 87/1993, arts. 6 y 12",
+    "rule": "Control interno evalúa y recomienda, no autoriza ni refrenda procedimientos administrativos. La responsabilidad de aplicar controles corresponde también a jefes de dependencias. Diferenciar corregir un hallazgo concreto de eliminar su causa mediante acción correctiva y comprobar eficacia posterior.",
+    "contrast": [
+      "Control interno detecta riesgo: evaluar, recomendar y seguir; la administración ejecuta controles.",
+      "Hallazgo repetido tras corrección: investigar causa, rediseñar control y comprobar eficacia."
+    ],
+    "sourceId": "ley-87-1993"
+  },
+  {
+    "moduleId": "pgn-m44",
+    "title": "Respaldo dañado, cifrado y preservación",
+    "article": "NIST SP 800-86; Ley 527/1999, arts. 9–12",
+    "rule": "Una copia con hash coincidente no prueba que sus archivos sean recuperables. Preservar el original, verificar restauración en entorno aislado y explorar fuentes independientes. Un contenedor cifrado puede ser preservado sin acceso a su contenido: documentar huella, permisos, limitaciones y gestionar claves por vía autorizada. No equiparar inaccesibilidad, alteración y ausencia de evidencia.",
+    "contrast": [
+      "Respaldo íntegro pero ilegible: comprobar recuperabilidad y otras fuentes.",
+      "Contenedor cifrado: preservar bytes, buscar acceso autorizado y declarar límites."
+    ],
+    "sourceId": "nist-sp-800-86"
+  },
+  {
+    "moduleId": "pgn-m63",
+    "title": "Certificados vencidos, tiempos y servicios de terceros",
+    "article": "Ley 527/1999, arts. 7–12, 28 y 35; NIST SP 800-92",
+    "rule": "El vencimiento actual de un certificado no prueba que la firma fuese inválida al generarse. Verificar integridad, cadena, estado de revocación, fecha de firma respaldada por fuente confiable y política aplicable; si no hay evidencia histórica suficiente, declarar incertidumbre. En registros de proveedor externo, identificar zona horaria, reloj, ventana de retención, alcance, procedencia y trazabilidad de exportación; no inferir autoría solo por una marca temporal.",
+    "contrast": [
+      "Certificado expirado hoy: comprobar validez histórica y evidencia temporal.",
+      "Logs de tercero: verificar tiempo, cobertura y relación con fuentes internas."
+    ],
+    "sourceId": "ley-527-1999"
+  },
+  {
+    "moduleId": "pgn-m66",
+    "title": "Cruces de tablas, duplicados y fechas ambiguas",
+    "article": "Microsoft Learn, Power Query: combinación y tipos de datos",
+    "rule": "Antes de combinar tablas, definir unidad de análisis, clave y cardinalidad. Una relación uno a varios puede multiplicar filas al expandir coincidencias y duplicar importes. Duplicados de identificador pueden ser eventos legítimos. Convertir fechas con configuración regional explícita y conservar el valor original para auditoría.",
+    "contrast": [
+      "Una clave con dos coincidencias: comprobar granularidad y reconciliar totales tras expandir.",
+      "Fecha 03/04/2026: verificar formato de origen antes de interpretar mes y día."
+    ],
+    "sourceId": "office-power-query-merge"
+  },
+  {
+    "moduleId": "pgn-m67",
+    "title": "Promedios ponderados y datos ausentes",
+    "article": "Método estadístico descriptivo; Microsoft Excel y Power Query",
+    "rule": "Para combinar tasas, sumar numeradores y denominadores cuando las poblaciones son compatibles y disjuntas; promedio simple de tasas solo equivale al global con tamaños iguales. No confundir datos faltantes con cero. Reportar cobertura, reglas de exclusión, sensibilidad y límites del resultado.",
+    "contrast": [
+      "Tasas de grupos de tamaños distintos: ponderar por denominadores.",
+      "Datos sin respuesta: cuantificar faltantes, no imputar cero sin justificación."
+    ],
+    "sourceId": "office-excel-sumifs"
+  },
+  {
+    "moduleId": "pgn-m72",
+    "title": "Resultados bajo presión y parámetros institucionales",
+    "article": "Diccionario de competencias PGN: Orientación a Resultados A y Cumplimiento de Parámetros B",
+    "rule": "Ejercicios formativos, no escala psicométrica. Orientación a resultados de nivel A requiere metas exigentes y administración de recursos; cumplimiento de parámetros B integra criterios y objetivos con procedimientos. Ante presión, buscar alternativas permitidas, acordar prioridades y advertir límites. Distinguir desempeño rápido de resultado sostenible y calidad verificable.",
+    "contrast": [
+      "Plazo exigente con control pendiente: reorganizar recursos y acordar entrega verificable.",
+      "Resultado parcial con incertidumbre: comunicar alcance y gestionar validación, sin ocultar límites."
+    ],
+    "sourceId": "pgn-diccionario-competencias"
   }
 ]
 export function exceptionLessonSources(moduleId: string): string[] {

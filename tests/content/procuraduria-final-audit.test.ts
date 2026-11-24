@@ -11,12 +11,12 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
   it('audita todo el banco sin confundir señales editoriales con validez psicométrica', () => {
     const pool = practiceQuestionPool(course)
     const audit = auditPgnBank(pool, new Set(course.sources.map(s => s.id)))
-    expect(audit.total).toBe(1134)
-    expect(audit.authored).toBe(369)
+    expect(audit.total).toBe(1158)
+    expect(audit.authored).toBe(393)
     expect(audit.generated).toBe(765)
     expect(audit.missingSource).toEqual([])
     expect(audit.invalidOptions).toEqual([])
-    expect(audit.displayedCorrectPositions.reduce((a,b)=>a+b,0)).toBe(1134)
+    expect(audit.displayedCorrectPositions.reduce((a,b)=>a+b,0)).toBe(1158)
     console.info('PGN_BANK_AUDIT', JSON.stringify({
       total: audit.total, authored: audit.authored, generated: audit.generated,
       weakRationale: audit.weakRationale.length, shortStem: audit.shortStem.length,
@@ -77,6 +77,14 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
       expect(audit.lengthOutlier, id).not.toContain(id)
     }
   })
+  it('equilibra nueve transferencias disciplinarias señaladas sin cambiar sus claves', () => {
+    const expected = {"pgn-m19-transfer-1":"b","pgn-m21-transfer-1":"c","pgn-m23-transfer-1":"a","pgn-m24-transfer-2":"b","pgn-m25-transfer-2":"a","pgn-m26-transfer-1":"a","pgn-m26-transfer-2":"c","pgn-m27-transfer-1":"c","pgn-m28-transfer-1":"b"}
+    const audit = auditPgnBank(practiceQuestionPool(course), new Set(course.sources.map(s=>s.id)))
+    for (const [id,key] of Object.entries(expected)) {
+      expect(course.questions.find(q=>q.id===id)?.correctOptionId,id).toBe(key)
+      expect(audit.lengthOutlier,id).not.toContain(id)
+    }
+  })
   it('mantiene cobertura de casos redactados en los 85 módulos', () => {
     const pool = practiceQuestionPool(course).filter(isPgnAuthored)
     for (const m of course.modules) for (const suffix of ['situational-1','transfer-1','transfer-2']) {
@@ -100,13 +108,16 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
         if (profile.id==='functional-deep') expect(qs.every(q=>q.difficulty>=4)).toBe(true)
         expect(new Set(integrated.map(q=>q.scenarioId)).size).toBeGreaterThanOrEqual(Math.min(4,profile.integratedTarget ?? 0))
       }
-      if (profile.kind === 'behavior') expect(qs.every(q=>isPgnBehavior(q.moduleId))).toBe(true)
+      if (profile.kind === 'behavior') {
+        expect(qs.every(q=>isPgnBehavior(q.moduleId))).toBe(true)
+        expect(qs.filter(isPgnException).length).toBeGreaterThanOrEqual(2)
+      }
       if (profile.kind === 'systems') expect(qs.every(q=>pgnSystemsModuleIds.includes(q.moduleId))).toBe(true)
       if (profile.kind === 'transversal') expect(qs.every(q=>!isPgnBehavior(q.moduleId) && !pgnSystemsModuleIds.includes(q.moduleId))).toBe(true)
     }
   })
   it('excluye especialidades condicionales de adaptativa, conserva el banco y deja DIAN intacto', () => {
-    const qs = buildAdaptiveSession(course, undefined, 1134, 17)
+    const qs = buildAdaptiveSession(course, undefined, 1158, 17)
     expect(qs.every(q=>!isPgnConditional(q.moduleId))).toBe(true)
     expect(practiceQuestionPool(course).some(q=>isPgnConditional(q.moduleId))).toBe(true)
     expect(practiceQuestionPool(dianGestorCourse)).toBe(dianGestorCourse.questions)

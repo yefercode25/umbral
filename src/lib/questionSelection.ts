@@ -257,7 +257,9 @@ export function selectExamQuestions(course: Course, profileId: ExamProfileId): Q
   if (course.id === PGN_COURSE_ID) {
     const authored = available.filter(isPgnAuthored)
     if (profile.kind === 'behavior') {
-      return shuffle(selectPgnDiverse(authored.filter(q => pgnBehaviorModuleIds.includes(q.moduleId)), profile.size))
+      const pool = authored.filter(q => pgnBehaviorModuleIds.includes(q.moduleId))
+      const advanced = selectPgnDiverse(pool.filter(isPgnException), Math.min(2, profile.size))
+      return shuffle(selectPgnDiverse(pool, profile.size, advanced))
     }
     if (profile.kind === 'systems') {
       return shuffle(selectPgnDiverse(authored.filter(q => pgnSystemsModuleIds.includes(q.moduleId)), profile.size))
