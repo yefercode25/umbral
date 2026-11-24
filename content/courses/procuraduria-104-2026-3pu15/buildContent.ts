@@ -20,6 +20,8 @@ import { auditedModuleBlocksM55M64, auditedModuleSourcesM55M64 } from './audited
 import { auditedModuleBlocksM65M74, auditedModuleSourcesM65M74 } from './auditedModulesM65M74'
 import { auditedModuleBlocksM75M84, auditedModuleSourcesM75M84 } from './auditedModulesM75M84'
 
+import { exceptionLessonBlocks } from './exceptionQuestions'
+
 const ACCENT = '#5F9E80'
 const VERIFIED_AT = '2026-09-14'
 
@@ -1133,6 +1135,7 @@ function buildLessons(blueprint: ProcuraduriaModuleBlueprint): Lesson[] {
        ...auditedModuleBlocksM55M64(blueprint.id, 3),
        ...auditedModuleBlocksM65M74(blueprint.id, 3),
        ...auditedModuleBlocksM75M84(blueprint.id, 3),
+      ...exceptionLessonBlocks(blueprint.id),
       { type: 'tip', title: 'Señal de dominio', text: `Dominas este módulo cuando puedes explicar por qué “${blueprint.distractors[0] ?? 'el atajo más intuitivo'}” resulta tentador, qué presupuesto ignora y qué hecho adicional podría cambiar legítimamente la respuesta.` },
       { type: 'checkpoint', questionId: q5 },
       { type: 'checkpoint', questionId: q6 },

@@ -11,5 +11,5 @@ import type { Course, Question } from '../types/course'
  */
 export function practiceQuestionPool(course: Course): Question[] {
   if (course.id !== 'procuraduria-104-2026-3pu15') return course.questions
-  return course.questions.filter((question) => question.integrated || question.id.includes('-situational-') || question.id.includes('-transfer-') || question.id.startsWith('pgn-dossier-'))
+  return course.questions.filter((question) => question.integrated || question.id.includes('-situational-') || question.id.includes('-transfer-') || question.id.startsWith('pgn-dossier-') || question.id.startsWith('pgn-exception-'))
 }
