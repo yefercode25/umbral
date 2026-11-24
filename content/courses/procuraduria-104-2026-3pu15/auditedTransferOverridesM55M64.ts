@@ -4,7 +4,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
   "pgn-m55": [
     {
       "caseText": "Un municipio de 22.000 habitantes aprueba su plan de desarrollo cuatrienal e incluye un proyecto de expansión urbana. La oficina afirma que el acuerdo del plan modifica automáticamente el uso del suelo. El expediente contiene el EOT anterior, pero no acredita revisión de determinantes, concertación ambiental ni modificación formal del instrumento. La Procuraduría recibe una solicitud de vigilancia preventiva.",
-      "stem": "¿Qué debe comprobarse?",
+      "stem": "¿Qué debe comprobar la PGN para diferenciar la decisión del plan de desarrollo de una modificación jurídicamente válida del ordenamiento?",
       "correct": {
         "text": "Distinguir plan de desarrollo y EOT, verificar instrumento vigente, procedimiento, determinantes y autoridad competente.",
         "reason": "Los instrumentos tienen objetos y procedimientos diferentes."
@@ -24,7 +24,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
     },
     {
       "caseText": "Una alcaldía propone habilitar suelo de expansión. Una determinante ambiental vigente restringe parte del área; las capas digitales tienen sistemas de coordenadas diferentes. El informe no contiene metadatos ni fecha de los planos. El operador preventivo debe explicar la discrepancia sin decidir por sí mismo el destino de los predios ni atribuir una infracción al servidor.",
-      "stem": "¿Cuál análisis corresponde?",
+      "stem": "¿Cómo contrastar la determinante ambiental y las fuentes cartográficas sin sustituir a las autoridades competentes?",
       "correct": {
         "text": "Comprobar actos y alcance de la determinante, normalizar referencias cartográficas y solicitar aclaración a las autoridades.",
         "reason": "El art. 10 establece jerarquía en ámbitos competenciales."
@@ -46,7 +46,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
   "pgn-m56": [
     {
       "caseText": "Una procuraduría revisa el MIPG de un municipio y prepara un diagnóstico de su gestión interna. Un consultor utiliza idéntica lista de obligaciones para ambas entidades y no consulta el artículo sobre ámbito de aplicación. El equipo posee el SGC institucional y el modelo MIPGN, pero se propone omitirlos porque las dos instituciones administran recursos públicos y pertenecen al Estado.",
-      "stem": "¿Cómo ajustar el diagnóstico?",
+      "stem": "¿Cómo distinguir las obligaciones de gestión y control interno aplicables al municipio y al organismo de control?",
       "correct": {
         "text": "Diferenciar MIPG ejecutivo, política de control interno y políticas aplicables a organismos de control; revisar MIPGN.",
         "reason": "El Decreto 1499 distingue ámbitos y aplicabilidad."
@@ -66,7 +66,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
     },
     {
       "caseText": "El tablero mensual identifica 25 peticiones cuyo término vence en el período. Diez fueron respondidas oportunamente dentro de ese universo y ocho respuestas adicionales corresponden a solicitudes exigibles el próximo mes. La ficha define oportunidad sobre las 25 peticiones exigibles. La coordinación reporta 100 % porque todas las respuestas tramitadas fueron oportunas y propone cerrar el seguimiento.",
-      "stem": "¿Qué cálculo corresponde?",
+      "stem": "¿Qué porcentaje de oportunidad corresponde a la población definida en la ficha y cómo deben tratarse las respuestas de otro período?",
       "correct": {
         "text": "10/25 = 40 %; separar las ocho respuestas de otro período y verificar los quince restantes.",
         "reason": "La ficha establece numerador y denominador."
@@ -88,7 +88,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
   "pgn-m57": [
     {
       "caseText": "Cada semana se registran solicitudes duplicadas porque dos operadores pueden crear simultáneamente la misma entrada. La oficina elimina duplicados de forma manual y cierra la acción de mejora cada vez. El aplicativo conserva información para analizar concurrencia y existe un ambiente de pruebas autorizado. El equipo no ha evaluado causa, validación de unicidad ni recurrencia después de los ajustes.",
-      "stem": "¿Qué acción aborda el problema?",
+      "stem": "¿Qué acción permite corregir las duplicidades y comprobar que el control implementado evita su recurrencia?",
       "correct": {
         "text": "Corregir con trazabilidad, analizar causa, implantar control validado y medir recurrencia.",
         "reason": "La acción correctiva aborda causa y verifica eficacia."
@@ -108,7 +108,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
     },
     {
       "caseText": "Una auditoría comprueba que el equipo usó una guía descargada meses atrás. En el repositorio hay una versión aprobada antes de la actuación, con cambios de revisión. La jefatura considera suficiente que la guía antigua esté firmada. No se acredita transición que permita su uso y se conservan las dos versiones y los registros de los documentos producidos durante el período.",
-      "stem": "¿Qué sustenta el hallazgo?",
+      "stem": "¿Qué verificación documental permite determinar la no conformidad y corregir el acceso a versiones obsoletas?",
       "correct": {
         "text": "Verificar vigencia temporal, comparar requisito y evidencia, y corregir acceso a documentos obsoletos.",
         "reason": "Vigencia y aplicabilidad temporal requieren comprobación."
@@ -130,7 +130,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
   "pgn-m58": [
     {
       "caseText": "Al terminar un trámite, la oficina genera una lista de archivos distribuidos entre correos, carpetas y radicación. Declara cerrado el expediente sin incorporar documentos al SGDEA, sin metadatos ni índice firmado. La serie está identificada en CCD y TRD y los soportes originales permanecen disponibles. El encargado propone conservar solo enlaces que permiten ver los archivos actuales.",
-      "stem": "¿Qué debe realizarse?",
+      "stem": "¿Qué actuación permite conformar y cerrar el expediente electrónico conforme al instrumento archivístico aplicable?",
       "correct": {
         "text": "Conformar expediente en SGDEA, comprobar relaciones, orden y metadatos y firmar índice al cierre.",
         "reason": "El Acuerdo 001 regula conformación, índice y cierre."
@@ -150,7 +150,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
     },
     {
       "caseText": "Un informe existe como borrador por correo, versión aprobada e incorporada al expediente y copia descargada después con fecha de modificación posterior. El profesional debe citar el documento que sustentó una decisión. Los tres archivos tienen nombres similares y el despacho dispone del índice y registros de aprobación, pero propone escoger la copia con fecha de sistema más reciente.",
-      "stem": "¿Cómo identificar la versión pertinente?",
+      "stem": "¿Cómo identificar la versión documental que realmente sustentó la decisión sin confundir fecha de descarga con aprobación?",
       "correct": {
         "text": "Contrastar radicación, aprobación e índice; citar versión incorporada y preservar historial.",
         "reason": "La trazabilidad acredita versión usada en la actuación."
@@ -172,7 +172,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
   "pgn-m59": [
     {
       "caseText": "Un escrito solicita copias de documentos públicos y un concepto general sobre una norma de competencia de la entidad. La ventanilla registra todo como consulta y asigna treinta días. Los documentos están disponibles, no presentan reserva y ambos componentes pueden separarse. La dependencia conoce el radicado y está en condiciones de controlar los términos individuales sin retrasar la respuesta documental.",
-      "stem": "¿Qué términos se aplican?",
+      "stem": "¿Cómo clasificar y responder los componentes de la petición sin aplicar un término único a solicitudes de distinta naturaleza?",
       "correct": {
         "text": "Diez días para documentos y treinta para consulta, salvo regla especial, con respuesta de fondo y constancias.",
         "reason": "El art. 14 diferencia términos según objeto."
@@ -192,7 +192,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
     },
     {
       "caseText": "Una oficina recibe por escrito una petición ajena a sus atribuciones. Identifica al competente el segundo día y conserva anexos y datos de contacto. El responsable desea esperar quince días y pedir al ciudadano que radique nuevamente, aunque puede remitir la petición por un canal institucional seguro. La otra autoridad confirma que dispone de un canal formal para recibir el expediente.",
-      "stem": "¿Cuál trámite exige el art. 21?",
+      "stem": "¿Qué trámite de información y remisión debe surtir la autoridad incompetente conforme al artículo 21?",
       "correct": {
         "text": "Informar y remitir dentro de cinco días, enviar copia del oficio remisorio y controlar término desde día siguiente a recepción competente.",
         "reason": "La remisión por competencia tiene regla propia."
@@ -214,7 +214,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
   "pgn-m60": [
     {
       "caseText": "La cuenta de un servidor retirado hace dos semanas sigue activa y registra una consulta posterior al retiro. Hay sesiones persistentes y varias personas conocían credenciales de una cuenta funcional asociada. El jefe exige borrar la cuenta y su historial y atribuir la consulta al exservidor por el nombre de usuario. El equipo puede revocar accesos sin eliminar los registros de auditoría.",
-      "stem": "¿Qué respuesta combina contención y evidencia?",
+      "stem": "¿Qué actuación permite contener el acceso de la cuenta retirada y preservar evidencia sin atribuir automáticamente la consulta?",
       "correct": {
         "text": "Revocar acceso y sesiones según autorización, preservar logs y configuración y correlacionar fuentes antes de atribuir.",
         "reason": "Es posible contener el riesgo conservando trazabilidad."
@@ -234,7 +234,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
     },
     {
       "caseText": "Una base presenta identificadores con formato válido, pero personas duplicadas y datos de contacto distintos de la fuente autorizada. El archivo se guardó ayer a partir de una extracción de hace seis meses. El responsable declara alta calidad porque las celdas cumplen el formato. La oficina dispone de identificadores únicos, fecha de extracción y fuente de referencia para verificar los registros.",
-      "stem": "¿Qué dimensiones deben verificarse?",
+      "stem": "¿Qué dimensiones de calidad deben comprobarse antes de aceptar la base como fuente confiable del informe?",
       "correct": {
         "text": "Unicidad, exactitud, consistencia y actualidad real, además de validez y completitud.",
         "reason": "Las dimensiones de calidad son distintas."
@@ -256,7 +256,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
   "pgn-m61": [
     {
       "caseText": "Un registro muestra la IP pública de una sede con doscientas personas. La red utiliza NAT y se conservan hora y puerto de origen, pero no se revisaron las traducciones, DHCP ni sesión de la aplicación. El coordinador atribuye el hecho al responsable administrativo de la conexión. Existe una vía autorizada para solicitar los registros complementarios antes de que expire su retención.",
-      "stem": "¿Qué correlación es adecuada?",
+      "stem": "¿Qué correlación de fuentes permite aproximarse al origen del evento cuando varias personas comparten una dirección IP?",
       "correct": {
         "text": "Cruzar hora, puerto, NAT, equipo, sesión y autenticación; expresar límites y posibles operadores.",
         "reason": "La identificación requiere correlación de varias fuentes."
@@ -276,7 +276,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
     },
     {
       "caseText": "Un cambio aparece a 15:20 UTC y una autenticación a 10:20 UTC−5. El reloj local estaba adelantado dos minutos según fuente verificable. Los eventos tienen identificadores distintos y aún no se relacionó sesión con modificación. El informe propone tratarlos como la misma acción por coincidencia de horas convertidas. Se conservan los valores originales y la configuración temporal.",
-      "stem": "¿Qué tratamiento es correcto?",
+      "stem": "¿Cómo normalizar y valorar los registros sin confundir coincidencia temporal nominal con identidad de eventos?",
       "correct": {
         "text": "Normalizar zonas, documentar desfase e incertidumbre, conservar originales y contrastar identificadores y tipo de evento.",
         "reason": "La coincidencia nominal no demuestra mismo evento."
@@ -298,7 +298,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
   "pgn-m62": [
     {
       "caseText": "Una base contiene tres expedientes y seis actuaciones asociadas. Una consulta JOIN devuelve seis filas porque cada expediente tiene varias actuaciones. El analista presenta seis expedientes investigados y calcula tasas sobre ese total. El esquema y las claves están disponibles y la ficha define expediente único como unidad. Las actuaciones deben mantenerse para otro indicador de actividad.",
-      "stem": "¿Cómo corregir el cálculo?",
+      "stem": "¿Cómo calcular el número de expedientes únicos sin confundirlo con las filas producidas por la unión de tablas?",
       "correct": {
         "text": "Contar identificadores distintos de expediente y mantener seis actuaciones por separado; documentar cardinalidad.",
         "reason": "La unión uno a muchos multiplica filas; la unidad define el conteo."
@@ -318,7 +318,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
     },
     {
       "caseText": "updated_by contiene app_service en todos los cambios. El motor registra la cuenta técnica; la aplicación conserva solicitudes y sesiones. Un proceso programado modifica estados de noche. La oficina propone atribuir todas las operaciones al administrador de base de datos sin revisar arquitectura, automatismos ni permisos. Los registros de aplicación pueden solicitarse por vía autorizada.",
-      "stem": "¿Qué fuentes deben contrastarse?",
+      "stem": "¿Qué fuentes deben contrastarse para distinguir la cuenta técnica, una operación automatizada y una solicitud de usuario?",
       "correct": {
         "text": "Historial, motor, sesiones y solicitudes de aplicación, tareas programadas y permisos; explicar alcance de la cuenta.",
         "reason": "Una conexión técnica puede representar múltiples acciones."
@@ -340,7 +340,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
   "pgn-m63": [
     {
       "caseText": "Se aporta correo reenviado como texto con nombre de servidor y fecha visible. El original está en el buzón institucional, pero no se obtuvieron cabeceras completas ni trazas de entrega. El instructor propone considerar el texto como prueba definitiva de autoría y cronología. El custodio puede entregar una exportación autorizada y conservar los anexos originales disponibles.",
-      "stem": "¿Qué adquisición mejora el análisis?",
+      "stem": "¿Qué adquisición permite verificar mejor origen, entrega y contexto del correo sin asumir autoría por el texto visible?",
       "correct": {
         "text": "Preservar mensaje original y anexos, cabeceras y registros de servidor; documentar límites de identidad y tiempo.",
         "reason": "El original y las trazas aportan contexto potencialmente perdido."
@@ -360,7 +360,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
     },
     {
       "caseText": "Una cabecera contiene DKIM válido para dominio institucional y resultado agregado por servidor receptor confiable. El analista concluye que el titular del buzón redactó personalmente el correo y que no hubo acceso delegado. No se consultaron permisos, registros de identidad ni eventos de envío. Se conoce el dominio firmante y qué partes del mensaje cubre la firma.",
-      "stem": "¿Qué demuestra el resultado?",
+      "stem": "¿Cuál es el alcance de la autenticación DKIM y qué verificaciones adicionales requiere la atribución a una persona?",
       "correct": {
         "text": "Autenticación del dominio firmante e integridad de partes cubiertas; contrastar delegación, identidad y envío para atribución humana.",
         "reason": "DKIM es autenticación de dominio, no de autor humano."
@@ -382,7 +382,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
   "pgn-m64": [
     {
       "caseText": "Los registros permiten establecer que una cuenta ejecutó una modificación a cierta hora. No hay datos de sesión para el período y existe acceso delegado. El profesional redacta que el titular actuó intencionalmente y propone sanción, aunque el encargo solo pide identificar eventos y soportes. Se conserva el material original y se puede señalar qué fuentes adicionales permitirían contrastar la atribución.",
-      "stem": "¿Cómo reformular la conclusión?",
+      "stem": "¿Cómo reformular la conclusión técnica para conservar el hallazgo sin atribuir intención ni responsabilidad que no están demostradas?",
       "correct": {
         "text": "Describir operación registrada, fuentes y límites de identificación, proponer contraste y reservar valoración jurídica a competente.",
         "reason": "El informe distingue observación, inferencia y límite."
@@ -402,7 +402,7 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
     },
     {
       "caseText": "Un colega intenta reproducir un informe de 48 registros anómalos. Faltan consulta, versión de herramienta, criterio y export original; se descubre que un filtro pudo excluir filas legítimas. El analista puede recuperar fuente autorizada y secuencia de trabajo. La dirección pide cambiar la cifra sin constancia para evitar que el informe anterior sea cuestionado en el expediente.",
-      "stem": "¿Cómo revisar el resultado?",
+      "stem": "¿Qué procedimiento permite reproducir el cálculo y corregir el informe manteniendo historial y trazabilidad?",
       "correct": {
         "text": "Preservar fuente, recuperar consulta, repetir en copia, contrastar recuentos y documentar corrección y versiones.",
         "reason": "Reproducibilidad exige fuentes, parámetros y control de cambios."

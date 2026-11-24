@@ -215,6 +215,7 @@ describe('Auditoría M55–M64', () => {
    expect(qs.map(q=>q.correctOptionId)).toEqual(m.keys)
    for(const q of qs) {
     expect(q.case?.length ?? 0).toBeGreaterThan(350)
+    expect(q.stem.length).toBeGreaterThan(50)
     expect(new Set(q.options.map(o=>o.text)).size).toBe(3)
     expect(new Set(q.options.map(o=>o.rationale)).size).toBe(3)
     expect(q.explanation.length).toBeGreaterThan(150)

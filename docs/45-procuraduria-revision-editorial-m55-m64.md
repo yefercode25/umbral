@@ -30,3 +30,5 @@ MIPG vs MIPGN, indicadores con universo, puntos porcentuales, PHVA, expediente e
 - [RFC 9989 · DMARC](https://www.rfc-editor.org/rfc/rfc9989.html)
 
 Contraste adicional: Ley 388 consolidada, Decreto 1499, SGC PGN, Acuerdo AGN 001/2024, Ley 527, Ley 1755 y MSPI 2025. Regresión: inventario, claves, fuentes, opciones y racionales distintos, casos únicos. Integrar tras CI y Netlify.
+
+Segunda revisión: se ampliaron los 30 enunciados para que expliciten el criterio decisorio y se añadió una prueba de longitud mínima de 50 caracteres por enunciado, manteniendo IDs y claves. No se relajó ningún control previo.

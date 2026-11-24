@@ -1027,7 +1027,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
   {
     "number": 1,
     "caseText": "En un expediente aparecen una captura de visor público, el plano anexo a un acuerdo y una capa descargada sin metadatos. La captura sitúa aparentemente una obra fuera de un perímetro; el plano tiene otra escala. La jefatura pide declarar incumplimiento antes de verificar qué cartografía fue adoptada y si la precisión permite ubicar la construcción. Existe acceso autorizado al archivo oficial.",
-    "stem": "¿Qué producto sustenta la revisión?",
+    "stem": "¿Qué producto técnico permite sustentar el riesgo territorial sin confundir una visualización con el instrumento normativo adoptado?",
     "options": [
       "Elegir la captura por ser la más reciente.",
       "Identificar acto y plano oficial, validar escala y referencia, documentar incertidumbre y contrastar con la autoridad.",
@@ -1046,7 +1046,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
   {
     "number": 1,
     "caseText": "La oportunidad sube de 60 % a 75 % con igual ficha y población comparable. La meta es 90 %. Un informe dice que la mejora relativa es 15 % y propone cerrar el plan por considerar alcanzado el objetivo. Los datos permiten revisar los casos tardíos por dependencia; todavía no se evaluó la causa ni se documentó una acción que explique el cambio entre períodos.",
-    "stem": "¿Qué interpretación es correcta?",
+    "stem": "¿Cómo interpretar el cambio en puntos porcentuales, la variación relativa y la brecha frente a la meta institucional?",
     "options": [
       "Aumento de 15 puntos porcentuales, 25 % relativo y brecha de 15 puntos frente a meta; analizar causas.",
       "Mejora relativa de 15 % y cumplimiento total de la meta.",
@@ -1065,7 +1065,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
   {
     "number": 1,
     "caseText": "La acción de mejora frente a errores de informes consistió en una capacitación. Todos asistieron, pero se detectaron errores semejantes después; no se midió tasa ni se revisó si la plantilla inducía inconsistencias. El líder propone cerrar por asistencia completa. Se dispone de muestras comparables anteriores y posteriores y del registro de cambios del formato institucional utilizado.",
-    "stem": "¿Qué procede en verificación?",
+    "stem": "¿Qué revisión de eficacia corresponde realizar antes de cerrar la acción de mejora en el ciclo PHVA?",
     "options": [
       "Cerrar porque se ejecutó la capacitación.",
       "Repetir la capacitación indefinidamente sin estudiar la causa.",
@@ -1084,7 +1084,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
   {
     "number": 1,
     "caseText": "Un archivo de gestión se queda sin espacio y propone eliminar expedientes electrónicos con más de cinco años. La TRD establece tiempos diferentes según serie y existen trámites todavía abiertos. El inventario permite individualizar los expedientes, pero no se comprobó el cierre ni la autorización de disposición final. La oficina quiere liberar almacenamiento antes de hacer la revisión archivística.",
-    "stem": "¿Qué control precede a la eliminación?",
+    "stem": "¿Qué controles archivísticos deben verificarse antes de autorizar transferencia o disposición final de los expedientes?",
     "options": [
       "Borrar todo lo anterior a cinco años.",
       "Identificar serie y TRD aplicable, revisar cierre y restricciones, y seguir transferencia o disposición autorizada con inventario.",
@@ -1103,7 +1103,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
   {
     "number": 1,
     "caseText": "Un informe de cuarenta páginas presenta diferencias de una base institucional, pero omite consultas, filtros, versión y filas de soporte. La copia Word incluye comentarios con datos personales de terceros. La dirección pide enviarla fuera de la institución sin revisar la autorización ni el expediente. Se conservan las fuentes y el analista puede describir los parámetros de procesamiento utilizados.",
-    "stem": "¿Cómo mejorar el informe?",
+    "stem": "¿Qué ajustes hacen reproducible el informe y protegen los datos que no deben llegar al destinatario externo?",
     "options": [
       "Documentar encargo, fuentes, método, resultados y límites, anexos trazables y revisar reserva y metadatos de copia de entrega.",
       "Enviar íntegro porque extensión y comentarios demuestran rigor.",
@@ -1122,7 +1122,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
   {
     "number": 1,
     "caseText": "Un servidor cambia de funciones y conserva permisos de aprobación de su cargo anterior, además de adquirir permisos de creación de solicitudes. Puede crear y aprobar la misma operación. El administrador sostiene que MFA elimina el riesgo de uso indebido y no necesita modificar permisos. Los responsables funcionales pueden validar una matriz de roles sin suspender todo el servicio.",
-    "stem": "¿Qué control corresponde?",
+    "stem": "¿Qué ajuste de permisos controla el conflicto de funciones sin confundir autenticación multifactor con autorización?",
     "options": [
       "Mantener privilegios acumulados porque MFA garantiza uso correcto.",
       "Desactivar todas las cuentas del área sin evaluar roles.",
@@ -1141,7 +1141,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
   {
     "number": 1,
     "caseText": "El sistema registra autenticación exitosa con MFA y quince minutos después una modificación asociada a la misma cuenta. La sesión puede permanecer activa y otras personas tenían acceso físico al equipo. Todavía no hay registros de aplicación que vinculen la solicitud con sesión individual. El instructor pide que el informe afirme que el titular ejecutó personalmente cada acción registrada.",
-    "stem": "¿Qué conclusión se sostiene?",
+    "stem": "¿Qué conclusión técnica permite distinguir el evento autenticado y la modificación registrada de la autoría física del titular?",
     "options": [
       "Afirmar que MFA demuestra presencia física en toda acción posterior.",
       "Invalidar todos los registros porque existía acceso de terceros.",
@@ -1160,7 +1160,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
   {
     "number": 1,
     "caseText": "Se requiere recuperar el valor anterior de una fila. La base actual conserva solo el último valor y hay backups diarios, sin comprobar su consistencia ni retención de logs transaccionales. El equipo quiere restaurar un respaldo sobre producción para inspeccionarlo y atribuir el cambio a una persona. Existe un entorno aislado donde puede realizarse una restauración autorizada y documentada.",
-    "stem": "¿Qué método preserva fuente y servicio?",
+    "stem": "¿Qué método permite reconstruir un estado anterior sin sobrescribir producción ni exceder los límites de atribución?",
     "options": [
       "Verificar backups y logs, restaurar copia aislada, comparar estados y registrar límites temporales y de atribución.",
       "Restaurar sobre producción porque el respaldo es histórico.",
@@ -1179,7 +1179,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
   {
     "number": 1,
     "caseText": "Dos PDF tienen idéntico nombre y apariencia, pero huellas SHA-256 diferentes. Uno fue descargado del sistema de gestión y otro convertido por una herramienta que cambia compresión y metadatos. El despacho pide declarar falso el segundo sin comparar firmas ni versiones. Se conservan las dos copias y existe registro de la transformación utilizada para preparar la versión de consulta.",
-    "stem": "¿Cómo interpretar las huellas?",
+    "stem": "¿Cómo interpretar huellas distintas sin confundir diferencia binaria, transformación legítima y falsedad documental?",
     "options": [
       "Declarar falso todo archivo con hash diferente.",
       "Considerarlos binariamente idénticos porque se ven iguales.",
@@ -1198,7 +1198,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
   {
     "number": 1,
     "caseText": "La autoridad solicita extraer estadísticas de registros existentes en archivo institucional. No designó perito ni decretó examen especializado. El producto se incorpora como informe de datos de archivo y se solicita aclarar una columna. La secretaría quiere tramitar toda controversia como objeción por error grave por titularse informe informático. El expediente conserva el acto de solicitud y el informe recibido.",
-    "stem": "¿Qué trámite corresponde verificar?",
+    "stem": "¿Qué trámite de contradicción corresponde al informe de datos de archivo, atendiendo su naturaleza y no el título informático?",
     "options": [
       "Aplicar régimen pericial a cualquier documento informático.",
       "Aplicar naturaleza y forma de incorporación; para informe de archivo, traslado y aclaraciones del art. 195, sin objeción por error grave.",
