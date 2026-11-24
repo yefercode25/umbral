@@ -275,6 +275,280 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "208, 211–212, 222"
     ]
+  ],
+  "pgn-m27": [
+    [
+      "Una investigación se abrió el 15 de enero contra un servidor por una única falta ordinaria. La notificación se practicó el 2 de febrero. El equipo prepara el seguimiento de los seis meses y debe determinar qué actuación inicia el cómputo legal.",
+      "¿A partir de qué actuación se cuenta el término de investigación?",
+      [
+        "Desde la decisión de apertura del 15 de enero.",
+        "Desde la notificación practicada el 2 de febrero.",
+        "Desde la recepción del primer medio de prueba."
+      ],
+      [
+        "El art. 213 fija la decisión de apertura como punto inicial.",
+        "La notificación cumple una función diferente.",
+        "El primer recaudo probatorio no determina el inicio."
+      ],
+      "213"
+    ],
+    [
+      "Una investigación ordinaria comprende tres faltas atribuidas a dos servidores identificados. Al aproximarse el término inicial, quedan diligencias necesarias y la autoridad estudia una prórroga justificada, diferenciándola de la ampliación adicional por pruebas decisivas.",
+      "¿Qué margen de prórroga permite la pluralidad descrita?",
+      [
+        "Hasta otros seis meses bajo los presupuestos del art. 213.",
+        "Exactamente tres meses por la pluralidad de sujetos y faltas.",
+        "Hasta dieciocho meses por tratarse de una investigación compleja."
+      ],
+      [
+        "Varias faltas o varios sujetos permiten prorrogar hasta otro tanto.",
+        "Los tres meses corresponden a otra hipótesis de ampliación.",
+        "El límite especial de dieciocho meses se refiere a DD. HH. o DIH."
+      ],
+      "213"
+    ],
+    [
+      "Durante una investigación ordinaria se agota el término aplicable y también una ampliación de tres meses concedida por pruebas capaces de modificar la situación jurídica. Tras las diligencias no existe prueba que permita formular cargos. El equipo propone conceder otro mes.",
+      "¿Qué decisión debe adoptar el instructor al vencer esa ampliación?",
+      [
+        "Ordenar el archivo definitivo por falta de prueba para formular cargos.",
+        "Prorrogar nuevamente seis meses para completar el expediente.",
+        "Formular cargos para que el juzgador examine la insuficiencia."
+      ],
+      [
+        "El art. 213 exige archivo vencida la ampliación sin prueba de cargos.",
+        "La extensión no se repite indefinidamente.",
+        "El juzgamiento no sustituye el estándar de acusación."
+      ],
+      "213, 222"
+    ],
+    [
+      "Durante una investigación se descubre que el servidor investigado habría intervenido en un hecho totalmente ajeno a la queja y a sus hechos conexos. Un asesor propone agregarlo al expediente actual por economía procesal, sin examinar competencia ni iniciar otro asunto.",
+      "¿Cómo debe delimitarse el objeto de la investigación existente?",
+      [
+        "Mantener los hechos investigados y conexos; tramitar separadamente el nuevo asunto.",
+        "Incorporar todo hecho del mismo servidor a la investigación iniciada.",
+        "Cerrar el expediente inicial para investigar exclusivamente el nuevo hecho."
+      ],
+      [
+        "El objeto está delimitado a hechos iniciales y conexos.",
+        "La identidad del sujeto no establece conexidad por sí sola.",
+        "Otro asunto no exige abandonar el expediente anterior."
+      ],
+      "212"
+    ],
+    [
+      "Una investigación por omisión recibe un reporte de contingencia que respalda la explicación del disciplinado y un registro que podría desvirtuarla. El instructor considera decretar solamente la prueba que sostiene su hipótesis inicial para entregar oportunamente el proyecto.",
+      "¿Qué deber probatorio se aplica a esas fuentes contradictorias?",
+      [
+        "Investigar con igual rigor los elementos de cargo y de descargo.",
+        "Decretar solo el registro de cargo y reservar el reporte para juzgamiento.",
+        "Aceptar el reporte favorable y archivar sin contrastar el registro."
+      ],
+      [
+        "La búsqueda probatoria debe ser imparcial.",
+        "Deben examinarse elementos exculpatorios pertinentes en investigación.",
+        "La explicación favorable requiere valoración conjunta."
+      ],
+      "147–148, 212"
+    ],
+    [
+      "Un servidor vinculado pide ser oído en versión libre durante investigación. En su escrito desea explicar una demora sin aceptar responsabilidad. La dependencia propone exigir juramento y tratar la explicación como aceptación de cargos antes de practicar nuevas diligencias.",
+      "¿Qué tratamiento corresponde a la solicitud de versión libre?",
+      [
+        "Tramitar la solicitud respetando defensa y no autoincriminación del disciplinado.",
+        "Condicionar la versión a que el disciplinado acepte previamente responsabilidad.",
+        "Recibirla como testimonio obligatorio bajo juramento contra sí mismo."
+      ],
+      [
+        "La versión libre es un derecho del vinculado.",
+        "La aceptación tiene requisitos propios y no condiciona la versión.",
+        "No es testimonio compulsivo contra sí mismo."
+      ],
+      "112, 161, 212"
+    ],
+    [
+      "En una investigación se demuestra plenamente, antes del vencimiento del término, que el disciplinado no realizó la conducta atribuida. Los registros íntegros identifican a otra persona y descartan su intervención. La autoridad considera esperar al sexto mes para resolver.",
+      "¿Qué decisión procede respecto de quien no cometió la conducta?",
+      [
+        "Declarar motivadamente la terminación y ordenar el archivo definitivo.",
+        "Continuar hasta el vencimiento del término para resolver el archivo.",
+        "Formular cargos provisionales y dejar que el juzgador valore."
+      ],
+      [
+        "La causal demostrada permite terminar en cualquier etapa.",
+        "No debe esperarse al término máximo si procede terminación.",
+        "No hay fundamento para acusar a quien se demuestra ajeno."
+      ],
+      "90, 222"
+    ],
+    [
+      "Se investiga una posible falta ordinaria en la que pudieron intervenir dos servidores. La prueba individualiza únicamente a uno y se requieren actuaciones distintas para esclarecer al otro. El instructor analiza si puede continuar respecto del identificado.",
+      "¿Qué figura permite manejar las actuaciones en estas circunstancias?",
+      [
+        "Examinar la ruptura de unidad procesal con preservación de garantías.",
+        "Declarar nulidad integral por no identificar simultáneamente a ambos servidores.",
+        "Suspender necesariamente la investigación hasta identificar al segundo interviniente."
+      ],
+      [
+        "La ruptura procede si se identifica solo a algunos intervinientes.",
+        "La identificación parcial no constituye causal de nulidad por sí misma.",
+        "La ruptura permite avanzar respetando garantías."
+      ],
+      "214"
+    ],
+    [
+      "Un proyecto de apertura identifica al posible autor y las pruebas decretadas, pero omite los hechos concretos y solo indica «incumplimiento de funciones». La oficina conoce fechas, documentos y actuaciones específicas que deberían delimitar el objeto.",
+      "¿Qué elemento debe incorporarse antes de expedir la decisión de apertura?",
+      [
+        "Relación clara y comprensible de los hechos disciplinariamente relevantes.",
+        "Graduación definitiva de la sanción que recibiría el posible autor.",
+        "Relación de los descargos que formulará durante la futura etapa de juicio."
+      ],
+      [
+        "La apertura exige delimitar hechos relevantes en lenguaje comprensible.",
+        "La sanción no se determina al abrir.",
+        "Los descargos futuros no son contenido de apertura."
+      ],
+      "215"
+    ]
+  ],
+  "pgn-m28": [
+    [
+      "Un ciudadano presenta queja por una irregularidad ordinaria en compras públicas; no es víctima de violaciones de derechos humanos, DIH ni acoso laboral. Después de la apertura solicita intervenir en toda práctica probatoria exactamente como el investigado.",
+      "¿Qué alcance tiene su intervención en calidad de quejoso ordinario?",
+      [
+        "Ejercer las facultades limitadas que la ley reconoce al quejoso.",
+        "Ejercer automáticamente todas las facultades de los sujetos procesales.",
+        "Intervenir exclusivamente como testigo, sin aportar documentos ni recurrir."
+      ],
+      [
+        "El parágrafo del art. 110 limita la intervención ordinaria.",
+        "Presentar queja no otorga calidad procesal plena.",
+        "Puede aportar pruebas y recurrir archivo y absolución."
+      ],
+      "109–110"
+    ],
+    [
+      "La víctima de una conducta constitutiva de acoso laboral solicita reconocimiento como sujeto procesal y designa apoderado. La oficina propone tratarla igual que un ciudadano que denunció una irregularidad ordinaria sin ser víctima.",
+      "¿Qué diferencia legal debe aplicar el despacho a esta intervención?",
+      [
+        "Reconocer su calidad de sujeto procesal y facultad de designar apoderado.",
+        "Limitarla a ampliar la queja y recurrir el archivo o absolución.",
+        "Reservar su intervención plena hasta la emisión del fallo sancionatorio."
+      ],
+      [
+        "El art. 109 reconoce a víctimas de acoso laboral como sujetos procesales.",
+        "La limitación ordinaria del quejoso no rige en este supuesto.",
+        "Su condición no depende de que exista un fallo sancionatorio."
+      ],
+      "109–110"
+    ],
+    [
+      "La autoridad competente expide el auto de apertura de investigación contra un servidor el lunes. La citación para notificación personal se remite el jueves. El equipo duda sobre cuándo adquirió la calidad procesal de disciplinado.",
+      "¿Qué actuación determina legalmente esa calidad en el expediente?",
+      [
+        "La expedición del auto de apertura de investigación contra el servidor.",
+        "La entrega efectiva de la citación para practicar la notificación personal.",
+        "La presentación de los primeros descargos después de formular cargos."
+      ],
+      [
+        "La calidad se adquiere con el auto de apertura o vinculación.",
+        "La notificación no define el momento de adquisición de calidad.",
+        "Los descargos corresponden a una etapa posterior."
+      ],
+      "111"
+    ],
+    [
+      "Mientras se surte la notificación personal de la apertura, la autoridad practica pruebas para establecer el hecho. Tras notificarse, el disciplinado identifica puntos concretos que no pudo controvertir y solicita la ampliación o reiteración de esas diligencias.",
+      "¿Qué tratamiento legal corresponde a las pruebas practicadas durante la notificación?",
+      [
+        "Ampliarlas o reiterarlas en los puntos que solicite el disciplinado.",
+        "Excluirlas todas por haberse practicado antes de notificar la apertura.",
+        "Negar la solicitud porque las pruebas ya fueron incorporadas regularmente."
+      ],
+      [
+        "El art. 111 prevé continuidad probatoria y reiteración o ampliación solicitada.",
+        "La notificación en trámite no suspende la prueba.",
+        "La incorporación previa no elimina el derecho especial de contradicción."
+      ],
+      "111"
+    ],
+    [
+      "En una investigación reservada, el defensor acreditado solicita acceso a los documentos para preparar la contradicción. El secretario le niega todo acceso alegando que la reserva general del proceso obliga a esperar hasta formular cargos, sin distinguir destinatarios.",
+      "¿Qué criterio debe aplicarse al acceso solicitado por la defensa?",
+      [
+        "Garantizar el acceso procesal, observando las reservas legales específicas que correspondan.",
+        "Negar todo acceso hasta formular cargos por la reserva de la actuación.",
+        "Entregar el expediente a cualquier ciudadano por haberse solicitado por escrito."
+      ],
+      [
+        "La reserva general no desconoce los derechos de sujetos procesales.",
+        "No puede impedir en bloque la defensa.",
+        "El acceso procesal no convierte el expediente en público."
+      ],
+      "110, 112, 115"
+    ],
+    [
+      "En el curso de la investigación, el disciplinado y su defensor plantean criterios contradictorios sobre una solicitud procesal. Ambos están debidamente reconocidos y el despacho necesita determinar cuál criterio prevalece conforme a la regla de defensa técnica.",
+      "¿Cuál criterio prevalece cuando existe esa contradicción procesal?",
+      [
+        "El criterio del defensor, según la regla expresa del Código.",
+        "El criterio del disciplinado por ser titular del interés en juego.",
+        "El criterio que el instructor estime más conveniente para resolver."
+      ],
+      [
+        "El art. 113 otorga prevalencia al criterio del defensor.",
+        "La condición de investigado no desplaza la regla específica.",
+        "El instructor no elige a discreción la posición de defensa."
+      ],
+      "113"
+    ],
+    [
+      "Después de surtirse el cierre, pero antes del traslado para alegar previo al fallo de primera instancia, el disciplinado solicita versión libre. El funcionario considera rechazarla porque ya terminó la fase de recaudo de pruebas durante la investigación.",
+      "¿Qué límite temporal establece la norma para ejercer ese derecho?",
+      [
+        "Puede ser oído hasta antes del traslado de alegatos previos al fallo.",
+        "Solo puede ser oído hasta la ejecutoria del cierre de investigación.",
+        "Puede ser oído únicamente antes de notificarse el pliego de cargos."
+      ],
+      [
+        "El art. 112 fija el límite previo a alegatos del fallo.",
+        "El cierre no es el límite legal de la versión.",
+        "La formulación de cargos tampoco extingue ese derecho."
+      ],
+      "112"
+    ],
+    [
+      "Un quejoso ordinario recibe comunicación de una decisión de archivo definitivo y desea recurrirla. La secretaría le indica que no tiene calidad de sujeto procesal y que por esa razón no puede conocer el expediente ni ejercer ninguna impugnación.",
+      "¿Qué facultad específica conserva frente al archivo definitivo comunicado?",
+      [
+        "Recurrir el archivo y conocer el expediente para ese preciso efecto.",
+        "Interponer recursos contra cualquier decisión por ser autor de la queja.",
+        "Carece de facultad de impugnación porque no es sujeto procesal."
+      ],
+      [
+        "El parágrafo del art. 110 autoriza recurrir el archivo.",
+        "Las facultades ordinarias no abarcan todas las decisiones.",
+        "El Código prevé expresamente esa excepción a la intervención limitada."
+      ],
+      "110"
+    ],
+    [
+      "En una diligencia de versión libre, el investigado decide no responder una pregunta cuya respuesta podría incriminarlo. El funcionario propone registrar su silencio como aceptación de responsabilidad y reducir por esa sola razón las pruebas que necesita la investigación.",
+      "¿Qué valor puede atribuirse al silencio en el supuesto descrito?",
+      [
+        "No constituye por sí solo confesión ni prueba de responsabilidad.",
+        "Equivale a aceptación tácita si el investigado cuenta con abogado.",
+        "Permite suplir la prueba faltante cuando el expediente contiene indicios."
+      ],
+      [
+        "La no autoincriminación protege el silencio; la carga corresponde al Estado.",
+        "La confesión requiere manifestación voluntaria e informada.",
+        "El silencio no sustituye prueba legal ni estándar de responsabilidad."
+      ],
+      "10, 112, 147, 161"
+    ]
   ]
 }
 
