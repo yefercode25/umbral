@@ -3566,34 +3566,34 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
   ],
   "pgn-m46": [
     [
-      "Un operador identifica que un municipio planea cerrar temporalmente el único punto de atención a una población rural. El cierre todavía no ocurre y existen alternativas para evitar afectaciones a los usuarios del servicio público.",
-      "¿En qué escenario del modelo preventivo encaja principalmente la actuación descrita?",
+      "El equipo preventivo recibe dos alertas: una indica que mañana se suspenderá un servicio esencial para población rural; la otra señala una deficiencia documental sin efecto inmediato sobre derechos. Ambas son de competencia de la dependencia y deben programarse.",
+      "¿Qué combinación de principios orienta la atención diferenciada de las alertas?",
       [
-        "Anticipación, porque busca evitar una afectación que todavía no se materializa.",
-        "Mitigación o restitución, porque ya se produjo la vulneración del derecho.",
-        "Orientación, porque solo se suministrará información general al usuario del servicio."
+        "Oportunidad y priorización, considerando la inmediatez y magnitud de los riesgos.",
+        "Autonomía y publicidad, atendiendo primero la alerta cuyo expediente tenga menos anexos.",
+        "Economía y flexibilidad, aplazando las dos actuaciones hasta el siguiente comité mensual."
       ],
       [
-        "La anticipación busca intervenir antes de la afectación.",
-        "El caso no acredita vulneración consumada.",
-        "Existe un riesgo concreto que requiere actuación preventiva."
+        "Los principios orientan respuesta oportuna y ponderación del riesgo.",
+        "La cantidad de anexos no determina prioridad.",
+        "La programación no debe desconocer riesgos inminentes."
       ],
-      "Resolución PGN 132/2014; Guía Preventiva PGN"
+      "Resolución PGN 132/2014 art. 9"
     ],
     [
-      "Tras una interrupción efectiva de un servicio esencial, la población afectada continúa expuesta a consecuencias que pueden agravarse. La Procuraduría evalúa actuaciones inmediatas para limitar los efectos y promover la recuperación del derecho.",
-      "¿Qué escenario preventivo corresponde al hecho ya materializado descrito?",
+      "Una oficina preventiva dispone de un requerimiento documental y una visita como instrumentos permitidos para verificar un mismo riesgo. Los documentos bastan para resolver la cuestión y la visita impondría una carga considerable a la entidad sin agregar información relevante.",
+      "¿Qué principio exige ajustar la intensidad de la actuación a su finalidad?",
       [
-        "Mitigación o restitución de derechos, según el alcance de la actuación.",
-        "Anticipación exclusivamente, porque la intervención se realiza antes de una sanción.",
-        "Orientación exclusivamente, porque los afectados ya conocen la interrupción del servicio."
+        "Racionalidad, evitando medidas que excedan lo necesario y la competencia.",
+        "Oportunidad, imponiendo la medida más intensa por ser de ejecución presencial.",
+        "Autonomía, prescindiendo de los procedimientos institucionales para elegir cualquier instrumento."
       ],
       [
-        "La mitigación actúa sobre afectaciones ocurridas para reducir efectos o restituir.",
-        "La fecha de una sanción no determina el escenario.",
-        "La situación requiere más que información general."
+        "La racionalidad orienta una actuación proporcionada.",
+        "La oportunidad no exige una medida más invasiva.",
+        "La autonomía no elimina los procedimientos."
       ],
-      "Resolución PGN 132/2014; Guía Preventiva PGN"
+      "Resolución PGN 132/2014 art. 9"
     ],
     [
       "Dos dependencias tienen competencia preventiva sobre un asunto territorial y temático. No existe asignación simultánea ni regla especial distinta. Una ya asumió el conocimiento y solicitó información a la entidad; la segunda recibe posteriormente una alerta idéntica.",
@@ -4341,19 +4341,19 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       "Decreto 1082/2015 art. 2.2.1.2.1.5.2"
     ],
     [
-      "Una entidad publica una licitación con requisitos y factores de evaluación definidos. Después del cierre advierte que un criterio puntuable favorece a otro proponente y propone cambiar su ponderación en el informe de evaluación.",
-      "¿Qué límite protege la selección objetiva frente a ese cambio posterior al cierre?",
+      "En mínima cuantía se verifica una oferta de menor precio que omite un documento subsanable. La invitación no fijó término preclusivo para esa subsanación. La entidad debe resolver la oportunidad sin permitir acreditar circunstancias ocurridas después del cierre de ofertas.",
+      "¿Hasta qué momento puede subsanar el proponente en este supuesto?",
       [
-        "Evaluar todas las ofertas con los factores y ponderaciones válidamente establecidos.",
-        "Modificar la ponderación si el comité considera que produce una mejor decisión técnica.",
-        "Aplicar la ponderación nueva solo a las ofertas cuyos precios excedan el presupuesto estimado."
+        "Hasta antes de finalizar el traslado del informe de evaluación, según la regla especial.",
+        "Hasta la firma del contrato, incluso acreditando hechos posteriores al cierre.",
+        "Solo hasta el cierre inicial de ofertas, aunque el requisito sea subsanable."
       ],
       [
-        "La evaluación se sujeta a reglas previamente conocidas.",
-        "La conveniencia posterior no autoriza cambiar factores.",
-        "El trato desigual carece de fundamento en ese supuesto."
+        "Si no se fijó término, opera la oportunidad especial del traslado del informe.",
+        "No se admiten circunstancias posteriores al cierre.",
+        "La subsanación no termina necesariamente al presentar ofertas."
       ],
-      "Ley 80/1993 art. 24; Ley 1150/2007 art. 5"
+      "Decreto 1082/2015 art. 2.2.1.2.1.5.2; Ley 1150/2007 art. 5"
     ],
     [
       "Un proceso de contratación requiere identificar riesgos de transporte, entrega y disponibilidad de equipos. Los estudios previos describen solamente el objeto y el precio, sin examinar la asignación de riesgos previsibles de la operación.",
