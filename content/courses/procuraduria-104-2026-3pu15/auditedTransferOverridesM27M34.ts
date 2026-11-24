@@ -6,20 +6,20 @@ export const auditedTransferOverridesM27M34: Record<string, [FoundationTransferO
       "caseText": "Una procuraduría regional abre investigación el 3 de abril de 2026 contra un servidor por una conducta delimitada. El 25 de septiembre el equipo solicita otros seis meses porque no organizó los anexos a tiempo. No hay otras faltas, otros investigados ni asunto de derechos humanos o DIH. Está pendiente una prueba técnica que podría modificar la situación jurídica y el despacho debe evaluar su necesidad antes de resolver.",
       "stem": "¿Cuál control temporal corresponde al supuesto sin convertir una demora administrativa en una prórroga automática?",
       "correct": {
-        "text": "Partir de seis meses desde la apertura y examinar motivadamente la regla adicional de hasta tres meses por prueba capaz de modificar la situación jurídica, sin aplicar la extensión por pluralidad cuando falta su presupuesto.",
-        "reason": "El artículo 213 diferencia las extensiones por pluralidad y por prueba relevante pendiente."
+        "text": "Partir de seis meses desde apertura y examinar hasta tres meses adicionales por prueba decisiva pendiente, motivando su necesidad y sin presumir pluralidad.",
+        "reason": "El art. 213 diferencia extensión por pluralidad y hasta tres meses por prueba capaz de modificar situación jurídica."
       },
       "other": [
         {
-          "text": "Conceder otros seis meses desde la petición del equipo porque todo expediente técnico permite duplicar el plazo ordinario.",
-          "reason": "La complejidad o atraso no acreditan por sí solos pluralidad."
+          "text": "Conceder seis meses adicionales por la complejidad de los anexos y la prueba técnica, tratando el atraso de organización como presupuesto de prórroga.",
+          "reason": "La demora administrativa y complejidad no acreditan pluralidad ni permiten prorrogar seis meses por ese solo motivo."
         },
         {
-          "text": "Cerrar inmediatamente y omitir la prueba pendiente, aunque pueda incidir en la decisión y exista una regla legal específica.",
-          "reason": "El último inciso del artículo 213 exige valorar las pruebas capaces de alterar la situación jurídica."
+          "text": "Cerrar la investigación al vencimiento ordinario sin valorar la prueba pendiente, porque una única falta excluye cualquier posibilidad legal de ampliar el plazo.",
+          "reason": "La falta de pluralidad no elimina la extensión probatoria especial, cuya necesidad debe evaluarse y motivarse."
         }
       ],
-      "explanation": "Fundamento: CGD, arts. 13, 211–217. El artículo 213 diferencia las extensiones por pluralidad y por prueba relevante pendiente. La primera alternativa incorrecta falla porque la complejidad o atraso no acreditan por sí solos pluralidad. La segunda falla porque el último inciso del artículo 213 exige valorar las pruebas capaces de alterar la situación jurídica.",
+      "explanation": "El art. 213 diferencia extensión por pluralidad y hasta tres meses por prueba capaz de modificar situación jurídica. La demora administrativa y complejidad no acreditan pluralidad ni permiten prorrogar seis meses por ese solo motivo. La falta de pluralidad no elimina la extensión probatoria especial, cuya necesidad debe evaluarse y motivarse.",
       "difficulty": 4
     },
     {
@@ -48,20 +48,20 @@ export const auditedTransferOverridesM27M34: Record<string, [FoundationTransferO
       "caseText": "Un ciudadano que presentó queja ordinaria por supuestas alteraciones de una planilla solicita acceso irrestricto a una investigación disciplinaria en curso. En paralelo, el defensor reconocido del investigado pide consultar la evidencia para controvertirla. El expediente no versa sobre DDHH, DIH ni acoso laboral y contiene información personal de terceros. La oficina pretende negar a ambos por igual hasta el fallo.",
       "stem": "¿Cómo deben diferenciarse las facultades de cada solicitante y la reserva de la actuación?",
       "correct": {
-        "text": "Verificar la calidad procesal del defensor y garantizar su acceso conforme al CGD; resolver la petición del quejoso ordinario con las facultades y límites específicos de su condición, motivando las restricciones.",
-        "reason": "Los artículos 109, 110 y 115 distinguen intervención procesal, facultades del quejoso y reserva."
+        "text": "Garantizar al defensor el acceso que corresponde a su calidad procesal y resolver separadamente la petición del quejoso conforme a facultades y reserva.",
+        "reason": "Arts. 109–112 y 115: la calidad procesal y las facultades específicas del quejoso determinan el acceso; la reserva no excluye defensa."
       },
       "other": [
         {
-          "text": "Reconocer al quejoso todas las facultades del defensor porque ambos tienen interés en el resultado del proceso.",
-          "reason": "El interés en un asunto no transforma automáticamente al quejoso en sujeto procesal."
+          "text": "Permitir a ambos consultar el expediente completo, con compromiso de confidencialidad, porque el interés en la actuación determina idénticas facultades de contradicción.",
+          "reason": "El quejoso ordinario no adquiere todas las facultades del defensor mediante un compromiso de confidencialidad."
         },
         {
-          "text": "Negar a ambos hasta que exista fallo firme porque la reserva siempre prevalece sobre la defensa.",
-          "reason": "La reserva no elimina los derechos de defensa de los sujetos procesales."
+          "text": "Restringir el acceso a ambos hasta la decisión definitiva y permitir al defensor controvertir posteriormente las pruebas mediante los recursos que resulten procedentes.",
+          "reason": "La reserva no habilita aplazar indiscriminadamente el acceso del defensor ni sustituir la contradicción durante la actuación por recursos posteriores."
         }
       ],
-      "explanation": "Fundamento: CGD, arts. 15, 109–112, 115, 161–162; Constitución 33. Los artículos 109, 110 y 115 distinguen intervención procesal, facultades del quejoso y reserva. La primera alternativa incorrecta falla porque el interés en un asunto no transforma automáticamente al quejoso en sujeto procesal. La segunda falla porque la reserva no elimina los derechos de defensa de los sujetos procesales.",
+      "explanation": "Arts. 109–112 y 115: la calidad procesal y las facultades específicas del quejoso determinan el acceso; la reserva no excluye defensa. El quejoso ordinario no adquiere todas las facultades del defensor mediante un compromiso de confidencialidad. La reserva no habilita aplazar indiscriminadamente el acceso del defensor ni sustituir la contradicción durante la actuación por recursos posteriores.",
       "difficulty": 4
     },
     {

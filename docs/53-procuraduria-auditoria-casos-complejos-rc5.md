@@ -28,3 +28,6 @@ Fuentes nuevas:
 Pendiente: completar revisión de los 90 casos antiguos señalados, revisar más dilemas de investigación y pensamiento conceptual, practicar otras variantes de notificación y términos y obtener guía específica oficial. No se certifica cobertura total de la prueba.
 
 Control adicional de RC.5: las 24 nuevas alternativas correctas se distribuyen por longitud en 7 más largas, 4 más cortas y 13 intermedias o empatadas. El control evita introducir una pista inversa; no certifica dificultad psicométrica. Se añade regresión específica.
+
+
+Revisión manual adicional de nueve transferencias históricas (M19, M21, M23–M28): pgn-m19-transfer-1, pgn-m21-transfer-1, pgn-m23-transfer-1, pgn-m24-transfer-2, pgn-m25-transfer-2, pgn-m26-transfer-1, pgn-m26-transfer-2, pgn-m27-transfer-1, pgn-m28-transfer-1. Se conservan casos, enunciados, claves, dificultad, referencias e identificadores; se reformulan opciones, racionales y explicaciones. Se agrega regresión específica. Los restantes indicadores se medirán en CI.

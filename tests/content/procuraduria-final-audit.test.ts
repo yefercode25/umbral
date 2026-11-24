@@ -77,6 +77,14 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
       expect(audit.lengthOutlier, id).not.toContain(id)
     }
   })
+  it('equilibra nueve transferencias disciplinarias señaladas sin cambiar sus claves', () => {
+    const expected = {"pgn-m19-transfer-1":"b","pgn-m21-transfer-1":"c","pgn-m23-transfer-1":"a","pgn-m24-transfer-2":"b","pgn-m25-transfer-2":"a","pgn-m26-transfer-1":"a","pgn-m26-transfer-2":"c","pgn-m27-transfer-1":"c","pgn-m28-transfer-1":"b"}
+    const audit = auditPgnBank(practiceQuestionPool(course), new Set(course.sources.map(s=>s.id)))
+    for (const [id,key] of Object.entries(expected)) {
+      expect(course.questions.find(q=>q.id===id)?.correctOptionId,id).toBe(key)
+      expect(audit.lengthOutlier,id).not.toContain(id)
+    }
+  })
   it('mantiene cobertura de casos redactados en los 85 módulos', () => {
     const pool = practiceQuestionPool(course).filter(isPgnAuthored)
     for (const m of course.modules) for (const suffix of ['situational-1','transfer-1','transfer-2']) {

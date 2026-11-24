@@ -6,20 +6,20 @@ export const auditedTransferOverridesM21M23: Record<string, [FoundationTransferO
       "caseText": "Una procuraduría territorial recibe un informe sobre modificaciones de registros de un contrato. El posible autor era servidor público cuando sucedieron los hechos, pero renunció meses después. También aparece un contratista de soporte que tenía acceso al aplicativo, sin documento que acredite ejercicio de función pública, administración de recursos o supervisión. El reparto requiere precisar la calidad de cada persona antes de decidir.",
       "stem": "¿Cuál análisis permite establecer quién puede quedar sometido al régimen disciplinario?",
       "correct": {
-        "text": "Verificar la calidad del servidor en la época de los hechos y los supuestos legales concretos aplicables al particular, además de la competencia y la relevancia de la conducta.",
-        "reason": "El retiro no elimina la calidad relevante al momento del hecho; la condición de particular disciplinable exige un supuesto legal, no solo acceso técnico."
+        "text": "Verificar calidad al momento del hecho, supuestos legales del particular, competencia y relevancia disciplinaria de cada conducta.",
+        "reason": "Arts. 25, 70 y 89: el retiro no extingue la acción y la condición del particular exige presupuesto legal concreto."
       },
       "other": [
         {
-          "text": "Excluir al exservidor por haber renunciado y tratar al contratista como disciplinable por su acceso al sistema.",
-          "reason": "Confunde el retiro con extinción de la acción y atribuye al contratista una calidad no comprobada."
+          "text": "Excluir al servidor retirado por terminación del vínculo y examinar al contratista como disciplinable cuando sus credenciales permiten modificar los registros públicos.",
+          "reason": "La desvinculación no extingue por sí sola la acción; el acceso al sistema no acredita función pública, gestión de recursos o supervisión."
         },
         {
-          "text": "Vincular a ambos bajo el mismo régimen porque cualquier relación contractual con una entidad equivale a ejercer función pública.",
-          "reason": "La relación contractual no basta para acreditar los presupuestos del art. 70."
+          "text": "Mantener ambos como disciplinables porque la relación contractual y el acceso a información institucional acreditan por sí solos el ejercicio de funciones públicas.",
+          "reason": "El vínculo contractual y acceso técnico no bastan para acreditar la calidad de particular disciplinable."
         }
       ],
-      "explanation": "CGD, arts. 25 y 70: determinar calidad en la época del hecho y supuesto específico del particular antes de definir competencia y actuación.",
+      "explanation": "Arts. 25, 70 y 89: el retiro no extingue la acción y la condición del particular exige presupuesto legal concreto. La desvinculación no extingue por sí sola la acción; el acceso al sistema no acredita función pública, gestión de recursos o supervisión. El vínculo contractual y acceso técnico no bastan para acreditar la calidad de particular disciplinable.",
       "difficulty": 4
     },
     {
@@ -90,20 +90,20 @@ export const auditedTransferOverridesM21M23: Record<string, [FoundationTransferO
       "caseText": "Un profesional encargado de apoyar el seguimiento preventivo de una contratación descubre que su cónyuge tiene participación económica directa en una empresa interesada en el resultado del asunto. Ya existe un registro anual de intereses, pero no se ha informado esta situación concreta. El superior solicita que termine el concepto técnico antes de apartarse, argumentando que no firmará la decisión final.",
       "stem": "¿Qué actuación distingue el conflicto de interés del simple registro general de información?",
       "correct": {
-        "text": "Manifestar el impedimento con los hechos y causal aplicable, seguir el trámite ante autoridad competente y abstenerse de intervenir en el asunto en lo que ordene el régimen.",
-        "reason": "El interés particular directo exige valorar el deber de impedimento respecto del asunto concreto."
+        "text": "Manifestar el impedimento concreto, exponer la causal y seguir el trámite aplicable sin intervenir indebidamente en el asunto.",
+        "reason": "El interés directo obliga a declarar y tramitar el impedimento por la vía aplicable, incluso en funciones de apoyo."
       },
       "other": [
         {
-          "text": "Continuar con el concepto porque el profesional no suscribe la decisión final y ya presentó la declaración anual.",
-          "reason": "No firmar la decisión no elimina necesariamente la intervención en la gestión o control."
+          "text": "Concluir el concepto técnico por no suscribir la decisión definitiva y actualizar luego la declaración de intereses para dejar constancia del vínculo económico.",
+          "reason": "No firmar el acto final no excluye participación en gestión o control; el registro anual no sustituye el impedimento concreto."
         },
         {
-          "text": "Declararse automáticamente inhabilitado para todo empleo público sin analizar el alcance de la causal.",
-          "reason": "El impedimento particular no equivale a inhabilidad general."
+          "text": "Solicitar a la coordinación una segunda revisión del concepto y mantener la intervención, considerando que el superior puede neutralizar el interés particular mediante aprobación.",
+          "reason": "Un control adicional no reemplaza el trámite legal del conflicto ni autoriza continuar cuando corresponde apartarse."
         }
       ],
-      "explanation": "CGD, art. 44; CPACA arts. 11–12 cuando corresponda: declarar y tramitar el conflicto por la vía aplicable, no sustituirlo por una declaración anual.",
+      "explanation": "El interés directo obliga a declarar y tramitar el impedimento por la vía aplicable, incluso en funciones de apoyo. No firmar el acto final no excluye participación en gestión o control; el registro anual no sustituye el impedimento concreto. Un control adicional no reemplaza el trámite legal del conflicto ni autoriza continuar cuando corresponde apartarse.",
       "difficulty": 4
     },
     {
