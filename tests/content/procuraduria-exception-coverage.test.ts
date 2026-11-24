@@ -26,12 +26,18 @@ describe('Casos límite: reglas especiales y cambios de presupuesto', () => {
       expect(value).toBeLessThanOrEqual(14)
     }
   })
-  it('incluye 60 supuestos independientes en treinta temas, con fuentes y claves válidas', () => {
+  it('comprueba las claves y diversidad editorial de RC.6', () => {
+    const expected = {"pgn-exception-transicion-procesal-1":"a","pgn-exception-transicion-procesal-2":"b","pgn-exception-favorabilidad-temporal-1":"c","pgn-exception-favorabilidad-temporal-2":"a","pgn-exception-notificacion-rebote-1":"b","pgn-exception-notificacion-rebote-2":"c","pgn-exception-conducta-recursos-1":"a","pgn-exception-conducta-recursos-2":"b","pgn-exception-particular-conexidad-1":"c","pgn-exception-particular-conexidad-2":"a","pgn-exception-retiro-suspension-1":"b","pgn-exception-retiro-suspension-2":"c","pgn-exception-testigo-renuente-1":"a","pgn-exception-testigo-renuente-2":"b","pgn-exception-contradiccion-prueba-1":"c","pgn-exception-contradiccion-prueba-2":"a","pgn-exception-relojes-distribuidos-1":"b","pgn-exception-relojes-distribuidos-2":"c","pgn-exception-sello-tiempo-1":"a","pgn-exception-sello-tiempo-2":"b","pgn-exception-probabilidad-conjuntos-1":"c","pgn-exception-probabilidad-conjuntos-2":"a","pgn-exception-muestreo-logica-1":"b","pgn-exception-muestreo-logica-2":"c","pgn-exception-competencia-investigacion-1":"a","pgn-exception-competencia-investigacion-2":"b","pgn-exception-responsabilidad-institucional-1":"c","pgn-exception-responsabilidad-institucional-2":"a"}
+    const latest = procuraduriaExceptionQuestions.filter(q=>Object.hasOwn(expected,q.id))
+    expect(latest).toHaveLength(28)
+    for (const q of latest) expect(q.correctOptionId, q.id).toBe(expected[q.id as keyof typeof expected])
+  })
+  it('incluye 88 supuestos independientes en 44 temas, con fuentes y claves válidas', () => {
     const qs = procuraduriaExceptionQuestions
     const pool = practiceQuestionPool(procuraduriaCourse)
     const sourceIds = new Set(procuraduriaCourse.sources.map(s => s.id))
-    expect(qs).toHaveLength(60)
-    expect(new Set(qs.map(q=>q.scenarioId)).size).toBe(30)
+    expect(qs).toHaveLength(88)
+    expect(new Set(qs.map(q=>q.scenarioId)).size).toBe(44)
     expect(pool.filter(isPgnException)).toEqual(qs)
     const audit = auditPgnBank(qs, sourceIds)
     expect(audit.missingSource).toEqual([])

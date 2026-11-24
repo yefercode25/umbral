@@ -669,4 +669,49 @@ export const procuraduriaSources: SourceRef[] = [
     "verifiedAt": "2026-11-23",
     "note": "Conversión de tipos y configuración regional; preservar dato original."
   },
+  {
+    "id": "cc-c570-2019",
+    "title": "Sentencia C-570 de 2019 · Notificación electrónica",
+    "publisher": "Corte Constitucional / Función Pública",
+    "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=104995",
+    "type": "official",
+    "note": "Condicionamiento constitucional de la notificación electrónica del artículo 122.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "rfc-5905",
+    "title": "RFC 5905 · Network Time Protocol v4",
+    "publisher": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/info/rfc5905/",
+    "type": "reference",
+    "note": "Desfase, sincronización e incertidumbre de reloj.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "rfc-3161",
+    "title": "RFC 3161 · Time-Stamp Protocol",
+    "publisher": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/info/rfc3161/",
+    "type": "reference",
+    "note": "Sellado de tiempo y validación de huella y token.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "openstax-probability",
+    "title": "Introductory Statistics 2e · 3.1 Terminology",
+    "publisher": "OpenStax",
+    "url": "https://openstax.org/books/introductory-statistics-2e/pages/3-1-terminology",
+    "type": "reference",
+    "note": "Probabilidad, conjuntos y probabilidad condicional.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "openstax-sampling",
+    "title": "Introductory Statistics 2e · 1.2 Data, Sampling, and Variation",
+    "publisher": "OpenStax",
+    "url": "https://openstax.org/books/introductory-statistics-2e/pages/1-2-data-sampling-and-variation-in-data-and-sampling",
+    "type": "reference",
+    "note": "Diseños muestrales, variación y sesgo.",
+    "verifiedAt": "2026-11-23"
+  },
 ]

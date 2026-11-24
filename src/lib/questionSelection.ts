@@ -258,7 +258,7 @@ export function selectExamQuestions(course: Course, profileId: ExamProfileId): Q
     const authored = available.filter(isPgnAuthored)
     if (profile.kind === 'behavior') {
       const pool = authored.filter(q => pgnBehaviorModuleIds.includes(q.moduleId))
-      const advanced = selectPgnDiverse(pool.filter(isPgnException), Math.min(2, profile.size))
+      const advanced = selectPgnDiverse(pool.filter(isPgnException), Math.min(3, profile.size))
       return shuffle(selectPgnDiverse(pool, profile.size, advanced))
     }
     if (profile.kind === 'systems') {
@@ -268,7 +268,9 @@ export function selectExamQuestions(course: Course, profileId: ExamProfileId): Q
       return shuffle(selectPgnDiverse(authored.filter(q => studyModuleIds.has(q.moduleId)), profile.size))
     }
     if (profile.kind === 'transversal') {
-      return shuffle(selectPgnDiverse(authored.filter(q => transversalModuleIds.has(q.moduleId) && !isPgnBehavior(q.moduleId) && !pgnSystemsModuleIds.includes(q.moduleId)), profile.size))
+      const pool = authored.filter(q => transversalModuleIds.has(q.moduleId) && !isPgnBehavior(q.moduleId) && !pgnSystemsModuleIds.includes(q.moduleId))
+      const advanced = selectPgnDiverse(pool.filter(isPgnException), Math.ceil(profile.size / 5))
+      return shuffle(selectPgnDiverse(pool, profile.size, advanced))
     }
     const pool = authored.filter(q => examModuleIds.has(q.moduleId) &&
       (profile.id !== 'functional-deep' || (q.difficulty >= 4 && (q.integrated || isPgnException(q) || q.id.startsWith('pgn-dossier-') || q.id.includes('-transfer-')))))
