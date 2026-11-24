@@ -525,4 +525,103 @@ export const procuraduriaSources: SourceRef[] = [
     "type": "reference",
     "verifiedAt": "2026-11-23"
   },
+  {
+    "id": "decreto-111-1996",
+    "title": "Decreto 111 de 1996 · Estatuto Orgánico del Presupuesto",
+    "publisher": "Función Pública",
+    "url": "https://www1.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=5306",
+    "type": "official",
+    "note": "Arts. 71 y 89; distinguir disponibilidad, compromiso, reserva y cuenta por pagar; verificar régimen aplicable.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "estatuto-tributario-decreto-624",
+    "title": "Decreto 624 de 1989 · Estatuto Tributario consolidado",
+    "publisher": "DIAN / Normograma",
+    "url": "https://normograma.dian.gov.co/dian/compilacion/docs/estatuto_tributario.htm",
+    "type": "official",
+    "note": "Art. 1 y disposiciones aplicables; ruta condicional PGN, no modificación del curso DIAN.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "cgn-marco-gobierno",
+    "title": "Marco Normativo para Entidades de Gobierno",
+    "publisher": "Contaduría General de la Nación",
+    "url": "https://www.contaduria.gov.co/marco-normativo-para-entidades-de-gobierno",
+    "type": "official",
+    "note": "Resolución 533/2015 y modificaciones; consultar normas vigentes de reconocimiento y medición.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "ley-1862-2017",
+    "title": "Ley 1862 de 2017 · Código Disciplinario Militar",
+    "publisher": "Función Pública",
+    "url": "https://www1.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=233010",
+    "type": "official",
+    "note": "Verificar destinatarios, especialidad y competencia.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "ley-2196-2022",
+    "title": "Ley 2196 de 2022 · Estatuto Disciplinario Policial",
+    "publisher": "Función Pública",
+    "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=176046",
+    "type": "official",
+    "note": "Régimen especial policial y poder preferente PGN.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "cicr-ddhh-dih",
+    "title": "Derechos humanos y DIH · ámbitos y complementariedad",
+    "publisher": "CICR",
+    "url": "https://www.icrc.org/es/derecho-y-politicas/derechos-humanos-y-dih",
+    "type": "reference",
+    "note": "Referencia explicativa; distinguir ámbitos sin reemplazar fuentes jurídicas.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "nist-csf-2",
+    "title": "NIST Cybersecurity Framework 2.0",
+    "publisher": "NIST",
+    "url": "https://www.nist.gov/cyberframework",
+    "type": "reference",
+    "note": "Seis funciones; referencia técnica complementaria.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "nist-sp-800-61-r3",
+    "title": "NIST SP 800-61 Rev. 3 · respuesta a incidentes",
+    "publisher": "NIST",
+    "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "type": "reference",
+    "note": "Publicación final de 2025, alineada a CSF 2.0.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "nist-sp-800-218",
+    "title": "NIST SP 800-218 · SSDF 1.1",
+    "publisher": "NIST",
+    "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "type": "reference",
+    "note": "Prácticas de desarrollo seguro, publicación final de 2022.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "rfc-9293",
+    "title": "RFC 9293 · TCP",
+    "publisher": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/info/rfc9293/",
+    "type": "reference",
+    "note": "Especificación TCP; distinguir transporte de identidad.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "rfc-1034",
+    "title": "RFC 1034 · conceptos de DNS",
+    "publisher": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/info/rfc1034/",
+    "type": "reference",
+    "note": "Fundamentos DNS; consultar actualizaciones cuando corresponda.",
+    "verifiedAt": "2026-11-23"
+  },
 ]
