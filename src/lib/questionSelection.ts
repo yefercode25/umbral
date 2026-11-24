@@ -1,6 +1,6 @@
 import type { Course, Question } from '../types/course'
 import { practiceQuestionPool } from './practiceQuestionPool'
-import { PGN_COURSE_ID, isPgnAuthored, isPgnBehavior, pgnBehaviorModuleIds, pgnSystemsModuleIds } from './procuraduriaScopes'
+import { PGN_COURSE_ID, isPgnAuthored, isPgnBehavior, isPgnException, pgnBehaviorModuleIds, pgnSystemsModuleIds } from './procuraduriaScopes'
 
 export type ExamProfileId = 'functional-quick' | 'functional-training' | 'functional-extended' | 'functional-deep' | 'study-mix' | 'transversal-check' | 'behavior-check' | 'systems-check'
 
@@ -236,7 +236,10 @@ function selectPgnFunctional(pool: Question[], size: number, priority: Set<strin
   // At least half of the remaining questions are from priority modules,
   // provided the authored bank can supply them. Other slots cover the wider scope.
   const priorityGoal = integrated.length + Math.ceil((size - integrated.length) / 2)
-  const focus = selectPgnDiverse(regular.filter(q => priority.has(q.moduleId)), priorityGoal, integrated)
+  // Reserve a pedagogical minimum of exceptional, fact-dependent cases within the priority quota.
+  const exceptionTarget = Math.min(priorityGoal - integrated.length, Math.ceil(size / 5))
+  const exceptional = selectPgnDiverse(regular.filter(q => isPgnException(q) && priority.has(q.moduleId)), integrated.length + exceptionTarget, integrated)
+  const focus = selectPgnDiverse(regular.filter(q => priority.has(q.moduleId)), priorityGoal, exceptional)
   const broad = selectPgnDiverse(regular.filter(q => !priority.has(q.moduleId)), size, focus)
   return shuffle(selectPgnDiverse(pool, size, broad))
 }
@@ -266,7 +269,7 @@ export function selectExamQuestions(course: Course, profileId: ExamProfileId): Q
       return shuffle(selectPgnDiverse(authored.filter(q => transversalModuleIds.has(q.moduleId) && !isPgnBehavior(q.moduleId) && !pgnSystemsModuleIds.includes(q.moduleId)), profile.size))
     }
     const pool = authored.filter(q => examModuleIds.has(q.moduleId) &&
-      (profile.id !== 'functional-deep' || (q.difficulty >= 4 && (q.integrated || q.id.startsWith('pgn-dossier-') || q.id.includes('-transfer-')))))
+      (profile.id !== 'functional-deep' || (q.difficulty >= 4 && (q.integrated || isPgnException(q) || q.id.startsWith('pgn-dossier-') || q.id.includes('-transfer-')))))
     return selectPgnFunctional(pool, profile.size, priorityModuleIds, profile.integratedTarget ?? 0)
   }
 

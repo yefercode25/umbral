@@ -17,8 +17,10 @@ export function isPgnKnowledge(moduleId: string) { return !isPgnConditional(modu
  * The other nine situational items per module use the legacy generator.
  * Dossiers and integrated cases are explicitly written, not automatically certified.
  */
+export function isPgnException(question: Question) { return question.id.startsWith('pgn-exception-') }
+
 export function isPgnAuthored(question: Question) {
-  return /^pgn-m\d+-situational-1$/.test(question.id) ||
+  return isPgnException(question) || /^pgn-m\d+-situational-1$/.test(question.id) ||
     /^pgn-m\d+-transfer-[12]$/.test(question.id) ||
     question.id.startsWith('pgn-dossier-') || Boolean(question.integrated)
 }

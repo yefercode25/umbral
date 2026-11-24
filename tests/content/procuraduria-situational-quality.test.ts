@@ -18,16 +18,16 @@ describe('Procuraduría · práctica independiente de las lecciones', () => {
   const practice = practiceQuestionPool(procuraduriaCourse)
   const checkpoints = lessonCheckpointIds()
 
-  it('preserva los 510 controles históricos y ofrece 1098 preguntas evaluables distintas', () => {
+  it('preserva los 510 controles históricos y ofrece 1116 preguntas evaluables distintas', () => {
     expect(checkpoints.size).toBe(510)
-    expect(practice).toHaveLength(1098)
-    expect(practice.filter((question) => !question.integrated)).toHaveLength(1068)
+    expect(practice).toHaveLength(1116)
+    expect(practice.filter((question) => !question.integrated)).toHaveLength(1086)
     expect(practice.filter((question) => question.integrated)).toHaveLength(30)
     expect(practice.filter((question) => checkpoints.has(question.id))).toHaveLength(0)
     expect(practice.filter(q => q.id.includes('-transfer-'))).toHaveLength(170)
     expect(practice.filter(q => q.id.startsWith('pgn-dossier-'))).toHaveLength(48)
-    expect(procuraduriaCourse.questions).toHaveLength(1948)
-    expect(new Set(procuraduriaCourse.questions.map((question) => question.id)).size).toBe(1948)
+    expect(procuraduriaCourse.questions).toHaveLength(1966)
+    expect(new Set(procuraduriaCourse.questions.map((question) => question.id)).size).toBe(1966)
   })
 
   it('genera diez casos nuevos por cada uno de los 85 módulos', () => {
