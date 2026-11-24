@@ -1213,23 +1213,196 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "explanation": "Fundamento: Perfil 104; CGD arts. 159, 177–184, 193–195; Ley 527; NIST SP 800-86. La naturaleza del medio determina trámite, no el título. Primera alternativa incorrecta: Informe de archivo y dictamen son distintos. Segunda alternativa incorrecta: Art. 195 contempla aclaración y complementación."
   }
 ],
-  'pgn-m66': [{
-    number: 1,
-    caseText: 'Una hoja de cálculo consolida 420 registros de actuaciones institucionales. Tras aplicar un filtro por regional, la suma presentada en el informe no coincide con las filas visibles. La fórmula empleada incluye algunas filas ocultas, y otra tabla contiene un rango relativo que se desplazó al copiar la fórmula. Un directivo pide ajustar manualmente el total para que coincida con un reporte firmado la semana anterior.',
-    stem: '¿Cuál comprobación debe realizarse antes de utilizar la cifra para una conclusión de control de gestión?',
-    options: [
-      'Mantener el total del informe anterior porque ya fue firmado y es el dato administrativo más confiable.',
-      'Auditar rangos y referencias, distinguir filas filtradas de excluidas, reconciliar la fuente, corregir fórmulas de manera trazable y registrar la metodología aplicada.',
-      'Eliminar todos los registros ocultos y recalcular el resultado sin documentarlo, porque la vista filtrada representa automáticamente el universo correcto.',
+  'pgn-m65': [
+  {
+    "number": 1,
+    "caseText": "Una matriz de hallazgos está incluida en un Word con encabezados visuales de colores, celdas fusionadas y un gráfico sin descripción. El PDF anterior se generó como imágenes y no permite seleccionar texto ni navegar por títulos. Se requiere entregar un informe accesible a usuarios internos y externos, manteniendo las cifras y el contenido validado por la oficina competente.",
+    "stem": "¿Qué ajuste mejora accesibilidad y conserva el contenido verificable en los formatos de entrega?",
+    "options": [
+      "Usar títulos semánticos, tablas con encabezados identificables y descripciones de gráficos, revisar accesibilidad y exportar PDF comprobando texto y navegación.",
+      "Mantener tablas complejas y depender solo del contraste de colores para distinguir resultados.",
+      "Escanear nuevamente el documento para que todos vean exactamente la misma diagramación."
     ],
-    rationales: [
-      'La firma del reporte no confirma por sí sola la integridad del cálculo actual.',
-      'Combina control de datos, verificación de fórmulas y reproducibilidad.',
-      'Ocultar filas no significa excluirlas legítimamente del análisis, y borrar datos compromete la trazabilidad.',
+    "rationales": [
+      "La accesibilidad depende de estructura, texto y representación no exclusivamente visual.",
+      "Color sin otra señal no transmite toda la información.",
+      "Escanear no garantiza acceso al texto ni estructura de lectura."
     ],
-    correctOptionId: 'b',
-    explanation: 'El objetivo es obtener resultados verificables, documentar reglas de cálculo y separar errores de presentación, filtros y datos.',
-  }],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Microsoft Word: estilos, revisión y accesibilidad; Ley 594/2000; perfil 104. La accesibilidad depende de estructura, texto y representación no exclusivamente visual. Primera alternativa incorrecta: Color sin otra señal no transmite toda la información. Segunda alternativa incorrecta: Escanear no garantiza acceso al texto ni estructura de lectura."
+  }
+],
+  'pgn-m66': [
+  {
+    "number": 1,
+    "caseText": "Una hoja de cálculo consolida 420 registros de actuaciones institucionales. Después de filtrar por regional, la suma no coincide con las filas visibles; además una referencia relativa a la tasa se desplaza al copiar y varios expedientes aparecen en más de una actuación. El directivo solicita ajustar manualmente el total para igualarlo a un informe firmado. Se dispone de la tabla fuente y de la ficha del indicador.",
+    "stem": "¿Qué comprobación debe realizarse antes de utilizar la cifra en una conclusión de control de gestión?",
+    "options": [
+      "Conservar el total firmado y ajustar manualmente la diferencia actual para asegurar consistencia.",
+      "Auditar rangos, referencias y tipo de subtotal, definir unidad de análisis, reconciliar con fuente y documentar correcciones.",
+      "Eliminar filas ocultas y duplicados de expediente de la fuente antes de sumar todas las restantes."
+    ],
+    "rationales": [
+      "Una firma no valida el cálculo actual.",
+      "Combina control de fórmula, visibilidad, unidad y trazabilidad.",
+      "La eliminación puede destruir observaciones legítimas y evidencia."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Microsoft Excel: referencias, SUBTOTALES, SUMAR.SI.CONJUNTO y CONTAR.SI.CONJUNTO; perfil 104. Combina control de fórmula, visibilidad, unidad y trazabilidad. Primera alternativa incorrecta: Una firma no valida el cálculo actual. Segunda alternativa incorrecta: La eliminación puede destruir observaciones legítimas y evidencia."
+  }
+],
+  'pgn-m67': [
+  {
+    "number": 1,
+    "caseText": "Dos regionales tienen 20 quejas cada una; la primera atendió 2.000 casos y la segunda 100, con la misma definición y ventana temporal. En la segunda, ocho de las veinte quejas corresponden a retrasos. Se pide comparar proporciones y estimar, dentro de las quejas de la segunda, qué fracción trata de retrasos. No se cuenta con información sobre gravedad ni causas de las diferencias.",
+    "stem": "¿Cuál interpretación calcula correctamente las tasas y la proporción condicional sin afirmar causalidad?",
+    "options": [
+      "Ambas tasas son iguales por tener veinte quejas y los retrasos representan 8 % de las quejas.",
+      "Tasas 1 % y 20 %; 8/20=40 % de las quejas de la segunda son retrasos; revisar contexto antes de inferir causas.",
+      "La segunda tiene tasa 20 % y todos los retrasos explican causalmente la diferencia regional."
+    ],
+    "rationales": [
+      "Ignora denominadores regionales y usa 100 en lugar de 20 para la condición.",
+      "Cada denominador responde una pregunta distinta; la causalidad requiere soporte adicional.",
+      "El cálculo correcto de una tasa no establece una explicación causal."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Estadística descriptiva y metodología de indicadores; perfil 104; SGC PGN. Cada denominador responde una pregunta distinta; la causalidad requiere soporte adicional. Primera alternativa incorrecta: Ignora denominadores regionales y usa 100 en lugar de 20 para la condición. Segunda alternativa incorrecta: El cálculo correcto de una tasa no establece una explicación causal."
+  }
+],
+  'pgn-m68': [
+  {
+    "number": 1,
+    "caseText": "Un equipo encuentra aumento de retrasos después de implementar un formulario digital. En el mismo mes cambió el volumen de solicitudes y se asignaron expedientes más complejos a una oficina. Existe historial previo y posterior, datos de carga y registros de cambios del proceso. La coordinación solicita un informe que identifique qué debe contrastarse antes de atribuir el incremento a una única causa.",
+    "stem": "¿Qué plan de investigación permite valorar la hipótesis tecnológica y explicaciones alternativas?",
+    "options": [
+      "Definir variables y comparación temporal, controlar carga y complejidad cuando sea posible, contrastar fuentes y declarar límites de inferencia causal.",
+      "Atribuir el aumento al formulario por haber ocurrido después de implementarlo.",
+      "Comparar solamente los casos complejos posteriores con todos los casos anteriores sin ajustar composición."
+    ],
+    "rationales": [
+      "La secuencia temporal no basta y los factores concurrentes pueden confundir.",
+      "No examina explicaciones alternativas.",
+      "Compara poblaciones no equivalentes."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD arts. 13, 147–151 y 159; guía PGN de investigación; metodología aplicada. La secuencia temporal no basta y los factores concurrentes pueden confundir. Primera alternativa incorrecta: No examina explicaciones alternativas. Segunda alternativa incorrecta: Compara poblaciones no equivalentes."
+  }
+],
+  'pgn-m69': [
+  {
+    "number": 1,
+    "caseText": "Una síntesis relaciona tres fuentes de un mismo pago: una fecha contable, una fecha bancaria y un acta de recibo. El reporte las trata como fechas de un único evento y presenta una contradicción de diez días. El expediente contiene definiciones de cada registro y sus constancias, pero no se compararon. La oficina debe informar tanto lo comprobado como lo todavía pendiente de explicación.",
+    "stem": "¿Cómo organizar la síntesis para conservar significado y trazabilidad de cada fuente?",
+    "options": [
+      "Seleccionar la fecha más reciente y reemplazar las otras para unificar el informe.",
+      "Presentar todas las fechas como prueba de fraude sin comprobar qué evento representa cada una.",
+      "Separar hechos y fechas según evento, identificar fuente y definición, contrastar secuencia y dejar expresas discrepancias no resueltas."
+    ],
+    "rationales": [
+      "Unificar por fecha destruye significado.",
+      "Una discrepancia aparente no demuestra conducta irregular.",
+      "La conciliación exige semántica y temporalidad, además de fuente."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD arts. 148, 159; perfil 104; SGC PGN. La conciliación exige semántica y temporalidad, además de fuente. Primera alternativa incorrecta: Unificar por fecha destruye significado. Segunda alternativa incorrecta: Una discrepancia aparente no demuestra conducta irregular."
+  }
+],
+  'pgn-m70': [
+  {
+    "number": 1,
+    "caseText": "La coordinación pide entregar un informe hoy y otro de mayor alcance en dos semanas. El primero tiene un término inmodificable; el segundo depende de verificaciones que aún no llegan. El profesional detecta que ambos compiten por el mismo recurso de análisis y dispone de un calendario de entregas. Un compañero sugiere registrar como terminado el segundo para evitar una alerta de seguimiento.",
+    "stem": "¿Qué conducta combina responsabilidad institucional y organización del trabajo sin comprometer la calidad?",
+    "options": [
+      "Registrar ambos como completos y terminar las revisiones después del reporte de seguimiento.",
+      "Priorizar el término fijo, comunicar restricciones, acordar plan y dependencias del segundo y conservar su estado real hasta cumplir controles.",
+      "Aceptar todas las tareas sin reorganizar ni comunicar la capacidad insuficiente."
+    ],
+    "rationales": [
+      "Un estado ficticio contradice objetivos y controles.",
+      "Alinea metas, programación, transparencia y seguimiento.",
+      "No anticipar capacidad aumenta riesgo de incumplimiento."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Diccionario de competencias PGN, páginas 7 y 28 del PDF; perfil 104. Alinea metas, programación, transparencia y seguimiento. Primera alternativa incorrecta: Un estado ficticio contradice objetivos y controles. Segunda alternativa incorrecta: No anticipar capacidad aumenta riesgo de incumplimiento."
+  }
+],
+  'pgn-m71': [
+  {
+    "number": 1,
+    "caseText": "Cuatro expedientes presentan un error similar después de una actualización de software. Dos expedientes que usan la misma versión no presentan el error y tienen un flujo distinto de aprobación. El profesional debe orientar un estudio institucional y explicar qué relaciones conviene evaluar antes de proponer un procedimiento uniforme. Los registros y manuales de ambas rutas están disponibles para contraste.",
+    "stem": "¿Qué combinación de conductas integra Investigación B y Pensamiento Conceptual A?",
+    "options": [
+      "Estudiar conjuntamente casos con y sin error, contrastar versión y flujo, explicar el mecanismo posible y proponer directrices verificables según los resultados.",
+      "Afirmar que la versión es la causa común por aparecer en los cuatro expedientes afectados.",
+      "Estudiar cada expediente sin comparación y evitar formular orientaciones institucionales."
+    ],
+    "rationales": [
+      "Combina método contrastable y explicación de relaciones con directrices.",
+      "Los casos sin error son evidencia relevante contra una explicación simple.",
+      "Renuncia al aprendizaje transversal que exige el problema."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Diccionario PGN, páginas 25 y 35 del PDF; perfil 104. Combina método contrastable y explicación de relaciones con directrices. Primera alternativa incorrecta: Los casos sin error son evidencia relevante contra una explicación simple. Segunda alternativa incorrecta: Renuncia al aprendizaje transversal que exige el problema."
+  }
+],
+  'pgn-m72': [
+  {
+    "number": 1,
+    "caseText": "Una validación obligatoria tarda tres días y genera un cuello de botella. El equipo propone eliminarla de la lista de chequeo para acelerar el indicador. Hay datos sobre volumen, errores detectados por esa validación y alternativas técnicas que podrían reducir tiempos manteniendo el requisito. La jefatura solicita una recomendación que permita mejorar resultados sin afectar los derechos de los usuarios.",
+    "stem": "¿Qué actuación combina Orientación a Resultados A y Cumplimiento de Parámetros B?",
+    "options": [
+      "Eliminar la validación inmediatamente por considerarla contraria a la meta de oportunidad.",
+      "Conservar el proceso sin evaluar ninguna alternativa porque cumplir un procedimiento impide innovar.",
+      "Diseñar una mejora con meta, recursos y seguimiento, preservar el control exigido y tramitar cualquier cambio por autoridad competente."
+    ],
+    "rationales": [
+      "Rapidez no habilita eliminar requisitos obligatorios.",
+      "La mejora legítima puede optimizar el cumplimiento.",
+      "Mejorar resultados y mantener parámetros son objetivos compatibles."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Diccionario PGN, páginas 12 y 29 del PDF; perfil 104. Mejorar resultados y mantener parámetros son objetivos compatibles. Primera alternativa incorrecta: Rapidez no habilita eliminar requisitos obligatorios. Segunda alternativa incorrecta: La mejora legítima puede optimizar el cumplimiento."
+  }
+],
+  'pgn-m73': [
+  {
+    "number": 1,
+    "caseText": "Un aspirante obtiene retroalimentación en los casos comportamentales de Umbral y la plataforma le muestra qué comportamientos se relacionan con los niveles del perfil. El usuario desea transformar el resultado en un supuesto percentil oficial y comparar su personalidad con otros aspirantes. No existe una calibración psicométrica de estos ejercicios ni un baremo de la prueba específica incorporado al curso.",
+    "stem": "¿Qué conclusión permite utilizar la práctica sin atribuirle validez psicométrica inexistente?",
+    "options": [
+      "Convertir el porcentaje de aciertos en percentil porque ambos se expresan entre cero y cien.",
+      "Interpretar los resultados como retroalimentación didáctica y reflexión sobre conductas; no inferir percentiles, diagnóstico ni probabilidad oficial de aprobar.",
+      "Concluir que los casos carecen de toda utilidad si no predicen la puntuación oficial."
+    ],
+    "rationales": [
+      "Porcentaje y percentil son medidas diferentes.",
+      "El instrumento didáctico no está calibrado para inferencias psicométricas.",
+      "La reflexión y comprensión del perfil tienen utilidad independiente."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Perfil 104 y diccionario PGN; ejercicios didácticos, no modelo psicométrico oficial. El instrumento didáctico no está calibrado para inferencias psicométricas. Primera alternativa incorrecta: Porcentaje y percentil son medidas diferentes. Segunda alternativa incorrecta: La reflexión y comprensión del perfil tienen utilidad independiente."
+  }
+],
+  'pgn-m74': [
+  {
+    "number": 1,
+    "caseText": "Una dependencia recibe una solicitud de copias de actuaciones. Parte de los documentos está sujeta a reserva legal y el solicitante no acredita calidad procesal especial; otra parte es pública y separable. La oficina conoce la norma de reserva y puede generar una versión de entrega sin datos protegidos. Un compañero propone negar toda información; otro sugiere entregar el expediente completo por transparencia.",
+    "stem": "¿Cómo aplicar C-E-P-P-A para escoger una respuesta que respete competencia, acceso y restricciones legales?",
+    "options": [
+      "Identificar calidad del solicitante y régimen aplicable, separar información pública y protegida, motivar restricciones y entregar lo procedente dentro del término.",
+      "Negar todo por pertenecer a un expediente que contiene alguna información reservada.",
+      "Entregar todo porque el derecho de acceso elimina cualquier reserva legal."
+    ],
+    "rationales": [
+      "La decisión requiere analizar régimen, hechos y medida proporcionada.",
+      "La reserva parcial no obliga a negar información separable.",
+      "La transparencia no elimina restricciones legalmente previstas."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD arts. 208–211, 220–225; perfil 104; método didáctico propio de Umbral. La decisión requiere analizar régimen, hechos y medida proporcionada. Primera alternativa incorrecta: La reserva parcial no obliga a negar información separable. Segunda alternativa incorrecta: La transparencia no elimina restricciones legalmente previstas."
+  }
+],
   'pgn-m82': [{
     number: 1,
     caseText: 'Un sistema de expedientes registra accesos inusuales desde una cuenta válida a documentos con datos sensibles. La oficina plantea apagar todas las aplicaciones y borrar sesiones para bloquear el riesgo. Otro equipo advierte que la entidad presta un servicio crítico y que los logs se sobrescriben en pocos días. No se ha determinado si existe acceso indebido o si se trata de actividad legítima desde un nuevo dispositivo.',

@@ -489,4 +489,40 @@ export const procuraduriaSources: SourceRef[] = [
     "note": "Estándar de 2026, sustituye RFC 7489 y 9091.",
     "verifiedAt": "2026-11-23"
   },
+  {
+    "id": "office-word-headings",
+    "title": "Word · títulos y estructura semántica",
+    "url": "https://support.microsoft.com/es-es/word/add-a-heading-in-a-word-document",
+    "note": "Estilos de título y navegación; relación con tabla de contenido.",
+    "publisher": "Microsoft Support",
+    "type": "reference",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "office-word-accessibility",
+    "title": "Word · accesibilidad de documentos",
+    "url": "https://support.microsoft.com/es-es/accessibility/word/make-your-word-documents-accessible-to-people-with-disabilities",
+    "note": "Títulos, tablas, descripciones y revisión de accesibilidad.",
+    "publisher": "Microsoft Support",
+    "type": "reference",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "office-excel-sumifs",
+    "title": "Excel · SUMAR.SI.CONJUNTO",
+    "url": "https://support.microsoft.com/es-es/excel/functions/sumifs-function",
+    "note": "Suma con criterios y orden de argumentos.",
+    "publisher": "Microsoft Support",
+    "type": "reference",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "office-excel-countifs",
+    "title": "Excel · CONTAR.SI.CONJUNTO",
+    "url": "https://support.microsoft.com/es-es/excel/functions/countifs-function",
+    "note": "Conteo con varios criterios y rangos compatibles.",
+    "publisher": "Microsoft Support",
+    "type": "reference",
+    "verifiedAt": "2026-11-23"
+  },
 ]
