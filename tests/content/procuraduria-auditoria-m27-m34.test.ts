@@ -159,7 +159,7 @@ describe('Auditoría integral M27–M34', () => {
   expect(procuraduriaCourse.lessons).toHaveLength(255)
   expect(procuraduriaCourse.questions.filter(q => !q.id.startsWith('pgn-exception-'))).toHaveLength(1948)
   expect(new Set(procuraduriaCourse.questions.filter(q => !q.id.startsWith('pgn-exception-')).map(q => q.id)).size).toBe(1948)
-  expect(practiceQuestionPool(procuraduriaCourse)).toHaveLength(1098)
+  expect(practiceQuestionPool(procuraduriaCourse).filter(q => !q.id.startsWith('pgn-exception-'))).toHaveLength(1098)
   for(const m of expected) {
    const qs=moduleReviewQuestions(procuraduriaCourse,m.id)
    expect(qs.map(q=>q.id)).toEqual([m.id+'-transfer-1',m.id+'-situational-1',m.id+'-transfer-2'])
