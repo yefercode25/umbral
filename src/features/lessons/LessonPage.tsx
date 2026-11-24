@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { ArrowLeft, ArrowRight, Bookmark, BookmarkCheck, Clock3 } from 'lucide-react'
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { LessonRenderer } from '../../components/learning/LessonRenderer'
 import { LessonNarrator } from '../../components/learning/LessonNarrator'
 import { LessonQuickReview } from '../../components/learning/LessonQuickReview'
-import { ModuleReview } from '../../components/learning/ModuleReview'
+import { LessonAssessment } from '../../components/learning/ModuleReview'
+import { LESSON_PASS_SCORE } from '../../lib/lessonAssessment'
 import { Button } from '../../components/ui/Button'
 import { ProgressBar } from '../../components/ui/ProgressBar'
 import { getCourseBySlug } from '../../lib/courses'
@@ -23,7 +24,6 @@ export function LessonPage() {
   const complete = useProgressStore((state) => state.markLessonCompleted)
   const toggleBookmark = useProgressStore((state) => state.toggleBookmark)
   const progress = useProgressStore((state) => course ? state.courses[course.id] : undefined)
-  const [approvedLesson, setApprovedLesson] = useState<string | null>(null)
 
   useEffect(() => {
     if (!course) return
@@ -47,16 +47,10 @@ export function LessonPage() {
   const globalPercent = Math.round(((index+1)/allPublished.length)*100)
   const isPgn = course.id === 'procuraduria-104-2026-3pu15'
   const alreadyCompleted = progress?.lessons[lesson.id]?.status === 'completed'
-  const firstTwoCheckpoints = lesson.order < 3
-    ? lesson.blocks.filter(block => block.type === 'checkpoint').map(block => block.type === 'checkpoint' ? block.questionId : '')
-    : []
-  const checkedCount = firstTwoCheckpoints.filter(id => (progress?.questionStats?.[id]?.attempts ?? 0) > 0).length
-  const checkpointsComplete = firstTwoCheckpoints.length > 0 && checkedCount === firstTwoCheckpoints.length
   const isModuleClosing = isPgn && lesson.order === 3
   const earlierLessonsComplete = !isModuleClosing || priorModuleLessonsCompleted(course, module.id, progress)
-  const mayComplete = !isPgn || alreadyCompleted || (isModuleClosing
-    ? approvedLesson === lesson.id
-    : checkpointsComplete)
+  const assessmentPassed = (progress?.lessonAssessments?.[lesson.id]?.bestScore ?? 0) >= LESSON_PASS_SCORE
+  const mayComplete = !isPgn || alreadyCompleted || assessmentPassed
 
 
   const finish = () => {
@@ -83,9 +77,9 @@ export function LessonPage() {
       <div className={styles.lessonMeta}><span>{module.title}</span><span><Clock3 size={14}/> {lesson.durationMinutes} min</span></div>
       <h1>{lesson.title}</h1><p className={styles.subtitle}>{lesson.subtitle}</p>
       <LessonNarrator course={course} lesson={lesson} />
-      <LessonRenderer key={`${course.id}:${lesson.id}`} course={course} blocks={lesson.blocks} moduleId={module.id} lessonOrder={lesson.order}/>
-      {isModuleClosing && <ModuleReview key={`${course.id}:${module.id}`} course={course} moduleId={module.id}
-        alreadyCompleted={alreadyCompleted} onPassed={() => setApprovedLesson(lesson.id)}/>}
+      <LessonRenderer key={`${course.id}:${lesson.id}`} course={course} blocks={lesson.blocks} moduleId={module.id} lessonOrder={lesson.order} deferCheckpoints={isPgn}/>
+      {isPgn && <LessonAssessment key={`${course.id}:${lesson.id}`} course={course} lesson={lesson}
+        alreadyCompleted={alreadyCompleted} assessmentPassed={assessmentPassed}/>}
       <LessonQuickReview key={`${course.id}:${lesson.id}`} course={course} lesson={lesson} />
       <div className={styles.finish}>
         <div>
@@ -93,9 +87,9 @@ export function LessonPage() {
           <strong>{isModuleClosing && mayComplete && !earlierLessonsComplete
             ? 'Cierre aprobado. Completa las dos lecciones anteriores antes de avanzar'
             : isModuleClosing && !mayComplete
-              ? 'Resuelve el cierre del módulo para continuar'
+              ? 'Aprueba la evaluación acumulativa para continuar'
             : isPgn && !isModuleClosing && !mayComplete
-              ? `Comprueba tus respuestas de esta lección (${checkedCount}/${firstTwoCheckpoints.length})`
+              ? 'Aprueba la evaluación de esta lección para continuar'
               : next ? `Siguiente: ${next.title}` : 'Has llegado al final del contenido publicado.'}</strong>
         </div>
         <Button size="lg" disabled={!mayComplete} onClick={finish} icon={<ArrowRight size={18}/>}>{isModuleClosing && !earlierLessonsComplete ? 'Guardar cierre y volver al módulo' : next ? 'Completar y continuar' : 'Completar lección'}</Button>

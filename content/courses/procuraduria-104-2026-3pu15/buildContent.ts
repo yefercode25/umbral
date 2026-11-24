@@ -21,6 +21,7 @@ import { auditedModuleBlocksM65M74, auditedModuleSourcesM65M74 } from './audited
 import { auditedModuleBlocksM75M84, auditedModuleSourcesM75M84 } from './auditedModulesM75M84'
 
 import { exceptionLessonBlocks, exceptionLessonSources } from './exceptionQuestions'
+import { pgnLessonAssessmentIds } from './lessonAssessmentPlan'
 
 const ACCENT = '#5F9E80'
 const VERIFIED_AT = '2026-09-14'
@@ -1034,6 +1035,7 @@ function buildLessons(blueprint: ProcuraduriaModuleBlueprint): Lesson[] {
 
   const l1: Lesson = {
     id: `${lessonPrefix}-l1`, moduleId: blueprint.id, order: 1,
+    assessmentQuestionIds: pgnLessonAssessmentIds(blueprint.id, 1),
     title: `${blueprint.title}: fundamentos desde cero`,
     subtitle: `Construye el concepto antes de memorizar la regla. ${blueprint.description}`,
     durationMinutes: 15, skillIds: blueprint.skillIds, status: 'published',
@@ -1070,6 +1072,7 @@ function buildLessons(blueprint: ProcuraduriaModuleBlueprint): Lesson[] {
 
   const l2: Lesson = {
     id: `${lessonPrefix}-l2`, moduleId: blueprint.id, order: 2,
+    assessmentQuestionIds: pgnLessonAssessmentIds(blueprint.id, 2),
     title: `${blueprint.title}: aplicación paso a paso`,
     subtitle: 'Convierte la teoría en un procedimiento mental que puedas usar bajo presión.',
     durationMinutes: 17, skillIds: blueprint.skillIds, status: 'published',
@@ -1108,6 +1111,7 @@ function buildLessons(blueprint: ProcuraduriaModuleBlueprint): Lesson[] {
 
   const l3: Lesson = {
     id: `${lessonPrefix}-l3`, moduleId: blueprint.id, order: 3,
+    assessmentQuestionIds: pgnLessonAssessmentIds(blueprint.id, 3),
     title: `${blueprint.title}: nivel avanzado y trampas`,
     subtitle: 'Trabaja límites, evidencia contradictoria y decisiones que cambian cuando cambia un hecho.',
     durationMinutes: 18, skillIds: blueprint.skillIds, status: 'published',

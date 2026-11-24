@@ -57,6 +57,8 @@ export type CourseProgress = {
   skills: Record<string, SkillProgress>
   practiceSessions?: PracticeSession[]
   questionStats?: Record<string, QuestionProgress>
+  /** Evaluaciones formativas PGN; opcional para conservar datos de versiones anteriores. */
+  lessonAssessments?: Record<string, { attempts: number; lastScore: number; bestScore: number; lastAnsweredAt: string }>
   errorJournal?: Record<string, ErrorJournalEntry>
   questionBookmarks?: string[]
   bookmarks: string[]

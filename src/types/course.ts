@@ -54,6 +54,8 @@ export type Lesson = {
   skillIds: string[]
   status: 'published' | 'draft'
   blocks: LessonBlock[]
+  /** Preguntas asignadas al cierre de esta lección, sin duplicar otros cierres. */
+  assessmentQuestionIds?: string[]
 }
 
 export type CourseModule = {

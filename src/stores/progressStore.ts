@@ -27,6 +27,7 @@ type ProgressActions = {
   markLessonStarted: (course: Course, lessonId: string, route: string) => void
   markLessonCompleted: (course: Course, lessonId: string, minutes?: number) => void
   recordAnswer: (course: Course, questionId: string, skillIds: string[], correct: boolean) => void
+  recordLessonAssessment: (course: Course, lessonId: string, score: number) => void
   recordPracticeSession: (course: Course, session: PracticeSession) => void
   toggleBookmark: (course: Course, lessonId: string) => void
   toggleQuestionBookmark: (course: Course, questionId: string) => void
@@ -138,6 +139,20 @@ export const useProgressStore = create<ProgressState & ProgressActions>()(
               [course.id]: { ...current, lastActivityAt: now, skills, questionStats, errorJournal },
             },
           }
+        }),
+      recordLessonAssessment: (course, lessonId, score) =>
+        set((state) => {
+          if (course.id !== 'procuraduria-104-2026-3pu15' || !course.lessons.some(l => l.id === lessonId) || !Number.isInteger(score) || score < 0 || score > 5) return state
+          const current = state.courses[course.id] ?? emptyCourseProgress(course)
+          const prior = current.lessonAssessments?.[lessonId]
+          const now = new Date().toISOString()
+          return { courses: { ...state.courses, [course.id]: {
+            ...current, lastActivityAt: now,
+            lessonAssessments: { ...current.lessonAssessments, [lessonId]: {
+              attempts: (prior?.attempts ?? 0) + 1, lastScore: score,
+              bestScore: Math.max(prior?.bestScore ?? 0, score), lastAnsweredAt: now,
+            } },
+          } } }
         }),
       recordPracticeSession: (course, session) =>
         set((state) => {
