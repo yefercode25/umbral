@@ -399,7 +399,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
   'pgn-m22': [
   {
     "number": 1,
-    "caseText": "Una dependencia presenta un informe tardío durante una interrupción técnica. El expediente contiene el deber de reporte, la bitácora de indisponibilidad y un correo sobre el procedimiento alterno, pero no prueba si el servidor tenía acceso a dicho canal. La dirección plantea sancionar por el retraso para mejorar el indicador de cumplimiento.",
+    "caseText": "Una dependencia presenta un informe tardío durante una interrupción técnica. El expediente contiene el deber de reporte, la bitácora de indisponibilidad y un correo sobre el procedimiento alterno, pero no prueba si el servidor tenía acceso a dicho canal. La dirección plantea sancionar por el retraso para mejorar el indicador de cumplimiento. El reporte no cuantifica ninguna afectación del servicio.",
     "stem": "¿Qué decisión de apoyo evita confundir un indicador de gestión con responsabilidad disciplinaria?",
     "options": [
       "Recomendar sanción porque el retraso demuestra por sí solo culpa gravísima.",
@@ -418,7 +418,7 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
   'pgn-m23': [
   {
     "number": 1,
-    "caseText": "Un profesional de la PGN debe elaborar un concepto sobre una actuación en la que participa una empresa de la cual su socio obtiene un beneficio económico directo. La dependencia sugiere que basta mencionar la relación al final del informe porque otro funcionario firma la decisión. El profesional aún no ha iniciado el análisis de fondo.",
+    "caseText": "Un profesional de la PGN debe elaborar un concepto sobre una actuación en la que participa una empresa de la cual su socio obtiene un beneficio económico directo. La dependencia sugiere que basta mencionar la relación al final del informe porque otro funcionario firma la decisión. El profesional aún no ha iniciado el análisis de fondo. El expediente contiene constancia de la participación económica del socio.",
     "stem": "¿Qué actuación corresponde para proteger imparcialidad y competencia en el asunto concreto?",
     "options": [
       "Identificar el interés directo y la causal legal, declarar oportunamente el impedimento y seguir el trámite correspondiente antes de intervenir cuando deba apartarse.",
