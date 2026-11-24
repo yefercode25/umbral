@@ -492,7 +492,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
           ],
           [
             "Prioridad",
-            "Verificar presupuestos de atención prioritaria de peticiones del art. 20 Ley 1755."
+            "Art. 20 Ley 1755: prioridad para reconocimiento de derecho fundamental cuando evita perjuicio irremediable, con prueba sumaria de titularidad y riesgo; medidas inmediatas ante peligro inminente de vida o integridad por salud o seguridad, y trámite preferencial de peticiones de periodistas para su actividad."
           ],
           [
             "Prueba",
@@ -690,11 +690,11 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
           ],
           [
             "Subsanación",
-            "Respetar plazo fijado en invitación conforme al régimen; no mejorar factores que determinan comparación."
+            "Respetar término preclusivo fijado en invitación para cada requerimiento; si no se fija, subsanar hasta antes de finalizar traslado del informe de evaluación (art. 2.2.1.2.1.5.2 del Decreto 1082, modificado por Decreto 1860/2021). No mejorar factores de comparación."
           ],
           [
             "Adendas",
-            "Modificar condiciones con publicidad y oportunidad legal; no reescribir criterios después de recibir ofertas."
+            "En mínima cuantía, adendas a condiciones hasta un día hábil antes de presentación de ofertas, sin perjuicio de adendas posteriores al cronograma en los términos legales. Publicar informe de evaluación al menos un día hábil; oferta y aceptación constituyen contrato."
           ],
           [
             "Control PGN",
@@ -867,7 +867,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
           ],
           [
             "Excepciones",
-            "Verificar causal específica y reglas especiales vigentes antes de aplicar la salida general."
+            "Art. 9 modificado por Ley 2014/2019: si sobreviene la inhabilidad del art. 8.1.j o sanción administrativa por corrupción al contratista, no procede la renuncia prevista en el artículo; revisar la regla especial de cesión y sus condiciones."
           ]
         ]
       },

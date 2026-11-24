@@ -35,3 +35,7 @@ Profesional Universitario 3PU-15, Convocatoria 104-2026. Diez módulos, 30 lecci
 - https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=52081
 
 Claves situacionales contrastadas contra prioridades históricas o rotación original. Pruebas de regresión: títulos, ejemplos, fuentes, inventario, claves, casos y enunciados únicos y racionales distintos. Integración condicionada a CI y Netlify.
+
+## Segunda revisión
+
+Se precisan hipótesis del art. 20 de Ley 1755, oportunidad supletoria de subsanación, adendas e informe de evaluación en mínima cuantía, y excepción de renuncia del art. 9 de Ley 80 modificado por Ley 2014/2019. Fuentes de contraste: https://relatoria.colombiacompra.gov.co/normativa/decreto-1860-de-2021/ ; https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=104573 ; https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=65334 .
