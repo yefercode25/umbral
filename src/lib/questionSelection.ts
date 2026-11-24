@@ -1,6 +1,6 @@
 import type { Course, Question } from '../types/course'
 import { practiceQuestionPool } from './practiceQuestionPool'
-import { hasPgnLengthOutlier } from './procuraduriaBankAudit'
+import { hasPgnLengthCue } from './procuraduriaBankAudit'
 import { PGN_COURSE_ID, isPgnAuthored, isPgnBehavior, isPgnException, pgnBehaviorModuleIds, pgnSystemsModuleIds } from './procuraduriaScopes'
 
 export type ExamProfileId = 'functional-quick' | 'functional-training' | 'functional-extended' | 'functional-deep' | 'study-mix' | 'transversal-check' | 'behavior-check' | 'systems-check' | 'functional-blind'
@@ -283,7 +283,7 @@ export function selectExamQuestions(course: Course, profileId: ExamProfileId): Q
     }
     const pool = authored.filter(q => examModuleIds.has(q.moduleId) &&
       (profile.id !== 'functional-deep' || (q.difficulty >= 4 && (q.integrated || isPgnException(q) || q.id.startsWith('pgn-dossier-') || q.id.includes('-transfer-')))))
-    const eligible = profile.id === 'functional-blind' ? pool.filter(q => !hasPgnLengthOutlier(q)) : pool
+    const eligible = profile.id === 'functional-blind' ? pool.filter(q => !hasPgnLengthCue(q)) : pool
     return selectPgnFunctional(eligible, profile.size, priorityModuleIds, profile.integratedTarget ?? 0)
   }
 

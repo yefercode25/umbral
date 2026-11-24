@@ -40,3 +40,8 @@ Cierre editorial: 21 restantes (19 integradoras, 2 expedientes); claves conserva
 
 
 Control contra inversión del patrón en las 40 transferencias: {"longest":15,"shortest":5,"other":20}. Se conservaron versiones completas cuando la condensación de ambos distractores reintroducía la señal de longitud; 1 ajustes de ese tipo. La longitud no acredita por sí sola plausibilidad ni dificultad.
+
+
+Cierre de referencias: se incorporan dos fuentes de OpenStax específicas para Bayes y combinatoria (90 fuentes totales; las anteriores se conservan). Se distingue la métrica histórica de correcta pronunciadamente larga de la métrica simétrica de correcta pronunciadamente corta. El simulacro integral excluye ambas señales, sin retirar los reactivos del repaso. Se corrige también la pista inversa detectada en M82-transfer-2. La auditoría informa las señales simétricas por separado, sin afirmar que las preguntas señaladas sean jurídicamente inválidas.
+- [Principles of Data Science · 3.4 Probability Theory](https://openstax.org/books/principles-data-science/pages/3-4-probability-theory)
+- [Contemporary Mathematics · 7.6 Probability with Permutations and Combinations](https://openstax.org/books/contemporary-mathematics/pages/7-6-probability-with-permutations-and-combinations)

@@ -13,6 +13,19 @@ export function hasPgnLengthOutlier(q: Question): boolean {
   return length(correct.text) >= 1.5 * max && length(correct.text) - max >= 5
 }
 
+/** Symmetric editorial signal, independent of the historic long-answer metric. */
+export function hasPgnShortCorrectOutlier(q: Question): boolean {
+  const correct = q.options.find(o => o.id === q.correctOptionId)
+  const wrong = q.options.filter(o => o.id !== q.correctOptionId).map(o => length(o.text))
+  if (!correct || wrong.length !== 2) return false
+  const min = Math.min(...wrong)
+  return min >= 1.5 * length(correct.text) && min - length(correct.text) >= 5
+}
+
+export function hasPgnLengthCue(q: Question): boolean {
+  return hasPgnLengthOutlier(q) || hasPgnShortCorrectOutlier(q)
+}
+
 export function auditPgnBank(questions: Question[], sources: ReadonlySet<string>) {
   const stems = new Map<string, string[]>()
   const cases = new Map<string, string[]>()
@@ -21,7 +34,7 @@ export function auditPgnBank(questions: Question[], sources: ReadonlySet<string>
   const longestCorrect: string[] = [], lengthOutlier: string[] = [], shortStem: string[] = []
   const displayedCorrectPositions = [0, 0, 0]
   const authored = questions.filter(isPgnAuthored)
-  const authoredLongest: string[] = [], authoredOutlier: string[] = []
+  const authoredLongest: string[] = [], authoredOutlier: string[] = [], shortCorrectOutlier: string[] = [], authoredShortCorrectOutlier: string[] = []
   const track = (map: Map<string, string[]>, key: string, id: string) => {
     const ids = map.get(key) ?? []; ids.push(id); map.set(key, ids)
   }
@@ -45,6 +58,10 @@ export function auditPgnBank(questions: Question[], sources: ReadonlySet<string>
           if (isPgnAuthored(q)) authoredOutlier.push(q.id)
         }
       }
+      if (hasPgnShortCorrectOutlier(q)) {
+        shortCorrectOutlier.push(q.id)
+        if (isPgnAuthored(q)) authoredShortCorrectOutlier.push(q.id)
+      }
       const pos = questionOptionsForDisplay(q).findIndex(o => o.id === q.correctOptionId)
       if (pos >= 0 && pos < 3) displayedCorrectPositions[pos] = (displayedCorrectPositions[pos] ?? 0) + 1
     }
@@ -52,7 +69,7 @@ export function auditPgnBank(questions: Question[], sources: ReadonlySet<string>
   const repeated = (map: Map<string, string[]>) => [...map.values()].filter(ids => ids.length > 1)
   return {
     total: questions.length, authored: authored.length, generated: questions.length - authored.length,
-    missingSource, invalidOptions, weakRationale, shortStem, longestCorrect, lengthOutlier, authoredLongest, authoredOutlier,
+    missingSource, invalidOptions, weakRationale, shortStem, longestCorrect, lengthOutlier, authoredLongest, authoredOutlier, shortCorrectOutlier, authoredShortCorrectOutlier,
     displayedCorrectPositions, repeatedStems: repeated(stems), repeatedCases: repeated(cases), exactDuplicates: repeated(exactItems),
   }
 }

@@ -329,7 +329,7 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
           "reason": "Cumplir un objetivo no implica cumplir el otro."
         },
         {
-          "text": "Declarar incumplidos ambos objetivos porque los 45 minutos de pérdida de datos superan el RPO, aunque el servicio volvió dentro del RTO previsto.",
+          "text": "Incumplir ambos objetivos por superar el RPO, aunque se respete el RTO.",
           "reason": "La pérdida de datos no cambia por sí sola el tiempo real de recuperación."
         }
       ],

@@ -14,7 +14,7 @@ describe('Procuraduría 104-2026 · 3PU-15 course integrity', () => {
     expect(procuraduriaCourse.modules).toHaveLength(85)
     expect(procuraduriaCourse.lessons).toHaveLength(255)
     expect(procuraduriaCourse.questions).toHaveLength(2062)
-    expect(procuraduriaCourse.sources).toHaveLength(88)
+    expect(procuraduriaCourse.sources).toHaveLength(90)
     expect(procuraduriaCourse.practiceConfig?.hasCaseLabs).toBe(true)
   })
 

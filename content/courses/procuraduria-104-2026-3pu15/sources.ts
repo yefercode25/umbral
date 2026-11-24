@@ -777,4 +777,22 @@ export const procuraduriaSources: SourceRef[] = [
     "note": "Respaldo base y WAL para recuperación temporal.",
     "verifiedAt": "2026-11-23"
   },
+  {
+    "id": "openstax-bayes",
+    "title": "Principles of Data Science · 3.4 Probability Theory",
+    "publisher": "OpenStax",
+    "url": "https://openstax.org/books/principles-data-science/pages/3-4-probability-theory",
+    "type": "reference",
+    "note": "Teorema de Bayes y probabilidad posterior.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "openstax-counting",
+    "title": "Contemporary Mathematics · 7.6 Probability with Permutations and Combinations",
+    "publisher": "OpenStax",
+    "url": "https://openstax.org/books/contemporary-mathematics/pages/7-6-probability-with-permutations-and-combinations",
+    "type": "reference",
+    "note": "Reglas de conteo, combinaciones y permutaciones.",
+    "verifiedAt": "2026-11-23"
+  },
 ]

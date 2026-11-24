@@ -3789,7 +3789,8 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
     "correctOptionId": "c",
     "explanation": "Fundamento: OpenStax, Introductory Statistics 2e, probabilidad. La probabilidad posterior condiciona por las 180 alertas, no por todos los casos reales. 90 % es sensibilidad, no proporción de casos reales dentro de las alertas. 10 % es la tasa base previa; observar una alerta cambia la condición.",
     "sourceIds": [
-      "openstax-probability"
+      "openstax-probability",
+      "openstax-bayes"
     ],
     "verifiedAt": "2026-11-23"
   },
@@ -3826,7 +3827,8 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
     "correctOptionId": "a",
     "explanation": "Fundamento: OpenStax, Introductory Statistics 2e, probabilidad. 180/260 es aproximadamente 0,6923; una tasa base mayor cambia el resultado posterior. El mismo filtro no garantiza igual valor predictivo si cambia la prevalencia. 180/1000 es proporción conjunta sobre la población, no condicional.",
     "sourceIds": [
-      "openstax-probability"
+      "openstax-probability",
+      "openstax-bayes"
     ],
     "verifiedAt": "2026-11-23"
   },
@@ -3863,7 +3865,8 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
     "correctOptionId": "b",
     "explanation": "Fundamento: OpenStax, probabilidad y estadística descriptiva. C(5,2)=5×4/2=10; no importa el orden y no hay reemplazo. Veinte cuenta pares ordenados, duplicando cada pareja no ordenada. Veinticinco incluye repetición de un mismo expediente y pares ordenados.",
     "sourceIds": [
-      "openstax-probability"
+      "openstax-probability",
+      "openstax-counting"
     ],
     "verifiedAt": "2026-11-23"
   },
@@ -3900,7 +3903,8 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
     "correctOptionId": "c",
     "explanation": "Fundamento: OpenStax, probabilidad y estadística descriptiva. La diferencia es 90−80=10 puntos y 10/80=12,5 %. Intercambia las unidades de diferencia absoluta y cambio relativo. El crecimiento relativo solicitado se calcula sobre el valor inicial, no el final.",
     "sourceIds": [
-      "openstax-probability"
+      "openstax-probability",
+      "openstax-counting"
     ],
     "verifiedAt": "2026-11-23"
   },

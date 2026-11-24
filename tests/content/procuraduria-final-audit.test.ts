@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { procuraduriaCourse as course } from '../../content/courses/procuraduria-104-2026-3pu15/course'
 import { dianGestorCourse } from '../../content/courses/dian-2676-gestor-ii/course'
 import { practiceQuestionPool } from '../../src/lib/practiceQuestionPool'
-import { auditPgnBank, hasPgnLengthOutlier } from '../../src/lib/procuraduriaBankAudit'
+import { auditPgnBank, hasPgnLengthCue } from '../../src/lib/procuraduriaBankAudit'
 import { isPgnAuthored, isPgnException, isPgnConditional, isPgnBehavior, isPgnKnowledge, pgnSystemsModuleIds } from '../../src/lib/procuraduriaScopes'
 import { examProfilesForCourse, selectExamQuestions } from '../../src/lib/questionSelection'
 import { buildAdaptiveSession } from '../../src/lib/adaptivePractice'
@@ -26,6 +26,8 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
       repeatedStemGroups: audit.repeatedStems.length, repeatedCaseGroups: audit.repeatedCases.length,
       exactDuplicateGroups: audit.exactDuplicates.length,
       authoredLengthOutlierIds: audit.authoredOutlier,
+      authoredShortCorrectOutlier: audit.authoredShortCorrectOutlier.length,
+      authoredShortCorrectOutlierIds: audit.authoredShortCorrectOutlier,
     }))
   })
   it('evita diferencias pronunciadas y patrones inversos en los 20 casos priorizados sin cambiar claves', () => {
@@ -148,7 +150,7 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
         const integrated = qs.filter(q=>q.integrated)
         expect(integrated.length).toBeGreaterThanOrEqual(profile.integratedTarget ?? 0)
         expect(qs.filter(q=>!q.integrated && priority.has(q.moduleId)).length).toBeGreaterThanOrEqual(Math.ceil((profile.size-(profile.integratedTarget ?? 0))/2))
-        if (profile.id==='functional-blind') expect(qs.some(hasPgnLengthOutlier)).toBe(false)
+        if (profile.id==='functional-blind') expect(qs.some(hasPgnLengthCue)).toBe(false)
         if (profile.id==='functional-deep') expect(qs.every(q=>q.difficulty>=4)).toBe(true)
         expect(new Set(integrated.map(q=>q.scenarioId)).size).toBeGreaterThanOrEqual(Math.min(4,profile.integratedTarget ?? 0))
       }
