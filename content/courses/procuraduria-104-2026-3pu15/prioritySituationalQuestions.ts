@@ -706,16 +706,16 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una matriz probatoria enumera veinte diligencias para investigar una alteración, pero no identifica qué hecho demuestra cada una. Una nueva copia de seguridad descarta la hora originalmente atribuida y el equipo propone conservar todas las tareas, sin ajustar hipótesis ni fechas. La jefatura pide un producto que permita a otro profesional revisar el razonamiento y continuar el trabajo.",
     "stem": "¿Cómo debe actualizarse la matriz para orientar diligencias y evitar acumulación sin propósito?",
     "options": [
+      "Relacionar cada hecho con hipótesis, fuente, prueba de contraste, resultado y vacío; revisar fechas y prioridades a partir de la copia y documentar las razones del cambio.",
       "Añadir más diligencias sin modificar el planteamiento inicial, para que el número de fuentes respalde la conclusión.",
-      "Reemplazar toda la cronología por el dato de la copia y dar por resuelta la atribución personal.",
-      "Relacionar cada hecho con hipótesis, fuente, prueba de contraste, resultado y vacío; revisar fechas y prioridades a partir de la copia y documentar las razones del cambio."
+      "Reemplazar toda la cronología por el dato de la copia y dar por resuelta la atribución personal."
     ],
     "rationales": [
+      "Un plan verificable relaciona hechos y fuentes y registra evidencia contradictoria.",
       "El volumen no reemplaza pertinencia ni actualización.",
-      "Un dato temporal no acredita identidad o responsabilidad.",
-      "Un plan verificable relaciona hechos y fuentes y registra evidencia contradictoria."
+      "Un dato temporal no acredita identidad o responsabilidad."
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "a",
     "explanation": "Fundamento: CGD, 148, 150–151, 155–156; Ley 527 arts. 9–12. Un plan verificable relaciona hechos y fuentes y registra evidencia contradictoria. Primera alternativa incorrecta: El volumen no reemplaza pertinencia ni actualización. Segunda alternativa incorrecta: Un dato temporal no acredita identidad o responsabilidad."
   }
 ],
@@ -726,15 +726,15 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "stem": "¿Qué corrección exige la apreciación racional de indicios en este expediente?",
     "options": [
       "Contar los campos del mismo evento como tres indicios autónomos porque aparecen en columnas diferentes.",
-      "Acreditar el hecho indicador como unidad, explicar la inferencia hacia la autoría y contrastar automatismos y fuentes independientes antes de asignar mérito al conjunto.",
-      "Descartar todo uso de indicios en disciplina porque no integran la enumeración de medios de prueba del art. 149."
+      "Descartar todo uso de indicios en disciplina porque no integran la enumeración de medios de prueba del art. 149.",
+      "Acreditar el hecho indicador como unidad, explicar la inferencia hacia la autoría y contrastar automatismos y fuentes independientes antes de asignar mérito al conjunto."
     ],
     "rationales": [
       "Dividir el mismo indicador no crea tres hechos autónomos.",
-      "Arts. 196–199 regulan hecho indicador, unidad y valoración; art. 149 permite considerar indicios al apreciar pruebas.",
-      "El CGD sí contempla los indicios en la valoración."
+      "El CGD sí contempla los indicios en la valoración.",
+      "Arts. 196–199 regulan hecho indicador, unidad y valoración; art. 149 permite considerar indicios al apreciar pruebas."
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "c",
     "explanation": "Fundamento: CGD, 149, 159–160, 160A, 196–199. Arts. 196–199 regulan hecho indicador, unidad y valoración; art. 149 permite considerar indicios al apreciar pruebas. Primera alternativa incorrecta: Dividir el mismo indicador no crea tres hechos autónomos. Segunda alternativa incorrecta: El CGD sí contempla los indicios en la valoración."
   }
 ],
@@ -745,15 +745,15 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "stem": "¿Qué tratamiento debe aplicarse a la consulta y a la expedición de copias en el supuesto del art. 192?",
     "options": [
       "Entregar copia íntegra sin registro porque toda calidad procesal elimina la reserva documental.",
-      "Negar incluso la consulta al defensor porque ningún sujeto procesal puede conocer documentos reservados.",
-      "Garantizar la consulta del sujeto procesal conforme al régimen, conservar los documentos separados y reservados y aplicar la prohibición de expedir copias prevista para ese supuesto."
+      "Garantizar la consulta del sujeto procesal conforme al régimen, conservar los documentos separados y reservados y aplicar la prohibición de expedir copias prevista para ese supuesto.",
+      "Negar incluso la consulta al defensor porque ningún sujeto procesal puede conocer documentos reservados."
     ],
     "rationales": [
       "La reserva subsiste aun cuando se permita consultar.",
-      "La norma reconoce expresamente la consulta.",
-      "El parágrafo del art. 192 diferencia consulta por sujetos procesales y prohibición de copias."
+      "El parágrafo del art. 192 diferencia consulta por sujetos procesales y prohibición de copias.",
+      "La norma reconoce expresamente la consulta."
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "b",
     "explanation": "Fundamento: CGD, 187–195; Ley 527 arts. 8–12. El parágrafo del art. 192 diferencia consulta por sujetos procesales y prohibición de copias. Primera alternativa incorrecta: La reserva subsiste aun cuando se permita consultar. Segunda alternativa incorrecta: La norma reconoce expresamente la consulta."
   }
 ],
@@ -763,16 +763,16 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "En una versión libre un disciplinable acepta que estuvo presente en la oficina, pero no admite ejecutar la conducta investigada y decide guardar silencio sobre una pregunta. El acta no contiene confesión formal ni acreditación de que se cumplieran sus requisitos. El funcionario propone calificar la afirmación parcial como confesión completa y recomendar automáticamente una rebaja de sanción.",
     "stem": "¿Qué distinción debe hacerse entre versión libre y confesión con efectos procesales?",
     "options": [
-      "Tratar cualquier admisión de presencia como aceptación integral de responsabilidad y otorgar rebaja automática.",
       "Valorar la afirmación dentro del conjunto, respetar el silencio y verificar los requisitos y oportunidad de los arts. 161–163 antes de reconocer confesión o beneficio.",
+      "Tratar cualquier admisión de presencia como aceptación integral de responsabilidad y otorgar rebaja automática.",
       "Descartar toda la versión porque el disciplinable no respondió todas las preguntas formuladas."
     ],
     "rationales": [
-      "Presencia no equivale a confesión de la falta.",
       "La confesión exige condiciones legales y su mérito se valora racionalmente.",
+      "Presencia no equivale a confesión de la falta.",
       "El silencio no invalida el ejercicio de defensa."
     ],
-    "correctOptionId": "b",
+    "correctOptionId": "a",
     "explanation": "Fundamento: CGD, 161–176; Constitución art. 33. La confesión exige condiciones legales y su mérito se valora racionalmente. Primera alternativa incorrecta: Presencia no equivale a confesión de la falta. Segunda alternativa incorrecta: El silencio no invalida el ejercicio de defensa."
   }
 ],
@@ -782,16 +782,16 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "En una investigación existen dos dictámenes sobre la integridad de un archivo. El segundo utiliza una herramienta diferente y contradice parcialmente al primero. No prosperó ninguna objeción por error grave. El instructor propone reemplazar automáticamente el primer dictamen por el más reciente, sin explicar las diferencias de método ni contrastar las conclusiones con los demás documentos del expediente.",
     "stem": "¿Cómo corresponde valorar ambos dictámenes bajo el art. 182?",
     "options": [
-      "Apreciarlos conjuntamente, explicar solidez, precisión, método, idoneidad y contradicciones, relacionándolos con el resto de la prueba; no sustituir automáticamente el primero.",
       "Asignar valor exclusivo al segundo dictamen por su fecha posterior, aunque no haya prosperado objeción.",
-      "Promediar las conclusiones de ambos sin examinar premisas ni calidad técnica para obtener una conclusión neutral."
+      "Promediar las conclusiones de ambos sin examinar premisas ni calidad técnica para obtener una conclusión neutral.",
+      "Apreciarlos conjuntamente, explicar solidez, precisión, método, idoneidad y contradicciones, relacionándolos con el resto de la prueba; no sustituir automáticamente el primero."
     ],
     "rationales": [
-      "Art. 182 establece apreciación conjunta de dictámenes, con excepción legal por objeción que prospere.",
       "La fecha no determina superioridad probatoria.",
-      "Una media de conclusiones no reemplaza valoración metodológica."
+      "Una media de conclusiones no reemplaza valoración metodológica.",
+      "Art. 182 establece apreciación conjunta de dictámenes, con excepción legal por objeción que prospere."
     ],
-    "correctOptionId": "a",
+    "correctOptionId": "c",
     "explanation": "Fundamento: CGD, 177–184, 193–195. Art. 182 establece apreciación conjunta de dictámenes, con excepción legal por objeción que prospere. Primera alternativa incorrecta: La fecha no determina superioridad probatoria. Segunda alternativa incorrecta: Una media de conclusiones no reemplaza valoración metodológica."
   }
 ],
@@ -802,15 +802,15 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "stem": "¿Cómo documentar los hallazgos y el testimonio conforme a las reglas de inspección?",
     "options": [
       "Sustituir el testimonio por un resumen informal en el acta y conservar solo los documentos que favorezcan la hipótesis.",
-      "Finalizar sin recaudar ningún soporte porque toda inspección se limita a observar y no permite recibir testimonios.",
-      "Registrar observaciones y manifestaciones en el acta, recibir el testimonio útil conforme al art. 185 en formulario distinto y recoger y conservar soportes con procedimientos de cadena de custodia."
+      "Registrar observaciones y manifestaciones en el acta, recibir el testimonio útil conforme al art. 185 en formulario distinto y recoger y conservar soportes con procedimientos de cadena de custodia.",
+      "Finalizar sin recaudar ningún soporte porque toda inspección se limita a observar y no permite recibir testimonios."
     ],
     "rationales": [
       "El resumen no sustituye la diligencia testimonial prevista.",
-      "La inspección sí puede incorporar elementos útiles bajo reglas legales.",
-      "Los arts. 185–186 regulan acta, testimonio separado y preservación de elementos."
+      "Los arts. 185–186 regulan acta, testimonio separado y preservación de elementos.",
+      "La inspección sí puede incorporar elementos útiles bajo reglas legales."
     ],
-    "correctOptionId": "c",
+    "correctOptionId": "b",
     "explanation": "Fundamento: CGD, 154, 157, 185–186. Los arts. 185–186 regulan acta, testimonio separado y preservación de elementos. Primera alternativa incorrecta: El resumen no sustituye la diligencia testimonial prevista. Segunda alternativa incorrecta: La inspección sí puede incorporar elementos útiles bajo reglas legales."
   }
 ],

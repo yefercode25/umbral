@@ -73,7 +73,7 @@ describe('Auditoría M35–M44: derecho probatorio y evidencia', () => {
     ],
     "keys": [
       "a",
-      "c",
+      "a",
       "c"
     ]
   },
@@ -91,7 +91,7 @@ describe('Auditoría M35–M44: derecho probatorio y evidencia', () => {
     ],
     "keys": [
       "c",
-      "b",
+      "c",
       "b"
     ]
   },
@@ -109,7 +109,7 @@ describe('Auditoría M35–M44: derecho probatorio y evidencia', () => {
     ],
     "keys": [
       "b",
-      "c",
+      "b",
       "a"
     ]
   },
@@ -128,7 +128,7 @@ describe('Auditoría M35–M44: derecho probatorio y evidencia', () => {
     ],
     "keys": [
       "a",
-      "b",
+      "a",
       "c"
     ]
   },
@@ -145,7 +145,7 @@ describe('Auditoría M35–M44: derecho probatorio y evidencia', () => {
     ],
     "keys": [
       "c",
-      "a",
+      "c",
       "b"
     ]
   },
@@ -162,7 +162,7 @@ describe('Auditoría M35–M44: derecho probatorio y evidencia', () => {
     ],
     "keys": [
       "b",
-      "c",
+      "b",
       "a"
     ]
   },

@@ -30,4 +30,4 @@ Profesional Universitario 3PU-15, Convocatoria 104-2026. Diez módulos, 30 lecci
 - [Ley 527](https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=4276)
 - [Ley 2365](https://apps.procuraduria.gov.co/normograma/compilacion/docs/ley_2365_2024.htm)
 
-Pruebas de regresión: títulos, ejemplos, fuentes, claves históricas, escenarios y preguntas únicas, tres opciones y racionales distintos. Integrar solo con CI y vista previa Netlify exitosas.
+Segunda revisión cruzada: claves situacionales contrastadas contra las prioridades históricas o el algoritmo de rotación original; M14 distingue informe de archivo y dictamen; M28 explicita consulta sin copia del art. 192. Pruebas de regresión: títulos, ejemplos, fuentes, claves históricas, escenarios y preguntas únicas, tres opciones y racionales distintos. Integrar solo con CI y vista previa Netlify exitosas.
