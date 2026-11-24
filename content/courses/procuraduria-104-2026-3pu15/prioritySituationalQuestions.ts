@@ -189,17 +189,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     caseText: 'Una oficina mantiene una matriz de correspondencia con número de radicado y fecha. El jefe pide tramitar primero la solicitud de un conocido, sin soporte para alterar el orden. Otro expediente contiene un documento que podría justificar legalmente una atención prioritaria; hay datos personales en las dos carpetas. La oficina afirma que la celeridad y publicidad del artículo 209 justifican tanto el cambio informal de orden como publicar todas las solicitudes sin revisión.',
     stem: '¿Qué decisión permite aplicar simultáneamente igualdad, imparcialidad, celeridad y publicidad sin convertirlos en excusas para arbitrariedades?',
     options: [
-      'Tramitar primero al conocido y luego compensar atendiendo a otra persona, porque un reparto informal termina produciendo igualdad estadística.',
-      'Validar registros y criterios oficiales de atención, examinar la prioridad legal acreditada, documentar cualquier cambio y divulgar solo la información que proceda conforme a protección de datos y reservas aplicables.',
-      'Publicar íntegramente todas las solicitudes para demostrar transparencia, dejando que cada interesado gestione después la protección de su información.',
+      "Atender primero las solicitudes que la jefatura identifique como urgentes y registrar el cambio de turno.",
+      "Aplicar criterios legales de atención prioritaria, documentar las excepciones y revisar qué información puede divulgarse conforme al régimen de acceso.",
+      "Mantener el orden de llegada en ambos expedientes para asegurar igualdad formal y entregar a terceros una copia completa de cada solicitud."
     ],
     rationales: [
-      'El favoritismo no se corrige favoreciendo arbitrariamente después a otra persona y puede violar la imparcialidad.',
-      'Los principios del artículo 209 se aplican conjuntamente con competencia, reglas de atención, tratamiento de datos y motivación de las excepciones.',
-      'La publicidad no es una autorización automática para divulgar datos personales protegidos o material sujeto a restricciones legales.',
+      "La instrucción informal no configura una prioridad legal y el ajuste posterior no subsana el trato arbitrario.",
+      "La igualdad material admite prioridades legales; la publicidad respeta restricciones de acceso.",
+      "El turno ordinario no desplaza prioridades legales y la radicación no autoriza divulgar información protegida."
     ],
     correctOptionId: 'b',
-    explanation: 'Art. 209 constitucional y CPACA: eficacia y celeridad no eliminan igualdad e imparcialidad. Publicidad no equivale a entrega indiscriminada de datos personales; las prioridades requieren supuesto legal y constancia. El uso de Excel es de apoyo, no crea criterios de prioridad.',
+    explanation: "La igualdad material admite prioridades legales; la publicidad respeta restricciones de acceso. La instrucción informal no configura una prioridad legal y el ajuste posterior no subsana el trato arbitrario. El turno ordinario no desplaza prioridades legales y la radicación no autoriza divulgar información protegida.",
   }],
   'pgn-m8': [{
     number: 1,
@@ -308,17 +308,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     caseText: 'Una estudiante prepara el simulacro de Procuraduría. Recuerda que el artículo 208 del Código General Disciplinario contempla una indagación previa de seis meses. En una pregunta se desconoce quién sería el presunto autor; en otra, el posible autor ya está individualizado. Un compañero afirma que cualquier queja exige los mismos seis meses, y otro sostiene que el plazo siempre puede ampliarse porque existen derechos fundamentales involucrados.',
     stem: '¿Cómo debe utilizarse la regla del artículo 208 para resolver ambos casos sin depender de una cifra memorizada?',
     options: [
-      'Comprobar primero si existe duda sobre identificación o individualización del posible autor, distinguir el término general de seis meses y examinar únicamente la extensión especial legalmente prevista para violaciones de derechos humanos o derecho internacional humanitario.',
-      'Aplicar siempre una indagación previa de seis meses a toda queja y dejar para el cierre la comprobación del supuesto que justificaba abrirla.',
-      'Asumir que cualquier posible afectación de derechos fundamentales extiende automáticamente la indagación por otros seis meses, sin examinar el supuesto legal específico.',
+      "Verificar la duda de individualización, aplicar el término general de seis meses y examinar la extensión especial para violaciones de DD. HH. o DIH.",
+      "Abrir indagación por seis meses en ambos casos, porque conocer preliminarmente la identidad no impide agotar la fase de indagación.",
+      "Ampliar la indagación cuando se alegue un derecho fundamental, si el despacho considera que la complejidad del caso requiere tiempo adicional."
     ],
     rationales: [
-      'Identifica el presupuesto de procedencia, el plazo, la excepción y la etapa antes de escoger la alternativa.',
-      'El artículo 208 no establece la indagación previa como fase obligatoria para cualquier noticia disciplinaria.',
-      'La extensión especial requiere el supuesto señalado por la ley; no se desprende automáticamente de la invocación genérica de un derecho.',
+      "El art. 208 exige duda de identificación y contempla la extensión especial para el supuesto indicado.",
+      "Si el posible autor ya está individualizado, debe evaluarse la ruta de investigación; no existe una indagación obligatoria.",
+      "La extensión no depende de la invocación genérica de derechos o de una apreciación libre de complejidad."
     ],
     correctOptionId: 'a',
-    explanation: 'El artículo 208 de la Ley 1952 de 2019, modificado por el artículo 34 de la Ley 2094 de 2021, vincula la indagación previa a dudas sobre identificación del posible autor, fija seis meses y prevé una posible extensión especial por violaciones a derechos humanos o derecho internacional humanitario. La clave es analizar supuesto, norma, término y decisión, no reconocer solo el número.',
+    explanation: "El art. 208 exige duda de identificación y contempla la extensión especial para el supuesto indicado. Si el posible autor ya está individualizado, debe evaluarse la ruta de investigación; no existe una indagación obligatoria. La extensión no depende de la invocación genérica de derechos o de una apreciación libre de complejidad.",
   }],
   'pgn-m18': [
   {
@@ -345,17 +345,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "En una actuación disciplinaria hay suficientes documentos para considerar una hipótesis de falta, pero aún se discuten elementos relativos a la responsabilidad personal. El profesional de apoyo recibe la instrucción de proyectar una sanción inmediata, aunque el asunto está en instrucción y no ha llegado al juzgamiento.",
     "stem": "¿Qué criterio permite escoger el acto propio de la etapa sin anticipar la decisión definitiva?",
     "options": [
-      "Proyectar sanción definitiva porque el principio de economía permite concentrar instrucción y juzgamiento.",
-      "Determinar si procede completar diligencias o evaluar la investigación conforme a los requisitos de cargos o archivo; reservar el fallo a la autoridad de juzgamiento y su estándar probatorio.",
-      "Remitir un fallo absolutorio sin evaluar los elementos recaudados, porque cualquier controversia impide continuar la investigación."
+      "Proyectar una sanción como propuesta de instrucción y remitirla al juzgador para que confirme o modifique la decisión tras revisar el expediente.",
+      "Completar diligencias pendientes o evaluar archivo y cargos conforme a sus requisitos, sin anticipar el fallo reservado al juzgador.",
+      "Remitir una propuesta de absolución, pues la controversia impide al instructor adoptar una decisión de evaluación."
     ],
     "rationales": [
-      "Omite un presupuesto legal o anticipa un efecto que no corresponde.",
-      "CGD, arts. 12, 160 y 222: la fase y el estándar requerido delimitan la actuación; ni los cargos ni la hipótesis son un fallo.",
-      "No resuelve el problema de la etapa ni protege los derechos involucrados."
+      "La instrucción no puede anticipar un fallo sancionatorio ni atribuir al juzgador una mera confirmación.",
+      "Los arts. 12, 160 y 222 diferencian autoridad, etapa y estándar de prueba.",
+      "La controversia no impide evaluar el mérito para archivo o cargos; el instructor no proyecta absolución como sustituto del archivo."
     ],
     "correctOptionId": "b",
-    "explanation": "CGD, arts. 12, 160 y 222: la fase y el estándar requerido delimitan la actuación; ni los cargos ni la hipótesis son un fallo."
+    "explanation": "Los arts. 12, 160 y 222 diferencian autoridad, etapa y estándar de prueba. La instrucción no puede anticipar un fallo sancionatorio ni atribuir al juzgador una mera confirmación. La controversia no impide evaluar el mérito para archivo o cargos; el instructor no proyecta absolución como sustituto del archivo."
   }
 ],
   'pgn-m20': [
@@ -402,17 +402,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una dependencia presenta un informe tardío durante una interrupción técnica. El expediente contiene el deber de reporte, la bitácora de indisponibilidad y un correo sobre el procedimiento alterno, pero no prueba si el servidor tenía acceso a dicho canal. La dirección plantea sancionar por el retraso para mejorar el indicador de cumplimiento. El reporte no cuantifica ninguna afectación del servicio.",
     "stem": "¿Qué decisión de apoyo evita confundir un indicador de gestión con responsabilidad disciplinaria?",
     "options": [
-      "Recomendar sanción porque el retraso demuestra por sí solo culpa gravísima.",
-      "Delimitar la conducta y deber, analizar afectación sustancial y justificación, y verificar el cuidado funcional y la posibilidad real de usar el canal alterno.",
-      "Descartar toda relevancia disciplinaria por haberse registrado una interrupción técnica."
+      "Calificar el atraso como culpa grave, usando el correo del canal alterno como prueba de su disponibilidad.",
+      "Examinar el deber incumplido, la afectación sustancial, la justificación y la culpabilidad, incluida la posibilidad real de usar el canal alterno.",
+      "Reconocer la interrupción como justificación suficiente de la conducta, pues una falla documentada del servicio permite descartar el incumplimiento del deber."
     ],
     "rationales": [
-      "La graduación de culpa exige condiciones normativas y prueba.",
-      "El indicador es un hecho de gestión, no prueba suficiente de los elementos de responsabilidad.",
-      "Una interrupción no acredita automáticamente una causal de exclusión."
+      "El correo no demuestra acceso efectivo ni satisface el examen de culpabilidad.",
+      "Los arts. 9, 10 y 26–31 exigen evaluar afectación sustancial, responsabilidad subjetiva y eventuales causas de exclusión.",
+      "La indisponibilidad técnica es relevante, pero debe contrastarse con alternativas y requisitos de la causal."
     ],
     "correctOptionId": "b",
-    "explanation": "CGD, arts. 9, 10 y 26–31: separar deber, ilicitud, culpabilidad y exclusión."
+    "explanation": "Los arts. 9, 10 y 26–31 exigen evaluar afectación sustancial, responsabilidad subjetiva y eventuales causas de exclusión. El correo no demuestra acceso efectivo ni satisface el examen de culpabilidad. La indisponibilidad técnica es relevante, pero debe contrastarse con alternativas y requisitos de la causal."
   }
 ],
   'pgn-m23': [
@@ -459,17 +459,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "La PGN recibe una queja sobre registros de contratación eliminados. Una captura señala a un administrador, pero el informe de seguridad indica que varios operadores usaban la misma cuenta. Se cuenta con fechas, documentos y un posible deber funcional comprometido, aunque no se individualiza a quien actuó. El peticionario pide una sanción inmediata y la oficina debe definir el trámite inicial según su competencia.",
     "stem": "¿Qué actuación distingue correctamente una noticia disciplinaria verificable de una responsabilidad acreditada?",
     "options": [
-      "Inhibirse por la sola ausencia de identificación personal pese a la existencia de hechos verificables.",
-      "Preservar y contrastar soportes, delimitar hechos y competencia y adelantar indagación previa si persiste duda sobre identificación, sin tratar el reporte como prueba definitiva.",
-      "Abrir investigación contra el administrador y formular cargos en la misma decisión porque tenía acceso privilegiado."
+      "Proyectar una decisión inhibitoria por falta de individualización y esperar que el denunciante aporte la identidad del operador.",
+      "Delimitar hechos y competencia, preservar los soportes y adelantar indagación previa si persiste duda sobre la identificación del posible autor.",
+      "Abrir investigación contra el administrador identificado en la captura y tratar la identidad de los demás usuarios como un asunto para la etapa de juzgamiento."
     ],
     "rationales": [
-      "La falta de identificación no convierte por sí sola la noticia en manifiestamente irrelevante.",
-      "La noticia permite evaluar relevancia; la duda de identificación conduce a examinar el presupuesto del art. 208.",
-      "Acceso técnico no equivale a autoría y cargos requieren un estándar distinto."
+      "La falta de identificación no convierte en manifiestamente irrelevante una noticia con hechos verificables.",
+      "Arts. 86 y 208–211: la ruta depende del mérito, competencia y duda de individualización.",
+      "La cuenta compartida no individualiza por sí sola al administrador; la instrucción debe aclararlo antes de desplazar el análisis al juzgamiento."
     ],
     "correctOptionId": "b",
-    "explanation": "CGD arts. 86, 208–211: seleccionar la actuación inicial según la información y la competencia, sin prejuzgar."
+    "explanation": "Arts. 86 y 208–211: la ruta depende del mérito, competencia y duda de individualización. La falta de identificación no convierte en manifiestamente irrelevante una noticia con hechos verificables. La cuenta compartida no individualiza por sí sola al administrador; la instrucción debe aclararlo antes de desplazar el análisis al juzgamiento."
   }
 ],
   'pgn-m26': [
@@ -592,17 +592,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "En una actuación se presenta una solicitud de nulidad por vulneración de defensa. El despacho la decide conforme a la causal alegada. En otro proceso, el funcionario advierte de oficio una causal legal y declara nulidad motivada. La secretaría usa una plantilla idéntica que ofrece reposición en los dos expedientes. Se requiere revisar el recurso procedente antes de expedir las comunicaciones.",
     "stem": "¿Qué distinción establece el Código entre estas dos decisiones?",
     "options": [
-      "Conceder reposición en ambos casos porque cualquier providencia que se refiera a nulidad es recurrible.",
-      "Identificar reposición contra la decisión que resuelve solicitud de nulidad y ausencia de recurso contra la declaratoria oficiosa de nulidad del art. 204.",
-      "Negar todo recurso en ambos casos porque las nulidades nunca admiten impugnación dentro del CGD."
+      "Reconocer reposición contra ambas providencias, pues comparten la misma causal de nulidad y los efectos sobre la actuación pueden ser equivalentes.",
+      "Reconocer reposición frente a la decisión de una solicitud de nulidad; no procede recurso contra la declaratoria oficiosa del artículo 204.",
+      "Excluir reposición en ambos casos porque el régimen especial de nulidades prevalece sobre el catálogo de recursos."
     ],
     "rationales": [
-      "No se puede extender el recurso de la solicitud a la declaratoria oficiosa.",
-      "Arts. 133 y 204 regulan hipótesis distintas: solicitud y declaratoria oficiosa.",
-      "El art. 133 incluye la decisión sobre solicitud de nulidad."
+      "El art. 204 contiene una regla especial para la declaratoria oficiosa, aunque la causal material sea la misma.",
+      "El art. 133 comprende la decisión que resuelve solicitud y el 204 excluye recurso contra la oficiosa.",
+      "La especialidad de las nulidades no elimina la reposición expresamente prevista para la solicitud."
     ],
     "correctOptionId": "b",
-    "explanation": "Fundamento: CGD, arts. 202–207. Arts. 133 y 204 regulan hipótesis distintas: solicitud y declaratoria oficiosa. La primera alternativa incorrecta falla porque no se puede extender el recurso de la solicitud a la declaratoria oficiosa. La segunda falla porque el art. 133 incluye la decisión sobre solicitud de nulidad."
+    "explanation": "El art. 133 comprende la decisión que resuelve solicitud y el 204 excluye recurso contra la oficiosa. El art. 204 contiene una regla especial para la declaratoria oficiosa, aunque la causal material sea la misma. La especialidad de las nulidades no elimina la reposición expresamente prevista para la solicitud."
   }
 ],
   'pgn-m33': [
@@ -649,17 +649,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Un expediente contiene evidencia suficiente de una irregularidad administrativa y un registro que identifica una cuenta de servicio compartida, pero no al operador. Ya se practicaron las diligencias disponibles y se discute la decisión de evaluación. La jefatura sostiene que el daño institucional acredita todos los elementos y que el eventual juzgador puede llenar cualquier vacío sobre responsabilidad.",
     "stem": "¿Qué criterio diferencia el estándar de evaluación de una sanción basada solo en el resultado?",
     "options": [
-      "Examinar si existe demostración objetiva de la falta y prueba que comprometa personalmente al disciplinado, sin trasladar al juzgador ni a la defensa un vacío de atribución.",
-      "Formular cargos siempre que exista daño, aunque no haya prueba que comprometa al posible autor.",
-      "Proferir sanción desde la instrucción porque la irregularidad objetiva equivale a certeza de responsabilidad."
+      "Verificar demostración objetiva de la falta y prueba que comprometa al disciplinado antes de formular cargos; distinguir ese estándar de la certeza sancionatoria.",
+      "Formular cargos por la irregularidad demostrada y usar el juzgamiento para establecer si la cuenta compartida corresponde materialmente al disciplinado.",
+      "Exigir certeza de responsabilidad personal para formular cargos y archivar si subsiste cualquier duda, aun cuando la prueba comprometa al disciplinado."
     ],
     "rationales": [
-      "Los arts. 147, 160 y 222 distinguen carga, cargos y certeza sancionatoria.",
-      "El resultado no satisface todos los requisitos de cargos.",
-      "La sanción exige certeza y competencia de juzgamiento."
+      "Art. 222 exige demostración objetiva de la falta y prueba que comprometa responsabilidad; art. 160 exige certeza para sancionar.",
+      "La cuenta de servicio no aporta por sí sola prueba que comprometa personalmente al disciplinado.",
+      "Elevar el estándar de cargos al de certeza sancionatoria confunde dos decisiones diferentes."
     ],
     "correctOptionId": "a",
-    "explanation": "Fundamento: CGD, 147–150, 160 y 222. Los arts. 147, 160 y 222 distinguen carga, cargos y certeza sancionatoria. Primera alternativa incorrecta: El resultado no satisface todos los requisitos de cargos. Segunda alternativa incorrecta: La sanción exige certeza y competencia de juzgamiento."
+    "explanation": "Art. 222 exige demostración objetiva de la falta y prueba que comprometa responsabilidad; art. 160 exige certeza para sancionar. La cuenta de servicio no aporta por sí sola prueba que comprometa personalmente al disciplinado. Elevar el estándar de cargos al de certeza sancionatoria confunde dos decisiones diferentes."
   }
 ],
   'pgn-m36': [
@@ -668,17 +668,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Durante una investigación se niega una prueba solicitada porque el despacho la considera impertinente. En el proyecto no se describe qué hecho pretendía demostrar ni por qué carecía de relación con el expediente. El defensor identifica una conexión con el posible deber funcional y la providencia aún no ha sido notificada. La secretaría prepara una plantilla sin recurso.",
     "stem": "¿Qué ajuste exige una negativa que pueda ser revisada conforme al régimen disciplinario?",
     "options": [
-      "Negar por fórmula general de economía procesal y omitir recursos por tratarse de una decisión probatoria.",
-      "Conceder apelación en investigación porque toda negativa de prueba se tramita igual que en juicio.",
-      "Motivar la relación o falta de relación con el hecho, diferenciar los criterios del art. 151 y reconocer la reposición procedente frente a negativa en investigación."
+      "Motivar la impertinencia y conceder apelación por tratarse de una decisión que limita la solicitud de pruebas.",
+      "Explicar la falta de utilidad del medio y notificar sin recurso, dejando que el interesado reproduzca la solicitud cuando llegue el juzgamiento.",
+      "Motivar la negativa según el hecho y los criterios del artículo 151, reconociendo la reposición prevista para la etapa de investigación."
     ],
     "rationales": [
-      "La economía no sustituye la motivación ni elimina el recurso previsto.",
-      "Arts. 133 y 134 distinguen las fases.",
-      "La negativa motivada y su recurso dependen del supuesto y fase."
+      "La motivación es necesaria, pero la apelación no es el recurso previsto para la negativa durante investigación.",
+      "Solicitar prueba en juicio no elimina el recurso contra la negativa en investigación.",
+      "Arts. 133, 134 y 151: se requiere motivación concreta y el recurso depende de la fase."
     ],
     "correctOptionId": "c",
-    "explanation": "Fundamento: CGD, 149–151, 133–134; Ley 1581 de 2012. La negativa motivada y su recurso dependen del supuesto y fase. Primera alternativa incorrecta: La economía no sustituye la motivación ni elimina el recurso previsto. Segunda alternativa incorrecta: Arts. 133 y 134 distinguen las fases."
+    "explanation": "Arts. 133, 134 y 151: se requiere motivación concreta y el recurso depende de la fase. La motivación es necesaria, pero la apelación no es el recurso previsto para la negativa durante investigación. Solicitar prueba en juicio no elimina el recurso contra la negativa en investigación."
   }
 ],
   'pgn-m37': [
@@ -687,17 +687,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una prueba documental fue obtenida con desconocimiento acreditado de derechos fundamentales del investigado. El expediente contiene además documentos independientes obtenidos legalmente, y el funcionario propone conservar la primera como fundamento porque coincide con las otras fuentes. Existe acta de obtención y se discute el alcance de la consecuencia procesal antes de evaluar la investigación.",
     "stem": "¿Qué criterio corresponde aplicar a la prueba cuestionada y al resto de la evidencia?",
     "options": [
-      "Utilizarla como prueba complementaria porque coincide con evidencia válida y no será el único fundamento.",
-      "Invalidar necesariamente todos los documentos independientes sin examinar su origen ni relación con el defecto.",
-      "Tener por inexistente la prueba que satisface el supuesto del art. 158 y evaluar de manera autónoma los demás elementos legales, examinando los efectos concretos del defecto."
+      "Conservar el documento como corroboración, excluyéndolo únicamente como fundamento autónomo por su forma irregular de obtención.",
+      "Apartar también los documentos independientes, dado que se refieren al mismo hecho, y repetir la práctica completa antes de valorar nuevamente el expediente.",
+      "Tener por inexistente la prueba que satisface el artículo 158 y valorar de manera autónoma las fuentes lícitas, examinando el alcance concreto del defecto."
     ],
     "rationales": [
-      "La corroboración no sanea la vulneración.",
-      "El efecto sobre las demás pruebas exige análisis concreto.",
-      "El CGD impide fundamentar decisiones en prueba inexistente, sin convertir toda irregularidad en nulidad indiscriminada."
+      "La prueba obtenida con desconocimiento de derechos fundamentales no se sanea por corroboración ni por uso subsidiario.",
+      "La coincidencia de objeto no establece dependencia causal; debe examinarse el origen y efecto del defecto.",
+      "El art. 158 excluye mérito de la prueba inexistente y obliga a distinguir la evidencia restante."
     ],
     "correctOptionId": "c",
-    "explanation": "Fundamento: CGD, 147, 151, 157–158, Constitución art. 29. El CGD impide fundamentar decisiones en prueba inexistente, sin convertir toda irregularidad en nulidad indiscriminada. Primera alternativa incorrecta: La corroboración no sanea la vulneración. Segunda alternativa incorrecta: El efecto sobre las demás pruebas exige análisis concreto."
+    "explanation": "El art. 158 excluye mérito de la prueba inexistente y obliga a distinguir la evidencia restante. La prueba obtenida con desconocimiento de derechos fundamentales no se sanea por corroboración ni por uso subsidiario. La coincidencia de objeto no establece dependencia causal; debe examinarse el origen y efecto del defecto."
   }
 ],
   'pgn-m38': [
@@ -706,17 +706,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una matriz probatoria enumera veinte diligencias para investigar una alteración, pero no identifica qué hecho demuestra cada una. Una nueva copia de seguridad descarta la hora originalmente atribuida y el equipo propone conservar todas las tareas, sin ajustar hipótesis ni fechas. La jefatura pide un producto que permita a otro profesional revisar el razonamiento y continuar el trabajo.",
     "stem": "¿Cómo debe actualizarse la matriz para orientar diligencias y evitar acumulación sin propósito?",
     "options": [
-      "Relacionar cada hecho con hipótesis, fuente, prueba de contraste, resultado y vacío; revisar fechas y prioridades a partir de la copia y documentar las razones del cambio.",
-      "Añadir más diligencias sin modificar el planteamiento inicial, para que el número de fuentes respalde la conclusión.",
-      "Reemplazar toda la cronología por el dato de la copia y dar por resuelta la atribución personal."
+      "Vincular hechos, hipótesis, fuentes, pruebas de contraste y vacíos; ajustar cronología y prioridades a partir de la copia, registrando las razones del cambio.",
+      "Mantener la hipótesis temporal como referencia principal y añadir una diligencia de validación del respaldo al listado inicial, sin revisar las relaciones entre las pruebas.",
+      "Sustituir la hipótesis temporal por la del respaldo y dejar la identificación personal para el informe final."
     ],
     "rationales": [
-      "Un plan verificable relaciona hechos y fuentes y registra evidencia contradictoria.",
-      "El volumen no reemplaza pertinencia ni actualización.",
-      "Un dato temporal no acredita identidad o responsabilidad."
+      "El plan relaciona diligencias con hechos e hipótesis y registra evidencia contradictoria.",
+      "Añadir una actividad aislada no corrige el supuesto temporal ni demuestra pertinencia de las restantes.",
+      "La cronología nueva exige contraste con alternativas; no basta para resolver identidad ni orientar toda la investigación."
     ],
     "correctOptionId": "a",
-    "explanation": "Fundamento: CGD, 148, 150–151, 155–156; Ley 527 arts. 9–12. Un plan verificable relaciona hechos y fuentes y registra evidencia contradictoria. Primera alternativa incorrecta: El volumen no reemplaza pertinencia ni actualización. Segunda alternativa incorrecta: Un dato temporal no acredita identidad o responsabilidad."
+    "explanation": "El plan relaciona diligencias con hechos e hipótesis y registra evidencia contradictoria. Añadir una actividad aislada no corrige el supuesto temporal ni demuestra pertinencia de las restantes. La cronología nueva exige contraste con alternativas; no basta para resolver identidad ni orientar toda la investigación."
   }
 ],
   'pgn-m39': [
@@ -744,17 +744,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Durante una investigación se incorporan documentos sometidos a reserva legal en cuaderno separado. El defensor reconocido solicita consultarlos y obtener copia íntegra para su archivo personal. La secretaría considera que, por ser sujeto procesal, puede llevarse una copia sin controles. No existe excepción específica acreditada para expedir copias de estos documentos reservados.",
     "stem": "¿Qué tratamiento debe aplicarse a la consulta y a la expedición de copias en el supuesto del art. 192?",
     "options": [
-      "Entregar copia íntegra sin registro porque toda calidad procesal elimina la reserva documental.",
-      "Garantizar la consulta del sujeto procesal conforme al régimen, conservar los documentos separados y reservados y aplicar la prohibición de expedir copias prevista para ese supuesto.",
-      "Negar incluso la consulta al defensor porque ningún sujeto procesal puede conocer documentos reservados."
+      "Permitir consulta y copia al defensor previo compromiso de confidencialidad, conservando originales en el cuaderno separado.",
+      "Permitir consulta al sujeto procesal, conservar documentos separados y reservados y abstenerse de expedir copias conforme al supuesto del artículo 192.",
+      "Restringir consulta y copias hasta que termine la investigación, aunque el defensor haya sido reconocido y solicite conocer los documentos."
     ],
     "rationales": [
-      "La reserva subsiste aun cuando se permita consultar.",
-      "El parágrafo del art. 192 diferencia consulta por sujetos procesales y prohibición de copias.",
-      "La norma reconoce expresamente la consulta."
+      "El compromiso de confidencialidad no sustituye la prohibición legal de copias para el supuesto descrito.",
+      "El parágrafo del art. 192 distingue consulta por sujetos procesales de expedición de copias.",
+      "La reserva no priva al sujeto procesal de la consulta expresamente permitida."
     ],
     "correctOptionId": "b",
-    "explanation": "Fundamento: CGD, 187–195; Ley 527 arts. 8–12. El parágrafo del art. 192 diferencia consulta por sujetos procesales y prohibición de copias. Primera alternativa incorrecta: La reserva subsiste aun cuando se permita consultar. Segunda alternativa incorrecta: La norma reconoce expresamente la consulta."
+    "explanation": "El parágrafo del art. 192 distingue consulta por sujetos procesales de expedición de copias. El compromiso de confidencialidad no sustituye la prohibición legal de copias para el supuesto descrito. La reserva no priva al sujeto procesal de la consulta expresamente permitida."
   }
 ],
   'pgn-m41': [
@@ -763,17 +763,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "En una versión libre un disciplinable acepta que estuvo presente en la oficina, pero no admite ejecutar la conducta investigada y decide guardar silencio sobre una pregunta. El acta no contiene confesión formal ni acreditación de que se cumplieran sus requisitos. El funcionario propone calificar la afirmación parcial como confesión completa y recomendar automáticamente una rebaja de sanción.",
     "stem": "¿Qué distinción debe hacerse entre versión libre y confesión con efectos procesales?",
     "options": [
-      "Valorar la afirmación dentro del conjunto, respetar el silencio y verificar los requisitos y oportunidad de los arts. 161–163 antes de reconocer confesión o beneficio.",
-      "Tratar cualquier admisión de presencia como aceptación integral de responsabilidad y otorgar rebaja automática.",
-      "Descartar toda la versión porque el disciplinable no respondió todas las preguntas formuladas."
+      "Valorar la admisión parcial en conjunto, respetar el silencio y comprobar requisitos y oportunidad de los artículos 161–163 antes de reconocer confesión o beneficios.",
+      "Tratar la presencia admitida como confesión de la conducta y diferir la revisión de los requisitos formales hasta el momento de graduar la sanción.",
+      "Valorar exclusivamente pruebas externas a la versión libre, considerando que el silencio parcial afecta el mérito de las afirmaciones realizadas."
     ],
     "rationales": [
-      "La confesión exige condiciones legales y su mérito se valora racionalmente.",
-      "Presencia no equivale a confesión de la falta.",
-      "El silencio no invalida el ejercicio de defensa."
+      "Los arts. 161–163 exigen condiciones legales; la admisión parcial se valora sin anticipar efectos.",
+      "Admitir presencia no significa aceptar la conducta; no cabe diferir la comprobación de requisitos hasta después de reconocer confesión.",
+      "El silencio no vuelve irrelevante todo lo expresamente manifestado ni autoriza inferencias adversas automáticas."
     ],
     "correctOptionId": "a",
-    "explanation": "Fundamento: CGD, 161–176; Constitución art. 33. La confesión exige condiciones legales y su mérito se valora racionalmente. Primera alternativa incorrecta: Presencia no equivale a confesión de la falta. Segunda alternativa incorrecta: El silencio no invalida el ejercicio de defensa."
+    "explanation": "Los arts. 161–163 exigen condiciones legales; la admisión parcial se valora sin anticipar efectos. Admitir presencia no significa aceptar la conducta; no cabe diferir la comprobación de requisitos hasta después de reconocer confesión. El silencio no vuelve irrelevante todo lo expresamente manifestado ni autoriza inferencias adversas automáticas."
   }
 ],
   'pgn-m42': [
@@ -801,17 +801,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "En una inspección ordenada para verificar el estado de un archivo institucional, una persona presente ofrece un testimonio útil y se encuentran elementos documentales relevantes. El comisionado propone resumir sus declaraciones dentro del acta, sin formulario testimonial separado, y llevarse los soportes sin inventario. La autoridad había informado fecha y hora al disciplinable.",
     "stem": "¿Cómo documentar los hallazgos y el testimonio conforme a las reglas de inspección?",
     "options": [
-      "Sustituir el testimonio por un resumen informal en el acta y conservar solo los documentos que favorezcan la hipótesis.",
-      "Registrar observaciones y manifestaciones en el acta, recibir el testimonio útil conforme al art. 185 en formulario distinto y recoger y conservar soportes con procedimientos de cadena de custodia.",
-      "Finalizar sin recaudar ningún soporte porque toda inspección se limita a observar y no permite recibir testimonios."
+      "Incorporar declaraciones en el acta como prueba testimonial y dejar la identificación detallada de soportes para la devolución de la comisión.",
+      "Levantar acta, recibir el testimonio útil en formulario separado, y recoger, identificar y preservar soportes conforme a los artículos 185–186.",
+      "Solicitar al instructor una nueva orden para cualquier testimonio o documento hallado, aunque sea pertinente al objeto de la inspección y se encuentre legalmente disponible."
     ],
     "rationales": [
-      "El resumen no sustituye la diligencia testimonial prevista.",
-      "Los arts. 185–186 regulan acta, testimonio separado y preservación de elementos.",
-      "La inspección sí puede incorporar elementos útiles bajo reglas legales."
+      "El art. 185 establece recepción testimonial en formulario separado; identificación y custodia no se difieren arbitrariamente.",
+      "La inspección permite observación, testimonio útil y preservación de elementos con las formalidades correspondientes.",
+      "La inspección permite recaudar elementos útiles dentro de su alcance; no exige nueva orden por cada hallazgo en ese supuesto."
     ],
     "correctOptionId": "b",
-    "explanation": "Fundamento: CGD, 154, 157, 185–186. Los arts. 185–186 regulan acta, testimonio separado y preservación de elementos. Primera alternativa incorrecta: El resumen no sustituye la diligencia testimonial prevista. Segunda alternativa incorrecta: La inspección sí puede incorporar elementos útiles bajo reglas legales."
+    "explanation": "La inspección permite observación, testimonio útil y preservación de elementos con las formalidades correspondientes. El art. 185 establece recepción testimonial en formulario separado; identificación y custodia no se difieren arbitrariamente. La inspección permite recaudar elementos útiles dentro de su alcance; no exige nueva orden por cada hallazgo en ese supuesto."
   }
 ],
   'pgn-m44': [
@@ -915,17 +915,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una petición solicita actuación urgente ante una amenaza documentada a la integridad de una persona. La oficina tiene información suficiente para identificar el riesgo y la autoridad que debe intervenir, pero el trámite general tiene un plazo ordinario de respuesta. El responsable propone limitarse a asignar la petición a la cola normal sin valorar las circunstancias ni documentar medidas inmediatas.",
     "stem": "¿Qué ruta debe examinarse para responder de manera adecuada al riesgo?",
     "options": [
-      "Aplicar exclusivamente el plazo general sin examinar el riesgo, porque toda petición recibe idéntico tratamiento.",
-      "Verificar el supuesto de atención prioritaria y peligro inminente del art. 20 de Ley 1755, activar medidas y remisión dentro de competencia y documentar la atención.",
-      "Resolver directamente cualquier medida reservada a otra autoridad por el solo hecho de existir urgencia."
+      "Radicar con plazo general, remitir a la autoridad competente y valorar la prioridad cuando responda sobre la amenaza.",
+      "Examinar atención prioritaria y peligro inminente del artículo 20, adoptar medidas inmediatas dentro de competencia y documentar la remisión.",
+      "Asumir la medida de protección solicitada con carácter transitorio hasta que la autoridad competente confirme si corresponde mantenerla en el caso concreto."
     ],
     "rationales": [
-      "El término general no elimina el deber de atención prioritaria cuando procede.",
-      "La atención prioritaria exige valorar las condiciones del caso y actuar dentro de competencia.",
-      "La urgencia no crea atribuciones ajenas."
+      "El peligro inminente puede activar medidas inmediatas; esperar contestación no sustituye ese examen.",
+      "El art. 20 distingue atención prioritaria y medidas urgentes dentro del régimen de competencia.",
+      "La urgencia no confiere competencia para adoptar medidas reservadas a otra autoridad."
     ],
     "correctOptionId": "b",
-    "explanation": "Fundamento: Constitución arts. 13 y 23; Leyes 1618/2013, 1755/2015, 1581/2012 y 2365/2024. La atención prioritaria exige valorar las condiciones del caso y actuar dentro de competencia. Primera alternativa incorrecta: El término general no elimina el deber de atención prioritaria cuando procede. Segunda alternativa incorrecta: La urgencia no crea atribuciones ajenas."
+    "explanation": "El art. 20 distingue atención prioritaria y medidas urgentes dentro del régimen de competencia. El peligro inminente puede activar medidas inmediatas; esperar contestación no sustituye ese examen. La urgencia no confiere competencia para adoptar medidas reservadas a otra autoridad."
   }
 ],
   'pgn-m50': [
@@ -991,17 +991,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Un integrante de una unión temporal incurre en una inhabilidad sobreviniente bajo la regla general del artículo 9. Los demás miembros ofrecen recibir directamente su participación y solicitan aprobación para redistribuirla entre ellos. El expediente no acredita excepción especial y la entidad debe revisar el mecanismo antes de adoptar una decisión sobre la continuidad del contrato.",
     "stem": "¿Cuál alternativa corresponde al supuesto específico de integrante de unión temporal?",
     "options": [
-      "Examinar cesión de la participación a un tercero habilitado con autorización escrita de la entidad, sin permitir cesión entre integrantes de la unión temporal.",
-      "Redistribuir libremente la participación entre miembros porque la unión temporal ya fue seleccionada.",
-      "Ordenar automáticamente liquidar todo el contrato sin evaluar la solución prevista por el art. 9."
+      "Examinar cesión de la participación a un tercero habilitado previa autorización escrita de la entidad, sin permitir transferirla entre miembros de la unión temporal.",
+      "Redistribuir la participación entre integrantes habilitados con autorización escrita, puesto que ellos ya acreditaron requisitos dentro del proceso de selección contractual.",
+      "Examinar primero la terminación del contrato, descartando la cesión a un tercero mientras siga vigente la unión temporal."
     ],
     "rationales": [
-      "El art. 9 contempla cesión a tercero y prohíbe cesión entre miembros.",
-      "La selección anterior no elimina la restricción sobre la cesión.",
-      "El supuesto legal prevé una alternativa a la terminación automática."
+      "El art. 9 establece cesión a tercero autorizada y prohíbe cesión entre miembros.",
+      "La autorización escrita no permite desconocer la prohibición de cesión entre integrantes.",
+      "La regla general prevé la cesión a tercero y no obliga a comenzar por la terminación total."
     ],
     "correctOptionId": "a",
-    "explanation": "Fundamento: Ley 80/1993 arts. 8–9; CPACA arts. 11–12; CGD art. 44. El art. 9 contempla cesión a tercero y prohíbe cesión entre miembros. Primera alternativa incorrecta: La selección anterior no elimina la restricción sobre la cesión. Segunda alternativa incorrecta: El supuesto legal prevé una alternativa a la terminación automática."
+    "explanation": "El art. 9 establece cesión a tercero autorizada y prohíbe cesión entre miembros. La autorización escrita no permite desconocer la prohibición de cesión entre integrantes. La regla general prevé la cesión a tercero y no obliga a comenzar por la terminación total."
   }
 ],
   'pgn-m54': [
@@ -1010,17 +1010,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una entidad recibe denuncias por un patrón de pagos atípicos y las registra en un archivo accesible a todo el personal, con nombres y teléfonos de informantes. El equipo de riesgos identifica operaciones que requieren contraste documental, pero su director quiere publicar los datos completos y clasificar como responsables a quienes figuran en el tablero antes de revisar los soportes.",
     "stem": "¿Qué actuación concilia transparencia, protección de información y análisis de señales?",
     "options": [
-      "Difundir todos los identificadores y etiquetas de responsabilidad porque la transparencia prevalece sin excepción.",
-      "Eliminar las denuncias y no revisar pagos porque la información contiene datos personales.",
-      "Restringir datos protegidos, preservar fuentes y verificar operaciones y controles; comunicar resultados agregados cuando proceda y canalizar hechos relevantes por competencia."
+      "Divulgar operaciones y nombres de denunciados como alerta pública, reservando solo los datos de contacto de informantes.",
+      "Restringir completamente el acceso al expediente y suspender el contraste de operaciones hasta que se obtenga autorización de todos los titulares de los datos.",
+      "Restringir identificadores protegidos, preservar las fuentes, contrastar operaciones y controles, y comunicar resultados autorizados y hechos relevantes por competencia, sin prejuzgar."
     ],
     "rationales": [
-      "La publicidad no elimina restricciones ni permite prejuzgar.",
-      "La protección de datos no exige destruir información útil legalmente custodiada.",
-      "Transparencia y protección de datos coexisten; la señal requiere análisis y ruta competente."
+      "La transparencia no justifica identificar responsables sin verificar hechos ni habilitación de acceso.",
+      "La existencia de datos personales no exige suspender tratamiento legalmente autorizado por competencia y finalidad.",
+      "El tratamiento proporcional protege información y permite verificar riesgos y remitir hechos al competente."
     ],
     "correctOptionId": "c",
-    "explanation": "Fundamento: Ley 1474/2011 art. 73 modificado por Ley 2195/2022 art. 31; Decreto 1122/2024; Ley 1712/2014. Transparencia y protección de datos coexisten; la señal requiere análisis y ruta competente. Primera alternativa incorrecta: La publicidad no elimina restricciones ni permite prejuzgar. Segunda alternativa incorrecta: La protección de datos no exige destruir información útil legalmente custodiada."
+    "explanation": "El tratamiento proporcional protege información y permite verificar riesgos y remitir hechos al competente. La transparencia no justifica identificar responsables sin verificar hechos ni habilitación de acceso. La existencia de datos personales no exige suspender tratamiento legalmente autorizado por competencia y finalidad."
   }
 ],
   'pgn-m55': [
@@ -1029,17 +1029,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "En un expediente aparecen una captura de visor público, el plano anexo a un acuerdo y una capa descargada sin metadatos. La captura sitúa aparentemente una obra fuera de un perímetro; el plano tiene otra escala. La jefatura pide declarar incumplimiento antes de verificar qué cartografía fue adoptada y si la precisión permite ubicar la construcción. Existe acceso autorizado al archivo oficial.",
     "stem": "¿Qué producto técnico permite sustentar el riesgo territorial sin confundir una visualización con el instrumento normativo adoptado?",
     "options": [
-      "Elegir la captura por ser la más reciente.",
-      "Identificar acto y plano oficial, validar escala y referencia, documentar incertidumbre y contrastar con la autoridad.",
-      "Descartar toda fuente geográfica por no ser texto normativo."
+      "Tomar la captura reciente como referencia oficial y validar coordenadas si la entidad objeta la conclusión.",
+      "Verificar el acto y plano formalmente adoptados, validar escala y sistema de referencia, y documentar incertidumbre antes de emitir el informe.",
+      "Usar solo el texto del acuerdo y excluir el plano y las capas, ya que las normas urbanísticas deben interpretarse sin evidencia cartográfica."
     ],
     "rationales": [
-      "El visor no sustituye el acto adoptado.",
-      "La validez normativa y la precisión espacial son controles distintos.",
-      "La cartografía puede ser útil si se verifica su alcance."
+      "La fecha del visor no acredita adopción normativa ni precisión espacial.",
+      "La validez del instrumento y la calidad técnica de la comparación se verifican por separado.",
+      "El plano adoptado forma parte del instrumento y la cartografía pertinente puede aportar evidencia."
     ],
     "correctOptionId": "b",
-    "explanation": "Fundamento: Constitución arts. 287–288, 311 y 313; Ley 388 arts. 9–10, 24 y 30–35; Ley 2294 art. 32. La validez normativa y la precisión espacial son controles distintos. Primera alternativa incorrecta: El visor no sustituye el acto adoptado. Segunda alternativa incorrecta: La cartografía puede ser útil si se verifica su alcance."
+    "explanation": "La validez del instrumento y la calidad técnica de la comparación se verifican por separado. La fecha del visor no acredita adopción normativa ni precisión espacial. El plano adoptado forma parte del instrumento y la cartografía pertinente puede aportar evidencia."
   }
 ],
   'pgn-m56': [
@@ -1048,17 +1048,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "La oportunidad sube de 60 % a 75 % con igual ficha y población comparable. La meta es 90 %. Un informe dice que la mejora relativa es 15 % y propone cerrar el plan por considerar alcanzado el objetivo. Los datos permiten revisar los casos tardíos por dependencia; todavía no se evaluó la causa ni se documentó una acción que explique el cambio entre períodos.",
     "stem": "¿Cómo interpretar el cambio en puntos porcentuales, la variación relativa y la brecha frente a la meta institucional?",
     "options": [
-      "Aumento de 15 puntos porcentuales, 25 % relativo y brecha de 15 puntos frente a meta; analizar causas.",
-      "Mejora relativa de 15 % y cumplimiento total de la meta.",
-      "Reducción de 25 puntos porcentuales en el incumplimiento."
+      "Mejora de 15 puntos, equivalente a 25 % relativo; faltan 15 puntos para la meta.",
+      "Mejora relativa de 15 % y aumento de 25 puntos; faltan 15 puntos para la meta.",
+      "Reducción del incumplimiento de 25 puntos y brecha frente a la meta de 15 % relativo."
     ],
     "rationales": [
-      "La diferencia es 15 y 15/60 es 25 %; aún falta la meta.",
-      "Confunde unidades y logro de objetivo.",
-      "El incumplimiento cae de 40 a 25: 15 puntos."
+      "75−60 = 15 puntos; 15/60 = 25 %; 90−75 = 15 puntos de brecha.",
+      "Intercambia variación relativa y diferencia absoluta.",
+      "El incumplimiento baja de 40 % a 25 % (15 puntos); la brecha de oportunidad se expresa aquí en puntos."
     ],
     "correctOptionId": "a",
-    "explanation": "Fundamento: Decreto 1499/2017 art. 2.2.22.3.4; Ley 87/1993; SGC PGN. La diferencia es 15 y 15/60 es 25 %; aún falta la meta. Primera alternativa incorrecta: Confunde unidades y logro de objetivo. Segunda alternativa incorrecta: El incumplimiento cae de 40 a 25: 15 puntos."
+    "explanation": "75−60 = 15 puntos; 15/60 = 25 %; 90−75 = 15 puntos de brecha. Intercambia variación relativa y diferencia absoluta. El incumplimiento baja de 40 % a 25 % (15 puntos); la brecha de oportunidad se expresa aquí en puntos."
   }
 ],
   'pgn-m57': [
@@ -1086,17 +1086,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Un archivo de gestión se queda sin espacio y propone eliminar expedientes electrónicos con más de cinco años. La TRD establece tiempos diferentes según serie y existen trámites todavía abiertos. El inventario permite individualizar los expedientes, pero no se comprobó el cierre ni la autorización de disposición final. La oficina quiere liberar almacenamiento antes de hacer la revisión archivística.",
     "stem": "¿Qué controles archivísticos deben verificarse antes de autorizar transferencia o disposición final de los expedientes?",
     "options": [
-      "Borrar todo lo anterior a cinco años.",
-      "Identificar serie y TRD aplicable, revisar cierre y restricciones, y seguir transferencia o disposición autorizada con inventario.",
-      "Mover archivos a papelera compartida y dar por cumplida disposición."
+      "Aplicar cinco años como plazo común, verificando inventario y conservando los expedientes abiertos hasta su cierre.",
+      "Verificar serie, TRD, cierre y restricciones; ejecutar transferencia o disposición autorizada con inventario y constancias del procedimiento realizado.",
+      "Trasladar los expedientes de mayor antigüedad a almacenamiento temporal y registrar como ejecutada la disposición final mientras se revisan las tablas de retención."
     ],
     "rationales": [
-      "Un plazo arbitrario no sustituye TRD.",
-      "La retención y disposición se determinan por instrumentos y procedimiento.",
-      "La disposición exige constancias y controles."
+      "Inventario y cierre no sustituyen retención y disposición por serie.",
+      "Ley 594 y Acuerdo 001/2024: aplicar instrumentos archivísticos, condiciones y procedimiento autorizado.",
+      "El traslado de almacenamiento no acredita disposición final ni permite registrar un procedimiento no realizado."
     ],
     "correctOptionId": "b",
-    "explanation": "Fundamento: Ley 594/2000 arts. 21–26; Acuerdo AGN 001/2024; Ley 527 arts. 8–12. La retención y disposición se determinan por instrumentos y procedimiento. Primera alternativa incorrecta: Un plazo arbitrario no sustituye TRD. Segunda alternativa incorrecta: La disposición exige constancias y controles."
+    "explanation": "Ley 594 y Acuerdo 001/2024: aplicar instrumentos archivísticos, condiciones y procedimiento autorizado. Inventario y cierre no sustituyen retención y disposición por serie. El traslado de almacenamiento no acredita disposición final ni permite registrar un procedimiento no realizado."
   }
 ],
   'pgn-m59': [
@@ -1105,17 +1105,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Un informe de cuarenta páginas presenta diferencias de una base institucional, pero omite consultas, filtros, versión y filas de soporte. La copia Word incluye comentarios con datos personales de terceros. La dirección pide enviarla fuera de la institución sin revisar la autorización ni el expediente. Se conservan las fuentes y el analista puede describir los parámetros de procesamiento utilizados.",
     "stem": "¿Qué ajustes hacen reproducible el informe y protegen los datos que no deben llegar al destinatario externo?",
     "options": [
-      "Documentar encargo, fuentes, método, resultados y límites, anexos trazables y revisar reserva y metadatos de copia de entrega.",
-      "Enviar íntegro porque extensión y comentarios demuestran rigor.",
-      "Eliminar fuentes, anexos y método para evitar exposición."
+      "Documentar encargo, fuentes, método, resultados y límites; incorporar anexos trazables, revisar autorización, reserva y metadatos de una copia de entrega separada.",
+      "Mantener el informe íntegro con comentarios internos y adjuntar advertencia de confidencialidad en vez de examinar autorización de acceso.",
+      "Preparar una versión con conclusiones y cifras agregadas, retirando método y anexos de todas las versiones para que no puedan reconstruirse los datos individuales."
     ],
     "rationales": [
-      "La calidad requiere reproducibilidad y divulgación controlada.",
-      "Extensión no acredita rigor ni autoriza exposición.",
-      "Proteger datos no exige destruir soportes."
+      "La reproducibilidad y la divulgación controlada requieren conservar soportes y revisar la versión de entrega.",
+      "Una advertencia no habilita divulgar datos ni resuelve la ausencia de metodología.",
+      "La versión pública puede limitar información protegida, pero no destruir trazabilidad ni soportes autorizados."
     ],
     "correctOptionId": "a",
-    "explanation": "Fundamento: Ley 1755 arts. 14, 20–21, 25–26; Ley 1712; CGD arts. 193–195; perfil 104. La calidad requiere reproducibilidad y divulgación controlada. Primera alternativa incorrecta: Extensión no acredita rigor ni autoriza exposición. Segunda alternativa incorrecta: Proteger datos no exige destruir soportes."
+    "explanation": "La reproducibilidad y la divulgación controlada requieren conservar soportes y revisar la versión de entrega. Una advertencia no habilita divulgar datos ni resuelve la ausencia de metodología. La versión pública puede limitar información protegida, pero no destruir trazabilidad ni soportes autorizados."
   }
 ],
   'pgn-m60': [

@@ -12,7 +12,7 @@ Umbral ofrece una ruta de aprendizaje con nodos de unidades, módulos y leccione
 
 ## Estado actual · biblioteca multi-curso
 
-### Procuraduría 104-2026 · Profesional Universitario 3PU-15 · rc.1
+### Procuraduría 104-2026 · Profesional Universitario 3PU-15 · rc.2
 
 - **17 unidades, 85 módulos y 255 lecciones** con progresión fundamentos → aplicación → avanzado.
 - **1948 registros de preguntas, 1098 evaluables (333 casos de redacción individual o expedientes para simulacros; 765 situaciones de plantilla conservadas para repaso)**: 850 controles históricos, 850 situacionales, 170 nuevos casos de transferencia por módulo, 48 preguntas de 12 expedientes multidisciplinares y 30 decisiones integradoras, respaldadas por **71 fuentes** registradas.

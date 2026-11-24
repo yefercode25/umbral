@@ -28,6 +28,47 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
       firstAuthoredLengthOutliers: audit.authoredOutlier.slice(0, 20),
     }))
   })
+  it('evita diferencias pronunciadas y patrones inversos en los 20 casos priorizados sin cambiar claves', () => {
+    const expected = {
+  "pgn-m2-situational-1": "a",
+  "pgn-m7-situational-1": "b",
+  "pgn-m19-situational-1": "b",
+  "pgn-m22-situational-1": "b",
+  "pgn-m25-situational-1": "b",
+  "pgn-m32-situational-1": "b",
+  "pgn-m35-situational-1": "a",
+  "pgn-m36-situational-1": "c",
+  "pgn-m37-situational-1": "c",
+  "pgn-m38-situational-1": "a",
+  "pgn-m40-situational-1": "b",
+  "pgn-m41-situational-1": "a",
+  "pgn-m43-situational-1": "b",
+  "pgn-m49-situational-1": "b",
+  "pgn-m53-situational-1": "a",
+  "pgn-m54-situational-1": "c",
+  "pgn-m55-situational-1": "b",
+  "pgn-m56-situational-1": "a",
+  "pgn-m58-situational-1": "b",
+  "pgn-m59-situational-1": "a"
+}
+    const audit = auditPgnBank(practiceQuestionPool(course), new Set(course.sources.map(s => s.id)))
+    const ranks = { longest: 0, shortest: 0, other: 0 }
+    for (const [id, key] of Object.entries(expected)) {
+      const q = course.questions.find(q => q.id === id)!
+      expect(q.correctOptionId, id).toBe(key)
+      expect(audit.lengthOutlier, id).not.toContain(id)
+      const count = (text: string) => text.trim().split(/\s+/).length
+      const correct = count(q.options.find(o => o.id === key)!.text)
+      const wrong = q.options.filter(o => o.id !== key).map(o => count(o.text))
+      if (correct > Math.max(...wrong)) ranks.longest++
+      else if (correct < Math.min(...wrong)) ranks.shortest++
+      else ranks.other++
+    }
+    expect(ranks.longest).toBeGreaterThan(0)
+    expect(ranks.shortest).toBeGreaterThan(0)
+    expect(ranks.other).toBeGreaterThan(0)
+    expect(Math.max(...Object.values(ranks))).toBeLessThan(15)
+  })
   it('mantiene cobertura de casos redactados en los 85 módulos', () => {
     const pool = practiceQuestionPool(course).filter(isPgnAuthored)
     for (const m of course.modules) for (const suffix of ['situational-1','transfer-1','transfer-2']) {
