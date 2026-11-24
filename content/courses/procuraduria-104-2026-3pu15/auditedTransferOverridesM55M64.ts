@@ -26,16 +26,16 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       "caseText": "Una alcaldía propone habilitar suelo de expansión. Una determinante ambiental vigente restringe parte del área; las capas digitales tienen sistemas de coordenadas diferentes. El informe no contiene metadatos ni fecha de los planos. El operador preventivo debe explicar la discrepancia sin decidir por sí mismo el destino de los predios ni atribuir una infracción al servidor.",
       "stem": "¿Cómo contrastar la determinante ambiental y las fuentes cartográficas sin sustituir a las autoridades competentes?",
       "correct": {
-        "text": "Comprobar actos y alcance de la determinante, normalizar referencias cartográficas y solicitar aclaración a las autoridades.",
+        "text": "Verificar determinante y acto vigente, normalizar coordenadas y solicitar aclaración a las autoridades competentes.",
         "reason": "El art. 10 establece jerarquía en ámbitos competenciales."
       },
       "other": [
         {
-          "text": "Preferir el mapa municipal por su fecha más reciente.",
+          "text": "Adoptar la capa municipal más reciente y justificar el resultado por la fecha de actualización, sin examinar los actos que delimitan la determinante ambiental.",
           "reason": "La actualidad de un mapa no resuelve jerarquía."
         },
         {
-          "text": "Declarar desde PGN todo el polígono suelo de protección.",
+          "text": "Calificar desde la actuación preventiva toda el área como suelo de protección y requerir su incorporación al instrumento territorial, sin intervención de la autoridad competente.",
           "reason": "La competencia de ordenamiento no se transfiere al operador."
         }
       ],
@@ -48,16 +48,16 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       "caseText": "Una procuraduría revisa el MIPG de un municipio y prepara un diagnóstico de su gestión interna. Un consultor utiliza idéntica lista de obligaciones para ambas entidades y no consulta el artículo sobre ámbito de aplicación. El equipo posee el SGC institucional y el modelo MIPGN, pero se propone omitirlos porque las dos instituciones administran recursos públicos y pertenecen al Estado.",
       "stem": "¿Cómo distinguir las obligaciones de gestión y control interno aplicables al municipio y al organismo de control?",
       "correct": {
-        "text": "Diferenciar MIPG ejecutivo, política de control interno y políticas aplicables a organismos de control; revisar MIPGN.",
+        "text": "Distinguir MIPG ejecutivo, control interno y políticas aplicables a organismos de control; consultar el MIPGN institucional.",
         "reason": "El Decreto 1499 distingue ámbitos y aplicabilidad."
       },
       "other": [
         {
-          "text": "Imponer todas las reglas ejecutivas a PGN por ser nacional.",
+          "text": "Aplicar a PGN las obligaciones del modelo ejecutivo en su integridad, dado que administra recursos públicos y es una entidad del orden nacional.",
           "reason": "Ser nacional no equivale a integrar la Rama Ejecutiva."
         },
         {
-          "text": "Excluir a PGN de toda política de control interno.",
+          "text": "Excluir a PGN de las políticas de control interno por su autonomía, y utilizar únicamente la lista de obligaciones del modelo aplicado al municipio.",
           "reason": "La política de control interno sí corresponde a órganos de control."
         }
       ],
@@ -73,11 +73,11 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       },
       "other": [
         {
-          "text": "18/25 = 72 % sin distinguir el universo.",
+          "text": "18/25 = 72 %, incorporando todas las respuestas oportunas tramitadas en el mes aunque pertenezcan a peticiones exigibles en períodos distintos.",
           "reason": "Incluye respuestas fuera de la población definida."
         },
         {
-          "text": "18/18 = 100 % excluyendo pendientes.",
+          "text": "18/18 = 100 %, usando solo las respuestas emitidas y excluyendo las peticiones pendientes del universo definido por la ficha institucional.",
           "reason": "Excluir pendientes distorsiona el indicador."
         }
       ],
@@ -132,16 +132,16 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       "caseText": "Al terminar un trámite, la oficina genera una lista de archivos distribuidos entre correos, carpetas y radicación. Declara cerrado el expediente sin incorporar documentos al SGDEA, sin metadatos ni índice firmado. La serie está identificada en CCD y TRD y los soportes originales permanecen disponibles. El encargado propone conservar solo enlaces que permiten ver los archivos actuales.",
       "stem": "¿Qué actuación permite conformar y cerrar el expediente electrónico conforme al instrumento archivístico aplicable?",
       "correct": {
-        "text": "Conformar expediente en SGDEA, comprobar relaciones, orden y metadatos y firmar índice al cierre.",
+        "text": "Conformar el expediente en SGDEA, comprobar relaciones, orden y metadatos, y firmar el índice al cierre.",
         "reason": "El Acuerdo 001 regula conformación, índice y cierre."
       },
       "other": [
         {
-          "text": "Considerar suficientes los enlaces dispersos.",
+          "text": "Cerrar el expediente con los enlaces actuales a cada archivo, considerando que la consulta de carpetas y correos reemplaza su incorporación al SGDEA.",
           "reason": "Visualizar no equivale a gestionar archivísticamente."
         },
         {
-          "text": "Imprimir y borrar fuentes electrónicas sin aplicar TRD.",
+          "text": "Imprimir los soportes para formar un expediente físico y eliminar las fuentes electrónicas, sin verificar la disposición prevista en los instrumentos archivísticos aplicables.",
           "reason": "Eliminar exige disposición autorizada."
         }
       ],
@@ -174,16 +174,16 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       "caseText": "Un escrito solicita copias de documentos públicos y un concepto general sobre una norma de competencia de la entidad. La ventanilla registra todo como consulta y asigna treinta días. Los documentos están disponibles, no presentan reserva y ambos componentes pueden separarse. La dependencia conoce el radicado y está en condiciones de controlar los términos individuales sin retrasar la respuesta documental.",
       "stem": "¿Cómo clasificar y responder los componentes de la petición sin aplicar un término único a solicitudes de distinta naturaleza?",
       "correct": {
-        "text": "Diez días para documentos y treinta para consulta, salvo regla especial, con respuesta de fondo y constancias.",
+        "text": "Diez días para documentos y treinta para consulta, salvo regla especial; responder de fondo y conservar constancias.",
         "reason": "El art. 14 diferencia términos según objeto."
       },
       "other": [
         {
-          "text": "Treinta días para todo por contener consulta.",
+          "text": "Asignar treinta días a todo el escrito porque la consulta requiere el mayor plazo y los demás componentes pueden esperar la respuesta conjunta.",
           "reason": "La consulta no transforma la solicitud de copias."
         },
         {
-          "text": "Quince días para todo por ser derecho de petición.",
+          "text": "Asignar quince días a ambos componentes por tratarse de una petición ciudadana, sin distinguir el objeto de cada solicitud ni la regla especial.",
           "reason": "El término general no desplaza los específicos."
         }
       ],
@@ -194,16 +194,16 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       "caseText": "Una oficina recibe por escrito una petición ajena a sus atribuciones. Identifica al competente el segundo día y conserva anexos y datos de contacto. El responsable desea esperar quince días y pedir al ciudadano que radique nuevamente, aunque puede remitir la petición por un canal institucional seguro. La otra autoridad confirma que dispone de un canal formal para recibir el expediente.",
       "stem": "¿Qué trámite de información y remisión debe surtir la autoridad incompetente conforme al artículo 21?",
       "correct": {
-        "text": "Informar y remitir dentro de cinco días, enviar copia del oficio remisorio y controlar término desde día siguiente a recepción competente.",
+        "text": "Informar y remitir en cinco días, copiar el oficio al interesado y contar desde el día siguiente a recepción competente.",
         "reason": "La remisión por competencia tiene regla propia."
       },
       "other": [
         {
-          "text": "Esperar término general y pedir nueva radicación.",
+          "text": "Esperar el plazo general de quince días para comunicar la incompetencia y solicitar al ciudadano que presente otra vez los documentos ante la autoridad correspondiente.",
           "reason": "No debe imponerse reiniciar el trámite al ciudadano."
         },
         {
-          "text": "Resolver de fondo pese a carecer de competencia.",
+          "text": "Resolver la solicitud de fondo dentro de los cinco días porque ya se identificó el órgano competente y la remisión podría retrasar la respuesta.",
           "reason": "Recepción no crea competencia sustancial."
         }
       ],
@@ -216,16 +216,16 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       "caseText": "La cuenta de un servidor retirado hace dos semanas sigue activa y registra una consulta posterior al retiro. Hay sesiones persistentes y varias personas conocían credenciales de una cuenta funcional asociada. El jefe exige borrar la cuenta y su historial y atribuir la consulta al exservidor por el nombre de usuario. El equipo puede revocar accesos sin eliminar los registros de auditoría.",
       "stem": "¿Qué actuación permite contener el acceso de la cuenta retirada y preservar evidencia sin atribuir automáticamente la consulta?",
       "correct": {
-        "text": "Revocar acceso y sesiones según autorización, preservar logs y configuración y correlacionar fuentes antes de atribuir.",
+        "text": "Revocar accesos y sesiones según autorización, preservar logs y configuración, y correlacionar fuentes antes de atribuir.",
         "reason": "Es posible contener el riesgo conservando trazabilidad."
       },
       "other": [
         {
-          "text": "Borrar cuenta e historial y atribuir el evento por nombre.",
+          "text": "Eliminar la cuenta junto con su historial para impedir nuevas consultas y atribuir el evento registrado al titular que figura en el nombre de usuario.",
           "reason": "El borrado pierde evidencia y la cuenta no acredita autoría."
         },
         {
-          "text": "Mantener todo acceso activo hasta terminar la investigación.",
+          "text": "Mantener la cuenta y todas sus sesiones activas hasta finalizar la investigación, evitando cualquier cambio de permisos aunque existan medidas de preservación y contención.",
           "reason": "La preservación no exige mantener privilegios activos."
         }
       ],
@@ -278,16 +278,16 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       "caseText": "Un cambio aparece a 15:20 UTC y una autenticación a 10:20 UTC−5. El reloj local estaba adelantado dos minutos según fuente verificable. Los eventos tienen identificadores distintos y aún no se relacionó sesión con modificación. El informe propone tratarlos como la misma acción por coincidencia de horas convertidas. Se conservan los valores originales y la configuración temporal.",
       "stem": "¿Cómo normalizar y valorar los registros sin confundir coincidencia temporal nominal con identidad de eventos?",
       "correct": {
-        "text": "Normalizar zonas, documentar desfase e incertidumbre, conservar originales y contrastar identificadores y tipo de evento.",
+        "text": "Normalizar zonas y desfases, registrar incertidumbre, preservar originales y contrastar identificadores y tipos de evento.",
         "reason": "La coincidencia nominal no demuestra mismo evento."
       },
       "other": [
         {
-          "text": "Dar por demostrada identidad de eventos por la hora nominal.",
+          "text": "Considerar que ambos eventos son una misma operación porque las horas convertidas coinciden nominalmente, aunque no se haya comprobado el vínculo entre sus identificadores.",
           "reason": "Autenticación y cambio son eventos distintos."
         },
         {
-          "text": "Promediar las horas sin corregir zona ni desfase.",
+          "text": "Promediar las marcas de ambas fuentes para compensar diferencias temporales y usar el resultado como hora de ocurrencia sin documentar el desfase conocido.",
           "reason": "Promediar no corrige errores de reloj."
         }
       ],
@@ -320,16 +320,16 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       "caseText": "updated_by contiene app_service en todos los cambios. El motor registra la cuenta técnica; la aplicación conserva solicitudes y sesiones. Un proceso programado modifica estados de noche. La oficina propone atribuir todas las operaciones al administrador de base de datos sin revisar arquitectura, automatismos ni permisos. Los registros de aplicación pueden solicitarse por vía autorizada.",
       "stem": "¿Qué fuentes deben contrastarse para distinguir la cuenta técnica, una operación automatizada y una solicitud de usuario?",
       "correct": {
-        "text": "Historial, motor, sesiones y solicitudes de aplicación, tareas programadas y permisos; explicar alcance de la cuenta.",
+        "text": "Contrastar motor, historial, sesiones, solicitudes, tareas y permisos; precisar el alcance de la cuenta técnica.",
         "reason": "Una conexión técnica puede representar múltiples acciones."
       },
       "other": [
         {
-          "text": "Atribuir todos los cambios al administrador del motor.",
+          "text": "Atribuir los cambios al administrador del motor porque la cuenta de servicio es administrada desde la base, sin comprobar las solicitudes y tareas de aplicación.",
           "reason": "Administrar el motor no acredita ejecución de cada cambio."
         },
         {
-          "text": "Descartar auditorías porque no muestran directamente nombres de personas.",
+          "text": "Descartar los registros del motor y las auditorías automatizadas porque no incluyen nombres individuales, y utilizar únicamente las declaraciones de los usuarios del sistema.",
           "reason": "Los registros aportan evidencia aun sin identidad personal directa."
         }
       ],
@@ -342,16 +342,16 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       "caseText": "Se aporta correo reenviado como texto con nombre de servidor y fecha visible. El original está en el buzón institucional, pero no se obtuvieron cabeceras completas ni trazas de entrega. El instructor propone considerar el texto como prueba definitiva de autoría y cronología. El custodio puede entregar una exportación autorizada y conservar los anexos originales disponibles.",
       "stem": "¿Qué adquisición permite verificar mejor origen, entrega y contexto del correo sin asumir autoría por el texto visible?",
       "correct": {
-        "text": "Preservar mensaje original y anexos, cabeceras y registros de servidor; documentar límites de identidad y tiempo.",
+        "text": "Preservar mensaje original, anexos, cabeceras y trazas del servidor; documentar los límites de identidad y cronología.",
         "reason": "El original y las trazas aportan contexto potencialmente perdido."
       },
       "other": [
         {
-          "text": "Usar solo texto reenviado porque conserva todos los metadatos.",
+          "text": "Utilizar únicamente el mensaje reenviado como texto, dado que el remitente y la fecha visibles permiten reconstruir la totalidad de cabeceras y eventos de entrega.",
           "reason": "El reenvío no preserva necesariamente encabezados."
         },
         {
-          "text": "Rechazar todo correo porque puede modificarse.",
+          "text": "Excluir toda evidencia de correo porque los reenvíos pueden modificar su presentación, incluso si se conserva el mensaje original y existen trazas del servidor.",
           "reason": "Ley 527 admite mensajes de datos sujetos a valoración."
         }
       ],
@@ -362,16 +362,16 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       "caseText": "Una cabecera contiene DKIM válido para dominio institucional y resultado agregado por servidor receptor confiable. El analista concluye que el titular del buzón redactó personalmente el correo y que no hubo acceso delegado. No se consultaron permisos, registros de identidad ni eventos de envío. Se conoce el dominio firmante y qué partes del mensaje cubre la firma.",
       "stem": "¿Cuál es el alcance de la autenticación DKIM y qué verificaciones adicionales requiere la atribución a una persona?",
       "correct": {
-        "text": "Autenticación del dominio firmante e integridad de partes cubiertas; contrastar delegación, identidad y envío para atribución humana.",
+        "text": "DKIM autentica el dominio firmante y partes cubiertas; contrastar envío, identidad y delegación para atribuir autoría humana.",
         "reason": "DKIM es autenticación de dominio, no de autor humano."
       },
       "other": [
         {
-          "text": "Afirmar que DKIM demuestra sin excepción identidad física del autor.",
+          "text": "Tratar el resultado DKIM válido del dominio institucional como prueba de que el titular físico del buzón redactó y envió personalmente el mensaje.",
           "reason": "Dominio y persona son distintos."
         },
         {
-          "text": "Ignorar toda autenticación porque no identifica personas.",
+          "text": "Descartar el resultado de autenticación del dominio por no acreditar la identidad personal, sin considerarlo siquiera para examinar la integridad de las partes firmadas.",
           "reason": "La autenticación tiene valor técnico específico."
         }
       ],
@@ -404,16 +404,16 @@ export const auditedTransferOverridesM55M64: Record<string, [FoundationTransferO
       "caseText": "Un colega intenta reproducir un informe de 48 registros anómalos. Faltan consulta, versión de herramienta, criterio y export original; se descubre que un filtro pudo excluir filas legítimas. El analista puede recuperar fuente autorizada y secuencia de trabajo. La dirección pide cambiar la cifra sin constancia para evitar que el informe anterior sea cuestionado en el expediente.",
       "stem": "¿Qué procedimiento permite reproducir el cálculo y corregir el informe manteniendo historial y trazabilidad?",
       "correct": {
-        "text": "Preservar fuente, recuperar consulta, repetir en copia, contrastar recuentos y documentar corrección y versiones.",
+        "text": "Preservar fuentes, recuperar consulta, reproducir en copia, conciliar recuentos y documentar corrección y versiones.",
         "reason": "Reproducibilidad exige fuentes, parámetros y control de cambios."
       },
       "other": [
         {
-          "text": "Cambiar cifra y borrar versión anterior.",
+          "text": "Sustituir el valor del informe por el nuevo resultado y retirar la versión previa, pues conservar dos cifras puede generar dudas en la valoración posterior.",
           "reason": "Ocultar versiones elimina trazabilidad."
         },
         {
-          "text": "Mantener 48 aunque se compruebe un error metodológico.",
+          "text": "Mantener el valor inicial de 48 para no alterar la actuación ya registrada, aun cuando se reproduzca el cálculo y se compruebe un error metodológico.",
           "reason": "Una corrección documentada mejora el soporte."
         }
       ],

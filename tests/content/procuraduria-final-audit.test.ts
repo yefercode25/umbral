@@ -93,6 +93,14 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
       expect(audit.lengthOutlier,id).not.toContain(id)
     }
   })
+  it('corrige otras cuarenta transferencias señaladas en RC.6, conservando claves', () => {
+    const expected = {"pgn-m42-transfer-2":"b","pgn-m43-transfer-1":"b","pgn-m44-transfer-2":"c","pgn-m45-transfer-2":"b","pgn-m47-transfer-1":"a","pgn-m48-transfer-1":"c","pgn-m48-transfer-2":"b","pgn-m50-transfer-1":"a","pgn-m50-transfer-2":"c","pgn-m52-transfer-1":"b","pgn-m53-transfer-2":"c","pgn-m54-transfer-2":"b","pgn-m55-transfer-2":"a","pgn-m56-transfer-1":"a","pgn-m56-transfer-2":"c","pgn-m58-transfer-1":"b","pgn-m59-transfer-1":"a","pgn-m59-transfer-2":"c","pgn-m60-transfer-1":"c","pgn-m61-transfer-2":"a","pgn-m62-transfer-2":"c","pgn-m63-transfer-1":"c","pgn-m63-transfer-2":"b","pgn-m64-transfer-2":"a","pgn-m65-transfer-1":"a","pgn-m65-transfer-2":"c","pgn-m67-transfer-2":"a","pgn-m69-transfer-1":"c","pgn-m72-transfer-1":"c","pgn-m73-transfer-2":"a","pgn-m74-transfer-2":"c","pgn-m76-transfer-1":"b","pgn-m77-transfer-2":"c","pgn-m78-transfer-1":"c","pgn-m78-transfer-2":"b","pgn-m80-transfer-1":"a","pgn-m80-transfer-2":"c","pgn-m82-transfer-1":"b","pgn-m82-transfer-2":"a","pgn-m84-transfer-2":"b"}
+    const audit = auditPgnBank(practiceQuestionPool(course), new Set(course.sources.map(s=>s.id)))
+    for (const [id,key] of Object.entries(expected)) {
+      expect(course.questions.find(q=>q.id===id)?.correctOptionId,id).toBe(key)
+      expect(audit.lengthOutlier,id).not.toContain(id)
+    }
+  })
   it('mantiene cobertura de casos redactados en los 85 módulos', () => {
     const pool = practiceQuestionPool(course).filter(isPgnAuthored)
     for (const m of course.modules) for (const suffix of ['situational-1','transfer-1','transfer-2']) {

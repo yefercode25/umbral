@@ -320,16 +320,16 @@ export const auditedTransferOverridesM35M44: Record<string, [FoundationTransferO
       "caseText": "Después del traslado inicial de un dictamen, el defensor descubre un posible error grave: el experto interpretó datos en UTC como hora local. Presenta escrito motivado con los registros de configuración antes de que se corra traslado para alegatos de conclusión. El despacho pretende rechazarlo automáticamente porque ya vencieron los tres días destinados a solicitar aclaración inicial.",
       "stem": "¿Qué oportunidad debe verificarse para tramitar la objeción presentada?",
       "correct": {
-        "text": "Examinar la objeción por error grave conforme al art. 180, cuya oportunidad llega hasta antes del traslado de alegatos de conclusión, y resolver motivadamente las pruebas y el trámite.",
+        "text": "Examinar la objeción por error grave antes del traslado de alegatos de conclusión y resolver motivadamente su trámite conforme al art. 180.",
         "reason": "El artículo 180 diferencia traslado inicial y oportunidad para objetar por error grave."
       },
       "other": [
         {
-          "text": "Rechazarla por haber terminado los tres días de aclaración, pues ambas actuaciones tienen exactamente el mismo plazo.",
+          "text": "Rechazar la objeción por haber vencido el traslado de tres días del dictamen, aplicando a ambos mecanismos la misma oportunidad de contradicción.",
           "reason": "Los plazos de aclaración y objeción no son intercambiables."
         },
         {
-          "text": "Aceptar de plano la objeción y declarar responsable al perito sin examinar el error ni los soportes.",
+          "text": "Aceptar el error alegado como probado por la diferencia de zonas horarias y adoptar las consecuencias contra el perito sin examinar sus explicaciones.",
           "reason": "La objeción requiere evaluación y decisión conforme a ley."
         }
       ],
@@ -342,16 +342,16 @@ export const auditedTransferOverridesM35M44: Record<string, [FoundationTransferO
       "caseText": "La autoridad disciplinaria recibe información de que Fiscalía descubrió elementos materiales con la presentación del escrito de acusación, pero aún no se han introducido ni controvertido en juicio penal. Son relevantes para la investigación administrativa. El equipo propone esperar una sentencia penal firme, mientras otro funcionario desea tratarlos de inmediato como pruebas incontrovertibles.",
       "stem": "¿Cuál ruta distingue los elementos descubiertos de las pruebas penales ya practicadas?",
       "correct": {
-        "text": "Tramitar el traslado conforme al art. 154, identificar que aún no tienen calidad de prueba penal practicada y someterlos a contradicción dentro del proceso disciplinario.",
+        "text": "Trasladar los elementos descubiertos conforme al art. 154, sin calificarlos como prueba penal practicada, y garantizar contradicción disciplinaria.",
         "reason": "El art. 154 contempla expresamente ese traslado y exige contradicción disciplinaria."
       },
       "other": [
         {
-          "text": "Esperar siempre una sentencia penal ejecutoriada porque el CGD nunca admite elementos no practicados en juicio.",
+          "text": "Esperar la sentencia penal ejecutoriada, porque los elementos que aún no se han practicado en juicio carecen de una vía de traslado disciplinario.",
           "reason": "La norma no condiciona todo traslado a sentencia firme."
         },
         {
-          "text": "Incorporarlos como prueba incontrovertible porque Fiscalía los descubrió en la acusación y no se requiere contradicción.",
+          "text": "Incorporarlos como elementos ya controvertidos debido al descubrimiento de Fiscalía, dejando únicamente para la defensa el debate sobre su peso en la decisión.",
           "reason": "El descubrimiento no equivale a prueba penal practicada."
         }
       ],
@@ -404,16 +404,16 @@ export const auditedTransferOverridesM35M44: Record<string, [FoundationTransferO
       "caseText": "Dos copias de una exportación institucional tienen la misma huella SHA-256. El informe afirma que por ello se conoce quién modificó un registro del sistema y que la obtención fue legal. El archivo registra una cuenta compartida y no existe todavía información sobre autorización de acceso, custodio original o sincronización de relojes. La defensa cuestiona el alcance de la conclusión.",
       "stem": "¿Qué conclusión técnica se sostiene realmente con la comparación de huellas?",
       "correct": {
-        "text": "La coincidencia ofrece evidencia de identidad binaria entre los archivos comparados; origen, autoría, legalidad y significado de los registros requieren verificaciones independientes.",
+        "text": "La coincidencia sustenta identidad binaria de las copias; origen, autoría, legalidad y significado necesitan verificaciones independientes.",
         "reason": "El hash verifica identidad del contenido comparado, no todos los atributos probatorios."
       },
       "other": [
         {
-          "text": "La igualdad de huella demuestra simultáneamente autoría individual y licitud de toda adquisición digital.",
+          "text": "Considerar que la huella coincidente autentica la cuenta registrada como autora personal y acredita que los archivos se obtuvieron por un medio legalmente autorizado.",
           "reason": "La huella no acredita autorización ni identidad humana."
         },
         {
-          "text": "El hash no aporta ninguna información útil porque no determina quién realizó la operación.",
+          "text": "Descartar la comparación de huellas como evidencia de integridad porque no permite identificar al operador ni determinar la legalidad de la adquisición.",
           "reason": "La verificación de integridad sí tiene valor técnico específico."
         }
       ],
