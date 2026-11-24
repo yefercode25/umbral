@@ -3,7 +3,7 @@ import type { FoundationTransferOverride } from './foundationTransferOverrides'
 export const auditedTransferOverridesM18M20: Record<string, [FoundationTransferOverride, FoundationTransferOverride]> = {
   "pgn-m18": [
     {
-      "caseText": "Una veeduría pide una matriz de vigilancia preventiva con valores contractuales divulgables y teléfonos privados. El archivo Excel tiene columnas ocultas, y la dependencia propone enviar la hoja tal como está, porque en pantalla no aparecen los teléfonos. No existe otra restricción legal sobre los valores solicitados.",
+      "caseText": "Una veeduría pide una matriz de vigilancia preventiva con valores contractuales divulgables y teléfonos privados. El archivo Excel tiene columnas ocultas, y la dependencia propone enviar la hoja tal como está, porque en pantalla no aparecen los teléfonos. No existe otra restricción legal sobre los valores solicitados. El original incluye una hoja de identificación de contactos que no fue solicitada.",
       "stem": "¿Qué acción permite responder sin exponer datos de terceros ni destruir los soportes originales?",
       "correct": {
         "text": "Crear una versión pública separada, retirar de forma efectiva los campos protegidos, verificar el archivo exportado y motivar las exclusiones, conservando el original bajo control.",
@@ -23,7 +23,7 @@ export const auditedTransferOverridesM18M20: Record<string, [FoundationTransferO
       "difficulty": 4
     },
     {
-      "caseText": "Un ciudadano ajeno al proceso solicita la totalidad de una investigación disciplinaria en curso, mientras el defensor reconocido pide consultar los mismos documentos para ejercer contradicción. La oficina usa una sola plantilla de respuesta y pretende aplicar a ambos exactamente la misma restricción.",
+      "caseText": "Un ciudadano ajeno al proceso solicita la totalidad de una investigación disciplinaria en curso, mientras el defensor reconocido pide consultar los mismos documentos para ejercer contradicción. La oficina usa una sola plantilla de respuesta y pretende aplicar a ambos exactamente la misma restricción. El defensor acredita su reconocimiento dentro del expediente y pide acceso para preparar una diligencia próxima.",
       "stem": "¿Qué hecho debe cambiar el análisis de acceso en cada solicitud sin prejuzgar responsabilidad?",
       "correct": {
         "text": "Diferenciar la calidad de cada solicitante y la fase procesal; aplicar la reserva especial y las garantías de acceso de sujetos procesales, motivando cualquier negativa externa.",
@@ -45,7 +45,7 @@ export const auditedTransferOverridesM18M20: Record<string, [FoundationTransferO
   ],
   "pgn-m19": [
     {
-      "caseText": "Un equipo de instrucción de la PGN encuentra actas y testimonios contradictorios. La jefatura solicita pasar directamente a un proyecto de sanción porque el plazo de investigación está próximo a vencer; todavía no se ha adoptado decisión de evaluación ni se ha dado el trámite de juzgamiento.",
+      "caseText": "Un equipo de instrucción de la PGN encuentra actas y testimonios contradictorios. La jefatura solicita pasar directamente a un proyecto de sanción porque el plazo de investigación está próximo a vencer; todavía no se ha adoptado decisión de evaluación ni se ha dado el trámite de juzgamiento. El inventario probatorio registra también una declaración de descargo pendiente de contraste.",
       "stem": "¿Cuál actuación distingue la etapa de instrucción y la decisión que le corresponde a la autoridad competente?",
       "correct": {
         "text": "Completar las verificaciones procedentes dentro del término legal y evaluar el mérito de la investigación según el CGD, sin sustituir el juzgamiento por una sanción anticipada.",
@@ -65,7 +65,7 @@ export const auditedTransferOverridesM18M20: Record<string, [FoundationTransferO
       "difficulty": 4
     },
     {
-      "caseText": "La revisión de un expediente detecta un error de digitación en el índice, pero el acto original y su notificación son correctos. En cambio, otra diligencia no fue puesta en conocimiento del sujeto procesal en la oportunidad exigible. La oficina propone invalidar todo por igual, sin comprobar los efectos de cada defecto.",
+      "caseText": "La revisión de un expediente detecta un error de digitación en el índice, pero el acto original y su notificación son correctos. En cambio, otra diligencia no fue puesta en conocimiento del sujeto procesal en la oportunidad exigible. La oficina propone invalidar todo por igual, sin comprobar los efectos de cada defecto. La segunda actuación contiene una declaración relevante para la hipótesis de cargo.",
       "stem": "¿Cómo debe diferenciarse la incidencia procesal de los dos hallazgos antes de proponer una medida?",
       "correct": {
         "text": "Corregir trazablemente el índice y analizar por separado la afectación de contradicción, causal de nulidad y remedio legal que corresponda ante la autoridad competente.",
@@ -87,7 +87,7 @@ export const auditedTransferOverridesM18M20: Record<string, [FoundationTransferO
   ],
   "pgn-m20": [
     {
-      "caseText": "Una investigación encuentra una eliminación de registros de un aplicativo institucional durante una contingencia. El log muestra una cuenta compartida y el informe de soporte registra una falla de almacenamiento. El coordinador pide imputar la conducta al administrador por su cargo, aunque no se ha individualizado al operador ni verificado la justificación.",
+      "caseText": "Una investigación encuentra una eliminación de registros de un aplicativo institucional durante una contingencia. El log muestra una cuenta compartida y el informe de soporte registra una falla de almacenamiento. El coordinador pide imputar la conducta al administrador por su cargo, aunque no se ha individualizado al operador ni verificado la justificación. Los turnos de operación y la asignación de credenciales no están aún conciliados.",
       "stem": "¿Cuál actuación respeta la investigación integral y evita atribuir responsabilidad objetiva al servidor?",
       "correct": {
         "text": "Contrastar registros, usuarios, instrucciones y elementos de descargo; precisar conducta, deber funcional y eventual culpabilidad antes de proponer la decisión propia de la fase.",
@@ -107,7 +107,7 @@ export const auditedTransferOverridesM18M20: Record<string, [FoundationTransferO
       "difficulty": 4
     },
     {
-      "caseText": "En una investigación sobre un registro alterado se individualiza posteriormente al usuario que ejecutó la operación. Aparece además una orden de contingencia cuya autenticidad y alcance deben contrastarse. Un funcionario interpreta que la identificación técnica basta para demostrar dolo; otro considera que toda orden de un superior excluye responsabilidad.",
+      "caseText": "En una investigación sobre un registro alterado se individualiza posteriormente al usuario que ejecutó la operación. Aparece además una orden de contingencia cuya autenticidad y alcance deben contrastarse. Un funcionario interpreta que la identificación técnica basta para demostrar dolo; otro considera que toda orden de un superior excluye responsabilidad. La orden aparece fechada antes del cambio y el informe no verifica su firma.",
       "stem": "¿Qué cambia con la nueva evidencia y qué elementos aún deben probarse antes de concluir responsabilidad?",
       "correct": {
         "text": "Revisar la atribución del acto, contrastar la orden y su alcance legal, verificar deber funcional, ilicitud sustancial y culpabilidad; mantener la valoración de cargo y descargo.",
