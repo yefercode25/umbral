@@ -29,3 +29,5 @@ Fuentes:
 - [PostgreSQL 18 · Continuous Archiving and PITR](https://www.postgresql.org/docs/18/continuous-archiving.html)
 
 Distribución preliminar de longitud del nuevo lote: {"longest":5,"shortest":6,"other":15}. Se revisan manualmente distractores históricos en un commit adicional; no se afirma corrección de los 81 hasta medir CI.
+
+Revisión manual: 20 reactivos señalados en RC.6, pgn-m1-transfer-2, pgn-m4-transfer-2, pgn-m5-transfer-1, pgn-m6-transfer-2, pgn-m8-transfer-2, pgn-m10-transfer-1, pgn-m16-transfer-2, pgn-m28-transfer-2, pgn-m31-transfer-1, pgn-m34-transfer-1, pgn-m34-transfer-2, pgn-m37-transfer-1, pgn-m37-transfer-2, pgn-m39-transfer-2, pgn-m40-transfer-2, pgn-m41-transfer-2, pgn-m75-situational-1, pgn-m76-situational-1, pgn-m79-situational-1, pgn-m83-situational-1. Se conserva clave, enunciado, caso, fuentes y racionales coherentes. Se acorta la correcta cuando es suficiente y se reformulan distractores cuando procede, sin añadir relleno. Restan 61 señales de RC.6 por revisar si la auditoría integral confirma el descenso esperado. El perfil integral ya excluye las señales restantes.

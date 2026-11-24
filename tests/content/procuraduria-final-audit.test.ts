@@ -85,6 +85,14 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
       expect(audit.lengthOutlier,id).not.toContain(id)
     }
   })
+  it('corrige veinte distractores históricos señalados en RC.6 sin cambiar sus claves', () => {
+    const expected = {"pgn-m1-transfer-2":"a","pgn-m4-transfer-2":"a","pgn-m5-transfer-1":"a","pgn-m6-transfer-2":"b","pgn-m8-transfer-2":"c","pgn-m10-transfer-1":"b","pgn-m16-transfer-2":"a","pgn-m28-transfer-2":"a","pgn-m31-transfer-1":"b","pgn-m34-transfer-1":"b","pgn-m34-transfer-2":"a","pgn-m37-transfer-1":"b","pgn-m37-transfer-2":"a","pgn-m39-transfer-2":"b","pgn-m40-transfer-2":"a","pgn-m41-transfer-2":"c","pgn-m75-situational-1":"c","pgn-m76-situational-1":"b","pgn-m79-situational-1":"b","pgn-m83-situational-1":"a"}
+    const audit = auditPgnBank(practiceQuestionPool(course), new Set(course.sources.map(s=>s.id)))
+    for (const [id,key] of Object.entries(expected)) {
+      expect(course.questions.find(q=>q.id===id)?.correctOptionId,id).toBe(key)
+      expect(audit.lengthOutlier,id).not.toContain(id)
+    }
+  })
   it('mantiene cobertura de casos redactados en los 85 módulos', () => {
     const pool = practiceQuestionPool(course).filter(isPgnAuthored)
     for (const m of course.modules) for (const suffix of ['situational-1','transfer-1','transfer-2']) {

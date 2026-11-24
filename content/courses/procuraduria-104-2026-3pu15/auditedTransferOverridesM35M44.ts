@@ -90,16 +90,16 @@ export const auditedTransferOverridesM35M44: Record<string, [FoundationTransferO
       "caseText": "Un tercero remite una grabación de conversaciones privadas cuya forma de obtención no está explicada. El archivo conserva un hash estable y el contenido parece relacionarse con una actuación disciplinaria. La oficina propone incorporarlo como fundamento decisivo sin revisar la autorización ni permitir contradicción, porque el técnico afirma que no observa cortes en el audio.",
       "stem": "¿Qué verificación debe anteceder a cualquier uso probatorio de la grabación?",
       "correct": {
-        "text": "Examinar la forma de obtención y los derechos comprometidos, aplicar las reglas de legalidad e inexistencia cuando correspondan y garantizar contradicción antes de valorar el material.",
+        "text": "Examinar obtención y derechos comprometidos, aplicar legalidad e inexistencia cuando corresponda y garantizar contradicción antes de valorar.",
         "reason": "La integridad técnica no demuestra legalidad; el art. 158 regula las consecuencias de vulneraciones sustanciales."
       },
       "other": [
         {
-          "text": "Admitirla como decisiva por tener hash estable, sin examinar cómo fue obtenida.",
+          "text": "Incorporar la grabación como prueba principal tras verificar la estabilidad del hash y permitir que la defensa discuta exclusivamente su contenido.",
           "reason": "El hash no acredita autorización ni derechos."
         },
         {
-          "text": "Destruirla sin constancia de recepción ni decisión de autoridad competente porque su legalidad es dudosa.",
+          "text": "Devolver la grabación al tercero y eliminar su copia institucional debido a la duda sobre obtención, sin registrar la decisión ni su fundamento.",
           "reason": "La recepción y el tratamiento jurídico deben quedar documentados."
         }
       ],
@@ -110,16 +110,16 @@ export const auditedTransferOverridesM35M44: Record<string, [FoundationTransferO
       "caseText": "Tras notificar la apertura de investigación, el defensor pide examinar un archivo que contiene los datos utilizados en un informe técnico. El despacho dispone del original y de una copia controlada y no identifica una restricción que impida su consulta bajo las garantías del expediente. El funcionario le ofrece solamente leer las conclusiones al terminar la instrucción, antes de remitir los cargos.",
       "stem": "¿Qué actuación permite ejercer contradicción desde el momento que prevé el CGD?",
       "correct": {
-        "text": "Tramitar el acceso y la contradicción desde la notificación de apertura conforme al art. 157 y resolver las solicitudes probatorias en la oportunidad legal.",
+        "text": "Tramitar acceso y contradicción desde la notificación de apertura conforme al art. 157, conservando el original y resolviendo solicitudes oportunamente.",
         "reason": "La contradicción tiene oportunidad propia y no se satisface necesariamente con acceso tardío."
       },
       "other": [
         {
-          "text": "Posponer toda contradicción hasta el juzgamiento porque el instructor puede valorar la prueba unilateralmente.",
+          "text": "Posponer el acceso a los datos hasta el juzgamiento, porque la defensa podrá solicitar entonces las pruebas que contradigan el informe técnico.",
           "reason": "El artículo 157 no limita el contradictorio al juzgamiento."
         },
         {
-          "text": "Permitir al defensor modificar el archivo original para realizar sus propios cálculos sin registro de cambios.",
+          "text": "Entregar el archivo original para que el defensor ejecute sus análisis directamente sobre él, sin registrar las modificaciones que produzcan las herramientas.",
           "reason": "La defensa no exige alterar el soporte original."
         }
       ],
@@ -194,16 +194,16 @@ export const auditedTransferOverridesM35M44: Record<string, [FoundationTransferO
       "caseText": "En una actuación por posible acoso sexual laboral, el expediente describe una relación jerárquica directa y condiciones de vulnerabilidad de la persona denunciante. Una propuesta de valoración descarta su relato únicamente porque continuó asistiendo al trabajo después de los hechos; otra propone declarar responsabilidad sin examinar evidencia adicional por la posición de poder del investigado.",
       "stem": "¿Qué método corresponde al enfoque diferencial sin sustituir el estándar de prueba disciplinaria?",
       "correct": {
-        "text": "Aplicar el art. 160A, examinar relaciones de poder y contexto sin estereotipos, proteger derechos en la práctica probatoria y valorar todo el acervo bajo el estándar legal.",
+        "text": "Aplicar perspectiva diferencial del art. 160A, examinar contexto y relaciones de poder sin estereotipos y conservar contradicción y estándar sancionatorio.",
         "reason": "El art. 160A exige perspectiva diferencial e interseccional y el art. 160 conserva el estándar sancionatorio."
       },
       "other": [
         {
-          "text": "Descartar el relato por una expectativa uniforme sobre el comportamiento posterior de la víctima.",
+          "text": "Valorar la asistencia posterior al trabajo como criterio principal para descartar el relato, pues permite evaluar de modo uniforme la conducta posterior.",
           "reason": "La conducta posterior no autoriza un estereotipo concluyente."
         },
         {
-          "text": "Tener automáticamente probada responsabilidad por la existencia de jerarquía, sin contradicción ni análisis del conjunto.",
+          "text": "Dar prevalencia concluyente al relato por la relación de poder acreditada, dejando para la graduación de sanción la valoración de las demás pruebas.",
           "reason": "La relación de poder es un factor de análisis, no una presunción automática de culpa."
         }
       ],
@@ -236,16 +236,16 @@ export const auditedTransferOverridesM35M44: Record<string, [FoundationTransferO
       "caseText": "Una entidad aporta un informe bajo juramento que explica el origen de datos registrados en su sistema de correspondencia. El defensor solicita aclarar el significado de una columna y presenta objeción por error grave como si fuera un dictamen pericial. La autoridad confirma que el producto es un informe de archivos bajo los arts. 193 y 194, no una peritación decretada.",
       "stem": "¿Qué trámite de contradicción corresponde a este tipo de informe documental?",
       "correct": {
-        "text": "Surtir traslado de tres días para aclaraciones o complementaciones y resolver según el art. 195, sin tramitar objeción por error grave como si se tratara de un dictamen.",
+        "text": "Dar traslado de tres días para aclaraciones o complementación según art. 195, sin tramitar objeción por error grave.",
         "reason": "El art. 195 regula un traslado específico y excluye objeción por error grave."
       },
       "other": [
         {
-          "text": "Designar automáticamente otro perito por cualquier objeción, porque informe técnico y peritación tienen el mismo régimen.",
+          "text": "Tramitar objeción por error grave y designar otro perito si es necesario, porque los datos del informe requieren interpretación de carácter técnico.",
           "reason": "La peritación tiene un trámite distinto en el art. 180."
         },
         {
-          "text": "Negar toda contradicción porque los datos provienen de una entidad y se presumen auténticos.",
+          "text": "Negar la solicitud de aclaración por tratarse de datos oficiales presumidos auténticos, dejando su interpretación para el fallo de la autoridad competente.",
           "reason": "La presunción de autenticidad no elimina contradicción ni examen del alcance."
         }
       ],
@@ -278,16 +278,16 @@ export const auditedTransferOverridesM35M44: Record<string, [FoundationTransferO
       "caseText": "Un testigo citado no asiste a la diligencia y aporta dos días después una justificación verificable de hospitalización. La secretaría prepara una multa automática sin resolver la justificación y sin indicar recurso. El expediente no contiene ninguna decisión previa sobre renuencia ni información que contradiga la causa de inasistencia presentada dentro del plazo.",
       "stem": "¿Qué revisión debe efectuar la autoridad antes de imponer una consecuencia por renuencia?",
       "correct": {
-        "text": "Examinar la justificación dentro de los tres días y aplicar el art. 165 con decisión motivada y reposición si procede multa, respetando las excepciones al deber de declarar.",
+        "text": "Examinar la justificación oportuna y aplicar art. 165, con decisión motivada y reposición si procede multa, respetando excepciones legales.",
         "reason": "El art. 165 condiciona la consecuencia a falta de justificación y contempla recurso."
       },
       "other": [
         {
-          "text": "Imponer la multa automáticamente por faltar, aunque la justificación se haya presentado oportunamente.",
+          "text": "Imponer multa por la inasistencia y considerar la hospitalización al graduar su cuantía, porque la citación obligaba a comparecer en la fecha fijada.",
           "reason": "La ausencia no basta para ignorar una explicación oportuna."
         },
         {
-          "text": "Declarar que nunca procede multa contra un testigo, sin considerar el supuesto legal de renuencia.",
+          "text": "Abstenerse de evaluar renuencia porque el deber de declarar no admite ninguna consecuencia sancionatoria cuando el testigo aporta una explicación posterior.",
           "reason": "El CGD sí prevé una consecuencia bajo requisitos."
         }
       ],

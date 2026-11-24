@@ -69,7 +69,7 @@ export const auditedTransferOverridesM15M17: Record<string, [FoundationTransferO
       caseText: 'La oficina descubre que dos actuaciones anotadas como «disciplinarias» eran distintas: una sí pertenece a la investigación regulada por el CGD y la otra es una petición ciudadana de acceso a copias de algunos documentos. La plantilla aplicó el mismo término procesal a las dos. Un profesional propone mantener la clasificación para no rehacer el reporte; otro quiere declarar nulos ambos trámites antes de revisar sus garantías.',
       stem: '¿Qué cambia al conocer el verdadero objeto de cada actuación y cómo se deben corregir sus términos?',
       correct: {
-        text: 'Reclasificar y documentar cada procedimiento, aplicar la norma especial de la actuación disciplinaria y analizar la solicitud autónoma de copias por las reglas de petición y acceso aplicables, verificando luego los efectos de cualquier error.',
+        text: 'Reclasificar los trámites, aplicar CGD a la investigación y petición y acceso a la solicitud autónoma; verificar efectos del error.',
         reason: 'El cambio de objeto determina qué régimen y plazo corresponden a cada expediente y exige distinguir irregularidad de consecuencia procesal.',
       },
       other: [
