@@ -1023,23 +1023,196 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "explanation": "Fundamento: Ley 1474/2011 art. 73 modificado por Ley 2195/2022 art. 31; Decreto 1122/2024; Ley 1712/2014. Transparencia y protección de datos coexisten; la señal requiere análisis y ruta competente. Primera alternativa incorrecta: La publicidad no elimina restricciones ni permite prejuzgar. Segunda alternativa incorrecta: La protección de datos no exige destruir información útil legalmente custodiada."
   }
 ],
-  'pgn-m61': [{
-    number: 1,
-    caseText: 'Un sistema institucional registra una modificación irregular desde una dirección IP que corresponde a la red de una sede. La salida a internet utiliza NAT, hay usuarios conectados por VPN y una cuenta de servicio es compartida por varias tareas automáticas. La jefatura solicita identificar al responsable y propone asociar la IP con el último usuario registrado en la portería del edificio. Existe información de autenticación multifactor y sesiones que aún no se ha correlacionado.',
-    stem: '¿Qué conclusión técnica es admisible con el soporte disponible?',
-    options: [
-      'La IP de salida identifica por sí sola al usuario material; la portería puede utilizarse para firmar el informe conclusivo.',
-      'No es posible realizar ninguna inferencia mientras no exista una grabación de vídeo de la persona usando el equipo.',
-      'Preservar y correlacionar registros de sesiones, identidades, NAT, VPN, horarios y sistemas; delimitar lo que esos datos permiten inferir y no convertir correlación de red en atribución personal automática.',
+  'pgn-m55': [
+  {
+    "number": 1,
+    "caseText": "En un expediente aparecen una captura de visor público, el plano anexo a un acuerdo y una capa descargada sin metadatos. La captura sitúa aparentemente una obra fuera de un perímetro; el plano tiene otra escala. La jefatura pide declarar incumplimiento antes de verificar qué cartografía fue adoptada y si la precisión permite ubicar la construcción. Existe acceso autorizado al archivo oficial.",
+    "stem": "¿Qué producto técnico permite sustentar el riesgo territorial sin confundir una visualización con el instrumento normativo adoptado?",
+    "options": [
+      "Elegir la captura por ser la más reciente.",
+      "Identificar acto y plano oficial, validar escala y referencia, documentar incertidumbre y contrastar con la autoridad.",
+      "Descartar toda fuente geográfica por no ser texto normativo."
     ],
-    rationales: [
-      'Una IP compartida, NAT o VPN no equivale a identificación individual de quien realizó un acto.',
-      'La ausencia de vídeo no hace inútiles los registros técnicos ni impide su análisis documentado.',
-      'Distingue identificación técnica, contexto de sesión e inferencia de autoría humana.',
+    "rationales": [
+      "El visor no sustituye el acto adoptado.",
+      "La validez normativa y la precisión espacial son controles distintos.",
+      "La cartografía puede ser útil si se verifica su alcance."
     ],
-    correctOptionId: 'c',
-    explanation: 'La correlación de registros exige método, control de tiempos, contexto de identidad y cautela ante infraestructura compartida.',
-  }],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Constitución arts. 287–288, 311 y 313; Ley 388 arts. 9–10, 24 y 30–35; Ley 2294 art. 32. La validez normativa y la precisión espacial son controles distintos. Primera alternativa incorrecta: El visor no sustituye el acto adoptado. Segunda alternativa incorrecta: La cartografía puede ser útil si se verifica su alcance."
+  }
+],
+  'pgn-m56': [
+  {
+    "number": 1,
+    "caseText": "La oportunidad sube de 60 % a 75 % con igual ficha y población comparable. La meta es 90 %. Un informe dice que la mejora relativa es 15 % y propone cerrar el plan por considerar alcanzado el objetivo. Los datos permiten revisar los casos tardíos por dependencia; todavía no se evaluó la causa ni se documentó una acción que explique el cambio entre períodos.",
+    "stem": "¿Cómo interpretar el cambio en puntos porcentuales, la variación relativa y la brecha frente a la meta institucional?",
+    "options": [
+      "Aumento de 15 puntos porcentuales, 25 % relativo y brecha de 15 puntos frente a meta; analizar causas.",
+      "Mejora relativa de 15 % y cumplimiento total de la meta.",
+      "Reducción de 25 puntos porcentuales en el incumplimiento."
+    ],
+    "rationales": [
+      "La diferencia es 15 y 15/60 es 25 %; aún falta la meta.",
+      "Confunde unidades y logro de objetivo.",
+      "El incumplimiento cae de 40 a 25: 15 puntos."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Decreto 1499/2017 art. 2.2.22.3.4; Ley 87/1993; SGC PGN. La diferencia es 15 y 15/60 es 25 %; aún falta la meta. Primera alternativa incorrecta: Confunde unidades y logro de objetivo. Segunda alternativa incorrecta: El incumplimiento cae de 40 a 25: 15 puntos."
+  }
+],
+  'pgn-m57': [
+  {
+    "number": 1,
+    "caseText": "La acción de mejora frente a errores de informes consistió en una capacitación. Todos asistieron, pero se detectaron errores semejantes después; no se midió tasa ni se revisó si la plantilla inducía inconsistencias. El líder propone cerrar por asistencia completa. Se dispone de muestras comparables anteriores y posteriores y del registro de cambios del formato institucional utilizado.",
+    "stem": "¿Qué revisión de eficacia corresponde realizar antes de cerrar la acción de mejora en el ciclo PHVA?",
+    "options": [
+      "Cerrar porque se ejecutó la capacitación.",
+      "Repetir la capacitación indefinidamente sin estudiar la causa.",
+      "Medir recurrencia, revisar causa y ajustar la acción si no fue eficaz."
+    ],
+    "rationales": [
+      "La asistencia no mide reducción del error.",
+      "Una acción repetida no sustituye análisis causal.",
+      "Actividad y eficacia son controles diferentes."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: SGC PGN; Resolución 329/2021; PHVA. Actividad y eficacia son controles diferentes. Primera alternativa incorrecta: La asistencia no mide reducción del error. Segunda alternativa incorrecta: Una acción repetida no sustituye análisis causal."
+  }
+],
+  'pgn-m58': [
+  {
+    "number": 1,
+    "caseText": "Un archivo de gestión se queda sin espacio y propone eliminar expedientes electrónicos con más de cinco años. La TRD establece tiempos diferentes según serie y existen trámites todavía abiertos. El inventario permite individualizar los expedientes, pero no se comprobó el cierre ni la autorización de disposición final. La oficina quiere liberar almacenamiento antes de hacer la revisión archivística.",
+    "stem": "¿Qué controles archivísticos deben verificarse antes de autorizar transferencia o disposición final de los expedientes?",
+    "options": [
+      "Borrar todo lo anterior a cinco años.",
+      "Identificar serie y TRD aplicable, revisar cierre y restricciones, y seguir transferencia o disposición autorizada con inventario.",
+      "Mover archivos a papelera compartida y dar por cumplida disposición."
+    ],
+    "rationales": [
+      "Un plazo arbitrario no sustituye TRD.",
+      "La retención y disposición se determinan por instrumentos y procedimiento.",
+      "La disposición exige constancias y controles."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Ley 594/2000 arts. 21–26; Acuerdo AGN 001/2024; Ley 527 arts. 8–12. La retención y disposición se determinan por instrumentos y procedimiento. Primera alternativa incorrecta: Un plazo arbitrario no sustituye TRD. Segunda alternativa incorrecta: La disposición exige constancias y controles."
+  }
+],
+  'pgn-m59': [
+  {
+    "number": 1,
+    "caseText": "Un informe de cuarenta páginas presenta diferencias de una base institucional, pero omite consultas, filtros, versión y filas de soporte. La copia Word incluye comentarios con datos personales de terceros. La dirección pide enviarla fuera de la institución sin revisar la autorización ni el expediente. Se conservan las fuentes y el analista puede describir los parámetros de procesamiento utilizados.",
+    "stem": "¿Qué ajustes hacen reproducible el informe y protegen los datos que no deben llegar al destinatario externo?",
+    "options": [
+      "Documentar encargo, fuentes, método, resultados y límites, anexos trazables y revisar reserva y metadatos de copia de entrega.",
+      "Enviar íntegro porque extensión y comentarios demuestran rigor.",
+      "Eliminar fuentes, anexos y método para evitar exposición."
+    ],
+    "rationales": [
+      "La calidad requiere reproducibilidad y divulgación controlada.",
+      "Extensión no acredita rigor ni autoriza exposición.",
+      "Proteger datos no exige destruir soportes."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Ley 1755 arts. 14, 20–21, 25–26; Ley 1712; CGD arts. 193–195; perfil 104. La calidad requiere reproducibilidad y divulgación controlada. Primera alternativa incorrecta: Extensión no acredita rigor ni autoriza exposición. Segunda alternativa incorrecta: Proteger datos no exige destruir soportes."
+  }
+],
+  'pgn-m60': [
+  {
+    "number": 1,
+    "caseText": "Un servidor cambia de funciones y conserva permisos de aprobación de su cargo anterior, además de adquirir permisos de creación de solicitudes. Puede crear y aprobar la misma operación. El administrador sostiene que MFA elimina el riesgo de uso indebido y no necesita modificar permisos. Los responsables funcionales pueden validar una matriz de roles sin suspender todo el servicio.",
+    "stem": "¿Qué ajuste de permisos controla el conflicto de funciones sin confundir autenticación multifactor con autorización?",
+    "options": [
+      "Mantener privilegios acumulados porque MFA garantiza uso correcto.",
+      "Desactivar todas las cuentas del área sin evaluar roles.",
+      "Revisar permisos con responsables, retirar innecesarios, separar creación y aprobación, documentar y mantener MFA."
+    ],
+    "rationales": [
+      "MFA no restringe acciones autorizadas.",
+      "El control debe ser proporcional y preservar continuidad.",
+      "Autenticación y autorización son controles distintos."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Ley 1581 arts. 4, 17–18; MSPI Resolución 02277/2025; MRAE v3. Autenticación y autorización son controles distintos. Primera alternativa incorrecta: MFA no restringe acciones autorizadas. Segunda alternativa incorrecta: El control debe ser proporcional y preservar continuidad."
+  }
+],
+  'pgn-m61': [
+  {
+    "number": 1,
+    "caseText": "El sistema registra autenticación exitosa con MFA y quince minutos después una modificación asociada a la misma cuenta. La sesión puede permanecer activa y otras personas tenían acceso físico al equipo. Todavía no hay registros de aplicación que vinculen la solicitud con sesión individual. El instructor pide que el informe afirme que el titular ejecutó personalmente cada acción registrada.",
+    "stem": "¿Qué conclusión técnica permite distinguir el evento autenticado y la modificación registrada de la autoría física del titular?",
+    "options": [
+      "Afirmar que MFA demuestra presencia física en toda acción posterior.",
+      "Invalidar todos los registros porque existía acceso de terceros.",
+      "Informar eventos asociados a cuenta, verificar continuidad de sesión y fuentes adicionales antes de atribución personal."
+    ],
+    "rationales": [
+      "MFA no prueba quién ejecutó cada acción de una sesión.",
+      "Una alternativa no elimina el valor de los registros.",
+      "Los logs prueban eventos técnicos bajo condiciones, no identidad absoluta."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Ley 527 arts. 9–12; CGD arts. 147 y 159; NIST SP 800-92. Los logs prueban eventos técnicos bajo condiciones, no identidad absoluta. Primera alternativa incorrecta: MFA no prueba quién ejecutó cada acción de una sesión. Segunda alternativa incorrecta: Una alternativa no elimina el valor de los registros."
+  }
+],
+  'pgn-m62': [
+  {
+    "number": 1,
+    "caseText": "Se requiere recuperar el valor anterior de una fila. La base actual conserva solo el último valor y hay backups diarios, sin comprobar su consistencia ni retención de logs transaccionales. El equipo quiere restaurar un respaldo sobre producción para inspeccionarlo y atribuir el cambio a una persona. Existe un entorno aislado donde puede realizarse una restauración autorizada y documentada.",
+    "stem": "¿Qué método permite reconstruir un estado anterior sin sobrescribir producción ni exceder los límites de atribución?",
+    "options": [
+      "Verificar backups y logs, restaurar copia aislada, comparar estados y registrar límites temporales y de atribución.",
+      "Restaurar sobre producción porque el respaldo es histórico.",
+      "Inferir autor y hora exacta únicamente por diferencia entre snapshots."
+    ],
+    "rationales": [
+      "Reconstrucción requiere preservar producción y verificar resolución temporal.",
+      "Sobrescribir puede alterar evidencia y disponibilidad.",
+      "Dos estados no prueban identidad ni instante exacto."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Ley 527 arts. 9–12; CGD arts. 147–159; NIST SP 800-86. Reconstrucción requiere preservar producción y verificar resolución temporal. Primera alternativa incorrecta: Sobrescribir puede alterar evidencia y disponibilidad. Segunda alternativa incorrecta: Dos estados no prueban identidad ni instante exacto."
+  }
+],
+  'pgn-m63': [
+  {
+    "number": 1,
+    "caseText": "Dos PDF tienen idéntico nombre y apariencia, pero huellas SHA-256 diferentes. Uno fue descargado del sistema de gestión y otro convertido por una herramienta que cambia compresión y metadatos. El despacho pide declarar falso el segundo sin comparar firmas ni versiones. Se conservan las dos copias y existe registro de la transformación utilizada para preparar la versión de consulta.",
+    "stem": "¿Cómo interpretar huellas distintas sin confundir diferencia binaria, transformación legítima y falsedad documental?",
+    "options": [
+      "Declarar falso todo archivo con hash diferente.",
+      "Considerarlos binariamente idénticos porque se ven iguales.",
+      "Registrar procedencia y huellas, comparar contenido, estructura, metadatos y firmas, y verificar transformación."
+    ],
+    "rationales": [
+      "Una transformación legítima puede cambiar huella.",
+      "Apariencia no demuestra identidad binaria.",
+      "Hashes distintos prueban diferencia de bytes, no falsedad."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Ley 527 arts. 7–12 y 28; RFC 5322, 6376, 8601, 7208 y 9989. Hashes distintos prueban diferencia de bytes, no falsedad. Primera alternativa incorrecta: Una transformación legítima puede cambiar huella. Segunda alternativa incorrecta: Apariencia no demuestra identidad binaria."
+  }
+],
+  'pgn-m64': [
+  {
+    "number": 1,
+    "caseText": "La autoridad solicita extraer estadísticas de registros existentes en archivo institucional. No designó perito ni decretó examen especializado. El producto se incorpora como informe de datos de archivo y se solicita aclarar una columna. La secretaría quiere tramitar toda controversia como objeción por error grave por titularse informe informático. El expediente conserva el acto de solicitud y el informe recibido.",
+    "stem": "¿Qué trámite de contradicción corresponde al informe de datos de archivo, atendiendo su naturaleza y no el título informático?",
+    "options": [
+      "Aplicar régimen pericial a cualquier documento informático.",
+      "Aplicar naturaleza y forma de incorporación; para informe de archivo, traslado y aclaraciones del art. 195, sin objeción por error grave.",
+      "Negar toda aclaración porque no es dictamen."
+    ],
+    "rationales": [
+      "Informe de archivo y dictamen son distintos.",
+      "La naturaleza del medio determina trámite, no el título.",
+      "Art. 195 contempla aclaración y complementación."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Perfil 104; CGD arts. 159, 177–184, 193–195; Ley 527; NIST SP 800-86. La naturaleza del medio determina trámite, no el título. Primera alternativa incorrecta: Informe de archivo y dictamen son distintos. Segunda alternativa incorrecta: Art. 195 contempla aclaración y complementación."
+  }
+],
   'pgn-m66': [{
     number: 1,
     caseText: 'Una hoja de cálculo consolida 420 registros de actuaciones institucionales. Tras aplicar un filtro por regional, la suma presentada en el informe no coincide con las filas visibles. La fórmula empleada incluye algunas filas ocultas, y otra tabla contiene un rango relativo que se desplazó al copiar la fórmula. Un directivo pide ajustar manualmente el total para que coincida con un reporte firmado la semana anterior.',
