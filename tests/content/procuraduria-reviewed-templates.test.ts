@@ -1,0 +1,27 @@
+import { describe, expect, it } from 'vitest'
+import { procuraduriaCourse } from '../../content/courses/procuraduria-104-2026-3pu15/course'
+import { reviewedTemplateModuleIds } from '../../content/courses/procuraduria-104-2026-3pu15/reviewedTemplateQuestions'
+import { hasPgnLengthCue } from '../../src/lib/procuraduriaBankAudit'
+
+describe('RC.8 · revisión individual de plantillas', () => {
+  it('mantiene claves e IDs históricos, con nueve casos distintos por módulo y fuentes legales', () => {
+    expect(reviewedTemplateModuleIds).toEqual(['pgn-m25','pgn-m26'])
+    const questions = procuraduriaCourse.questions.filter(q => reviewedTemplateModuleIds.includes(q.moduleId) && /-situational-(10|[2-9])$/.test(q.id))
+    expect(questions).toHaveLength(18)
+    expect(new Set(questions.map(q => q.stem)).size).toBe(18)
+    expect(new Set(questions.map(q => q.case)).size).toBe(18)
+    for (const q of questions) {
+      const module = procuraduriaCourse.modules.find(m => m.id === q.moduleId)!
+      const number = Number(q.id.split('-').at(-1))
+      expect(q.correctOptionId, q.id).toBe(['a','c','b'][(module.order + number) % 3])
+      expect(q.case!.length, q.id).toBeGreaterThan(180)
+      expect(q.stem.length, q.id).toBeGreaterThan(35)
+      expect(q.verifiedAt).toBe('2026-11-24')
+      expect(q.sourceIds).toContain('ley-1952-2019')
+      expect(q.sourceIds).toContain('ley-2094-2021')
+      expect(q.explanation).toMatch(/Código General Disciplinario, art/)
+      expect(hasPgnLengthCue(q), q.id).toBe(false)
+      expect(new Set(q.options.map(o=>o.rationale)).size).toBe(3)
+    }
+  })
+})
