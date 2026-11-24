@@ -5,11 +5,11 @@ import { hasPgnLengthCue } from '../../src/lib/procuraduriaBankAudit'
 
 describe('RC.8 · revisión individual de plantillas', () => {
   it('mantiene claves e IDs históricos, con nueve casos distintos por módulo y fuentes legales', () => {
-    expect(reviewedTemplateModuleIds).toEqual(["pgn-m25","pgn-m26","pgn-m27","pgn-m28","pgn-m29","pgn-m30","pgn-m31","pgn-m32","pgn-m33","pgn-m34","pgn-m20","pgn-m21","pgn-m22","pgn-m23","pgn-m24","pgn-m35","pgn-m36","pgn-m37","pgn-m38","pgn-m39","pgn-m40","pgn-m41","pgn-m42","pgn-m43","pgn-m44","pgn-m45","pgn-m46"])
+    expect(reviewedTemplateModuleIds).toEqual(["pgn-m25","pgn-m26","pgn-m27","pgn-m28","pgn-m29","pgn-m30","pgn-m31","pgn-m32","pgn-m33","pgn-m34","pgn-m20","pgn-m21","pgn-m22","pgn-m23","pgn-m24","pgn-m35","pgn-m36","pgn-m37","pgn-m38","pgn-m39","pgn-m40","pgn-m41","pgn-m42","pgn-m43","pgn-m44","pgn-m45","pgn-m46","pgn-m47","pgn-m48","pgn-m49"])
     const questions = procuraduriaCourse.questions.filter(q => reviewedTemplateModuleIds.includes(q.moduleId) && /-situational-(10|[2-9])$/.test(q.id))
-    expect(questions).toHaveLength(243)
-    expect(new Set(questions.map(q => q.stem)).size).toBe(243)
-    expect(new Set(questions.map(q => q.case)).size).toBe(243)
+    expect(questions).toHaveLength(270)
+    expect(new Set(questions.map(q => q.stem)).size).toBe(270)
+    expect(new Set(questions.map(q => q.case)).size).toBe(270)
     for (const q of questions) {
       const module = procuraduriaCourse.modules.find(m => m.id === q.moduleId)!
       const number = Number(q.id.split('-').at(-1))
@@ -23,7 +23,8 @@ describe('RC.8 · revisión individual de plantillas', () => {
         expect(q.explanation).toMatch(/Código General Disciplinario, art/)
       } else {
         expect(q.explanation).toMatch(/^Fundamento:/)
-        expect(q.sourceIds).toContain('pgn-res-132-2014')
+        expect(q.sourceIds.length).toBeGreaterThan(0)
+        if (q.explanation.includes('Resolución PGN 132/2014')) expect(q.sourceIds).toContain('pgn-res-132-2014')
       }
       expect(hasPgnLengthCue(q), q.id).toBe(false)
       expect(new Set(q.options.map(o=>o.rationale)).size).toBe(3)

@@ -3700,6 +3700,417 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "Constitución art. 277; Resolución PGN 132/2014 art. 9.2"
     ]
+  ],
+  "pgn-m47": [
+    [
+      "Dos municipios informan respectivamente 60 y 90 beneficiarios atendidos por una política pública. El primero tiene 75 personas elegibles y el segundo 150; ambos utilizan la misma definición de beneficiario y periodo.",
+      "¿Cuál comparación de cobertura resulta apropiada para el informe preventivo?",
+      [
+        "El primero alcanza 80 % y el segundo 60 % de cobertura.",
+        "El segundo tiene mayor cobertura porque atendió a 30 personas adicionales.",
+        "Ambos tienen igual cobertura porque comparten la misma definición del indicador."
+      ],
+      [
+        "Se divide atendidos entre población elegible.",
+        "El número absoluto no refleja la proporción atendida.",
+        "La definición común permite comparar, no iguala los resultados."
+      ],
+      "Resolución PGN 132/2014; análisis de indicadores"
+    ],
+    [
+      "Una entidad ejecutó todos los talleres de una estrategia para reducir deserción escolar. El reporte no mide si los estudiantes permanecieron en el sistema ni compara el indicador de deserción con la línea base acordada.",
+      "¿Qué dato permitiría evaluar el resultado social y no solo el producto?",
+      [
+        "La variación de la deserción en la población objetivo respecto de la línea base.",
+        "La cantidad de talleres y horas de capacitación ejecutadas durante el periodo.",
+        "El porcentaje de presupuesto comprometido en la contratación de los talleres."
+      ],
+      [
+        "La deserción mide el resultado buscado.",
+        "Los talleres miden productos de la intervención.",
+        "El compromiso presupuestal mide recursos, no el efecto social."
+      ],
+      "Decreto 1499/2017; análisis de cadena de valor"
+    ],
+    [
+      "Un programa aumentó su cobertura del 40 % al 50 % con una población elegible estable. El informe de vigilancia debe explicar el cambio sin confundir la diferencia entre porcentajes con el crecimiento relativo al valor inicial.",
+      "¿Cómo debe expresarse correctamente el incremento de la cobertura reportada?",
+      [
+        "Aumento de diez puntos porcentuales y crecimiento relativo del 25 %.",
+        "Aumento de veinticinco puntos porcentuales y crecimiento relativo del 10 %.",
+        "Aumento de diez puntos porcentuales y crecimiento relativo del 10 %."
+      ],
+      [
+        "La diferencia es 10 puntos y 10 dividido por 40 es 25 %.",
+        "Intercambia las dos medidas.",
+        "La variación relativa utiliza como base el 40 %."
+      ],
+      "Resolución PGN 132/2014; cálculo de indicadores"
+    ],
+    [
+      "Un tablero territorial muestra que las quejas aumentaron tras abrir una plataforma digital de denuncias. No se dispone de una medición independiente de la incidencia real del problema antes y después de habilitar el nuevo canal.",
+      "¿Qué inferencia resulta defendible para orientar la vigilancia preventiva?",
+      [
+        "El aumento puede reflejar cambios de incidencia o de acceso al reporte.",
+        "La plataforma causó el aumento de los hechos porque ambos cambios coinciden.",
+        "La incidencia disminuyó porque la entidad cuenta con más canales de denuncia."
+      ],
+      [
+        "El registro de quejas depende también de la propensión a reportar.",
+        "La coincidencia temporal no acredita causalidad.",
+        "La existencia de canales no demuestra reducción del problema."
+      ],
+      "Resolución PGN 132/2014; análisis de riesgos"
+    ],
+    [
+      "Un informe calcula el cumplimiento de una meta con registros de atención. Los datos incluyen solicitudes repetidas de una misma persona, aunque la ficha del indicador define como unidad de medida a los beneficiarios únicos.",
+      "¿Qué ajuste debe realizarse antes de validar el indicador de cumplimiento?",
+      [
+        "Identificar beneficiarios únicos conforme a la definición y documentar las deduplicaciones.",
+        "Mantener todas las solicitudes porque cada trámite representa una actividad institucional realizada.",
+        "Eliminar aleatoriamente registros hasta alcanzar el valor esperado en la meta."
+      ],
+      [
+        "La unidad definida es la persona única, no el trámite.",
+        "El conteo de actividades corresponde a otro indicador.",
+        "La eliminación arbitraria altera el soporte del cálculo."
+      ],
+      "Decreto 1499/2017; calidad de datos"
+    ],
+    [
+      "La entidad reporta un riesgo de interrupción del servicio por fallas de suministro. Existe un protocolo de contingencia formalmente aprobado, pero las pruebas muestran que el personal no conoce cómo activarlo ante una interrupción.",
+      "¿Qué diferencia debe reconocer el operador al valorar ese control institucional?",
+      [
+        "Distinguir diseño del control y funcionamiento efectivo antes de estimar el riesgo residual.",
+        "Considerar eliminado el riesgo porque existe un protocolo aprobado por la autoridad.",
+        "Clasificar el riesgo como inevitable y omitir cualquier valoración de los controles existentes."
+      ],
+      [
+        "Un control documentado puede no operar en la práctica.",
+        "La aprobación formal no demuestra efectividad.",
+        "La deficiencia permite examinar acciones de mejora."
+      ],
+      "Decreto 1499/2017; Resolución PGN 132/2014 art. 9"
+    ],
+    [
+      "Una oficina compara la tasa mensual de atención en zonas urbanas y rurales. En la zona rural hay solo cinco solicitudes y en la urbana quinientas, por lo que una sola atención cambia considerablemente la tasa rural.",
+      "¿Qué cautela permite interpretar esa diferencia territorial de manera responsable?",
+      [
+        "Presentar los denominadores y advertir la sensibilidad del resultado al pequeño tamaño rural.",
+        "Promediar las tasas con igual peso y atribuir el resultado a toda la población.",
+        "Descartar automáticamente los resultados rurales por tener menos observaciones que los urbanos."
+      ],
+      [
+        "El denominador contextualiza la estabilidad de cada tasa.",
+        "El promedio simple no representa necesariamente el total.",
+        "Un grupo pequeño puede conservar relevancia preventiva."
+      ],
+      "Resolución PGN 132/2014; análisis de indicadores"
+    ],
+    [
+      "Un municipio informa una ejecución presupuestal del 95 % para un proyecto de acceso a agua. La cobertura efectiva del servicio continúa por debajo de la meta y no se han verificado las obras que están en operación.",
+      "¿Qué enfoque corresponde al control preventivo de gestión en este supuesto?",
+      [
+        "Contrastar recursos, productos operativos y cobertura efectiva frente a las metas.",
+        "Concluir cumplimiento integral por el porcentaje de ejecución presupuestal informado.",
+        "Declarar responsabilidad individual por la diferencia entre ejecución financiera y cobertura."
+      ],
+      [
+        "Los recursos y los resultados deben analizarse separadamente.",
+        "La ejecución financiera no garantiza resultados.",
+        "Una desviación no prueba responsabilidad individual."
+      ],
+      "Decreto 1499/2017; Resolución PGN 132/2014 art. 5"
+    ],
+    [
+      "Una matriz identifica un riesgo de afectación de derechos con alta probabilidad y alto impacto. La entidad plantea sustituir su valoración por el número de quejas recibidas, aunque el servicio apenas comenzará el mes siguiente.",
+      "¿Qué criterio debe conservarse para priorizar el riesgo antes de su materialización?",
+      [
+        "Evaluar probabilidad e impacto con los datos y controles disponibles.",
+        "Reducir la prioridad mientras no se registren quejas sobre el servicio.",
+        "Asignar prioridad únicamente según el volumen histórico de comunicaciones institucionales."
+      ],
+      [
+        "La priorización considera potencial de vulneración y magnitud del riesgo.",
+        "La ausencia de quejas no implica ausencia de riesgo.",
+        "El volumen de comunicaciones no mide por sí solo impacto."
+      ],
+      "Resolución PGN 132/2014 arts. 5, 9.5"
+    ]
+  ],
+  "pgn-m48": [
+    [
+      "En un proceso de nulidad contractual ante la jurisdicción contenciosa, el agente del Ministerio Público identifica una cuestión que podría afectar recursos públicos. Las partes no han planteado esa cuestión en sus escritos previos.",
+      "¿Qué finalidad legitima examinar una intervención dentro del proceso judicial?",
+      [
+        "Defender el patrimonio público mediante las facultades procesales legalmente previstas.",
+        "Representar automáticamente a la entidad demandada como su apoderado judicial.",
+        "Reemplazar al juez en la valoración definitiva de la legalidad contractual."
+      ],
+      [
+        "La defensa patrimonial es finalidad del Ministerio Público.",
+        "El agente no es necesariamente abogado de la entidad.",
+        "La decisión judicial corresponde al juez."
+      ],
+      "CPACA art. 303; Constitución art. 277.7"
+    ],
+    [
+      "Un procurador judicial recibe un expediente contencioso y advierte que falta una prueba relevante para esclarecer un posible detrimento del patrimonio público. El trámite permite solicitar su decreto dentro de la oportunidad correspondiente.",
+      "¿Qué actuación puede promover el agente del Ministerio Público en ese supuesto?",
+      [
+        "Solicitar la prueba justificando su relación con la finalidad de la intervención.",
+        "Decretar por sí mismo la prueba y ordenar su práctica al despacho judicial.",
+        "Abrir obligatoriamente una investigación disciplinaria antes de solicitar cualquier medio probatorio."
+      ],
+      [
+        "La intervención permite formular solicitudes procesales pertinentes.",
+        "El decreto corresponde a la autoridad judicial.",
+        "La intervención no depende de una apertura disciplinaria."
+      ],
+      "CPACA art. 303"
+    ],
+    [
+      "Un juzgado administrativo recibe un concepto del Ministerio Público que solicita declarar la nulidad de un acto. El juez analiza los argumentos y considera jurídicamente procedente una conclusión distinta al concepto presentado por el agente.",
+      "¿Qué efecto tiene el concepto sobre la competencia decisoria del juzgado?",
+      [
+        "Es un aporte procesal que el juez valora sin quedar sustituido por el agente.",
+        "Es una orden vinculante que obliga al juez a acoger la solicitud formulada.",
+        "Es una decisión administrativa que anula directamente el acto objeto del proceso."
+      ],
+      [
+        "El Ministerio Público interviene, pero no decide el litigio.",
+        "El concepto no predetermina el sentido judicial.",
+        "No produce directamente la nulidad solicitada."
+      ],
+      "Constitución art. 277.7; CPACA art. 303"
+    ],
+    [
+      "Una entidad pública solicita al agente del Ministerio Público que defienda su posición en un litigio aunque el análisis del expediente revela que esa posición podría afectar derechos fundamentales protegidos por el ordenamiento jurídico.",
+      "¿Qué criterio debe orientar la posición institucional del agente que interviene?",
+      [
+        "Defender el orden jurídico y los derechos, con independencia de la postura de la entidad.",
+        "Respaldar la posición de la entidad pública por el solo carácter estatal de esta.",
+        "Abstenerse de intervenir cuando su posición difiera de la administración demandada."
+      ],
+      [
+        "La intervención se orienta por las finalidades constitucionales.",
+        "El carácter público no exige adhesión a su posición.",
+        "La discrepancia no excluye intervención legalmente habilitada."
+      ],
+      "Constitución art. 277.7; CPACA art. 303"
+    ],
+    [
+      "Un juez administrativo aprueba un acuerdo conciliatorio que, según el agente del Ministerio Público, puede comprometer injustificadamente recursos públicos. El agente está legitimado y aún se encuentra en la oportunidad procesal pertinente.",
+      "¿Qué facultad específica reconoce el CPACA frente a esa providencia judicial?",
+      [
+        "Interponer el recurso procedente contra el auto que aprueba la conciliación.",
+        "Revocar directamente el auto mediante una resolución de la Procuraduría.",
+        "Imponer al juez una sanción como requisito previo para cuestionar el acuerdo."
+      ],
+      [
+        "El art. 303 contempla recurrir autos sobre conciliación judicial.",
+        "La revocación judicial no corresponde al agente.",
+        "Recurrir no exige sancionar al juez."
+      ],
+      "CPACA art. 303"
+    ],
+    [
+      "En un proceso contencioso se demanda una actuación estatal. El agente del Ministerio Público analiza si puede participar como sujeto procesal especial, aunque la entidad pública ya cuenta con apoderado y el ciudadano demandante también.",
+      "¿Qué condición justifica esa intervención adicional conforme al régimen contencioso?",
+      [
+        "La protección del orden jurídico, patrimonio público o derechos y garantías fundamentales.",
+        "La ausencia de representante judicial de alguna de las partes del proceso.",
+        "La autorización previa de ambos litigantes para que participe el agente institucional."
+      ],
+      [
+        "La ley reconoce una función especial ligada a intereses protegidos.",
+        "No es sustitución de abogados ausentes.",
+        "La habilitación no depende del consentimiento de las partes."
+      ],
+      "CPACA art. 303"
+    ],
+    [
+      "Un operador preventivo identifica un riesgo en la ejecución de una obra; paralelamente un procurador judicial interviene en un litigio relacionado con el contrato. Un equipo propone unificar las dos actuaciones para que una recomendación preventiva decida el litigio.",
+      "¿Cómo deben articularse las funciones frente a los hechos que comparten?",
+      [
+        "Coordinar información pertinente sin confundir sus procedimientos ni efectos jurídicos.",
+        "Convertir las recomendaciones preventivas en decisiones vinculantes dentro del proceso judicial.",
+        "Suspender la intervención judicial hasta que se cierre toda actuación preventiva relacionada."
+      ],
+      [
+        "Las funciones tienen finalidades y competencias diferenciadas.",
+        "La recomendación no decide el litigio.",
+        "No se exige cierre preventivo como condición general."
+      ],
+      "Constitución art. 277; Decreto Ley 262/2000"
+    ],
+    [
+      "Un profesional prepara un concepto para una intervención judicial. La documentación muestra hechos favorables y desfavorables a la pretensión que inicialmente consideró viable, y existen disposiciones especiales que regulan el procedimiento.",
+      "¿Qué método permite construir una posición institucional sustentada y verificable?",
+      [
+        "Examinar ambas clases de hechos, las normas aplicables y la finalidad de intervención.",
+        "Seleccionar únicamente los soportes que favorecen la posición inicial para fortalecer el concepto.",
+        "Aplicar la regla general sin examinar la regulación especial del procedimiento judicial."
+      ],
+      [
+        "La posición debe fundarse en hechos y derecho aplicables.",
+        "Omitir datos relevantes debilita su justificación.",
+        "La regla especial requiere examen propio."
+      ],
+      "Constitución art. 277.7; CPACA art. 303"
+    ],
+    [
+      "Un agente pretende solicitar una medida dentro de un proceso judicial para proteger un derecho fundamental. El expediente contiene la prueba del riesgo, pero la decisión que resuelve la medida se encuentra atribuida por ley a la autoridad judicial.",
+      "¿Qué diferencia debe conservar el profesional al redactar la solicitud de intervención?",
+      [
+        "Motivar la petición al juez sin emitir una decisión ejecutoria sobre la medida.",
+        "Emitir la medida directamente y pedir al juez que ratifique su ejecución.",
+        "Limitarse a registrar el riesgo sin formular una solicitud procesal permitida."
+      ],
+      [
+        "La intervención promueve decisiones dentro de la competencia judicial.",
+        "El agente no sustituye al juez.",
+        "La existencia de una facultad permite ejercerla motivadamente."
+      ],
+      "Constitución art. 277.7; CPACA art. 303"
+    ]
+  ],
+  "pgn-m49": [
+    [
+      "Una ciudadana con discapacidad visual solicita consultar una respuesta de la Procuraduría que solo está disponible como imagen escaneada sin texto accesible. La oficina conserva el documento original y puede generar una versión equivalente legible por lector de pantalla.",
+      "¿Qué ajuste permite garantizar acceso efectivo a la respuesta institucional?",
+      [
+        "Facilitar una versión accesible que conserve el contenido y proteja los datos correspondientes.",
+        "Exigir que otra persona lea el documento porque el original ya fue publicado.",
+        "Sustituir la respuesta completa por un resumen verbal sin acceso al contenido solicitado."
+      ],
+      [
+        "El acceso a información exige eliminar barreras de comunicación.",
+        "Publicar no garantiza accesibilidad real.",
+        "El resumen no reemplaza necesariamente el contenido completo."
+      ],
+      "Ley 1618/2013 arts. 14 y 16"
+    ],
+    [
+      "Una petición solicita reconocimiento de un derecho fundamental y aporta prueba sumaria de titularidad y de un riesgo de perjuicio irremediable. La oficina la registra como solicitud ordinaria y propone tramitarla únicamente por orden cronológico.",
+      "¿Qué tratamiento dispone la ley ante las circunstancias acreditadas en esa petición?",
+      [
+        "Dar atención prioritaria por el riesgo de perjuicio irremediable invocado y sustentado.",
+        "Aplicar exclusivamente el orden de recepción porque toda petición tiene igual prioridad.",
+        "Exigir sentencia judicial previa que declare el perjuicio para admitir prioridad."
+      ],
+      [
+        "El art. 20 prevé prioridad con prueba sumaria de ambos presupuestos.",
+        "La igualdad no impide la prioridad legal.",
+        "No se requiere sentencia previa."
+      ],
+      "Ley 1755/2015 art. 20"
+    ],
+    [
+      "Un ciudadano acude a la entidad con una petición que evidencia peligro inminente para su vida por razones de salud. La autoridad cuenta con facultades inmediatas para atender parte de la emergencia mientras tramita la petición de fondo.",
+      "¿Qué actuación exige el régimen de atención prioritaria en esa situación?",
+      [
+        "Adoptar de inmediato las medidas urgentes necesarias dentro de competencia, sin omitir el trámite.",
+        "Esperar la respuesta definitiva de la petición antes de considerar las medidas urgentes.",
+        "Remitir la petición y suspender cualquier medida que la autoridad sí pueda adoptar."
+      ],
+      [
+        "El art. 20 exige medidas inmediatas para conjurar el peligro.",
+        "El trámite ordinario no sustituye la protección urgente.",
+        "La remisión no elimina competencias propias."
+      ],
+      "Ley 1755/2015 art. 20"
+    ],
+    [
+      "Una oficina publica resultados de atención a personas vulnerables y dispone de una base con nombres, condiciones de salud y direcciones. La finalidad estadística puede satisfacerse mediante conteos agregados sin identificar a los usuarios.",
+      "¿Qué tratamiento permite informar resultados sin divulgar datos sensibles innecesarios?",
+      [
+        "Publicar datos agregados y restringir el acceso a la información identificable según finalidad.",
+        "Publicar la base nominativa porque todos los registros provienen de una entidad pública.",
+        "Eliminar toda estadística de atención porque cualquier dato de salud impide generar informes."
+      ],
+      [
+        "La finalidad estadística no requiere divulgar identidades en ese supuesto.",
+        "El origen estatal no convierte los datos sensibles en públicos.",
+        "La agregación permite informar sin exposición innecesaria."
+      ],
+      "Ley 1581/2012 arts. 4–6"
+    ],
+    [
+      "Una persona sorda desea radicar una queja directamente y solicita atención en una modalidad de comunicación que utiliza. La oficina propone que un familiar responda por ella, aunque puede facilitar un canal accesible y respetar su autonomía.",
+      "¿Qué alternativa garantiza el ejercicio autónomo del derecho a presentar la queja?",
+      [
+        "Ofrecer el ajuste de comunicación solicitado o una alternativa accesible acordada con la persona.",
+        "Exigir representación familiar como condición general para recibir la queja de la persona.",
+        "Recibir exclusivamente por el canal oral habitual para mantener igualdad entre usuarios."
+      ],
+      [
+        "Los ajustes razonables favorecen autonomía e igualdad material.",
+        "La discapacidad no implica necesidad automática de representación.",
+        "El trato idéntico puede mantener barreras."
+      ],
+      "Ley 1618/2013 arts. 14 y 16"
+    ],
+    [
+      "Una autoridad requiere datos personales para ejercer una función legal específica. El equipo que recibe la información propone utilizarlos después para un informe público identificable cuya finalidad no está relacionada con el requerimiento original.",
+      "¿Qué límite subsiste aunque la autorización del titular no sea exigible para el requerimiento?",
+      [
+        "Respetar finalidad, acceso restringido y demás principios del tratamiento de datos.",
+        "Usar la información para cualquier finalidad institucional por existir una excepción a la autorización.",
+        "Publicar los datos siempre que se omita mencionar la entidad que los suministró."
+      ],
+      [
+        "La excepción de autorización no elimina principios ni finalidad.",
+        "No constituye autorización general de reutilización.",
+        "Ocultar la entidad de origen no protege al titular."
+      ],
+      "Ley 1581/2012 arts. 4 y 10"
+    ],
+    [
+      "Una mujer relata hechos de posible acoso sexual laboral y solicita orientación. Dos dependencias necesitan coordinar la ruta de atención; ambas pueden acceder a la información autorizada sin exigir que repita íntegramente su relato ante cada funcionario.",
+      "¿Qué práctica protege mejor su dignidad y reduce el riesgo de revictimización?",
+      [
+        "Coordinar la ruta y compartir únicamente la información necesaria por canales autorizados.",
+        "Exigir un relato completo ante cada dependencia para garantizar versiones independientes de atención.",
+        "Divulgar su identidad al conjunto del equipo institucional para facilitar futuras consultas."
+      ],
+      [
+        "La coordinación reduce exposición y repetición innecesarias.",
+        "La atención no exige multiplicar relatos sin finalidad.",
+        "La confidencialidad limita accesos a datos personales."
+      ],
+      "Ley 2365/2024; Ley 1581/2012 art. 4"
+    ],
+    [
+      "Una entidad diseña una plataforma de atención exclusivamente en línea. En una zona rural existen usuarios que carecen de conectividad y otros que requieren ajustes de accesibilidad. El servicio puede ofrecer alternativas equivalentes de radicación.",
+      "¿Qué diseño permite reducir las barreras objetivas sin alterar los requisitos legales del trámite?",
+      [
+        "Mantener canales alternativos accesibles y ofrecer orientación según las necesidades concretas.",
+        "Exigir únicamente la plataforma digital para aplicar el mismo procedimiento a toda persona.",
+        "Exonerar a todos los usuarios rurales de cualquier requisito legal del trámite solicitado."
+      ],
+      [
+        "La igualdad material requiere acceso efectivo a los canales.",
+        "El canal único puede excluir a parte de la población.",
+        "La accesibilidad no elimina requisitos legales."
+      ],
+      "Ley 1618/2013 arts. 14 y 16; Constitución art. 13"
+    ],
+    [
+      "Una petición escrita de una persona vulnerable llega a una dependencia que carece de competencia. Existe una autoridad competente identificada y el ciudadano aporta datos de contacto suficientes para recibir información sobre el trámite de traslado.",
+      "¿Qué gestión corresponde ante la falta de competencia sin abandonar la atención diferencial?",
+      [
+        "Informar y remitir a la autoridad competente dentro del plazo legal aplicable.",
+        "Conservar la petición sin remitirla porque la persona requiere atención especial.",
+        "Responder negativamente de fondo aunque la dependencia no tenga competencia material."
+      ],
+      [
+        "El art. 21 exige informar y remitir oportunamente.",
+        "La vulnerabilidad no suprime la regla de competencia.",
+        "La falta de competencia no autoriza decidir el fondo."
+      ],
+      "Ley 1755/2015 art. 21"
+    ]
   ]
 }
 
@@ -3718,7 +4129,7 @@ export function reviewedTemplateQuestion(question: Question, number: number): Qu
       return { id: o.id, text: choices[i]!, rationale: rationales[i]! }
     }),
     explanation: (Number(question.moduleId.slice(5)) >= 45 ? 'Fundamento: ' : 'Código General Disciplinario, art(s). ') + articles + '. ' + rationales.join(' '),
-    sourceIds: [...new Set([...question.sourceIds, ...(Number(question.moduleId.slice(5)) < 45 ? ['ley-1952-2019', 'ley-2094-2021'] : []), ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : []), ...(articles.includes('NIST SP 800-86') ? ['nist-sp-800-86'] : []), ...(articles.includes('NIST SP 800-92') ? ['nist-sp-800-92'] : [])])],
+    sourceIds: [...new Set([...question.sourceIds, ...(articles.includes('Constitución') ? ['constitucion'] : []), ...(articles.includes('Resolución PGN 132/2014') ? ['pgn-res-132-2014'] : []), ...(articles.includes('Decreto 1499/2017') ? ['decreto-1499-2017'] : []), ...(articles.includes('CPACA') ? ['cpaca'] : []), ...(Number(question.moduleId.slice(5)) < 45 ? ['ley-1952-2019', 'ley-2094-2021'] : []), ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : []), ...(articles.includes('NIST SP 800-86') ? ['nist-sp-800-86'] : []), ...(articles.includes('NIST SP 800-92') ? ['nist-sp-800-92'] : [])])],
     verifiedAt: '2026-11-24',
   }
 }
