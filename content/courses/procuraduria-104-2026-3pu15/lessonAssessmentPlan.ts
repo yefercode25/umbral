@@ -493,10 +493,10 @@ const lessonSituationOrder: Record<number, readonly number[]> = {
     9,
     5,
     7,
-    10,
+    8,
     3,
     4,
-    8
+    10
   ],
   "50": [
     2,

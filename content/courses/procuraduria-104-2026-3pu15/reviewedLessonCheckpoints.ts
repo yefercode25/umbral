@@ -2680,6 +2680,857 @@ const items: Record<string, Item> = {
       "ley-2094-2021",
       "nist-sp-800-86"
     ]
+  ],
+  "pgn-m45-q1": [
+    "",
+    "¿Qué diferencia la prevención integral de la función preventiva específica?",
+    "La primera atraviesa la gestión institucional; la segunda tiene objeto y competencias propios.",
+    "La primera es exclusivamente disciplinaria; la segunda reemplaza la gestión administrativa.",
+    "Ambas permiten al operador asumir las decisiones de cualquier entidad vigilada.",
+    "La prevención integral tiene alcance transversal.",
+    "La vigilancia conserva autonomía y límites.",
+    "Prevenir no significa coadministrar.",
+    "Resolución PGN 132/2014 arts. 3–5",
+    [
+      "pgn-res-132-2014"
+    ]
+  ],
+  "pgn-m45-q2": [
+    "Una alerta verificable permite solicitar dos documentos para aclarar el riesgo, sin exigir paralizar el servicio.",
+    "¿Qué principio orienta la elección de ese requerimiento delimitado?",
+    "Racionalidad, porque ajusta la actuación a competencia, necesidad y proporcionalidad.",
+    "Priorización, porque convierte cualquier alerta en una orden de suspensión.",
+    "Autonomía, porque permite prescindir de la competencia de la entidad.",
+    "La racionalidad evita extralimitación.",
+    "Priorizar no atribuye potestad de suspensión.",
+    "Autonomía no significa competencia ilimitada.",
+    "Resolución PGN 132/2014 art. 9",
+    [
+      "pgn-res-132-2014"
+    ]
+  ],
+  "pgn-m45-q3": [
+    "El servicio de agua aún funciona, pero existe riesgo concreto de interrupción por falta de insumos.",
+    "¿En qué escenario preventivo debe clasificarse inicialmente ese riesgo?",
+    "Anticipación, porque la afectación todavía puede evitarse.",
+    "Mitigación, porque ya se produjo la interrupción del servicio.",
+    "Orientación, porque la situación solo requiere indicar un canal al usuario.",
+    "Anticipar precede a la materialización.",
+    "No se ha interrumpido el servicio.",
+    "Existe un riesgo concreto de gestión.",
+    "Resolución PGN 132/2014 art. 11",
+    [
+      "pgn-res-132-2014"
+    ]
+  ],
+  "pgn-m45-q4": [
+    "Una comunidad ya perdió acceso al servicio y la entidad evalúa alternativas para restablecerlo.",
+    "¿Qué escenario describe la actuación dirigida a reducir y superar esa afectación?",
+    "Mitigación y/o restitución, frente a una vulneración materializada.",
+    "Anticipación, porque todavía no se ha impuesto sanción disciplinaria.",
+    "Orientación exclusivamente, por existir una solicitud de los usuarios.",
+    "El escenario depende de la afectación, no de una sanción.",
+    "La anticipación se refiere a riesgos no materializados.",
+    "La actuación busca restablecer derechos.",
+    "Resolución PGN 132/2014 art. 11",
+    [
+      "pgn-res-132-2014"
+    ]
+  ],
+  "pgn-m45-q5": [
+    "La entidad vigilada anuncia que instalará un control y fija fecha y responsable. No presenta aún evidencia de ejecución.",
+    "¿Qué debe verificar el operador en el seguimiento?",
+    "La implementación efectiva del control y su efecto sobre el riesgo identificado.",
+    "La mera existencia del anuncio como demostración de que desapareció el riesgo.",
+    "La imposición de una sanción al responsable antes de evaluar cualquier mejora.",
+    "Un compromiso no acredita resultado.",
+    "La eficacia requiere soportes.",
+    "El seguimiento es distinto del juicio disciplinario.",
+    "Resolución PGN 132/2014 arts. 5,9",
+    [
+      "pgn-res-132-2014"
+    ]
+  ],
+  "pgn-m45-q6": [
+    "Durante el seguimiento se confirma la reducción del riesgo, pero aparece una noticia sobre un posible incumplimiento anterior.",
+    "¿Qué tratamiento conserva la autonomía de las funciones misionales?",
+    "Documentar el resultado preventivo y evaluar separadamente la remisión disciplinaria competente.",
+    "Archivar automáticamente toda noticia anterior porque se redujo el riesgo actual.",
+    "Declarar culpabilidad en el cierre preventivo para resolver ambas funciones a la vez.",
+    "La mejora no decide responsabilidad disciplinaria.",
+    "No extingue automáticamente una posible falta.",
+    "Cada función tiene procedimiento propio.",
+    "Resolución PGN 132/2014 art. 9",
+    [
+      "pgn-res-132-2014"
+    ]
+  ],
+  "pgn-m46-q1": [
+    "",
+    "¿Qué componentes integra el Sistema Integral de Prevención de la PGN?",
+    "Responsables, reglas, herramientas y mecanismos de coordinación de la gestión preventiva.",
+    "Únicamente un registro de sanciones y un inventario de investigaciones disciplinarias.",
+    "Exclusivamente funcionarios de nivel central con competencia para administrar entidades vigiladas.",
+    "El SIP articula la gestión preventiva.",
+    "No es un registro sancionatorio.",
+    "La prevención no sustituye administraciones.",
+    "Resolución PGN 132/2014 arts. 3–4",
+    [
+      "pgn-res-132-2014"
+    ]
+  ],
+  "pgn-m46-q2": [
+    "Dos alertas llegan simultáneamente. Una presenta riesgo inmediato de vulneración de derechos y la otra tiene impacto menor.",
+    "¿Qué principios orientan la programación del trabajo preventivo?",
+    "Oportunidad y priorización según riesgo, derechos afectados y directrices institucionales.",
+    "Economía y antigüedad, dando prioridad al expediente con menos documentos.",
+    "Autonomía y reserva, evitando coordinar la respuesta con otras dependencias.",
+    "Oportunidad y priorización responden al riesgo.",
+    "El volumen de documentos no fija prioridad.",
+    "La coordinación es parte del sistema.",
+    "Resolución PGN 132/2014 art. 9",
+    [
+      "pgn-res-132-2014"
+    ]
+  ],
+  "pgn-m46-q3": [
+    "Dos dependencias son competentes y no existe asignación simultánea ni regla especial diferente. Una asumió primero el asunto.",
+    "¿Qué criterio de distribución contempla el artículo 15?",
+    "Primacía de la dependencia competente que asumió primero el conocimiento.",
+    "Preferencia automática de la dependencia con mayor número de funcionarios.",
+    "Traslado obligatorio del asunto a la última dependencia que recibió información.",
+    "La primacía opera en el supuesto descrito.",
+    "El tamaño de la oficina no atribuye competencia.",
+    "La recepción posterior no desplaza por sí sola la primacía.",
+    "Resolución PGN 132/2014 art. 15",
+    [
+      "pgn-res-132-2014"
+    ]
+  ],
+  "pgn-m46-q4": [
+    "Una dependencia competente necesita apoyo técnico preventivo de otra para analizar el mismo riesgo.",
+    "¿Qué mecanismo contempla la resolución para articular el trabajo?",
+    "Actuación conjunta promovida por la dependencia competente, con responsabilidades coordinadas.",
+    "Apertura de expedientes idénticos sin intercambio de información entre dependencias.",
+    "Transferencia automática de todas las competencias a la oficina que presta apoyo.",
+    "El artículo 17 prevé colaboración conjunta.",
+    "Duplicar no es coordinar.",
+    "El apoyo no transfiere toda competencia.",
+    "Resolución PGN 132/2014 art. 17",
+    [
+      "pgn-res-132-2014"
+    ]
+  ],
+  "pgn-m46-q5": [
+    "La oficina registra veinte requerimientos enviados pero no sabe cuántos riesgos se redujeron.",
+    "¿Qué debe añadir al sistema de evaluación de la actuación?",
+    "Indicadores estandarizados que relacionen actividades y resultados con objetivos verificables.",
+    "Un conteo acumulado de comunicaciones sin verificar su efecto sobre los riesgos.",
+    "Una estimación del éxito basada exclusivamente en horas de trabajo del equipo.",
+    "El artículo 24 prevé indicadores y evaluación.",
+    "El conteo mide actividad, no necesariamente resultado.",
+    "Las horas no prueban reducción del riesgo.",
+    "Resolución PGN 132/2014 art. 24",
+    [
+      "pgn-res-132-2014"
+    ]
+  ],
+  "pgn-m46-q6": [
+    "Una actuación conjunta tiene soportes en varias oficinas y no se identifica quién debe continuar el seguimiento.",
+    "¿Qué registro permite mantener trazabilidad institucional de esa actuación?",
+    "Registrar en el sistema institucional actuaciones, responsables, soportes y seguimiento autorizado.",
+    "Conservar los archivos únicamente en equipos personales para evitar duplicar información institucional.",
+    "Asignar todos los registros a una dependencia sin aclarar responsables ni actuaciones.",
+    "La trazabilidad vincula soporte y responsabilidad.",
+    "Los archivos personales dificultan control.",
+    "La centralización sin identificación no resuelve el seguimiento.",
+    "Resolución PGN 132/2014 arts. 22–24",
+    [
+      "pgn-res-132-2014"
+    ]
+  ],
+  "pgn-m47-q1": [
+    "",
+    "¿Qué diferencia un producto de un resultado en la cadena de valor?",
+    "El producto es un bien o servicio entregado; el resultado, un cambio observado.",
+    "El producto es el presupuesto disponible; el resultado, la cantidad de reuniones realizadas.",
+    "El producto es el efecto causal demostrado; el resultado, el recurso utilizado.",
+    "Son niveles diferentes de la cadena de valor.",
+    "Presupuesto es insumo y reunión actividad.",
+    "La atribución causal exige evidencia adicional.",
+    "Análisis de cadena de valor; Decreto 1499/2017",
+    [
+      "decreto-1499-2017"
+    ]
+  ],
+  "pgn-m47-q2": [
+    "Un programa dispone de personal, realiza capacitaciones y entrega certificados. Busca reducir errores en trámites.",
+    "¿Cuál elemento corresponde a la actividad y cuál al resultado buscado?",
+    "Capacitaciones realizadas y reducción de errores, respectivamente.",
+    "Personal disponible y certificados entregados, respectivamente.",
+    "Certificados entregados y presupuesto comprometido, respectivamente.",
+    "La actividad es lo que se realiza; el resultado es el cambio.",
+    "Personal es insumo y certificado producto.",
+    "El presupuesto es insumo, no efecto.",
+    "Análisis de cadena de valor; Decreto 1499/2017",
+    [
+      "decreto-1499-2017"
+    ]
+  ],
+  "pgn-m47-q3": [
+    "Un programa registra 120 atenciones a 80 personas únicas de una población objetivo de 200.",
+    "¿Qué cobertura de beneficiarios únicos corresponde al indicador definido?",
+    "40 %, al dividir 80 beneficiarios únicos entre 200 elegibles.",
+    "60 %, al dividir las 120 atenciones entre 200 elegibles.",
+    "150 %, al dividir las 120 atenciones entre 80 beneficiarios.",
+    "80/200 equivale al 40 %.",
+    "El numerador no son atenciones.",
+    "Ese cociente mide atenciones por persona, no cobertura.",
+    "Cálculo de indicadores; Decreto 1499/2017",
+    [
+      "decreto-1499-2017"
+    ]
+  ],
+  "pgn-m47-q4": [
+    "La línea base mide hogares rurales, pero el reporte posterior usa hogares de todo el municipio.",
+    "¿Qué ajuste debe realizarse antes de comparar ambas tasas?",
+    "Homologar población, definición, período y unidad de medición o advertir la incompatibilidad.",
+    "Comparar directamente las tasas porque ambas están expresadas como porcentajes.",
+    "Promediar las tasas para obtener una línea base común de toda la población.",
+    "La comparabilidad requiere definiciones comunes.",
+    "El porcentaje no garantiza equivalencia.",
+    "Promediar no corrige poblaciones diferentes.",
+    "Calidad de indicadores; Decreto 1499/2017",
+    [
+      "decreto-1499-2017"
+    ]
+  ],
+  "pgn-m47-q5": [
+    "Una entidad tiene un protocolo de control con responsable definido, pero nunca se ejecuta.",
+    "¿Qué distinción es necesaria para estimar el riesgo residual?",
+    "Evaluar separadamente diseño del control y evidencia de su funcionamiento.",
+    "Considerar reducido el riesgo por la sola aprobación formal del protocolo.",
+    "Eliminar el riesgo de la matriz porque ya existe una medida documentada.",
+    "El control debe operar para reducir riesgo.",
+    "La aprobación no acredita ejecución.",
+    "El riesgo residual puede seguir elevado.",
+    "Gestión de riesgos; Decreto 1499/2017",
+    [
+      "decreto-1499-2017"
+    ]
+  ],
+  "pgn-m47-q6": [
+    "La tasa de quejas sube tras abrir un nuevo canal de reporte. No hay medición independiente de la incidencia real.",
+    "¿Qué conclusión debe evitar el informe preventivo?",
+    "Afirmar que aumentó la incidencia real únicamente porque aumentaron los reportes.",
+    "Señalar que el cambio de canal pudo modificar la propensión a reportar.",
+    "Registrar que hace falta contrastar otras fuentes de información sobre el fenómeno.",
+    "El aumento puede obedecer a mayor acceso al reporte.",
+    "Es una hipótesis alternativa razonable.",
+    "La comprobación adicional es necesaria.",
+    "Interpretación de indicadores; Decreto 1499/2017",
+    [
+      "decreto-1499-2017"
+    ]
+  ],
+  "pgn-m48-q1": [
+    "",
+    "¿Qué intereses constitucionales orientan la intervención del Ministerio Público?",
+    "Orden jurídico, patrimonio público y derechos y garantías fundamentales.",
+    "Exclusivamente los intereses procesales de la entidad pública demandada.",
+    "Únicamente los intereses patrimoniales del ciudadano que presenta la demanda.",
+    "El artículo 277.7 define las finalidades.",
+    "No es defensa automática de la entidad.",
+    "La intervención no se limita a un litigante.",
+    "Constitución art. 277.7",
+    [
+      "constitucion"
+    ]
+  ],
+  "pgn-m48-q2": [
+    "El agente del Ministerio Público presenta un concepto ante un juez administrativo sobre un acto demandado.",
+    "¿Qué autoridad conserva la competencia para resolver la pretensión judicial?",
+    "El juez, que valora el concepto junto con los demás elementos del proceso.",
+    "El agente, porque su concepto sustituye la decisión judicial sobre el acto.",
+    "La entidad demandada, porque puede decidir unilateralmente el sentido del fallo.",
+    "La intervención no reemplaza al juez.",
+    "El concepto no decide la pretensión.",
+    "La entidad no resuelve el litigio.",
+    "Constitución art. 277.7; CPACA art. 303",
+    [
+      "constitucion",
+      "cpaca"
+    ]
+  ],
+  "pgn-m48-q3": [
+    "En un proceso contencioso se identifica una prueba pertinente para proteger el patrimonio público.",
+    "¿Qué actuación puede promover el agente habilitado dentro de la oportunidad legal?",
+    "Solicitar su decreto y práctica a la autoridad judicial competente.",
+    "Decretarla directamente y exigir al juez que ejecute la providencia del agente.",
+    "Iniciar necesariamente una investigación disciplinaria antes de solicitar la prueba judicial.",
+    "El art. 303 contempla facultades de intervención.",
+    "El decreto compete al juez.",
+    "No depende de una investigación disciplinaria.",
+    "CPACA art. 303",
+    [
+      "cpaca"
+    ]
+  ],
+  "pgn-m48-q4": [
+    "El Ministerio Público estima que un acuerdo conciliatorio aprobado afecta injustificadamente recursos públicos.",
+    "¿Qué facultad puede ejercer si se cumplen legitimación y oportunidad?",
+    "Recurrir el auto que aprueba la conciliación judicial conforme al régimen.",
+    "Revocar por resolución administrativa el auto expedido por el juzgado.",
+    "Modificar directamente el acuerdo aprobado sin intervención del juez ni de las partes.",
+    "El artículo 303 permite recurrir esa providencia.",
+    "No tiene potestad de revocarla.",
+    "No modifica unilateralmente el acuerdo.",
+    "CPACA art. 303",
+    [
+      "cpaca"
+    ]
+  ],
+  "pgn-m48-q5": [
+    "Un profesional prepara una cronología para el agente y detecta que falta una providencia relevante del expediente judicial.",
+    "¿Cómo debe presentar el insumo de apoyo antes de formular la posición institucional?",
+    "Distinguir hechos verificados, documentos faltantes y argumentos pendientes de contraste.",
+    "Completar la fecha faltante por aproximación para que la cronología no tenga vacíos.",
+    "Sustituir la providencia faltante por una conclusión propia sobre el mérito del litigio.",
+    "El insumo debe reflejar límites de la información.",
+    "No se inventan fechas.",
+    "Una inferencia no sustituye el documento.",
+    "Constitución art. 277.7; CPACA art. 303",
+    [
+      "constitucion",
+      "cpaca"
+    ]
+  ],
+  "pgn-m48-q6": [
+    "El profesional recibe una instrucción para firmar por sí mismo un concepto judicial reservado al agente competente.",
+    "¿Qué límite corresponde al rol de apoyo institucional?",
+    "Entregar el proyecto fundamentado al agente habilitado para adoptar la posición procesal.",
+    "Suscribir el concepto porque elaboró los análisis que sustentan sus argumentos.",
+    "Remitir al juez una orden sobre el resultado que debe adoptar en el proceso.",
+    "Preparar insumos no atribuye representación procesal.",
+    "La autoría técnica no sustituye competencia.",
+    "El apoyo no decide el litigio.",
+    "Constitución art. 277.7; CPACA art. 303",
+    [
+      "constitucion",
+      "cpaca"
+    ]
+  ],
+  "pgn-m49-q1": [
+    "",
+    "¿Qué distingue un ajuste razonable de un trato preferencial arbitrario?",
+    "El ajuste elimina barreras concretas para garantizar acceso en condiciones de igualdad.",
+    "El ajuste exime automáticamente de todos los requisitos legales a una persona vulnerable.",
+    "El ajuste exige sustituir la voluntad de la persona por la de un familiar.",
+    "La igualdad material requiere remover barreras.",
+    "No elimina requisitos por regla general.",
+    "Debe respetar autonomía.",
+    "Constitución art. 13; Ley 1618/2013",
+    [
+      "constitucion",
+      "ley-1618-2013"
+    ]
+  ],
+  "pgn-m49-q2": [
+    "Una persona con discapacidad auditiva necesita recibir una comunicación y puede utilizar varios canales accesibles.",
+    "¿Qué criterio debe orientar la elección del canal de atención?",
+    "Consultar su preferencia y ofrecer una alternativa accesible que respete su autonomía.",
+    "Exigir un representante para que interprete toda comunicación que reciba la persona.",
+    "Elegir el canal habitual de la entidad sin considerar la barrera identificada.",
+    "La adaptación debe responder a necesidades concretas.",
+    "La discapacidad no presume incapacidad.",
+    "El canal habitual puede excluir.",
+    "Ley 1618/2013 arts. 14,16",
+    [
+      "ley-1618-2013"
+    ]
+  ],
+  "pgn-m49-q3": [
+    "Una oficina necesita divulgar un informe estadístico sobre personas atendidas por violencia y dispone de datos de salud e identidad.",
+    "¿Qué tratamiento minimiza la exposición sin afectar la finalidad estadística?",
+    "Utilizar cifras agregadas y restringir los datos sensibles a accesos autorizados.",
+    "Publicar los registros individuales completos porque los datos se recolectaron con fines públicos.",
+    "Eliminar toda estadística porque los datos originales contienen información sensible de personas.",
+    "La finalidad estadística puede satisfacerse sin identificar.",
+    "La finalidad pública no elimina protección.",
+    "La agregación permite informar.",
+    "Ley 1581/2012 arts. 4–6",
+    [
+      "ley-1581-2012"
+    ]
+  ],
+  "pgn-m49-q4": [
+    "Una víctima ya aportó un relato completo a una dependencia y otra autoridad competente requiere información para continuar su atención.",
+    "¿Qué práctica reduce la revictimización al coordinar ambas actuaciones?",
+    "Compartir la información necesaria por canales autorizados sin exigir repeticiones innecesarias.",
+    "Solicitar que repita íntegramente el relato en cada dependencia, aunque no sea necesario.",
+    "Difundir el relato a todo el personal para evitar futuras solicitudes de información.",
+    "Coordinar puede reducir exposición y repetición.",
+    "La repetición innecesaria afecta la atención.",
+    "El acceso debe limitarse a personas autorizadas.",
+    "Ley 2365/2024; Ley 1581/2012 art. 4",
+    [
+      "ley-1581-2012",
+      "ley-2365-2024"
+    ]
+  ],
+  "pgn-m49-q5": [
+    "Un periodista formula una petición relacionada con el ejercicio de su actividad profesional.",
+    "¿Qué tratamiento específico dispone el artículo 20 de la Ley 1755?",
+    "Tramitarla preferencialmente cuando se formula para el ejercicio de esa actividad.",
+    "Aplicar exclusivamente el orden cronológico sin considerar la regla especial.",
+    "Exigir prueba sumaria de perjuicio irremediable como condición para toda preferencia periodística.",
+    "La norma prevé preferencia para esa actividad.",
+    "El turno ordinario admite prioridades legales.",
+    "Es un supuesto distinto al perjuicio irremediable.",
+    "Ley 1755/2015 art. 20",
+    [
+      "ley-1755-2015"
+    ]
+  ],
+  "pgn-m49-q6": [
+    "En una investigación del artículo 53.5 CGD concurren barreras relacionadas con género, discapacidad y relaciones de poder.",
+    "¿Qué tratamiento probatorio conserva las garantías de ambas partes?",
+    "Aplicar valoración diferencial e interseccional sin eliminar contradicción ni estándar sancionatorio.",
+    "Presumir responsabilidad del superior por la sola concurrencia de condiciones de vulnerabilidad.",
+    "Excluir automáticamente todo elemento de descargo para evitar una nueva afectación a la víctima.",
+    "El enfoque especial no elimina garantías probatorias.",
+    "La condición jerárquica no prueba responsabilidad.",
+    "El descargo debe valorarse con protección de derechos.",
+    "CGD art. 160A; Ley 2365/2024",
+    [
+      "ley-2365-2024",
+      "ley-1952-2019"
+    ]
+  ],
+  "pgn-m50-q1": [
+    "",
+    "¿Qué diferencia la planeación contractual de la selección del contratista?",
+    "La planeación define necesidad, objeto, recursos y riesgos; la selección aplica reglas de escogencia.",
+    "La planeación adjudica el contrato; la selección documenta posteriormente la necesidad pública.",
+    "Ambas se limitan a verificar disponibilidad presupuestal antes de suscribir el contrato.",
+    "La planeación sustenta el procedimiento.",
+    "La adjudicación pertenece a selección.",
+    "La disponibilidad no agota ninguna etapa.",
+    "Ley 80/1993 arts. 24–26",
+    [
+      "ley-80-1993"
+    ]
+  ],
+  "pgn-m50-q2": [
+    "Una entidad recibe todos los bienes al finalizar un contrato, pero quedan obligaciones pendientes y garantías vigentes.",
+    "¿Qué debe revisar en la etapa de cierre contractual?",
+    "Recepción, obligaciones pendientes, garantías y liquidación cuando resulte legalmente procedente.",
+    "Únicamente el vencimiento del plazo para declarar cumplidas todas las obligaciones.",
+    "Solo la disponibilidad presupuestal original, sin examinar la recepción efectiva de bienes.",
+    "El cierre requiere comprobar cumplimiento y obligaciones.",
+    "Vencimiento no equivale a cumplimiento.",
+    "El presupuesto no demuestra recepción.",
+    "Ley 80/1993 art. 60; Ley 1150/2007 art. 11",
+    [
+      "ley-80-1993",
+      "ley-1150-2007"
+    ]
+  ],
+  "pgn-m50-q3": [
+    "Una entidad adquiere bienes de características técnicas uniformes y común utilización. No existe instrumento obligatorio ni otra regla especial aplicable.",
+    "¿Qué causal permite examinar la selección abreviada en ese supuesto?",
+    "La adquisición de bienes y servicios uniformes y de común utilización.",
+    "La contratación directa por el solo hecho de que existan especificaciones técnicas comunes.",
+    "El concurso de méritos porque se requiere comparar características de los bienes.",
+    "La Ley 1150 contempla esa causal de selección abreviada.",
+    "La uniformidad no habilita contratación directa.",
+    "El concurso corresponde a otros objetos.",
+    "Ley 1150/2007 art. 2",
+    [
+      "ley-1150-2007"
+    ]
+  ],
+  "pgn-m50-q4": [
+    "La menor cuantía de una entidad es 300 millones de pesos y la adquisición ordinaria cuesta 27 millones.",
+    "¿Qué modalidad corresponde por el umbral, sin excepción aplicable?",
+    "Mínima cuantía, porque el valor no supera 30 millones de pesos.",
+    "Selección abreviada, porque el valor no alcanza los 300 millones de pesos.",
+    "Contratación directa, porque el valor es inferior a 30 millones de pesos.",
+    "El 10 % de 300 millones es 30 millones.",
+    "El límite específico de mínima cuantía prevalece.",
+    "La baja cuantía no habilita directa.",
+    "Ley 1150/2007 art. 2.5",
+    [
+      "ley-1150-2007"
+    ]
+  ],
+  "pgn-m50-q5": [
+    "Las partes suscriben un contrato ordinario con acuerdo sobre objeto y contraprestación. La garantía exigible aún no ha sido aprobada.",
+    "¿Qué distinción debe efectuar la entidad antes de autorizar el inicio?",
+    "El perfeccionamiento no sustituye los requisitos legales de ejecución pendientes.",
+    "El contrato solo se perfeccionará cuando se complete toda la ejecución material.",
+    "La firma permite iniciar porque elimina la necesidad de aprobar garantías exigibles.",
+    "La ejecución exige requisitos adicionales.",
+    "El perfeccionamiento es anterior.",
+    "La firma no elimina garantías.",
+    "Ley 80/1993 art. 41",
+    [
+      "ley-80-1993"
+    ]
+  ],
+  "pgn-m50-q6": [
+    "Una entidad dejó vencer su cronograma de compras y alega que se acerca el cierre fiscal.",
+    "¿Qué debe verificar antes de acudir a urgencia manifiesta?",
+    "La concurrencia real de los presupuestos legales y su motivación específica.",
+    "La proximidad del cierre fiscal como causal suficiente de contratación directa.",
+    "La aprobación presupuestal como sustituto de cualquier hecho constitutivo de urgencia.",
+    "La urgencia exige presupuestos legales acreditados.",
+    "El retraso no basta por sí solo.",
+    "Tener recursos no acredita urgencia.",
+    "Ley 80/1993 arts. 42–43",
+    [
+      "ley-80-1993"
+    ]
+  ],
+  "pgn-m51-q1": [
+    "",
+    "¿Qué relación deben guardar los requisitos habilitantes con el objeto contractual?",
+    "Ser adecuados y proporcionales a la naturaleza y valor del contrato.",
+    "Coincidir con la experiencia específica del proveedor que formuló la primera cotización.",
+    "Ser idénticos para todos los procesos sin considerar objeto, valor ni riesgo.",
+    "La proporcionalidad limita requisitos habilitantes.",
+    "El requisito no debe diseñarse para favorecer un proveedor.",
+    "Cada proceso exige justificación.",
+    "Ley 1150/2007 art. 5",
+    [
+      "ley-1150-2007"
+    ]
+  ],
+  "pgn-m51-q2": [
+    "Un estudio de mercado utiliza una sola cotización y no explica por qué descartó otras alternativas disponibles.",
+    "¿Qué verificación debe solicitar el operador preventivo?",
+    "La justificación del análisis económico y las condiciones del mercado que respaldan el valor.",
+    "La exclusión automática del proveedor que presentó la cotización utilizada para el presupuesto.",
+    "La adjudicación directa porque ese proveedor ya conoce las necesidades de la entidad.",
+    "El análisis debe sustentar el valor estimado.",
+    "La cotización no prueba una irregularidad del proveedor.",
+    "Cotizar no habilita directa.",
+    "Decreto 1082/2015 art. 2.2.1.1.2.1.1",
+    [
+      "decreto-1082-2015"
+    ]
+  ],
+  "pgn-m51-q3": [
+    "Un oferente no aporta el soporte de una experiencia habilitante adquirida antes del cierre de una licitación.",
+    "¿Qué diferencia debe aplicar la entidad al requerir subsanación?",
+    "Permitir acreditar el requisito preexistente sin adquirir experiencia nueva después del cierre.",
+    "Permitir que adquiera nueva experiencia durante la oportunidad de subsanar documentos.",
+    "Rechazar automáticamente cualquier requisito habilitante no acreditado en la propuesta inicial.",
+    "La subsanación no habilita hechos posteriores al cierre.",
+    "La experiencia nueva no es preexistente.",
+    "No toda omisión documental es insubsanable.",
+    "Ley 1150/2007 art. 5",
+    [
+      "ley-1150-2007"
+    ]
+  ],
+  "pgn-m51-q4": [
+    "Un requisito habilitante no otorga puntaje en el procedimiento descrito. El evaluador desea sumar puntos por superar su mínimo.",
+    "¿Qué límite debe observar al elaborar la calificación?",
+    "Aplicar exclusivamente los factores de comparación establecidos conforme a la modalidad y las reglas publicadas.",
+    "Agregar puntos por cualquier requisito habilitante sin modificar los documentos del procedimiento.",
+    "Convertir todos los requisitos habilitantes en factores puntuables después de recibir las ofertas.",
+    "Los habilitantes y factores de comparación son distintos.",
+    "No se crean puntos de forma unilateral.",
+    "Cambiar factores afecta selección objetiva.",
+    "Ley 1150/2007 art. 5",
+    [
+      "ley-1150-2007"
+    ]
+  ],
+  "pgn-m51-q5": [
+    "En mínima cuantía se publica el informe de evaluación y se debe abrir oportunidad para observaciones.",
+    "¿Qué plazo mínimo debe respetar la entidad en ese traslado?",
+    "Un día hábil de publicación del informe de evaluación.",
+    "Tres días hábiles de publicación en todos los procedimientos competitivos.",
+    "Cinco días hábiles porque se trata de un informe técnico.",
+    "El procedimiento especial fija mínimo un día hábil.",
+    "No se traslada otra modalidad automáticamente.",
+    "El carácter técnico no cambia el término.",
+    "Decreto 1082/2015 art. 2.2.1.2.1.5.2",
+    [
+      "decreto-1082-2015"
+    ]
+  ],
+  "pgn-m51-q6": [
+    "Una entidad acepta válidamente una oferta en mínima cuantía y el profesional revisa cómo queda formalizado el negocio.",
+    "¿Qué documentos constituyen el contrato en esa modalidad?",
+    "La oferta presentada por el seleccionado y su comunicación de aceptación.",
+    "El informe de evaluación y la invitación pública, sin requerir aceptación.",
+    "La invitación y el certificado presupuestal, independientemente de la oferta seleccionada.",
+    "La oferta y aceptación constituyen contrato.",
+    "Evaluación no sustituye aceptación.",
+    "La invitación no es el acuerdo contractual.",
+    "Decreto 1082/2015 art. 2.2.1.2.1.5.2",
+    [
+      "decreto-1082-2015"
+    ]
+  ],
+  "pgn-m52-q1": [
+    "",
+    "¿Quién ejerce la supervisión del contrato de interventoría celebrado por una entidad estatal?",
+    "La propia entidad estatal, mediante el seguimiento que le corresponde.",
+    "El contratista principal, por ser quien recibe los servicios de interventoría.",
+    "El mismo interventor, mediante certificaciones sobre el cumplimiento de su propio contrato.",
+    "El artículo 83 dispone supervisión directa de la entidad.",
+    "El contratista principal no supervisa al interventor.",
+    "El interventor no sustituye el control de su contrato.",
+    "Ley 1474/2011 art. 83",
+    [
+      "ley-1474-2011"
+    ]
+  ],
+  "pgn-m52-q2": [
+    "Una interventoría técnica y una supervisión administrativa participan en el seguimiento de la misma obra.",
+    "¿Qué condición permite esa distribución de funciones?",
+    "Delimitar expresamente las actividades a cargo del interventor y las restantes del supervisor.",
+    "Asignar todas las obligaciones de manera indistinta para que ambos respondan por lo mismo.",
+    "Excluir todo seguimiento administrativo porque ya existe un contrato de interventoría técnica.",
+    "La división debe ser expresa.",
+    "La duplicidad sin delimitación genera incertidumbre.",
+    "La entidad conserva las funciones no asignadas.",
+    "Ley 1474/2011 art. 83",
+    [
+      "ley-1474-2011"
+    ]
+  ],
+  "pgn-m52-q3": [
+    "Se propone adicionar un contrato ordinario por 60 % de su valor inicial expresado en SMMLV. No concurre excepción.",
+    "¿Qué restricción debe advertir el supervisor al analizar esa propuesta?",
+    "La adición supera el límite general del cincuenta por ciento del valor inicial.",
+    "La adición procede si el contratista acepta, sin importar la proporción del incremento.",
+    "La adición puede formalizarse sin límite porque existe disponibilidad presupuestal suficiente.",
+    "El artículo 40 impone ese límite general.",
+    "El acuerdo no elimina la restricción.",
+    "La disponibilidad es un requisito diferente.",
+    "Ley 80/1993 art. 40",
+    [
+      "ley-80-1993"
+    ]
+  ],
+  "pgn-m52-q4": [
+    "El contratista pide tres meses adicionales sin incremento de precio ni cambio de obligaciones.",
+    "¿Qué figura describe inicialmente la modificación solicitada?",
+    "Prórroga del plazo, sujeta a justificación y decisión de la autoridad competente.",
+    "Adición de valor, porque toda ampliación temporal incrementa jurídicamente el precio.",
+    "Cesión del contrato, porque se modifica la fecha prevista de terminación.",
+    "La prórroga altera el tiempo, no necesariamente el valor.",
+    "El incremento económico debe verificarse separadamente.",
+    "No hay cambio de contratista.",
+    "Ley 80/1993 arts. 40–41",
+    [
+      "ley-80-1993"
+    ]
+  ],
+  "pgn-m52-q5": [
+    "Un informe de supervisión identifica retraso, cláusula incumplida y comunicaciones al contratista. La entidad estudia una multa.",
+    "¿Qué garantía debe asegurar antes de adoptar la sanción contractual?",
+    "Citar a audiencia con hechos, soportes, cláusulas y consecuencias, incluyendo al garante cuando proceda.",
+    "Imponer la multa mediante el informe de supervisión y luego convocar al contratista.",
+    "Solicitar al supervisor que decida la responsabilidad y comunique después el resultado.",
+    "El artículo 86 regula audiencia y defensa.",
+    "El informe no sustituye audiencia.",
+    "El supervisor no tiene potestad automática de sancionar.",
+    "Ley 1474/2011 art. 86",
+    [
+      "ley-1474-2011"
+    ]
+  ],
+  "pgn-m52-q6": [
+    "Durante la audiencia contractual el contratista solicita aportar una prueba relevante sobre el incumplimiento atribuido.",
+    "¿Qué tratamiento exige el procedimiento especial de sanción contractual?",
+    "Permitir intervención y contradicción probatoria, resolviendo motivadamente en el trámite legal.",
+    "Negar toda prueba porque el informe de supervisión constituye demostración definitiva del incumplimiento.",
+    "Trasladar la decisión a Procuraduría por existir desacuerdo con el informe de supervisión.",
+    "La audiencia protege defensa y contradicción.",
+    "El informe admite controversia.",
+    "La entidad conserva competencia contractual.",
+    "Ley 1474/2011 art. 86",
+    [
+      "ley-1474-2011"
+    ]
+  ],
+  "pgn-m53-q1": [
+    "",
+    "¿Qué diferencia un conflicto de interés de una inhabilidad contractual?",
+    "El primero compromete imparcialidad en la actuación; la segunda restringe legalmente participar o contratar.",
+    "Ambos excluyen automáticamente a cualquier proponente relacionado socialmente con un servidor.",
+    "El primero solo existe después de adjudicar; la segunda depende de la opinión del evaluador.",
+    "Son figuras con presupuestos y efectos distintos.",
+    "La cercanía social no acredita causal.",
+    "Las restricciones tienen fundamento legal.",
+    "Ley 80/1993 art. 8; CPACA art. 11",
+    [
+      "cpaca",
+      "ley-80-1993"
+    ]
+  ],
+  "pgn-m53-q2": [
+    "Una empresa tiene relaciones comerciales anteriores con un proveedor de la entidad, sin causal legal acreditada.",
+    "¿Qué condición debe verificarse para atribuirle una inhabilidad contractual?",
+    "La causal legal concreta, los hechos que la configuran y su vigencia aplicable.",
+    "La existencia de cualquier relación comercial como restricción automática de participación.",
+    "La sospecha del evaluador, aunque no exista una disposición legal aplicable.",
+    "Las inhabilidades requieren fundamento normativo.",
+    "El vínculo no equivale necesariamente a causal.",
+    "La sospecha no crea restricciones.",
+    "Ley 80/1993 arts. 8–10",
+    [
+      "ley-80-1993"
+    ]
+  ],
+  "pgn-m53-q3": [
+    "Durante la ejecución contractual sobreviene una inhabilidad ordinaria no comprendida en el régimen especial por corrupción.",
+    "¿Qué alternativa contempla el artículo 9 del Estatuto de Contratación?",
+    "Cesión previa autorización escrita o renuncia a la ejecución si no es posible ceder.",
+    "Cesión libre sin autorización porque el contrato inicialmente fue válido.",
+    "Continuación obligatoria hasta el vencimiento por haberse perfeccionado antes de la causal.",
+    "La ley regula la cesión autorizada o renuncia.",
+    "No es cesión libre.",
+    "La causal sobreviniente produce efectos.",
+    "Ley 80/1993 art. 9",
+    [
+      "ley-80-1993"
+    ]
+  ],
+  "pgn-m53-q4": [
+    "En el contrato sobreviene la inhabilidad del artículo 8.1.j de la Ley 80.",
+    "¿Qué excepción debe reconocer el operador al revisar la renuncia a la ejecución?",
+    "No procede la renuncia ordinaria prevista en el artículo 9 para esa causal.",
+    "La renuncia ordinaria procede automáticamente sin examinar el régimen de cesión.",
+    "La inhabilidad desaparece porque el contratista ya está ejecutando las obligaciones pactadas.",
+    "El artículo 9 modificado excluye esa renuncia.",
+    "Se debe examinar la regla especial.",
+    "La ejecución no elimina la causal.",
+    "Ley 80/1993 art. 9",
+    [
+      "ley-80-1993"
+    ]
+  ],
+  "pgn-m53-q5": [
+    "Un evaluador presenta impedimento motivado en una actuación administrativa contractual regida por el CPACA.",
+    "¿Qué sucede con la actuación mientras se decide el impedimento?",
+    "Se suspende desde la manifestación hasta que se decida el incidente.",
+    "Continúa normalmente hasta que el superior acepte formalmente la causal.",
+    "Termina automáticamente y debe declararse desierto el procedimiento de selección.",
+    "El artículo 12 dispone suspensión mientras se decide.",
+    "No se espera la aceptación para suspender.",
+    "El impedimento no termina automáticamente el proceso.",
+    "CPACA art. 12",
+    [
+      "cpaca"
+    ]
+  ],
+  "pgn-m53-q6": [
+    "La autoridad acepta el impedimento de un evaluador que tenía interés particular directo en el resultado.",
+    "¿Qué debe documentar al resolver y reanudar la actuación?",
+    "La decisión, la persona competente que asume y la trazabilidad de la reasignación.",
+    "La eliminación de los registros anteriores para reiniciar sin constancias del incidente.",
+    "La continuación del evaluador impedido si se abstiene de firmar el informe final.",
+    "La aceptación exige definir quién conoce.",
+    "La documentación debe conservarse.",
+    "No basta abstenerse de firmar.",
+    "CPACA art. 12; CGD art. 44",
+    [
+      "cpaca",
+      "ley-1952-2019"
+    ]
+  ],
+  "pgn-m54-q1": [
+    "",
+    "¿Qué instrumento actual regula el artículo 73 de la Ley 1474 modificado por Ley 2195?",
+    "El Programa de Transparencia y Ética Pública con enfoque de gestión de riesgos.",
+    "Un informe exclusivamente sancionatorio que se formula después de ocurrir hechos de corrupción.",
+    "Un inventario de contratos que sustituye los mecanismos de prevención y transparencia.",
+    "El artículo 73 regula PTEP.",
+    "Su objeto es preventivo y de integridad.",
+    "El inventario no sustituye el programa.",
+    "Ley 1474/2011 art. 73; Ley 2195/2022 art. 31",
+    [
+      "ley-1474-2011",
+      "ley-2195-2022"
+    ]
+  ],
+  "pgn-m54-q2": [
+    "La entidad publica su PTEP e incluye estadísticas de denuncias con datos privados de quienes las presentaron.",
+    "¿Qué límite debe respetarse en la divulgación del programa y sus resultados?",
+    "Garantizar publicidad del programa sin divulgar datos personales legalmente protegidos.",
+    "Difundir las identidades porque todos los anexos del PTEP son necesariamente públicos.",
+    "Reservar por completo el programa porque contiene información de gestión de denuncias.",
+    "La publicidad se armoniza con protección de datos.",
+    "Los anexos pueden contener datos restringidos.",
+    "Es posible divulgar contenido separable.",
+    "Ley 1712/2014 art. 21; Ley 1581/2012",
+    [
+      "ley-1581-2012",
+      "ley-1712-2014"
+    ]
+  ],
+  "pgn-m54-q3": [
+    "Un sistema marca un proveedor por alta concentración de contratos, pero todavía no se ha verificado el contexto de mercado.",
+    "¿Qué categoría describe el resultado inicial de esa detección?",
+    "Señal de riesgo que orienta una revisión y requiere contraste adicional.",
+    "Hallazgo definitivo que demuestra por sí solo una irregularidad contractual comprobada.",
+    "Declaración de responsabilidad del proveedor basada en el porcentaje de concentración.",
+    "Una señal prioriza análisis.",
+    "El hallazgo requiere soporte y criterio.",
+    "Una alerta no decide responsabilidad.",
+    "Gestión de riesgos; Ley 2195/2022 art. 31",
+    [
+      "ley-2195-2022"
+    ]
+  ],
+  "pgn-m54-q4": [
+    "Un equipo confirma una desviación entre un registro y una regla de referencia, pero desconoce su causa.",
+    "¿Qué diferencia debe preservar antes de atribuir responsabilidad?",
+    "La anomalía comprobada no demuestra por sí sola conducta imputable ni culpabilidad.",
+    "La anomalía acredita automáticamente dolo si la desviación supera un umbral definido.",
+    "Toda anomalía debe clasificarse como corrupción mientras el funcionario demuestra inocencia.",
+    "La responsabilidad exige presupuestos y prueba.",
+    "Un umbral no acredita dolo.",
+    "No se invierte la carga probatoria.",
+    "CGD arts. 10,14,147",
+    [
+      "ley-1952-2019"
+    ]
+  ],
+  "pgn-m54-q5": [
+    "Una exportación de SECOP tiene cinco filas correspondientes a un mismo contrato y sus modificaciones.",
+    "¿Qué control permite calcular correctamente el número de contratos únicos?",
+    "Identificar la clave contractual y distinguir el contrato de sus modificaciones registradas.",
+    "Contar cada fila como contrato independiente porque tiene una fecha de registro diferente.",
+    "Eliminar todas las filas con igual proveedor aunque correspondan a contratos distintos.",
+    "La unidad de análisis debe definirse antes de contar.",
+    "Una modificación no equivale a nuevo contrato.",
+    "El proveedor no es identificador único.",
+    "Análisis de datos contractuales; Ley 1712/2014",
+    [
+      "ley-1712-2014"
+    ]
+  ],
+  "pgn-m54-q6": [
+    "Un reporte de riesgo contractual incluye datos incompletos y señala a una persona como responsable de corrupción.",
+    "¿Qué corrección debe efectuar el analista antes de remitir el reporte?",
+    "Separar hallazgos de inferencias, verificar soportes y remitir según la competencia.",
+    "Publicar la etiqueta de responsabilidad hasta que la persona demuestre lo contrario.",
+    "Suprimir todas las alertas porque no constituyen por sí solas prueba definitiva.",
+    "El informe debe explicar límites y fuentes.",
+    "La presunción de inocencia impide esa atribución.",
+    "La alerta conserva utilidad para priorizar revisión.",
+    "CGD arts. 14,147,159",
+    [
+      "ley-1952-2019"
+    ]
   ]
 }
 

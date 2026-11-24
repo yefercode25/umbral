@@ -3459,19 +3459,19 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       "Constitución art. 277; Resolución PGN 132/2014 arts. 5, 9.2"
     ],
     [
-      "Un municipio recibe alertas sobre una vía que presenta riesgo para sus habitantes. La dependencia preventiva puede requerir información técnica de inmediato, pero propone esperar al siguiente comité mensual para iniciar el procedimiento.",
-      "¿Qué principio justifica activar oportunamente la actuación en este supuesto?",
+      "La interrupción de un servicio esencial ya afectó a una comunidad rural. La entidad puede implementar una alternativa temporal y restablecer el servicio. El operador competente debe clasificar la actuación para reducir efectos y evitar que la afectación se repita.",
+      "¿Qué escenario preventivo se ajusta a los hechos ya materializados?",
       [
-        "Oportunidad, ante la necesidad de prevenir la potencial vulneración de derechos.",
-        "Autonomía, porque el calendario interno prevalece sobre la evaluación del riesgo.",
-        "Flexibilidad, porque cualquier plazo elegido por el operador es suficiente."
+        "Mitigación y/o restitución, para reducir consecuencias y promover el restablecimiento.",
+        "Anticipación, porque no se ha iniciado una investigación disciplinaria contra un servidor.",
+        "Orientación exclusivamente, porque la comunidad ya informó la interrupción del servicio."
       ],
       [
-        "La oportunidad demanda celeridad ante el riesgo.",
-        "La autonomía distingue funciones misionales, no justifica demoras.",
-        "La flexibilidad exige decisiones razonables y justificadas."
+        "El escenario corresponde a una vulneración materializada.",
+        "La etapa disciplinaria no define el escenario preventivo.",
+        "La actuación requiere más que información al usuario."
       ],
-      "Resolución PGN 132/2014 art. 9.4"
+      "Resolución PGN 132/2014 art. 11"
     ],
     [
       "Una actuación preventiva obtiene evidencia de hechos que también podrían tener relevancia disciplinaria. El operador propone incorporar una declaración de responsabilidad al informe preventivo para evitar abrir otro procedimiento con las garantías correspondientes.",
@@ -3534,19 +3534,19 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       "Resolución PGN 132/2014 arts. 5–7"
     ],
     [
-      "Un funcionario recibe una alerta relacionada con una materia ajena a las responsabilidades preventivas que tiene asignadas. Existe otra dependencia competente y se dispone de soportes suficientes para identificar el asunto y orientar al ciudadano.",
-      "¿Qué actuación respeta mejor la asignación institucional de responsabilidades preventivas?",
+      "Una ciudadana solicita ayuda para identificar el canal institucional que permite ejercer un derecho ante un sujeto vigilado. No describe una afectación consumada ni un riesgo concreto que exija iniciar vigilancia. La dependencia cuenta con información verificada para responder.",
+      "¿Qué escenario preventivo corresponde a la solicitud descrita?",
       [
-        "Gestionar la remisión u orientación a la dependencia competente dejando trazabilidad.",
-        "Asumir personalmente la actuación por ser servidor de la Procuraduría.",
-        "Cerrar sin orientar porque la materia no corresponde a sus responsabilidades asignadas."
+        "Orientación, para facilitar el ejercicio del derecho ante la autoridad correspondiente.",
+        "Mitigación o restitución, por tratarse de una vulneración materializada de derechos.",
+        "Anticipación, mediante apertura de una vigilancia sobre toda la gestión pública."
       ],
       [
-        "La calidad de operador depende de responsabilidades asignadas.",
-        "Pertenecer a PGN no confiere todas las competencias.",
-        "La falta de competencia no justifica desatender la orientación."
+        "La orientación facilita acceso a rutas institucionales.",
+        "No se acredita una afectación consumada.",
+        "No se describe un riesgo concreto que amerite vigilancia."
       ],
-      "Resolución PGN 132/2014 arts. 6–8"
+      "Resolución PGN 132/2014 art. 11"
     ],
     [
       "Una dependencia de apoyo desarrolla un sistema para alertar oportunamente sobre trámites que pueden afectar derechos ciudadanos. Un funcionario sostiene que no debe incorporar indicadores preventivos porque su dependencia no ejerce directamente la función misional.",
@@ -3596,19 +3596,19 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       "Resolución PGN 132/2014; Guía Preventiva PGN"
     ],
     [
-      "Un ciudadano acude a la Procuraduría porque desconoce la autoridad que tramita su solicitud y los canales disponibles para ejercer un derecho. No reporta hechos concretos que requieran una actuación preventiva de vigilancia.",
-      "¿Qué escenario corresponde a la necesidad inmediata identificada por el operador?",
+      "Dos dependencias tienen competencia preventiva sobre un asunto territorial y temático. No existe asignación simultánea ni regla especial distinta. Una ya asumió el conocimiento y solicitó información a la entidad; la segunda recibe posteriormente una alerta idéntica.",
+      "¿Qué criterio debe aplicarse para evitar duplicar la actuación?",
       [
-        "Orientación al ciudadano para facilitar el ejercicio de su derecho.",
-        "Mitigación de una vulneración acreditada mediante una actuación de seguimiento.",
-        "Anticipación mediante un proyecto preventivo de alcance nacional sobre el asunto."
+        "Primacía de la dependencia competente que asumió primero el asunto.",
+        "Prevalencia de la oficina que recibió la alerta más reciente.",
+        "Distribución automática según el número de funcionarios de cada dependencia."
       ],
       [
-        "La orientación facilita acceso a rutas y derechos.",
-        "No se acredita una vulneración que deba mitigarse.",
-        "No se justifica un proyecto general por esa sola consulta."
+        "El artículo 15 regula primacía en este supuesto.",
+        "La recepción posterior no desplaza por sí sola la actuación.",
+        "La carga de personal no reemplaza la competencia."
       ],
-      "Resolución PGN 132/2014; Guía Preventiva PGN"
+      "Resolución PGN 132/2014 art. 15"
     ],
     [
       "Una dependencia diseña una actuación con tres objetivos distintos y envía varios oficios a entidades vigiladas. El informe final solo presenta el número de comunicaciones y no indica si se alcanzó alguno de los objetivos previstos.",
@@ -3686,19 +3686,19 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       "Resolución PGN 132/2014 arts. 5, 9.2; Guía Preventiva PGN"
     ],
     [
-      "Una entidad vigilada solicita que la Procuraduría defina por ella el procedimiento interno para atender una alerta. El operador considera que elaborar y aprobar el procedimiento ajeno facilitaría demostrar el cumplimiento de su propio plan preventivo.",
-      "¿Qué actuación preserva los límites del modelo de gestión preventiva?",
+      "Dos oficinas discrepan sobre cuál tiene competencia preventiva para un asunto y existe riesgo de demora. El equipo identifica que la resolución prevé un mecanismo de decisión de conflictos y que la situación exige conservar las alertas y sus soportes.",
+      "¿Cómo debe resolverse la discrepancia de competencia preventiva?",
       [
-        "Advertir necesidades de control y evaluar las medidas que adopte la entidad competente.",
-        "Aprobar directamente el procedimiento interno en nombre de la entidad vigilada.",
-        "Asumir temporalmente la ejecución del procedimiento hasta que desaparezca la alerta."
+        "Someterla a la autoridad habilitada para decidir motivadamente el conflicto.",
+        "Asignarla unilateralmente al último despacho que recibió el escrito ciudadano.",
+        "Archivar ambas actuaciones hasta que la persona presente una nueva solicitud."
       ],
       [
-        "El seguimiento no sustituye la gestión de la entidad.",
-        "Aprobar el procedimiento ajeno implica asumir su competencia.",
-        "El plan preventivo no autoriza administrar la entidad."
+        "El artículo 16 prevé solución de conflictos de competencia.",
+        "La recepción no atribuye competencia por sí misma.",
+        "La discrepancia no justifica abandonar el asunto."
       ],
-      "Constitución art. 277; Resolución PGN 132/2014 art. 9.2"
+      "Resolución PGN 132/2014 art. 16"
     ]
   ],
   "pgn-m47": [
@@ -4296,19 +4296,19 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       "Ley 1150/2007 art. 5 parágrafo 3"
     ],
     [
-      "Una entidad prepara una selección de bienes de características técnicas uniformes y de común utilización bajo la modalidad correspondiente. El área evaluadora propone otorgar puntos adicionales por relaciones comerciales previas con la entidad.",
-      "¿Qué factor debe aplicarse conforme al régimen de evaluación de esos bienes uniformes?",
+      "En un procedimiento de mínima cuantía la entidad pretende modificar una condición técnica de la invitación el mismo día fijado para presentar ofertas. No se trata de una adenda limitada al cronograma. El operador verifica la regla especial de publicidad y oportunidad.",
+      "¿Qué límite temporal corresponde a esa modificación de condiciones?",
       [
-        "El menor precio entre las ofertas que cumplen los requisitos establecidos para el proceso.",
-        "La experiencia anterior con la entidad como factor que prevalece sobre el menor precio.",
-        "La preferencia por proveedores conocidos para reducir el riesgo de gestión del contrato."
+        "Expedir la adenda a más tardar un día hábil antes de presentar ofertas.",
+        "Expedir la adenda hasta el mismo momento del cierre si todos los oferentes son informados.",
+        "Aplicar siempre los tres días de anticipación propios de la licitación pública."
       ],
       [
-        "La ley establece el menor precio como factor de evaluación de estos bienes.",
-        "La experiencia no sustituye el criterio específico aplicable.",
-        "La familiaridad no es criterio objetivo de escogencia."
+        "La regla especial fija un día hábil antes para modificar condiciones.",
+        "El cierre no habilita modificación tardía de condiciones.",
+        "La regla de licitación no se traslada a mínima cuantía."
       ],
-      "Ley 1150/2007 art. 5.3"
+      "Decreto 1082/2015 art. 2.2.1.2.1.5.2"
     ],
     [
       "En un proceso competitivo la entidad detecta antes del cierre un error material en las especificaciones que puede cambiar la preparación de las ofertas. Existe tiempo legal para modificar los documentos del proceso y comunicar a los interesados.",
