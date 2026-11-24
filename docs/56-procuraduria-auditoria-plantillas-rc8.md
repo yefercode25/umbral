@@ -31,3 +31,6 @@ Se sustituyen frases repetidas por supuestos concretos, distractores de figuras 
 
 ## Lote 2B (M38–M39)
 18 adicionales; acumulado 180/765 (23,53 %), quedan 585. M38: priorización por riesgo de pérdida, matrices, preguntas discriminantes, cronología y actualización por hechos nuevos. M39: independencia de fuentes, indicios, motivación, contradicciones, inferencia de autoría, modalidad subjetiva y enfoque diferencial del art. 160A (Ley 2365/2024). Contraste CGD consolidado arts. 9–10, 27–31, 147–160A, 213. Se distingue el método analítico de las reglas legales. Mantiene claves y selección histórica.
+
+## Lote 2C (M40–M41)
+18 adicionales; acumulado 198/765 (25,88 %), quedan 567. M40: noticia y anexos, original/copia, autenticidad, documentos reservados, requerimientos, tacha, informes y mensajes de datos. M41: excepción constitucional, renuencia, secreto profesional, examen separado, interrogatorio, certificación, requisitos y oportunidad de confesión. CGD arts. 149, 159, 161–175, 187–195 y Ley 527/1999 arts. 10–11 ([Gestor Normativo](https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=4276)). Mantiene claves y selección histórica.

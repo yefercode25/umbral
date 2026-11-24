@@ -2741,6 +2741,280 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "149, 159–160"
     ]
+  ],
+  "pgn-m40": [
+    [
+      "Una queja relata que un servidor cambió indebidamente una fecha y anexa dos versiones del mismo documento. La oficina propone tomar el relato de la queja como prueba suficiente de autoría y no examinar por separado los anexos.",
+      "¿Qué tratamiento distingue el valor de la noticia y el de los documentos anexos?",
+      [
+        "Orientar el recaudo con la queja y valorar los documentos conforme a sana crítica.",
+        "Atribuir valor probatorio pleno a la queja por estar acompañada de documentos.",
+        "Excluir los anexos porque la queja no constituye prueba de los hechos."
+      ],
+      [
+        "La noticia no prueba por sí misma; sus anexos sí pueden valorarse.",
+        "Adjuntar documentos no convierte el relato en demostración de autoría.",
+        "Los anexos se examinan de manera diferenciada."
+      ],
+      "187"
+    ],
+    [
+      "Un servidor aporta copia legible de un acto administrativo directamente relacionado con los hechos. No se presentan inconsistencias ni dudas concretas sobre su autenticidad. El instructor decide rechazar la copia por no estar acompañada del original.",
+      "¿Qué regla del Código debe aplicar para resolver la incorporación del documento?",
+      [
+        "Admitir original o copia y verificar autenticidad cuando resulte necesario.",
+        "Exigir siempre el original para cualquier documento aportado por un sujeto procesal.",
+        "Tratar toda copia como indicio de falsedad hasta que sea certificada judicialmente."
+      ],
+      [
+        "El art. 188 admite documentos en original o copia.",
+        "No existe exigencia general de original en ese artículo.",
+        "La copia no implica falsedad."
+      ],
+      "188"
+    ],
+    [
+      "Un informe requerido a una empresa presenta inconsistencias entre las cifras del anexo y el registro de origen. Existen dudas fundadas sobre la autenticidad del documento allegado. El funcionario considera que la presunción legal impide solicitar examen adicional.",
+      "¿Qué diligencia permite el Código ante la duda de autenticidad del documento?",
+      [
+        "Someter el documento a examen técnico según las reglas de la prueba pericial.",
+        "Mantener la presunción sin verificación porque proviene de una entidad requerida.",
+        "Excluir definitivamente el informe sin examinar la inconsistencia que genera la duda."
+      ],
+      [
+        "La presunción documental admite verificación técnica cuando hay duda.",
+        "El origen no vuelve irrebatible la presunción.",
+        "La inconsistencia exige examen antes de concluir falsedad."
+      ],
+      "191"
+    ],
+    [
+      "En una actuación se incorpora una historia clínica sometida a reserva legal y pertinente para esclarecer el hecho investigado. La defensa acredita su calidad de sujeto procesal y solicita consultar el documento y obtener copia del cuaderno reservado.",
+      "¿Qué tratamiento corresponde al documento reservado incorporado al expediente?",
+      [
+        "Conservarlo en cuaderno separado, permitir consulta a sujetos procesales sin expedir copias.",
+        "Integrarlo al cuaderno público y expedir copias al desaparecer la reserva procesal.",
+        "Impedir incluso la consulta de los sujetos procesales por la reserva legal."
+      ],
+      [
+        "El art. 192 establece ese tratamiento diferenciado.",
+        "La incorporación no elimina la reserva del documento.",
+        "La consulta por sujetos procesales está expresamente permitida."
+      ],
+      "192"
+    ],
+    [
+      "Un despacho requiere a una sociedad privada entregar registros que legalmente debe conservar y que son relevantes para un proceso. No concurre excepción legal y se necesita determinar a quién comunicar la orden formal de solicitud.",
+      "¿Quién recibe la orden de entrega documental tratándose de esa persona jurídica?",
+      [
+        "El representante legal, en quien recae la obligación prevista por el Código.",
+        "El contador de la sociedad, aunque no represente legalmente a la persona jurídica.",
+        "El empleado que registró los datos, como único destinatario obligatorio del requerimiento."
+      ],
+      [
+        "El art. 189 atribuye la obligación al representante legal.",
+        "La función contable no sustituye esa regla de comunicación.",
+        "El registro material no determina el destinatario legal."
+      ],
+      "189"
+    ],
+    [
+      "Un documento tachado de falso se encuentra incorporado en otra actuación. Para analizarlo se necesita cotejar el original con una firma cuestionada; la autoridad disciplinaria todavía no cuenta con el documento ni con copia autorizada.",
+      "¿Qué actuación permite verificar el documento que permanece en otro proceso?",
+      [
+        "Solicitar a la autoridad que lo tiene copia autenticada u original si es necesario.",
+        "Exigir al disciplinado que retire el original del otro expediente y lo entregue.",
+        "Dar por demostrado el carácter falso por la sola formulación de la tacha."
+      ],
+      [
+        "El art. 190 permite requerir a la autoridad que conserva el documento.",
+        "El retiro informal no es el trámite previsto.",
+        "La tacha no acredita automáticamente falsedad."
+      ],
+      "190"
+    ],
+    [
+      "Un despacho recibe un informe técnico requerido a una entidad sobre datos registrados en sus archivos. El informe explica el origen de los datos y está motivado; un sujeto procesal desea pedir aclaración dentro de la oportunidad prevista.",
+      "¿Qué trámite corresponde a ese informe técnico de datos registrados?",
+      [
+        "Traslado por tres días para pedir aclaración o complementación, sin objeción por error grave.",
+        "Traslado por cinco días con objeción por error grave como en toda prueba documental.",
+        "Traslado hasta el fallo para cuestionarlo exclusivamente mediante el recurso de apelación."
+      ],
+      [
+        "El art. 195 fija tres días y excluye esa objeción.",
+        "No se aplica indistintamente el trámite pericial.",
+        "La oportunidad no se reserva al recurso contra el fallo."
+      ],
+      "193–195"
+    ],
+    [
+      "Una defensa aporta un correo electrónico cuya fuente original puede consultarse. El funcionario sostiene que no puede considerarse como medio de prueba por carecer de soporte en papel, pese a que se dispone de datos sobre su envío y conservación.",
+      "¿Qué criterio legal debe aplicar respecto de su formato electrónico?",
+      [
+        "No excluirlo por ser mensaje de datos; valorar su confiabilidad y condiciones de incorporación.",
+        "Exigir siempre una impresión certificada para que tenga fuerza demostrativa en la actuación.",
+        "Atribuirle valor probatorio pleno por conservarse dentro del servidor de correo institucional."
+      ],
+      [
+        "La Ley 527 admite mensajes de datos y exige valorar confiabilidad.",
+        "El formato electrónico no implica inadmisibilidad.",
+        "El almacenamiento institucional no prueba por sí solo todos los hechos."
+      ],
+      "149, 159; Ley 527/1999 arts. 10–11"
+    ],
+    [
+      "En un expediente se aporta una captura de una conversación que muestra un texto relevante pero carece de identificación verificable del remitente y fecha completa. Existe la posibilidad legal de obtener la conversación original y sus datos de contexto.",
+      "¿Qué diligencia incrementa la capacidad de valoración del elemento aportado?",
+      [
+        "Contrastar la captura con la fuente original, su contexto y datos de identificación.",
+        "Considerar demostrada la autoría por el nombre mostrado en la interfaz de la captura.",
+        "Descartar de inmediato el elemento sin valorar su relación con la fuente original disponible."
+      ],
+      [
+        "La confiabilidad exige examinar origen, integridad y contexto según el caso.",
+        "El nombre visible no acredita por sí solo identidad.",
+        "Una captura no se descarta automáticamente por su formato."
+      ],
+      "159; Ley 527/1999 arts. 10–11"
+    ]
+  ],
+  "pgn-m41": [
+    [
+      "Un testigo llamado a declarar sobre una posible falta disciplinaria informa que parte de la respuesta lo incriminaría personalmente. El funcionario propone exigirle contestar bajo juramento porque la obligación general de testimoniar está prevista en el Código.",
+      "¿Qué límite constitucional debe observarse frente a esa obligación general?",
+      [
+        "Informar y respetar la garantía de no declarar contra sí mismo.",
+        "Exigir la respuesta porque el juramento prevalece sobre la excepción constitucional.",
+        "Aplicar multa por renuencia antes de examinar la excepción invocada."
+      ],
+      [
+        "Los arts. 164 y 166 reconocen excepciones constitucionales.",
+        "El deber general no elimina las garantías.",
+        "La sanción por renuencia no procede frente a quien está exceptuado."
+      ],
+      "164–166"
+    ],
+    [
+      "Un testigo fue citado para una diligencia disciplinaria y no comparece. Dentro de los tres días siguientes presenta una justificación médica suficiente y verificable. La autoridad analiza si debe imponer automáticamente la multa prevista para la renuencia.",
+      "¿Qué decisión corresponde respecto de la inasistencia satisfactoriamente justificada?",
+      [
+        "No imponer la multa por renuencia y gestionar nueva fecha de declaración.",
+        "Imponer la multa porque la inasistencia ocurrió antes de presentar la justificación.",
+        "Declarar desistida definitivamente la prueba por no comparecer en la fecha inicial."
+      ],
+      [
+        "La justificación oportuna y satisfactoria excluye la multa del art. 165.",
+        "La ley contempla plazo posterior para justificar.",
+        "La justificación no impide reprogramar el testimonio pertinente."
+      ],
+      "165"
+    ],
+    [
+      "Durante una actuación se requiere el testimonio de un abogado sobre hechos que le fueron confiados exclusivamente por su cliente en el ejercicio profesional. La oficina pretende obligarlo a revelarlos porque la información parece pertinente al caso investigado.",
+      "¿Qué excepción debe examinarse antes de ordenar esas respuestas al abogado?",
+      [
+        "La excepción al deber de declarar sobre información confiada por razón de su profesión.",
+        "La obligación absoluta de declarar cuando los hechos puedan tener relevancia disciplinaria.",
+        "La excepción únicamente si el abogado también tiene calidad de disciplinado en el proceso."
+      ],
+      [
+        "El art. 167 protege lo conocido por razón de la profesión.",
+        "Pertinencia no elimina secreto profesional.",
+        "La excepción no depende de ser investigado."
+      ],
+      "167"
+    ],
+    [
+      "El instructor cita simultáneamente a tres testigos presenciales de un hecho y propone que los dos últimos escuchen la primera declaración para que recuerden mejor los detalles y puedan complementar entre ellos la reconstrucción del expediente.",
+      "¿Qué regla de recepción impide ese procedimiento de declaración conjunta?",
+      [
+        "Interrogar separadamente, evitando que conozcan o escuchen las declaraciones anteriores.",
+        "Recibir una declaración conjunta y registrar las coincidencias entre los asistentes.",
+        "Permitir que escuchen los relatos previos siempre que declaren individualmente bajo juramento."
+      ],
+      [
+        "El art. 172 exige examen separado sin conocimiento de relatos precedentes.",
+        "La declaración conjunta no preserva esa regla.",
+        "El juramento no elimina la contaminación de relatos."
+      ],
+      "172"
+    ],
+    [
+      "En un interrogatorio a un testigo presencial, una parte formula la pregunta «¿es cierto que el servidor alteró deliberadamente el archivo?». La pregunta introduce una conclusión no expresada por el testigo y le sugiere responder afirmativamente.",
+      "¿Qué ajuste debe realizarse para respetar las reglas del interrogatorio disciplinario?",
+      [
+        "Formular preguntas neutrales sobre hechos que le consten sin sugerir respuestas.",
+        "Mantener la pregunta porque los sujetos procesales no están sujetos a esa prohibición.",
+        "Exigir al testigo que califique jurídicamente la conducta antes de describir los hechos."
+      ],
+      [
+        "El art. 173 prohíbe sugerir respuestas, también a sujetos procesales.",
+        "La prohibición se extiende a las partes.",
+        "El testigo ordinario relata hechos, no define dolo disciplinario."
+      ],
+      "173–175"
+    ],
+    [
+      "Un testigo cuya condición permite rendir certificación jurada recibe el cuestionario remitido por la autoridad competente. No renuncia a esa modalidad y el despacho necesita establecer el plazo legal para devolver la certificación firmada.",
+      "¿En qué plazo debe remitir la certificación jurada al despacho de origen?",
+      [
+        "Ocho días siguientes al recibo del cuestionario remitido por la autoridad.",
+        "Tres días siguientes a la fecha de expedición del cuestionario respectivo.",
+        "Diez días siguientes a la fecha en que se ordenó la prueba."
+      ],
+      [
+        "El art. 170 fija ocho días desde el recibo.",
+        "Tres días no es el término aplicable a la certificación.",
+        "La expedición de la orden no inicia ese plazo."
+      ],
+      "170"
+    ],
+    [
+      "Una persona disciplinada manifiesta que desea aceptar responsabilidad y presenta un escrito espontáneo, pero no está asistida por defensor ni ha sido informada de sus garantías y beneficios. La autoridad contempla tenerlo como confesión válida.",
+      "¿Qué condición debe verificar antes de reconocer la manifestación como confesión válida?",
+      [
+        "Asistencia de defensor, información de garantías y voluntariedad consciente de la manifestación.",
+        "Ratificación escrita sin defensor porque la espontaneidad satisface todas las exigencias legales.",
+        "Firma de un testigo que sustituya la información sobre garantías del disciplinado."
+      ],
+      [
+        "El art. 161 exige defensor, información y manifestación libre e informada.",
+        "La espontaneidad no sustituye requisitos concurrentes.",
+        "El testigo no reemplaza la asistencia técnica."
+      ],
+      "161"
+    ],
+    [
+      "En una investigación ordinaria el disciplinado confiesa válidamente antes de la ejecutoria del auto de cierre. La autoridad verifica todos los requisitos y debe elaborar el documento equivalente al pliego para remitirlo a juzgamiento.",
+      "¿Qué plazo improrrogable tiene la autoridad instructora para elaborar esa acta?",
+      [
+        "Diez días para elaborar el acta con los elementos exigidos.",
+        "Quince días para emitir directamente un fallo de responsabilidad en instrucción.",
+        "Cuarenta y cinco días para preparar el acta antes de remitirla."
+      ],
+      [
+        "El art. 162 fija diez días improrrogables para el acta.",
+        "El instructor no profiere el fallo por esa confesión.",
+        "Cuarenta y cinco días corresponden al término de fallo del juzgador."
+      ],
+      "162"
+    ],
+    [
+      "Una persona disciplinada acepta válidamente cargos durante el juzgamiento antes de la ejecutoria del auto que concede traslado para alegar de conclusión. Se trata de una falta distinta de las del artículo 52 y la sanción aplicable es suspensión.",
+      "¿Qué reducción corresponde a esa aceptación realizada en etapa de juzgamiento?",
+      [
+        "Reducir la sanción de suspensión en una tercera parte.",
+        "Reducir la sanción hasta la mitad como en la etapa de investigación.",
+        "Omitir la reducción porque ya se había formulado el pliego de cargos."
+      ],
+      [
+        "El art. 162 contempla reducción de un tercio en juzgamiento.",
+        "Hasta la mitad corresponde a investigación.",
+        "La aceptación sigue siendo posible en la oportunidad descrita."
+      ],
+      "162"
+    ]
   ]
 }
 
