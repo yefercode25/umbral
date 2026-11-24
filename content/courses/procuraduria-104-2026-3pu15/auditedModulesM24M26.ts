@@ -25,7 +25,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
           ],
           [
             "Otras combinaciones",
-            "Gravísima con culpa grave: suspensión de 3 a 18 meses e inhabilidad especial por igual término; grave dolosa: suspensión de 3 a 18 meses e inhabilidad especial por igual término; consultar texto vigente para cada supuesto."
+            "Una conducta objetivamente gravísima realizada con culpa grave se clasifica como grave (art. 47.9). Grave dolosa: suspensión de 3 a 18 meses e inhabilidad especial por igual término; grave culposa: suspensión de 1 a 12 meses; leve dolosa: multa de 10 a 180 días de salario básico de la época; leve culposa: amonestación escrita."
           ],
           [
             "Graduación",
