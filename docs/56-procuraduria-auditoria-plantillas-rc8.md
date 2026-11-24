@@ -16,3 +16,6 @@ Se sustituyen frases repetidas por supuestos concretos, distractores de figuras 
 
 ## Lote 1D (M31–M32)
 18 reactivos adicionales; acumulado 72/765 (9,41 %), quedan 693. M31: notificación personal, aceptación electrónica, conducta concluyente, recursos por etapa, plazo especial del fallo ordinario, queja y no agravación. M32: trascendencia, competencia, carga, oficio, alcance, pruebas válidas, oportunidad, resolución y recurso. CGD arts. 111, 120–138, 202–207, 225B y 225G; C-570/2019. Regresión acumulativa de 72 casos; se preserva la clave histórica.
+
+## Lote 1E (M33–M34)
+18 reactivos adicionales; acumulado 90/765 (11,76 %), quedan 675. M33: comisión fuera de sede, límites de comisión, pruebas derivadas, ampliación, remisión electrónica, notificación comisionada. M34: separación funcional, integridad de entrega, elección de juicio, variación de cargos por error frente a prueba sobreviniente, confesión y valoración independiente. CGD arts. 12–14, 90, 124, 127, 148, 152, 160–162, 202–203, 223, 225, 225A y 225D; consulta de compilación oficial PGN. Se añade referencia C-570/2019 al reactivo pertinente del lote previo. Regresión acumulativa de 90 casos; no se cambia selección de simulacros.

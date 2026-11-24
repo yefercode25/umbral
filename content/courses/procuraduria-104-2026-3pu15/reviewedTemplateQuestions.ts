@@ -1097,6 +1097,280 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "133, 204, 207"
     ]
+  ],
+  "pgn-m33": [
+    [
+      "El despacho competente de la Procuraduría debe recaudar un testimonio en un municipio distinto al de su sede. Identifica que la personería municipal puede practicar la diligencia y cuenta con la información necesaria para delimitar el encargo.",
+      "¿Qué mecanismo permite obtener esa prueba sin trasladar el conocimiento del asunto?",
+      [
+        "Comisionar a la personería para practicar la diligencia probatoria fuera de sede.",
+        "Remitir la investigación completa a la personería para que decida sobre los cargos.",
+        "Ordenar a la personería que asuma el poder preferente sobre el proceso."
+      ],
+      [
+        "El art. 152 permite acudir a personerías para pruebas fuera de sede.",
+        "La comisión no transfiere el conocimiento completo.",
+        "No equivale al ejercicio de poder preferente."
+      ],
+      "152"
+    ],
+    [
+      "Un servidor de la Procuraduría distinto del Procurador General pretende comisionar para una prueba que se practicará en su propia sede a un servidor de otra dependencia. No existe un supuesto especial que permita ampliar esa facultad.",
+      "¿Qué límite debe observar ese servidor al decidir sobre la comisión?",
+      [
+        "No comisionar en la misma sede salvo que pertenezca a su dependencia.",
+        "Comisionar a cualquier servidor de la Procuraduría por compartir la misma entidad.",
+        "Comisionar a cualquier funcionario público por ser una prueba de carácter disciplinario."
+      ],
+      [
+        "El art. 152 restringe esa facultad en la misma sede.",
+        "Compartir entidad no sustituye pertenencia a dependencia en ese supuesto.",
+        "La facultad amplia corresponde al Procurador General."
+      ],
+      "152"
+    ],
+    [
+      "Se prepara un despacho comisorio para recibir varias declaraciones fuera de sede. El borrador dice solamente «practicar las pruebas necesarias» y no establece cuándo debe completarse el encargo. La oficina propone enviarlo así para dar flexibilidad.",
+      "¿Qué contenido debe quedar definido en la decisión que ordena la comisión?",
+      [
+        "Las diligencias objeto del encargo y el término para practicarlas.",
+        "La identidad del comisionado y el criterio definitivo de responsabilidad del disciplinado.",
+        "La fecha estimada de regreso, dejando abierto el objeto de las diligencias."
+      ],
+      [
+        "El art. 152 exige delimitar objeto y término.",
+        "No corresponde anticipar responsabilidad como parte del encargo.",
+        "Una fecha estimada no reemplaza la determinación de diligencias."
+      ],
+      "152"
+    ],
+    [
+      "Durante una declaración comisionada aparece un documento directamente relacionado con los hechos que se están esclareciendo. El término sigue vigente, el comisionado puede recaudarlo legalmente y el despacho comisorio no contiene prohibición expresa de practicar pruebas derivadas.",
+      "¿Qué actuación puede adelantar el comisionado en relación con ese documento?",
+      [
+        "Practicar la prueba derivada directamente del objeto de la comisión.",
+        "Solicitar siempre una nueva comisión aunque la prueba derive directamente del encargo.",
+        "Trasladar el proceso principal a su despacho para practicar toda prueba relacionada."
+      ],
+      [
+        "El art. 152 autoriza pruebas que surjan directamente, salvo prohibición.",
+        "No siempre se necesita otra comisión dentro de ese supuesto.",
+        "Practicar prueba derivada no transfiere competencia sobre el proceso."
+      ],
+      "152"
+    ],
+    [
+      "En una diligencia comisionada surge una prueba que deriva directamente de la declaración ordenada. Sin embargo, el despacho comisorio prohíbe expresamente practicar pruebas adicionales. El servidor comisionado reconoce la relevancia del nuevo soporte.",
+      "¿Cómo debe proceder ante esa prohibición expresa del comitente?",
+      [
+        "Informar al comitente y solicitar la habilitación correspondiente antes de recaudarla.",
+        "Practicarla directamente porque su conexidad deja sin efecto cualquier restricción del encargo.",
+        "Adoptar una decisión de fondo sobre el documento para no ampliar la comisión."
+      ],
+      [
+        "La autorización de prueba derivada no opera si fue prohibida expresamente.",
+        "La conexidad no elimina esa limitación legal.",
+        "El comisionado no adquiere competencia para decidir el fondo."
+      ],
+      "152"
+    ],
+    [
+      "Una diligencia comisionada requiere más tiempo y el término del encargo ya venció. El comisionado identifica una prueba directamente derivada de la orden y solicita continuar, pero aún no ha recibido autorización ni se ha dejado constancia de ampliación.",
+      "¿Qué requisito debe cumplirse para ampliar el término del despacho comisorio?",
+      [
+        "Solicitar ampliación, obtener su concesión y comunicación eficaz con constancia.",
+        "Prorrogar unilateralmente el término y notificar al comitente al devolver el expediente.",
+        "Mantener el encargo abierto por el solo hecho de existir una prueba derivada."
+      ],
+      [
+        "El art. 152 establece solicitud, concesión, comunicación y constancia.",
+        "El comisionado no concede su propia ampliación.",
+        "La prueba derivada no prolonga automáticamente el término."
+      ],
+      "152"
+    ],
+    [
+      "La dependencia que practica una prueba comisionada pide copias de las actuaciones necesarias para contextualizar la diligencia. El expediente original permanece en el despacho competente. La oficina discute si puede remitir las copias de manera electrónica.",
+      "¿Qué forma de remisión permite el régimen de la comisión probatoria?",
+      [
+        "Remitir las copias necesarias para practicar las pruebas, incluso por vía electrónica.",
+        "Remitir necesariamente todo el expediente original mediante traslado físico a la dependencia.",
+        "Enviar solamente el despacho comisorio aunque falten antecedentes indispensables para practicar la prueba."
+      ],
+      [
+        "El art. 152 permite remitir copias necesarias electrónicamente.",
+        "No exige trasladar el expediente original completo.",
+        "Deben remitirse los antecedentes necesarios para el encargo."
+      ],
+      "152"
+    ],
+    [
+      "Durante una comisión para recibir testimonio, la defensa presenta una solicitud de terminación y archivo de la investigación. La decisión que comisiona solo autoriza practicar esa declaración y ninguna disposición le atribuye al comisionado decidir el fondo.",
+      "¿Cómo se debe gestionar esa solicitud dentro del alcance del encargo?",
+      [
+        "Recibirla, documentarla y remitirla al funcionario competente para decidir su contenido.",
+        "Resolver el archivo por tener temporalmente las copias necesarias de la actuación.",
+        "Rechazarla definitivamente porque toda petición al comisionado carece de efecto."
+      ],
+      [
+        "La comisión delimita la práctica de la prueba, no el conocimiento del fondo.",
+        "Tener copias no atribuye competencia para archivar.",
+        "La petición debe llegar al funcionario competente."
+      ],
+      "90, 152"
+    ],
+    [
+      "Para notificar un pliego de cargos fuera de la sede del despacho competente se comisiona a un funcionario autorizado conforme al artículo 124. El comisionado no logra efectuar la notificación personal y debe aplicar la regla especial de esa comisión.",
+      "¿Qué actuación prevé el artículo 124 ante esa imposibilidad de notificar personalmente?",
+      [
+        "Fijar edicto durante cinco días y devolver la actuación con constancias.",
+        "Fijar edicto durante tres días como en la regla general de apertura.",
+        "Publicar el pliego por estado sin dejar constancia de devolución al comitente."
+      ],
+      [
+        "El art. 124 fija cinco días de edicto para este supuesto especial.",
+        "La regla general de edicto no reemplaza el régimen específico.",
+        "Deben devolverse las actuaciones con las constancias correspondientes."
+      ],
+      "124, 127"
+    ]
+  ],
+  "pgn-m34": [
+    [
+      "En una dependencia, el funcionario que condujo la investigación y formuló cargos recibe también la asignación del juzgamiento del mismo expediente. Se argumenta que un equipo asesor diferente revisará su proyecto de fallo, aunque él conservará la decisión final.",
+      "¿Qué ajuste exige la separación funcional del procedimiento disciplinario?",
+      [
+        "Asignar juzgamiento a un funcionario distinto, competente, independiente e imparcial.",
+        "Mantener al instructor como juzgador con apoyo de un equipo asesor diferente.",
+        "Permitir al instructor decidir el fallo si otro servidor revisa la redacción."
+      ],
+      [
+        "El art. 12 exige autoridades diferentes e independientes.",
+        "Cambiar asesores no cambia quién decide.",
+        "Revisar un borrador no satisface la separación funcional."
+      ],
+      "12"
+    ],
+    [
+      "Después de formular cargos y surtir las notificaciones, el instructor prepara el envío del expediente al funcionario de juzgamiento. Decide excluir una prueba de descargo que considera poco convincente para facilitar que se comprenda mejor su hipótesis acusatoria.",
+      "¿Qué actuación respeta la imparcialidad y la independencia del juzgamiento?",
+      [
+        "Remitir el expediente íntegro, con pruebas de cargo y descargo disponibles.",
+        "Remitir únicamente los elementos que sustentan la formulación de los cargos.",
+        "Separar las pruebas favorables y remitirlas solo si el juzgador las solicita."
+      ],
+      [
+        "La investigación integral y valoración independiente requieren disponibilidad del material.",
+        "Seleccionar únicamente prueba incriminatoria desconoce imparcialidad.",
+        "La evidencia exculpatoria no se condiciona a una petición posterior."
+      ],
+      "12–13, 148, 225"
+    ],
+    [
+      "Cumplidas las notificaciones del pliego, el instructor prepara la remisión y agrega una decisión que fija el procedimiento de juicio ordinario. El funcionario de juzgamiento aún no ha recibido el expediente ni ha evaluado los criterios legales para escoger modalidad.",
+      "¿A qué funcionario corresponde fijar el procedimiento de juzgamiento aplicable?",
+      [
+        "Al funcionario de juzgamiento, mediante auto motivado conforme al art. 225A.",
+        "Al instructor, porque fue quien calificó la falta y formuló el pliego.",
+        "Al superior jerárquico, mediante autorización previa a cualquier modalidad de juicio."
+      ],
+      [
+        "El art. 225A atribuye esa decisión al juzgador.",
+        "Calificar en instrucción no atribuye selección de modalidad de juicio.",
+        "La norma no exige autorización general de un superior."
+      ],
+      "225–225A"
+    ],
+    [
+      "En el juicio ordinario, vencido el término de descargos, el juzgador advierte un error de calificación en el pliego. No ha surgido prueba sobreviniente que genere el error. El equipo debe determinar quién realiza la nueva calificación.",
+      "¿Qué actuación corresponde ante el error de calificación en ese momento?",
+      [
+        "Devolver motivadamente al instructor para nueva calificación en máximo quince días.",
+        "Variar inmediatamente los cargos por decisión directa del funcionario de juzgamiento.",
+        "Ordenar la reapertura integral de la investigación y reiniciar todos sus términos."
+      ],
+      [
+        "El art. 225D numeral 1 regula devolución al instructor por error de calificación.",
+        "La variación directa corresponde a otro supuesto de prueba sobreviniente.",
+        "La devolución no equivale a reiniciar toda la investigación."
+      ],
+      "225D"
+    ],
+    [
+      "En juicio ordinario, una vez agotada la etapa probatoria, una prueba sobreviniente hace necesaria la variación del pliego. No se trata de un error de calificación advertido al vencimiento de los descargos. Debe preservarse la defensa frente a la nueva imputación.",
+      "¿Quién realiza la variación en ese supuesto de prueba sobreviniente?",
+      [
+        "El juzgador, con la notificación y oportunidad de defensa legalmente previstas.",
+        "El instructor, mediante devolución obligatoria en todos los casos de variación.",
+        "El secretario, mediante corrección del pliego y actualización de los registros."
+      ],
+      [
+        "El numeral 4 del art. 225D atribuye esta variación al juzgador.",
+        "La devolución al instructor regula el error de calificación.",
+        "La secretaría no puede variar la imputación."
+      ],
+      "225D"
+    ],
+    [
+      "El juzgador devolvió el pliego por error de calificación conforme al artículo 225D. El instructor examinó la observación y decidió motivadamente no variar los cargos, por lo que devuelve el expediente al despacho de juzgamiento.",
+      "¿Qué posibilidad contempla la norma para el juzgador ante esa devolución?",
+      [
+        "Examinar la nulidad del pliego conforme a los presupuestos legales aplicables.",
+        "Imponer inmediatamente la calificación alternativa sin otra actuación procesal.",
+        "Archivar necesariamente todo el expediente por existir discrepancia entre los funcionarios."
+      ],
+      [
+        "El numeral 3 permite al juzgador decretar nulidad conforme al Código.",
+        "La discrepancia no autoriza alterar sin trámite la acusación.",
+        "No existe archivo automático por esa discrepancia."
+      ],
+      "202–203, 225D"
+    ],
+    [
+      "Durante la etapa de investigación el disciplinable confiesa con defensor y se verifican los requisitos legales de voluntariedad e información. Todavía no está ejecutoriado el auto de cierre. El instructor propone imponer directamente una sanción reducida por confesión.",
+      "¿Qué trámite preserva la separación de funciones en este supuesto?",
+      [
+        "Elaborar el acta equivalente al pliego y remitirla al juzgador para fallo.",
+        "Imponer sanción reducida en instrucción porque la confesión elimina el juzgamiento.",
+        "Remitir al juzgador sin acta ni evaluación por tratarse de confesión."
+      ],
+      [
+        "El art. 162 exige acta y remisión para que el juzgador falle.",
+        "La confesión no transfiere la función sancionatoria al instructor.",
+        "La aceptación requiere evaluación y acta en los términos legales."
+      ],
+      "12, 161–162"
+    ],
+    [
+      "Un instructor organiza un informe de remisión para facilitar la consulta del expediente. Incluye índices, datos de identificación y constancias, pero propone agregar una orden vinculante para que el juzgador imponga exactamente la sanción que considera adecuada.",
+      "¿Qué límite debe respetar el informe de remisión elaborado en instrucción?",
+      [
+        "Documentar actuaciones y soportes sin sustituir la valoración independiente del juzgador.",
+        "Fijar una sanción obligatoria y permitir al juzgador revisar únicamente su cuantía.",
+        "Omitir toda información relacionada con los cargos para asegurar independencia del juzgador."
+      ],
+      [
+        "La organización del expediente no autoriza anticipar el fallo vinculante.",
+        "El juzgador debe valorar y decidir de forma independiente.",
+        "La independencia no exige ocultar información necesaria."
+      ],
+      "12, 223, 225"
+    ],
+    [
+      "El instructor estima que las pruebas reunidas comprometen la responsabilidad y formula cargos. El juzgador, al estudiar la defensa y practicar las pruebas procedentes, advierte que persiste duda razonable sobre la conducta atribuida. No se ha proferido fallo ejecutoriado.",
+      "¿Qué criterio debe guiar al juzgador frente a esa diferencia con la acusación?",
+      [
+        "Valorar independientemente y resolver la duda razonable a favor del disciplinado.",
+        "Sostener los cargos porque la evaluación del instructor determina la decisión de fondo.",
+        "Ordenar al instructor que dicte el fallo para mantener coherencia del proceso."
+      ],
+      [
+        "La presunción de inocencia y la valoración independiente subsisten tras los cargos.",
+        "La acusación no predetermina responsabilidad.",
+        "La separación impide devolver al instructor la función de fallar."
+      ],
+      "12, 14, 160, 222"
+    ]
   ]
 }
 
@@ -1115,7 +1389,7 @@ export function reviewedTemplateQuestion(question: Question, number: number): Qu
       return { id: o.id, text: choices[i]!, rationale: rationales[i]! }
     }),
     explanation: 'Código General Disciplinario, art(s). ' + articles + '. ' + rationales.join(' '),
-    sourceIds: [...new Set([...question.sourceIds, 'ley-1952-2019', 'ley-2094-2021'])],
+    sourceIds: [...new Set([...question.sourceIds, 'ley-1952-2019', 'ley-2094-2021', ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : [])])],
     verifiedAt: '2026-11-24',
   }
 }
