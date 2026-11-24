@@ -185,7 +185,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
         "rows": [
           [
             "Acceso",
-            "Identificar calidad procesal y reserva aplicable (115); preservar registro de consulta y copias."
+            "Identificar calidad procesal y reserva aplicable (115); distinguir consulta de documentos reservados incorporados en cuaderno separado, sin expedición de copias según art. 192, y registrar acceso."
           ],
           [
             "Solicitud de prueba",

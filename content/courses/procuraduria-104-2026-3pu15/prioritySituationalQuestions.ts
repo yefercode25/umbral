@@ -643,57 +643,196 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "explanation": "Fundamento: CGD, arts. 12, 160, 225, 225A, 225D; C-030/2023. C-030 de 2023 distingue potestad administrativa y garantía judicial especial; el art. 12 mantiene separación funcional. La primera alternativa incorrecta falla porque el nombre de la etapa no determina naturaleza jurisdiccional. La segunda falla porque la decisión constitucional no elimina toda actuación disciplinaria administrativa de la PGN."
   }
 ],
-  'pgn-m35': [{
-    number: 1,
-    caseText: 'Un informe disciplinario considera acreditado un incumplimiento por la declaración de un ciudadano. El disciplinable entrega documentos que sugieren que el hecho ocurrió durante una falla institucional y no como resultado de su decisión. El investigador considera que no es necesario revisar el nuevo material porque corresponde al servidor demostrar su inocencia. El jefe solicita un proyecto de decisión motivada.',
-    stem: '¿Qué debe hacer el equipo respecto de la prueba favorable y de la carga probatoria?',
-    options: [
-      'Incorporar y valorar el material tanto de cargo como de descargo con igual rigor y obtener la prueba necesaria; la carga de demostrar los hechos corresponde al Estado.',
-      'Omitir el nuevo material hasta que el servidor demuestre de manera definitiva una causa de exoneración.',
-      'Dar automáticamente plena credibilidad a los documentos del disciplinado y archivar, pues toda contradicción destruye el fundamento de la queja.',
+  'pgn-m35': [
+  {
+    "number": 1,
+    "caseText": "Un expediente contiene evidencia suficiente de una irregularidad administrativa y un registro que identifica una cuenta de servicio compartida, pero no al operador. Ya se practicaron las diligencias disponibles y se discute la decisión de evaluación. La jefatura sostiene que el daño institucional acredita todos los elementos y que el eventual juzgador puede llenar cualquier vacío sobre responsabilidad.",
+    "stem": "¿Qué criterio diferencia el estándar de evaluación de una sanción basada solo en el resultado?",
+    "options": [
+      "Examinar si existe demostración objetiva de la falta y prueba que comprometa personalmente al disciplinado, sin trasladar al juzgador ni a la defensa un vacío de atribución.",
+      "Formular cargos siempre que exista daño, aunque no haya prueba que comprometa al posible autor.",
+      "Proferir sanción desde la instrucción porque la irregularidad objetiva equivale a certeza de responsabilidad."
     ],
-    rationales: [
-      'Combina carga probatoria estatal, imparcialidad de la investigación y valoración de evidencia que favorece al disciplinable.',
-      'Invierte la carga y desconoce el deber de investigación imparcial.',
-      'La contradicción obliga a valorar; no atribuye certeza inmediata a la fuente alternativa.',
+    "rationales": [
+      "Los arts. 147, 160 y 222 distinguen carga, cargos y certeza sancionatoria.",
+      "El resultado no satisface todos los requisitos de cargos.",
+      "La sanción exige certeza y competencia de juzgamiento."
     ],
-    correctOptionId: 'a',
-    explanation: 'Los artículos 147 a 149 del CGD exigen decisiones fundadas en prueba, atribuyen al Estado la carga y ordenan buscar con igual rigor hechos favorables y desfavorables.',
-  }],
-  'pgn-m37': [{
-    number: 1,
-    caseText: 'En una actuación disciplinaria se aportó una grabación obtenida por un tercero cuya forma de adquisición no está explicada. El contenido parece relevante, y existe otra copia que coincide en duración. La defensa señala que no ha tenido oportunidad de conocer el soporte original ni discutir su incorporación. El investigador argumenta que la coincidencia visual y la utilidad de la grabación permiten ignorar cualquier debate sobre legalidad.',
-    stem: '¿Qué comprobación es prioritaria antes de atribuir a ese material un valor decisivo?',
-    options: [
-      'Admitirlo como prueba plena y diferir las objeciones para el fallo, pues su utilidad compensa la falta de verificación de origen.',
-      'Excluirlo de forma automática sin revisar origen, garantías de obtención ni oportunidad de contradicción.',
-      'Examinar su obtención e incorporación legal, permitir la contradicción que corresponda y valorar el alcance del material conforme a sus garantías y soporte.',
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, 147–150, 160 y 222. Los arts. 147, 160 y 222 distinguen carga, cargos y certeza sancionatoria. Primera alternativa incorrecta: El resultado no satisface todos los requisitos de cargos. Segunda alternativa incorrecta: La sanción exige certeza y competencia de juzgamiento."
+  }
+],
+  'pgn-m36': [
+  {
+    "number": 1,
+    "caseText": "Durante una investigación se niega una prueba solicitada porque el despacho la considera impertinente. En el proyecto no se describe qué hecho pretendía demostrar ni por qué carecía de relación con el expediente. El defensor identifica una conexión con el posible deber funcional y la providencia aún no ha sido notificada. La secretaría prepara una plantilla sin recurso.",
+    "stem": "¿Qué ajuste exige una negativa que pueda ser revisada conforme al régimen disciplinario?",
+    "options": [
+      "Negar por fórmula general de economía procesal y omitir recursos por tratarse de una decisión probatoria.",
+      "Conceder apelación en investigación porque toda negativa de prueba se tramita igual que en juicio.",
+      "Motivar la relación o falta de relación con el hecho, diferenciar los criterios del art. 151 y reconocer la reposición procedente frente a negativa en investigación."
     ],
-    rationales: [
-      'La utilidad no elimina los controles de legalidad y contradicción.',
-      'La existencia de dudas requiere examen jurídico; no siempre produce un efecto automático idéntico.',
-      'Distingue pertinencia del soporte, legalidad de incorporación y garantía de contradicción.',
+    "rationales": [
+      "La economía no sustituye la motivación ni elimina el recurso previsto.",
+      "Arts. 133 y 134 distinguen las fases.",
+      "La negativa motivada y su recurso dependen del supuesto y fase."
     ],
-    correctOptionId: 'c',
-    explanation: 'El CGD regula la legalidad, contradicción y valoración de pruebas. La regla exacta debe aplicarse a la forma de obtención e incorporación del soporte concreto.',
-  }],
-  'pgn-m44': [{
-    number: 1,
-    caseText: 'El equipo de TI recibe un computador asociado con la alteración de un registro disciplinario. Para mantener el servicio disponible se propone formatear el dispositivo y conservar solamente un Excel exportado desde una cuenta administrativa. El Excel contiene filas coincidentes con los hechos, pero no se documentaron el origen, los filtros activos, el reloj del equipo, el procedimiento de extracción ni los custodios de la copia.',
-    stem: '¿Qué procedimiento protege mejor la utilidad probatoria sin presumir que una copia aislada demuestra autoría?',
-    options: [
-      'Conservar únicamente el Excel y calcular su hash actual: el hash de la copia prueba la autenticidad completa de los registros originales.',
-      'Preservar de manera documentada el material fuente o una adquisición verificable, registrar cadena de manejo, tiempos y método, y trabajar sobre copias antes de cualquier recuperación operativa que pueda alterar evidencia.',
-      'Restaurar el computador y luego solicitar declaraciones, ya que solo la continuidad del servicio puede justificar la investigación.',
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, 149–151, 133–134; Ley 1581 de 2012. La negativa motivada y su recurso dependen del supuesto y fase. Primera alternativa incorrecta: La economía no sustituye la motivación ni elimina el recurso previsto. Segunda alternativa incorrecta: Arts. 133 y 134 distinguen las fases."
+  }
+],
+  'pgn-m37': [
+  {
+    "number": 1,
+    "caseText": "Una prueba documental fue obtenida con desconocimiento acreditado de derechos fundamentales del investigado. El expediente contiene además documentos independientes obtenidos legalmente, y el funcionario propone conservar la primera como fundamento porque coincide con las otras fuentes. Existe acta de obtención y se discute el alcance de la consecuencia procesal antes de evaluar la investigación.",
+    "stem": "¿Qué criterio corresponde aplicar a la prueba cuestionada y al resto de la evidencia?",
+    "options": [
+      "Utilizarla como prueba complementaria porque coincide con evidencia válida y no será el único fundamento.",
+      "Invalidar necesariamente todos los documentos independientes sin examinar su origen ni relación con el defecto.",
+      "Tener por inexistente la prueba que satisface el supuesto del art. 158 y evaluar de manera autónoma los demás elementos legales, examinando los efectos concretos del defecto."
     ],
-    rationales: [
-      'El hash de una copia no reconstruye por sí solo la procedencia ni la fidelidad de su adquisición.',
-      'Conecta aseguramiento, trazabilidad, integridad técnica y límites de la inferencia sobre autoría.',
-      'La restauración previa puede destruir evidencia; continuidad y preservación deben coordinarse.',
+    "rationales": [
+      "La corroboración no sanea la vulneración.",
+      "El efecto sobre las demás pruebas exige análisis concreto.",
+      "El CGD impide fundamentar decisiones en prueba inexistente, sin convertir toda irregularidad en nulidad indiscriminada."
     ],
-    correctOptionId: 'b',
-    explanation: 'La guía disciplinaria conecta los artículos 155 y 156 del CGD con el aseguramiento de material y apoyo técnico. La evidencia digital exige registrar origen, integridad, manejo y alcance de cada inferencia.',
-  }],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, 147, 151, 157–158, Constitución art. 29. El CGD impide fundamentar decisiones en prueba inexistente, sin convertir toda irregularidad en nulidad indiscriminada. Primera alternativa incorrecta: La corroboración no sanea la vulneración. Segunda alternativa incorrecta: El efecto sobre las demás pruebas exige análisis concreto."
+  }
+],
+  'pgn-m38': [
+  {
+    "number": 1,
+    "caseText": "Una matriz probatoria enumera veinte diligencias para investigar una alteración, pero no identifica qué hecho demuestra cada una. Una nueva copia de seguridad descarta la hora originalmente atribuida y el equipo propone conservar todas las tareas, sin ajustar hipótesis ni fechas. La jefatura pide un producto que permita a otro profesional revisar el razonamiento y continuar el trabajo.",
+    "stem": "¿Cómo debe actualizarse la matriz para orientar diligencias y evitar acumulación sin propósito?",
+    "options": [
+      "Relacionar cada hecho con hipótesis, fuente, prueba de contraste, resultado y vacío; revisar fechas y prioridades a partir de la copia y documentar las razones del cambio.",
+      "Añadir más diligencias sin modificar el planteamiento inicial, para que el número de fuentes respalde la conclusión.",
+      "Reemplazar toda la cronología por el dato de la copia y dar por resuelta la atribución personal."
+    ],
+    "rationales": [
+      "Un plan verificable relaciona hechos y fuentes y registra evidencia contradictoria.",
+      "El volumen no reemplaza pertinencia ni actualización.",
+      "Un dato temporal no acredita identidad o responsabilidad."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, 148, 150–151, 155–156; Ley 527 arts. 9–12. Un plan verificable relaciona hechos y fuentes y registra evidencia contradictoria. Primera alternativa incorrecta: El volumen no reemplaza pertinencia ni actualización. Segunda alternativa incorrecta: Un dato temporal no acredita identidad o responsabilidad."
+  }
+],
+  'pgn-m39': [
+  {
+    "number": 1,
+    "caseText": "Una bitácora demuestra que una cuenta de servicio ejecutó una consulta. El instructor divide ese registro en hora, dirección de red e identificador y los cuenta como tres indicios independientes de autoría. El equipo conoce que varios procesos automatizados usaban la cuenta y aún no verificó la asignación de sesiones. El proyecto de decisión no explica la relación entre los datos y el operador humano.",
+    "stem": "¿Qué corrección exige la apreciación racional de indicios en este expediente?",
+    "options": [
+      "Contar los campos del mismo evento como tres indicios autónomos porque aparecen en columnas diferentes.",
+      "Descartar todo uso de indicios en disciplina porque no integran la enumeración de medios de prueba del art. 149.",
+      "Acreditar el hecho indicador como unidad, explicar la inferencia hacia la autoría y contrastar automatismos y fuentes independientes antes de asignar mérito al conjunto."
+    ],
+    "rationales": [
+      "Dividir el mismo indicador no crea tres hechos autónomos.",
+      "El CGD sí contempla los indicios en la valoración.",
+      "Arts. 196–199 regulan hecho indicador, unidad y valoración; art. 149 permite considerar indicios al apreciar pruebas."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, 149, 159–160, 160A, 196–199. Arts. 196–199 regulan hecho indicador, unidad y valoración; art. 149 permite considerar indicios al apreciar pruebas. Primera alternativa incorrecta: Dividir el mismo indicador no crea tres hechos autónomos. Segunda alternativa incorrecta: El CGD sí contempla los indicios en la valoración."
+  }
+],
+  'pgn-m40': [
+  {
+    "number": 1,
+    "caseText": "Durante una investigación se incorporan documentos sometidos a reserva legal en cuaderno separado. El defensor reconocido solicita consultarlos y obtener copia íntegra para su archivo personal. La secretaría considera que, por ser sujeto procesal, puede llevarse una copia sin controles. No existe excepción específica acreditada para expedir copias de estos documentos reservados.",
+    "stem": "¿Qué tratamiento debe aplicarse a la consulta y a la expedición de copias en el supuesto del art. 192?",
+    "options": [
+      "Entregar copia íntegra sin registro porque toda calidad procesal elimina la reserva documental.",
+      "Garantizar la consulta del sujeto procesal conforme al régimen, conservar los documentos separados y reservados y aplicar la prohibición de expedir copias prevista para ese supuesto.",
+      "Negar incluso la consulta al defensor porque ningún sujeto procesal puede conocer documentos reservados."
+    ],
+    "rationales": [
+      "La reserva subsiste aun cuando se permita consultar.",
+      "El parágrafo del art. 192 diferencia consulta por sujetos procesales y prohibición de copias.",
+      "La norma reconoce expresamente la consulta."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, 187–195; Ley 527 arts. 8–12. El parágrafo del art. 192 diferencia consulta por sujetos procesales y prohibición de copias. Primera alternativa incorrecta: La reserva subsiste aun cuando se permita consultar. Segunda alternativa incorrecta: La norma reconoce expresamente la consulta."
+  }
+],
+  'pgn-m41': [
+  {
+    "number": 1,
+    "caseText": "En una versión libre un disciplinable acepta que estuvo presente en la oficina, pero no admite ejecutar la conducta investigada y decide guardar silencio sobre una pregunta. El acta no contiene confesión formal ni acreditación de que se cumplieran sus requisitos. El funcionario propone calificar la afirmación parcial como confesión completa y recomendar automáticamente una rebaja de sanción.",
+    "stem": "¿Qué distinción debe hacerse entre versión libre y confesión con efectos procesales?",
+    "options": [
+      "Valorar la afirmación dentro del conjunto, respetar el silencio y verificar los requisitos y oportunidad de los arts. 161–163 antes de reconocer confesión o beneficio.",
+      "Tratar cualquier admisión de presencia como aceptación integral de responsabilidad y otorgar rebaja automática.",
+      "Descartar toda la versión porque el disciplinable no respondió todas las preguntas formuladas."
+    ],
+    "rationales": [
+      "La confesión exige condiciones legales y su mérito se valora racionalmente.",
+      "Presencia no equivale a confesión de la falta.",
+      "El silencio no invalida el ejercicio de defensa."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, 161–176; Constitución art. 33. La confesión exige condiciones legales y su mérito se valora racionalmente. Primera alternativa incorrecta: Presencia no equivale a confesión de la falta. Segunda alternativa incorrecta: El silencio no invalida el ejercicio de defensa."
+  }
+],
+  'pgn-m42': [
+  {
+    "number": 1,
+    "caseText": "En una investigación existen dos dictámenes sobre la integridad de un archivo. El segundo utiliza una herramienta diferente y contradice parcialmente al primero. No prosperó ninguna objeción por error grave. El instructor propone reemplazar automáticamente el primer dictamen por el más reciente, sin explicar las diferencias de método ni contrastar las conclusiones con los demás documentos del expediente.",
+    "stem": "¿Cómo corresponde valorar ambos dictámenes bajo el art. 182?",
+    "options": [
+      "Asignar valor exclusivo al segundo dictamen por su fecha posterior, aunque no haya prosperado objeción.",
+      "Promediar las conclusiones de ambos sin examinar premisas ni calidad técnica para obtener una conclusión neutral.",
+      "Apreciarlos conjuntamente, explicar solidez, precisión, método, idoneidad y contradicciones, relacionándolos con el resto de la prueba; no sustituir automáticamente el primero."
+    ],
+    "rationales": [
+      "La fecha no determina superioridad probatoria.",
+      "Una media de conclusiones no reemplaza valoración metodológica.",
+      "Art. 182 establece apreciación conjunta de dictámenes, con excepción legal por objeción que prospere."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, 177–184, 193–195. Art. 182 establece apreciación conjunta de dictámenes, con excepción legal por objeción que prospere. Primera alternativa incorrecta: La fecha no determina superioridad probatoria. Segunda alternativa incorrecta: Una media de conclusiones no reemplaza valoración metodológica."
+  }
+],
+  'pgn-m43': [
+  {
+    "number": 1,
+    "caseText": "En una inspección ordenada para verificar el estado de un archivo institucional, una persona presente ofrece un testimonio útil y se encuentran elementos documentales relevantes. El comisionado propone resumir sus declaraciones dentro del acta, sin formulario testimonial separado, y llevarse los soportes sin inventario. La autoridad había informado fecha y hora al disciplinable.",
+    "stem": "¿Cómo documentar los hallazgos y el testimonio conforme a las reglas de inspección?",
+    "options": [
+      "Sustituir el testimonio por un resumen informal en el acta y conservar solo los documentos que favorezcan la hipótesis.",
+      "Registrar observaciones y manifestaciones en el acta, recibir el testimonio útil conforme al art. 185 en formulario distinto y recoger y conservar soportes con procedimientos de cadena de custodia.",
+      "Finalizar sin recaudar ningún soporte porque toda inspección se limita a observar y no permite recibir testimonios."
+    ],
+    "rationales": [
+      "El resumen no sustituye la diligencia testimonial prevista.",
+      "Los arts. 185–186 regulan acta, testimonio separado y preservación de elementos.",
+      "La inspección sí puede incorporar elementos útiles bajo reglas legales."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, 154, 157, 185–186. Los arts. 185–186 regulan acta, testimonio separado y preservación de elementos. Primera alternativa incorrecta: El resumen no sustituye la diligencia testimonial prevista. Segunda alternativa incorrecta: La inspección sí puede incorporar elementos útiles bajo reglas legales."
+  }
+],
+  'pgn-m44': [
+  {
+    "number": 1,
+    "caseText": "En una inspección se recoge un dispositivo con información relevante y se documenta su entrega inicial. Al revisar el inventario aparece un intervalo sin constancia de quién tuvo acceso; existen controles físicos y registros que podrían reconstruir parte del período. El equipo propone completar retroactivamente las firmas faltantes y certificar que no ocurrió ninguna alteración, antes de practicar el análisis.",
+    "stem": "¿Qué actuación conserva integridad institucional y permite evaluar el vacío de custodia?",
+    "options": [
+      "Completar las firmas con fechas retrospectivas y ocultar el intervalo para evitar cuestionamientos.",
+      "Registrar la incidencia, preservar el soporte, reconstruir el intervalo solo con fuentes verificables, comprobar integridad cuando sea posible y comunicar sus límites para valoración jurídica.",
+      "Destruir el dispositivo y declarar inválido todo el proceso sin examinar el alcance del vacío ni los demás soportes."
+    ],
+    "rationales": [
+      "Fabricar constancias no subsana la pérdida de trazabilidad.",
+      "La cadena de custodia exige trazabilidad real y la valoración debe distinguir incertidumbre técnica de consecuencias jurídicas.",
+      "El incidente requiere evaluación concreta, no destrucción automática."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, 155, 179, 185, 200–201; Ley 527 arts. 8–12. La cadena de custodia exige trazabilidad real y la valoración debe distinguir incertidumbre técnica de consecuencias jurídicas. Primera alternativa incorrecta: Fabricar constancias no subsana la pérdida de trazabilidad. Segunda alternativa incorrecta: El incidente requiere evaluación concreta, no destrucción automática."
+  }
+],
   'pgn-m51': [{
     number: 1,
     caseText: 'Una entidad necesita adquirir dispositivos para fortalecer su infraestructura. Los estudios previos incluyen una especificación que solo cumple el equipo del proveedor que hizo la visita preliminar. El área usuaria afirma que esa marca está probada y que la diferencia de precio es pequeña. Otro proponente entrega fichas técnicas de una solución funcionalmente equivalente, pero la respuesta a su observación se limita a decir que la entidad conoce mejor sus necesidades.',

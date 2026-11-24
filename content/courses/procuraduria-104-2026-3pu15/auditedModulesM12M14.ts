@@ -107,7 +107,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
         rows: [
           ['Análisis de expedientes', 'Identificar problema, obligaciones, documentos de origen, vacíos y cronología que la autoridad debe valorar.'],
           ['Recaudo y práctica de pruebas', 'Atender la atribución o comisión válida, con objeto, garantías, metodología y registro verificables.'],
-          ['Informes especializados', 'Separar observaciones directas, hipótesis, límites y fuentes; indicar qué requiere una comprobación posterior.'],
+          ['Informes especializados', 'Separar observaciones directas, hipótesis, límites y fuentes; indicar qué requiere una comprobación posterior. Distinguir el informe de datos de archivo (arts. 193–195 CGD) del dictamen pericial (arts. 177–184); no comparten el trámite de objeción por error grave.'],
           ['Gestión de información', 'Utilizar hojas de cálculo o registros de sistema para detectar datos y contrastar versiones, sin convertir la fórmula en atribución de dolo.'],
         ],
       },
