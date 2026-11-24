@@ -1556,79 +1556,79 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       "69–70"
     ],
     [
-      "Una empresa privada presta un servicio público domiciliario mediante actividad ordinaria de operación. La denuncia cuestiona un incumplimiento operativo, pero no acredita que la persona investigada haya ejercido una función pública ni otro supuesto del artículo 70.",
-      "¿Qué criterio distingue servicio público de función pública disciplinable en este supuesto?",
+      "Una dependencia recibe un informe de un servidor sobre una modificación irregular de un registro institucional. El informe incluye fechas y anexos verificables. No existe una queja ciudadana y el profesional debe clasificar la fuente para decidir la ruta inicial.",
+      "¿Qué tratamiento corresponde al informe como origen de una noticia disciplinaria?",
       [
-        "Verificar si ejerció prerrogativas estatales o concurre otro supuesto legal.",
-        "Considerar disciplinable a todo operador por prestar un servicio público.",
-        "Descartar cualquier responsabilidad de particulares sin revisar sus funciones efectivas."
+        "Evaluarlo como fuente de información de servidor público conforme al artículo 86.",
+        "Exigir una queja de la persona afectada antes de examinar los soportes.",
+        "Esperar sentencia penal para que el informe adquiera relevancia disciplinaria."
       ],
       [
-        "El servicio público no equivale necesariamente a función pública.",
-        "El art. 70 distingue ambas actividades.",
-        "Los particulares sí pueden ser disciplinables bajo condiciones legales."
+        "La información de servidor público es fuente prevista.",
+        "La queja ciudadana no es requisito universal.",
+        "No se exige sentencia penal."
       ],
-      "70"
+      "86"
     ],
     [
-      "Una fundación privada recibe recursos públicos destinados a un programa específico y su representante decide su uso. Una revisión identifica soportes de disposición de esos fondos que podrían acreditar una conducta incluida en el régimen disciplinario especial.",
-      "¿Qué circunstancia sustenta examinar su condición de particular disciplinable?",
+      "Llega una comunicación anónima que identifica un contrato, fechas y documentos institucionales verificables. La oficina no conoce al informante, pero puede comprobar la concreción de los hechos y el origen de los anexos sin atribuir responsabilidad.",
+      "¿Qué decisión inicial respeta el régimen aplicable a esa fuente anónima?",
       [
-        "La administración o disposición de recursos públicos destinados a fines específicos.",
-        "La existencia de cualquier relación comercial con una entidad del Estado.",
-        "La sola inscripción de la fundación como persona jurídica sin ánimo de lucro."
+        "Examinar los requisitos mínimos legales y la credibilidad de los soportes aportados.",
+        "Inhibirse siempre por faltar el nombre del informante, aunque aporte documentos verificables.",
+        "Iniciar directamente el juicio por existir referencias documentales sobre una posible conducta."
       ],
       [
-        "Administrar recursos públicos constituye un supuesto del art. 70.",
-        "Una relación comercial no demuestra administración de recursos.",
-        "La naturaleza jurídica de la entidad no basta por sí sola."
+        "El artículo 86 contempla excepción para anónimos con requisitos mínimos.",
+        "La falta de identificación no resuelve sola la procedencia.",
+        "Los documentos no habilitan juicio inmediato."
       ],
-      "70"
+      "86"
     ],
     [
-      "Durante una investigación por falta atribuida a un particular disciplinable y a un servidor público se acredita que ambos participaron en hechos conexos. La oficina de control interno pretende asumir todo el expediente porque el servidor pertenece a su entidad.",
-      "¿Qué autoridad debe conocer los hechos conexos de ambos disciplinables?",
+      "Una comunicación acusa genéricamente a todo el personal de una dependencia de actuar irregularmente. No identifica conducta, periodo ni circunstancia alguna y el funcionario competente determina que los hechos están formulados de manera absolutamente inconcreta.",
+      "¿Qué decisión inicial prevé el Código para la situación descrita?",
       [
-        "La Procuraduría General de la Nación, conforme a su competencia exclusiva.",
-        "La oficina de control disciplinario interno por la pertenencia del servidor.",
-        "La personería municipal por la naturaleza territorial de los hechos investigados."
+        "Inhibirse de iniciar actuación mediante la decisión prevista en el artículo 209.",
+        "Abrir indagación contra todo el personal hasta individualizar una posible conducta irregular.",
+        "Formular cargos contra la jefatura porque dirige la dependencia mencionada por el ciudadano."
       ],
       [
-        "La conexidad entre particular y servidor activa competencia exclusiva de PGN.",
-        "El vínculo del servidor no desplaza la regla especial.",
-        "La territorialidad tampoco sustituye la competencia exclusiva."
+        "La absoluta inconcreción es causal legal de inhibición.",
+        "La indagación presupone duda sobre identidad de posible autor de una falta.",
+        "El cargo jerárquico no acredita una imputación."
       ],
-      "92"
+      "209"
     ],
     [
-      "Un particular ejerce una función pública transitoria y se acredita esa condición. El proyecto de cargos pretende imputarle una falta leve prevista para servidores públicos, sin identificar ninguna conducta del catálogo especial del régimen de particulares.",
-      "¿Qué límite material debe observarse antes de formular esa imputación?",
+      "Una noticia concreta identifica una modificación no autorizada de un registro. Las fuentes muestran que varias personas podían operar el sistema y ninguna permite identificar todavía al posible autor. El despacho dispone de diligencias legales para individualizarlo.",
+      "¿Qué etapa corresponde a esa incertidumbre sobre la identidad del posible autor?",
       [
-        "Verificar si la conducta corresponde a las faltas gravísimas del catálogo especial.",
-        "Aplicar directamente las faltas leves de servidores por ejercer una función pública.",
-        "Escoger cualquier falta general que tenga una descripción semejante a los hechos."
+        "Indagación previa orientada a superar la duda de identificación o individualización.",
+        "Investigación contra el titular nominal de la cuenta por aparecer en el registro.",
+        "Decisión inhibitoria por el solo hecho de que aún no se conozca al autor."
       ],
       [
-        "Los particulares de ese título responden por su catálogo especial.",
-        "Ejercer función pública no elimina el régimen diferenciado.",
-        "La semejanza no sustituye la tipicidad legal."
+        "El artículo 208 regula la duda de identidad.",
+        "La titularidad no individualiza necesariamente al operador.",
+        "La ausencia de identidad no equivale a irrelevancia manifiesta."
       ],
-      "69, 72"
+      "208,211"
     ],
     [
-      "Un servidor público es enviado temporalmente al exterior en cumplimiento de sus funciones. Durante la comisión se reporta una conducta que podría vulnerar sus deberes funcionales. El equipo descarta estudiar los hechos por haber sucedido fuera de Colombia.",
-      "¿Qué regla determina el ámbito territorial de la ley disciplinaria?",
+      "Durante una indagación iniciada por duda de identidad, un registro legalmente incorporado permite individualizar al posible autor de la falta. El término inicial aún está vigente y la autoridad competente dispone de una noticia con mérito para investigar.",
+      "¿Qué decisión debe adoptar la autoridad ante ese cambio de presupuesto?",
       [
-        "Se aplica a sus destinatarios incluso por faltas cometidas fuera del país.",
-        "Solo se aplica a hechos realizados en territorio colombiano durante el servicio.",
-        "Se aplica en el exterior únicamente cuando existe una condena penal previa."
+        "Abrir inmediatamente investigación sin anticipar una declaración de responsabilidad.",
+        "Mantener la indagación hasta agotar sus seis meses antes de decidir.",
+        "Formular cargos inmediatamente porque ya se identificó al posible autor."
       ],
       [
-        "El art. 24 prevé ámbito dentro y fuera del territorio nacional.",
-        "La ubicación geográfica no excluye la acción.",
-        "No se exige condena penal previa."
+        "La identificación habilita apertura inmediata.",
+        "No se exige agotar el término.",
+        "Cargos requieren un estándar adicional."
       ],
-      "24"
+      "208,211,222"
     ],
     [
       "Una queja identificada motivó una actuación por una posible falta disciplinaria. Posteriormente el quejoso presenta desistimiento escrito y solicita que se cierre todo el expediente, aunque permanecen elementos de relevancia disciplinaria por esclarecer.",
