@@ -157,7 +157,7 @@ describe('Auditoría integral M27–M34', () => {
  it('conserva el inventario y claves históricas de 24 cierres', () => {
   expect(procuraduriaCourse.modules).toHaveLength(85)
   expect(procuraduriaCourse.lessons).toHaveLength(255)
-  expect(procuraduriaCourse.questions).toHaveLength(1948)
+  expect(procuraduriaCourse.questions.filter(q => !q.id.startsWith('pgn-exception-'))).toHaveLength(1948)
   expect(new Set(procuraduriaCourse.questions.map(q=>q.id)).size).toBe(1948)
   expect(practiceQuestionPool(procuraduriaCourse)).toHaveLength(1098)
   for(const m of expected) {

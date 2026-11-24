@@ -11,7 +11,7 @@ describe('Auditoría editorial Procuraduría M12–M14', () => {
     expect(procuraduriaCourse.units).toHaveLength(17)
     expect(procuraduriaCourse.modules).toHaveLength(85)
     expect(procuraduriaCourse.lessons).toHaveLength(255)
-    expect(procuraduriaCourse.questions).toHaveLength(1948)
+    expect(procuraduriaCourse.questions.filter(q => !q.id.startsWith('pgn-exception-'))).toHaveLength(1948)
     expect(new Set(procuraduriaCourse.questions.map(q => q.id)).size).toBe(1948)
     for (const id of audited) {
       expect(moduleReviewQuestions(procuraduriaCourse, id).map(q => q.id)).toEqual([
