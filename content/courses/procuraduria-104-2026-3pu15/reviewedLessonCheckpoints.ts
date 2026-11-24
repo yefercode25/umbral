@@ -880,6 +880,456 @@ const items: Record<string, Item> = {
       "ley-1952-2019",
       "ley-2094-2021"
     ]
+  ],
+  "pgn-m25-q1": [
+    "",
+    "¿Cuál es la diferencia entre una noticia disciplinaria y una imputación de cargos?",
+    "La noticia informa hechos posibles; los cargos requieren un estándar probatorio específico.",
+    "La noticia acredita responsabilidad; los cargos únicamente comunican el resultado al interesado.",
+    "Ambas constituyen decisiones de fondo que determinan responsabilidad del servidor.",
+    "La noticia activa evaluación inicial; cargos requieren mérito probatorio.",
+    "El relato no acredita responsabilidad.",
+    "Ninguna noticia es fallo definitivo.",
+    "CGD, arts. 86,222",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m25-q2": [
+    "Un profesional recibe un escrito que combina insultos, fechas y un contrato identificable. Debe preparar una síntesis para el despacho.",
+    "¿Qué tratamiento permite conservar el valor informativo y documental del escrito?",
+    "Separar hechos verificables de valoraciones, preservando el escrito original y sus anexos.",
+    "Eliminar del original los pasajes ofensivos para facilitar su incorporación al expediente.",
+    "Reproducir las acusaciones como hechos establecidos dentro del informe profesional.",
+    "La síntesis no sustituye ni altera el original.",
+    "Modificarlo afecta integridad de la fuente.",
+    "Una acusación no es hecho probado.",
+    "CGD, arts. 86,147",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m25-q3": [
+    "La autoridad constata que los hechos descritos son manifiestamente irrelevantes disciplinariamente y no se ha abierto actuación.",
+    "¿Qué decisión y recurso corresponden a ese supuesto inicial?",
+    "Decisión inhibitoria, contra la cual no procede recurso alguno.",
+    "Archivo de investigación, susceptible del recurso de apelación del quejoso.",
+    "Auto de apertura de indagación, susceptible de recurso de reposición.",
+    "El artículo 209 regula inhibición sin recurso.",
+    "El archivo presupone una actuación abierta.",
+    "La irrelevancia manifiesta no justifica indagar.",
+    "CGD, arts. 209",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m25-q4": [
+    "Un informe concreto identifica al posible autor de una falta. El funcionario competente no tiene incertidumbre sobre su individualización.",
+    "¿Es necesario agotar previamente una indagación de seis meses?",
+    "No; procede evaluar e iniciar investigación conforme al artículo 211.",
+    "Sí; toda noticia debe pasar por indagación durante seis meses completos.",
+    "No; la identificación permite formular inmediatamente el pliego de cargos.",
+    "La indagación responde a duda de identidad.",
+    "No es requisito universal.",
+    "Los cargos requieren prueba adicional.",
+    "CGD, arts. 208,211,222",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m25-q5": [
+    "Una queja atribuye un cambio de datos a una servidora. El reporte de origen indica que pudo ser una operación automática.",
+    "¿Qué debe consignar el análisis inicial de las fuentes contradictorias?",
+    "La discrepancia, los soportes disponibles y las diligencias para verificar cada explicación.",
+    "La autoría de la servidora porque la queja fue la primera fuente recibida.",
+    "El archivo inmediato por el solo hecho de que el reporte sugiera automatización.",
+    "El análisis distingue hipótesis y evidencia.",
+    "El orden de recepción no fija mérito.",
+    "Una explicación alternativa requiere contraste.",
+    "CGD, arts. 13,148",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m25-q6": [
+    "Una queja temeraria motiva estudiar la imposición de una multa. La persona denunciante aún no ha sido escuchada.",
+    "¿Qué trámite exige la ley antes de resolver esa multa?",
+    "Citar al quejoso para explicaciones, pruebas y contradicción, con defensa si no concurre.",
+    "Imponer la multa y conceder la posibilidad de presentar pruebas después de ejecutarla.",
+    "Remitir exclusivamente a control fiscal para que determine e imponga la multa disciplinaria.",
+    "El artículo 210 prevé audiencia y garantías.",
+    "El recurso posterior no reemplaza ese trámite.",
+    "La multa corresponde a la autoridad disciplinaria competente.",
+    "CGD, arts. 210",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m26-q1": [
+    "",
+    "¿Cuál es el presupuesto central para adelantar una indagación previa?",
+    "Duda sobre la identificación o individualización del posible autor de una falta.",
+    "Necesidad de comprobar toda la culpabilidad de un disciplinado plenamente identificado.",
+    "Existencia de una queja contra un servidor con responsabilidad ya demostrada.",
+    "El artículo 208 define una finalidad de identificación.",
+    "La investigación tiene otros fines.",
+    "La indagación no es juicio de responsabilidad.",
+    "CGD, arts. 208",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m26-q2": [
+    "Una indagación ordinaria está abierta por duda de identidad. No se trata de violaciones de derechos humanos o DIH.",
+    "¿Cuál es su duración legal general, sin acudir a excepciones?",
+    "Seis meses, con terminación anticipada si se cumple el presupuesto legal.",
+    "Doce meses, por la prórroga ordinaria automática de toda indagación.",
+    "Tres meses, con extensión general hasta completar seis meses de actuación.",
+    "El término ordinario de indagación es seis meses.",
+    "No existe esa ampliación general.",
+    "Tres meses no es el término inicial.",
+    "CGD, arts. 208",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m26-q3": [
+    "Un registro permite identificar una cuenta institucional que varias personas utilizan durante sus turnos.",
+    "¿Qué medio de verificación resulta más útil para individualizar al operador?",
+    "Contrastar turnos, sesiones, permisos y otras fuentes independientes del registro de cuenta.",
+    "Obtener otra copia del mismo registro con idéntica información sobre el usuario.",
+    "Considerar suficiente la certificación de titularidad nominal de la cuenta institucional.",
+    "La comparación permite discriminar quién operaba.",
+    "Una copia idéntica no agrega información independiente.",
+    "La titularidad no individualiza necesariamente al usuario.",
+    "CGD, arts. 148,208",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m26-q4": [
+    "Al segundo mes de indagación se individualiza al posible autor de la falta mediante prueba válida.",
+    "¿Qué actuación ordena el artículo 208 en ese momento?",
+    "Emitir inmediatamente la decisión de apertura de investigación disciplinaria.",
+    "Esperar el vencimiento de los seis meses para decidir sobre la apertura.",
+    "Declarar cerrada la investigación y conceder traslado de alegatos precalificatorios.",
+    "La identificación activa la apertura inmediata.",
+    "No es obligatorio agotar el plazo.",
+    "El cierre corresponde a una investigación posterior.",
+    "CGD, arts. 208,220",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m26-q5": [
+    "Agotada la indagación, no fue posible identificar al posible autor pese a practicar las diligencias pertinentes.",
+    "¿Qué efecto tiene el archivo previsto en el parágrafo del artículo 208?",
+    "No hace tránsito a cosa juzgada material en los términos de esa disposición.",
+    "Impide definitivamente considerar cualquier información posterior sobre los mismos hechos.",
+    "Equivale a un fallo absolutorio ejecutoriado sobre un disciplinado identificado.",
+    "El parágrafo excluye cosa juzgada material.",
+    "Una noticia nueva puede examinarse dentro de límites legales.",
+    "No hubo juzgamiento de una persona individualizada.",
+    "CGD, arts. 208",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m26-q6": [
+    "Meses después del archivo de una indagación aparece un soporte nuevo y relevante de identidad.",
+    "¿Qué revisión debe realizarse antes de decidir una nueva actuación?",
+    "Examinar el mérito del soporte, el efecto del archivo y la vigencia de la acción.",
+    "Reabrir automáticamente porque el archivo de indagación elimina toda limitación temporal.",
+    "Descartar automáticamente porque todo archivo tiene efectos materiales de cosa juzgada.",
+    "La nueva fuente exige examen de presupuestos y prescripción.",
+    "No hay reapertura indefinida.",
+    "El archivo de indagación tiene efecto especial.",
+    "CGD, arts. 33,208",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m27-q1": [
+    "",
+    "¿Qué fin corresponde a la investigación disciplinaria una vez identificado el posible autor?",
+    "Verificar conducta, relevancia disciplinaria y eventuales causales de exclusión de responsabilidad.",
+    "Determinar exclusivamente el monto de la sanción que impondrá el funcionario instructor.",
+    "Establecer únicamente la identidad del quejoso antes de admitir cualquier prueba.",
+    "El artículo 212 define el objeto de investigación.",
+    "La instrucción no impone el fallo sancionatorio.",
+    "La identidad del quejoso no es su único objeto.",
+    "CGD, arts. 211,212",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m27-q2": [
+    "Una oficina de control disciplinario interno inicia una investigación contra un servidor público.",
+    "¿Qué aviso exige el artículo 216 al iniciarse esa actuación?",
+    "Avisar inmediatamente a Viceprocuraduría y al funcionario competente de PGN o personería.",
+    "Avisar únicamente a la Contraloría cuando se obtenga certeza sobre la falta.",
+    "Avisar al juez administrativo después de expedir el fallo de primera instancia.",
+    "El aviso permite evaluar el poder preferente.",
+    "No corresponde limitarlo a control fiscal.",
+    "No se posterga hasta el fallo.",
+    "CGD, arts. 216",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m27-q3": [
+    "En una investigación ordinaria ya se agotó el término y se requieren pruebas que pueden modificar la situación jurídica. Se cumplen los presupuestos de extensión adicional.",
+    "¿Qué margen máximo adicional prevé el último inciso del artículo 213?",
+    "Hasta tres meses adicionales para las pruebas decisivas que faltan.",
+    "Hasta seis meses adicionales por la sola existencia de pruebas pendientes.",
+    "Hasta doce meses adicionales en toda investigación por falta grave.",
+    "El último inciso fija hasta tres meses.",
+    "La ampliación de seis meses corresponde a otro supuesto.",
+    "No existe esa extensión automática por gravedad.",
+    "CGD, arts. 213",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m27-q4": [
+    "En una investigación por falta grave existen serios elementos de riesgo de interferencia del servidor en el recaudo probatorio.",
+    "¿Qué medida motivada puede ordenar el funcionario que adelanta la actuación?",
+    "Suspensión provisional del servidor bajo los presupuestos y términos legales.",
+    "Suspensión sancionatoria definitiva antes de formular cargos y escuchar la defensa.",
+    "Destitución preventiva mientras se comprueba la interferencia del servidor investigado.",
+    "El artículo 217 regula suspensión provisional por esos riesgos.",
+    "La sanción exige fallo.",
+    "No hay destitución preventiva en ese supuesto.",
+    "CGD, arts. 217",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m27-q5": [
+    "El registro de accesos atribuye una modificación a una cuenta, pero existe una tarea automática programada durante ese mismo periodo.",
+    "¿Qué diligencia permite distinguir las hipótesis durante la investigación?",
+    "Contrastar registros de automatización, autenticación y configuración con las fuentes de cargo.",
+    "Repetir solo las consultas que respaldan la atribución personal de la modificación.",
+    "Descartar todos los registros por la existencia de una explicación técnica alternativa.",
+    "El contraste permite evaluar cargo y descargo.",
+    "Seleccionar confirmaciones introduce sesgo.",
+    "Una hipótesis alternativa no invalida todas las fuentes.",
+    "CGD, arts. 13,148,159",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m27-q6": [
+    "El informe de investigación demuestra que el hecho ocurrió, pero una prueba válida acredita plenamente que el disciplinado no lo cometió.",
+    "¿Qué decisión procede respecto de esa persona si se satisface el artículo 90?",
+    "Declarar terminada la actuación y ordenar su archivo mediante decisión motivada.",
+    "Formular cargos porque la ocurrencia objetiva del hecho ya está demostrada.",
+    "Mantener indefinidamente abierta la investigación hasta identificar a todos los intervinientes.",
+    "La no autoría plenamente demostrada es causal de terminación.",
+    "El hecho objetivo no satisface autoría.",
+    "No se justifica mantenerla abierta respecto de quien cumple la causal.",
+    "CGD, arts. 90,222",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m28-q1": [
+    "",
+    "¿Qué facultad diferencia al quejoso ordinario de un sujeto procesal pleno?",
+    "Puede recurrir archivo y fallo absolutorio sin adquirir todas las facultades procesales.",
+    "Puede formular cargos y ordenar la práctica de pruebas como autoridad de instrucción.",
+    "Puede recurrir cualquier providencia del expediente en las mismas condiciones del investigado.",
+    "El artículo 110 delimita su participación.",
+    "Formular cargos es atribución de autoridad.",
+    "No tiene todos los recursos del sujeto procesal.",
+    "CGD, arts. 109,110",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m28-q2": [
+    "El disciplinado y su defensor sostienen criterios contradictorios respecto de una actuación de defensa dentro del proceso.",
+    "¿Qué criterio prevalece según la regla específica del artículo 113?",
+    "El del defensor, quien tiene las mismas facultades procesales del investigado.",
+    "El del quejoso, si aportó las pruebas que dieron origen al proceso.",
+    "El del disciplinado, porque la defensa técnica solo cumple funciones consultivas.",
+    "El artículo 113 dispone prevalencia del defensor.",
+    "El quejoso no dirige la estrategia defensiva.",
+    "El defensor tiene facultades propias.",
+    "CGD, arts. 113",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m28-q3": [
+    "El investigado desea exponer voluntariamente su explicación sin admitir responsabilidad ni declarar bajo juramento.",
+    "¿Qué figura corresponde a esa manifestación de defensa?",
+    "Versión libre en la oportunidad procesal prevista para el disciplinado.",
+    "Testimonio jurado obligatorio sobre los hechos que se le atribuyen.",
+    "Confesión automática por el solo hecho de referirse a la conducta.",
+    "La versión libre es una facultad de defensa.",
+    "No equivale a testimonio de tercero.",
+    "Narrar no equivale a confesar.",
+    "CGD, arts. 112,161",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m28-q4": [
+    "Una persona pretende aceptar cargos mediante un escrito presentado sin defensor ni información previa sobre sus garantías.",
+    "¿Qué requisitos debe verificar la autoridad antes de reconocer esa aceptación?",
+    "Asistencia de defensor e información de derechos, con manifestación libre, consciente e informada.",
+    "La firma del escrito, que sustituye los demás requisitos de aceptación legal.",
+    "El reconocimiento de los hechos ante cualquier empleado, independientemente de su competencia.",
+    "El artículo 161 exige garantías concurrentes y autoridad habilitada.",
+    "Una firma no sustituye asistencia e información.",
+    "No basta declarar ante cualquier empleado.",
+    "CGD, arts. 161",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m28-q5": [
+    "Se practicó una prueba mientras se surtía la notificación de apertura. El disciplinado vinculado pide ampliar puntos específicos de esa prueba.",
+    "¿Qué garantía establece el artículo 111 en ese supuesto?",
+    "Ampliar o reiterar las pruebas practicadas en los puntos solicitados por el disciplinado.",
+    "Excluir todas las pruebas anteriores a la notificación sin examinar su trámite.",
+    "Negar la solicitud porque ninguna prueba anterior admite ampliación una vez incorporada.",
+    "El artículo 111 prevé ampliación o reiteración a solicitud.",
+    "La práctica durante notificación no es ilícita por sí sola.",
+    "La incorporación no elimina esa garantía.",
+    "CGD, arts. 111",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m28-q6": [
+    "Una historia clínica reservada está incorporada en cuaderno separado y el defensor solicita conocerla y obtener una copia.",
+    "¿Qué regla específica debe aplicar la oficina respecto de ese documento reservado?",
+    "Permitir consulta al sujeto procesal, sin expedir copias del contenido reservado.",
+    "Prohibir toda consulta incluso a los sujetos procesales por su carácter reservado.",
+    "Expedir copias sin restricciones porque el defensor participa en la actuación.",
+    "El artículo 192 establece consulta sin copias.",
+    "La reserva no impide esa consulta.",
+    "El acceso no elimina la restricción de copias.",
+    "CGD, arts. 115,192",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m29-q1": [
+    "",
+    "¿Cuáles son los dos eventos que habilitan el cierre de la investigación?",
+    "Recaudo de las pruebas ordenadas o vencimiento del término de investigación.",
+    "Presentación de cualquier alegato o recepción de una nueva queja ciudadana.",
+    "Formulación de cargos y notificación del fallo de primera instancia.",
+    "El artículo 220 prevé dos eventos alternativos.",
+    "Los alegatos siguen al cierre.",
+    "Cargos y fallo son posteriores.",
+    "CGD, arts. 220",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m29-q2": [
+    "La autoridad declara cerrada la investigación porque terminó el recaudo. El proyecto describe la decisión como archivo definitivo.",
+    "¿Qué distinción debe corregirse en ese proyecto?",
+    "El cierre es sustanciación que abre el traslado; el archivo es una salida de mérito.",
+    "El cierre y el archivo son decisiones equivalentes cuando se recaudaron las pruebas.",
+    "El archivo es una medida provisional que debe acompañar todos los cierres de investigación.",
+    "El cierre precede a la evaluación de mérito.",
+    "No resuelve definitivamente la actuación.",
+    "El archivo no acompaña automáticamente el cierre.",
+    "CGD, arts. 220,221",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m29-q3": [
+    "El auto de cierre y traslado de alegatos fue expedido, pero todavía no se ha tramitado la comunicación de notificación.",
+    "¿Qué regla debe verificar la secretaría para controlar esa notificación?",
+    "El trámite del artículo 123, aplicable expresamente al cierre y al traslado.",
+    "La publicación inmediata por edicto como modalidad única de todo auto de cierre.",
+    "La comunicación verbal sin constancia, por tratarse de una decisión de sustanciación.",
+    "El artículo 123 incluye el cierre y traslado.",
+    "No establece edicto como modalidad única.",
+    "Se requieren formalidades y constancias.",
+    "CGD, arts. 123,220",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m29-q4": [
+    "Tras notificarse el cierre, un sujeto procesal presenta alegatos antes de la evaluación de mérito.",
+    "¿Qué finalidad tiene esa intervención dentro de la instrucción?",
+    "Discutir las pruebas y argumentos antes de que el instructor adopte su decisión.",
+    "Interponer apelación contra el fallo sancionatorio que ya resolvió la actuación.",
+    "Sustituir los descargos posteriores y renunciar a las facultades de defensa en juicio.",
+    "Es una oportunidad previa a la evaluación.",
+    "No existe fallo en esa etapa.",
+    "Los alegatos no sustituyen los descargos.",
+    "CGD, arts. 112,220,221",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m29-q5": [
+    "Un alegato señala que el deber funcional estaba asignado a otra persona y cita la resolución correspondiente.",
+    "¿Qué debe reflejar la matriz de evaluación al analizar ese argumento?",
+    "El argumento, el soporte, su relación con el deber y la respuesta motivada.",
+    "Solo la fecha de recepción del alegato para acreditar que se respetó el plazo.",
+    "La conclusión acusatoria original sin revisar el documento invocado por la defensa.",
+    "La evaluación exige considerar argumentos y material probatorio.",
+    "Registrar recepción no equivale a valorar.",
+    "No se puede omitir el soporte de descargo.",
+    "CGD, arts. 13,221,223",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m29-q6": [
+    "Vencido el traslado, el instructor comprueba que las pruebas no comprometen la responsabilidad del investigado y no quedan extensiones aplicables.",
+    "¿Qué salida corresponde al evaluar motivadamente ese mérito insuficiente?",
+    "Terminación y archivo conforme a los presupuestos legales, sin trasladar la duda al juicio.",
+    "Formulación de cargos porque el cierre de investigación demuestra automáticamente la falta.",
+    "Remisión al juzgador para que formule cargos sin decisión de evaluación del instructor.",
+    "No se cumple el estándar de cargos.",
+    "El cierre no prueba responsabilidad.",
+    "La evaluación corresponde al instructor.",
+    "CGD, arts. 213,221,222",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
   ]
 }
 

@@ -225,10 +225,10 @@ const lessonSituationOrder: Record<number, readonly number[]> = {
   ],
   "25": [
     4,
-    2,
     8,
-    3,
     5,
+    2,
+    3,
     10,
     6,
     7,
@@ -272,10 +272,10 @@ const lessonSituationOrder: Record<number, readonly number[]> = {
     4,
     9,
     3,
-    5,
-    6,
     7,
     8,
+    5,
+    6,
     10
   ],
   "30": [
