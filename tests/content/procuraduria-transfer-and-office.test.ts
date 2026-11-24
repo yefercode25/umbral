@@ -55,7 +55,7 @@ describe('Procuraduría: casos contextualizados y contenidos comunes del empleo'
     const checkpoints = new Set(procuraduriaCourse.lessons.flatMap(lesson =>
       lesson.blocks.filter(b => b.type === 'checkpoint').map(b => b.type === 'checkpoint' ? b.questionId : ''),
     ))
-    expect(practice).toHaveLength(1116)
+    expect(practice).toHaveLength(1134)
     expect(practice.some(q => checkpoints.has(q.id))).toBe(false)
     expect(practice.filter(q => q.id.startsWith('pgn-dossier-'))).toHaveLength(48)
     expect(practice.filter(q => q.id.includes('-transfer-'))).toHaveLength(170)

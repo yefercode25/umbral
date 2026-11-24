@@ -624,4 +624,22 @@ export const procuraduriaSources: SourceRef[] = [
     "note": "Fundamentos DNS; consultar actualizaciones cuando corresponda.",
     "verifiedAt": "2026-11-23"
   },
+  {
+    "id": "pgn-res-330-2021",
+    "title": "Resolución PGN 330 de 2021 · Reglamento interno del derecho de petición",
+    "publisher": "Procuraduría General de la Nación",
+    "url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0330_2021.htm",
+    "type": "official",
+    "verifiedAt": "2026-11-23",
+    "note": "Arts. 17, 19 y 33; distingue trámite general de las reglas internas de la PGN."
+  },
+  {
+    "id": "pgn-res-379-2024",
+    "title": "Resolución PGN 379 de 2024 · Manual de Contratación",
+    "publisher": "Procuraduría General de la Nación",
+    "url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0379_2024.htm",
+    "type": "official",
+    "verifiedAt": "2026-11-23",
+    "note": "Suspensión/reinicio, recibo final y amparos postcontractuales; comprobar régimen aplicable a la entidad."
+  },
 ]

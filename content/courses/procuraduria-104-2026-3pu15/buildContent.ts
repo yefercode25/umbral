@@ -20,7 +20,7 @@ import { auditedModuleBlocksM55M64, auditedModuleSourcesM55M64 } from './audited
 import { auditedModuleBlocksM65M74, auditedModuleSourcesM65M74 } from './auditedModulesM65M74'
 import { auditedModuleBlocksM75M84, auditedModuleSourcesM75M84 } from './auditedModulesM75M84'
 
-import { exceptionLessonBlocks } from './exceptionQuestions'
+import { exceptionLessonBlocks, exceptionLessonSources } from './exceptionQuestions'
 
 const ACCENT = '#5F9E80'
 const VERIFIED_AT = '2026-09-14'
@@ -170,7 +170,7 @@ function buildQuestions(blueprint: ProcuraduriaModuleBlueprint): Question[] {
 }
 
 function lessonSources(blueprint: ProcuraduriaModuleBlueprint) {
-  return { type: 'sources' as const, sourceIds: [...new Set([...blueprint.sourceIds, ...transversalOfficeSources(blueprint.id), ...foundationModuleExtraSourceIds(blueprint.id), ...auditedModuleSourceIds(blueprint.id), ...auditedModuleSourcesM6M8(blueprint.id), ...auditedModuleSourcesM9M11(blueprint.id), ...auditedModuleSourcesM12M14(blueprint.id), ...auditedModuleSourcesM15M17(blueprint.id), ...auditedModuleSourcesM18M20(blueprint.id), ...auditedModuleSourcesM21M23(blueprint.id), ...auditedModuleSourcesM24M26(blueprint.id), ...auditedModuleSourcesM27M34(blueprint.id), ...auditedModuleSourcesM35M44(blueprint.id), ...auditedModuleSourcesM45M54(blueprint.id), ...auditedModuleSourcesM55M64(blueprint.id), ...auditedModuleSourcesM65M74(blueprint.id), ...auditedModuleSourcesM75M84(blueprint.id)])] }
+  return { type: 'sources' as const, sourceIds: [...new Set([...blueprint.sourceIds, ...transversalOfficeSources(blueprint.id), ...foundationModuleExtraSourceIds(blueprint.id), ...auditedModuleSourceIds(blueprint.id), ...auditedModuleSourcesM6M8(blueprint.id), ...auditedModuleSourcesM9M11(blueprint.id), ...auditedModuleSourcesM12M14(blueprint.id), ...auditedModuleSourcesM15M17(blueprint.id), ...auditedModuleSourcesM18M20(blueprint.id), ...auditedModuleSourcesM21M23(blueprint.id), ...auditedModuleSourcesM24M26(blueprint.id), ...auditedModuleSourcesM27M34(blueprint.id), ...auditedModuleSourcesM35M44(blueprint.id), ...auditedModuleSourcesM45M54(blueprint.id), ...auditedModuleSourcesM55M64(blueprint.id), ...auditedModuleSourcesM65M74(blueprint.id), ...auditedModuleSourcesM75M84(blueprint.id), ...exceptionLessonSources(blueprint.id)])] }
 }
 
 function specializedFoundationBlocks(blueprint: ProcuraduriaModuleBlueprint): LessonBlock[] {
