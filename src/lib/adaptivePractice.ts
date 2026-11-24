@@ -1,6 +1,7 @@
 import type { Course, Question } from '../types/course'
 import type { CourseProgress } from '../types/progress'
 import { practiceQuestionPool } from './practiceQuestionPool'
+import { PGN_COURSE_ID, isPgnAuthored, pgnDefaultPracticePool } from './procuraduriaScopes'
 
 function daysSince(iso?: string) {
   if (!iso) return Number.POSITIVE_INFINITY
@@ -38,6 +39,8 @@ export function adaptiveQuestionScore(question: Question, progress?: CourseProgr
   const supplemental = new Set(course?.practiceConfig?.transversalModuleIds ?? [])
   if (priority.has(question.moduleId)) score += 1.25
   if (supplemental.has(question.moduleId)) score -= 1.25
+  // Preferir casos redactados individualmente sin ocultar errores históricos.
+  if (course?.id === PGN_COURSE_ID && isPgnAuthored(question)) score += 2
   score += question.difficulty * 0.08
   return score
 }
@@ -49,7 +52,7 @@ function stableTiebreaker(id: string, seed: number) {
 }
 
 export function buildAdaptiveSession(course: Course, progress?: CourseProgress, size = 12, seed = Date.now()) {
-  const available = practiceQuestionPool(course)
+  const available = pgnDefaultPracticePool(course, practiceQuestionPool(course))
   return available
     .map((question) => ({ question, score: adaptiveQuestionScore(question, progress, course), tie: stableTiebreaker(question.id, seed) }))
     .sort((a, b) => b.score - a.score || a.tie - b.tie)
