@@ -399,4 +399,94 @@ export const procuraduriaSources: SourceRef[] = [
     "verifiedAt": "2026-11-23",
     "note": "Reglamenta artículo 73 de Ley 1474 modificado por Ley 2195. Anexo técnico, publicación, enfoque de riesgos y transición; verificar versión y plazos aplicables."
   },
+  {
+    "id": "ley-2294-2023",
+    "title": "Ley 2294 de 2023 · determinantes territoriales",
+    "publisher": "Congreso",
+    "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=209510",
+    "type": "official",
+    "note": "Art. 32 modifica art. 10 Ley 388.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "ley-87-1993",
+    "title": "Ley 87 de 1993 · control interno",
+    "publisher": "Congreso",
+    "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=300",
+    "type": "official",
+    "note": "Control interno y ámbito legal.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-res-329-2021",
+    "title": "Resolución 329 de 2021 · SGC PGN",
+    "publisher": "Procuraduría General de la Nación",
+    "url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0329_2021.htm",
+    "type": "official",
+    "note": "Política de calidad y mejora continua; contrastar documentos vigentes.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "nist-sp-800-92",
+    "title": "NIST SP 800-92 · gestión de logs",
+    "publisher": "NIST",
+    "url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "type": "reference",
+    "note": "Referencia técnica de 2006, no norma procesal colombiana.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "nist-sp-800-86",
+    "title": "NIST SP 800-86 · técnicas forenses",
+    "publisher": "NIST",
+    "url": "https://csrc.nist.gov/pubs/sp/800/86/final",
+    "type": "reference",
+    "note": "Referencia técnica de 2006; no sustituye CGD.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "rfc-5322",
+    "title": "RFC 5322 · formato de correo",
+    "publisher": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/info/rfc5322/",
+    "type": "reference",
+    "note": "Encabezados y formato.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "rfc-6376",
+    "title": "RFC 6376 · DKIM",
+    "publisher": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/info/rfc6376/",
+    "type": "reference",
+    "note": "Firma de dominio y partes cubiertas.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "rfc-8601",
+    "title": "RFC 8601 · Authentication-Results",
+    "publisher": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/info/rfc8601/",
+    "type": "reference",
+    "note": "Resultados de autenticación y confianza.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "rfc-7208",
+    "title": "RFC 7208 · SPF",
+    "publisher": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/info/rfc7208/",
+    "type": "reference",
+    "note": "Autorización de envío por dominio.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "rfc-9989",
+    "title": "RFC 9989 · DMARC",
+    "publisher": "IETF / RFC Editor",
+    "url": "https://www.rfc-editor.org/rfc/rfc9989.html",
+    "type": "reference",
+    "note": "Estándar de 2026, sustituye RFC 7489 y 9091.",
+    "verifiedAt": "2026-11-23"
+  },
 ]
