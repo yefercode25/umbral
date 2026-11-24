@@ -320,23 +320,63 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     correctOptionId: 'a',
     explanation: 'El artículo 208 de la Ley 1952 de 2019, modificado por el artículo 34 de la Ley 2094 de 2021, vincula la indagación previa a dudas sobre identificación del posible autor, fija seis meses y prevé una posible extensión especial por violaciones a derechos humanos o derecho internacional humanitario. La clave es analizar supuesto, norma, término y decisión, no reconocer solo el número.',
   }],
-  'pgn-m18': [{
-    number: 1,
-    caseText: 'Una veeduría pide una matriz de seguimiento de un contrato y sus actas de supervisión. En algunas columnas aparecen teléfonos personales y datos identificables de personas denunciantes, junto con información administrativa que no está sometida a reserva. La oficina jurídica recomienda negar toda la matriz. La dependencia técnica puede generar una versión que conserve la trazabilidad de los datos públicos y suprima los campos protegidos.',
-    stem: '¿Cómo debe evaluarse la solicitud para no convertir una restricción puntual en una denegación total?',
-    options: [
-      'Examinar la información separable y el fundamento legal de cualquier reserva; permitir acceso a lo público mediante entrega parcial o versión protegida cuando proceda, con respuesta motivada sobre las exclusiones.',
-      'Negar el archivo completo porque la presencia de un dato personal basta para clasificar como reservadas todas las actuaciones del expediente.',
-      'Publicar el archivo íntegro para evitar alegaciones de censura, ya que todo documento relacionado con contratos estatales es de difusión irrestricta.',
+  'pgn-m18': [
+  {
+    "number": 1,
+    "caseText": "El equipo de prevención debe responder a una veeduría que pide actas y cifras de supervisión. Hay anexos con identificadores privados; la dependencia ha verificado que las cifras son públicas y separables y propone negar todo por contener datos personales. El borrador de respuesta no señala la disposición legal que limita el acceso.",
+    "stem": "¿Cuál alternativa respeta la máxima publicidad y permite controlar la restricción de acceso?",
+    "options": [
+      "Entregar una versión pública de lo divulgable, motivar las exclusiones con la base legal y conservar el original y la constancia de respuesta.",
+      "Clasificar todo el expediente como reservado por decisión de la jefatura sin valorar la información separable.",
+      "Entregar el original completo y pedir al receptor que no difunda los identificadores privados."
     ],
-    rationales: [
-      'Conserva el principio de acceso y exige protección específica, motivada y proporcionada de información legalmente restringida.',
-      'La restricción debe examinarse en su alcance; no puede extenderse sin fundamento a porciones divulgables.',
-      'El interés público contractual no elimina los límites legales que protegen datos personales.',
+    "rationales": [
+      "Ley 1712, arts. 18, 19, 21 y 28; Ley 1755, arts. 25 y 26: la restricción debe ser fundada, delimitada y comunicada.",
+      "Omite un presupuesto legal o anticipa un efecto que no corresponde.",
+      "No resuelve el problema de la etapa ni protege los derechos involucrados."
     ],
-    correctOptionId: 'a',
-    explanation: 'La transparencia y el habeas data no son absolutos. Es necesario identificar qué información es pública, cuál está protegida y si una entrega parcial conserva el derecho de acceso.',
-  }],
+    "correctOptionId": "a",
+    "explanation": "Ley 1712, arts. 18, 19, 21 y 28; Ley 1755, arts. 25 y 26: la restricción debe ser fundada, delimitada y comunicada."
+  }
+],
+  'pgn-m19': [
+  {
+    "number": 1,
+    "caseText": "En una actuación disciplinaria hay suficientes documentos para considerar una hipótesis de falta, pero aún se discuten elementos relativos a la responsabilidad personal. El profesional de apoyo recibe la instrucción de proyectar una sanción inmediata, aunque el asunto está en instrucción y no ha llegado al juzgamiento.",
+    "stem": "¿Qué criterio permite escoger el acto propio de la etapa sin anticipar la decisión definitiva?",
+    "options": [
+      "Proyectar sanción definitiva porque el principio de economía permite concentrar instrucción y juzgamiento.",
+      "Determinar si procede completar diligencias o evaluar la investigación conforme a los requisitos de cargos o archivo; reservar el fallo a la autoridad de juzgamiento y su estándar probatorio.",
+      "Remitir un fallo absolutorio sin evaluar los elementos recaudados, porque cualquier controversia impide continuar la investigación."
+    ],
+    "rationales": [
+      "Omite un presupuesto legal o anticipa un efecto que no corresponde.",
+      "CGD, arts. 12, 160 y 222: la fase y el estándar requerido delimitan la actuación; ni los cargos ni la hipótesis son un fallo.",
+      "No resuelve el problema de la etapa ni protege los derechos involucrados."
+    ],
+    "correctOptionId": "b",
+    "explanation": "CGD, arts. 12, 160 y 222: la fase y el estándar requerido delimitan la actuación; ni los cargos ni la hipótesis son un fallo."
+  }
+],
+  'pgn-m20': [
+  {
+    "number": 1,
+    "caseText": "Un profesional de apoyo de la Procuraduría revisa un informe que atribuye al jefe de una dependencia toda irregularidad detectada en un sistema. El documento no identifica una acción u omisión concreta del jefe ni el deber funcional que habría incumplido; hay evidencia de posibles acciones de terceros no examinadas.",
+    "stem": "¿Cuál recomendación permite orientar la instrucción sin prejuzgar ni renunciar al examen de los hechos?",
+    "options": [
+      "Delimitar conducta y deber funcional, verificar atribución personal, afectación y culpabilidad, e incorporar tanto evidencia de cargo como de descargo.",
+      "Mantener la atribución al jefe por su posición jerárquica y exigirle que demuestre que no causó la irregularidad.",
+      "Excluir a todos los servidores de la dependencia por existir indicios de participación de terceros."
+    ],
+    "rationales": [
+      "CGD, arts. 9, 10, 13, 14 y 160: la responsabilidad objetiva está proscrita; el deber de investigación integral no se traslada al disciplinable.",
+      "Omite un presupuesto legal o anticipa un efecto que no corresponde.",
+      "No resuelve el problema de la etapa ni protege los derechos involucrados."
+    ],
+    "correctOptionId": "a",
+    "explanation": "CGD, arts. 9, 10, 13, 14 y 160: la responsabilidad objetiva está proscrita; el deber de investigación integral no se traslada al disciplinable."
+  }
+],
   'pgn-m24': [{
     number: 1,
     caseText: 'Un equipo revisa actuaciones relativas a hechos desarrollados durante varios meses, con una conducta que podría ser continuada y actuaciones procesales producidas años después. En un informe se consigna una única fecha de inicio del contrato y se deduce, sin más comprobación, que la potestad disciplinaria prescribió. El expediente no contiene todavía un cuadro de fechas, calificación de la conducta ni examen del efecto de las decisiones posteriores.',
