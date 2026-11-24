@@ -78,7 +78,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
           ['Antes', 'Leer acto de comisión, objeto preciso, habilitación, medio probatorio, persona citada y reglas de tiempo y comunicación.'],
           ['Durante', 'Comprobar identidad, respetar garantías y contradicción conforme a la fase, registrar fielmente respuestas y eventual novedad relevante.'],
           ['Después', 'Cerrar acta, conservar soportes e integridad, remitir expediente de diligencia al comitente y señalar lo que excede el encargo.'],
-          ['Ante una pregunta fuera de objeto', 'Documentar la novedad y solicitar instrucciones de autoridad competente; no expandir el objeto de la comisión unilateralmente.'],
+          ['Ante una pregunta fuera de objeto', 'Documentar la novedad: distinguir prueba directamente derivada habilitada por art. 152, salvo prohibición expresa, de asunto ajeno que requiere instrucción del comitente.'],
         ],
       },
       {
@@ -91,7 +91,7 @@ const blocks: Record<string, Partial<Record<1 | 2 | 3, LessonBlock[]>>> = {
         type: 'comparison', title: 'Tres situaciones que modifican el alcance de una comisión',
         columns: ['Variación del expediente', 'Decisión razonada'],
         rows: [
-          ['Se descubre que el acto no incluye un documento solicitado', 'Revisar el objeto y pedir definición al comitente antes de ampliar el recaudo.'],
+          ['Se descubre que el acto no incluye un documento solicitado', 'Verificar si el documento surge directamente de la prueba comisionada: el art. 152 autoriza practicar esa prueba salvo prohibición expresa; si excede ese supuesto, solicitar definición al comitente. Si venció el plazo, pedir ampliación.'],
           ['Una persona requiere garantía procesal específica', 'Aplicar las reglas de la prueba y documentar el tratamiento, sin abreviar el acto por rapidez.'],
           ['Se cuestiona la competencia del despacho de origen', 'Poner en conocimiento el hecho y verificar la actuación procedente; la comisión no sana automáticamente incompetencias.'],
           ['La diligencia está concluida y aparece contradicción', 'Remitir acta, soportes y salvedades; la valoración y demás decisiones siguen en su autoridad y fase.'],

@@ -363,4 +363,13 @@ export const procuraduriaSources: SourceRef[] = [
     verifiedAt: '2026-11-22',
     note: 'Lineamientos de gestión documental, expediente electrónico, metadatos y tablas de retención.',
   },
+  {
+    id: 'cc-c030-2023',
+    title: 'Sentencia C-030 de 2023 · potestad disciplinaria de la PGN',
+    publisher: 'Corte Constitucional de Colombia',
+    url: 'https://www.corteconstitucional.gov.co/relatoria/2023/C-030-23.htm',
+    type: 'official',
+    verifiedAt: '2026-11-23',
+    note: 'Naturaleza administrativa de la potestad disciplinaria de la PGN y garantía judicial especial para sanciones que afectan derechos políticos de servidores de elección popular. Consultar el régimen vigente para su aplicación concreta.',
+  },
 ]

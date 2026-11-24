@@ -491,57 +491,158 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "explanation": "CGD arts. 208 y 211: la identificación habilita la apertura cuando corresponde; no sustituye las etapas y estándares posteriores."
   }
 ],
-  'pgn-m29': [{
-    number: 1,
-    caseText: 'Terminadas las diligencias ordenadas durante una investigación disciplinaria, un profesional prepara un proyecto que envía directamente el pliego de cargos a la oficina de juzgamiento. El expediente registra la recepción de las pruebas y un informe de cierre, pero no contiene el acto de cierre de investigación ni constancia del traslado para alegatos precalificatorios. Un compañero afirma que estas actuaciones son prescindibles porque las pruebas ya fueron practicadas.',
-    stem: '¿Cuál corrección debe recomendarse antes de evaluar el mérito del expediente?',
-    options: [
-      'Declarar el cierre de investigación y otorgar el traslado legal de diez días para alegatos precalificatorios; después evaluar el mérito de las pruebas y decidir lo procedente.',
-      'Enviar directamente a juzgamiento, ya que la suficiencia de las pruebas vuelve innecesario el cierre y los alegatos.',
-      'Archivar por economía procesal, pues cualquier omisión formal en la preparación del pliego demuestra que no procede continuar.',
+  'pgn-m27': [
+  {
+    "number": 1,
+    "caseText": "El equipo de instrucción recibe una noticia que identifica al posible autor de una alteración documental y el acto concreto afectado. El proyecto de apertura solo dice que se investigará su conducta laboral durante todo el año; no distingue el episodio ni las pruebas ordenadas. También hay un informe de control disciplinario interno sobre los mismos hechos y constancia de vinculación del servidor.",
+    "stem": "¿Qué ajuste necesita el proyecto antes de su expedición por la autoridad competente?",
+    "options": [
+      "Mantener una apertura genérica para poder agregar cualquier conducta sin examinar conexidad y comunicar a control interno únicamente al final.",
+      "Sustituir el auto de apertura por un pliego de cargos dado que ya se conoce un posible autor y existe un informe institucional.",
+      "Delimitar hechos e identidad, ordenar las pruebas y soportes requeridos por el art. 215 y comprobar los avisos y coordinación del art. 216, sin convertir la apertura en un cargo anticipado."
     ],
-    rationales: [
-      'Respeta la secuencia de cierre, traslado y evaluación exigida por el procedimiento.',
-      'La eficacia administrativa no suprime las oportunidades previstas para la actuación.',
-      'Una irregularidad procedimental requiere análisis de su alcance; no equivale por sí sola a ausencia de mérito.',
+    "rationales": [
+      "La amplitud indeterminada desconoce el objeto de investigación y las comunicaciones oportunas.",
+      "El estándar de apertura es distinto del de formulación de cargos.",
+      "La decisión de apertura tiene contenido y comunicaciones propios; identificar al autor no demuestra los requisitos para cargos."
     ],
-    correctOptionId: 'a',
-    explanation: 'Conforme al artículo 220 del Código General Disciplinario, tras el cierre corresponde el traslado para alegatos precalificatorios por diez días. La evaluación del mérito se ubica después de esa oportunidad.',
-  }],
-  'pgn-m30': [{
-    number: 1,
-    caseText: 'La investigación contiene una declaración que compromete a un funcionario, un documento que parece atribuirle la actuación y un registro de reparto que indica que ese día otra persona tenía la tarea. El proyecto de pliego cita únicamente la declaración inicial, incorpora una afirmación de culpabilidad definitiva y solicita notificar al investigado como si el juicio de responsabilidad ya hubiera concluido.',
-    stem: '¿Qué revisión resulta indispensable al evaluar archivo o formulación de cargos?',
-    options: [
-      'Formular cargos en los términos del proyecto porque en esta fase basta con una evidencia que sustente la sospecha, aunque existan descargos relevantes.',
-      'Archivar de inmediato porque la presencia de un dato exculpatorio vuelve imposible cualquier formulación de cargos.',
-      'Valorar integralmente los elementos de cargo y descargo, precisar hechos, normas, ilicitud y culpabilidad en el estándar de la etapa y distinguir formulación de cargos de declaración de responsabilidad.',
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, arts. 13, 211–217. La decisión de apertura tiene contenido y comunicaciones propios; identificar al autor no demuestra los requisitos para cargos. La primera alternativa incorrecta falla porque la amplitud indeterminada desconoce el objeto de investigación y las comunicaciones oportunas. La segunda falla porque el estándar de apertura es distinto del de formulación de cargos."
+  }
+],
+  'pgn-m28': [
+  {
+    "number": 1,
+    "caseText": "El defensor solicita controvertir un informe de análisis digital que sustenta una hipótesis de alteración. El despacho le permite leer la conclusión, pero omite los registros y el método relevantes, que están incorporados en el expediente y pueden consultarse bajo las garantías aplicables. El funcionario considera que ofrecer la versión libre reemplaza cualquier oportunidad de examen de esos soportes.",
+    "stem": "¿Qué medida preserva el derecho de defensa sin confundir versión libre con contradicción probatoria?",
+    "options": [
+      "Ofrecer otra versión libre y negar el acceso a los registros porque la explicación del investigado constituye su única forma de defensa.",
+      "Facilitar acceso a los soportes en los términos legales y tramitar la solicitud de contradicción o prueba, dejando constancia de las decisiones y garantías correspondientes.",
+      "Exigir una aceptación de los hechos antes de permitir acceso a los anexos técnicos para evitar dilaciones."
     ],
-    rationales: [
-      'La evaluación no puede omitir evidencia relevante ni anticipar la conclusión propia de juzgamiento.',
-      'La evidencia favorable exige valoración, pero su sola existencia no obliga automáticamente a archivar.',
-      'Conserva el alcance de la evaluación del mérito y la separación entre imputación y fallo.',
+    "rationales": [
+      "La versión no sustituye el acceso ni las facultades probatorias.",
+      "Los arts. 109–112 reconocen facultades de defensa y contradicción independientes de la versión.",
+      "Condicionar la defensa a una admisión desconoce las garantías procesales."
     ],
-    correctOptionId: 'c',
-    explanation: 'La formulación de cargos delimita la acusación y debe estar motivada; no es sanción ni equivale a declarar culpabilidad. Deben examinarse todos los soportes pertinentes.',
-  }],
-  'pgn-m32': [{
-    number: 1,
-    caseText: 'Un expediente presenta una notificación inicialmente irregular. Con posterioridad, la persona vinculada participó en varias diligencias y aportó pruebas, pero ahora alega que perdió la oportunidad de controvertir una prueba practicada antes de tener conocimiento del trámite. Un informe sostiene que todo defecto formal exige eliminar íntegramente el expediente, incluso las pruebas recaudadas legalmente por fuera de la actuación afectada.',
-    stem: '¿Qué análisis debe preceder a una decisión de nulidad o saneamiento?',
-    options: [
-      'Declarar la nulidad total de la actuación sin identificar qué garantía fue afectada ni qué diligencias podrían conservarse.',
-      'Identificar la causal aplicable y la trascendencia del defecto, examinar si hubo afectación concreta de defensa o debido proceso, y delimitar las actuaciones que deben reponerse y las pruebas que conservan validez.',
-      'Negar automáticamente cualquier nulidad porque la intervención posterior del disciplinado siempre sana todas las afectaciones previas.',
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, arts. 15, 109–112, 115, 161–162; Constitución 33. Los arts. 109–112 reconocen facultades de defensa y contradicción independientes de la versión. La primera alternativa incorrecta falla porque la versión no sustituye el acceso ni las facultades probatorias. La segunda falla porque condicionar la defensa a una admisión desconoce las garantías procesales."
+  }
+],
+  'pgn-m29': [
+  {
+    "number": 1,
+    "caseText": "Un profesional recibe una carpeta con todas las pruebas practicadas y un borrador de cierre aún sin adoptar. El sistema tiene marcado el estado de evaluación porque la oficina redactó un pliego preliminar. No existe traslado de alegatos y uno de los sujetos procesales solicita oportunidad para explicar la procedencia de un registro técnico. El jefe solicita consolidar un calendario de las actuaciones faltantes.",
+    "stem": "¿Qué orden debe tener el calendario para respetar las fases legalmente diferenciadas?",
+    "options": [
+      "Formalizar el cierre, surtir y controlar los diez días de traslado de alegatos, estudiar el expediente y adoptar luego la decisión motivada de evaluación.",
+      "Dar por cerrado el traslado desde la creación del borrador y expedir cargos para que la defensa discuta el registro en juicio.",
+      "Reabrir siempre por seis meses porque un sujeto procesal anunció que desea alegar sobre una prueba ya recaudada."
     ],
-    rationales: [
-      'La nulidad exige alcance motivado y no borra indistintamente todo lo actuado.',
-      'Aplica los controles de causal, trascendencia y efecto sobre garantías procesales.',
-      'La intervención posterior no elimina sin más una afectación material anterior.',
+    "rationales": [
+      "Cierre, traslado y evaluación son actuaciones diferenciadas por arts. 220 y 221.",
+      "Un borrador y un estado interno no acreditan el traslado legal.",
+      "La presentación de alegatos no implica una prórroga automática."
     ],
-    correctOptionId: 'b',
-    explanation: 'El régimen de nulidades del CGD exige examinar la causal, los principios de trascendencia y saneamiento y la conservación de pruebas legalmente incorporadas.',
-  }],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, arts. 213, 220–222. Cierre, traslado y evaluación son actuaciones diferenciadas por arts. 220 y 221. La primera alternativa incorrecta falla porque un borrador y un estado interno no acreditan el traslado legal. La segunda falla porque la presentación de alegatos no implica una prórroga automática."
+  }
+],
+  'pgn-m30': [
+  {
+    "number": 1,
+    "caseText": "En la evaluación de una investigación, un certificado auténtico y verificado demuestra que el servidor atribuido no desempeñaba la función ni realizó la actuación investigada. El resto de los soportes no lo relaciona con la conducta. La dirección sugiere formular cargos para que el funcionario de juzgamiento confirme la ausencia de responsabilidad y evitar que la oficina registre un archivo.",
+    "stem": "¿Qué salida protege el estándar legal y la competencia del instructor?",
+    "options": [
+      "Formular cargos de manera preventiva porque el juzgamiento puede absolver al servidor si el certificado resulta convincente.",
+      "Declarar una sanción leve por el riesgo de que la conducta haya ocurrido, aunque no exista prueba sobre ese servidor.",
+      "Valorar la terminación y el archivo motivado conforme al supuesto plenamente acreditado, sin formular cargos carentes de prueba que comprometa personalmente al investigado."
+    ],
+    "rationales": [
+      "El juicio no debe suplir una condición de procedencia ausente.",
+      "La eventual ocurrencia del hecho no establece responsabilidad del investigado.",
+      "El art. 90 prevé terminación por supuestos demostrados; art. 222 impide cargos sin soporte personal."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, arts. 90, 160, 221–225. El art. 90 prevé terminación por supuestos demostrados; art. 222 impide cargos sin soporte personal. La primera alternativa incorrecta falla porque el juicio no debe suplir una condición de procedencia ausente. La segunda falla porque la eventual ocurrencia del hecho no establece responsabilidad del investigado."
+  }
+],
+  'pgn-m31': [
+  {
+    "number": 1,
+    "caseText": "El instructor expide pliego de cargos. Antes de terminar sus notificaciones, el apoderado presenta un escrito titulado apelación y la oficina propone concederlo para garantizar defensa. En el expediente no hay todavía constancia de notificación a uno de los destinatarios. La jefatura pide al profesional de apoyo revisar la procedencia del recurso y la oportunidad de remitir el expediente al juzgador.",
+    "stem": "¿Cuál recomendación distingue el recurso improcedente y el requisito previo a la remisión?",
+    "options": [
+      "Conceder apelación del pliego porque toda decisión que comprometa derechos admite segunda instancia inmediata.",
+      "Tramitar el escrito según la regla de improcedencia del recurso contra cargos, dejar constancia y completar las notificaciones antes de remitir dentro del término del art. 225.",
+      "Remitir de inmediato desde la firma del pliego y dejar al juzgador la notificación pendiente sin examinar el art. 225."
+    ],
+    "rationales": [
+      "El derecho de defensa no crea un recurso no previsto por la ley.",
+      "El art. 222 excluye recurso contra cargos; art. 225 condiciona remisión al cumplimiento de notificaciones.",
+      "La remisión tiene un hito legal previo distinto de la expedición."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, arts. 120–136, 222, 225. El art. 222 excluye recurso contra cargos; art. 225 condiciona remisión al cumplimiento de notificaciones. La primera alternativa incorrecta falla porque el derecho de defensa no crea un recurso no previsto por la ley. La segunda falla porque la remisión tiene un hito legal previo distinto de la expedición."
+  }
+],
+  'pgn-m32': [
+  {
+    "number": 1,
+    "caseText": "En una actuación se presenta una solicitud de nulidad por vulneración de defensa. El despacho la decide conforme a la causal alegada. En otro proceso, el funcionario advierte de oficio una causal legal y declara nulidad motivada. La secretaría usa una plantilla idéntica que ofrece reposición en los dos expedientes. Se requiere revisar el recurso procedente antes de expedir las comunicaciones.",
+    "stem": "¿Qué distinción establece el Código entre estas dos decisiones?",
+    "options": [
+      "Conceder reposición en ambos casos porque cualquier providencia que se refiera a nulidad es recurrible.",
+      "Identificar reposición contra la decisión que resuelve solicitud de nulidad y ausencia de recurso contra la declaratoria oficiosa de nulidad del art. 204.",
+      "Negar todo recurso en ambos casos porque las nulidades nunca admiten impugnación dentro del CGD."
+    ],
+    "rationales": [
+      "No se puede extender el recurso de la solicitud a la declaratoria oficiosa.",
+      "Arts. 133 y 204 regulan hipótesis distintas: solicitud y declaratoria oficiosa.",
+      "El art. 133 incluye la decisión sobre solicitud de nulidad."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, arts. 202–207. Arts. 133 y 204 regulan hipótesis distintas: solicitud y declaratoria oficiosa. La primera alternativa incorrecta falla porque no se puede extender el recurso de la solicitud a la declaratoria oficiosa. La segunda falla porque el art. 133 incluye la decisión sobre solicitud de nulidad."
+  }
+],
+  'pgn-m33': [
+  {
+    "number": 1,
+    "caseText": "En una diligencia comisionada de recepción de testimonio, una persona aporta un soporte directamente relacionado con el objeto y solicita además que el comisionado archive la investigación por supuesta falta de competencia. No existe prohibición expresa sobre pruebas derivadas y la comisión permanece vigente. La carpeta tiene instrucciones sobre devolución y constancias de contradicción.",
+    "stem": "¿Cómo se separan la actuación probatoria permitida y la petición de decisión de fondo?",
+    "options": [
+      "Abstenerse de tramitar cualquier documento nuevo y resolver el archivo porque el comisionado dispone temporalmente de la carpeta.",
+      "Practicar el soporte y decidir de inmediato archivo o cargos porque la comisión habilita todas las decisiones de instrucción.",
+      "Tramitar la prueba directamente derivada conforme al art. 152, preservar soportes y garantías y remitir al comitente la solicitud de archivo para decisión de la autoridad competente."
+    ],
+    "rationales": [
+      "No hay prohibición automática para la prueba derivada y la custodia no otorga competencia de archivo.",
+      "El encargo probatorio tiene objeto delimitado; cargos y archivo corresponden al funcionario habilitado.",
+      "La comisión permite pruebas directamente derivadas bajo condiciones, no la transferencia de competencia decisoria."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, arts. 149–153, 156. La comisión permite pruebas directamente derivadas bajo condiciones, no la transferencia de competencia decisoria. La primera alternativa incorrecta falla porque no hay prohibición automática para la prueba derivada y la custodia no otorga competencia de archivo. La segunda falla porque el encargo probatorio tiene objeto delimitado; cargos y archivo corresponden al funcionario habilitado."
+  }
+],
+  'pgn-m34': [
+  {
+    "number": 1,
+    "caseText": "Un profesional redacta una nota sobre un proceso disciplinario administrativo de la PGN. Afirma que la separación entre instrucción y juzgamiento convierte al funcionario de juicio en juez de la República y que toda sanción a un servidor de elección popular se ejecuta exactamente igual que la de un servidor de carrera. La revisión jurídica advierte que la Sentencia C-030 de 2023 modificó el entendimiento de la función.",
+    "stem": "¿Qué precisión debe introducirse antes de usar la nota como referencia de estudio o actuación?",
+    "options": [
+      "Mantener que la PGN ejerce jurisdicción por el solo nombre juzgamiento y aplicar idéntica regla de ejecución a todos los servidores.",
+      "Distinguir naturaleza administrativa de la potestad de la PGN, separación funcional interna y control judicial especial para las sanciones que afectan derechos políticos de elegidos popularmente, verificando el régimen vigente.",
+      "Concluir que la PGN perdió toda competencia para investigar disciplinariamente a servidores de elección popular después de C-030."
+    ],
+    "rationales": [
+      "El nombre de la etapa no determina naturaleza jurisdiccional.",
+      "C-030 de 2023 distingue potestad administrativa y garantía judicial especial; el art. 12 mantiene separación funcional.",
+      "La decisión constitucional no elimina toda actuación disciplinaria administrativa de la PGN."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, arts. 12, 160, 225, 225A, 225D; C-030/2023. C-030 de 2023 distingue potestad administrativa y garantía judicial especial; el art. 12 mantiene separación funcional. La primera alternativa incorrecta falla porque el nombre de la etapa no determina naturaleza jurisdiccional. La segunda falla porque la decisión constitucional no elimina toda actuación disciplinaria administrativa de la PGN."
+  }
+],
   'pgn-m35': [{
     number: 1,
     caseText: 'Un informe disciplinario considera acreditado un incumplimiento por la declaración de un ciudadano. El disciplinable entrega documentos que sugieren que el hecho ocurrió durante una falla institucional y no como resultado de su decisión. El investigador considera que no es necesario revisar el nuevo material porque corresponde al servidor demostrar su inocencia. El jefe solicita un proyecto de decisión motivada.',
