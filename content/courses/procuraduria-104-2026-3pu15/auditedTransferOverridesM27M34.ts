@@ -68,16 +68,16 @@ export const auditedTransferOverridesM27M34: Record<string, [FoundationTransferO
       "caseText": "En versión libre un servidor explica que utilizó una credencial institucional y se abstiene de contestar preguntas sobre una operación. El acta no contiene aceptación expresa de cargos, ni se tramitó una confesión con las garantías legales. Un reporte de auditoría ubica la cuenta, pero hay dudas sobre otros operadores. Se propone considerar el silencio como confesión y aplicar automáticamente un beneficio sancionatorio.",
       "stem": "¿Qué tratamiento corresponde a la versión y a la evidencia técnica disponible?",
       "correct": {
-        "text": "Registrar la versión y el silencio sin inferir confesión, continuar la valoración independiente de la evidencia y exigir los requisitos legales si se presenta una confesión o aceptación de cargos.",
+        "text": "Registrar versión y silencio sin inferir confesión; valorar evidencia independiente y verificar requisitos del art. 161 ante una eventual aceptación.",
         "reason": "La versión libre no es una obligación de autoincriminarse; la confesión formal exige condiciones del art. 161."
       },
       "other": [
         {
-          "text": "Reconocer confesión por el silencio parcial y reducir la sanción sin verificar asistencia ni información de derechos.",
+          "text": "Reconocer confesión a partir del silencio parcial, corroborarla con el reporte de la cuenta y aplicar el beneficio sin comprobar información de derechos.",
           "reason": "El silencio no expresa aceptación libre e informada."
         },
         {
-          "text": "Excluir la versión completa del expediente porque el servidor no contestó todas las preguntas y mantener únicamente el reporte técnico.",
+          "text": "Excluir la versión íntegra por no responder todas las preguntas y conservar el reporte de auditoría como fuente exclusiva para establecer responsabilidad.",
           "reason": "La defensa puede ser parcial y debe valorarse junto al acervo, sin omitir sus explicaciones."
         }
       ],
@@ -174,16 +174,16 @@ export const auditedTransferOverridesM27M34: Record<string, [FoundationTransferO
       "caseText": "Durante la investigación disciplinaria se niega una solicitud de prueba del defensor; en un expediente diferente, ya en juzgamiento, se niega una prueba semejante. Un gestor de la oficina usa la misma plantilla que indica apelación en ambos casos porque las dos decisiones se refieren a pruebas. Las providencias están debidamente notificadas y el defensor aún puede actuar dentro del término aplicable.",
       "stem": "¿Qué recurso debe identificarse en función de la fase en cada expediente?",
       "correct": {
-        "text": "Reposición frente a negativa de prueba en investigación y apelación frente a negativa de prueba en juicio, verificando los demás requisitos y efectos legales.",
+        "text": "Identificar reposición en investigación y apelación en juzgamiento para la negativa de pruebas, verificando oportunidad y requisitos.",
         "reason": "Los arts. 133 y 134 distinguen expresamente negativa de pruebas según etapa."
       },
       "other": [
         {
-          "text": "Apelación en ambos casos, porque la materia probatoria prevalece sobre la fase de la actuación.",
+          "text": "Conceder apelación en ambos asuntos porque la negativa limita la práctica de prueba y tiene efectos semejantes sobre el derecho de defensa.",
           "reason": "La naturaleza de la prueba no elimina la distinción de recursos por etapa."
         },
         {
-          "text": "Reposición en ambos casos porque toda decisión probatoria es una providencia de simple trámite.",
+          "text": "Conceder reposición en ambos casos porque se trata de solicitudes probatorias formuladas antes del fallo, sin distinguir investigación y juzgamiento.",
           "reason": "La negativa de pruebas tiene recursos expresamente previstos; no es simple trámite sin efectos."
         }
       ],
@@ -300,16 +300,16 @@ export const auditedTransferOverridesM27M34: Record<string, [FoundationTransferO
       "caseText": "La oficina de instrucción culmina la evaluación y notifica válidamente el pliego a todos los destinatarios. El instructor propone conservar el expediente para dirigir también el juicio porque conoce los hechos y considera que así se evita repetir análisis. La dependencia cuenta con un funcionario de juzgamiento distinto, competente, y los anexos incluyen evidencia favorable que debe conservarse en el expediente.",
       "stem": "¿Qué decisión corresponde después de completar las notificaciones del pliego?",
       "correct": {
-        "text": "Remitir el expediente íntegro al juzgador competente dentro de tres días improrrogables, para que ejerza independientemente sus funciones y defina el tipo de juicio según la ley.",
+        "text": "Remitir íntegramente al juzgador competente dentro de tres días improrrogables para que ejerza sus funciones y defina el juicio.",
         "reason": "Arts. 12, 225 y 225A: separación efectiva, remisión oportuna e independencia del juzgador."
       },
       "other": [
         {
-          "text": "Conservar el expediente y asignar al instructor el juzgamiento con la aprobación de su superior, por economía procesal.",
+          "text": "Conservar el expediente y asignar también el juicio al instructor mediante aprobación superior, aprovechando su conocimiento de la evidencia y los cargos.",
           "reason": "La eficiencia no sustituye la garantía de funcionarios distintos."
         },
         {
-          "text": "Remitir únicamente los documentos de cargo y reservar los de descargo para evitar orientar la valoración independiente.",
+          "text": "Remitir los soportes de cargo al juzgador y conservar los de descargo hasta que solicite expresamente su traslado durante el juicio.",
           "reason": "La entrega parcial afecta la integridad y la posibilidad de valoración independiente."
         }
       ],
@@ -320,16 +320,16 @@ export const auditedTransferOverridesM27M34: Record<string, [FoundationTransferO
       "caseText": "En juicio ordinario, una vez vencida la oportunidad de descargos, el juzgador advierte un error de calificación del pliego basado en los elementos ya conocidos. El asistente propone que el juzgador redacte directamente el cargo corregido sin devolver el expediente, porque su competencia incluye valorar pruebas. No se trata de una variación por prueba sobreviniente agotada la etapa probatoria.",
       "stem": "¿Qué trámite distingue el supuesto de error inicial de calificación de la eventual prueba sobreviniente?",
       "correct": {
-        "text": "Devolver motivadamente al instructor para nueva calificación en el plazo máximo de quince días del art. 225D y seguir sus reglas de notificación y remisión, sin confundirlo con la variación por prueba sobreviniente.",
+        "text": "Devolver motivadamente al instructor para nueva calificación dentro del máximo de quince días del art. 225D, con notificación y remisión.",
         "reason": "Art. 225D diferencia la devolución por error de calificación de la variación por prueba sobreviniente."
       },
       "other": [
         {
-          "text": "Variar directamente el pliego en todo caso porque el juzgador tiene competencia general para reemplazar la instrucción.",
+          "text": "Modificar directamente el pliego en juicio, aplicando el procedimiento de variación por prueba sobreviniente aunque el error derive de los elementos iniciales.",
           "reason": "La atribución excepcional no elimina la ruta específica de devolución."
         },
         {
-          "text": "Dictar sentencia absolutoria automáticamente ante cualquier error de calificación sin tramitar el mecanismo específico previsto.",
+          "text": "Dictar absolución por el defecto de calificación, considerando que el juzgador carece de competencia para devolver la actuación una vez iniciada esa etapa.",
           "reason": "La ley contempla un mecanismo previo al fallo para esta hipótesis."
         }
       ],

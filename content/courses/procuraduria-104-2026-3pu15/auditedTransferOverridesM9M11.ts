@@ -49,7 +49,7 @@ export const auditedTransferOverridesM9M11: Record<string, [FoundationTransferOv
       caseText: 'Las interrupciones del suministro de agua amenazan el funcionamiento de un hospital municipal. La administración entregó un cronograma de reparaciones, pero las actas prueban que ninguna reparación se ha iniciado. Una queja identifica posibles omisiones de servidores, sin establecer aún sus deberes individuales. El equipo de la Procuraduría se divide: unos quieren esperar una sanción para vigilar el riesgo y otros solicitan imponer una sanción en la propia actuación preventiva.',
       stem: '¿Qué respuesta respeta el objetivo de la función preventiva y la independencia de las garantías disciplinarias?',
       correct: {
-        text: 'Registrar y verificar el riesgo, requerir soportes y compromisos de gestión dentro de la función preventiva, y separar cualquier hecho de posible incumplimiento para su valoración por autoridad disciplinaria competente.',
+        text: 'Verificar el riesgo, requerir medidas y soportes preventivos, y remitir posibles incumplimientos a la autoridad disciplinaria competente.',
         reason: 'El seguimiento del riesgo puede ser oportuno antes de una falta demostrada; una imputación disciplinaria requiere otra finalidad y garantías.',
       },
       other: [

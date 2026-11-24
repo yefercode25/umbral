@@ -6,16 +6,16 @@ export const auditedTransferOverridesM65M74: Record<string, [FoundationTransferO
       "caseText": "Un informe de 60 páginas tiene títulos escritos con negrita manual, numeración de apartados digitada y un índice elaborado a mano. Tras insertar una sección, las referencias de página dejan de coincidir. La dependencia debe mantener el contenido aprobado y entregar una nueva versión accesible, con navegación funcional y trazabilidad del trabajo. El archivo fuente permanece archivado.",
       "stem": "¿Qué intervención mejora estructura y actualización sin alterar el contenido sustancial aprobado?",
       "correct": {
-        "text": "Aplicar estilos jerárquicos, numeración y campos cuando corresponda, generar y actualizar el índice y comprobar referencias y accesibilidad en copia controlada.",
+        "text": "Aplicar estilos y campos, actualizar el índice y verificar referencias y accesibilidad en una copia controlada.",
         "reason": "La estructura semántica permite navegación y actualización reproducible."
       },
       "other": [
         {
-          "text": "Editar a mano los números del índice y agregar espacios para conservar la apariencia.",
+          "text": "Actualizar números del índice manualmente y conservar títulos con negrita.",
           "reason": "La edición manual no resuelve dependencia entre títulos y páginas."
         },
         {
-          "text": "Convertir cada página en una imagen para fijar el diseño y conservar la numeración.",
+          "text": "Convertir páginas a imágenes para fijar diagramación y referencias, conservando aparte el original.",
           "reason": "Las imágenes de páginas dificultan navegación, búsqueda y accesibilidad."
         }
       ],
@@ -26,16 +26,16 @@ export const auditedTransferOverridesM65M74: Record<string, [FoundationTransferO
       "caseText": "Un proyecto de oficio fue revisado por tres funcionarios mediante Control de cambios. El responsable elige Sin marcas y observa un texto limpio, pero el archivo conserva eliminaciones propuestas y comentarios con información personal. Debe entregar una versión definitiva al destinatario externo y conservar internamente la versión de trabajo según las reglas documentales. La autoridad ya aprobó qué modificaciones aceptar.",
       "stem": "¿Qué procedimiento distingue ocultar marcas de preparar una versión definitiva segura?",
       "correct": {
-        "text": "Guardar copia de entrega, aceptar o rechazar revisiones según aprobación, revisar comentarios e información oculta y comprobar la versión final; conservar el historial interno conforme al régimen.",
+        "text": "Preparar copia aprobada de entrega, resolver revisiones y comentarios, inspeccionar datos ocultos y conservar el historial interno.",
         "reason": "La vista de marcas no elimina información subyacente y la decisión debe respetar aprobación."
       },
       "other": [
         {
-          "text": "Enviar el documento en modo Sin marcas porque desactiva y elimina todas las revisiones.",
+          "text": "Guardar en vista Sin marcas y considerar eliminadas revisiones y comentarios.",
           "reason": "Sin marcas cambia presentación, no contenido de revisión."
         },
         {
-          "text": "Aceptar toda modificación sin revisar y borrar las copias de trabajo para impedir que se vean.",
+          "text": "Aceptar todas las revisiones para generar una copia limpia, sin verificar cuáles fueron aprobadas, y eliminar los archivos previos para evitar la exposición del historial.",
           "reason": "Aceptar indiscriminadamente y borrar historial compromete integridad y trazabilidad."
         }
       ],
@@ -110,16 +110,16 @@ export const auditedTransferOverridesM65M74: Record<string, [FoundationTransferO
       "caseText": "Cinco actuaciones cerradas tardaron 2, 3, 3, 4 y 28 días. La jefatura solicita una medida de tiempo típico y otra que evidencie la dispersión. El caso de 28 días corresponde a un registro legítimo que no debe eliminarse sin justificación. Los datos son comparables, completos y se refieren al mismo procedimiento. El informe debe evitar concluir que todos los casos tardan lo mismo.",
       "stem": "¿Qué resumen numérico representa la distribución y conserva el valor atípico en el análisis?",
       "correct": {
-        "text": "Media 8 días, mediana 3 y rango 26; examinar el extremo y explicar diferencia entre media y mediana.",
+        "text": "Media 8, mediana 3 y rango 26 días; examinar el extremo y explicar su efecto.",
         "reason": "La media es 40/5, la mediana es el tercero ordenado y el rango es 28−2."
       },
       "other": [
         {
-          "text": "Media 3, mediana 8 y rango 28; eliminar el extremo del informe.",
+          "text": "Media 3, mediana 8 y rango 28 días; retirar el extremo.",
           "reason": "Intercambia medidas y confunde máximo con rango."
         },
         {
-          "text": "Media 8 y mediana 8 porque todo promedio expresa el tiempo central.",
+          "text": "Media y mediana 8 días porque representan el mismo tiempo central.",
           "reason": "La mediana no tiene que coincidir con la media."
         }
       ],
@@ -174,16 +174,16 @@ export const auditedTransferOverridesM65M74: Record<string, [FoundationTransferO
       "caseText": "El sistema de correspondencia marca un trámite como cerrado el día del envío de la respuesta. El sistema de archivo conserva estado activo hasta incorporar constancia y cerrar el índice. Las dos fuentes se consultan el mismo día y tienen el mismo identificador. El informe inicial trata la diferencia como manipulación deliberada, aunque no ha revisado las reglas de transición ni el estado de la constancia.",
       "stem": "¿Qué análisis permite resolver la aparente contradicción antes de afirmar una irregularidad material?",
       "correct": {
-        "text": "Reconstruir significado de estados, fechas y constancias, verificar transición de ambos sistemas y documentar si la diferencia es explicable o permanece abierta.",
+        "text": "Verificar significado, fechas, constancias y transición de estados; documentar si la diferencia se explica o permanece abierta.",
         "reason": "Dos estados pueden representar hitos distintos del mismo trámite."
       },
       "other": [
         {
-          "text": "Elegir el estado cerrado porque fue actualizado primero y por tanto prevalece jurídicamente.",
+          "text": "Usar como estado definitivo el cierre de correspondencia porque fue registrado primero, sin comprobar qué condiciones se exigen para cerrar el expediente en archivo.",
           "reason": "El orden temporal no determina significado ni prevalencia."
         },
         {
-          "text": "Declarar falsedad de una fuente por el solo desacuerdo entre sus etiquetas.",
+          "text": "Clasificar como falsa la fuente que conserva el estado activo, dado que el identificador es idéntico y las dos consultas se realizaron el mismo día.",
           "reason": "Una diferencia semántica no demuestra falsedad."
         }
       ],
@@ -300,16 +300,16 @@ export const auditedTransferOverridesM65M74: Record<string, [FoundationTransferO
       "caseText": "Una oficina cumple desde hace meses una meta de oportunidad del 70 %, pero el análisis muestra que puede alcanzar un nivel mayor mediante redistribución autorizada de carga y automatización de verificaciones repetitivas. La dirección pide una propuesta con metas desafiantes, tiempo y recursos estimados, sin disminuir la calidad ni alterar el universo medido. La ficha del indicador permanece estable.",
       "stem": "¿Qué actuación ilustra Orientación a Resultados A en este caso de aprendizaje?",
       "correct": {
-        "text": "Proponer una meta superior realista y alineada con misión, estimar recursos y tiempos, obtener autorización y evaluar resultados con la misma ficha y controles.",
+        "text": "Proponer meta exigente alineada con misión, estimar recursos y tiempos, autorizar cambios y medir con ficha y controles vigentes.",
         "reason": "El nivel A supera metas mediante planificación de recursos y acciones legítimas."
       },
       "other": [
         {
-          "text": "Mantener la meta existente sin analizar oportunidades de mejora porque ya se cumple.",
+          "text": "Mantener la meta vigente aunque existan oportunidades verificables de mejora.",
           "reason": "No aprovecha capacidad de mejorar resultados institucionales."
         },
         {
-          "text": "Elevar la meta y excluir casos complejos del denominador para garantizar el porcentaje.",
+          "text": "Aumentar la meta y retirar temporalmente los expedientes complejos del universo, con el fin de demostrar que la redistribución produjo mejoras en oportunidad.",
           "reason": "Modificar el universo sin fundamento falsea comparabilidad."
         }
       ],
@@ -362,16 +362,16 @@ export const auditedTransferOverridesM65M74: Record<string, [FoundationTransferO
       "caseText": "En una actividad de reflexión aparece la afirmación «cuando detecto un error prefiero no informarlo si el equipo puede quedar mal». La persona cree que debe valorarla positivamente porque contiene una referencia a su equipo. Otra afirmación expresa que comunica desviaciones oportunamente. El ejercicio no establece que esas dos frases tengan una equivalencia psicométrica ni una puntuación oficial.",
       "stem": "¿Cómo debe interpretarse la primera afirmación antes de contestar según las instrucciones del ejercicio?",
       "correct": {
-        "text": "Leer la conducta literal de ocultar el error y distinguirla de responsabilidad y comunicación de riesgos, sin inventar una clave de puntuación.",
+        "text": "Interpretar la conducta de ocultamiento según las instrucciones, distinguiéndola de responsabilidad y comunicación de riesgos, sin inventar puntuaciones.",
         "reason": "La dirección depende de la conducta descrita y no de una palabra positiva."
       },
       "other": [
         {
-          "text": "Interpretarla como colaboración positiva porque protege la imagen del grupo.",
+          "text": "Interpretar positivamente la afirmación por su intención de proteger al equipo, aunque la conducta concreta consista en no comunicar un error identificado.",
           "reason": "Confunde lealtad con ocultamiento de un riesgo."
         },
         {
-          "text": "Elegir automáticamente el extremo contrario en toda afirmación que contenga una negación.",
+          "text": "Invertir automáticamente toda frase negativa sin analizar la conducta ni instrucciones.",
           "reason": "La negación no determina por sí sola una respuesta de frecuencia."
         }
       ],
@@ -404,16 +404,16 @@ export const auditedTransferOverridesM65M74: Record<string, [FoundationTransferO
       "caseText": "Una investigación ya tiene individualizado al posible autor y se han recaudado todas las pruebas ordenadas. Existe evidencia de cargo y una explicación de descargo pendiente de valoración. No se ha expedido auto de cierre ni surtido traslado para alegatos precalificatorios. El profesional prepara un calendario de actuaciones y recibe la instrucción de remitir inmediatamente el expediente al juzgador para ahorrar tiempo.",
       "stem": "¿Qué secuencia preserva los estándares de evaluación y las oportunidades procesales antes de la remisión?",
       "correct": {
-        "text": "Cerrar cuando proceda, surtir traslado de diez días, valorar pruebas y alegatos, decidir archivo o cargos y solo remitir tras notificaciones si hay pliego.",
+        "text": "Cerrar, trasladar diez días, valorar pruebas y alegatos, decidir archivo o cargos y remitir tras notificaciones del pliego.",
         "reason": "Los arts. 220–225 diferencian cierre, alegatos, evaluación y remisión."
       },
       "other": [
         {
-          "text": "Remitir al juzgador antes del cierre para que determine si formula cargos.",
+          "text": "Remitir primero al juzgador para que evalúe el mérito y formule cargos si corresponde.",
           "reason": "El juzgador no sustituye evaluación del instructor."
         },
         {
-          "text": "Formular cargos por existir prueba de cargo y omitir traslado porque aún habrá defensa en juicio.",
+          "text": "Formular cargos y omitir traslado porque todavía habrá defensa en juicio.",
           "reason": "La defensa posterior no reemplaza el traslado previo."
         }
       ],

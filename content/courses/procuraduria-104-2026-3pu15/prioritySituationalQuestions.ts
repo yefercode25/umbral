@@ -1409,9 +1409,9 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Un tablero compara el saldo de deuda pública registrado al cierre del año con los ingresos recaudados durante doce meses. El analista los denomina ambos ingresos disponibles y propone sumarlos para evaluar la capacidad de financiar un programa. La documentación permite identificar fechas, períodos, fuentes y servicio de la deuda. La autoridad solicita una explicación metodológica antes de interpretar el riesgo financiero.",
     "stem": "¿Qué distinción debe incorporar el informe para no mezclar magnitudes económicas incompatibles?",
     "options": [
-      "Sumar saldo de deuda e ingresos como si fueran recursos líquidos de libre uso.",
-      "Excluir toda información de deuda porque solo los ingresos aportan al diagnóstico.",
-      "Distinguir saldo de deuda como stock e ingresos como flujo del período; analizar financiación y servicio por separado, con indicadores definidos."
+      "Tratar deuda e ingresos como fuentes disponibles del período, sumarlas y examinar la capacidad de pago mediante el indicador resultante.",
+      "Excluir el saldo de deuda del diagnóstico y evaluar sostenibilidad con ingresos recaudados y gastos corrientes, sin considerar obligaciones pendientes.",
+      "Distinguir deuda como stock e ingresos como flujo; analizar financiación y servicio por separado, con períodos e indicadores definidos."
     ],
     "rationales": [
       "El saldo de deuda representa obligaciones, no efectivo disponible.",
@@ -1428,9 +1428,9 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Un municipio anuncia por circular interna una nueva tarifa de un impuesto local sin identificar acto de la corporación competente ni fundamento legal. Un funcionario solicita a la PGN confirmar que la tarifa es válida porque el sistema de recaudo ya la aplica. Los soportes muestran la fecha de parametrización, pero no la fuente normativa que autoriza la modificación. Aún se puede requerir la documentación pertinente.",
     "stem": "¿Qué debe comprobarse antes de aceptar la aplicación de la tarifa registrada en el sistema?",
     "options": [
-      "Aceptar la tarifa por estar configurada en el sistema institucional.",
-      "Verificar fundamento legal y acto competente conforme al art. 338, elementos del tributo y vigencia; contrastar la parametrización con ellos.",
-      "Ordenar desde PGN una tarifa alternativa sin estudiar atribuciones ni actos aplicables."
+      "Aceptar la tarifa parametrizada y verificar solo su fecha de aplicación, porque el sistema reproduce las reglas aprobadas por la administración tributaria.",
+      "Verificar fundamento legal, acto competente, elementos del tributo y vigencia; cotejar con la parametrización del sistema.",
+      "Solicitar al equipo preventivo de PGN que fije provisionalmente otra tarifa y luego requiera su incorporación al acto de la corporación territorial."
     ],
     "rationales": [
       "El sistema ejecuta reglas, no las crea válidamente.",
@@ -1485,9 +1485,9 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una auditoría comprueba que las 255 lecciones tienen al menos una referencia registrada. La dirección desea anunciar que se conoce el 100 % de los contenidos del examen, aunque todavía no dispone de una guía que establezca la distribución concreta de preguntas. Además, algunas referencias apoyan temas pedagógicos complementarios y no requisitos explícitos. Existe una matriz de cobertura del perfil.",
     "stem": "¿Qué conclusión distingue completitud editorial de cobertura comprobada de la evaluación oficial?",
     "options": [
-      "Afirmar cobertura total del examen porque todas las lecciones tienen una fuente.",
-      "Informar la cobertura curricular comprobada contra fuentes disponibles, marcar brechas e incertidumbre y evitar afirmar una distribución o cobertura oficial desconocida.",
-      "Considerar inútil toda preparación hasta conocer las preguntas oficiales."
+      "Anunciar cobertura completa de la prueba porque todas las lecciones citan fuentes, y ajustar el porcentaje únicamente si se publica otra guía.",
+      "Informar cobertura curricular comprobada y brechas, sin equiparar referencias disponibles con contenidos y ponderaciones oficiales aún desconocidos.",
+      "Suspender toda preparación hasta que se publique la distribución de preguntas, aunque el perfil oficial permita seleccionar contenidos pertinentes de manera fundada."
     ],
     "rationales": [
       "Completitud editorial no equivale a representatividad del examen.",
@@ -1561,9 +1561,9 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una versión nueva de un aplicativo modifica el esquema de la base y transforma datos existentes. Tras detectar un error, el equipo quiere revertir únicamente el ejecutable a la versión anterior, sin revisar si esa versión puede operar sobre el esquema nuevo. Existe respaldo verificado, plan de cambio y ambiente aislado de pruebas. La dirección solicita una recuperación rápida que conserve datos y trazabilidad.",
     "stem": "¿Qué revisión debe preceder al rollback para evitar daños adicionales y preservar continuidad?",
     "options": [
-      "Evaluar compatibilidad de esquema y datos, ensayar reversión o recuperación en entorno aislado, obtener autorización y preservar evidencia y cambios.",
-      "Revertir solo el ejecutable porque toda versión anterior funciona con cualquier esquema posterior.",
-      "Borrar la base y crear una nueva sin examinar respaldos ni datos afectados."
+      "Evaluar compatibilidad de esquema y datos, probar recuperación aislada, autorizar reversión y preservar evidencia de cambios.",
+      "Revertir la aplicación primero y examinar la compatibilidad con el esquema si se reproducen los errores durante el funcionamiento en producción.",
+      "Restaurar la base directamente desde el respaldo y reinstalar la versión anterior, dejando para después la comprobación de datos afectados y cambios posteriores."
     ],
     "rationales": [
       "La reversión depende de código, configuración y migraciones.",

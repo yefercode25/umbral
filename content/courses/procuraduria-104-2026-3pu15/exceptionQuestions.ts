@@ -3443,6 +3443,1016 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
       "pgn-convocatoria-104-v4"
     ],
     "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-calendario-recursos-1",
+    "moduleId": "pgn-m31",
+    "relatedModuleIds": [
+      "pgn-m31",
+      "pgn-m32",
+      "pgn-m34"
+    ],
+    "scenarioId": "pgn-exception-calendario-recursos",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una providencia recurrible en reposición se notifica personalmente el viernes 13 de noviembre de 2026. La oficina trabaja de lunes a viernes; el lunes 16 es festivo por traslado de la celebración de la Independencia de Cartagena. Los días 17, 18, 19, 20 y 23 son hábiles según el calendario del despacho. No hubo suspensión ni otra regla especial.",
+    "stem": "¿Cuál es el quinto día hábil posterior a la notificación según el calendario dado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lunes 23: los días computables son 17, 18, 19, 20 y 23; se excluye la notificación y los inhábiles.",
+        "rationale": "El artículo 131 fija cinco días y el calendario del ejercicio excluye los inhábiles."
+      },
+      {
+        "id": "b",
+        "text": "Viernes 20: se incluyen el lunes festivo y los cuatro días hábiles siguientes, porque el plazo comienza el lunes.",
+        "rationale": "El día festivo dado no integra el cómputo de días hábiles."
+      },
+      {
+        "id": "c",
+        "text": "Jueves 19: se cuenta el fin de semana inmediato como parte del plazo de cinco días desde el siguiente día calendario.",
+        "rationale": "Los fines de semana inhábiles no se cuentan en el plazo ordinario de días."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, arts. 131–132; Ley 4/1913, art. 62. El artículo 131 fija cinco días y el calendario del ejercicio excluye los inhábiles. El día festivo dado no integra el cómputo de días hábiles. Los fines de semana inhábiles no se cuentan en el plazo ordinario de días.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021",
+      "ley-4-1913"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-calendario-recursos-2",
+    "moduleId": "pgn-m31",
+    "relatedModuleIds": [
+      "pgn-m31",
+      "pgn-m32",
+      "pgn-m34"
+    ],
+    "scenarioId": "pgn-exception-calendario-recursos",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "En una audiencia de juzgamiento se notifica en estrados una decisión susceptible de apelación. El defensor se encuentra presente, conoce la motivación y no interpone recurso durante la audiencia. Dos días hábiles después presenta escrito invocando el plazo general de cinco días de las decisiones notificadas fuera de estrados. No se acredita defecto de notificación.",
+    "stem": "¿Qué regla de oportunidad debe verificarse en este caso?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El defensor dispone de cinco días hábiles desde la audiencia para interponer y sustentar, porque todo recurso tiene un mismo término.",
+        "rationale": "El plazo general fuera de audiencia no sustituye esa regla especial."
+      },
+      {
+        "id": "b",
+        "text": "El artículo 131 exige interponer y sustentar durante la audiencia; no corresponde aplicar automáticamente el plazo escrito general de cinco días.",
+        "rationale": "La modalidad en estrados activa una regla especial de oportunidad en la misma diligencia."
+      },
+      {
+        "id": "c",
+        "text": "El recurso puede presentarse dentro de tres días desde la publicación del acta, aunque la decisión haya sido notificada en estrados.",
+        "rationale": "No hay un plazo autónomo de tres días desde la publicación del acta para este supuesto."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, arts. 131–132; Ley 4/1913, art. 62. La modalidad en estrados activa una regla especial de oportunidad en la misma diligencia. El plazo general fuera de audiencia no sustituye esa regla especial. No hay un plazo autónomo de tres días desde la publicación del acta para este supuesto.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021",
+      "ley-4-1913"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-prescripcion-especial-1",
+    "moduleId": "pgn-m24",
+    "relatedModuleIds": [
+      "pgn-m20",
+      "pgn-m24",
+      "pgn-m27",
+      "pgn-m31"
+    ],
+    "scenarioId": "pgn-exception-prescripcion-especial",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una falta instantánea ordinaria ocurrió el 10 de enero de 2024, bajo el régimen vigente del artículo 33. El fallo de primera instancia se firmó el 7 de enero de 2029 y se notificó el 8 de enero del mismo año. La segunda instancia se firma el 5 de enero de 2031 pero solo se notifica el 12 de enero de 2031. No existen otras causas que cambien el cómputo.",
+    "stem": "¿Qué efecto corresponde por la fecha de notificación de segunda instancia?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La segunda decisión satisface el plazo porque fue firmada antes del 8 de enero de 2031, aunque se notificó después.",
+        "rationale": "El artículo 33 exige notificar la segunda instancia dentro del término."
+      },
+      {
+        "id": "b",
+        "text": "La primera notificación interrumpe y abre cinco años adicionales, por lo que la segunda decisión sigue dentro del plazo ordinario.",
+        "rationale": "La interrupción no concede otro término ordinario de cinco años."
+      },
+      {
+        "id": "c",
+        "text": "La acción prescribe al agotarse dos años desde la notificación de primera instancia; la firma oportuna de la segunda no sustituye su notificación.",
+        "rationale": "La segunda notificación excede el límite de dos años desde el 8 de enero de 2029."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, art. 33 modificado por Ley 2094/2021, art. 7. La segunda notificación excede el límite de dos años desde el 8 de enero de 2029. El artículo 33 exige notificar la segunda instancia dentro del término. La interrupción no concede otro término ordinario de cinco años.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-prescripcion-especial-2",
+    "moduleId": "pgn-m24",
+    "relatedModuleIds": [
+      "pgn-m20",
+      "pgn-m24",
+      "pgn-m27",
+      "pgn-m31"
+    ],
+    "scenarioId": "pgn-exception-prescripcion-especial",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "En una actuación por una falta expresamente descrita en el artículo 52 del CGD, consumada en febrero de 2024, se notifica el fallo de primera instancia el 10 de junio de 2032. La segunda instancia se notifica el 9 de junio de 2035. El auxiliar aplica sin distinguir el límite ordinario de dos años. No hay circunstancias adicionales que alteren el régimen.",
+    "stem": "¿Qué plazo especial permite evaluar correctamente las dos notificaciones?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El régimen del artículo 52 prevé doce años iniciales y tres desde la notificación de primera instancia; las fechas dadas caben en ambos.",
+        "rationale": "El artículo 33 reformado establece expresamente doce y tres años para las faltas del artículo 52."
+      },
+      {
+        "id": "b",
+        "text": "El término inicial es cinco años y el posterior tres años, por lo que la primera notificación ya resultaba necesariamente extemporánea.",
+        "rationale": "Confunde el término inicial ordinario con el especial de la conducta indicada."
+      },
+      {
+        "id": "c",
+        "text": "El término inicial es doce años y el posterior dos, por lo que la segunda notificación excede el límite tras la interrupción.",
+        "rationale": "Conserva el plazo inicial especial pero aplica indebidamente el posterior ordinario."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CGD, art. 33 modificado por Ley 2094/2021, art. 7. El artículo 33 reformado establece expresamente doce y tres años para las faltas del artículo 52. Confunde el término inicial ordinario con el especial de la conducta indicada. Conserva el plazo inicial especial pero aplica indebidamente el posterior ordinario.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-suspension-y-vencimiento-1",
+    "moduleId": "pgn-m23",
+    "relatedModuleIds": [
+      "pgn-m23",
+      "pgn-m24",
+      "pgn-m27",
+      "pgn-m31"
+    ],
+    "scenarioId": "pgn-exception-suspension-y-vencimiento",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "El defensor presenta recusación motivada el día en que el instructor proyectaba una decisión de mérito. La autoridad todavía no ha resuelto la recusación y el expediente registra un vencimiento próximo. Un funcionario propone firmar el acto de mérito para evitar que el tiempo transcurra, y remitir la recusación al superior después de la firma.",
+    "stem": "¿Cuál actuación debe priorizarse frente al vencimiento anunciado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Firmar la decisión de mérito antes de remitir la recusación, porque el vencimiento cercano prevalece sobre la suspensión del trámite.",
+        "rationale": "La urgencia del trámite no sustituye la garantía legal de imparcialidad."
+      },
+      {
+        "id": "b",
+        "text": "Tramitar la recusación y suspender la actuación conforme al artículo 107; verificar separadamente los límites temporales y documentar el riesgo.",
+        "rationale": "La suspensión nace con la presentación y no se elimina por proximidad de vencimiento."
+      },
+      {
+        "id": "c",
+        "text": "Remitir la recusación y considerar interrumpida automáticamente la prescripción hasta que el superior resuelva, sin revisar la norma sustancial aplicable.",
+        "rationale": "Suspender la actuación no equivale automáticamente a interrumpir la prescripción."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CGD, arts. 33, 107 y 213. La suspensión nace con la presentación y no se elimina por proximidad de vencimiento. La urgencia del trámite no sustituye la garantía legal de imparcialidad. Suspender la actuación no equivale automáticamente a interrumpir la prescripción.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-suspension-y-vencimiento-2",
+    "moduleId": "pgn-m23",
+    "relatedModuleIds": [
+      "pgn-m23",
+      "pgn-m24",
+      "pgn-m27",
+      "pgn-m31"
+    ],
+    "scenarioId": "pgn-exception-suspension-y-vencimiento",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una recusación ya fue decidida y el expediente debe reanudarse. El sistema muestra un único contador que se reinició a seis meses desde esa decisión, aunque antes de la suspensión habían transcurrido cuatro meses de investigación. La oficina dispone de las fechas de apertura, presentación y decisión, y de los datos para verificar prescripción.",
+    "stem": "¿Cómo debe corregirse la matriz de control temporal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conservar el nuevo plazo íntegro de seis meses porque la decisión sobre recusación equivale a una nueva apertura de investigación.",
+        "rationale": "La resolución de recusación no constituye nueva apertura ni concede por sí misma otro período completo."
+      },
+      {
+        "id": "b",
+        "text": "Descontar el período de suspensión de todos los términos, incluida prescripción, sin revisar si existe una regla específica para cada uno.",
+        "rationale": "No se puede extender una suspensión procesal a todos los relojes sin fundamento legal."
+      },
+      {
+        "id": "c",
+        "text": "Separar hitos y relojes: reconstruir el tiempo de investigación aplicable, registrar la suspensión y comprobar prescripción bajo su regla propia.",
+        "rationale": "El sistema debe representar los efectos legales de cada término y no inventar un reinicio."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CGD, arts. 33, 107 y 213. El sistema debe representar los efectos legales de cada término y no inventar un reinicio. La resolución de recusación no constituye nueva apertura ni concede por sí misma otro período completo. No se puede extender una suspensión procesal a todos los relojes sin fundamento legal.",
+    "sourceIds": [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-reserva-judicial-1",
+    "moduleId": "pgn-m34",
+    "relatedModuleIds": [
+      "pgn-m13",
+      "pgn-m21",
+      "pgn-m34"
+    ],
+    "scenarioId": "pgn-exception-reserva-judicial",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "En un supuesto posterior a C-030 de 2023, una alcaldesa elegida popularmente sigue ejerciendo el cargo y la PGN culmina un procedimiento que concluye con destitución e inhabilidad. El auxiliar considera que la decisión administrativa debe ejecutarse de inmediato como si se tratara de un servidor ordinario, sin revisión judicial.",
+    "stem": "¿Qué garantía especial debe examinarse antes de ejecutar la sanción restrictiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La reserva judicial y la determinación definitiva por el juez competente conforme al precedente, sin confundir la actuación administrativa con sanción judicial definitiva.",
+        "rationale": "C-030 distingue trámite administrativo y determinación judicial definitiva en el supuesto de restricción política."
+      },
+      {
+        "id": "b",
+        "text": "La ejecución administrativa inmediata porque la PGN conserva competencia para investigar y esa competencia comprende necesariamente toda ejecución definitiva.",
+        "rationale": "La competencia de investigación no elimina la reserva judicial para esa sanción."
+      },
+      {
+        "id": "c",
+        "text": "La imposibilidad absoluta de investigar a elegidos popularmente, pues la garantía judicial elimina la actuación disciplinaria administrativa de la Procuraduría.",
+        "rationale": "La reserva no establece inmunidad frente a toda actuación disciplinaria."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Sentencias C-030/2023 y SU-381/2024. C-030 distingue trámite administrativo y determinación judicial definitiva en el supuesto de restricción política. La competencia de investigación no elimina la reserva judicial para esa sanción. La reserva no establece inmunidad frente a toda actuación disciplinaria.",
+    "sourceIds": [
+      "cc-c030-2023",
+      "cc-su381-2024",
+      "ley-1952-2019"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-reserva-judicial-2",
+    "moduleId": "pgn-m34",
+    "relatedModuleIds": [
+      "pgn-m13",
+      "pgn-m21",
+      "pgn-m34"
+    ],
+    "scenarioId": "pgn-exception-reserva-judicial",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un exalcalde ya no ejerce el cargo de elección popular cuando se impone una sanción disciplinaria. El caso corresponde al supuesto temporal y material examinado en SU-381 de 2024, sin otro cargo electivo en ejercicio ni excepción adicional. La defensa afirma que el antecedente de haber sido elegido siempre activa la misma reserva judicial.",
+    "stem": "¿Qué distinción debe verificarse conforme a ese precedente?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aplicar la reserva judicial de manera idéntica a toda persona alguna vez elegida, independientemente de su situación al momento de la sanción.",
+        "rationale": "La condición histórica de elegido no basta para el supuesto específico analizado."
+      },
+      {
+        "id": "b",
+        "text": "Examinar si ejercía el cargo al momento de sanción; el solo antecedente de elección no activa automáticamente la reserva judicial descrita.",
+        "rationale": "SU-381 precisa que la garantía examinada protege el ejercicio actual del cargo electivo."
+      },
+      {
+        "id": "c",
+        "text": "Excluir la aplicación de cualquier garantía de defensa porque el retiro del cargo hace innecesaria la revisión de la legalidad de la decisión.",
+        "rationale": "No aplicar esa reserva específica no elimina debido proceso ni mecanismos de control."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Sentencias C-030/2023 y SU-381/2024. SU-381 precisa que la garantía examinada protege el ejercicio actual del cargo electivo. La condición histórica de elegido no basta para el supuesto específico analizado. No aplicar esa reserva específica no elimina debido proceso ni mecanismos de control.",
+    "sourceIds": [
+      "cc-c030-2023",
+      "cc-su381-2024",
+      "ley-1952-2019"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-bayes-base-1",
+    "moduleId": "pgn-m67",
+    "relatedModuleIds": [
+      "pgn-m66",
+      "pgn-m67",
+      "pgn-m68"
+    ],
+    "scenarioId": "pgn-exception-bayes-base",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un sistema revisa 1.000 expedientes: 100 tienen una irregularidad confirmada y 900 no. El filtro alerta al 90 % de los primeros y al 10 % de los segundos. Se selecciona al azar un expediente alertado para priorizar una verificación humana. Las tasas se consideran exactas en este ejercicio hipotético.",
+    "stem": "¿Qué proporción de los expedientes alertados tiene irregularidad confirmada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "90 %: el filtro detecta noventa de los cien expedientes irregulares y esa sensibilidad se mantiene en los alertados.",
+        "rationale": "90 % es sensibilidad, no proporción de casos reales dentro de las alertas."
+      },
+      {
+        "id": "b",
+        "text": "10 %: la proporción inicial de expedientes irregulares permanece igual después de observar una alerta del filtro.",
+        "rationale": "10 % es la tasa base previa; observar una alerta cambia la condición."
+      },
+      {
+        "id": "c",
+        "text": "50 %: hay 90 alertas verdaderas y 90 falsas, por lo que 90 de los 180 alertados presentan irregularidad.",
+        "rationale": "La probabilidad posterior condiciona por las 180 alertas, no por todos los casos reales."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: OpenStax, Introductory Statistics 2e, probabilidad. La probabilidad posterior condiciona por las 180 alertas, no por todos los casos reales. 90 % es sensibilidad, no proporción de casos reales dentro de las alertas. 10 % es la tasa base previa; observar una alerta cambia la condición.",
+    "sourceIds": [
+      "openstax-probability",
+      "openstax-bayes"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-bayes-base-2",
+    "moduleId": "pgn-m67",
+    "relatedModuleIds": [
+      "pgn-m66",
+      "pgn-m67",
+      "pgn-m68"
+    ],
+    "scenarioId": "pgn-exception-bayes-base",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "En otra población hipotética de 1.000 expedientes, 200 tienen irregularidad y 800 no. El filtro conserva sensibilidad de 90 % y tasa de falsos positivos de 10 %. El equipo compara la proporción de irregularidades entre alertados con una oficina que tenía tasa base del 10 % y el mismo filtro.",
+    "stem": "¿Qué resultado corresponde a la segunda población?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aproximadamente 69,23 %: se generan 180 alertas verdaderas y 80 falsas; la proporción condicionada se calcula sobre 260 alertas.",
+        "rationale": "180/260 es aproximadamente 0,6923; una tasa base mayor cambia el resultado posterior."
+      },
+      {
+        "id": "b",
+        "text": "50 %: al mantenerse sensibilidad y tasa de falsos positivos, la probabilidad de irregularidad entre alertados no puede variar.",
+        "rationale": "El mismo filtro no garantiza igual valor predictivo si cambia la prevalencia."
+      },
+      {
+        "id": "c",
+        "text": "18 %: los 180 expedientes irregulares alertados se dividen por mil para obtener la proporción dentro del grupo alertado.",
+        "rationale": "180/1000 es proporción conjunta sobre la población, no condicional."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: OpenStax, Introductory Statistics 2e, probabilidad. 180/260 es aproximadamente 0,6923; una tasa base mayor cambia el resultado posterior. El mismo filtro no garantiza igual valor predictivo si cambia la prevalencia. 180/1000 es proporción conjunta sobre la población, no condicional.",
+    "sourceIds": [
+      "openstax-probability",
+      "openstax-bayes"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-combinatoria-tasas-1",
+    "moduleId": "pgn-m67",
+    "relatedModuleIds": [
+      "pgn-m66",
+      "pgn-m67",
+      "pgn-m68"
+    ],
+    "scenarioId": "pgn-exception-combinatoria-tasas",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un grupo de investigación tiene cinco expedientes distintos que cumplen un mismo criterio de revisión. Debe elegir exactamente dos sin reemplazo para una verificación paralela. La selección A–B es equivalente a B–A, pues no se asignan roles distintos ni importa el orden de revisión. El coordinador requiere contar las selecciones posibles.",
+    "stem": "¿Cuántos pares distintos pueden formarse con esos cinco expedientes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Veinte: cada expediente puede combinarse con cuatro restantes y se cuentan separadamente todas las elecciones iniciales.",
+        "rationale": "Veinte cuenta pares ordenados, duplicando cada pareja no ordenada."
+      },
+      {
+        "id": "b",
+        "text": "Diez: cada selección de dos se cuenta una sola vez, usando cinco por cuatro dividido entre dos.",
+        "rationale": "C(5,2)=5×4/2=10; no importa el orden y no hay reemplazo."
+      },
+      {
+        "id": "c",
+        "text": "Veinticinco: cada una de las cinco posibilidades de la primera elección se combina con cualquiera de las cinco de la segunda.",
+        "rationale": "Veinticinco incluye repetición de un mismo expediente y pares ordenados."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: OpenStax, probabilidad y estadística descriptiva. C(5,2)=5×4/2=10; no importa el orden y no hay reemplazo. Veinte cuenta pares ordenados, duplicando cada pareja no ordenada. Veinticinco incluye repetición de un mismo expediente y pares ordenados.",
+    "sourceIds": [
+      "openstax-probability",
+      "openstax-counting"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-combinatoria-tasas-2",
+    "moduleId": "pgn-m67",
+    "relatedModuleIds": [
+      "pgn-m66",
+      "pgn-m67",
+      "pgn-m68"
+    ],
+    "scenarioId": "pgn-exception-combinatoria-tasas",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "El cumplimiento de un procedimiento sube del 80 % al 90 % en dos períodos comparables. La unidad de análisis y las definiciones se mantienen; se requiere informar tanto la diferencia absoluta en tasas como el incremento relativo respecto al valor inicial. El informe preliminar dice que ambos indicadores son 10 %.",
+    "stem": "¿Qué valores distinguen correctamente ambos tipos de variación?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aumento de 12,5 puntos porcentuales y crecimiento relativo de 10 %, calculado tomando como diferencia el cambio entre las tasas.",
+        "rationale": "Intercambia las unidades de diferencia absoluta y cambio relativo."
+      },
+      {
+        "id": "b",
+        "text": "Aumento de 10 puntos porcentuales y crecimiento relativo de 11,11 %, calculado sobre el cumplimiento final del 90 %.",
+        "rationale": "El crecimiento relativo solicitado se calcula sobre el valor inicial, no el final."
+      },
+      {
+        "id": "c",
+        "text": "Aumento de 10 puntos porcentuales y crecimiento relativo de 12,5 %, calculado sobre el cumplimiento inicial del 80 %.",
+        "rationale": "La diferencia es 90−80=10 puntos y 10/80=12,5 %."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: OpenStax, probabilidad y estadística descriptiva. La diferencia es 90−80=10 puntos y 10/80=12,5 %. Intercambia las unidades de diferencia absoluta y cambio relativo. El crecimiento relativo solicitado se calcula sobre el valor inicial, no el final.",
+    "sourceIds": [
+      "openstax-probability",
+      "openstax-counting"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-estratos-secuencias-1",
+    "moduleId": "pgn-m68",
+    "relatedModuleIds": [
+      "pgn-m67",
+      "pgn-m68",
+      "pgn-m69"
+    ],
+    "scenarioId": "pgn-exception-estratos-secuencias",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "La entidad tiene 800 expedientes de bajo riesgo y 200 de alto riesgo. Se seleccionan aleatoriamente 100 de cada estrato y se observan 10 defectos en el primero y 40 en el segundo. El objetivo es estimar la proporción de defectos del universo, no la de la muestra combinada; se suponen muestras válidas por estrato.",
+    "stem": "¿Cuál estimación ponderada corresponde a la estructura poblacional?",
+    "options": [
+      {
+        "id": "a",
+        "text": "16 %: combinar las tasas de 10 % y 40 % con pesos poblacionales de 80 % y 20 %, respectivamente.",
+        "rationale": "0,8×0,10+0,2×0,40=0,16; los pesos reflejan el universo."
+      },
+      {
+        "id": "b",
+        "text": "25 %: sumar los 50 defectos observados y dividir por los 200 expedientes de la muestra, sin ajustar el diseño.",
+        "rationale": "La muestra tiene estratos de igual tamaño, pero la población no; el promedio simple sesga la estimación."
+      },
+      {
+        "id": "c",
+        "text": "34 %: multiplicar el 40 % por el peso de 80 % y el 10 % por el peso de 20 %.",
+        "rationale": "Invierte los pesos poblacionales asignados a cada tasa."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: OpenStax, muestreo y análisis descriptivo. 0,8×0,10+0,2×0,40=0,16; los pesos reflejan el universo. La muestra tiene estratos de igual tamaño, pero la población no; el promedio simple sesga la estimación. Invierte los pesos poblacionales asignados a cada tasa.",
+    "sourceIds": [
+      "openstax-sampling",
+      "openstax-probability"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-estratos-secuencias-2",
+    "moduleId": "pgn-m68",
+    "relatedModuleIds": [
+      "pgn-m67",
+      "pgn-m68",
+      "pgn-m69"
+    ],
+    "scenarioId": "pgn-exception-estratos-secuencias",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una regla de prueba de un sistema genera lotes de 3, 7, 13 y 21 registros. La especificación establece que la diferencia entre lotes consecutivos aumenta exactamente en dos registros en cada paso. El equipo necesita anticipar el tamaño del siguiente lote para comparar el resultado observado con el comportamiento esperado; no se infiere la regla solo de cuatro datos.",
+    "stem": "¿Cuál es el tamaño esperado del quinto lote bajo esa especificación?",
+    "options": [
+      {
+        "id": "a",
+        "text": "29 registros: se mantiene el último incremento de ocho porque la diferencia más reciente representa el cambio actual.",
+        "rationale": "Repetir ocho contradice el incremento de dos en cada diferencia."
+      },
+      {
+        "id": "b",
+        "text": "31 registros: las diferencias fueron 4, 6 y 8, por lo que la próxima debe ser 10.",
+        "rationale": "La regla explícita produce la siguiente diferencia 10 y 21+10=31."
+      },
+      {
+        "id": "c",
+        "text": "27 registros: se añade el promedio de las diferencias 4, 6 y 8, que representa el incremento general.",
+        "rationale": "Promediar diferencias no reproduce la recurrencia especificada."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: OpenStax, muestreo y análisis descriptivo. La regla explícita produce la siguiente diferencia 10 y 21+10=31. Repetir ocho contradice el incremento de dos en cada diferencia. Promediar diferencias no reproduce la recurrencia especificada.",
+    "sourceIds": [
+      "openstax-sampling",
+      "openstax-probability"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-sql-nulos-1",
+    "moduleId": "pgn-m62",
+    "relatedModuleIds": [
+      "pgn-m62",
+      "pgn-m66",
+      "pgn-m67",
+      "pgn-m84"
+    ],
+    "scenarioId": "pgn-exception-sql-nulos",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una base PostgreSQL tiene tres expedientes A, B y C. A tiene dos actuaciones activas; B una actuación cerrada; C ninguna. Se requiere listar los tres expedientes con el número de actuaciones activas, incluyendo cero. La consulta usa LEFT JOIN entre expedientes y actuaciones y el identificador de actuación es no nulo cuando existe coincidencia.",
+    "stem": "¿Qué diseño de consulta conserva los expedientes sin actuaciones activas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filtrar estado activo mediante WHERE después del LEFT JOIN y contar las filas con COUNT(*), agrupando por expediente.",
+        "rationale": "El WHERE elimina filas sin coincidencia activa, y COUNT(*) no distingue la fila externa."
+      },
+      {
+        "id": "b",
+        "text": "Usar INNER JOIN con estado activo y aplicar COALESCE al conteo final, para convertir en cero los expedientes que no aparecen.",
+        "rationale": "COALESCE no crea filas que el INNER JOIN ya eliminó."
+      },
+      {
+        "id": "c",
+        "text": "Filtrar el estado activo en la condición ON del LEFT JOIN y agrupar por expediente usando COUNT(actuacion.id), que no cuenta nulos.",
+        "rationale": "La condición ON conserva filas izquierdas y el conteo de identificadores ignora nulos."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: PostgreSQL 18, SELECT y funciones agregadas. La condición ON conserva filas izquierdas y el conteo de identificadores ignora nulos. El WHERE elimina filas sin coincidencia activa, y COUNT(*) no distingue la fila externa. COALESCE no crea filas que el INNER JOIN ya eliminó.",
+    "sourceIds": [
+      "postgresql-select",
+      "postgresql-agg"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-sql-nulos-2",
+    "moduleId": "pgn-m62",
+    "relatedModuleIds": [
+      "pgn-m62",
+      "pgn-m66",
+      "pgn-m67",
+      "pgn-m84"
+    ],
+    "scenarioId": "pgn-exception-sql-nulos",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "El expediente X no tiene actuaciones relacionadas. Una consulta LEFT JOIN produce una fila con identificador del expediente y columnas nulas de la actuación. El informe muestra una actuación para X al agrupar y ejecutar COUNT(*). La tabla hija garantiza que su identificador es no nulo para toda actuación real.",
+    "stem": "¿Qué expresión calcula el número real de actuaciones relacionadas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "COUNT(actuacion.id), que devuelve cero porque la columna derecha es nula en la fila externa sin coincidencia.",
+        "rationale": "COUNT de expresión ignora valores nulos y por tanto cuenta las coincidencias reales."
+      },
+      {
+        "id": "b",
+        "text": "COUNT(*), porque una fila obtenida por una unión externa representa necesariamente una actuación aunque sus columnas sean nulas.",
+        "rationale": "COUNT(*) cuenta la fila externa aunque no exista actuación."
+      },
+      {
+        "id": "c",
+        "text": "COUNT(expediente.id), porque el identificador de la tabla principal es no nulo y permite distinguir la existencia de actuaciones.",
+        "rationale": "El identificador principal está presente incluso cuando no existe hijo."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: PostgreSQL 18, SELECT y funciones agregadas. COUNT de expresión ignora valores nulos y por tanto cuenta las coincidencias reales. COUNT(*) cuenta la fila externa aunque no exista actuación. El identificador principal está presente incluso cuando no existe hijo.",
+    "sourceIds": [
+      "postgresql-select",
+      "postgresql-agg"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-sql-concurrencia-1",
+    "moduleId": "pgn-m84",
+    "relatedModuleIds": [
+      "pgn-m62",
+      "pgn-m82",
+      "pgn-m84"
+    ],
+    "scenarioId": "pgn-exception-sql-concurrencia",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Dos procesos de PostgreSQL leen simultáneamente un contador de 10 y cada uno debe incrementarlo en uno. Ambos calculan 11 fuera de la base y luego ejecutan UPDATE contador=11 en transacciones separadas que llegan a confirmar. No hay otro cambio concurrente y la aplicación requiere conservar los dos incrementos.",
+    "stem": "¿Qué cambio evita perder uno de los incrementos en este supuesto?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mantener las dos escrituras de 11 y añadir un COMMIT después de cada una, porque confirmar ambas conserva las dos operaciones aritméticas.",
+        "rationale": "Confirmar dos escrituras absolutas iguales no suma dos incrementos."
+      },
+      {
+        "id": "b",
+        "text": "Ejecutar UPDATE con contador=contador+1 dentro de la transacción, dejando que la base coordine las escrituras sobre la misma fila.",
+        "rationale": "La actualización relativa atómica permite aplicar cada incremento al valor de fila correspondiente."
+      },
+      {
+        "id": "c",
+        "text": "Usar una lectura adicional al inicio de cada transacción, manteniendo la escritura del valor calculado fuera de la base sin coordinación.",
+        "rationale": "Leer otra vez no evita por sí solo que otro proceso modifique antes de la escritura."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: PostgreSQL 18, Transaction Isolation y Privileges. La actualización relativa atómica permite aplicar cada incremento al valor de fila correspondiente. Confirmar dos escrituras absolutas iguales no suma dos incrementos. Leer otra vez no evita por sí solo que otro proceso modifique antes de la escritura.",
+    "sourceIds": [
+      "postgresql-isolation",
+      "postgresql-privileges"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-sql-concurrencia-2",
+    "moduleId": "pgn-m84",
+    "relatedModuleIds": [
+      "pgn-m62",
+      "pgn-m82",
+      "pgn-m84"
+    ],
+    "scenarioId": "pgn-exception-sql-concurrencia",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un rol de auditoría necesita consultar una vista autorizada de datos agregados. La revisión revela que hereda también UPDATE y DELETE de un grupo operativo que no necesita para su función. El equipo propone mantenerlos porque el aplicativo solo presenta botones de lectura, y la autenticación multifactor está habilitada.",
+    "stem": "¿Qué control aborda el exceso de privilegios de forma efectiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ocultar las opciones de edición en la interfaz y conservar los privilegios de base, pues el rol no dispone de botones para modificar.",
+        "rationale": "Los permisos de base siguen habilitando acciones por otros canales autorizados."
+      },
+      {
+        "id": "b",
+        "text": "Exigir MFA para cada ingreso y mantener los permisos del grupo operativo, porque el segundo factor impide usar privilegios innecesarios.",
+        "rationale": "MFA autentica al usuario pero no reduce los permisos que se le concedieron."
+      },
+      {
+        "id": "c",
+        "text": "Retirar pertenencia o privilegios innecesarios, conceder solo acceso requerido y comprobar permisos efectivos incluidos los heredados, manteniendo los registros de cambio.",
+        "rationale": "El mínimo privilegio se aplica en la autorización efectiva, no solo en la interfaz."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: PostgreSQL 18, Transaction Isolation y Privileges. El mínimo privilegio se aplica en la autorización efectiva, no solo en la interfaz. Los permisos de base siguen habilitando acciones por otros canales autorizados. MFA autentica al usuario pero no reduce los permisos que se le concedieron.",
+    "sourceIds": [
+      "postgresql-isolation",
+      "postgresql-privileges"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-redes-recuperacion-1",
+    "moduleId": "pgn-m81",
+    "relatedModuleIds": [
+      "pgn-m44",
+      "pgn-m61",
+      "pgn-m62",
+      "pgn-m81",
+      "pgn-m84"
+    ],
+    "scenarioId": "pgn-exception-redes-recuperacion",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Dos equipos de una entidad comparten la misma dirección IP pública mediante NAT. Un servicio registra una conexión TCP desde esa IP a las 10:05 y conserva también el puerto de origen. La entidad dispone de registros de traducción de puertos con tiempos normalizados, pero aún no se han correlacionado sesiones de usuario ni fuentes de autenticación.",
+    "stem": "¿Qué evidencia permite acotar el equipo sin confundirlo con una persona?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Correlacionar IP, puerto, intervalo y registros NAT para asociar la conexión a un equipo; contrastar identidad con otras fuentes antes de atribuir autoría.",
+        "rationale": "La traducción y el intervalo permiten acotar un flujo; la autoría requiere evidencia adicional."
+      },
+      {
+        "id": "b",
+        "text": "Asignar la conexión al primer equipo que inició sesión ese día, porque la dirección pública compartida es suficiente para identificar el origen.",
+        "rationale": "La IP compartida no distingue por sí sola los equipos internos."
+      },
+      {
+        "id": "c",
+        "text": "Tratar el puerto de origen como identificador personal permanente y vincular directamente cualquier conexión posterior con la misma persona.",
+        "rationale": "Los puertos pueden reutilizarse y no identifican de forma permanente personas."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: RFC 9293; PostgreSQL 18, PITR; NIST SP 800-86. La traducción y el intervalo permiten acotar un flujo; la autoría requiere evidencia adicional. La IP compartida no distingue por sí sola los equipos internos. Los puertos pueden reutilizarse y no identifican de forma permanente personas.",
+    "sourceIds": [
+      "rfc-9293",
+      "postgresql-pitr",
+      "nist-sp-800-86"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-redes-recuperacion-2",
+    "moduleId": "pgn-m81",
+    "relatedModuleIds": [
+      "pgn-m44",
+      "pgn-m61",
+      "pgn-m62",
+      "pgn-m81",
+      "pgn-m84"
+    ],
+    "scenarioId": "pgn-exception-redes-recuperacion",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una base PostgreSQL sufrió un borrado a las 14:10. Existe respaldo base de las 08:00, pero falta un segmento WAL necesario entre las 11:00 y las 12:00. Se quiere recuperar el estado exacto de las 14:09. El equipo conserva una copia del estado actual y puede probar la restauración en una instancia aislada.",
+    "stem": "¿Qué límite debe comunicar el responsable antes de comprometer la recuperación exacta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La hora objetivo basta para reconstruir el estado de 14:09 aunque falten registros, porque PostgreSQL interpola automáticamente las operaciones no disponibles.",
+        "rationale": "La recuperación no puede inventar operaciones de segmentos ausentes."
+      },
+      {
+        "id": "b",
+        "text": "La recuperación al punto exige la secuencia WAL necesaria; buscar el tramo faltante y comprobar en una instancia aislada hasta dónde es recuperable.",
+        "rationale": "PITR requiere respaldo y continuidad de WAL hasta el punto pretendido; debe probarse el resultado."
+      },
+      {
+        "id": "c",
+        "text": "Restaurar sobre producción el respaldo de 08:00 y declarar recuperado el estado de 14:09, porque la diferencia solo afecta marcas de tiempo.",
+        "rationale": "Un respaldo anterior no equivale a un estado posterior y sobrescribir producción crea riesgos."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: RFC 9293; PostgreSQL 18, PITR; NIST SP 800-86. PITR requiere respaldo y continuidad de WAL hasta el punto pretendido; debe probarse el resultado. La recuperación no puede inventar operaciones de segmentos ausentes. Un respaldo anterior no equivale a un estado posterior y sobrescribir producción crea riesgos.",
+    "sourceIds": [
+      "rfc-9293",
+      "postgresql-pitr",
+      "nist-sp-800-86"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-competencias-coordinacion-1",
+    "moduleId": "pgn-m70",
+    "relatedModuleIds": [
+      "pgn-m70",
+      "pgn-m71",
+      "pgn-m72",
+      "pgn-m73"
+    ],
+    "scenarioId": "pgn-exception-competencias-coordinacion",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una dependencia solicita apoyo para cumplir un plazo común. Tu propio informe está adelantado, pero aún requiere revisión de calidad. Puedes compartir una fuente autorizada y negociar con tu coordinación dos horas de apoyo sin comprometer la entrega. El equipo solicitante no conoce la fuente y su retraso afecta una actividad institucional posterior.",
+    "stem": "¿Qué conducta representa mejor Responsabilidad con la Organización en este dilema formativo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Finalizar por completo el informe propio antes de ofrecer ayuda, aunque exista capacidad de coordinarla sin afectar el compromiso previsto.",
+        "rationale": "Priorizar lo propio puede ser prudente, pero desaprovecha una alternativa viable para el objetivo común."
+      },
+      {
+        "id": "b",
+        "text": "Entregar la fuente al equipo solicitante y dejar que gestione por su cuenta las dependencias, sin confirmar acceso ni ajustar tu disponibilidad.",
+        "rationale": "Compartir ayuda, pero sin coordinación no asegura continuidad ni uso adecuado de recursos."
+      },
+      {
+        "id": "c",
+        "text": "Coordinar el apoyo autorizado con ambas dependencias, compartir la fuente pertinente y acordar cómo proteger los compromisos propios y el objetivo institucional.",
+        "rationale": "Integra cooperación institucional con compromisos y canales autorizados."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Diccionario PGN, niveles B y B. Integra cooperación institucional con compromisos y canales autorizados. Priorizar lo propio puede ser prudente, pero desaprovecha una alternativa viable para el objetivo común. Compartir ayuda, pero sin coordinación no asegura continuidad ni uso adecuado de recursos.",
+    "sourceIds": [
+      "pgn-diccionario-competencias",
+      "pgn-convocatoria-104-v4"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-competencias-coordinacion-2",
+    "moduleId": "pgn-m70",
+    "relatedModuleIds": [
+      "pgn-m70",
+      "pgn-m71",
+      "pgn-m72",
+      "pgn-m73"
+    ],
+    "scenarioId": "pgn-exception-competencias-coordinacion",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un profesional debe verificar cuatro expedientes antes del viernes. Dos dependen de una respuesta externa que probablemente llegará el jueves; los otros dos pueden avanzar desde hoy. Hay un compañero disponible el miércoles y controles finales que requieren tiempo. La coordinación permite reorganizar el plan siempre que se mantenga trazabilidad.",
+    "stem": "¿Qué conducta muestra mejor Organización del Trabajo en el contexto descrito?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Programar primero tareas independientes, solicitar apoyo para las dependientes y reservar tiempo de revisión, actualizando el plan según lleguen las respuestas.",
+        "rationale": "Organiza por dependencias, capacidad y controles, con seguimiento anticipado."
+      },
+      {
+        "id": "b",
+        "text": "Ordenar los expedientes por fecha de radicación y seguir esa secuencia, comunicando cualquier cambio de prioridad al final de la semana.",
+        "rationale": "El orden de radicación no resuelve dependencias ni permite utilizar óptimamente el apoyo."
+      },
+      {
+        "id": "c",
+        "text": "Dedicar los primeros días a esperar las respuestas externas y concentrar después las cuatro revisiones, solicitando apoyo si el plazo resulta insuficiente.",
+        "rationale": "La espera consume tiempo disponible y posterga la gestión de un riesgo conocido."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Diccionario PGN, niveles B y B. Organiza por dependencias, capacidad y controles, con seguimiento anticipado. El orden de radicación no resuelve dependencias ni permite utilizar óptimamente el apoyo. La espera consume tiempo disponible y posterga la gestión de un riesgo conocido.",
+    "sourceIds": [
+      "pgn-diccionario-competencias",
+      "pgn-convocatoria-104-v4"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-competencias-analisis-1",
+    "moduleId": "pgn-m71",
+    "relatedModuleIds": [
+      "pgn-m70",
+      "pgn-m71",
+      "pgn-m72",
+      "pgn-m73"
+    ],
+    "scenarioId": "pgn-exception-competencias-analisis",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Dos informes internos discrepan sobre el número de actuaciones atrasadas. Ambos equipos usaron bases distintas y reconocen que algunas actuaciones cambiaron de clasificación. Hay tiempo para cotejar una muestra de registros con los responsables de ambas fuentes, y la coordinación solicita una explicación sustentada, no solo una cifra consolidada.",
+    "stem": "¿Qué conducta desarrolla mejor Investigación en este ejercicio formativo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedir a cada equipo que ratifique su cifra por escrito y usar la del informe más reciente como resultado hasta que exista una auditoría completa.",
+        "rationale": "Ratificar cifras no resuelve diferencias de definición o calidad de fuente."
+      },
+      {
+        "id": "b",
+        "text": "Acordar con ambos equipos un método de contraste, verificar definiciones y registros de una muestra, y documentar qué evidencia respalda cada diferencia.",
+        "rationale": "El método colaborativo contrasta fuentes y permite reproducir la explicación."
+      },
+      {
+        "id": "c",
+        "text": "Unificar los dos informes en una hoja y solicitar una revisión de la suma, dejando las diferencias de definición para una etapa posterior.",
+        "rationale": "Consolidar antes de armonizar definiciones puede producir cifras incompatibles."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Diccionario PGN, Investigación B y Pensamiento Conceptual A. El método colaborativo contrasta fuentes y permite reproducir la explicación. Ratificar cifras no resuelve diferencias de definición o calidad de fuente. Consolidar antes de armonizar definiciones puede producir cifras incompatibles.",
+    "sourceIds": [
+      "pgn-diccionario-competencias",
+      "pgn-convocatoria-104-v4"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-competencias-analisis-2",
+    "moduleId": "pgn-m71",
+    "relatedModuleIds": [
+      "pgn-m70",
+      "pgn-m71",
+      "pgn-m72",
+      "pgn-m73"
+    ],
+    "scenarioId": "pgn-exception-competencias-analisis",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una serie de fallas institucionales parece inconexa: demoras en notificación, datos duplicados y reprocesos de informes. Los hallazgos indican que los tres procesos usan la misma fuente maestra con identificadores inconsistentes. Existen también excepciones que no se explican por ese problema. La coordinación requiere una explicación útil para priorizar mejoras.",
+    "stem": "¿Qué conducta refleja mejor Pensamiento Conceptual en el supuesto?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Presentar una relación detallada de cada fallo y asignar acciones independientes a sus equipos, sin examinar una posible causa transversal compartida.",
+        "rationale": "El detalle por proceso es útil, pero no aprovecha la relación común comprobable."
+      },
+      {
+        "id": "b",
+        "text": "Concluir que la fuente maestra causa todos los fallos y concentrar los recursos en ella, dejando las excepciones para una evaluación posterior.",
+        "rationale": "Generalizar a todas las fallas ignora evidencia que limita la explicación."
+      },
+      {
+        "id": "c",
+        "text": "Construir una explicación que vincule la fuente común con los tres efectos, separar excepciones y proponer controles que permitan comprobar el modelo.",
+        "rationale": "Integra relaciones sin borrar excepciones y convierte la hipótesis en orientación verificable."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Diccionario PGN, Investigación B y Pensamiento Conceptual A. Integra relaciones sin borrar excepciones y convierte la hipótesis en orientación verificable. El detalle por proceso es útil, pero no aprovecha la relación común comprobable. Generalizar a todas las fallas ignora evidencia que limita la explicación.",
+    "sourceIds": [
+      "pgn-diccionario-competencias",
+      "pgn-convocatoria-104-v4"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-competencias-calidad-1",
+    "moduleId": "pgn-m72",
+    "relatedModuleIds": [
+      "pgn-m70",
+      "pgn-m71",
+      "pgn-m72",
+      "pgn-m73"
+    ],
+    "scenarioId": "pgn-exception-competencias-calidad",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "El equipo debe reducir una acumulación de expedientes sin disminuir la calidad de revisión. Un análisis muestra que varios pasos se repiten por falta de coordinación y existe capacidad de redistribuir tareas. La coordinación acepta un piloto controlado de una semana, con indicadores de tiempo, errores y cumplimiento de revisiones obligatorias.",
+    "stem": "¿Qué conducta expresa mejor Orientación a Resultados en este caso formativo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Definir una meta exigente con indicadores de calidad, redistribuir tareas, ejecutar el piloto y ajustar recursos según resultados comprobados.",
+        "rationale": "Integra objetivos exigentes, recursos, calidad y seguimiento para sostener los logros."
+      },
+      {
+        "id": "b",
+        "text": "Aumentar la meta diaria y conservar el flujo existente, usando el número de expedientes terminados como principal indicador del desempeño.",
+        "rationale": "Elevar volumen sin tratar el cuello de botella puede incrementar reprocesos."
+      },
+      {
+        "id": "c",
+        "text": "Concentrar el piloto exclusivamente en reducir errores y posponer la meta de acumulación hasta disponer de un proceso completamente estabilizado.",
+        "rationale": "La calidad importa, pero el piloto permite trabajar simultáneamente la acumulación y el control."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Diccionario PGN, niveles A y B. Integra objetivos exigentes, recursos, calidad y seguimiento para sostener los logros. Elevar volumen sin tratar el cuello de botella puede incrementar reprocesos. La calidad importa, pero el piloto permite trabajar simultáneamente la acumulación y el control.",
+    "sourceIds": [
+      "pgn-diccionario-competencias",
+      "pgn-convocatoria-104-v4"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-competencias-calidad-2",
+    "moduleId": "pgn-m72",
+    "relatedModuleIds": [
+      "pgn-m70",
+      "pgn-m71",
+      "pgn-m72",
+      "pgn-m73"
+    ],
+    "scenarioId": "pgn-exception-competencias-calidad",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un procedimiento exige validar un informe antes de remitirlo. El canal habitual está temporalmente indisponible, pero el manual contempla un canal alternativo autorizado con constancia de revisión. El profesional puede usarlo dentro del plazo y tiene evidencia para proponer una mejora posterior del flujo. La coordinación espera una solución documentada.",
+    "stem": "¿Qué conducta representa mejor Cumplimiento de Parámetros en esta situación?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperar a que vuelva el canal habitual y conservar el informe sin enviar, aunque exista una alternativa autorizada que permita cumplir el plazo.",
+        "rationale": "El cumplimiento no exige paralizarse cuando existe una alternativa expresamente autorizada."
+      },
+      {
+        "id": "b",
+        "text": "Usar el canal alternativo previsto, documentar la validación y proponer por la vía institucional una mejora basada en el incidente observado.",
+        "rationale": "Aplica parámetros vigentes, mantiene el objetivo y tramita mejoras por el conducto permitido."
+      },
+      {
+        "id": "c",
+        "text": "Solicitar una autorización particular para un nuevo canal no previsto, aunque el procedimiento ya ofrece una solución aplicable y trazable.",
+        "rationale": "Solicitar excepción innecesaria retrasa una actuación que tiene ruta válida."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Diccionario PGN, niveles A y B. Aplica parámetros vigentes, mantiene el objetivo y tramita mejoras por el conducto permitido. El cumplimiento no exige paralizarse cuando existe una alternativa expresamente autorizada. Solicitar excepción innecesaria retrasa una actuación que tiene ruta válida.",
+    "sourceIds": [
+      "pgn-diccionario-competencias",
+      "pgn-convocatoria-104-v4"
+    ],
+    "verifiedAt": "2026-11-23"
   }
 ]
 
@@ -3934,6 +4944,149 @@ const lessons = [
     "contrast": [
       "Prioridades incompatibles: acordar capacidad, responsables y riesgos antes de comprometer entregas.",
       "Dependencia crítica: compartir información autorizada, coordinar solución y escalar bloqueos oportunamente."
+    ],
+    "sourceId": "pgn-diccionario-competencias"
+  },
+  {
+    "moduleId": "pgn-m31",
+    "title": "Cómputo de recursos con días inhábiles",
+    "article": "CGD, arts. 131–132; Ley 4/1913, art. 62",
+    "rule": "En decisiones notificadas fuera de estrados, reposición y apelación pueden interponerse desde expedición hasta cinco días siguientes a notificación. Contar días hábiles según calendario aplicable, sin incluir el de notificación. En estrados se interponen y sustentan durante la diligencia. Verificar sustentación y modalidad antes de calcular.",
+    "contrast": [
+      "Notificación fuera de audiencia: cinco días siguientes hábiles.",
+      "Estrados: interposición y sustentación en audiencia."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m24",
+    "title": "Prescripción ordinaria y faltas del artículo 52",
+    "article": "CGD, art. 33 modificado por Ley 2094/2021, art. 7",
+    "rule": "Desde la vigencia del artículo 33 reformado, la regla ordinaria es cinco años y dos años tras notificación del fallo de primera instancia. Para faltas del artículo 52 son doce y tres años respectivamente. Cada conducta se computa independientemente; identificar modalidad instantánea, permanente, continuada u omisiva. No confundir firma del fallo con notificación.",
+    "contrast": [
+      "Ordinaria: 5 años y límite posterior de 2 años.",
+      "Art. 52: 12 años y límite posterior de 3 años."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m23",
+    "title": "Suspensión de actuación y límites temporales",
+    "article": "CGD, arts. 33, 107 y 213",
+    "rule": "Registrar separadamente suspensión procesal por recusación, plazo de investigación y prescripción sustancial. El art. 107 suspende la actuación desde la presentación hasta decisión; no permite inferir por sí mismo interrupción de prescripción ni reinicio general de términos. Aplicar la regla específica de cada reloj y conservar fechas y constancias.",
+    "contrast": [
+      "Recusación pendiente: suspender actuación, tramitar causal.",
+      "Reanudación: revisar el saldo aplicable y la prescripción por separado."
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m34",
+    "title": "Reserva judicial y servidores de elección popular",
+    "article": "Sentencias C-030/2023 y SU-381/2024",
+    "rule": "Distinguir el procedimiento disciplinario administrativo PGN de la imposición definitiva de sanciones restrictivas de derechos políticos a elegidos en ejercicio. C-030/2023 exige intervención judicial en esos supuestos; SU-381/2024 precisa alcance para quienes no están ejerciendo el cargo al momento de sanción. Revisar contexto temporal, naturaleza de la sanción y jurisprudencia aplicable; no convertir la regla en inmunidad disciplinaria.",
+    "contrast": [
+      "Elegido en ejercicio y sanción restrictiva: reserva judicial según precedente.",
+      "Exservidor elegido fuera del cargo: examinar alcance específico del precedente, no asumir idéntica reserva."
+    ],
+    "sourceId": "cc-c030-2023"
+  },
+  {
+    "moduleId": "pgn-m67",
+    "title": "Bayes y tasas base",
+    "article": "OpenStax, Introductory Statistics 2e, probabilidad",
+    "rule": "Separar tasa base, sensibilidad y falsos positivos. En una población hipotética de 1000 con 10 % de casos reales, un filtro con sensibilidad 90 % y falso positivo 10 % alerta 90 casos reales y 90 no reales. La probabilidad posterior entre alertados es 50 %. No usar una alerta como prueba individual concluyente.",
+    "contrast": [
+      "Tasa base baja: los falsos positivos pueden dominar aun con alta sensibilidad.",
+      "Cambiar tasa base: cambia probabilidad posterior aunque el filtro no cambie."
+    ],
+    "sourceId": "openstax-probability"
+  },
+  {
+    "moduleId": "pgn-m67",
+    "title": "Combinatoria y variación porcentual",
+    "article": "OpenStax, probabilidad y estadística descriptiva",
+    "rule": "Seleccionar sin orden k elementos de n exige combinación, no permutación. Distinguir diferencia de puntos porcentuales de variación relativa. Al cambiar denominadores, conservar base explícita y no sumar variaciones porcentuales sucesivas como si tuvieran la misma base.",
+    "contrast": [
+      "Selección de dos entre cinco sin orden: 10 combinaciones.",
+      "De 80 % a 90 %: 10 puntos, 12,5 % de crecimiento relativo."
+    ],
+    "sourceId": "openstax-probability"
+  },
+  {
+    "moduleId": "pgn-m68",
+    "title": "Muestreo estratificado y secuencias",
+    "article": "OpenStax, muestreo y análisis descriptivo",
+    "rule": "Una muestra estratificada desproporcionada necesita pesos poblacionales para estimar prevalencia. Para secuencias verificar regla de generación, no extrapolar sin reconocer que pueden existir otras reglas; interpretar patrones como hipótesis.",
+    "contrast": [
+      "Estratos de 80 % y 20 %: combinar estimaciones con pesos 0,8 y 0,2.",
+      "Regla de incremento creciente explícita: proyectar según esa regla, no por promedio de incrementos."
+    ],
+    "sourceId": "openstax-sampling"
+  },
+  {
+    "moduleId": "pgn-m62",
+    "title": "SQL: uniones externas y valores nulos",
+    "article": "PostgreSQL 18, SELECT y funciones agregadas",
+    "rule": "LEFT JOIN conserva filas sin coincidencia si no se elimina después mediante WHERE sobre columnas derechas. Para contar hijos usar COUNT(columna no nula del hijo), no COUNT(*) que cuenta la fila externa. Verificar cardinalidad y casos sin coincidencia.",
+    "contrast": [
+      "Filtro del hijo en ON: conserva expedientes sin hijos que cumplan.",
+      "COUNT(hijo.id): cuenta coincidencias, no la fila externa vacía."
+    ],
+    "sourceId": "postgresql-select"
+  },
+  {
+    "moduleId": "pgn-m84",
+    "title": "Transacciones, concurrencia y privilegios",
+    "article": "PostgreSQL 18, Transaction Isolation y Privileges",
+    "rule": "Una lectura seguida de una escritura basada en valor antiguo puede producir actualización perdida. Usar incremento atómico, bloqueo apropiado o aislamiento con manejo de reintentos según operación. Roles y permisos se asignan por necesidad; revocar privilegios excedentes y comprobar permisos efectivos (incluida pertenencia a roles).",
+    "contrast": [
+      "Dos incrementos sobre mismo contador: operación atómica o coordinación transaccional.",
+      "Auditor de lectura: permisos mínimos y revisión de herencia."
+    ],
+    "sourceId": "postgresql-isolation"
+  },
+  {
+    "moduleId": "pgn-m81",
+    "title": "Correlación de red y recuperación a un punto temporal",
+    "article": "RFC 9293; PostgreSQL 18, PITR; NIST SP 800-86",
+    "rule": "Una IP pública compartida por NAT no identifica por sí sola al equipo o persona; correlacionar dirección y puerto, intervalo y logs de traducción autorizados. PITR requiere respaldo base y secuencia WAL suficiente; ensayar recuperación aislada, conservar el estado actual y comprobar objetivo temporal.",
+    "contrast": [
+      "NAT compartido: IP y hora solas no resuelven atribución personal.",
+      "PITR sin tramo WAL: no prometer recuperación exacta; comprobar continuidad."
+    ],
+    "sourceId": "rfc-9293"
+  },
+  {
+    "moduleId": "pgn-m70",
+    "title": "Responsabilidad con la Organización y Organización del Trabajo",
+    "article": "Diccionario PGN, niveles B y B",
+    "rule": "Dilemas formativos de responsabilidad institucional y organización. Distinguir cooperación, límites de competencia, previsión de dependencias, uso de recursos y ajuste de prioridades. No se mide personalidad ni se reconstruye una escala oficial.",
+    "contrast": [
+      "Responsabilidad institucional: anticipar impacto de decisiones sobre otras dependencias.",
+      "Organización: adaptar plan y recursos a compromisos verificables."
+    ],
+    "sourceId": "pgn-diccionario-competencias"
+  },
+  {
+    "moduleId": "pgn-m71",
+    "title": "Investigación y Pensamiento Conceptual",
+    "article": "Diccionario PGN, Investigación B y Pensamiento Conceptual A",
+    "rule": "Investigación B: estudio colaborativo y método, búsqueda y contraste de fuentes. Pensamiento Conceptual A: explicar problemas complejos a través de relaciones y orientaciones claras. Distinguir acumulación de datos de capacidad explicativa y contraste de hipótesis.",
+    "contrast": [
+      "Investigación: elegir fuentes discriminantes y método verificable.",
+      "Pensamiento conceptual: integrar relaciones, excepciones y límites en explicación útil."
+    ],
+    "sourceId": "pgn-diccionario-competencias"
+  },
+  {
+    "moduleId": "pgn-m72",
+    "title": "Orientación a Resultados y Cumplimiento de Parámetros",
+    "article": "Diccionario PGN, niveles A y B",
+    "rule": "Orientación a resultados A: metas exigentes, planificación y uso de recursos con calidad. Cumplimiento de parámetros B: alinear objetivos con criterios y procedimientos, proponer mejoras por cauces permitidos. Evaluar conductas bajo presión sin presentar la omisión deliberada de controles como único distractor.",
+    "contrast": [
+      "Resultados: ajustar medios y comprobar calidad del logro.",
+      "Parámetros: usar alternativas autorizadas y tramitar cambios de procedimiento."
     ],
     "sourceId": "pgn-diccionario-competencias"
   }

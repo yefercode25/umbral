@@ -289,7 +289,7 @@ export function MockExamPage() {
 
       <section className={styles.examBody}>
         <div className={styles.questionBar}>
-          <div className={styles.questionMeta}><span>{current.type === 'pjs' ? 'Juicio situacional' : 'Conocimiento aplicado'}</span><span>Dificultad {current.difficulty}/5</span></div>
+          {profile.id !== 'functional-blind' ? <div className={styles.questionMeta}><span>{current.type === 'pjs' ? 'Juicio situacional' : 'Conocimiento aplicado'}</span><span>Dificultad {current.difficulty}/5</span></div> : <div className={styles.questionMeta}><span>Decisión profesional</span></div>}
           <button
             type="button"
             className={`${styles.flagButton} ${flagged.has(current.id) ? styles.flagButtonActive : ''}`}

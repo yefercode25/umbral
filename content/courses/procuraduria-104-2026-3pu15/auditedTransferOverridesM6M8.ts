@@ -27,7 +27,7 @@ export const auditedTransferOverridesM6M8: Record<string, [FoundationTransferOve
       caseText: 'Durante la valoración de un contrato de suministro, llega un certificado de bodega que demuestra que 70 de 100 bienes sí fueron recibidos. Una denuncia original afirmaba que no había entrega alguna. La Contraloría aún verifica el saldo; la Procuraduría analiza la actuación del supervisor y la Fiscalía tiene una noticia de posible falsedad documental. La dirección pide mantener literalmente todas las conclusiones del primer informe por temor a «contradecir» lo enviado.',
       stem: '¿Qué conclusión puede actualizarse con el nuevo certificado sin inferir efectos automáticos en las tres autoridades?',
       correct: {
-        text: 'Corregir el hecho de ausencia total de entrega, identificar los 30 bienes pendientes de verificar y separar cómo afecta la nueva evidencia a cada objeto, manteniendo cuestiones de deber, daño o delito abiertas para su autoridad.',
+        text: 'Actualizar la entrega parcial y los treinta bienes pendientes de verificar; distinguir deber, daño y delito en cada actuación.',
         reason: 'La prueba de entrega parcial cambia un hecho relevante, pero no resuelve sin más responsabilidad, dolo o daño patrimonial.',
       },
       other: [
@@ -111,7 +111,7 @@ export const auditedTransferOverridesM6M8: Record<string, [FoundationTransferOve
       caseText: 'Luego de la queja por retraso contractual, se aporta un informe que documenta que el supervisor requirió por escrito al proveedor durante la ejecución, pero falta evidencia de algunas revisiones técnicas obligatorias según el alcance de su designación. Un trabajador externo afirma que el supervisor no podía realizar inspecciones en una fecha específica. La oficina tiene un borrador de imputación que no considera ese nuevo hecho ni determina el deber funcional cuestionado.',
       stem: '¿Cómo debe actualizarse el análisis de una presunta omisión sin declarar de antemano responsabilidad ni archivo definitivo?',
       correct: {
-        text: 'Contrastar deberes y facultades del supervisor con la cronología de actuaciones y las nuevas fuentes; precisar qué omisiones continúan plausibles y cuáles ya no se sostienen antes de definir la actuación legal que corresponda.',
+        text: 'Contrastar deberes, cronología y fuentes nuevas para delimitar las omisiones que subsisten antes de definir la actuación procedente.',
         reason: 'La prueba de actuaciones positivas y posibles impedimentos incide en hechos y valoración, sin decidir automáticamente el expediente.',
       },
       other: [

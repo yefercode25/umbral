@@ -32,12 +32,12 @@ describe('Casos límite: reglas especiales y cambios de presupuesto', () => {
     expect(latest).toHaveLength(28)
     for (const q of latest) expect(q.correctOptionId, q.id).toBe(expected[q.id as keyof typeof expected])
   })
-  it('incluye 88 supuestos independientes en 44 temas, con fuentes y claves válidas', () => {
+  it('incluye 114 supuestos independientes en 57 temas, con fuentes y claves válidas', () => {
     const qs = procuraduriaExceptionQuestions
     const pool = practiceQuestionPool(procuraduriaCourse)
     const sourceIds = new Set(procuraduriaCourse.sources.map(s => s.id))
-    expect(qs).toHaveLength(88)
-    expect(new Set(qs.map(q=>q.scenarioId)).size).toBe(44)
+    expect(qs).toHaveLength(114)
+    expect(new Set(qs.map(q=>q.scenarioId)).size).toBe(57)
     expect(pool.filter(isPgnException)).toEqual(qs)
     const audit = auditPgnBank(qs, sourceIds)
     expect(audit.missingSource).toEqual([])

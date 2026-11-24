@@ -26,16 +26,16 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       "caseText": "La interrupción de un servicio de salud ya afectó a usuarios de una localidad. Se documentan retrasos y se conoce un plan de continuidad que aún no ha sido aplicado. El operador recibe información sobre el riesgo de repetición durante la semana siguiente. La oficina propone cerrar la actuación preventiva porque el hecho dejó de ser futuro y remitir todos los casos sin seguimiento adicional.",
       "stem": "¿Cómo cambia la actuación al comprobar que el riesgo se materializó?",
       "correct": {
-        "text": "Evaluar el escenario de mitigación y/o restitución, verificar medidas de continuidad y reducción del daño y separar las posibles noticias disciplinarias por la vía correspondiente.",
+        "text": "Activar seguimiento de mitigación o restitución, verificar continuidad y reducción del daño, y canalizar separadamente posibles noticias disciplinarias.",
         "reason": "La Resolución 132 incluye hechos ya ocurridos en el escenario de mitigación y restitución."
       },
       "other": [
         {
-          "text": "Cerrar toda prevención por haberse consumado el hecho y considerar que solo procede sancionar.",
+          "text": "Cerrar la prevención y trasladar los hechos a disciplina, dejando pendiente el seguimiento.",
           "reason": "El daño materializado no elimina la función preventiva."
         },
         {
-          "text": "Ordenar directamente las citas y la operación del servicio en reemplazo de la entidad prestadora.",
+          "text": "Asumir temporalmente la organización de citas y la ejecución del plan de continuidad para asegurar que el prestador cumpla las medidas de mitigación.",
           "reason": "El seguimiento no transfiere gestión operativa a la PGN."
         }
       ],
@@ -90,16 +90,16 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       "caseText": "Un municipio informa que alcanzó 120 atenciones de un programa dirigido a 200 personas elegibles. La base contiene 80 identificadores únicos, porque varios beneficiarios asistieron en más de una ocasión. La ficha del indicador define cobertura como personas únicas atendidas respecto de la población objetivo. El informe oficial calcula 60 % y lo usa para afirmar que se cumplió la meta de cobertura.",
       "stem": "¿Qué corrección corresponde efectuar al indicador y a su interpretación?",
       "correct": {
-        "text": "Calcular cobertura de 40 % con 80 personas únicas sobre 200, conservar las 120 atenciones como medida de actividad y verificar la meta y calidad de la base.",
+        "text": "Calcular cobertura de 40 % (80/200), mantener 120 atenciones como actividad y verificar la meta y calidad de datos.",
         "reason": "La definición fija numerador y denominador; 80 de 200 equivale a 40 %."
       },
       "other": [
         {
-          "text": "Conservar 60 % porque todas las atenciones consumen recursos, aunque la ficha mida personas únicas.",
+          "text": "Mantener 60 % como cobertura porque las atenciones repetidas consumen recursos y reflejan el volumen de actividad que realizó el programa institucional.",
           "reason": "Actividad y cobertura no son equivalentes."
         },
         {
-          "text": "Usar 80 sobre 120 como cobertura, porque el total de atenciones es el denominador más próximo.",
+          "text": "Calcular cobertura como 80/120, utilizando las atenciones realizadas como denominador.",
           "reason": "El denominador legal o metodológico es la población objetivo definida."
         }
       ],
@@ -132,16 +132,16 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       "caseText": "En un proceso contencioso administrativo se discute una decisión que puede afectar recursos públicos. El agente del Ministerio Público solicita un informe técnico para evaluar una medida cautelar. El profesional de apoyo identifica soportes relevantes, pero su jefe propone emitir desde la oficina una orden directa a la entidad demandada para ejecutar la medida antes de que el juez resuelva.",
       "stem": "¿Qué actuación respeta el objeto de la intervención y la autoridad que decide?",
       "correct": {
-        "text": "Preparar el soporte y la posición para que el agente habilitado formule la solicitud procesal procedente, dejando al juez la decisión sobre la medida.",
+        "text": "Sustentar la solicitud del agente habilitado ante el juez, quien conserva la competencia para decidir la medida cautelar.",
         "reason": "La intervención permite defender intereses públicos mediante actuaciones legalmente habilitadas, no sustituir al juez."
       },
       "other": [
         {
-          "text": "Expedir la medida cautelar directamente desde la dependencia de apoyo por el riesgo al patrimonio público.",
+          "text": "Expedir una orden cautelar temporal desde la oficina y comunicarla después al juez.",
           "reason": "El interés público no transfiere la potestad judicial."
         },
         {
-          "text": "Abstenerse de preparar todo informe porque la competencia del juez impide cualquier participación del Ministerio Público.",
+          "text": "Limitarse a remitir documentos sin concepto, para no invadir la competencia judicial.",
           "reason": "La autonomía judicial no excluye la intervención legal."
         }
       ],
@@ -152,16 +152,16 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       "caseText": "Durante una intervención judicial, un informe técnico identifica una inconsistencia en registros institucionales que también podría tener relevancia disciplinaria. El agente debe presentar su concepto dentro de un término próximo. Un compañero propone suspender unilateralmente el trámite judicial hasta finalizar una investigación interna; otro desea ignorar el hallazgo porque no fue el objeto inicial del informe.",
       "stem": "¿Cómo deben tratarse los objetos misionales concurrentes?",
       "correct": {
-        "text": "Documentar el hallazgo y su alcance, sustentar la intervención en su propio procedimiento y canalizar la eventual noticia disciplinaria por la autoridad competente sin suspender por cuenta propia el proceso judicial.",
+        "text": "Documentar el hallazgo, sustentar la intervención y canalizar la noticia disciplinaria al competente, sin suspender unilateralmente el proceso judicial.",
         "reason": "La autonomía de funciones permite tratar hechos comunes en rutas distintas, con garantías y competencia."
       },
       "other": [
         {
-          "text": "Suspender desde la PGN el proceso judicial hasta que termine una investigación disciplinaria, sin decisión del juez.",
+          "text": "Solicitar que la PGN suspenda directamente el proceso judicial mientras el despacho disciplinario comprueba la inconsistencia y decide si procede abrir otra actuación.",
           "reason": "La oficina no controla unilateralmente el término judicial."
         },
         {
-          "text": "Omitir la inconsistencia de todo soporte porque intervención y disciplina no pueden compartir información relevante.",
+          "text": "Excluir la inconsistencia del concepto y no canalizarla por otra vía, porque el objeto inicial de la intervención no comprendía posibles faltas disciplinarias.",
           "reason": "Separar objetos no obliga a ocultar información relevante."
         }
       ],
@@ -216,16 +216,16 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       "caseText": "Una entidad sometida al estatuto general requiere contratar un suministro por 35 SMMLV. Su menor cuantía aplicable es 280 SMMLV y no se ha identificado causal especial ni otra regla que habilite contratación directa. La oficina desea tramitar mínima cuantía para reducir tiempos, a pesar de que los estudios reflejan el valor íntegro de la necesidad y no justifican dividirla.",
       "stem": "¿Qué recomendación respeta el umbral y la selección conforme al régimen aplicable?",
       "correct": {
-        "text": "Reconocer que el límite de mínima cuantía es 28 SMMLV, descartar esa modalidad por el valor descrito y determinar la procedente según objeto y demás supuestos legales.",
+        "text": "El límite de mínima cuantía es 28 SMMLV; descartarla y determinar la modalidad por objeto y demás presupuestos legales.",
         "reason": "El umbral es 10 % de menor cuantía: 28 SMMLV en este ejemplo."
       },
       "other": [
         {
-          "text": "Aplicar mínima cuantía porque el valor de 35 SMMLV es inferior a la menor cuantía de 280 SMMLV.",
+          "text": "Aplicar mínima cuantía porque 35 SMMLV no supera la menor cuantía de 280 SMMLV.",
           "reason": "Menor cuantía y mínima cuantía no son equivalentes."
         },
         {
-          "text": "Dividir la necesidad en contratos menores de 28 SMMLV sin justificación objetiva para acelerar el trámite.",
+          "text": "Dividir la necesidad en adquisiciones inferiores a 28 SMMLV, aun sin independencia objetiva de los objetos, para completar la selección dentro del plazo previsto.",
           "reason": "La división artificial no modifica legítimamente el régimen aplicable."
         }
       ],
@@ -236,16 +236,16 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       "caseText": "Una oficina solicita iniciar un servicio antes de formalizar el contrato y verificar los requisitos de ejecución. La necesidad era conocida desde el comienzo de la vigencia; ahora resta poco tiempo para contratar. No se acreditan hechos constitutivos de urgencia manifiesta ni otra excepción legal. Se propone fechar retrospectivamente el documento y el acta de inicio para evitar una observación de control.",
       "stem": "¿Cuál actuación protege la legalidad contractual y la trazabilidad documental?",
       "correct": {
-        "text": "Verificar y cumplir los requisitos legales antes de iniciar, documentar la situación real y evaluar opciones legales sin retroactividad ficticia ni causal de urgencia no acreditada.",
+        "text": "Cumplir requisitos antes de iniciar, registrar la situación real y evaluar opciones legales sin retroactividad ficticia ni urgencia no acreditada.",
         "reason": "La planeación y requisitos de ejecución no se eliminan por conveniencia administrativa."
       },
       "other": [
         {
-          "text": "Iniciar inmediatamente y regularizar con documentos retroactivos porque la necesidad pública hace innecesarios los requisitos.",
+          "text": "Autorizar el inicio del servicio por la necesidad institucional y dejar la formalización con fecha anterior para cuando se completen los requisitos pendientes.",
           "reason": "La fecha ficticia no subsana la actuación ni preserva trazabilidad."
         },
         {
-          "text": "Declarar urgencia manifiesta exclusivamente por proximidad del cierre de vigencia, aunque no concurra el supuesto legal.",
+          "text": "Declarar urgencia manifiesta por la demora administrativa y la proximidad del cierre presupuestal.",
           "reason": "La urgencia manifiesta exige presupuestos de los arts. 42–43."
         }
       ],
@@ -300,16 +300,16 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       "caseText": "Una entidad contrató interventoría exclusivamente técnica para una obra y asignó a un supervisor interno el seguimiento administrativo, financiero y jurídico. El contrato delimita las tareas. Aparece una diferencia entre cantidades ejecutadas y valores facturados, y ambos responsables sostienen que el otro debe verificarla por completo. La entidad no ha consolidado los informes ni revisado la supervisión del contrato de interventoría.",
       "stem": "¿Qué actuación respeta la distribución de vigilancia y permite verificar el pago?",
       "correct": {
-        "text": "Contrastar el alcance técnico del interventor con el seguimiento financiero y administrativo del supervisor, coordinar la verificación y mantener supervisión del contrato de interventoría por la entidad.",
+        "text": "Coordinar verificación técnica, financiera y administrativa según los alcances asignados, y mantener supervisión del contrato de interventoría por la entidad.",
         "reason": "El art. 83 permite distribución expresa y exige supervisión del contrato de interventoría."
       },
       "other": [
         {
-          "text": "Trasladar toda responsabilidad al interventor porque su contratación elimina las funciones de vigilancia de la entidad.",
+          "text": "Atribuir al interventor técnico todas las verificaciones del pago, incluidas las financieras.",
           "reason": "El alcance técnico no transfiere automáticamente todas las funciones."
         },
         {
-          "text": "Duplicar íntegramente la vigilancia sin atender la distribución pactada y certificar pago si alguno firma.",
+          "text": "Duplicar verificaciones y aceptar la certificación del primero que firme, sin aplicar la distribución contractual.",
           "reason": "La firma aislada no acredita la verificación coordinada."
         }
       ],
@@ -362,16 +362,16 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       "caseText": "Un contratista individual, durante la ejecución, incurre en una inhabilidad sobreviniente sometida a la regla general del artículo 9 de la Ley 80. No concurre una excepción especial y existe posibilidad de ceder el contrato a un tercero habilitado, previa aprobación de la entidad. El responsable propone continuar hasta liquidación porque al celebrar el contrato no existía la restricción.",
       "stem": "¿Qué actuación debe examinar la entidad frente a la causal sobreviniente acreditada?",
       "correct": {
-        "text": "Aplicar la ruta legal de cesión previa autorización escrita de la entidad o renuncia a la ejecución si no es posible, según el art. 9 y el supuesto descrito.",
+        "text": "Examinar cesión a tercero habilitado previa autorización escrita de la entidad o renuncia a la ejecución, conforme al art. 9.",
         "reason": "El art. 9 regula expresamente la inhabilidad surgida durante la ejecución."
       },
       "other": [
         {
-          "text": "Permitir que el contratista continúe sin revisión porque las inhabilidades solo se examinan antes de celebrar el contrato.",
+          "text": "Permitir que continúe hasta la liquidación porque al celebrar el contrato no existía la inhabilidad, dejando su efecto para futuros procesos de selección.",
           "reason": "La inexistencia inicial de causal no neutraliza la sobreviniente."
         },
         {
-          "text": "Autorizar una cesión verbal inmediata y completar después el expediente, sin verificar el cesionario.",
+          "text": "Aprobar verbalmente la cesión para asegurar continuidad y revisar posteriormente si el tercero cumple requisitos y si se obtuvo autorización escrita de la entidad.",
           "reason": "La cesión requiere autorización escrita y verificación jurídica."
         }
       ],
@@ -404,16 +404,16 @@ export const auditedTransferOverridesM45M54: Record<string, [FoundationTransferO
       "caseText": "Un tablero de SECOP muestra quince filas asociadas a un proveedor durante un trimestre. Al examinar los identificadores se observa que diez filas son modificaciones de dos contratos y las restantes corresponden a procesos distintos. El analista propone publicar una alerta de concentración como prueba de corrupción, sin validar el conteo ni comparar objetos, mercado o cuantías de los contratos.",
       "stem": "¿Cómo debe tratarse el patrón antes de recomendar una actuación preventiva o disciplinaria?",
       "correct": {
-        "text": "Depurar por identificador y unidad de análisis, distinguir modificaciones de contratos, contrastar mercado y soportes, y tratar el resultado como señal para revisión sin atribuir culpa.",
+        "text": "Depurar por identificador y unidad, separar modificaciones, contrastar mercado y soportes, y presentar el patrón como señal sin atribuir responsabilidad.",
         "reason": "La calidad del dato y contexto condicionan la interpretación; riesgo no equivale a responsabilidad."
       },
       "other": [
         {
-          "text": "Contar todas las filas como contratos independientes y publicar el nombre del proveedor como responsable de corrupción.",
+          "text": "Contar cada modificación como contrato independiente y concluir corrupción por concentración.",
           "reason": "La duplicación distorsiona la concentración y no prueba una falta."
         },
         {
-          "text": "Descartar todo análisis porque los datos de SECOP pueden contener modificaciones y no son prueba definitiva.",
+          "text": "Abstenerse de analizar la concentración por proveedor porque las modificaciones impiden tratar cualquier registro de SECOP como información útil para una actuación preventiva.",
           "reason": "La existencia de limitaciones exige verificación, no abandonar el análisis."
         }
       ],

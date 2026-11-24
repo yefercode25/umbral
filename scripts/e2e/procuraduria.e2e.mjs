@@ -19,7 +19,7 @@ test('Procuraduría: simulacro, persistencia, aislamiento y recarga offline', as
 
   await page.goto(mock(PGN))
   const profiles = page.getByRole('radiogroup', { name: 'Tipo de simulacro' })
-  await expect(profiles.getByRole('radio')).toHaveCount(8)
+  await expect(profiles.getByRole('radio')).toHaveCount(9)
   await expect(profiles.getByRole('radio', { name: /Competencias comportamentales/ })).toBeVisible()
   await expect(profiles.getByRole('radio', { name: /Fundamentos de Ingeniería de Sistemas/ })).toBeVisible()
   const quick = profiles.getByRole('radio', { name: /Núcleo rápido/ })
@@ -63,10 +63,28 @@ test('Procuraduría: simulacro, persistencia, aislamiento y recarga offline', as
     expect((await readCourses(page))[PGN].questionStats).toEqual(saved.questionStats)
     expect((await readCourses(page))[PGN].practiceSessions).toEqual(saved.practiceSessions)
     await page.goto(mock(PGN))
-    await expect(page.getByRole('radiogroup', { name: 'Tipo de simulacro' }).getByRole('radio')).toHaveCount(8)
+    await expect(page.getByRole('radiogroup', { name: 'Tipo de simulacro' }).getByRole('radio')).toHaveCount(9)
     expect((await readCourses(page))[DIAN]).toEqual(beforeDian)
   } finally {
     await context.setOffline(false)
   }
   expect(pageErrors).toEqual([])
+})
+
+test('Simulacro integral PGN no muestra pistas antes de entregar', async ({page}) => {
+  await page.goto(mock(PGN))
+  await page.getByRole('radio', {name: /Simulacro integral/}).click()
+  await page.getByRole('button', {name: 'Iniciar integral'}).click()
+  await expect(page.getByText('Pregunta 1 de 30', {exact:true})).toBeVisible()
+  await expect(page.getByText('Decisión profesional',{exact:true})).toBeVisible()
+  await expect(page.getByText(/Dificultad [1-5]\/5/)).toHaveCount(0)
+  await expect(page.getByText('Por qué cada alternativa',{exact:true})).toHaveCount(0)
+  const options=page.getByRole('radiogroup',{name:'Opciones de respuesta'})
+  for(let i=0;i<30;i++){
+    await options.getByRole('radio').first().click()
+    await page.getByRole('button',{name:i===29?'Entregar':'Siguiente',exact:true}).click()
+  }
+  await expect(page.getByRole('heading',{name:/\d+ de 30 respuestas correctas/})).toBeVisible()
+  await expect(page.getByText('Por qué cada alternativa',{exact:true})).toHaveCount(30)
+  await expect.poll(async()=> (await readCourses(page))[PGN]?.practiceSessions?.[0]?.profileId).toBe('functional-blind')
 })

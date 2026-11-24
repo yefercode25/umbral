@@ -48,16 +48,16 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       "caseText": "Un contribuyente presenta una declaración cuyo saldo a pagar es cero. Un profesional de apoyo sostiene que, como no existe impuesto a pagar en ese formulario, ningún deber formal tributario podía resultar exigible. La norma que regula la declaración se encuentra disponible, pero aún no se verificaron sus destinatarios, período ni condiciones. El informe se prepara para orientar una actuación preventiva de la PGN.",
       "stem": "¿Qué distinción jurídica debe hacerse antes de concluir que no existía un deber tributario exigible?",
       "correct": {
-        "text": "Distinguir obligación sustancial de pago y deberes formales; comprobar la norma, sujeto y período de la declaración.",
+        "text": "Distinguir pago y deberes formales; verificar norma, sujeto y período de la declaración exigible.",
         "reason": "El pago y los deberes formales tienen presupuestos propios."
       },
       "other": [
         {
-          "text": "Dar por inexistente toda obligación formal por el saldo cero.",
+          "text": "Concluir que saldo cero elimina también la obligación de declarar.",
           "reason": "El saldo no elimina automáticamente un deber de declarar."
         },
         {
-          "text": "Presumir una infracción por presentar una declaración sin impuesto a pagar.",
+          "text": "Presumir infracción formal sin verificar sujeto, período ni norma aplicable.",
           "reason": "Una declaración en cero no es por sí sola irregular."
         }
       ],
@@ -110,16 +110,16 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       "caseText": "Un contrato cuenta con CDP previo, pero el expediente no acredita el registro presupuestal del compromiso. La oficina sostiene que el CDP reserva definitivamente el dinero a ese contratista y propone tratar ambos documentos como intercambiables. La entidad está sometida al Estatuto Orgánico del Presupuesto nacional y el profesional debe señalar qué soporte falta sin concluir automáticamente responsabilidad del ordenador.",
       "stem": "¿Qué control corresponde según la finalidad diferenciada de CDP y registro presupuestal?",
       "correct": {
-        "text": "Verificar el RP exigible y su valor y plazo; distinguir disponibilidad de la afectación del compromiso conforme al art. 71.",
+        "text": "Verificar registro presupuestal, valor y plazo; distinguir disponibilidad de afectación del compromiso conforme al art. 71.",
         "reason": "El CDP acredita apropiación disponible y el RP afecta recursos al compromiso."
       },
       "other": [
         {
-          "text": "Considerar suficiente el CDP porque acredita el compromiso definitivo con el proveedor.",
+          "text": "Considerar el CDP soporte suficiente de registro definitivo del compromiso.",
           "reason": "Un certificado de disponibilidad no sustituye el registro."
         },
         {
-          "text": "Expedir retrospectivamente el RP con una fecha ficticia para completar el expediente.",
+          "text": "Completar el registro con una fecha retrospectiva que coincida con el contrato, sin documentar que el requisito faltaba en el expediente al momento de la revisión.",
           "reason": "La fecha ficticia vulnera trazabilidad y no corrige el hecho histórico."
         }
       ],
@@ -132,16 +132,16 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       "caseText": "Una noticia disciplinaria involucra a un integrante uniformado de la Policía Nacional y a un funcionario civil que cumple tareas administrativas en la misma dependencia. El equipo propone aplicar idéntico régimen especial a ambos por estar vinculados a la institución. La documentación permite identificar naturaleza del vínculo, funciones, fecha de hechos y posible competencia del despacho, pero aún no se contrastaron las normas de destinatarios.",
       "stem": "¿Qué análisis previo permite determinar el régimen disciplinario aplicable a cada persona sin excluir el poder preferente de PGN?",
       "correct": {
-        "text": "Individualizar vínculo y condición, revisar destinatarios y reglas especiales o generales aplicables, y verificar competencia y poder preferente.",
+        "text": "Identificar vínculo y destinatario, revisar régimen especial o general y comprobar competencia y poder preferente.",
         "reason": "El régimen depende de los destinatarios y la competencia legal."
       },
       "other": [
         {
-          "text": "Aplicar el Estatuto Policial a toda persona que trabaje en la dependencia.",
+          "text": "Aplicar régimen policial a ambos por pertenecer a la misma dependencia.",
           "reason": "La adscripción institucional no basta para aplicar el mismo estatuto."
         },
         {
-          "text": "Excluir cualquier intervención de PGN por existir órganos disciplinarios policiales.",
+          "text": "Excluir toda intervención de PGN por existir órganos disciplinarios policiales.",
           "reason": "La competencia policial coexiste con el poder preferente legal."
         }
       ],
@@ -152,16 +152,16 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       "caseText": "Una oficina analiza una actuación de autoridad durante una situación de violencia aislada. El informe da por probado que existe conflicto armado solo porque hubo intervención de la Fuerza Pública. No se han examinado las circunstancias ni los criterios de clasificación aplicables. La actuación puede comprometer derechos fundamentales y se requiere establecer el marco jurídico sin formular afirmaciones anticipadas sobre los hechos.",
       "stem": "¿Qué distinción corresponde hacer entre protección de derechos humanos y ámbito de aplicación del DIH?",
       "correct": {
-        "text": "Examinar el contexto y criterios jurídicos de conflicto armado antes de aplicar DIH; mantener análisis de derechos humanos y garantías pertinentes.",
+        "text": "Comprobar contexto y criterios de conflicto armado antes de aplicar DIH, manteniendo análisis de derechos humanos y garantías pertinentes.",
         "reason": "Son marcos distintos y complementarios, con ámbitos propios."
       },
       "other": [
         {
-          "text": "Aplicar DIH automáticamente en cualquier intervención de Fuerza Pública.",
+          "text": "Aplicar DIH por la sola intervención de Fuerza Pública sin clasificar el contexto.",
           "reason": "La intervención estatal no demuestra por sí misma conflicto armado."
         },
         {
-          "text": "Descartar los derechos humanos cuando se considera aplicable DIH.",
+          "text": "Aplicar exclusivamente DIH si existen indicios de conflicto y excluir el examen de derechos humanos, porque ambos marcos no pueden operar simultáneamente.",
           "reason": "El DIH no elimina automáticamente la protección de DDHH."
         }
       ],
@@ -216,16 +216,16 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       "caseText": "Un aplicativo deja de mostrar expedientes recientes, aunque el sistema de radicación confirma su creación. La arquitectura incluye una cola de integración, una API de consulta, reglas de permisos y una base de lectura. El equipo propone reiniciar directamente el motor de datos sin revisar las demás dependencias. Existen identificadores de solicitud y métricas de procesamiento que permiten seguir el flujo completo.",
       "stem": "¿Qué diagnóstico permite localizar la capa afectada antes de intervenir componentes en producción?",
       "correct": {
-        "text": "Trazar una solicitud desde radicación, cola y API hasta permisos, datos y presentación, contrastar métricas y preservar registros antes de cambios.",
+        "text": "Trazar solicitud por radicación, cola, API, permisos, datos y presentación; contrastar métricas y preservar registros antes de intervenir.",
         "reason": "La arquitectura permite identificar la causa con trazabilidad entre capas."
       },
       "other": [
         {
-          "text": "Reiniciar la base porque toda ausencia de expedientes visibles se origina allí.",
+          "text": "Reiniciar la base y examinar después la cola de integración.",
           "reason": "La interfaz no identifica por sí sola el componente defectuoso."
         },
         {
-          "text": "Atribuir el fallo al usuario final sin examinar los componentes intermedios.",
+          "text": "Atribuir el problema a los permisos del usuario y corregirlos antes de revisar la cola, los identificadores de solicitud o los datos que recibió la API.",
           "reason": "La ausencia visible no demuestra error humano."
         }
       ],
@@ -236,16 +236,16 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       "caseText": "Una integración recibe un mensaje de creación de expediente y lo procesa correctamente, pero el acuse de recibo se pierde. El emisor reintenta el mismo mensaje y aparecen dos expedientes con idéntico identificador de operación. Los logs muestran ambos intentos y existe un ambiente de pruebas autorizado. La oficina necesita corregir el mecanismo sin eliminar indiscriminadamente registros de producción.",
       "stem": "¿Qué control de diseño permite evitar duplicación de efectos por reintentos de una misma operación?",
       "correct": {
-        "text": "Implementar idempotencia mediante identificador único y control transaccional apropiado, probar reintentos y conciliar duplicados con trazabilidad.",
+        "text": "Aplicar idempotencia por identificador y control transaccional, probar reintentos y conciliar duplicados con trazabilidad.",
         "reason": "Idempotencia conserva el efecto previsto ante repetición de la misma solicitud."
       },
       "other": [
         {
-          "text": "Deshabilitar todos los reintentos aunque se puedan perder operaciones legítimas.",
+          "text": "Desactivar reintentos aunque no se confirme ejecución del mensaje inicial.",
           "reason": "Eliminar reintentos puede reducir confiabilidad."
         },
         {
-          "text": "Aceptar cada reintento como expediente nuevo y corregir manualmente después.",
+          "text": "Crear un expediente por cada mensaje recibido y resolver las repeticiones posteriormente mediante conciliación manual, sin impedir la duplicación durante la ejecución.",
           "reason": "Un evento repetido no representa necesariamente un trámite nuevo."
         }
       ],
@@ -300,16 +300,16 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       "caseText": "Una cuenta con privilegios elevados presenta consultas atípicas de documentos sensibles. El sistema presta un servicio crítico y sus logs rotan en pocos días. El equipo puede revocar sesiones, preservar registros y limitar permisos sin apagar todo el aplicativo. Todavía no se determinó si la actividad corresponde al titular o a otra persona. El responsable solicita una respuesta inmediata dentro del procedimiento institucional.",
       "stem": "¿Qué respuesta inicial equilibra contención, continuidad, privacidad y conservación de evidencia?",
       "correct": {
-        "text": "Validar alcance, preservar eventos y aplicar contención autorizada y proporcional sobre sesiones y permisos, con registro y coordinación de respuesta.",
+        "text": "Verificar alcance, preservar eventos y contener sesiones y permisos proporcionalmente, con autorización, registro y coordinación.",
         "reason": "La respuesta basada en riesgo permite contener sin destruir soportes ni exigir certeza de autoría."
       },
       "other": [
         {
-          "text": "Formatear equipos y borrar registros antes de revisar alcance, para eliminar cualquier riesgo.",
+          "text": "Formatear equipos para contener y recuperar registros después.",
           "reason": "Destruir registros limita investigación y puede afectar servicios."
         },
         {
-          "text": "Esperar identificación definitiva del autor antes de adoptar toda medida de contención.",
+          "text": "Esperar identificación definitiva antes de restringir privilegios o sesiones de la cuenta.",
           "reason": "El riesgo activo permite medidas proporcionadas mientras continúa análisis."
         }
       ],
@@ -320,16 +320,16 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       "caseText": "Un servicio tiene RPO objetivo de 15 minutos y RTO objetivo de dos horas. Tras una interrupción, se restaura en 90 minutos un respaldo que deja sin recuperar 45 minutos de transacciones. La jefatura afirma que se cumplieron ambos objetivos por estar el servicio disponible antes de dos horas. Los tiempos se midieron desde el mismo incidente y la pérdida fue confirmada mediante conciliación.",
       "stem": "¿Qué evaluación distingue el objetivo de recuperación temporal del objetivo de pérdida de datos?",
       "correct": {
-        "text": "Se cumple RTO (90 minutos), pero no RPO (45 minutos perdidos supera 15); investigar y ajustar recuperación de datos.",
+        "text": "RTO cumplido (90 minutos); RPO incumplido (45 minutos perdidos frente a 15). Ajustar recuperación.",
         "reason": "RTO mide recuperación del servicio y RPO pérdida tolerable de datos."
       },
       "other": [
         {
-          "text": "Se cumplen ambos porque 90 minutos es inferior a dos horas.",
+          "text": "Declarar cumplidos ambos objetivos porque la recuperación del servicio tardó 90 minutos y el límite general de disponibilidad era de dos horas.",
           "reason": "Cumplir un objetivo no implica cumplir el otro."
         },
         {
-          "text": "Se incumplen ambos porque cualquier pérdida de datos impide cumplir RTO.",
+          "text": "Incumplir ambos objetivos por superar el RPO, aunque se respete el RTO.",
           "reason": "La pérdida de datos no cambia por sí sola el tiempo real de recuperación."
         }
       ],
@@ -404,16 +404,16 @@ export const auditedTransferOverridesM75M84: Record<string, [FoundationTransferO
       "caseText": "Una base exige que cada actuación tenga una clave foránea hacia un expediente existente. Todos los registros pasan esa restricción, pero la revisión manual demuestra que una actuación fue asociada a un expediente incorrecto que también existe en la tabla. La oficina afirma que no puede haber error porque la integridad referencial está habilitada. Se conserva el documento original que identifica el expediente correcto.",
       "stem": "¿Qué distinción debe incluir el informe sobre integridad formal y exactitud del dato institucional?",
       "correct": {
-        "text": "Reconocer que la FK garantiza una referencia válida, no la asociación correcta; contrastar fuente y corregir con autorización y trazabilidad.",
+        "text": "La FK acredita referencia existente, no asociación correcta; contrastar documento y corregir con autorización y trazabilidad.",
         "reason": "La integridad referencial verifica existencia de una referencia, no su veracidad semántica."
       },
       "other": [
         {
-          "text": "Aceptar la asociación porque cualquier valor que satisface una FK representa la realidad.",
+          "text": "Aceptar la asociación porque la FK valida la existencia del expediente.",
           "reason": "Una referencia existente puede ser incorrecta para el caso."
         },
         {
-          "text": "Desactivar las restricciones y modificar registros sin conservar historial.",
+          "text": "Desactivar restricciones y reasignar sin registrar el cambio, pues el soporte ya fue verificado.",
           "reason": "Eliminar restricciones no resuelve exactitud y puede crear otros errores."
         }
       ],

@@ -12,10 +12,10 @@ Umbral ofrece una ruta de aprendizaje con nodos de unidades, módulos y leccione
 
 ## Estado actual · biblioteca multi-curso
 
-### Procuraduría 104-2026 · Profesional Universitario 3PU-15 · rc.6
+### Procuraduría 104-2026 · Profesional Universitario 3PU-15 · rc.7
 
 - **17 unidades, 85 módulos y 255 lecciones** con progresión fundamentos → aplicación → avanzado.
-- **2036 registros de preguntas, 1186 evaluables (421 casos de redacción individual o expedientes para simulacros; 765 situaciones de plantilla conservadas para repaso)**: 850 controles históricos, 850 situacionales, 170 nuevos casos de transferencia por módulo, 48 preguntas de 12 expedientes multidisciplinares, 30 decisiones integradoras y 88 casos límite jurídicos, técnicos y comportamentales, respaldadas por **81 fuentes** registradas.
+- **2062 registros de preguntas, 1212 evaluables (447 casos de redacción individual o expedientes para simulacros; 765 situaciones de plantilla conservadas para repaso)**: 850 controles históricos, 850 situacionales, 170 nuevos casos de transferencia por módulo, 48 preguntas de 12 expedientes multidisciplinares, 30 decisiones integradoras y 114 casos límite jurídicos, técnicos y comportamentales, respaldadas por **90 fuentes** registradas.
 - Cobertura explícita de las 11 funciones del empleo, Derecho Constitucional, Administrativo, Procesal, Disciplinario y Probatorio, contratación, anticorrupción, ordenamiento territorial, gestión/documentación y herramientas comunes.
 - Núcleo prioritario en instrucción disciplinaria y Derecho probatorio.
 - Preparación transversal en ofimática, datos y gestión para el empleo; los fundamentos especializados de sistemas (M80–M84) quedan como complemento optativo y no sustituyen el núcleo común.

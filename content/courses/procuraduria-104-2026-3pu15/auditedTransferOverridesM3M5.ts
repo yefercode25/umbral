@@ -73,7 +73,7 @@ export const auditedTransferOverridesM3M5: Record<string, [FoundationTransferOve
       caseText: 'Una revisión posterior confirma que el archivo exportado sí coincide con una copia preservada mediante un control de integridad. El nuevo informe también muestra que la modificación fue ejecutada mediante un proceso programado, aunque todavía no está documentado quién autorizó esa tarea ni si la configuración era conforme a las reglas institucionales. La jefatura solicita que el profesional declare cerrado el asunto y que elimine los registros previos por considerarlos repetidos.',
       stem: '¿Qué aspecto cambia con la nueva fuente y qué afirmaciones siguen sin estar probadas?',
       correct: {
-        text: 'Actualizar la hipótesis técnica a la luz de la ejecución automatizada, conservar las fuentes y documentar qué integridad se comprobó; la autorización, la regularidad y cualquier responsabilidad individual requieren verificación adicional.',
+        text: 'Actualizar la hipótesis de ejecución automatizada, preservar fuentes y delimitar la integridad comprobada; verificar autorización, regularidad y autoría.',
         reason: 'La nueva fuente explica parte del evento, no todos los supuestos jurídicos ni la identidad de la persona que pudo autorizarlo.',
       },
       other: [
@@ -95,7 +95,7 @@ export const auditedTransferOverridesM3M5: Record<string, [FoundationTransferOve
       caseText: 'Una autoridad administrativa investiga una posible omisión que compromete la prestación de un servicio. Hay actas y denuncias suficientes para iniciar verificaciones, pero antes de una decisión que afecta a un servidor debe practicarse una comunicación prevista en el procedimiento y permitir las actuaciones de defensa de esa fase. La dirección afirma que la presión ciudadana y la urgencia del servicio habilitan a omitir ese paso.',
       stem: '¿Cuál solución distingue el fin público de la competencia y las garantías constitucionales?',
       correct: {
-        text: 'Verificar qué autoridad puede actuar y qué garantías son exigibles en la etapa, realizar las comunicaciones y pruebas correspondientes y elegir una medida oportuna y motivada dentro de las atribuciones legales.',
+        text: 'Verificar competencia y garantías de la etapa, cumplir comunicaciones y pruebas exigibles y adoptar una medida motivada y oportuna.',
         reason: 'La eficacia y el interés general se realizan dentro de competencias y debido proceso, no mediante su supresión automática.',
       },
       other: [

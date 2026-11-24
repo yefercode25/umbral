@@ -714,4 +714,85 @@ export const procuraduriaSources: SourceRef[] = [
     "note": "Diseños muestrales, variación y sesgo.",
     "verifiedAt": "2026-11-23"
   },
+  {
+    "id": "ley-4-1913",
+    "title": "Ley 4 de 1913 · Régimen político y municipal",
+    "publisher": "Función Pública",
+    "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=8426",
+    "type": "official",
+    "note": "Art. 62: cómputo de días y meses; aplicar norma especial.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "cc-su381-2024",
+    "title": "Sentencia SU-381 de 2024",
+    "publisher": "Corte Constitucional",
+    "url": "https://www.corteconstitucional.gov.co/relatoria/2024/su381-24.htm",
+    "type": "official",
+    "note": "Alcance de reserva judicial respecto del ejercicio del cargo de elección popular.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "postgresql-select",
+    "title": "PostgreSQL 18 · SELECT",
+    "publisher": "PostgreSQL",
+    "url": "https://www.postgresql.org/docs/18/sql-select.html",
+    "type": "reference",
+    "note": "Uniones, condiciones y agrupación.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "postgresql-agg",
+    "title": "PostgreSQL 18 · Aggregate Functions",
+    "publisher": "PostgreSQL",
+    "url": "https://www.postgresql.org/docs/18/functions-aggregate.html",
+    "type": "reference",
+    "note": "COUNT(*) y COUNT(expresión).",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "postgresql-isolation",
+    "title": "PostgreSQL 18 · Transaction Isolation",
+    "publisher": "PostgreSQL",
+    "url": "https://www.postgresql.org/docs/18/transaction-iso.html",
+    "type": "reference",
+    "note": "Actualización concurrente y niveles de aislamiento.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "postgresql-privileges",
+    "title": "PostgreSQL 18 · Privileges",
+    "publisher": "PostgreSQL",
+    "url": "https://www.postgresql.org/docs/18/ddl-priv.html",
+    "type": "reference",
+    "note": "Privilegios y roles.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "postgresql-pitr",
+    "title": "PostgreSQL 18 · Continuous Archiving and PITR",
+    "publisher": "PostgreSQL",
+    "url": "https://www.postgresql.org/docs/18/continuous-archiving.html",
+    "type": "reference",
+    "note": "Respaldo base y WAL para recuperación temporal.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "openstax-bayes",
+    "title": "Principles of Data Science · 3.4 Probability Theory",
+    "publisher": "OpenStax",
+    "url": "https://openstax.org/books/principles-data-science/pages/3-4-probability-theory",
+    "type": "reference",
+    "note": "Teorema de Bayes y probabilidad posterior.",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "openstax-counting",
+    "title": "Contemporary Mathematics · 7.6 Probability with Permutations and Combinations",
+    "publisher": "OpenStax",
+    "url": "https://openstax.org/books/contemporary-mathematics/pages/7-6-probability-with-permutations-and-combinations",
+    "type": "reference",
+    "note": "Reglas de conteo, combinaciones y permutaciones.",
+    "verifiedAt": "2026-11-23"
+  },
 ]

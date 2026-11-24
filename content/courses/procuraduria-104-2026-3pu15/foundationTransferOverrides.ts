@@ -82,7 +82,7 @@ export const foundationTransferOverrides: Record<string, [FoundationTransferOver
       caseText: 'Una autoridad sin competencia material recibe un escrito que mezcla una solicitud de copias bajo su custodia y una pretensión sobre una resolución de otra entidad. El servidor ha localizado una norma correcta sobre la resolución, pero no revisó quién puede aplicar esa norma. Aparece un oficio que muestra que otro órgano está a cargo de decidir el punto controvertido.',
       stem: 'Ante el soporte adicional, ¿qué conclusión debe corregirse para no aplicar una norma válida por una autoridad equivocada?',
       correct: {
-        text: 'Separar las pretensiones, tramitar conforme a la competencia lo que la oficina sí puede atender y canalizar por la vía legal lo demás, dejando constancia de los hechos y las actuaciones realizadas.',
+        text: 'Separar las pretensiones, atender las copias de su competencia y canalizar lo demás por vía legal, con constancia del trámite.',
         reason: 'La validez abstracta de la norma no sustituye la identificación de autoridad, actuación y ámbito de decisión.',
       },
       other: [
