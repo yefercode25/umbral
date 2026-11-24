@@ -1124,17 +1124,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Un servidor cambia de funciones y conserva permisos de aprobación de su cargo anterior, además de adquirir permisos de creación de solicitudes. Puede crear y aprobar la misma operación. El administrador sostiene que MFA elimina el riesgo de uso indebido y no necesita modificar permisos. Los responsables funcionales pueden validar una matriz de roles sin suspender todo el servicio.",
     "stem": "¿Qué ajuste de permisos controla el conflicto de funciones sin confundir autenticación multifactor con autorización?",
     "options": [
-      "Mantener privilegios acumulados porque MFA garantiza uso correcto.",
-      "Desactivar todas las cuentas del área sin evaluar roles.",
-      "Revisar permisos con responsables, retirar innecesarios, separar creación y aprobación, documentar y mantener MFA."
+      "Conservar los permisos de aprobación durante la transición y exigir MFA para las operaciones realizadas desde las cuentas de los servidores.",
+      "Suspender temporalmente la aprobación en toda la dependencia hasta que se actualice de forma integral la matriz de perfiles institucionales.",
+      "Revalidar roles con los responsables, retirar privilegios sobrantes y separar creación de aprobación, conservando MFA y trazabilidad de cambios."
     ],
     "rationales": [
-      "MFA no restringe acciones autorizadas.",
-      "El control debe ser proporcional y preservar continuidad.",
-      "Autenticación y autorización son controles distintos."
+      "MFA autentica; mantener permisos excesivos permite la acumulación de funciones que origina el riesgo.",
+      "La medida general puede afectar continuidad sin necesidad cuando es posible un control específico del conflicto.",
+      "La autorización de mínimo privilegio y segregación controla el conflicto; MFA sigue siendo un control complementario."
     ],
     "correctOptionId": "c",
-    "explanation": "Fundamento: Ley 1581 arts. 4, 17–18; MSPI Resolución 02277/2025; MRAE v3. Autenticación y autorización son controles distintos. Primera alternativa incorrecta: MFA no restringe acciones autorizadas. Segunda alternativa incorrecta: El control debe ser proporcional y preservar continuidad."
+    "explanation": "Fundamento: Ley 1581 arts. La autorización de mínimo privilegio y segregación controla el conflicto; MFA sigue siendo un control complementario. MFA autentica; mantener permisos excesivos permite la acumulación de funciones que origina el riesgo. La medida general puede afectar continuidad sin necesidad cuando es posible un control específico del conflicto."
   }
 ],
   'pgn-m61': [
@@ -1143,17 +1143,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "El sistema registra autenticación exitosa con MFA y quince minutos después una modificación asociada a la misma cuenta. La sesión puede permanecer activa y otras personas tenían acceso físico al equipo. Todavía no hay registros de aplicación que vinculen la solicitud con sesión individual. El instructor pide que el informe afirme que el titular ejecutó personalmente cada acción registrada.",
     "stem": "¿Qué conclusión técnica permite distinguir el evento autenticado y la modificación registrada de la autoría física del titular?",
     "options": [
-      "Afirmar que MFA demuestra presencia física en toda acción posterior.",
-      "Invalidar todos los registros porque existía acceso de terceros.",
-      "Informar eventos asociados a cuenta, verificar continuidad de sesión y fuentes adicionales antes de atribución personal."
+      "Atribuir las operaciones al titular de la cuenta por la autenticación multifactor inicial, salvo que posteriormente se acredite una intrusión externa.",
+      "Excluir de la valoración toda la sesión porque el acceso físico compartido impide determinar con certeza quién utilizó la estación.",
+      "Describir eventos de la cuenta y correlacionar sesión, solicitudes y fuentes adicionales antes de concluir sobre la autoría personal."
     ],
     "rationales": [
-      "MFA no prueba quién ejecutó cada acción de una sesión.",
-      "Una alternativa no elimina el valor de los registros.",
-      "Los logs prueban eventos técnicos bajo condiciones, no identidad absoluta."
+      "MFA inicial no acredita presencia física del titular en cada solicitud de la sesión posterior.",
+      "La incertidumbre limita la atribución personal, pero no invalida por sí sola los eventos técnicos registrados.",
+      "La correlación de fuentes permite evaluar hipótesis y separar asociación de cuenta y atribución personal."
     ],
     "correctOptionId": "c",
-    "explanation": "Fundamento: Ley 527 arts. 9–12; CGD arts. 147 y 159; NIST SP 800-92. Los logs prueban eventos técnicos bajo condiciones, no identidad absoluta. Primera alternativa incorrecta: MFA no prueba quién ejecutó cada acción de una sesión. Segunda alternativa incorrecta: Una alternativa no elimina el valor de los registros."
+    "explanation": "Fundamento: Ley 527 arts. La correlación de fuentes permite evaluar hipótesis y separar asociación de cuenta y atribución personal. MFA inicial no acredita presencia física del titular en cada solicitud de la sesión posterior. La incertidumbre limita la atribución personal, pero no invalida por sí sola los eventos técnicos registrados."
   }
 ],
   'pgn-m62': [
@@ -1162,17 +1162,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Se requiere recuperar el valor anterior de una fila. La base actual conserva solo el último valor y hay backups diarios, sin comprobar su consistencia ni retención de logs transaccionales. El equipo quiere restaurar un respaldo sobre producción para inspeccionarlo y atribuir el cambio a una persona. Existe un entorno aislado donde puede realizarse una restauración autorizada y documentada.",
     "stem": "¿Qué método permite reconstruir un estado anterior sin sobrescribir producción ni exceder los límites de atribución?",
     "options": [
-      "Verificar backups y logs, restaurar copia aislada, comparar estados y registrar límites temporales y de atribución.",
-      "Restaurar sobre producción porque el respaldo es histórico.",
-      "Inferir autor y hora exacta únicamente por diferencia entre snapshots."
+      "Verificar respaldos y registros, restaurar una copia aislada y comparar estados documentando resolución temporal y límites de atribución.",
+      "Restaurar el respaldo directamente en producción durante mantenimiento programado, conservar una exportación posterior y contrastar el valor anterior de la fila.",
+      "Comparar los estados diarios y asignar el cambio al usuario titular de la última sesión registrada dentro del intervalo entre respaldos."
     ],
     "rationales": [
-      "Reconstrucción requiere preservar producción y verificar resolución temporal.",
-      "Sobrescribir puede alterar evidencia y disponibilidad.",
-      "Dos estados no prueban identidad ni instante exacto."
+      "Preserva el estado actual, comprueba recuperabilidad y limita la conclusión a la resolución que permiten las fuentes.",
+      "La ventana de mantenimiento no elimina el riesgo de alterar datos actuales o evidencia por una restauración en producción.",
+      "La diferencia de estados acota el intervalo, pero no identifica una operación ni su autor sin correlación adicional."
     ],
     "correctOptionId": "a",
-    "explanation": "Fundamento: Ley 527 arts. 9–12; CGD arts. 147–159; NIST SP 800-86. Reconstrucción requiere preservar producción y verificar resolución temporal. Primera alternativa incorrecta: Sobrescribir puede alterar evidencia y disponibilidad. Segunda alternativa incorrecta: Dos estados no prueban identidad ni instante exacto."
+    "explanation": "Fundamento: Ley 527 arts. Preserva el estado actual, comprueba recuperabilidad y limita la conclusión a la resolución que permiten las fuentes. La ventana de mantenimiento no elimina el riesgo de alterar datos actuales o evidencia por una restauración en producción. La diferencia de estados acota el intervalo, pero no identifica una operación ni su autor sin correlación adicional."
   }
 ],
   'pgn-m63': [
@@ -1181,17 +1181,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Dos PDF tienen idéntico nombre y apariencia, pero huellas SHA-256 diferentes. Uno fue descargado del sistema de gestión y otro convertido por una herramienta que cambia compresión y metadatos. El despacho pide declarar falso el segundo sin comparar firmas ni versiones. Se conservan las dos copias y existe registro de la transformación utilizada para preparar la versión de consulta.",
     "stem": "¿Cómo interpretar huellas distintas sin confundir diferencia binaria, transformación legítima y falsedad documental?",
     "options": [
-      "Declarar falso todo archivo con hash diferente.",
-      "Considerarlos binariamente idénticos porque se ven iguales.",
-      "Registrar procedencia y huellas, comparar contenido, estructura, metadatos y firmas, y verificar transformación."
+      "Clasificar el segundo archivo como alteración fraudulenta por la diferencia de huellas, verificando posteriormente quién realizó la conversión que cambió sus bytes.",
+      "Registrar ambos documentos como equivalentes para todos los efectos técnicos y jurídicos, puesto que el examen visual no muestra diferencias en el contenido.",
+      "Preservar las dos huellas y procedencias; comparar estructura, contenido, metadatos y firmas, y verificar el proceso de transformación."
     ],
     "rationales": [
-      "Una transformación legítima puede cambiar huella.",
-      "Apariencia no demuestra identidad binaria.",
-      "Hashes distintos prueban diferencia de bytes, no falsedad."
+      "Una diferencia binaria acredita cambio de bytes, no por sí misma fraude o falsedad de la segunda versión.",
+      "La apariencia igual no demuestra identidad binaria ni conserva necesariamente la firma electrónica original.",
+      "Se necesitan contexto, trazabilidad y comparación técnica para distinguir transformación legítima de modificación relevante."
     ],
     "correctOptionId": "c",
-    "explanation": "Fundamento: Ley 527 arts. 7–12 y 28; RFC 5322, 6376, 8601, 7208 y 9989. Hashes distintos prueban diferencia de bytes, no falsedad. Primera alternativa incorrecta: Una transformación legítima puede cambiar huella. Segunda alternativa incorrecta: Apariencia no demuestra identidad binaria."
+    "explanation": "Fundamento: Ley 527 arts. Se necesitan contexto, trazabilidad y comparación técnica para distinguir transformación legítima de modificación relevante. Una diferencia binaria acredita cambio de bytes, no por sí misma fraude o falsedad de la segunda versión. La apariencia igual no demuestra identidad binaria ni conserva necesariamente la firma electrónica original."
   }
 ],
   'pgn-m64': [
@@ -1200,17 +1200,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "La autoridad solicita extraer estadísticas de registros existentes en archivo institucional. No designó perito ni decretó examen especializado. El producto se incorpora como informe de datos de archivo y se solicita aclarar una columna. La secretaría quiere tramitar toda controversia como objeción por error grave por titularse informe informático. El expediente conserva el acto de solicitud y el informe recibido.",
     "stem": "¿Qué trámite de contradicción corresponde al informe de datos de archivo, atendiendo su naturaleza y no el título informático?",
     "options": [
-      "Aplicar régimen pericial a cualquier documento informático.",
-      "Aplicar naturaleza y forma de incorporación; para informe de archivo, traslado y aclaraciones del art. 195, sin objeción por error grave.",
-      "Negar toda aclaración porque no es dictamen."
+      "Tramitar la objeción por error grave al dictamen, porque el informe contiene extracción informática y requiere conocimiento especializado para interpretar sus resultados.",
+      "Aplicar el traslado y aclaraciones del art. 195, conforme a su incorporación como informe de archivos, sin objeción por error grave.",
+      "Conceder contradicción únicamente mediante un nuevo dictamen solicitado por la defensa, porque el informe original fue elaborado a partir de registros existentes."
     ],
     "rationales": [
-      "Informe de archivo y dictamen son distintos.",
-      "La naturaleza del medio determina trámite, no el título.",
-      "Art. 195 contempla aclaración y complementación."
+      "El título informático y el método no transforman por sí solos un informe de archivos en dictamen decretado.",
+      "El art. 195 establece traslado para aclarar o complementar informes y excluye objeción por error grave.",
+      "La posibilidad de decretar otras pruebas no sustituye el trámite de contradicción propio del informe recibido."
     ],
     "correctOptionId": "b",
-    "explanation": "Fundamento: Perfil 104; CGD arts. 159, 177–184, 193–195; Ley 527; NIST SP 800-86. La naturaleza del medio determina trámite, no el título. Primera alternativa incorrecta: Informe de archivo y dictamen son distintos. Segunda alternativa incorrecta: Art. 195 contempla aclaración y complementación."
+    "explanation": "Fundamento: Perfil 104; CGD arts. El art. 195 establece traslado para aclarar o complementar informes y excluye objeción por error grave. El título informático y el método no transforman por sí solos un informe de archivos en dictamen decretado. La posibilidad de decretar otras pruebas no sustituye el trámite de contradicción propio del informe recibido."
   }
 ],
   'pgn-m65': [
@@ -1219,17 +1219,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una matriz de hallazgos está incluida en un Word con encabezados visuales de colores, celdas fusionadas y un gráfico sin descripción. El PDF anterior se generó como imágenes y no permite seleccionar texto ni navegar por títulos. Se requiere entregar un informe accesible a usuarios internos y externos, manteniendo las cifras y el contenido validado por la oficina competente.",
     "stem": "¿Qué ajuste mejora accesibilidad y conserva el contenido verificable en los formatos de entrega?",
     "options": [
-      "Usar títulos semánticos, tablas con encabezados identificables y descripciones de gráficos, revisar accesibilidad y exportar PDF comprobando texto y navegación.",
-      "Mantener tablas complejas y depender solo del contraste de colores para distinguir resultados.",
-      "Escanear nuevamente el documento para que todos vean exactamente la misma diagramación."
+      "Estructurar títulos y encabezados de tabla, describir gráficos, comprobar accesibilidad y exportar a PDF preservando texto y navegación.",
+      "Conservar las celdas fusionadas y aplicar contraste cromático alto a los encabezados, añadiendo una descripción general del contenido en la portada.",
+      "Exportar mediante impresión virtual para mantener la diagramación y adjuntar el archivo Word original como alternativa para usuarios que requieran navegar por títulos."
     ],
     "rationales": [
-      "La accesibilidad depende de estructura, texto y representación no exclusivamente visual.",
-      "Color sin otra señal no transmite toda la información.",
-      "Escanear no garantiza acceso al texto ni estructura de lectura."
+      "La estructura semántica y el texto preservado permiten navegación y lectura mediante tecnologías de asistencia.",
+      "El contraste es útil, pero una portada y el color no sustituyen relaciones semánticas de tabla o descripciones de gráficos.",
+      "La impresión puede perder etiquetas de accesibilidad; disponer del Word no garantiza que el PDF entregado sea accesible."
     ],
     "correctOptionId": "a",
-    "explanation": "Fundamento: Microsoft Word: estilos, revisión y accesibilidad; Ley 594/2000; perfil 104. La accesibilidad depende de estructura, texto y representación no exclusivamente visual. Primera alternativa incorrecta: Color sin otra señal no transmite toda la información. Segunda alternativa incorrecta: Escanear no garantiza acceso al texto ni estructura de lectura."
+    "explanation": "Fundamento: Microsoft Word: estilos, revisión y accesibilidad; Ley 594/2000; perfil 104. La estructura semántica y el texto preservado permiten navegación y lectura mediante tecnologías de asistencia. El contraste es útil, pero una portada y el color no sustituyen relaciones semánticas de tabla o descripciones de gráficos. La impresión puede perder etiquetas de accesibilidad; disponer del Word no garantiza que el PDF entregado sea accesible."
   }
 ],
   'pgn-m66': [
@@ -1314,17 +1314,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "La coordinación pide entregar un informe hoy y otro de mayor alcance en dos semanas. El primero tiene un término inmodificable; el segundo depende de verificaciones que aún no llegan. El profesional detecta que ambos compiten por el mismo recurso de análisis y dispone de un calendario de entregas. Un compañero sugiere registrar como terminado el segundo para evitar una alerta de seguimiento.",
     "stem": "¿Qué conducta combina responsabilidad institucional y organización del trabajo sin comprometer la calidad?",
     "options": [
-      "Registrar ambos como completos y terminar las revisiones después del reporte de seguimiento.",
-      "Priorizar el término fijo, comunicar restricciones, acordar plan y dependencias del segundo y conservar su estado real hasta cumplir controles.",
-      "Aceptar todas las tareas sin reorganizar ni comunicar la capacidad insuficiente."
+      "Dedicar el recurso al informe con vencimiento fijo y mantener la programación inicial del segundo, comunicando el posible retraso cuando finalice el primero.",
+      "Priorizar el término fijo y acordar ahora recursos, dependencias y controles del segundo, comunicando su estado real y los riesgos de demora.",
+      "Distribuir el recurso en partes iguales entre ambos informes para mantener avance paralelo, solicitando ajustes de los plazos si surgen dificultades."
     ],
     "rationales": [
-      "Un estado ficticio contradice objetivos y controles.",
-      "Alinea metas, programación, transparencia y seguimiento.",
-      "No anticipar capacidad aumenta riesgo de incumplimiento."
+      "La prioridad es razonable, pero posponer la comunicación limita la organización anticipada de recursos y verificaciones.",
+      "Coordina prioridades, información veraz, planificación y control de compromisos sin asumir resultados no comprobados.",
+      "La distribución uniforme ignora el término fijo y las dependencias diferentes de cada encargo."
     ],
     "correctOptionId": "b",
-    "explanation": "Fundamento: Diccionario de competencias PGN, páginas 7 y 28 del PDF; perfil 104. Alinea metas, programación, transparencia y seguimiento. Primera alternativa incorrecta: Un estado ficticio contradice objetivos y controles. Segunda alternativa incorrecta: No anticipar capacidad aumenta riesgo de incumplimiento."
+    "explanation": "Fundamento: Diccionario de competencias PGN, páginas 7 y 28 del PDF; perfil 104. Coordina prioridades, información veraz, planificación y control de compromisos sin asumir resultados no comprobados. La prioridad es razonable, pero posponer la comunicación limita la organización anticipada de recursos y verificaciones. La distribución uniforme ignora el término fijo y las dependencias diferentes de cada encargo."
   }
 ],
   'pgn-m71': [
@@ -1390,17 +1390,17 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "caseText": "Una dependencia recibe una solicitud de copias de actuaciones. Parte de los documentos está sujeta a reserva legal y el solicitante no acredita calidad procesal especial; otra parte es pública y separable. La oficina conoce la norma de reserva y puede generar una versión de entrega sin datos protegidos. Un compañero propone negar toda información; otro sugiere entregar el expediente completo por transparencia.",
     "stem": "¿Cómo aplicar C-E-P-P-A para escoger una respuesta que respete competencia, acceso y restricciones legales?",
     "options": [
-      "Identificar calidad del solicitante y régimen aplicable, separar información pública y protegida, motivar restricciones y entregar lo procedente dentro del término.",
-      "Negar todo por pertenecer a un expediente que contiene alguna información reservada.",
-      "Entregar todo porque el derecho de acceso elimina cualquier reserva legal."
+      "Verificar el régimen y calidad del solicitante; entregar información separable, motivar la reserva legal y tramitar la petición en término.",
+      "Consolidar una respuesta negativa sobre el expediente completo, indicando las disposiciones de reserva y la vía que permite controvertir la negativa.",
+      "Entregar una versión con datos personales ocultos, incluyendo las actuaciones reservadas restantes porque la anonimización elimina la limitación de acceso."
     ],
     "rationales": [
-      "La decisión requiere analizar régimen, hechos y medida proporcionada.",
-      "La reserva parcial no obliga a negar información separable.",
-      "La transparencia no elimina restricciones legalmente previstas."
+      "El análisis de acceso debe ser específico y proporcional; la reserva legal no se extiende a piezas separables no restringidas.",
+      "Identificar las normas y recursos no justifica ampliar la reserva a información que no está cubierta.",
+      "La anonimización protege datos, pero no suprime automáticamente una reserva legal distinta de la protección de identidad."
     ],
     "correctOptionId": "a",
-    "explanation": "Fundamento: CGD arts. 208–211, 220–225; perfil 104; método didáctico propio de Umbral. La decisión requiere analizar régimen, hechos y medida proporcionada. Primera alternativa incorrecta: La reserva parcial no obliga a negar información separable. Segunda alternativa incorrecta: La transparencia no elimina restricciones legalmente previstas."
+    "explanation": "Fundamento: CGD arts. El análisis de acceso debe ser específico y proporcional; la reserva legal no se extiende a piezas separables no restringidas. Identificar las normas y recursos no justifica ampliar la reserva a información que no está cubierta. La anonimización protege datos, pero no suprime automáticamente una reserva legal distinta de la protección de identidad."
   }
 ],
   'pgn-m75': [

@@ -715,6 +715,692 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
       "ley-2094-2021"
     ],
     "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-peticion-incompleta-1",
+    "moduleId": "pgn-m17",
+    "relatedModuleIds": [
+      "pgn-m16",
+      "pgn-m17",
+      "pgn-m59"
+    ],
+    "scenarioId": "pgn-exception-peticion-incompleta",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una dependencia de la PGN recibe una petición general. Han transcurrido cinco días hábiles del término ordinario cuando requiere oportunamente una gestión indispensable que corresponde al ciudadano. Este completa el requerimiento dentro del mes concedido. El sistema registra diez días hábiles pendientes del plazo original.",
+    "stem": "¿Qué debe registrar el sistema al recibir la información faltante?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reactivar los diez días hábiles pendientes desde el día siguiente al aporte, manteniendo la trazabilidad del requerimiento.",
+        "rationale": "La ley ordena reactivar el término y conservar el tiempo restante; no crea un nuevo plazo completo."
+      },
+      {
+        "id": "b",
+        "text": "Comenzar un nuevo plazo de quince días hábiles desde el día siguiente, porque se completó la solicitud inicialmente presentada.",
+        "rationale": "La subsanación no constituye nueva radicación ni reinicia el plazo ordinario íntegro."
+      },
+      {
+        "id": "c",
+        "text": "Mantener el término suspendido hasta que el jefe de dependencia expida un acto formal que admita nuevamente la petición.",
+        "rationale": "La reactivación se produce por el aporte, no por una providencia posterior."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Ley 1755/2015, art. 17; Resolución PGN 330/2021, art. 19. La ley ordena reactivar el término y conservar el tiempo restante; no crea un nuevo plazo completo. La subsanación no constituye nueva radicación ni reinicia el plazo ordinario íntegro. La reactivación se produce por el aporte, no por una providencia posterior.",
+    "sourceIds": [
+      "ley-1755-2015",
+      "pgn-res-330-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-peticion-incompleta-2",
+    "moduleId": "pgn-m17",
+    "relatedModuleIds": [
+      "pgn-m16",
+      "pgn-m17",
+      "pgn-m59"
+    ],
+    "scenarioId": "pgn-exception-peticion-incompleta",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "El ciudadano no atiende un requerimiento necesario y oportuno de una dependencia de la PGN. Vence el mes concedido y no solicitó prórroga. No existe otra obligación legal de continuar la actuación de oficio. La plataforma propone marcar la petición automáticamente como negada y comunicar el estado por una alerta general.",
+    "stem": "¿Qué decisión corresponde según el reglamento interno de la PGN?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cerrar el registro mediante una respuesta negativa de fondo, comunicada al ciudadano dentro del término ordinario de petición que quedaba pendiente.",
+        "rationale": "El archivo por desistimiento es distinto de resolver desfavorablemente el objeto de la petición."
+      },
+      {
+        "id": "b",
+        "text": "El jefe competente expide acto motivado de desistimiento y archivo dentro de cinco días hábiles, con notificación personal y reposición.",
+        "rationale": "El art. 19 fija autoridad, plazo interno, forma de decisión, notificación y recurso de reposición."
+      },
+      {
+        "id": "c",
+        "text": "Archivar automáticamente al vencer el mes y permitir que el ciudadano impugne la alerta mediante el recurso ordinario de apelación.",
+        "rationale": "Una alerta informática no sustituye el acto administrativo ni crea un recurso de apelación."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Ley 1755/2015, art. 17; Resolución PGN 330/2021, art. 19. El art. 19 fija autoridad, plazo interno, forma de decisión, notificación y recurso de reposición. El archivo por desistimiento es distinto de resolver desfavorablemente el objeto de la petición. Una alerta informática no sustituye el acto administrativo ni crea un recurso de apelación.",
+    "sourceIds": [
+      "ley-1755-2015",
+      "pgn-res-330-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-peticion-reiterada-1",
+    "moduleId": "pgn-m17",
+    "relatedModuleIds": [
+      "pgn-m17",
+      "pgn-m18",
+      "pgn-m49"
+    ],
+    "scenarioId": "pgn-exception-peticion-reiterada",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un ciudadano presenta nuevamente una solicitud de certificación cuya primera respuesta fue negativa exclusivamente porque no acreditó un requisito legal. Esta vez aporta el documento idóneo que satisface dicho requisito y mantiene el mismo objeto. El sistema identifica similitud textual de 98 % y propone enviar la respuesta anterior.",
+    "stem": "¿Cómo debe proceder la dependencia que revisa la nueva solicitud?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remitir al acto previo y exigir que el ciudadano interponga reposición contra esa decisión para examinar los documentos nuevos.",
+        "rationale": "La nueva solicitud subsanada tiene trámite propio; no exige recurrir la respuesta anterior."
+      },
+      {
+        "id": "b",
+        "text": "Tramitar una petición repetida mediante copia de la respuesta anterior, pues el objeto no cambió aunque se adjuntara otro soporte.",
+        "rationale": "La coincidencia del objeto no neutraliza la excepción legal por subsanación."
+      },
+      {
+        "id": "c",
+        "text": "Resolver de fondo la nueva petición porque subsanó el requisito que motivó la negativa previa, sin depender de la similitud textual.",
+        "rationale": "El art. 19 y el reglamento de la PGN obligan a responder de fondo cuando se subsana."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Ley 1755/2015, art. 19; Resolución PGN 330/2021, art. 17. El art. 19 y el reglamento de la PGN obligan a responder de fondo cuando se subsana. La nueva solicitud subsanada tiene trámite propio; no exige recurrir la respuesta anterior. La coincidencia del objeto no neutraliza la excepción legal por subsanación.",
+    "sourceIds": [
+      "ley-1755-2015",
+      "pgn-res-330-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-peticion-reiterada-2",
+    "moduleId": "pgn-m17",
+    "relatedModuleIds": [
+      "pgn-m17",
+      "pgn-m18",
+      "pgn-m49"
+    ],
+    "scenarioId": "pgn-exception-peticion-reiterada",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una persona presenta por tercera vez una consulta idéntica que fue contestada de fondo, completa y motivadamente. No aporta hechos distintos ni se trata de derechos imprescriptibles o requisitos subsanados. La oficina conserva constancia de la respuesta anterior y el contenido exacto de las tres solicitudes.",
+    "stem": "¿Qué actuación permite atender la reiteración conforme a la norma interna?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remitirse a la respuesta anterior, verificar que cubra el objeto íntegro y ponerla nuevamente en conocimiento de la persona.",
+        "rationale": "La remisión está permitida en este supuesto y debe comunicarse efectivamente la respuesta previa."
+      },
+      {
+        "id": "b",
+        "text": "Archivar mediante desistimiento tácito, porque la reiteración demuestra que el ciudadano no acepta la contestación anteriormente remitida.",
+        "rationale": "La insistencia no es incumplimiento de un requerimiento ni configura desistimiento tácito."
+      },
+      {
+        "id": "c",
+        "text": "Rechazar el escrito como irrespetuoso por su repetición, notificando la decisión que niega un nuevo examen del mismo objeto.",
+        "rationale": "Repetir una solicitud no la convierte por sí mismo en una petición irrespetuosa."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Ley 1755/2015, art. 19; Resolución PGN 330/2021, art. 17. La remisión está permitida en este supuesto y debe comunicarse efectivamente la respuesta previa. La insistencia no es incumplimiento de un requerimiento ni configura desistimiento tácito. Repetir una solicitud no la convierte por sí mismo en una petición irrespetuosa.",
+    "sourceIds": [
+      "ley-1755-2015",
+      "pgn-res-330-2021"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-insistencia-reserva-1",
+    "moduleId": "pgn-m18",
+    "relatedModuleIds": [
+      "pgn-m17",
+      "pgn-m18",
+      "pgn-m40",
+      "pgn-m49"
+    ],
+    "scenarioId": "pgn-exception-insistencia-reserva",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una dependencia nacional de la PGN rechaza motivadamente entregar determinadas piezas bajo reserva legal y entrega las demás. Cinco días después de notificarse, el ciudadano presenta escrito sustentado de insistencia. El material está custodiado en una sede regional identificada y no existe una regla especial que desplace el artículo 26.",
+    "stem": "¿Cuál es el trámite que corresponde a la insistencia presentada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Resolver como reposición por la dependencia que negó el acceso, porque toda decisión administrativa negativa admite revisión por la misma autoridad.",
+        "rationale": "La negativa fundada en reserva tiene un mecanismo específico distinto de la reposición ordinaria."
+      },
+      {
+        "id": "b",
+        "text": "Remitir al tribunal administrativo con jurisdicción donde están los documentos, para decisión en única instancia sobre la reserva invocada.",
+        "rationale": "El art. 26 asigna la decisión al tribunal por tratarse de autoridad nacional y ubicación documental."
+      },
+      {
+        "id": "c",
+        "text": "Enviar al juez administrativo del domicilio del solicitante, porque el acceso a información se resuelve según la residencia de quien insiste.",
+        "rationale": "El domicilio del peticionario no determina la competencia judicial en este supuesto."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Ley 1755/2015, arts. 25–27; Resolución PGN 330/2021, art. 33. El art. 26 asigna la decisión al tribunal por tratarse de autoridad nacional y ubicación documental. La negativa fundada en reserva tiene un mecanismo específico distinto de la reposición ordinaria. El domicilio del peticionario no determina la competencia judicial en este supuesto.",
+    "sourceIds": [
+      "ley-1755-2015",
+      "pgn-res-330-2021",
+      "ley-1712-2014"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-insistencia-reserva-2",
+    "moduleId": "pgn-m18",
+    "relatedModuleIds": [
+      "pgn-m17",
+      "pgn-m18",
+      "pgn-m40",
+      "pgn-m49"
+    ],
+    "scenarioId": "pgn-exception-insistencia-reserva",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una autoridad administrativa con competencia legal para investigar solicita documentos sometidos a reserva, necesarios para una diligencia expresamente identificada. Acredita la actuación y su competencia. No solicita publicar los archivos ni entregarlos a terceros. El custodio considera que la reserva debe impedir cualquier transmisión institucional.",
+    "stem": "¿Qué distinción jurídica debe aplicar el custodio?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exigir autorización de cada titular antes de entregar los documentos, aunque exista competencia legal acreditada para la diligencia solicitada.",
+        "rationale": "El art. 27 impide oponer la reserva a autoridades competentes en ejercicio de sus funciones."
+      },
+      {
+        "id": "b",
+        "text": "Declarar levantada la reserva para todas las personas, porque la petición de una autoridad competente transforma el material en información pública.",
+        "rationale": "La excepción de acceso no convierte el documento reservado en información libremente divulgable."
+      },
+      {
+        "id": "c",
+        "text": "Suministrar por canal autorizado lo necesario para la función acreditada y preservar la reserva, que también deberá asegurar la autoridad receptora.",
+        "rationale": "El acceso funcional es específico y obliga al destinatario a mantener la reserva."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Ley 1755/2015, arts. 25–27; Resolución PGN 330/2021, art. 33. El acceso funcional es específico y obliga al destinatario a mantener la reserva. El art. 27 impide oponer la reserva a autoridades competentes en ejercicio de sus funciones. La excepción de acceso no convierte el documento reservado en información libremente divulgable.",
+    "sourceIds": [
+      "ley-1755-2015",
+      "pgn-res-330-2021",
+      "ley-1712-2014"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-correccion-acto-1",
+    "moduleId": "pgn-m15",
+    "relatedModuleIds": [
+      "pgn-m15",
+      "pgn-m16",
+      "pgn-m30"
+    ],
+    "scenarioId": "pgn-exception-correccion-acto",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una autoridad expide y notifica un acto que reconoce una situación jurídica. En el encabezado aparece una fecha de radicación con dos dígitos transpuestos; las demás piezas, la motivación y la parte resolutiva identifican inequívocamente el trámite. No se altera el destinatario, el contenido ni la decisión.",
+    "stem": "¿Cómo se corrige el dato equivocado sin reabrir indebidamente los términos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Revocar el acto y expedir otro con la fecha correcta, iniciando nuevamente los términos de impugnación y control judicial correspondientes.",
+        "rationale": "La revocatoria no es necesaria para un error de digitación que carece de efecto material."
+      },
+      {
+        "id": "b",
+        "text": "Modificar la fecha en el archivo original sin conservar la versión notificada, pues el error carece de incidencia en el fondo.",
+        "rationale": "El deber de trazabilidad y comunicación subsiste aunque el error sea puramente formal."
+      },
+      {
+        "id": "c",
+        "text": "Corregir formalmente la fecha y notificar o comunicar la corrección a los interesados, sin cambiar el sentido material ni revivir términos.",
+        "rationale": "El art. 45 permite esa corrección sin reabrir los términos para demandar."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CPACA, arts. 41 y 45. El art. 45 permite esa corrección sin reabrir los términos para demandar. La revocatoria no es necesaria para un error de digitación que carece de efecto material. El deber de trazabilidad y comunicación subsiste aunque el error sea puramente formal.",
+    "sourceIds": [
+      "cpaca"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-correccion-acto-2",
+    "moduleId": "pgn-m15",
+    "relatedModuleIds": [
+      "pgn-m15",
+      "pgn-m16",
+      "pgn-m30"
+    ],
+    "scenarioId": "pgn-exception-correccion-acto",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Después de notificado un acto favorable que reconoce una suma específica, una nueva revisión de fondo concluye que la autoridad debió usar otra regla de liquidación. No hay error de suma o transcripción: se pretende reducir el monto reconocido mediante una interpretación jurídica diferente, sin el consentimiento del titular.",
+    "stem": "¿Qué límite tiene la autoridad si intenta usar la corrección de errores formales?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No puede reducir el reconocimiento con el art. 45; debe examinar la vía de modificación, revocación o control judicial legalmente procedente.",
+        "rationale": "Cambiar el fundamento y el monto reconocido altera el sentido material y excede el art. 45."
+      },
+      {
+        "id": "b",
+        "text": "Puede sustituir la cifra mediante corrección aritmética, siempre que explique la nueva interpretación en los considerandos del acto que corrige.",
+        "rationale": "Una discrepancia jurídica no se convierte en error aritmético por expresarse en una cifra."
+      },
+      {
+        "id": "c",
+        "text": "Puede corregir el acto antes de que se venza el término de demanda, porque hasta entonces no produce efectos jurídicos consolidados.",
+        "rationale": "La eficacia del acto y la posibilidad de demandarlo son cuestiones diferentes."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: CPACA, arts. 41 y 45. Cambiar el fundamento y el monto reconocido altera el sentido material y excede el art. 45. Una discrepancia jurídica no se convierte en error aritmético por expresarse en una cifra. La eficacia del acto y la posibilidad de demandarlo son cuestiones diferentes.",
+    "sourceIds": [
+      "cpaca"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-conflicto-administrativo-1",
+    "moduleId": "pgn-m16",
+    "relatedModuleIds": [
+      "pgn-m13",
+      "pgn-m16",
+      "pgn-m17"
+    ],
+    "scenarioId": "pgn-exception-conflicto-administrativo",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Dos autoridades municipales de un mismo departamento rechazan sucesivamente la competencia para decidir una actuación administrativa general. La segunda devuelve el expediente y propone repetir la remisión al municipio inicial. No hay procedimiento especial aplicable y el ciudadano espera respuesta a su petición.",
+    "stem": "¿Qué trámite evita una cadena indefinida de remisiones?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Solicitar a la Procuraduría Regional que defina directamente cuál de las dos autoridades debe resolver y ordene el trámite de fondo.",
+        "rationale": "La función de vigilancia de la PGN no equivale a competencia para dirimir este conflicto."
+      },
+      {
+        "id": "b",
+        "text": "Remitir inmediatamente la actuación al tribunal administrativo correspondiente para resolver el conflicto negativo, suspendiendo los términos del artículo 14 mientras se decide.",
+        "rationale": "El art. 39 asigna el conflicto territorial descrito al tribunal y suspende términos de petición."
+      },
+      {
+        "id": "c",
+        "text": "Remitir a la Sala de Consulta y Servicio Civil del Consejo de Estado, porque cualquier conflicto entre dos entidades es de orden nacional.",
+        "rationale": "La Sala conoce los supuestos nacionales, mixtos o territoriales de distintos departamentos."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: CPACA, art. 39, modificado por Ley 2080/2021. El art. 39 asigna el conflicto territorial descrito al tribunal y suspende términos de petición. La función de vigilancia de la PGN no equivale a competencia para dirimir este conflicto. La Sala conoce los supuestos nacionales, mixtos o territoriales de distintos departamentos.",
+    "sourceIds": [
+      "cpaca"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-conflicto-administrativo-2",
+    "moduleId": "pgn-m16",
+    "relatedModuleIds": [
+      "pgn-m13",
+      "pgn-m16",
+      "pgn-m17"
+    ],
+    "scenarioId": "pgn-exception-conflicto-administrativo",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una autoridad nacional y una autoridad departamental afirman simultáneamente tener competencia para resolver la misma actuación administrativa general. Ambas proyectan actos definitivos incompatibles. El solicitante pide que se determine cuál debe conocer el asunto y aún corre el término de respuesta del artículo 14.",
+    "stem": "¿Qué órgano y efecto temporal corresponden al conflicto positivo descrito?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El tribunal administrativo del departamento decide la competencia por estar allí el expediente y continúa el término de respuesta de la entidad nacional.",
+        "rationale": "La presencia de una autoridad nacional hace aplicable la competencia especial de la Sala."
+      },
+      {
+        "id": "b",
+        "text": "La autoridad que recibió primero decide de fondo y comunica su acto a la segunda, pues la prioridad de radicación define competencia.",
+        "rationale": "La primera radicación no sustituye las reglas legales de competencia administrativa."
+      },
+      {
+        "id": "c",
+        "text": "La Sala de Consulta y Servicio Civil decide el conflicto mixto; durante el trámite se suspenden los términos de petición del artículo 14.",
+        "rationale": "El art. 39 cubre conflictos positivos y mixtos; dispone la suspensión indicada."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: CPACA, art. 39, modificado por Ley 2080/2021. El art. 39 cubre conflictos positivos y mixtos; dispone la suspensión indicada. La presencia de una autoridad nacional hace aplicable la competencia especial de la Sala. La primera radicación no sustituye las reglas legales de competencia administrativa.",
+    "sourceIds": [
+      "cpaca"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-terminacion-caducidad-1",
+    "moduleId": "pgn-m52",
+    "relatedModuleIds": [
+      "pgn-m50",
+      "pgn-m52",
+      "pgn-m53"
+    ],
+    "scenarioId": "pgn-exception-terminacion-caducidad",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Fallece el contratista persona natural que ejecutaba una obra pública con cláusulas excepcionales aplicables. La entidad conserva los avances certificados; el garante manifiesta disposición y capacidad para continuar la ejecución. No hay incumplimiento imputable demostrado. El supervisor considera que debe declararse caducidad por la interrupción.",
+    "stem": "¿Qué figura debe analizar la autoridad contractual ante esos hechos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Examinar la terminación unilateral motivada por muerte y la posibilidad de continuar con el garante, sin presumir caducidad ni incumplimiento.",
+        "rationale": "El art. 17 prevé muerte y permite continuidad con garante en ese supuesto; no es sanción automática."
+      },
+      {
+        "id": "b",
+        "text": "Declarar caducidad por imposibilidad de que el contratista original termine la obra y permitir después que el garante discuta su procedencia.",
+        "rationale": "La muerte no demuestra por sí misma incumplimiento grave imputable que configure la caducidad."
+      },
+      {
+        "id": "c",
+        "text": "Mantener automáticamente el contrato con los herederos, pues la sucesión transfiere la posición contractual sin decisión de la entidad estatal.",
+        "rationale": "No cabe sustituir automáticamente al contratista mediante la sucesión sin examinar el régimen contractual."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Ley 80/1993, arts. 14, 17 y 18. El art. 17 prevé muerte y permite continuidad con garante en ese supuesto; no es sanción automática. La muerte no demuestra por sí misma incumplimiento grave imputable que configure la caducidad. No cabe sustituir automáticamente al contratista mediante la sucesión sin examinar el régimen contractual.",
+    "sourceIds": [
+      "ley-80-1993"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-terminacion-caducidad-2",
+    "moduleId": "pgn-m52",
+    "relatedModuleIds": [
+      "pgn-m50",
+      "pgn-m52",
+      "pgn-m53"
+    ],
+    "scenarioId": "pgn-exception-terminacion-caducidad",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "En un contrato de obra con cláusula de caducidad aplicable se documenta un incumplimiento atribuible al contratista que afecta gravemente la ejecución y puede paralizar el objeto. La entidad cuenta con informe de interventoría, soportes y alternativas de continuidad; todavía no ha oído al contratista ni al garante.",
+    "stem": "¿Qué actuación distingue la potestad contractual de una sanción automática por alerta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dar por terminado el contrato mediante acta de supervisión, ordenar el pago al garante y remitir después las pruebas para revisión jurídica.",
+        "rationale": "El supervisor informa y soporta; no sustituye la autoridad ni el procedimiento de decisión."
+      },
+      {
+        "id": "b",
+        "text": "Tramitar el debido proceso para decidir motivadamente la caducidad y, si procede, disponer liquidación y continuidad conforme a la ley.",
+        "rationale": "El art. 18 exige presupuestos materiales y acto motivado; el debido proceso debe garantizarse."
+      },
+      {
+        "id": "c",
+        "text": "Aplicar terminación unilateral por exigencias del servicio sin valorar el incumplimiento, para evitar examinar las garantías del contratista y garante.",
+        "rationale": "La terminación del art. 17 no sustituye la valoración del supuesto específico de caducidad."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Ley 80/1993, arts. 14, 17 y 18. El art. 18 exige presupuestos materiales y acto motivado; el debido proceso debe garantizarse. El supervisor informa y soporta; no sustituye la autoridad ni el procedimiento de decisión. La terminación del art. 17 no sustituye la valoración del supuesto específico de caducidad.",
+    "sourceIds": [
+      "ley-80-1993"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-modificacion-20-1",
+    "moduleId": "pgn-m52",
+    "relatedModuleIds": [
+      "pgn-m50",
+      "pgn-m51",
+      "pgn-m52"
+    ],
+    "scenarioId": "pgn-exception-modificacion-20",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una entidad, ante necesidad acreditada de evitar afectación grave del servicio y ausencia de acuerdo, modifica unilateralmente un contrato de obra en el marco de la cláusula legalmente aplicable. El valor inicial es de mil millones y la variación es de doscientos millones. El contratista manifiesta que no desea continuar.",
+    "stem": "¿Qué efecto específico produce ese porcentaje conforme al artículo 16?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El contratista debe continuar porque la modificación permanece dentro del límite general de adiciones del cincuenta por ciento del valor inicial.",
+        "rationale": "El límite general de adiciones no elimina el derecho previsto en el art. 16."
+      },
+      {
+        "id": "b",
+        "text": "La entidad puede aceptar la renuncia solamente si la modificación supera, y no simplemente alcanza, el veinte por ciento del valor inicial.",
+        "rationale": "La norma incluye modificaciones iguales al veinte por ciento, no solo superiores."
+      },
+      {
+        "id": "c",
+        "text": "El contratista puede renunciar a continuar; corresponde ordenar liquidación y adoptar medidas inmediatas para garantizar la terminación del objeto.",
+        "rationale": "El supuesto alcanza exactamente el umbral del art. 16 y activa sus consecuencias si renuncia."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Ley 80/1993, arts. 14, 16 y 40. El supuesto alcanza exactamente el umbral del art. 16 y activa sus consecuencias si renuncia. El límite general de adiciones no elimina el derecho previsto en el art. 16. La norma incluye modificaciones iguales al veinte por ciento, no solo superiores.",
+    "sourceIds": [
+      "ley-80-1993"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-modificacion-20-2",
+    "moduleId": "pgn-m52",
+    "relatedModuleIds": [
+      "pgn-m50",
+      "pgn-m51",
+      "pgn-m52"
+    ],
+    "scenarioId": "pgn-exception-modificacion-20",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "En otro contrato de obra, la modificación unilateral está motivada, se agotó el intento de acuerdo y la variación equivale al quince por ciento del valor inicial. El contratista invoca exclusivamente el umbral del artículo 16 para exigir que se liquide el contrato. No se acreditan otras causales ni modificaciones previas.",
+    "stem": "¿Qué debe concluirse respecto de la causal invocada, sin prejuzgar otros derechos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El porcentaje no activa por sí solo el derecho específico a renunciar del art. 16; deben examinarse separadamente otros derechos que procedan.",
+        "rationale": "El umbral legal es veinte por ciento o más; la conclusión se limita a ese fundamento."
+      },
+      {
+        "id": "b",
+        "text": "La renuncia es obligatoria desde cualquier modificación unilateral, pues el contratista no prestó consentimiento al cambio en el objeto inicial.",
+        "rationale": "La modificación unilateral legalmente habilitada no genera automáticamente el derecho específico de renuncia."
+      },
+      {
+        "id": "c",
+        "text": "La entidad debe liquidar si la modificación supera el diez por ciento del contrato, aunque conserve la continuidad del servicio público.",
+        "rationale": "El artículo 16 no establece un umbral del diez por ciento para esa consecuencia."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Ley 80/1993, arts. 14, 16 y 40. El umbral legal es veinte por ciento o más; la conclusión se limita a ese fundamento. La modificación unilateral legalmente habilitada no genera automáticamente el derecho específico de renuncia. El artículo 16 no establece un umbral del diez por ciento para esa consecuencia.",
+    "sourceIds": [
+      "ley-80-1993"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-siniestro-garantia-1",
+    "moduleId": "pgn-m52",
+    "relatedModuleIds": [
+      "pgn-m22",
+      "pgn-m45",
+      "pgn-m52",
+      "pgn-m58"
+    ],
+    "scenarioId": "pgn-exception-siniestro-garantia",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un incendio destruye equipos que un proveedor debía entregar a la PGN y que todavía estaban bajo su custodia. La causa no se ha establecido; existen una póliza de cumplimiento y un seguro de bienes con coberturas distintas. El supervisor recibe un informe preliminar y el área de compras pide declarar incumplimiento y cobrar de inmediato toda la póliza.",
+    "stem": "¿Qué actuación debe preceder a una decisión sobre incumplimiento y garantía?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hacer efectiva la totalidad de la póliza de cumplimiento por el valor de los equipos destruidos y verificar la causa al liquidar el contrato.",
+        "rationale": "El evento físico no acredita por sí solo incumplimiento imputable, cobertura ni cuantía de la garantía."
+      },
+      {
+        "id": "b",
+        "text": "Verificar causa, obligaciones, asignación de riesgos y amparos; si procede trámite de incumplimiento, citar al contratista y al garante.",
+        "rationale": "La Ley 1474 y el Decreto 1082 exigen distinguir los presupuestos y respetar el procedimiento aplicable."
+      },
+      {
+        "id": "c",
+        "text": "Aplicar exclusivamente el seguro de bienes sin revisar la obligación de entrega ni informar a la autoridad contractual del posible incumplimiento.",
+        "rationale": "La existencia de un seguro patrimonial no excluye automáticamente el análisis de obligaciones contractuales."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Ley 1474/2011, art. 86; Decreto 1082/2015, art. 2.2.1.2.3.1.19; Manual PGN, secciones 4.9 y 5.3. La Ley 1474 y el Decreto 1082 exigen distinguir los presupuestos y respetar el procedimiento aplicable. El evento físico no acredita por sí solo incumplimiento imputable, cobertura ni cuantía de la garantía. La existencia de un seguro patrimonial no excluye automáticamente el análisis de obligaciones contractuales.",
+    "sourceIds": [
+      "ley-1474-2011",
+      "decreto-1082-2015",
+      "pgn-res-379-2024"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-siniestro-garantia-2",
+    "moduleId": "pgn-m52",
+    "relatedModuleIds": [
+      "pgn-m22",
+      "pgn-m45",
+      "pgn-m52",
+      "pgn-m58"
+    ],
+    "scenarioId": "pgn-exception-siniestro-garantia",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Un equipo tecnológico fue recibido a satisfacción, pagado y puesto en servicio. Ocho meses después presenta una falla de fabricación acreditada mediante diagnóstico; el amparo de calidad y correcto funcionamiento sigue vigente. No hay mora en la entrega ni daños causados por terceros. La oficina propone considerar extemporánea toda reclamación por haber finalizado la ejecución.",
+    "stem": "¿Qué garantía debe examinarse prioritariamente para este supuesto posterior al recibo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El amparo de cumplimiento por retraso en entrega, pues cualquier falla posterior transforma retroactivamente el recibo a satisfacción en mora contractual.",
+        "rationale": "La falla de calidad posterior no convierte automáticamente una entrega oportuna en mora."
+      },
+      {
+        "id": "b",
+        "text": "El seguro de responsabilidad civil extracontractual, dado que el daño se manifestó una vez finalizada la etapa de ejecución del contrato.",
+        "rationale": "La responsabilidad extracontractual no es el amparo específico de calidad del bien recibido."
+      },
+      {
+        "id": "c",
+        "text": "El amparo postcontractual de calidad y correcto funcionamiento vigente, comprobando alcance, causa, perjuicio y procedimiento de reclamación correspondiente.",
+        "rationale": "El manual PGN distingue los amparos postcontractuales y sus presupuestos de aplicación."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Ley 1474/2011, art. 86; Decreto 1082/2015, art. 2.2.1.2.3.1.19; Manual PGN, secciones 4.9 y 5.3. El manual PGN distingue los amparos postcontractuales y sus presupuestos de aplicación. La falla de calidad posterior no convierte automáticamente una entrega oportuna en mora. La responsabilidad extracontractual no es el amparo específico de calidad del bien recibido.",
+    "sourceIds": [
+      "ley-1474-2011",
+      "decreto-1082-2015",
+      "pgn-res-379-2024"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-urgencia-control-1",
+    "moduleId": "pgn-m51",
+    "relatedModuleIds": [
+      "pgn-m45",
+      "pgn-m50",
+      "pgn-m51",
+      "pgn-m52",
+      "pgn-m54"
+    ],
+    "scenarioId": "pgn-exception-urgencia-control",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "Una entidad territorial declara motivadamente urgencia manifiesta para garantizar un servicio afectado por una calamidad y celebra los contratos indispensables. Conserva acto, antecedentes técnicos, pruebas y contratos suscritos. El secretario propone esperar al cierre de la ejecución para enviar un único informe consolidado al organismo de control fiscal.",
+    "stem": "¿Cuándo y con qué soporte procede el control especial de la contratación de urgencia?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remitir inmediatamente después de celebrados los contratos el acto de urgencia, contratos, antecedentes y pruebas al organismo de control fiscal competente.",
+        "rationale": "El art. 43 establece remisión posterior inmediata a la celebración y documentación específica."
+      },
+      {
+        "id": "b",
+        "text": "Remitir después de liquidar los contratos, cuando sea posible establecer el valor ejecutado definitivo y medir la suficiencia de las obras.",
+        "rationale": "El cierre o liquidación no es el momento legal de esa remisión especial."
+      },
+      {
+        "id": "c",
+        "text": "Solicitar primero autorización de la Procuraduría para enviar los documentos al organismo fiscal, porque la urgencia implica vigilancia disciplinaria preferente.",
+        "rationale": "El control fiscal del art. 43 no depende de autorización previa de la PGN."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Ley 80/1993, arts. 42–43. El art. 43 establece remisión posterior inmediata a la celebración y documentación específica. El cierre o liquidación no es el momento legal de esa remisión especial. El control fiscal del art. 43 no depende de autorización previa de la PGN.",
+    "sourceIds": [
+      "ley-80-1993"
+    ],
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "id": "pgn-exception-urgencia-control-2",
+    "moduleId": "pgn-m51",
+    "relatedModuleIds": [
+      "pgn-m45",
+      "pgn-m50",
+      "pgn-m51",
+      "pgn-m52",
+      "pgn-m54"
+    ],
+    "scenarioId": "pgn-exception-urgencia-control",
+    "type": "pjs",
+    "difficulty": 5,
+    "case": "El órgano de control fiscal recibe el expediente completo de una contratación de urgencia y encuentra indicios de que la situación declarada era previsible y no impedía acudir al procedimiento ordinario. No ha transcurrido el plazo de dos meses para su pronunciamiento. La entidad afirma que el órgano fiscal debe sancionar disciplinariamente al ordenador del gasto de inmediato.",
+    "stem": "¿Cómo se diferencian el control de urgencia y la eventual actuación disciplinaria?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El órgano fiscal impone la sanción disciplinaria dentro de dos meses y remite copia a la Procuraduría para registrar sus efectos.",
+        "rationale": "Los dos meses corresponden al pronunciamiento fiscal, no al fallo de responsabilidad disciplinaria."
+      },
+      {
+        "id": "b",
+        "text": "El órgano fiscal se pronuncia sobre las circunstancias y, si procede, solicita investigación disciplinaria al competente y remite otras acciones pertinentes.",
+        "rationale": "El art. 43 distingue pronunciamiento, solicitud de investigación y remisiones según competencia."
+      },
+      {
+        "id": "c",
+        "text": "La Procuraduría sustituye el pronunciamiento fiscal desde que aparecen indicios, porque el posible uso indebido elimina las competencias del control fiscal.",
+        "rationale": "La concurrencia de controles no transfiere automáticamente sus funciones a la PGN."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Ley 80/1993, arts. 42–43. El art. 43 distingue pronunciamiento, solicitud de investigación y remisiones según competencia. Los dos meses corresponden al pronunciamiento fiscal, no al fallo de responsabilidad disciplinaria. La concurrencia de controles no transfiere automáticamente sus funciones a la PGN.",
+    "sourceIds": [
+      "ley-80-1993"
+    ],
+    "verifiedAt": "2026-11-23"
   }
 ]
 
@@ -733,7 +1419,8 @@ const lessons = [
     "contrast": [
       "Si existen copias verificables, reconstruir y controlar completitud y defensa.",
       "Si no es posible reconstruir tras diligencias suficientes, reiniciar de oficio y verificar procedencia, términos y garantías."
-    ]
+    ],
+    "sourceId": "ley-1952-2019"
   },
   {
     "moduleId": "pgn-m24",
@@ -743,7 +1430,8 @@ const lessons = [
     "contrast": [
       "Retiro o desistimiento: comprobar el mérito y continuar si procede.",
       "Muerte acreditada: aplicar la extinción correspondiente a la persona y etapa; no extenderla a terceros."
-    ]
+    ],
+    "sourceId": "ley-1952-2019"
   },
   {
     "moduleId": "pgn-m24",
@@ -753,7 +1441,8 @@ const lessons = [
     "contrast": [
       "Renuncia personal a la prescripción: ventana especial de dos años, no un nuevo período ordinario de cinco.",
       "Sanción ejecutoriada: término propio de cinco años, distinto de la prescripción de la acción."
-    ]
+    ],
+    "sourceId": "ley-1952-2019"
   },
   {
     "moduleId": "pgn-m23",
@@ -763,7 +1452,8 @@ const lessons = [
     "contrast": [
       "Impedimento: manifestación propia, remisión inmediata al superior.",
       "Recusación: solicitud de sujeto procesal con fundamento y prueba; suspensión desde presentación."
-    ]
+    ],
+    "sourceId": "ley-1952-2019"
   },
   {
     "moduleId": "pgn-m27",
@@ -773,7 +1463,8 @@ const lessons = [
     "contrast": [
       "Identificación de algunos intervinientes: puede separarse sin cerrar la ruta respecto de los no identificados.",
       "Otra conducta o persona advertida por prueba sobreviniente en juicio: copias para nueva acción separada; no ampliar informalmente el juicio."
-    ]
+    ],
+    "sourceId": "ley-1952-2019"
   },
   {
     "moduleId": "pgn-m22",
@@ -783,7 +1474,8 @@ const lessons = [
     "contrast": [
       "Imposibilidad acreditada de cumplir: valorar causal y relación con el deber específico.",
       "Evento extraordinario con alternativa real y accesible: investigar exigibilidad y cuidado; no presumir responsabilidad ni exclusión."
-    ]
+    ],
+    "sourceId": "ley-1952-2019"
   },
   {
     "moduleId": "pgn-m33",
@@ -793,7 +1485,8 @@ const lessons = [
     "contrast": [
       "Diligencia virtual en otra sede: control material local y constancia.",
       "Diligencia presencial extranjera: verificar régimen, autorización y avisos previos; traslado de prueba existente es figura diferente."
-    ]
+    ],
+    "sourceId": "ley-1952-2019"
   },
   {
     "moduleId": "pgn-m43",
@@ -803,7 +1496,8 @@ const lessons = [
     "contrast": [
       "Elementos descubiertos con acusación: pueden trasladarse y someterse a contradicción disciplinaria.",
       "Elementos no descubiertos: solicitud al fiscal y evaluación de entrega; no exigencia indiscriminada."
-    ]
+    ],
+    "sourceId": "ley-1952-2019"
   },
   {
     "moduleId": "pgn-m42",
@@ -813,12 +1507,116 @@ const lessons = [
     "contrast": [
       "Discrepancia técnica: dictámenes separados, revisión del método y contradicción.",
       "Causal de recusación durante el plazo: resolver por art. 178, no esperar objeción posterior."
-    ]
+    ],
+    "sourceId": "ley-1952-2019"
+  },
+  {
+    "moduleId": "pgn-m17",
+    "title": "Peticiones incompletas y desistimiento tácito",
+    "article": "Ley 1755/2015, art. 17; Resolución PGN 330/2021, art. 19",
+    "rule": "Distinguir la solicitud incompleta de una decisión desfavorable. Si falta una gestión indispensable a cargo del ciudadano, requerir dentro de diez días de la radicación, dar hasta un mes y admitir la prórroga oportuna hasta por igual término. Al completarse, el plazo de respuesta se reactiva al día siguiente; no empieza de cero. En la PGN, vencido el requerimiento sin cumplimiento ni prórroga, el jefe de dependencia suscribe el acto motivado de desistimiento dentro de los primeros cinco días hábiles, con notificación personal y reposición.",
+    "contrast": [
+      "Documento aportado: reactivar el plazo pendiente desde el día siguiente.",
+      "Requerimiento incumplido: verificar vencimiento y prórroga; acto motivado de desistimiento, no rechazo de fondo."
+    ],
+    "sourceId": "ley-1755-2015"
+  },
+  {
+    "moduleId": "pgn-m17",
+    "title": "Peticiones reiterativas y subsanación",
+    "article": "Ley 1755/2015, art. 19; Resolución PGN 330/2021, art. 17",
+    "rule": "La identidad del asunto no basta para tratar una petición como repetida: verificar respuesta previa de fondo y excepciones. Si se negó por falta de requisitos y la nueva solicitud los satisface, debe resolverse de fondo; tampoco se utiliza la remisión automática frente a derechos imprescriptibles. Si realmente es reiterativa, la PGN vuelve a poner en conocimiento del ciudadano la respuesta anterior.",
+    "contrast": [
+      "Misma petición ya resuelta de fondo, sin excepción: remisión a la respuesta anterior.",
+      "Nueva petición con requisitos antes faltantes: pronunciamiento de fondo."
+    ],
+    "sourceId": "ley-1755-2015"
+  },
+  {
+    "moduleId": "pgn-m18",
+    "title": "Insistencia por reserva y acceso entre autoridades",
+    "article": "Ley 1755/2015, arts. 25–27; Resolución PGN 330/2021, art. 33",
+    "rule": "Ante negativa de información por reserva legal, identificar norma y piezas restringidas; entregar lo separable. La insistencia escrita y sustentada se formula en la notificación o dentro de diez días. Contra la negativa por reserva no operan los recursos ordinarios. En el supuesto de una autoridad nacional, decide en única instancia el tribunal administrativo con jurisdicción donde están los documentos. La reserva no se opone a autoridades legalmente competentes que requieren la información para sus funciones, que deben conservarla.",
+    "contrast": [
+      "Ciudadano insiste frente a reserva: remisión judicial según art. 26.",
+      "Autoridad competente solicita para su función: acceso con deber de mantener reserva, sin habilitar difusión pública."
+    ],
+    "sourceId": "ley-1755-2015"
+  },
+  {
+    "moduleId": "pgn-m15",
+    "title": "Corrección formal y cambio material del acto",
+    "article": "CPACA, arts. 41 y 45",
+    "rule": "Antes de expedir el acto, la autoridad corrige irregularidades de la actuación para ajustarla a derecho. Una vez expedido, el art. 45 permite corregir errores puramente formales sin alterar la decisión material ni revivir términos de demanda. Comunicar o notificar la corrección según corresponda. Cuando el cambio altera derechos o el sentido de la decisión, utilizar la figura legal procedente, no una fe de erratas.",
+    "contrast": [
+      "Error de digitación acreditado sin impacto material: corrección formal y comunicación.",
+      "Cambio de beneficiario, monto reconocido o contenido sustancial: examinar la vía legal, no art. 45."
+    ],
+    "sourceId": "cpaca"
+  },
+  {
+    "moduleId": "pgn-m16",
+    "title": "Conflicto administrativo positivo o negativo",
+    "article": "CPACA, art. 39, modificado por Ley 2080/2021",
+    "rule": "En actuaciones administrativas generales, si dos autoridades rechazan competencia o ambas la reclaman, aplicar el art. 39; no confundir con conflicto disciplinario especial. La Sala de Consulta y Servicio Civil conoce conflictos nacionales, mixtos o entre territoriales de distintos departamentos; el tribunal administrativo correspondiente conoce los territoriales previstos en la norma. El término de petición del art. 14 queda suspendido durante el conflicto; la decisión de competencia no admite recurso.",
+    "contrast": [
+      "Dos autoridades municipales del mismo departamento: tribunal administrativo correspondiente.",
+      "Autoridades nacional y territorial: Sala de Consulta y Servicio Civil; suspensión de términos del art. 14."
+    ],
+    "sourceId": "cpaca"
+  },
+  {
+    "moduleId": "pgn-m52",
+    "title": "Terminación unilateral, muerte y caducidad",
+    "article": "Ley 80/1993, arts. 14, 17 y 18",
+    "rule": "En contratos con cláusulas excepcionales legalmente aplicables, la muerte del contratista persona natural es causal de terminación anticipada motivada, con posibilidad legal de continuar con el garante en el supuesto del art. 17. No equivale a caducidad. Esta exige incumplimiento que afecte grave y directamente la ejecución y pueda conducir a su paralización, con decisión motivada y debido proceso. Examinar alternativas de continuidad y atribución antes de concluir responsabilidad disciplinaria.",
+    "contrast": [
+      "Muerte acreditada: analizar terminación y posible continuación con garante.",
+      "Incumplimiento grave con riesgo de paralización: examinar caducidad, garantías y debido proceso."
+    ],
+    "sourceId": "ley-80-1993"
+  },
+  {
+    "moduleId": "pgn-m52",
+    "title": "Modificación unilateral y umbral del 20 %",
+    "article": "Ley 80/1993, arts. 14, 16 y 40",
+    "rule": "La modificación unilateral, en contratos legalmente habilitados, procede por necesidad de evitar paralización o afectación grave del servicio cuando no se logra acuerdo. Si modifica el valor en 20 % o más del inicial, el contratista puede renunciar a continuar; en ese caso se ordena liquidar y garantizar la terminación del objeto. No confundir este umbral con el límite general acumulado de adiciones del art. 40.",
+    "contrast": [
+      "Variación de 15 %: el umbral del art. 16 no se cumple por ese solo hecho.",
+      "Variación de 20 % o más: derecho a renunciar a continuar, con las consecuencias del art. 16."
+    ],
+    "sourceId": "ley-80-1993"
+  },
+  {
+    "moduleId": "pgn-m52",
+    "title": "Siniestro, cobertura de garantías y responsabilidad",
+    "article": "Ley 1474/2011, art. 86; Decreto 1082/2015, art. 2.2.1.2.3.1.19; Manual PGN, secciones 4.9 y 5.3",
+    "rule": "Un incendio o daño físico no implica automáticamente incumplimiento imputable ni cobertura de cualquier póliza. Identificar custodia, riesgo contractual, causa, amparo, vigencia, perjuicio y deber de informar. En procedimiento de incumplimiento con póliza de cumplimiento, citar al contratista y garante y decidir con debido proceso. Diferenciar seguro de bienes de amparo de cumplimiento y de calidad posterior a la recepción. En suspensión/reinicio de contratos PGN se controlan garantías conforme al manual.",
+    "contrast": [
+      "Bien destruido durante ejecución: preservar soportes, determinar obligaciones y cobertura antes de imputar incumplimiento.",
+      "Falla posterior al recibo a satisfacción: examinar amparo de calidad, vigencia e imputabilidad; no confundir con mora en entrega."
+    ],
+    "sourceId": "ley-1474-2011"
+  },
+  {
+    "moduleId": "pgn-m51",
+    "title": "Urgencia manifiesta y control posterior",
+    "article": "Ley 80/1993, arts. 42–43",
+    "rule": "La urgencia manifiesta requiere supuesto legal y acto motivado. Celebrados los contratos, remitir inmediatamente contratos, acto declarativo, antecedentes y pruebas al órgano de control fiscal correspondiente. Este se pronuncia dentro de dos meses sobre hechos y circunstancias de la declaración; si procede solicita investigación disciplinaria y remite otras acciones a competentes. No es autorización fiscal previa ni sanción disciplinaria automática.",
+    "contrast": [
+      "Contrato celebrado por urgencia: remisión inmediata del expediente al control fiscal.",
+      "Hallazgo fiscal sobre uso indebido: posible solicitud de investigación y traslado, no fallo disciplinario anticipado."
+    ],
+    "sourceId": "ley-80-1993"
   }
 ]
+export function exceptionLessonSources(moduleId: string): string[] {
+  return [...new Set(scenarios.filter(q => q.moduleId === moduleId).flatMap(q => q.sourceIds))]
+}
+
 export function exceptionLessonBlocks(moduleId: string): LessonBlock[] {
   return lessons.filter(l => l.moduleId === moduleId).flatMap(l => [
-    { type: 'article' as const, title: l.title, article: l.article, text: l.rule, sourceId: 'ley-1952-2019' },
+    { type: 'article' as const, title: l.title, article: l.article, text: l.rule, sourceId: l.sourceId },
     { type: 'comparison' as const, title: 'Cambio de supuesto · ' + l.title, columns: ['Supuesto y decisión'], rows: l.contrast.map(text => [text]) },
   ])
 }
