@@ -4796,6 +4796,691 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "Constitución art. 29; Ley 2195/2022 art. 31; CGD arts. 14, 147"
     ]
+  ],
+  "pgn-m15": [
+    [
+      "La oficina de atención remite un correo que únicamente confirma el número de radicación de una solicitud de reconocimiento. No concede ni niega el derecho, ni impide que se continúe el procedimiento. El interesado pregunta qué clase de actuación recibió.",
+      "¿Cómo debe clasificarse esa comunicación por su contenido?",
+      [
+        "Como constancia de recepción, sin decisión definitiva de la pretensión.",
+        "Como acto definitivo por haber sido expedido por una autoridad.",
+        "Como acto general porque fue remitido mediante correo institucional."
+      ],
+      [
+        "El acuse acredita recepción, no decide el fondo.",
+        "El origen público no determina naturaleza definitiva.",
+        "El canal no convierte el acto en general."
+      ],
+      "CPACA art. 43"
+    ],
+    [
+      "Una dependencia expide una decisión que rechaza definitivamente la continuación de un trámite administrativo, aunque todavía no se pronuncia sobre la pretensión material. No existe posibilidad de seguir ese trámite ante la misma dependencia.",
+      "¿Qué naturaleza tiene la decisión por impedir continuar la actuación?",
+      [
+        "Acto definitivo, aunque no resuelva expresamente el fondo de la pretensión.",
+        "Acto de simple trámite por no decidir materialmente el derecho solicitado.",
+        "Comunicación informativa porque la solicitud no fue examinada de fondo."
+      ],
+      [
+        "El art. 43 también comprende actos que imposibilitan continuar.",
+        "La falta de pronunciamiento material no lo vuelve mero trámite.",
+        "El rechazo produce efectos jurídicos."
+      ],
+      "CPACA art. 43"
+    ],
+    [
+      "Una autoridad expide un acto de carácter general que establece condiciones para todos los destinatarios de una categoría. El acto no es electoral y no existe régimen especial que disponga una modalidad de publicidad diferente.",
+      "¿Qué requisito condiciona su obligatoriedad frente a esos destinatarios?",
+      [
+        "La publicación conforme al medio legal que corresponda al acto general.",
+        "La notificación personal de cada ciudadano potencialmente afectado por el acto.",
+        "La firma del funcionario competente, sin necesidad de publicación institucional."
+      ],
+      [
+        "El art. 65 exige publicación de actos generales.",
+        "La notificación personal corresponde a decisiones particulares en los casos previstos.",
+        "La expedición no sustituye publicidad."
+      ],
+      "CPACA art. 65"
+    ],
+    [
+      "Una autoridad decide una petición mediante acto particular. Para notificarlo personalmente, la oficina entrega copia íntegra de la decisión, pero omite informar al destinatario cuáles recursos proceden, ante quién y en qué plazo.",
+      "¿Qué debe corregirse para cumplir los requisitos de la notificación personal?",
+      [
+        "Informar recursos procedentes, autoridad competente y término, además de entregar la copia.",
+        "Limitarse a indicar que el acto fue firmado por el funcionario competente.",
+        "Remitir posteriormente un enlace genérico a las normas administrativas de la entidad."
+      ],
+      [
+        "El art. 67 exige esa información en la notificación personal.",
+        "La competencia del firmante no subsana la notificación.",
+        "Un enlace genérico no informa los recursos del acto."
+      ],
+      "CPACA art. 67"
+    ],
+    [
+      "Un acto particular no tiene modalidad especial de notificación y el interesado no ha aceptado notificación electrónica. La entidad remite citación, transcurren cinco días desde su envío y no logra practicar la notificación personal.",
+      "¿Qué modalidad debe gestionar conforme al procedimiento general en ese supuesto?",
+      [
+        "Notificación por aviso con copia íntegra y los datos exigidos por la ley.",
+        "Publicación general del acto como sustituto de cualquier trámite individual.",
+        "Comunicación verbal a un tercero sin constancia de recepción ni copia."
+      ],
+      [
+        "El art. 69 prevé aviso cuando no se logra notificación personal.",
+        "El acto particular conserva el régimen de notificación aplicable.",
+        "La comunicación verbal no cumple las formalidades del aviso."
+      ],
+      "CPACA arts. 68–69"
+    ],
+    [
+      "Contra un acto definitivo de primera instancia proceden reposición y apelación. La persona interesada fue notificada válidamente y desea acudir directamente al superior funcional, sin interponer primero reposición ante quien decidió.",
+      "¿Puede formular la apelación directamente dentro del término legal?",
+      [
+        "Sí, la apelación puede interponerse directamente o como subsidiaria de reposición.",
+        "No, la reposición es siempre requisito obligatorio para interponer la apelación.",
+        "No, solo puede recurrir en queja mientras no exista decisión de reposición."
+      ],
+      [
+        "El art. 76 permite apelación directa o subsidiaria.",
+        "La reposición no es requisito obligatorio.",
+        "La queja procede ante rechazo de apelación."
+      ],
+      "CPACA arts. 74, 76"
+    ],
+    [
+      "Un acto particular fue expedido el lunes. La citación se remitió el martes, pero el destinatario no fue notificado ni se configuró conducta concluyente. La entidad registra el miércoles como fecha de firmeza por considerar suficiente la citación.",
+      "¿Qué defecto presenta el cálculo de firmeza realizado por la entidad?",
+      [
+        "Confunde el envío de citación con notificación efectiva y sus efectos sobre recursos.",
+        "Aplica la fecha de citación cuando debería aplicar siempre la de firma del acto.",
+        "Debería contar desde el ingreso del asunto a la entidad, no desde la citación."
+      ],
+      [
+        "Citación y notificación son actuaciones diferentes.",
+        "La firma tampoco acredita por sí sola firmeza.",
+        "La recepción inicial no determina ejecutoria."
+      ],
+      "CPACA arts. 68–69, 72, 87"
+    ],
+    [
+      "Un acto particular fue notificado correctamente y admite recursos. El interesado deja transcurrir el término legal sin presentarlos, no renuncia expresamente ni se configura otra causal especial de firmeza. La oficina debe identificar el momento correspondiente.",
+      "¿Cuándo queda en firme ese acto por falta de interposición de recursos?",
+      [
+        "Desde el día siguiente al vencimiento del término para interponer los recursos.",
+        "Desde el mismo día en que se practicó la notificación personal válida.",
+        "Desde el día en que la entidad comenzó a ejecutar materialmente la decisión."
+      ],
+      [
+        "El art. 87.3 establece firmeza desde el día siguiente al vencimiento.",
+        "La notificación inicia, pero no agota, la oportunidad de recurrir.",
+        "La ejecución material no determina esa causal de firmeza."
+      ],
+      "CPACA art. 87.3"
+    ],
+    [
+      "Una entidad detecta un error de digitación en el número de un documento citado dentro de un acto particular. La corrección no modifica el sentido material de la decisión ni afecta sus destinatarios. El acto ya fue notificado.",
+      "¿Qué vía permite corregir ese defecto formal sin reabrir el fondo del asunto?",
+      [
+        "Corregir el error formal, comunicar o notificar la corrección y no revivir términos.",
+        "Revocar íntegramente el acto y expedir una nueva decisión con los mismos efectos.",
+        "Reiniciar el término para demandar porque toda corrección modifica el acto original."
+      ],
+      [
+        "El art. 45 permite corregir errores formales sin cambiar el fondo.",
+        "La revocación integral no es necesaria por ese defecto.",
+        "La corrección no revive términos para demandar."
+      ],
+      "CPACA art. 45"
+    ]
+  ],
+  "pgn-m16": [
+    [
+      "Un operador disciplinario revisa el término de una actuación expresamente regulada por el Código General Disciplinario. Otro funcionario propone aplicar el plazo del procedimiento administrativo común por tratarse de una autoridad administrativa.",
+      "¿Qué criterio determina la norma que debe aplicarse primero en este caso?",
+      [
+        "La regla especial disciplinaria que regula expresamente la actuación correspondiente.",
+        "El término del CPACA por su carácter general para las autoridades administrativas.",
+        "El plazo más corto entre ambos códigos, por el principio de celeridad."
+      ],
+      [
+        "El art. 34 preserva procedimientos especiales.",
+        "La naturaleza administrativa no desplaza la regla especial.",
+        "La celeridad no habilita escoger arbitrariamente términos."
+      ],
+      "CPACA art. 34; CGD"
+    ],
+    [
+      "Una actuación administrativa está regida por una ley especial que no regula un aspecto procedimental. No existe prohibición de integración y la disposición general resulta compatible con la naturaleza y garantías del procedimiento especial.",
+      "¿Qué posibilidad ofrece el artículo 34 frente a ese vacío específico?",
+      [
+        "Aplicar supletoriamente la Parte Primera del CPACA en lo no previsto.",
+        "Reemplazar todo el procedimiento especial por el procedimiento administrativo común.",
+        "Crear una regla interna sin acudir a las normas que regulan actuaciones administrativas."
+      ],
+      [
+        "La regla general integra aspectos no regulados cuando procede.",
+        "El vacío no elimina el régimen especial.",
+        "Una instrucción interna no sustituye la integración normativa legal."
+      ],
+      "CPACA art. 34"
+    ],
+    [
+      "Una autoridad abre una actuación administrativa de oficio y advierte que la decisión puede afectar directamente a terceros determinados. El trámite ordinario no tiene excepción legal que dispense la comunicación a esos terceros identificados.",
+      "¿Qué garantía debe examinar antes de adoptar la decisión de fondo?",
+      [
+        "Comunicar la existencia y objeto de la actuación para permitir intervención de los terceros.",
+        "Esperar a decidir y notificar únicamente a quien originó la actuación administrativa.",
+        "Publicar el resultado definitivo sin habilitar intervención durante la actuación."
+      ],
+      [
+        "El art. 37 permite a terceros directamente afectados constituirse como parte.",
+        "La comunicación oportuna protege participación.",
+        "Publicar el resultado no reemplaza esa oportunidad."
+      ],
+      "CPACA art. 37"
+    ],
+    [
+      "En un procedimiento administrativo ordinario, el interesado solicita pruebas pertinentes antes de que se profiera la decisión de fondo. La autoridad argumenta que solo puede solicitar pruebas dentro de un periodo inicial que no está previsto para ese trámite.",
+      "¿Qué regla general establece el CPACA sobre prueba antes de la decisión?",
+      [
+        "Pueden aportarse, pedirse y practicarse pruebas hasta antes de decidir, garantizando contradicción.",
+        "Solo pueden aportarse pruebas en el momento inicial de radicación de la solicitud.",
+        "Las pruebas posteriores requieren interponer recurso contra una decisión de fondo ya expedida."
+      ],
+      [
+        "El art. 40 habilita actividad probatoria durante la actuación.",
+        "No impone exclusivamente la radicación como oportunidad.",
+        "No exige esperar una decisión para pedir prueba."
+      ],
+      "CPACA art. 40"
+    ],
+    [
+      "Una entidad detecta antes de decidir que omitió una comunicación obligatoria en una actuación administrativa ordinaria. Todavía puede practicarla oportunamente y garantizar la participación de la persona afectada sin cambiar el objeto del trámite.",
+      "¿Qué facultad permite corregir la irregularidad antes de expedir el acto definitivo?",
+      [
+        "Adoptar las medidas necesarias de corrección y ajustar la actuación a derecho.",
+        "Declarar automáticamente la nulidad judicial de todo lo actuado desde la radicación.",
+        "Continuar sin corregir porque aún no se ha expedido el acto administrativo definitivo."
+      ],
+      [
+        "El art. 41 permite corregir irregularidades antes de decidir.",
+        "La autoridad administrativa no declara automáticamente nulidad judicial.",
+        "La ausencia de decisión final facilita corrección, no permite omitirla."
+      ],
+      "CPACA art. 41"
+    ],
+    [
+      "Una autoridad tramita una actuación administrativa ordinaria y dispone de los informes, pruebas y argumentos aportados. El proyecto de decisión resuelve solo una de las solicitudes oportunamente planteadas y no explica la suerte de las demás.",
+      "¿Qué exigencia debe cumplir la decisión de fondo para resolver ese trámite?",
+      [
+        "Motivar la decisión y resolver todas las peticiones oportunamente planteadas que correspondan.",
+        "Resolver únicamente la pretensión considerada principal sin explicar las solicitudes restantes.",
+        "Emitir una respuesta de trámite y conservar indefinidamente abiertas las otras pretensiones."
+      ],
+      [
+        "El art. 42 exige decisión motivada y resolución de peticiones planteadas.",
+        "La selección arbitraria produce respuesta incompleta.",
+        "El impulso de trámite no sustituye decisión de fondo."
+      ],
+      "CPACA art. 42"
+    ],
+    [
+      "Durante una investigación disciplinaria la defensa solicita una prueba. La negativa está regulada expresamente por el CGD y admite reposición. La secretaría propone tramitar apelación aplicando indistintamente el régimen general de actos definitivos.",
+      "¿Qué regla corresponde al recurso en esa etapa de la actuación disciplinaria?",
+      [
+        "Aplicar el recurso especial previsto para la negativa de prueba en investigación.",
+        "Aplicar automáticamente apelación por tratarse de una decisión administrativa motivada.",
+        "Conceder conjuntamente todos los recursos ordinarios para ampliar garantías del investigado."
+      ],
+      [
+        "El procedimiento especial determina recurso y etapa.",
+        "Motivar la decisión no crea recurso general.",
+        "Los recursos proceden en los supuestos legales."
+      ],
+      "CPACA art. 34; CGD art. 133"
+    ],
+    [
+      "Una persona solicita copias de documentos administrativos a una oficina que también adelanta investigaciones disciplinarias. La solicitud no busca controvertir una providencia ni ejerce una facultad propia de un sujeto procesal disciplinario.",
+      "¿Qué régimen debe examinarse para resolver esa solicitud autónoma de información?",
+      [
+        "Derecho de petición y acceso a información, incluyendo las reservas especiales aplicables.",
+        "Término de investigación disciplinaria, porque la oficina desarrolla esa función institucional.",
+        "Plazo de apelación contra fallo disciplinario, por contener documentos de una dependencia instructora."
+      ],
+      [
+        "El objeto de la solicitud determina el régimen inicial.",
+        "El plazo de investigación no regula esa petición autónoma.",
+        "No se trata de impugnación de fallo."
+      ],
+      "Ley 1755/2015 art. 14; CPACA art. 34"
+    ],
+    [
+      "Una entidad expide un acto particular favorable que reconoció expresamente un derecho. Luego considera que su expedición fue ilegal; no existe consentimiento previo, expreso y escrito del titular ni excepción legal aplicable para revocarlo directamente.",
+      "¿Qué debe hacer la autoridad si considera necesario retirar ese acto favorable?",
+      [
+        "Acudir a la jurisdicción competente para demandar su propio acto en los términos legales.",
+        "Revocarlo unilateralmente por considerar que viola el ordenamiento jurídico.",
+        "Suspender indefinidamente sus efectos mediante una simple nota interna sin competencia especial."
+      ],
+      [
+        "El art. 97 protege actos particulares favorables sin consentimiento y prevé demanda.",
+        "La opinión de ilegalidad no sustituye consentimiento o control judicial.",
+        "Una nota no produce automáticamente suspensión legal."
+      ],
+      "CPACA art. 97"
+    ]
+  ],
+  "pgn-m17": [
+    [
+      "Una ciudadana radica una petición general para que una entidad adopte una decisión dentro de sus competencias. No pide documentos ni formula una consulta jurídica y no existe término especial para resolver la pretensión que planteó.",
+      "¿Cuál es el plazo ordinario de respuesta aplicable a esa petición general?",
+      [
+        "Quince días siguientes a su recepción, salvo disposición legal especial.",
+        "Diez días siguientes a su recepción, como para solicitudes documentales.",
+        "Treinta días siguientes a su recepción, como para consultas sobre competencias."
+      ],
+      [
+        "La regla ordinaria del art. 14 es quince días.",
+        "Diez corresponde a información y documentos.",
+        "Treinta corresponde a consultas."
+      ],
+      "Ley 1755/2015 art. 14"
+    ],
+    [
+      "Un ciudadano solicita copias de documentos públicos disponibles en una entidad. La autoridad no tiene reserva que aplicar ni plazo especial; el responsable registra el término ordinario de quince días de las peticiones generales.",
+      "¿Qué término específico corresponde a esa solicitud de documentos e información?",
+      [
+        "Diez días siguientes a su recepción conforme al régimen de información.",
+        "Quince días siguientes a su recepción por la regla general de peticiones.",
+        "Treinta días siguientes a su recepción por requerir una respuesta escrita."
+      ],
+      [
+        "El art. 14 fija diez días para información y documentos.",
+        "La regla general cede ante el plazo específico.",
+        "La forma escrita no convierte la solicitud en consulta."
+      ],
+      "Ley 1755/2015 art. 14.1"
+    ],
+    [
+      "Una profesional eleva a una autoridad una consulta sobre la interpretación general de una materia que está a su cargo. No solicita una decisión sobre su derecho particular ni copia de documentos y no existe regla especial.",
+      "¿Qué plazo y efecto general corresponden a la respuesta de esa consulta?",
+      [
+        "Treinta días para responder; el concepto no es vinculante salvo disposición legal.",
+        "Quince días para responder; el concepto es obligatorio para todos los destinatarios.",
+        "Diez días para responder; el concepto equivale a un acto administrativo definitivo."
+      ],
+      [
+        "Las consultas tienen treinta días y sus conceptos no son obligatorios por regla general.",
+        "El carácter conceptual no activa el plazo de petición general.",
+        "Una consulta no equivale a solicitud documental ni a acto decisorio."
+      ],
+      "Ley 1755/2015 arts. 14.2, 28"
+    ],
+    [
+      "Una petición escrita llega a una dependencia que carece de competencia para resolverla. Identifica claramente cuál autoridad debe conocer el asunto y dispone de dirección de contacto para informar al solicitante y remitir el escrito.",
+      "¿Qué plazo aplica para informar y remitir esa petición a la autoridad competente?",
+      [
+        "Dentro de los cinco días siguientes a la recepción de la petición escrita.",
+        "Dentro de los diez días siguientes por tratarse de una gestión de correspondencia.",
+        "Al vencimiento de los quince días previstos para decidir una petición general."
+      ],
+      [
+        "El art. 21 fija cinco días para peticiones escritas.",
+        "No se aplica el plazo documental a la remisión.",
+        "Esperar el término general desconoce la regla de competencia."
+      ],
+      "Ley 1755/2015 art. 21"
+    ],
+    [
+      "Una entidad recibe una petición incompleta. Falta un documento que legalmente debe aportar el interesado, es necesario para decidir y la autoridad no lo tiene; la actuación puede continuar si se completa la solicitud radicada.",
+      "¿Qué trámite corresponde para requerir la información faltante en este supuesto?",
+      [
+        "Requerir dentro de diez días de radicación, concediendo hasta un mes para completar.",
+        "Rechazar inmediatamente la petición por falta de un documento indispensable para decidir.",
+        "Conceder quince días sin realizar un requerimiento oportuno ni identificar lo que falta."
+      ],
+      [
+        "El art. 17 dispone requerimiento dentro de diez días y hasta un mes.",
+        "No procede rechazo automático en ese supuesto.",
+        "El término y el requerimiento están regulados expresamente."
+      ],
+      "Ley 1755/2015 art. 17"
+    ],
+    [
+      "Una persona presenta una petición respetuosa verbal en una oficina habilitada. El funcionario se niega a recibirla porque el ciudadano no entregó un formato escrito, aunque el asunto puede formularse por ese medio y no existe excepción legal.",
+      "¿Qué conducta corresponde a la autoridad ante esa petición verbal procedente?",
+      [
+        "Recibirla y dejar constancia de su presentación conforme a las reglas aplicables.",
+        "Exigir escrito firmado como condición general de validez de toda petición.",
+        "Remitir al interesado a un abogado para que formule la solicitud de manera escrita."
+      ],
+      [
+        "El derecho admite peticiones verbales y exige constancia.",
+        "El formato escrito no es requisito universal.",
+        "No se requiere abogado por regla general."
+      ],
+      "Ley 1755/2015 arts. 13, 15"
+    ],
+    [
+      "Una solicitud de copias de documentos públicos no reservados no fue respondida dentro de los diez días legales. No existe una ampliación comunicada oportunamente ni regla especial que modifique el efecto previsto para ese silencio.",
+      "¿Qué consecuencia específica establece la ley para esa solicitud documental?",
+      [
+        "Se entiende aceptada y las copias deben entregarse dentro de los tres días siguientes.",
+        "Se entiende negada y el interesado debe interponer apelación dentro de diez días.",
+        "Se amplía automáticamente el término a treinta días para resolver la solicitud."
+      ],
+      [
+        "El art. 14.1 establece aceptación y entrega en tres días.",
+        "No es silencio negativo en ese supuesto.",
+        "No existe ampliación automática por vencimiento."
+      ],
+      "Ley 1755/2015 art. 14.1"
+    ],
+    [
+      "Una autoridad verifica antes del vencimiento de una petición general de quince días que excepcionalmente no puede resolver dentro del término. Puede explicar los motivos concretos y necesita establecer un plazo razonable de respuesta.",
+      "¿Qué límite y actuación debe observar antes de que venza el término inicial?",
+      [
+        "Informar motivos y señalar un plazo razonable que no exceda el doble del inicial.",
+        "Esperar el vencimiento y comunicar después una ampliación discrecional de treinta días adicionales.",
+        "Suspender indefinidamente el término hasta contar con todos los soportes internos necesarios."
+      ],
+      [
+        "La ampliación exige aviso previo motivado y límite del doble.",
+        "La comunicación posterior no satisface esa condición.",
+        "No se permite suspensión indefinida por mera dificultad."
+      ],
+      "Ley 1755/2015 art. 14 parágrafo"
+    ],
+    [
+      "Una dependencia recibe un escrito que solicita una decisión general y copia de un informe disponible. Contesta únicamente la primera pretensión dentro de quince días y considera cerrado el radicado, aunque nunca se pronunció sobre el documento.",
+      "¿Qué revisión permite establecer si la entidad atendió íntegramente la petición mixta?",
+      [
+        "Distinguir las pretensiones y verificar respuesta y término aplicable a cada una.",
+        "Considerar completo el trámite por haberse respondido la solicitud de mayor extensión.",
+        "Aplicar el plazo de consulta a todo el escrito por contener solicitudes diferentes."
+      ],
+      [
+        "Cada componente tiene objeto, respuesta y término correspondiente.",
+        "Responder un punto no agota el escrito.",
+        "La mezcla no convierte todo en consulta."
+      ],
+      "Ley 1755/2015 arts. 13–14"
+    ]
+  ],
+  "pgn-m18": [
+    [
+      "Una entidad recibe una solicitud de acceso a un informe institucional. El responsable afirma que el documento es reservado porque la oficina lo etiquetó como interno, sin identificar una disposición constitucional o legal que fundamente la limitación.",
+      "¿Qué principio debe aplicar antes de negar el acceso al documento solicitado?",
+      [
+        "Máxima publicidad y exigencia de fundamento legal para limitar el acceso.",
+        "Reserva general de toda información que tenga una etiqueta institucional de uso interno.",
+        "Publicidad únicamente de documentos previamente aprobados por el jefe de la dependencia."
+      ],
+      [
+        "La información se presume pública salvo excepción legal.",
+        "Una etiqueta no crea reserva.",
+        "La aprobación jerárquica no es requisito general de publicidad."
+      ],
+      "Ley 1712/2014 arts. 2, 18–19"
+    ],
+    [
+      "Un documento contiene información íntima de una persona natural cuya divulgación afectaría injustificadamente sus derechos. La oficina identifica que el supuesto legal protege el interés privado de ese titular y no un interés público estatal.",
+      "¿Qué categoría de excepción corresponde a la protección descrita en el caso?",
+      [
+        "Información pública clasificada por afectación de derechos de personas.",
+        "Información pública reservada exclusivamente por afectación de intereses públicos.",
+        "Información secreta creada mediante instrucción interna del funcionario encargado."
+      ],
+      [
+        "El art. 18 regula información clasificada por derechos privados.",
+        "El art. 19 protege intereses públicos legalmente definidos.",
+        "Una instrucción interna no crea una categoría legal de reserva."
+      ],
+      "Ley 1712/2014 arts. 18–19"
+    ],
+    [
+      "Un contrato contiene cláusulas públicas y una sección específica protegida por una excepción legal debidamente sustentada. La entidad puede separar esa sección sin afectar la comprensión del resto ni revelar indirectamente el contenido protegido.",
+      "¿Qué mecanismo permite satisfacer el acceso a la parte no exceptuada?",
+      [
+        "Elaborar una versión pública que reserve únicamente la parte indispensable protegida.",
+        "Negar el documento completo por contener una sección exceptuada de publicidad.",
+        "Entregar el contrato completo porque los documentos contractuales siempre son públicos."
+      ],
+      [
+        "La divulgación parcial protege solo la parte legalmente exceptuada.",
+        "La reserva parcial no justifica negar todo.",
+        "La publicidad admite excepciones legales."
+      ],
+      "Ley 1712/2014 art. 21"
+    ],
+    [
+      "Una autoridad rechaza una petición de información invocando una reserva legal. La persona interesada insiste oportunamente ante esa misma autoridad y desea que se determine judicialmente si corresponde entregar la información pedida.",
+      "¿Qué mecanismo especial debe activar frente a la insistencia por reserva?",
+      [
+        "Remitir la documentación a la autoridad judicial administrativa competente conforme al art. 26.",
+        "Conceder apelación ordinaria ante el superior administrativo de quien negó la petición.",
+        "Resolver nuevamente sin remisión, porque la decisión de reserva no admite control judicial."
+      ],
+      [
+        "La insistencia activa el procedimiento judicial especial.",
+        "No es una apelación administrativa ordinaria.",
+        "La autoridad judicial decide si se acepta o niega el acceso."
+      ],
+      "Ley 1755/2015 arts. 25–26"
+    ],
+    [
+      "Un ciudadano solicita información y la autoridad considera que concurre una excepción de acceso. El proyecto de respuesta solo cita la ley de transparencia de forma general, sin identificar la disposición concreta ni explicar el daño que ocasionaría divulgarla.",
+      "¿Qué debe agregar para sustentar debidamente la negativa de acceso a la información?",
+      [
+        "Identificar la excepción legal aplicable y justificar el daño conforme a la carga de prueba.",
+        "Repetir la denominación interna del documento y adjuntar la firma del responsable.",
+        "Exigir al solicitante que demuestre por qué merece acceso a la información."
+      ],
+      [
+        "El sujeto obligado debe justificar la excepción y el daño.",
+        "La etiqueta y firma no acreditan la restricción.",
+        "La carga de fundamentar la excepción no recae en el solicitante."
+      ],
+      "Ley 1712/2014 art. 28"
+    ],
+    [
+      "Un disciplinado debidamente vinculado solicita acceso a su propio expediente durante la fase investigativa. Un ciudadano externo formula simultáneamente una solicitud de acceso general a la misma actuación, que está sometida a reserva procesal.",
+      "¿Qué distinción debe aplicar la oficina al resolver las dos solicitudes?",
+      [
+        "Diferenciar derechos del sujeto procesal y régimen de acceso del ciudadano externo.",
+        "Negar ambas solicitudes de manera idéntica por estar reservada la investigación.",
+        "Entregar todo a ambos porque la solicitud del disciplinado elimina la reserva procesal."
+      ],
+      [
+        "La reserva general no suprime los derechos de sujetos procesales.",
+        "Ambos no tienen idéntica calidad jurídica.",
+        "El acceso del vinculado no vuelve público el expediente."
+      ],
+      "CGD art. 115; Ley 1712/2014"
+    ],
+    [
+      "Una dependencia prepara una versión pública de una hoja de cálculo con datos privados de terceros. Oculta visualmente las columnas protegidas, pero estas permanecen en el archivo y cualquier usuario puede mostrarlas nuevamente.",
+      "¿Qué control técnico debe realizar antes de entregar esa versión pública?",
+      [
+        "Eliminar los datos protegidos de la copia y verificar que no puedan recuperarse allí.",
+        "Mantener las columnas ocultas y advertir al usuario que no debe mostrarlas.",
+        "Enviar el archivo original protegido únicamente por una contraseña de edición de celdas."
+      ],
+      [
+        "La versión pública debe excluir efectivamente el contenido protegido.",
+        "Ocultar no elimina información del archivo.",
+        "La restricción de edición no impide necesariamente lectura."
+      ],
+      "Ley 1712/2014 art. 21; Ley 1581/2012 art. 4"
+    ],
+    [
+      "Una oficina recibe datos personales para cumplir una función legal y puede tratarlos sin autorización previa en ese supuesto. Luego propone publicar la base nominativa con una finalidad diferente que no es necesaria para cumplir la función.",
+      "¿Qué regla subsiste aunque la autorización no sea exigible para el tratamiento inicial?",
+      [
+        "Respetar finalidad, circulación restringida y demás principios legales del tratamiento.",
+        "Publicar la base porque toda excepción de autorización permite reutilización ilimitada.",
+        "Solicitar únicamente autorización verbal del superior jerárquico para cualquier difusión pública."
+      ],
+      [
+        "La excepción no elimina los principios de protección de datos.",
+        "No habilita finalidades incompatibles.",
+        "La jerarquía no sustituye requisitos legales de tratamiento."
+      ],
+      "Ley 1581/2012 arts. 4, 10"
+    ],
+    [
+      "Una veeduría solicita copia de estadísticas de gestión y números telefónicos personales de terceros que aparecen en la misma base. La entidad puede producir cifras desagregadas por dependencia sin divulgar teléfonos ni identificar personas.",
+      "¿Qué respuesta concilia acceso a información y protección de datos en ese supuesto?",
+      [
+        "Entregar información pública separable y proteger los datos personales legalmente restringidos.",
+        "Negar todas las cifras porque fueron obtenidas de una base con datos personales.",
+        "Publicar los teléfonos para demostrar que las cifras provienen de registros auténticos."
+      ],
+      [
+        "La entrega parcial permite informar sin divulgar datos protegidos.",
+        "El origen de la base no impide publicar información separable.",
+        "Autenticidad no exige exposición de teléfonos."
+      ],
+      "Ley 1712/2014 art. 21; Ley 1581/2012 art. 4"
+    ]
+  ],
+  "pgn-m19": [
+    [
+      "Un ciudadano ordinario formula una queja disciplinaria y aporta documentos. Después solicita ejercer todas las facultades del investigado, incluyendo intervenir sin limitaciones en cada diligencia; no tiene una calidad especial de víctima reconocida por ley.",
+      "¿Qué distinción procesal debe examinar el operador al responder esa solicitud?",
+      [
+        "La calidad de quejoso ordinario y sus facultades específicas frente a los sujetos procesales.",
+        "La condición automática de sujeto procesal pleno por haber originado la actuación disciplinaria.",
+        "La inexistencia de cualquier facultad de aportar elementos por no ser el investigado."
+      ],
+      [
+        "El CGD distingue quejoso y sujetos procesales, con facultades específicas.",
+        "Presentar queja no otorga todas las facultades.",
+        "El quejoso puede aportar pruebas y ejercer derechos legales."
+      ],
+      "CGD arts. 109–110"
+    ],
+    [
+      "Un expediente disciplinario contiene un auto que ordena practicar una prueba pertinente. La autoridad no ha evaluado definitivamente la responsabilidad ni formulado una decisión de fondo sobre la conducta investigada en el trámite.",
+      "¿Cómo debe clasificarse la actuación que decreta esa diligencia probatoria?",
+      [
+        "Como actuación probatoria que prepara una decisión de mérito posterior.",
+        "Como fallo sancionatorio porque permite obtener evidencia contra el disciplinado.",
+        "Como terminación y archivo porque la autoridad ya definió qué prueba practicará."
+      ],
+      [
+        "El decreto probatorio impulsa el esclarecimiento de hechos.",
+        "Ordenar prueba no sanciona.",
+        "No implica terminación del proceso."
+      ],
+      "CGD arts. 147–151, 212"
+    ],
+    [
+      "Un investigado decide no aportar documentos de descargo ni explicar su conducta. El instructor propone considerar probada la responsabilidad por la sola falta de colaboración, pese a que el expediente presenta vacíos sobre los hechos.",
+      "¿Qué diferencia entre carga procesal y deber estatal impide esa conclusión?",
+      [
+        "La carga de demostrar responsabilidad corresponde al Estado y no se traslada al investigado.",
+        "El silencio convierte la carga de prueba en una obligación exclusiva del disciplinado.",
+        "La falta de colaboración equivale a una confesión suficiente para proferir el fallo."
+      ],
+      [
+        "El CGD atribuye carga al Estado.",
+        "El ejercicio defensivo no desplaza esa carga.",
+        "La confesión exige presupuestos propios."
+      ],
+      "CGD arts. 14, 147, 161"
+    ],
+    [
+      "Un auto disciplinario fue expedido una fecha y notificado posteriormente. El equipo necesita calcular la oportunidad de interponer un recurso legalmente procedente, pero no ha distinguido el momento de expedición de la notificación válida.",
+      "¿Qué hito debe identificar antes de calcular la oportunidad del recurso?",
+      [
+        "La notificación legal y el término específico previsto para ese recurso.",
+        "La fecha de elaboración del proyecto de auto, aunque aún no existiera decisión.",
+        "El día en que llegó la queja inicial, común para todas las impugnaciones."
+      ],
+      [
+        "La oportunidad depende de la modalidad y término legales.",
+        "El proyecto no produce notificación.",
+        "La noticia inicial no fija todos los recursos posteriores."
+      ],
+      "CGD arts. 120–132"
+    ],
+    [
+      "En una actuación disciplinaria se solicita apelación contra una providencia para la que la ley especial únicamente prevé reposición. El funcionario considera conceder ambos recursos para evitar una eventual inconformidad de quien presenta el escrito.",
+      "¿Qué control debe aplicar antes de decidir el trámite de la impugnación?",
+      [
+        "Verificar procedencia, legitimación, oportunidad y autoridad del recurso regulado legalmente.",
+        "Conceder cualquier recurso solicitado porque la defensa puede escoger su propia modalidad.",
+        "Rechazar todos los recursos contra decisiones interlocutorias para evitar dilaciones procesales."
+      ],
+      [
+        "Los recursos tienen supuestos y requisitos legales.",
+        "El nombre escogido no crea un recurso.",
+        "Las interlocutorias pueden admitir recursos específicos."
+      ],
+      "CGD arts. 130–137"
+    ],
+    [
+      "Una constancia procesal tiene un número de folio digitado incorrectamente. La actuación cumplió su finalidad, la defensa pudo ejercer contradicción y no existe afectación sustancial acreditada. Una parte solicita anular todo el expediente.",
+      "¿Qué criterio debe orientar el examen de esa solicitud de nulidad?",
+      [
+        "Valorar causal, trascendencia y posibilidad de corrección antes de declarar nulidad.",
+        "Anular íntegramente por cualquier diferencia material en las constancias procesales.",
+        "Ignorar definitivamente el defecto sin documentar una corrección que pueda ser necesaria."
+      ],
+      [
+        "No toda irregularidad constituye causal de nulidad.",
+        "La finalidad y garantías conservadas importan al evaluar trascendencia.",
+        "La corrección puede preservar trazabilidad."
+      ],
+      "CGD arts. 202–205"
+    ],
+    [
+      "Al concluir la investigación se demuestra objetivamente la falta y existe prueba que compromete al disciplinado. La autoridad instructora considera que todavía no hay certeza para imponer una sanción, pero debe evaluar si procede la acusación.",
+      "¿Qué estándar corresponde a la formulación del pliego de cargos en esa etapa?",
+      [
+        "Demostración objetiva de la falta y prueba que comprometa responsabilidad del disciplinado.",
+        "Certeza sancionatoria definitiva sobre la falta y responsabilidad antes de formular cualquier cargo.",
+        "Sospecha inicial sobre una persona aunque no exista prueba que comprometa responsabilidad."
+      ],
+      [
+        "El art. 222 establece el estándar propio de cargos.",
+        "La certeza corresponde al fallo sancionatorio.",
+        "La mera sospecha no satisface el umbral de acusación."
+      ],
+      "CGD arts. 160, 222"
+    ],
+    [
+      "El funcionario que formuló el pliego de cargos propone dictar también el fallo del mismo expediente, pues afirma que conoce mejor las pruebas y puede resolver más rápido. No existe supuesto que autorice concentrar ambas funciones.",
+      "¿Qué garantía estructural debe observarse al asignar la etapa de juzgamiento?",
+      [
+        "Separar la autoridad que instruye de quien juzga, preservando independencia e imparcialidad.",
+        "Mantener al instructor como juzgador para asegurar continuidad de la hipótesis probatoria.",
+        "Permitir que el instructor falle si la defensa no solicita expresamente un cambio."
+      ],
+      [
+        "El art. 12 exige funcionarios diferentes e independientes.",
+        "La continuidad no sustituye separación funcional.",
+        "No depende de una petición de la defensa."
+      ],
+      "CGD art. 12"
+    ],
+    [
+      "En juzgamiento se practica prueba legalmente incorporada y se escuchan argumentos de defensa. Al finalizar, persiste duda razonable sobre la responsabilidad del acusado aunque la falta objetiva esté acreditada. El despacho considera sancionar por la gravedad del hecho.",
+      "¿Qué regla del fallo impide fundamentar sanción en esa insuficiencia probatoria?",
+      [
+        "Exigir certeza de falta y responsabilidad, resolviendo la duda razonable a favor del disciplinado.",
+        "Aplicar el estándar de formulación de cargos porque la falta objetiva quedó acreditada.",
+        "Imponer sanción atenuada debido a la incertidumbre sobre la intervención personal."
+      ],
+      [
+        "El art. 160 exige certeza de ambos presupuestos.",
+        "Los cargos y el fallo tienen estándares distintos.",
+        "Reducir sanción no corrige ausencia de certeza."
+      ],
+      "CGD arts. 14, 160, 222"
+    ]
   ]
 }
 
@@ -4813,8 +5498,8 @@ export function reviewedTemplateQuestion(question: Question, number: number): Qu
       const i = o.id === question.correctOptionId ? 0 : wrongIndex++
       return { id: o.id, text: choices[i]!, rationale: rationales[i]! }
     }),
-    explanation: (Number(question.moduleId.slice(5)) >= 45 ? 'Fundamento: ' : 'Código General Disciplinario, art(s). ') + articles + '. ' + rationales.join(' '),
-    sourceIds: [...new Set([...question.sourceIds, ...(articles.includes('Constitución') ? ['constitucion'] : []), ...(articles.includes('Resolución PGN 132/2014') ? ['pgn-res-132-2014'] : []), ...(articles.includes('Decreto 1499/2017') ? ['decreto-1499-2017'] : []), ...(articles.includes('CPACA') ? ['cpaca'] : []), ...(articles.includes('Ley 80/1993') ? ['ley-80-1993'] : []), ...(articles.includes('Ley 1150/2007') ? ['ley-1150-2007'] : []), ...(articles.includes('Ley 1474/2011') ? ['ley-1474-2011'] : []), ...(articles.includes('Ley 2195/2022') ? ['ley-2195-2022'] : []), ...(articles.includes('Ley 1712/2014') ? ['ley-1712-2014'] : []), ...(articles.includes('Ley 1581/2012') ? ['ley-1581-2012'] : []), ...(articles.includes('CGD') ? ['ley-1952-2019'] : []), ...(Number(question.moduleId.slice(5)) < 45 ? ['ley-1952-2019', 'ley-2094-2021'] : []), ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : []), ...(articles.includes('NIST SP 800-86') ? ['nist-sp-800-86'] : []), ...(articles.includes('NIST SP 800-92') ? ['nist-sp-800-92'] : [])])],
+    explanation: (Number(question.moduleId.slice(5)) >= 20 && Number(question.moduleId.slice(5)) < 45 ? 'Código General Disciplinario, art(s). ' : 'Fundamento: ') + articles + '. ' + rationales.join(' '),
+    sourceIds: [...new Set([...question.sourceIds, ...(articles.includes('Constitución') ? ['constitucion'] : []), ...(articles.includes('Resolución PGN 132/2014') ? ['pgn-res-132-2014'] : []), ...(articles.includes('Decreto 1499/2017') ? ['decreto-1499-2017'] : []), ...(articles.includes('CPACA') ? ['cpaca'] : []), ...(articles.includes('Ley 1755/2015') ? ['ley-1755-2015'] : []), ...(articles.includes('Ley 80/1993') ? ['ley-80-1993'] : []), ...(articles.includes('Ley 1150/2007') ? ['ley-1150-2007'] : []), ...(articles.includes('Ley 1474/2011') ? ['ley-1474-2011'] : []), ...(articles.includes('Ley 2195/2022') ? ['ley-2195-2022'] : []), ...(articles.includes('Ley 1712/2014') ? ['ley-1712-2014'] : []), ...(articles.includes('Ley 1581/2012') ? ['ley-1581-2012'] : []), ...(articles.includes('CGD') ? ['ley-1952-2019'] : []), ...(Number(question.moduleId.slice(5)) >= 20 && Number(question.moduleId.slice(5)) < 45 ? ['ley-1952-2019', 'ley-2094-2021'] : []), ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : []), ...(articles.includes('NIST SP 800-86') ? ['nist-sp-800-86'] : []), ...(articles.includes('NIST SP 800-92') ? ['nist-sp-800-92'] : [])])],
     verifiedAt: '2026-11-24',
   }
 }
