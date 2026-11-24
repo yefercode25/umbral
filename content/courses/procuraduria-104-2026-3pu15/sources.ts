@@ -381,4 +381,22 @@ export const procuraduriaSources: SourceRef[] = [
     verifiedAt: '2026-11-23',
     note: 'Art. 19 adiciona art. 160A del CGD: enfoque diferencial e interseccional en valoración de casos del art. 53.5 y protección de derechos durante decreto y práctica de prueba.',
   },
+  {
+    "id": "pgn-res-132-2014",
+    "title": "Resolución 132 de 2014 · modelo de función preventiva y SIP",
+    "publisher": "Procuraduría General de la Nación",
+    "url": "https://apps.procuraduria.gov.co/normograma/compilacion/docs/resolucion_procuraduria_0132_2014.htm",
+    "type": "official",
+    "verifiedAt": "2026-11-23",
+    "note": "Escenarios de anticipación, mitigación/restitución y orientación; principios, competencia, coordinación, planeación y medición. Aplicar con actos vigentes de asignación."
+  },
+  {
+    "id": "decreto-1122-2024",
+    "title": "Decreto 1122 de 2024 · Programas de Transparencia y Ética Pública",
+    "publisher": "Presidencia de la República / Función Pública",
+    "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=250176",
+    "type": "official",
+    "verifiedAt": "2026-11-23",
+    "note": "Reglamenta artículo 73 de Ley 1474 modificado por Ley 2195. Anexo técnico, publicación, enfoque de riesgos y transición; verificar versión y plazos aplicables."
+  },
 ]
