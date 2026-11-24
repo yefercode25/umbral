@@ -377,6 +377,63 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "explanation": "CGD, arts. 9, 10, 13, 14 y 160: la responsabilidad objetiva está proscrita; el deber de investigación integral no se traslada al disciplinable."
   }
 ],
+  'pgn-m21': [
+  {
+    "number": 1,
+    "caseText": "La PGN recibe una queja que señala a todos los integrantes de una oficina sin describir conductas, fechas ni hechos concretos. Después se incorpora un informe institucional independiente que identifica un registro alterado, la fecha y una cuenta compartida. No permite identificar aún al operador. La jefatura solicita elegir una ruta basada en el nuevo soporte.",
+    "stem": "¿Qué recomendación distingue la noticia inicial del informe verificable posterior?",
+    "options": [
+      "Mantener sin revisión la conclusión sobre la queja genérica, porque la información posterior no puede generar una actuación distinta.",
+      "Abrir investigación contra todos los titulares de acceso, pues la cuenta compartida prueba autoría conjunta.",
+      "Evaluar la relevancia y credibilidad del informe, comprobar competencia y considerar indagación previa si persiste duda sobre el posible autor, sin abrir investigación colectiva automática."
+    ],
+    "rationales": [
+      "La fuente independiente debe examinarse según su mérito.",
+      "Acceso potencial no equivale a identificación del autor.",
+      "El nuevo soporte cambia la evaluación de procedencia, no demuestra quién actuó."
+    ],
+    "correctOptionId": "c",
+    "explanation": "CGD, arts. 86, 208–211: evaluar hechos concretos y grado de identificación antes de escoger actuación."
+  }
+],
+  'pgn-m22': [
+  {
+    "number": 1,
+    "caseText": "Una dependencia presenta un informe tardío durante una interrupción técnica. El expediente contiene el deber de reporte, la bitácora de indisponibilidad y un correo sobre el procedimiento alterno, pero no prueba si el servidor tenía acceso a dicho canal. La dirección plantea sancionar por el retraso para mejorar el indicador de cumplimiento. El reporte no cuantifica ninguna afectación del servicio.",
+    "stem": "¿Qué decisión de apoyo evita confundir un indicador de gestión con responsabilidad disciplinaria?",
+    "options": [
+      "Recomendar sanción porque el retraso demuestra por sí solo culpa gravísima.",
+      "Delimitar la conducta y deber, analizar afectación sustancial y justificación, y verificar el cuidado funcional y la posibilidad real de usar el canal alterno.",
+      "Descartar toda relevancia disciplinaria por haberse registrado una interrupción técnica."
+    ],
+    "rationales": [
+      "La graduación de culpa exige condiciones normativas y prueba.",
+      "El indicador es un hecho de gestión, no prueba suficiente de los elementos de responsabilidad.",
+      "Una interrupción no acredita automáticamente una causal de exclusión."
+    ],
+    "correctOptionId": "b",
+    "explanation": "CGD, arts. 9, 10 y 26–31: separar deber, ilicitud, culpabilidad y exclusión."
+  }
+],
+  'pgn-m23': [
+  {
+    "number": 1,
+    "caseText": "Un profesional de la PGN debe elaborar un concepto sobre una actuación en la que participa una empresa de la cual su socio obtiene un beneficio económico directo. La dependencia sugiere que basta mencionar la relación al final del informe porque otro funcionario firma la decisión. El profesional aún no ha iniciado el análisis de fondo. El expediente contiene constancia de la participación económica del socio.",
+    "stem": "¿Qué actuación corresponde para proteger imparcialidad y competencia en el asunto concreto?",
+    "options": [
+      "Identificar el interés directo y la causal legal, declarar oportunamente el impedimento y seguir el trámite correspondiente antes de intervenir cuando deba apartarse.",
+      "Preparar el concepto y revelar la relación al final, pues la firma de otra autoridad elimina el conflicto.",
+      "Declararse incompatible con todos los asuntos institucionales y reasignarlos sin decisión de autoridad competente."
+    ],
+    "rationales": [
+      "El conflicto debe tratarse oportunamente y según alcance legal.",
+      "La gestión y el control también pueden quedar comprendidos en la causal.",
+      "Un impedimento no equivale a una incompatibilidad general."
+    ],
+    "correctOptionId": "a",
+    "explanation": "CGD art. 44: el interés particular y directo del servidor o personas previstas por la norma debe examinarse y tramitarse oportunamente."
+  }
+],
   'pgn-m24': [{
     number: 1,
     caseText: 'Un equipo revisa actuaciones relativas a hechos desarrollados durante varios meses, con una conducta que podría ser continuada y actuaciones procesales producidas años después. En un informe se consigna una única fecha de inicio del contrato y se deduce, sin más comprobación, que la potestad disciplinaria prescribió. El expediente no contiene todavía un cuadro de fechas, calificación de la conducta ni examen del efecto de las decisiones posteriores.',
