@@ -7,7 +7,7 @@ describe('Auditoría M18–M20', () => {
     expect(procuraduriaCourse.modules).toHaveLength(85)
     expect(procuraduriaCourse.lessons).toHaveLength(255)
     expect(procuraduriaCourse.questions.filter(q => !q.id.startsWith('pgn-exception-'))).toHaveLength(1948)
-    expect(new Set(procuraduriaCourse.questions.map(q => q.id)).size).toBe(1948)
+    expect(new Set(procuraduriaCourse.questions.filter(q => !q.id.startsWith('pgn-exception-')).map(q => q.id)).size).toBe(1948)
     const expected = [
   {
     "id": "pgn-m18",

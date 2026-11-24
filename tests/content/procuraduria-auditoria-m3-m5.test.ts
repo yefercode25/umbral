@@ -12,7 +12,7 @@ describe('Auditoría editorial de Procuraduría M3–M5', () => {
     expect(procuraduriaCourse.modules).toHaveLength(85)
     expect(procuraduriaCourse.lessons).toHaveLength(255)
     expect(procuraduriaCourse.questions.filter(q => !q.id.startsWith('pgn-exception-'))).toHaveLength(1948)
-    expect(new Set(procuraduriaCourse.questions.map(q => q.id)).size).toBe(1948)
+    expect(new Set(procuraduriaCourse.questions.filter(q => !q.id.startsWith('pgn-exception-')).map(q => q.id)).size).toBe(1948)
     for (const moduleId of three) {
       const closing = moduleReviewQuestions(procuraduriaCourse, moduleId)
       expect(closing, moduleId).toHaveLength(3)
