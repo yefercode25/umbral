@@ -3426,6 +3426,280 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "148–159, 179; NIST SP 800-86"
     ]
+  ],
+  "pgn-m45": [
+    [
+      "Antes de adjudicar un contrato de alimentación escolar, una veeduría documenta que el cronograma puede interrumpir el servicio durante dos semanas. La entidad todavía dispone de tiempo para adoptar medidas dentro de sus competencias.",
+      "¿Qué actuación preventiva corresponde al riesgo identificado antes de la afectación?",
+      [
+        "Requerir información y advertir el riesgo para que la entidad evalúe medidas oportunas.",
+        "Ordenar directamente adjudicar el contrato al proveedor que garantice continuidad inmediata.",
+        "Esperar la interrupción efectiva para establecer si existe responsabilidad disciplinaria."
+      ],
+      [
+        "La prevención anticipa riesgos sobre derechos sin sustituir la administración.",
+        "La adjudicación corresponde a la entidad contratante.",
+        "No se exige daño consumado para prevenir."
+      ],
+      "Resolución PGN 132/2014 arts. 3–5, 9"
+    ],
+    [
+      "Un operador preventivo detecta deficiencias en un proceso de compras. La autoridad vigilada le pide firmar conjuntamente el informe de evaluación para garantizar que la decisión quede respaldada por la Procuraduría.",
+      "¿Qué límite debe observar el operador frente a la solicitud de firma?",
+      [
+        "Mantener vigilancia y formular observaciones sin asumir la evaluación contractual.",
+        "Firmar el informe como evaluador externo para reforzar su imparcialidad técnica.",
+        "Aprobar únicamente los aspectos jurídicos del informe con efectos vinculantes."
+      ],
+      [
+        "El operador vigila; no sustituye competencias administrativas.",
+        "La firma evaluadora implica asumir una función ajena.",
+        "La revisión preventiva no es aprobación contractual."
+      ],
+      "Constitución art. 277; Resolución PGN 132/2014 arts. 5, 9.2"
+    ],
+    [
+      "Un municipio recibe alertas sobre una vía que presenta riesgo para sus habitantes. La dependencia preventiva puede requerir información técnica de inmediato, pero propone esperar al siguiente comité mensual para iniciar el procedimiento.",
+      "¿Qué principio justifica activar oportunamente la actuación en este supuesto?",
+      [
+        "Oportunidad, ante la necesidad de prevenir la potencial vulneración de derechos.",
+        "Autonomía, porque el calendario interno prevalece sobre la evaluación del riesgo.",
+        "Flexibilidad, porque cualquier plazo elegido por el operador es suficiente."
+      ],
+      [
+        "La oportunidad demanda celeridad ante el riesgo.",
+        "La autonomía distingue funciones misionales, no justifica demoras.",
+        "La flexibilidad exige decisiones razonables y justificadas."
+      ],
+      "Resolución PGN 132/2014 art. 9.4"
+    ],
+    [
+      "Una actuación preventiva obtiene evidencia de hechos que también podrían tener relevancia disciplinaria. El operador propone incorporar una declaración de responsabilidad al informe preventivo para evitar abrir otro procedimiento con las garantías correspondientes.",
+      "¿Qué principio permite tramitar ambos aspectos sin confundir sus efectos jurídicos?",
+      [
+        "Autonomía de la actuación preventiva respecto de las demás funciones misionales.",
+        "Economía procesal para decidir responsabilidad directamente en el trámite preventivo.",
+        "Flexibilidad para reemplazar la instrucción disciplinaria por un informe de vigilancia."
+      ],
+      [
+        "Las funciones conservan sus objetos y procedimientos.",
+        "La economía no permite omitir garantías disciplinarias.",
+        "La flexibilidad no altera competencias legales."
+      ],
+      "Resolución PGN 132/2014 art. 9.3"
+    ],
+    [
+      "Una dependencia analiza dos medidas frente a un riesgo identificado: solicitar soportes específicos o exigir la paralización general de todas las actividades de una entidad. Solo la primera está dentro de su competencia y resulta suficiente.",
+      "¿Qué principio permite escoger la medida ajustada a hechos y competencia?",
+      [
+        "Racionalidad, mediante una actuación proporcional al riesgo y a la competencia.",
+        "Oportunidad, mediante la actuación más restrictiva sin considerar su alcance legal.",
+        "Priorización, mediante la suspensión de todas las actividades institucionales involucradas."
+      ],
+      [
+        "La racionalidad evita insuficiencia y extralimitación.",
+        "La rapidez no autoriza restricciones desproporcionadas.",
+        "Priorizar no confiere facultad general de suspensión."
+      ],
+      "Resolución PGN 132/2014 art. 9.2"
+    ],
+    [
+      "Una procuraduría territorial recibe varias alertas simultáneas con diferente impacto sobre derechos. El equipo puede atenderlas todas de manera escalonada y debe establecer qué actuación inicia primero conforme a las directrices institucionales.",
+      "¿Qué criterio orienta la programación de esas actuaciones preventivas concurrentes?",
+      [
+        "Considerar políticas institucionales, magnitud del riesgo y potencial afectación de derechos.",
+        "Atender exclusivamente en orden de llegada sin considerar la magnitud de riesgos.",
+        "Seleccionar los asuntos con mayor número de documentos para facilitar su registro."
+      ],
+      [
+        "La priorización considera directrices y riesgos de vulneración.",
+        "El orden de llegada no es el único criterio.",
+        "La cantidad documental no representa necesariamente gravedad."
+      ],
+      "Resolución PGN 132/2014 art. 9.5"
+    ],
+    [
+      "Una asociación de vecinos presenta información sobre un particular que administra recursos del Estado. La oficina considera rechazar la solicitud porque el vigilado no es una entidad pública y los peticionarios actúan colectivamente.",
+      "¿Qué alcance tiene la función preventiva respecto de esa solicitud colectiva?",
+      [
+        "Puede examinarla dentro de su competencia sobre quienes administran recursos públicos.",
+        "Solo puede atender solicitudes individuales contra entidades de naturaleza pública.",
+        "Debe abstenerse porque los particulares quedan excluidos de toda vigilancia preventiva."
+      ],
+      [
+        "Los usuarios pueden actuar colectivamente y la vigilancia comprende esos particulares.",
+        "No se limita a solicitudes individuales.",
+        "La naturaleza privada no excluye el supuesto descrito."
+      ],
+      "Resolución PGN 132/2014 arts. 5–7"
+    ],
+    [
+      "Un funcionario recibe una alerta relacionada con una materia ajena a las responsabilidades preventivas que tiene asignadas. Existe otra dependencia competente y se dispone de soportes suficientes para identificar el asunto y orientar al ciudadano.",
+      "¿Qué actuación respeta mejor la asignación institucional de responsabilidades preventivas?",
+      [
+        "Gestionar la remisión u orientación a la dependencia competente dejando trazabilidad.",
+        "Asumir personalmente la actuación por ser servidor de la Procuraduría.",
+        "Cerrar sin orientar porque la materia no corresponde a sus responsabilidades asignadas."
+      ],
+      [
+        "La calidad de operador depende de responsabilidades asignadas.",
+        "Pertenecer a PGN no confiere todas las competencias.",
+        "La falta de competencia no justifica desatender la orientación."
+      ],
+      "Resolución PGN 132/2014 arts. 6–8"
+    ],
+    [
+      "Una dependencia de apoyo desarrolla un sistema para alertar oportunamente sobre trámites que pueden afectar derechos ciudadanos. Un funcionario sostiene que no debe incorporar indicadores preventivos porque su dependencia no ejerce directamente la función misional.",
+      "¿Qué alcance tiene la prevención integral dentro de la gestión institucional?",
+      [
+        "Los procesos de apoyo también deben contribuir al ejercicio de la prevención.",
+        "Solo las dependencias disciplinarias deben incorporar elementos preventivos en su gestión.",
+        "Los procesos de apoyo deben asumir directamente la competencia misional preventiva."
+      ],
+      [
+        "La prevención integral involucra procesos misionales, estratégicos y de apoyo.",
+        "No se limita a una función misional.",
+        "Contribuir no equivale a asumir competencia decisoria."
+      ],
+      "Resolución PGN 132/2014 arts. 3–4"
+    ]
+  ],
+  "pgn-m46": [
+    [
+      "Un operador identifica que un municipio planea cerrar temporalmente el único punto de atención a una población rural. El cierre todavía no ocurre y existen alternativas para evitar afectaciones a los usuarios del servicio público.",
+      "¿En qué escenario del modelo preventivo encaja principalmente la actuación descrita?",
+      [
+        "Anticipación, porque busca evitar una afectación que todavía no se materializa.",
+        "Mitigación o restitución, porque ya se produjo la vulneración del derecho.",
+        "Orientación, porque solo se suministrará información general al usuario del servicio."
+      ],
+      [
+        "La anticipación busca intervenir antes de la afectación.",
+        "El caso no acredita vulneración consumada.",
+        "Existe un riesgo concreto que requiere actuación preventiva."
+      ],
+      "Resolución PGN 132/2014; Guía Preventiva PGN"
+    ],
+    [
+      "Tras una interrupción efectiva de un servicio esencial, la población afectada continúa expuesta a consecuencias que pueden agravarse. La Procuraduría evalúa actuaciones inmediatas para limitar los efectos y promover la recuperación del derecho.",
+      "¿Qué escenario preventivo corresponde al hecho ya materializado descrito?",
+      [
+        "Mitigación o restitución de derechos, según el alcance de la actuación.",
+        "Anticipación exclusivamente, porque la intervención se realiza antes de una sanción.",
+        "Orientación exclusivamente, porque los afectados ya conocen la interrupción del servicio."
+      ],
+      [
+        "La mitigación actúa sobre afectaciones ocurridas para reducir efectos o restituir.",
+        "La fecha de una sanción no determina el escenario.",
+        "La situación requiere más que información general."
+      ],
+      "Resolución PGN 132/2014; Guía Preventiva PGN"
+    ],
+    [
+      "Un ciudadano acude a la Procuraduría porque desconoce la autoridad que tramita su solicitud y los canales disponibles para ejercer un derecho. No reporta hechos concretos que requieran una actuación preventiva de vigilancia.",
+      "¿Qué escenario corresponde a la necesidad inmediata identificada por el operador?",
+      [
+        "Orientación al ciudadano para facilitar el ejercicio de su derecho.",
+        "Mitigación de una vulneración acreditada mediante una actuación de seguimiento.",
+        "Anticipación mediante un proyecto preventivo de alcance nacional sobre el asunto."
+      ],
+      [
+        "La orientación facilita acceso a rutas y derechos.",
+        "No se acredita una vulneración que deba mitigarse.",
+        "No se justifica un proyecto general por esa sola consulta."
+      ],
+      "Resolución PGN 132/2014; Guía Preventiva PGN"
+    ],
+    [
+      "Una dependencia diseña una actuación con tres objetivos distintos y envía varios oficios a entidades vigiladas. El informe final solo presenta el número de comunicaciones y no indica si se alcanzó alguno de los objetivos previstos.",
+      "¿Qué información permite evaluar mejor el resultado de la gestión preventiva?",
+      [
+        "Comparar resultados verificables con los objetivos e indicadores definidos para la actuación.",
+        "Contar oficios y reuniones para sustituir la medición de resultados previstos.",
+        "Registrar únicamente el tiempo empleado por los operadores para completar las actividades."
+      ],
+      [
+        "La evaluación debe vincular productos y resultados con objetivos.",
+        "Las comunicaciones son actividades, no necesariamente resultados.",
+        "El tiempo es un indicador de gestión parcial."
+      ],
+      "Resolución PGN 132/2014; Guía Preventiva PGN"
+    ],
+    [
+      "Un equipo preventivo recibe datos de tres entidades sobre un mismo riesgo territorial. Las dependencias utilizan distintas definiciones y fechas de corte, y cada una propone ejecutar requerimientos independientes sobre los mismos hechos.",
+      "¿Qué acción de coordinación mejora la gestión dentro del Sistema Integral de Prevención?",
+      [
+        "Unificar criterios de análisis, distribuir responsabilidades y coordinar los requerimientos necesarios.",
+        "Duplicar requerimientos en cada dependencia para aumentar la cobertura documental del riesgo.",
+        "Elegir una sola fuente sin revisar las diferencias de definición y corte temporal."
+      ],
+      [
+        "El SIP articula actores y herramientas de gestión.",
+        "Duplicar no asegura coordinación ni eficacia.",
+        "Las diferencias deben evaluarse antes de consolidar información."
+      ],
+      "Resolución PGN 132/2014 art. 4"
+    ],
+    [
+      "Un operador dispone de dos instrumentos institucionalmente habilitados para responder a un riesgo: una visita o un requerimiento documental. Ambos son posibles, pero la información necesaria puede obtenerse mediante el requerimiento sin intervención adicional.",
+      "¿Qué principio permite escoger razonadamente el instrumento preventivo más adecuado?",
+      [
+        "Flexibilidad, armonizada con eficacia, economía y las herramientas institucionales vigentes.",
+        "Autonomía, entendida como libertad para dejar sin aplicación los procedimientos institucionales.",
+        "Oportunidad, entendida como obligación de escoger siempre una visita presencial inmediata."
+      ],
+      [
+        "La flexibilidad permite elegir medios razonables dentro de los procedimientos.",
+        "La autonomía no equivale a prescindir de procedimientos.",
+        "La oportunidad no impone un instrumento único."
+      ],
+      "Resolución PGN 132/2014 art. 9.1"
+    ],
+    [
+      "Una dependencia prepara su programación preventiva anual con base únicamente en solicitudes recibidas el año anterior. El análisis territorial revela riesgos emergentes de mayor impacto que no aparecen en aquellas solicitudes históricas.",
+      "¿Qué ajuste mejora la planificación de la función preventiva del periodo siguiente?",
+      [
+        "Incorporar los riesgos emergentes y alinearlos con los planes y prioridades institucionales.",
+        "Mantener únicamente asuntos históricos para asegurar comparabilidad entre vigencias institucionales.",
+        "Esperar solicitudes ciudadanas sobre cada riesgo antes de incorporarlo a la programación."
+      ],
+      [
+        "La planeación considera riesgos y directrices institucionales.",
+        "La comparabilidad no excluye riesgos nuevos.",
+        "La actuación preventiva puede iniciarse sin esperar una queja."
+      ],
+      "Resolución PGN 132/2014 arts. 5, 9.5"
+    ],
+    [
+      "Una actuación de seguimiento evidencia que la entidad vigilada implementó dos controles, pero el tercero no funciona y el riesgo original permanece alto. El cronograma de actividades preventivas ya se ejecutó completamente.",
+      "¿Qué elemento debe examinarse al decidir sobre el seguimiento posterior?",
+      [
+        "La persistencia del riesgo y la necesidad de nuevas medidas competentes y justificadas.",
+        "El cumplimiento del cronograma como criterio suficiente para declarar resuelto el riesgo.",
+        "La cantidad de controles instalados, sin comprobar si operan efectivamente."
+      ],
+      [
+        "La conclusión depende del resultado y alcance de la actuación.",
+        "Ejecutar actividades no demuestra reducción del riesgo.",
+        "Un control instalado puede ser ineficaz."
+      ],
+      "Resolución PGN 132/2014 arts. 5, 9.2; Guía Preventiva PGN"
+    ],
+    [
+      "Una entidad vigilada solicita que la Procuraduría defina por ella el procedimiento interno para atender una alerta. El operador considera que elaborar y aprobar el procedimiento ajeno facilitaría demostrar el cumplimiento de su propio plan preventivo.",
+      "¿Qué actuación preserva los límites del modelo de gestión preventiva?",
+      [
+        "Advertir necesidades de control y evaluar las medidas que adopte la entidad competente.",
+        "Aprobar directamente el procedimiento interno en nombre de la entidad vigilada.",
+        "Asumir temporalmente la ejecución del procedimiento hasta que desaparezca la alerta."
+      ],
+      [
+        "El seguimiento no sustituye la gestión de la entidad.",
+        "Aprobar el procedimiento ajeno implica asumir su competencia.",
+        "El plan preventivo no autoriza administrar la entidad."
+      ],
+      "Constitución art. 277; Resolución PGN 132/2014 art. 9.2"
+    ]
   ]
 }
 
@@ -3443,8 +3717,8 @@ export function reviewedTemplateQuestion(question: Question, number: number): Qu
       const i = o.id === question.correctOptionId ? 0 : wrongIndex++
       return { id: o.id, text: choices[i]!, rationale: rationales[i]! }
     }),
-    explanation: 'Código General Disciplinario, art(s). ' + articles + '. ' + rationales.join(' '),
-    sourceIds: [...new Set([...question.sourceIds, 'ley-1952-2019', 'ley-2094-2021', ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : []), ...(articles.includes('NIST SP 800-86') ? ['nist-sp-800-86'] : []), ...(articles.includes('NIST SP 800-92') ? ['nist-sp-800-92'] : [])])],
+    explanation: (Number(question.moduleId.slice(5)) >= 45 ? 'Fundamento: ' : 'Código General Disciplinario, art(s). ') + articles + '. ' + rationales.join(' '),
+    sourceIds: [...new Set([...question.sourceIds, ...(Number(question.moduleId.slice(5)) < 45 ? ['ley-1952-2019', 'ley-2094-2021'] : []), ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : []), ...(articles.includes('NIST SP 800-86') ? ['nist-sp-800-86'] : []), ...(articles.includes('NIST SP 800-92') ? ['nist-sp-800-92'] : [])])],
     verifiedAt: '2026-11-24',
   }
 }
