@@ -434,40 +434,63 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "explanation": "CGD art. 44: el interés particular y directo del servidor o personas previstas por la norma debe examinarse y tramitarse oportunamente."
   }
 ],
-  'pgn-m24': [{
-    number: 1,
-    caseText: 'Un equipo revisa actuaciones relativas a hechos desarrollados durante varios meses, con una conducta que podría ser continuada y actuaciones procesales producidas años después. En un informe se consigna una única fecha de inicio del contrato y se deduce, sin más comprobación, que la potestad disciplinaria prescribió. El expediente no contiene todavía un cuadro de fechas, calificación de la conducta ni examen del efecto de las decisiones posteriores.',
-    stem: '¿Qué debe verificarse antes de sostener una conclusión sobre prescripción?',
-    options: [
-      'Comparar simplemente la fecha inicial del contrato con la fecha de hoy: ese cálculo es suficiente para todos los comportamientos asociados.',
-      'Tomar como punto inicial la fecha de recepción de la queja, porque en materia disciplinaria ninguna otra fecha puede resultar relevante.',
-      'Determinar la clase de conducta y el hecho relevante, identificar el punto inicial y las reglas normativas aplicables, reconstruir cronológicamente las actuaciones con efecto jurídico y motivar el cómputo.',
+  'pgn-m24': [
+  {
+    "number": 1,
+    "caseText": "Un profesional de apoyo revisa una actuación relativa a una conducta instantánea de febrero de 2024 y una posible falta continuada cuyo último acto se ubica en agosto de 2024. El cuadro mezcla fecha del contrato, queja, firma de providencias y notificaciones. No se ha determinado si alguna conducta corresponde al art. 52. La jefatura solicita un cálculo único y una sanción basada solamente en la aparente gravedad de los hechos.",
+    "stem": "¿Qué producto de apoyo permite analizar prescripción y consecuencias sin confundir los presupuestos legales?",
+    "options": [
+      "Aplicar cinco años desde la fecha contractual a todos los hechos y graduar la sanción por el valor del contrato.",
+      "Contar desde la queja y usar el mismo rango de sanción para toda falta gravísima, sin considerar culpabilidad.",
+      "Elaborar una cronología separada por conducta, verificar el régimen y las notificaciones relevantes, y distinguir clasificación de la falta, culpabilidad y rango sancionatorio."
     ],
-    rationales: [
-      'El inicio contractual no necesariamente coincide con el supuesto normativo de cada conducta.',
-      'La radicación de la queja no puede sustituir automáticamente todas las reglas del cómputo legal.',
-      'Requiere relacionar fechas, calificación jurídica y efectos procesales, no proyectar un único plazo abstracto.',
+    "rationales": [
+      "El contrato no determina por sí solo el inicio ni la sanción.",
+      "La queja no es el hito universal y las sanciones cambian según modalidad subjetiva.",
+      "La solución distingue clasificación, modalidad subjetiva, régimen y cómputos autónomos."
     ],
-    correctOptionId: 'c',
-    explanation: 'Un término solo puede computarse después de identificar la norma aplicable, la modalidad fáctica y los hitos jurídicos pertinentes. La respuesta evita declarar prescripción sin soporte cronológico.',
-  }],
-  'pgn-m26': [{
-    number: 1,
-    caseText: 'Una queja describe una modificación de un registro público fuera del horario habitual. El sistema informa una cuenta de servicio compartida, utilizada por varios procesos automáticos y operadores, pero no identifica a una persona concreta. El responsable del área tecnológica tenía privilegios de administrador y la jefatura sostiene que ello es suficiente para investigar disciplinariamente solo a ese servidor. La preservación técnica no ha terminado y aún existen registros adicionales por contrastar.',
-    stem: '¿Cuál ruta inicial es jurídicamente más consistente con el nivel de identificación disponible?',
-    options: [
-      'Abrir investigación contra el administrador porque la posibilidad técnica de ejecutar el cambio demuestra la atribución personal.',
-      'Examinar competencia y relevancia de los hechos, preservar evidencia y valorar la indagación previa si subsiste duda sobre la identificación o individualización del posible autor; iniciar investigación cuando se cuente con el presupuesto correspondiente.',
-      'Inhibirse de toda actuación porque el reporte técnico no identifica a una persona, sin examinar las diligencias legalmente posibles.',
+    "correctOptionId": "c",
+    "explanation": "CGD arts. 33 y 46–50: identificar términos aplicables, clasificación y culpabilidad antes de recomendar una conclusión."
+  }
+],
+  'pgn-m25': [
+  {
+    "number": 1,
+    "caseText": "La PGN recibe una queja sobre registros de contratación eliminados. Una captura señala a un administrador, pero el informe de seguridad indica que varios operadores usaban la misma cuenta. Se cuenta con fechas, documentos y un posible deber funcional comprometido, aunque no se individualiza a quien actuó. El peticionario pide una sanción inmediata y la oficina debe definir el trámite inicial según su competencia.",
+    "stem": "¿Qué actuación distingue correctamente una noticia disciplinaria verificable de una responsabilidad acreditada?",
+    "options": [
+      "Inhibirse por la sola ausencia de identificación personal pese a la existencia de hechos verificables.",
+      "Preservar y contrastar soportes, delimitar hechos y competencia y adelantar indagación previa si persiste duda sobre identificación, sin tratar el reporte como prueba definitiva.",
+      "Abrir investigación contra el administrador y formular cargos en la misma decisión porque tenía acceso privilegiado."
     ],
-    rationales: [
-      'Privilegios o acceso técnico no acreditan autoría material por sí mismos.',
-      'Aplica la finalidad de la indagación previa bajo el artículo 208 modificado y diferencia hecho, autor y etapa.',
-      'La falta de individualización no convierte automáticamente la noticia en manifiestamente irrelevante.',
+    "rationales": [
+      "La falta de identificación no convierte por sí sola la noticia en manifiestamente irrelevante.",
+      "La noticia permite evaluar relevancia; la duda de identificación conduce a examinar el presupuesto del art. 208.",
+      "Acceso técnico no equivale a autoría y cargos requieren un estándar distinto."
     ],
-    correctOptionId: 'b',
-    explanation: 'El artículo 208 del Código General Disciplinario, modificado por la Ley 2094 de 2021, vincula la indagación previa con la duda sobre identificación o individualización del posible autor. La atribución técnica requiere contrastación.',
-  }],
+    "correctOptionId": "b",
+    "explanation": "CGD arts. 86, 208–211: seleccionar la actuación inicial según la información y la competencia, sin prejuzgar."
+  }
+],
+  'pgn-m26': [
+  {
+    "number": 1,
+    "caseText": "Una actuación disciplinaria parte de un reporte sobre una modificación de datos. La cuenta usada era compartida y, al inicio, no se individualiza a la persona. Durante la indagación se consigue una asignación de credenciales y se contrasta con turnos y una declaración, que permiten identificar al posible autor. Aún se discute si la conducta estaba justificada y la jefatura pide conservar la indagación hasta demostrar culpabilidad.",
+    "stem": "¿Cómo debe modificarse la ruta cuando se supera la duda sobre identidad pero no se ha demostrado responsabilidad?",
+    "options": [
+      "Esperar el vencimiento de seis meses y exigir certeza de culpabilidad para abrir investigación.",
+      "Abrir investigación inmediatamente cuando proceda, identificando el soporte de individualización, sin exigir que en indagación se demuestre culpabilidad ni anticipar el fallo.",
+      "Formular cargos y trasladar a juzgamiento por el solo hecho de haber identificado al operador."
+    ],
+    "rationales": [
+      "Confunde el objetivo de la etapa con la certeza exigida para sancionar.",
+      "La indagación tiene por presupuesto la duda de identidad y la investigación evalúa los demás elementos.",
+      "La autoría posible no prueba todos los elementos requeridos para cargos."
+    ],
+    "correctOptionId": "b",
+    "explanation": "CGD arts. 208 y 211: la identificación habilita la apertura cuando corresponde; no sustituye las etapas y estándares posteriores."
+  }
+],
   'pgn-m29': [{
     number: 1,
     caseText: 'Terminadas las diligencias ordenadas durante una investigación disciplinaria, un profesional prepara un proyecto que envía directamente el pliego de cargos a la oficina de juzgamiento. El expediente registra la recepción de las pruebas y un informe de cierre, pero no contiene el acto de cierre de investigación ni constancia del traslado para alegatos precalificatorios. Un compañero afirma que estas actuaciones son prescindibles porque las pruebas ya fueron practicadas.',
