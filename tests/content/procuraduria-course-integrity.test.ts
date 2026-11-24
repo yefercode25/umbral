@@ -8,13 +8,13 @@ const activeBlockTypes = new Set([
 ])
 
 describe('Procuraduría 104-2026 · 3PU-15 course integrity', () => {
-  it('matches the RC.6 curriculum inventory', () => {
-    expect(procuraduriaCourse.version).toBe('2026.11.23-rc.6')
+  it('matches the RC.7 curriculum inventory', () => {
+    expect(procuraduriaCourse.version).toBe('2026.11.23-rc.7')
     expect(procuraduriaCourse.units).toHaveLength(17)
     expect(procuraduriaCourse.modules).toHaveLength(85)
     expect(procuraduriaCourse.lessons).toHaveLength(255)
-    expect(procuraduriaCourse.questions).toHaveLength(2036)
-    expect(procuraduriaCourse.sources).toHaveLength(81)
+    expect(procuraduriaCourse.questions).toHaveLength(2062)
+    expect(procuraduriaCourse.sources).toHaveLength(88)
     expect(procuraduriaCourse.practiceConfig?.hasCaseLabs).toBe(true)
   })
 

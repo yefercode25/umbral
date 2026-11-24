@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { procuraduriaCourse as course } from '../../content/courses/procuraduria-104-2026-3pu15/course'
 import { dianGestorCourse } from '../../content/courses/dian-2676-gestor-ii/course'
 import { practiceQuestionPool } from '../../src/lib/practiceQuestionPool'
-import { auditPgnBank } from '../../src/lib/procuraduriaBankAudit'
+import { auditPgnBank, hasPgnLengthOutlier } from '../../src/lib/procuraduriaBankAudit'
 import { isPgnAuthored, isPgnException, isPgnConditional, isPgnBehavior, isPgnKnowledge, pgnSystemsModuleIds } from '../../src/lib/procuraduriaScopes'
 import { examProfilesForCourse, selectExamQuestions } from '../../src/lib/questionSelection'
 import { buildAdaptiveSession } from '../../src/lib/adaptivePractice'
@@ -11,12 +11,12 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
   it('audita todo el banco sin confundir señales editoriales con validez psicométrica', () => {
     const pool = practiceQuestionPool(course)
     const audit = auditPgnBank(pool, new Set(course.sources.map(s => s.id)))
-    expect(audit.total).toBe(1186)
-    expect(audit.authored).toBe(421)
+    expect(audit.total).toBe(1212)
+    expect(audit.authored).toBe(447)
     expect(audit.generated).toBe(765)
     expect(audit.missingSource).toEqual([])
     expect(audit.invalidOptions).toEqual([])
-    expect(audit.displayedCorrectPositions.reduce((a,b)=>a+b,0)).toBe(1186)
+    expect(audit.displayedCorrectPositions.reduce((a,b)=>a+b,0)).toBe(1212)
     console.info('PGN_BANK_AUDIT', JSON.stringify({
       total: audit.total, authored: audit.authored, generated: audit.generated,
       weakRationale: audit.weakRationale.length, shortStem: audit.shortStem.length,
@@ -25,7 +25,7 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
       displayedCorrectPositions: audit.displayedCorrectPositions,
       repeatedStemGroups: audit.repeatedStems.length, repeatedCaseGroups: audit.repeatedCases.length,
       exactDuplicateGroups: audit.exactDuplicates.length,
-      firstAuthoredLengthOutliers: audit.authoredOutlier.slice(0, 20),
+      authoredLengthOutlierIds: audit.authoredOutlier,
     }))
   })
   it('evita diferencias pronunciadas y patrones inversos en los 20 casos priorizados sin cambiar claves', () => {
@@ -105,14 +105,19 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
         const integrated = qs.filter(q=>q.integrated)
         expect(integrated.length).toBeGreaterThanOrEqual(profile.integratedTarget ?? 0)
         expect(qs.filter(q=>!q.integrated && priority.has(q.moduleId)).length).toBeGreaterThanOrEqual(Math.ceil((profile.size-(profile.integratedTarget ?? 0))/2))
+        if (profile.id==='functional-blind') expect(qs.some(hasPgnLengthOutlier)).toBe(false)
         if (profile.id==='functional-deep') expect(qs.every(q=>q.difficulty>=4)).toBe(true)
         expect(new Set(integrated.map(q=>q.scenarioId)).size).toBeGreaterThanOrEqual(Math.min(4,profile.integratedTarget ?? 0))
       }
       if (profile.kind === 'behavior') {
         expect(qs.every(q=>isPgnBehavior(q.moduleId))).toBe(true)
+        expect(qs.filter(isPgnException).length).toBeGreaterThanOrEqual(6)
+        for (const id of ['pgn-m70','pgn-m71','pgn-m72']) expect(qs.filter(q=>q.moduleId===id && isPgnException(q)).length).toBeGreaterThanOrEqual(2)
+      }
+      if (profile.kind === 'systems') {
+        expect(qs.every(q=>pgnSystemsModuleIds.includes(q.moduleId))).toBe(true)
         expect(qs.filter(isPgnException).length).toBeGreaterThanOrEqual(3)
       }
-      if (profile.kind === 'systems') expect(qs.every(q=>pgnSystemsModuleIds.includes(q.moduleId))).toBe(true)
       if (profile.kind === 'transversal') {
         expect(qs.every(q=>!isPgnBehavior(q.moduleId) && !pgnSystemsModuleIds.includes(q.moduleId))).toBe(true)
         expect(qs.filter(isPgnException).length).toBeGreaterThanOrEqual(Math.ceil(profile.size/5))
@@ -120,7 +125,7 @@ describe('Consolidación PGN · inventario, señales y selección', () => {
     }
   })
   it('excluye especialidades condicionales de adaptativa, conserva el banco y deja DIAN intacto', () => {
-    const qs = buildAdaptiveSession(course, undefined, 1186, 17)
+    const qs = buildAdaptiveSession(course, undefined, 1212, 17)
     expect(qs.every(q=>!isPgnConditional(q.moduleId))).toBe(true)
     expect(practiceQuestionPool(course).some(q=>isPgnConditional(q.moduleId))).toBe(true)
     expect(practiceQuestionPool(dianGestorCourse)).toBe(dianGestorCourse.questions)

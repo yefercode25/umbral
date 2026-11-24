@@ -1,8 +1,9 @@
 import type { Course, Question } from '../types/course'
 import { practiceQuestionPool } from './practiceQuestionPool'
+import { hasPgnLengthOutlier } from './procuraduriaBankAudit'
 import { PGN_COURSE_ID, isPgnAuthored, isPgnBehavior, isPgnException, pgnBehaviorModuleIds, pgnSystemsModuleIds } from './procuraduriaScopes'
 
-export type ExamProfileId = 'functional-quick' | 'functional-training' | 'functional-extended' | 'functional-deep' | 'study-mix' | 'transversal-check' | 'behavior-check' | 'systems-check'
+export type ExamProfileId = 'functional-quick' | 'functional-training' | 'functional-extended' | 'functional-deep' | 'study-mix' | 'transversal-check' | 'behavior-check' | 'systems-check' | 'functional-blind'
 
 export type ExamProfile = {
   id: ExamProfileId
@@ -80,6 +81,12 @@ export function examProfilesForCourse(course: Course): ExamProfile[] {
       integratedTarget: hasIntegratedCases ? 10 : 0,
     },
     ...(course.id === PGN_COURSE_ID ? [
+      {
+        id: 'functional-blind' as const, title: 'Simulacro integral · sin pistas',
+        shortTitle: 'Integral', description: '30 decisiones mezcladas: casos interdisciplinarios, excepciones y transferencia, sin dificultad ni categoría durante la sesión. Se excluyen ítems señalados por longitud pronunciada.',
+        size: 30, scopeLabel: 'Conocimientos generales y específicos · sin pistas',
+        questionTypeLabel: 'Situaciones profesionales', kind: 'functional' as const, integratedTarget: 6,
+      },
       {
         id: 'behavior-check' as const, title: 'Competencias comportamentales · práctica formativa',
         shortTitle: 'Competencias', description: '12 casos de reflexión de M70–M73. No simula una escala psicométrica oficial ni calcula personalidad o percentiles.',
@@ -258,11 +265,13 @@ export function selectExamQuestions(course: Course, profileId: ExamProfileId): Q
     const authored = available.filter(isPgnAuthored)
     if (profile.kind === 'behavior') {
       const pool = authored.filter(q => pgnBehaviorModuleIds.includes(q.moduleId))
-      const advanced = selectPgnDiverse(pool.filter(isPgnException), Math.min(3, profile.size))
+      const advanced = pgnBehaviorModuleIds.slice(0, 3).flatMap(id => selectPgnDiverse(pool.filter(q => q.moduleId === id && isPgnException(q)), 2))
       return shuffle(selectPgnDiverse(pool, profile.size, advanced))
     }
     if (profile.kind === 'systems') {
-      return shuffle(selectPgnDiverse(authored.filter(q => pgnSystemsModuleIds.includes(q.moduleId)), profile.size))
+      const pool = authored.filter(q => pgnSystemsModuleIds.includes(q.moduleId))
+      const advanced = selectPgnDiverse(pool.filter(isPgnException), Math.min(3, profile.size))
+      return shuffle(selectPgnDiverse(pool, profile.size, advanced))
     }
     if (profile.kind === 'study') {
       return shuffle(selectPgnDiverse(authored.filter(q => studyModuleIds.has(q.moduleId)), profile.size))
@@ -274,7 +283,8 @@ export function selectExamQuestions(course: Course, profileId: ExamProfileId): Q
     }
     const pool = authored.filter(q => examModuleIds.has(q.moduleId) &&
       (profile.id !== 'functional-deep' || (q.difficulty >= 4 && (q.integrated || isPgnException(q) || q.id.startsWith('pgn-dossier-') || q.id.includes('-transfer-')))))
-    return selectPgnFunctional(pool, profile.size, priorityModuleIds, profile.integratedTarget ?? 0)
+    const eligible = profile.id === 'functional-blind' ? pool.filter(q => !hasPgnLengthOutlier(q)) : pool
+    return selectPgnFunctional(eligible, profile.size, priorityModuleIds, profile.integratedTarget ?? 0)
   }
 
   if (profile.kind === 'study') {

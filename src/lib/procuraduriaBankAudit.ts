@@ -5,6 +5,14 @@ import { isPgnAuthored } from './procuraduriaScopes'
 const normalize = (text: string) => text.normalize('NFKC').toLocaleLowerCase('es').replace(/\s+/g, ' ').trim()
 const length = (text: string) => text.trim().split(/\s+/).filter(Boolean).length
 
+export function hasPgnLengthOutlier(q: Question): boolean {
+  const correct = q.options.find(o => o.id === q.correctOptionId)
+  const wrong = q.options.filter(o => o.id !== q.correctOptionId).map(o => length(o.text))
+  if (!correct || wrong.length !== 2) return false
+  const max = Math.max(...wrong)
+  return length(correct.text) >= 1.5 * max && length(correct.text) - max >= 5
+}
+
 export function auditPgnBank(questions: Question[], sources: ReadonlySet<string>) {
   const stems = new Map<string, string[]>()
   const cases = new Map<string, string[]>()
@@ -32,7 +40,7 @@ export function auditPgnBank(questions: Question[], sources: ReadonlySet<string>
       if (others.length === 2 && length(correct.text) > max) {
         longestCorrect.push(q.id)
         if (isPgnAuthored(q)) authoredLongest.push(q.id)
-        if (length(correct.text) >= 1.5 * max && length(correct.text) - max >= 5) {
+        if (hasPgnLengthOutlier(q)) {
           lengthOutlier.push(q.id)
           if (isPgnAuthored(q)) authoredOutlier.push(q.id)
         }
