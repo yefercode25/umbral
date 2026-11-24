@@ -335,10 +335,10 @@ const lessonSituationOrder: Record<number, readonly number[]> = {
   ],
   "35": [
     3,
-    4,
+    5,
     6,
     2,
-    5,
+    4,
     10,
     7,
     8,
@@ -350,21 +350,21 @@ const lessonSituationOrder: Record<number, readonly number[]> = {
     8,
     4,
     6,
-    7,
-    3,
     9,
+    3,
+    7,
     10
   ],
   "37": [
     2,
     7,
-    10,
-    3,
     8,
-    9,
+    3,
     4,
+    9,
     5,
-    6
+    6,
+    10
   ],
   "38": [
     3,
@@ -427,21 +427,21 @@ const lessonSituationOrder: Record<number, readonly number[]> = {
     4,
     8,
     9,
-    6,
+    10,
     5,
-    7,
-    10
+    6,
+    7
   ],
   "44": [
     3,
     4,
     6,
     2,
-    5,
     9,
+    10,
+    5,
     7,
-    8,
-    10
+    8
   ],
   "45": [
     3,

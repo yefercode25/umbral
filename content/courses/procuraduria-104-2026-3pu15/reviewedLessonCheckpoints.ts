@@ -1781,6 +1781,905 @@ const items: Record<string, Item> = {
       "ley-1952-2019",
       "ley-2094-2021"
     ]
+  ],
+  "pgn-m35-q1": [
+    "",
+    "¿A quién corresponde la carga de probar la responsabilidad disciplinaria?",
+    "Al Estado, incluso cuando el investigado no aporta pruebas.",
+    "Al investigado, desde que se le notifica la apertura.",
+    "Al quejoso, una vez ratifica el contenido de su escrito.",
+    "La carga estatal no cambia por el silencio.",
+    "La apertura no invierte la carga.",
+    "El quejoso no asume la carga estatal.",
+    "CGD, arts. 147",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m35-q2": [
+    "El instructor conoce una fuente favorable que ninguna parte ha solicitado.",
+    "¿Qué facultad permite incorporar esa fuente pertinente al expediente?",
+    "Decretar prueba de oficio, con el mismo rigor aplicado al cargo.",
+    "Reservarla hasta que la defensa solicite expresamente su incorporación.",
+    "Incorporarla únicamente si coincide con la hipótesis inicial del despacho.",
+    "La investigación imparcial permite decreto oficioso.",
+    "No depende exclusivamente de solicitud.",
+    "Debe examinarse el descargo.",
+    "CGD, arts. 148",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m35-q3": [
+    "Un expediente permite identificar al posible autor de una falta, pero aún no demuestra objetivamente su comisión.",
+    "¿Qué etapa puede iniciarse sin exigir certeza sancionatoria?",
+    "Investigación disciplinaria, si se cumplen los presupuestos de apertura.",
+    "Formulación de cargos, por haberse identificado al presunto autor.",
+    "Juzgamiento, porque la identidad ya permite resolver el fondo.",
+    "El estándar de apertura es distinto.",
+    "Los cargos requieren prueba adicional.",
+    "El juicio presupone la acusación correspondiente.",
+    "CGD, arts. 211,222",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m35-q4": [
+    "El pliego se sustentó en prueba que comprometía al disciplinado. Al finalizar el juicio subsiste duda razonable.",
+    "¿Qué estándar debe prevalecer al decidir el fallo?",
+    "Certeza de falta y responsabilidad, no el estándar previo de cargos.",
+    "Probabilidad de responsabilidad, suficiente desde la formulación de cargos.",
+    "Demostración del hecho objetivo, independientemente de su atribución personal.",
+    "El fallo exige certeza de ambos elementos.",
+    "El estándar de cargos no basta.",
+    "La autoría y culpabilidad importan.",
+    "CGD, arts. 14,160",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m35-q5": [
+    "Un informe acredita el cambio de un registro, pero otra fuente acredita acceso compartido a la cuenta utilizada.",
+    "¿Qué debe consignarse como vacío probatorio en la matriz?",
+    "La identidad del operador y las diligencias necesarias para individualizarlo.",
+    "La gravedad definitiva de la falta, deducida de la titularidad nominal.",
+    "La sanción correspondiente, calculada con base en el cambio registrado.",
+    "El cambio no acredita identidad personal.",
+    "Titularidad no determina gravedad.",
+    "La sanción presupone responsabilidad.",
+    "CGD, arts. 147,148",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m35-q6": [
+    "Se prueba que el servidor ejecutó una operación. Una orden de contingencia pudo justificarla.",
+    "¿Qué examen falta para valorar integralmente ese hecho?",
+    "Contrastar la orden, su alcance y la afectación injustificada del deber.",
+    "Determinar la sanción a partir de la ejecución material ya demostrada.",
+    "Descartar la orden porque fue aportada después de la primera hipótesis.",
+    "La justificación puede afectar ilicitud o exclusión.",
+    "La autoría no agota responsabilidad.",
+    "El descargo exige examen.",
+    "CGD, arts. 9,13,31",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m36-q1": [
+    "",
+    "¿Qué diferencia la pertinencia de la conducencia de una prueba?",
+    "La relación con el hecho frente a la idoneidad jurídica del medio.",
+    "La confiabilidad de la fuente frente a la fecha de incorporación.",
+    "La cantidad de documentos frente al costo de practicar la diligencia.",
+    "Son filtros de relación e idoneidad jurídica.",
+    "Origen y fecha son otros controles.",
+    "Costo y volumen no los definen.",
+    "CGD, arts. 151",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m36-q2": [
+    "Dos certificados idénticos proceden de la misma base y no agregan información nueva.",
+    "¿Qué filtro permite examinar la necesidad de solicitar un tercero idéntico?",
+    "Utilidad, porque debe aportar algo al esclarecimiento del hecho.",
+    "Pertinencia, porque toda fuente repetida pierde conexión con el hecho.",
+    "Conducencia, porque una copia repetida es jurídicamente inadmisible.",
+    "La redundancia afecta el aporte adicional.",
+    "Puede seguir siendo pertinente.",
+    "La copia no es necesariamente inconducente.",
+    "CGD, arts. 151",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m36-q3": [
+    "En investigación se niega motivadamente una prueba pedida por la defensa por ser superflua.",
+    "¿Qué recurso corresponde según la etapa descrita?",
+    "Reposición ante el funcionario que adoptó la decisión.",
+    "Apelación ante el superior en efecto suspensivo.",
+    "Queja directa ante el superior sin apelación rechazada.",
+    "El art. 133 prevé reposición en investigación.",
+    "La apelación probatoria corresponde al juicio.",
+    "La queja tiene otro presupuesto.",
+    "CGD, arts. 133,134,151",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m36-q4": [
+    "Se necesita verificar accesos de una cuenta durante dos días. Se propone obtener la totalidad de correos personales de todos los empleados.",
+    "¿Qué alcance probatorio resulta proporcionado al hecho investigado?",
+    "Delimitar período, cuenta y campos necesarios mediante autorización legal.",
+    "Recaudar todas las comunicaciones por si alguna resulta pertinente posteriormente.",
+    "Descartar la prueba de accesos por contener posibles datos personales.",
+    "Delimitar reduce afectación innecesaria.",
+    "La utilidad eventual no justifica recaudo indiscriminado.",
+    "Puede obtenerse información lícitamente delimitada.",
+    "CGD, arts. 151,155",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m36-q5": [
+    "Un reporte y una captura de ese reporte muestran la misma operación registrada.",
+    "¿Qué diferencia existe frente a una declaración presencial independiente?",
+    "La captura reproduce la fuente; la declaración puede aportar corroboración autónoma.",
+    "La captura genera otro indicio independiente por tener formato diferente.",
+    "La declaración no puede corroborar un registro de naturaleza digital.",
+    "La independencia depende del origen informativo.",
+    "Cambiar formato no crea otra fuente.",
+    "Medios diferentes pueden corroborarse.",
+    "CGD, arts. 159",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m36-q6": [
+    "Una diligencia inicialmente pertinente se refería al 3 de mayo. Se demuestra que el hecho ocurrió el 10 de junio.",
+    "¿Qué ajuste corresponde al evaluar su decreto o práctica?",
+    "Revisar el período y la conexión de la diligencia con el hecho corregido.",
+    "Mantener el período original para conservar la coherencia de la hipótesis.",
+    "Negar toda prueba nueva porque cambió una premisa temporal de la investigación.",
+    "La pertinencia depende de los hechos actualizados.",
+    "La hipótesis debe ajustarse a evidencia.",
+    "El cambio no impide nuevas diligencias.",
+    "CGD, arts. 148,151",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m37-q1": [
+    "",
+    "¿Qué distingue la autenticidad de la integridad de un archivo?",
+    "La primera concierne a su origen; la segunda, a la conservación de su contenido.",
+    "La primera prueba su licitud; la segunda acredita responsabilidad del autor.",
+    "Ambas acreditan que todo lo declarado en el documento es verdadero.",
+    "Son propiedades distintas de la evidencia.",
+    "Ninguna sustituye la legalidad ni autoría personal.",
+    "No garantizan veracidad de afirmaciones.",
+    "CGD, arts. 158,159",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m37-q2": [
+    "Un archivo conserva una huella íntegra, pero se obtuvo vulnerando derechos fundamentales del investigado.",
+    "¿Qué efecto exige examinar el artículo 158 del CGD?",
+    "Tener la prueba como inexistente cuando se configura el supuesto legal.",
+    "Admitirla por ser técnicamente íntegra y pertinente para la investigación.",
+    "Reducir su mérito sin aplicar la consecuencia jurídica de la obtención ilícita.",
+    "La integridad no sanea vulneraciones de derechos.",
+    "La pertinencia no elimina ilicitud.",
+    "La norma establece inexistencia en ese supuesto.",
+    "CGD, arts. 158",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m37-q3": [
+    "Una defensa acaba de ser notificada de la vinculación a la investigación.",
+    "¿Desde qué momento puede ejercer la contradicción probatoria prevista en el Código?",
+    "Desde la notificación de vinculación en los términos del artículo 157.",
+    "Desde la ejecutoria del fallo de primera instancia, por ser decisión definitiva.",
+    "Desde la formulación de cargos, aunque ya se encuentre vinculada legalmente.",
+    "La vinculación notificada habilita contradicción.",
+    "No se difiere al fallo.",
+    "No exige esperar cargos.",
+    "CGD, arts. 157",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m37-q4": [
+    "Un dictamen contiene resultados técnicos, pero omite el método y los datos examinados.",
+    "¿Qué información necesita la defensa para controvertir su conclusión?",
+    "Los fundamentos, operaciones y fuentes que permiten examinar el resultado.",
+    "Únicamente la identificación del perito y su título profesional.",
+    "La conclusión jurídica del funcionario antes de conocer el método empleado.",
+    "La contradicción requiere examinar fundamentos.",
+    "La identidad no sustituye metodología.",
+    "La conclusión jurídica no revela el método.",
+    "CGD, arts. 157,179,180",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m37-q5": [
+    "Se identifica una posible irregularidad en la obtención de una fuente digital.",
+    "¿Qué comprobación distingue una falla documental de una causal de inexistencia?",
+    "Determinar la formalidad omitida, su carácter sustancial y el derecho comprometido.",
+    "Clasificar cualquier ausencia de firma como vulneración de derechos fundamentales.",
+    "Considerar suficiente que el dato obtenido resulte útil para aclarar el hecho.",
+    "La consecuencia depende de los presupuestos del artículo 158.",
+    "No toda falta de firma tiene igual efecto.",
+    "La utilidad no resuelve legalidad.",
+    "CGD, arts. 158",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m37-q6": [
+    "Una prueba se tiene como inexistente. El expediente contiene otros documentos obtenidos independientemente y de manera legal.",
+    "¿Qué análisis corresponde antes de adoptar la decisión de fondo?",
+    "Valorar las pruebas legales restantes y establecer si satisfacen el estándar aplicable.",
+    "Anular automáticamente toda actuación sin examinar dependencia de otras fuentes.",
+    "Conservar la prueba inexistente como indicio auxiliar para reforzar la conclusión.",
+    "El mérito restante exige examen independiente.",
+    "No se deriva nulidad universal automáticamente.",
+    "No debe fundarse la decisión en prueba inexistente.",
+    "CGD, arts. 147,158,159",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m38-q1": [
+    "",
+    "¿Qué diferencia una hipótesis probatoria de una conclusión de responsabilidad?",
+    "La hipótesis es contrastable y admite evidencia que pueda refutarla.",
+    "La hipótesis fija definitivamente la responsabilidad desde el inicio del análisis.",
+    "La conclusión es una lista de fuentes sin interpretación de sus resultados.",
+    "Una hipótesis debe someterse a comprobación.",
+    "No prejuzga el caso.",
+    "La conclusión requiere razonamiento sustentado.",
+    "CGD, arts. 148,159",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m38-q2": [
+    "Se examina una modificación de permisos de acceso. No se conoce quién la ejecutó ni si estaba autorizada.",
+    "¿Qué pregunta probatoria debe orientar el recaudo inicial?",
+    "Qué cuenta, persona y autorización se relacionan con la modificación concreta.",
+    "Cuál sanción corresponde al administrador según el valor del activo afectado.",
+    "Qué testigo está dispuesto a confirmar la hipótesis de alteración deliberada.",
+    "La pregunta conecta hechos, autoría y deber.",
+    "La sanción no precede a la prueba.",
+    "Buscar confirmación no basta.",
+    "CGD, arts. 148",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m38-q3": [
+    "Un registro se sobrescribirá próximamente y la autoridad aún no definió las hipótesis finales.",
+    "¿Qué acción debe priorizar el plan de prueba?",
+    "Preservar oportunamente la fuente mediante autoridad habilitada y documentar su obtención.",
+    "Esperar la conclusión del análisis para evitar recoger información que resulte redundante.",
+    "Modificar el registro original para extraer únicamente los eventos inicialmente sospechosos.",
+    "La preservación evita pérdida irreversible.",
+    "Esperar puede impedir recaudo.",
+    "No se debe alterar la fuente para analizarla.",
+    "CGD, arts. 155",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m38-q4": [
+    "El despacho requiere análisis especializado de una exportación de datos y no cuenta con personal idóneo.",
+    "¿Qué mecanismo contempla el CGD para obtener apoyo técnico estatal?",
+    "Solicitar colaboración técnica mediante el funcionario competente que conoce de la actuación.",
+    "Transferir la decisión del proceso al organismo que tenga el equipo técnico.",
+    "Designar al analista como autoridad de policía judicial por su especialidad informática.",
+    "El artículo 156 prevé apoyo técnico.",
+    "La colaboración no transfiere decisión.",
+    "La especialidad no confiere policía judicial.",
+    "CGD, arts. 156,200",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m38-q5": [
+    "Un evento figura a las 18:20 UTC. El servidor utiliza la hora de Colombia UTC−5.",
+    "¿Qué hora nominal local corresponde al evento, sin corregir desfases del reloj?",
+    "13:20 del mismo día, al restar cinco horas.",
+    "23:20 del mismo día, al sumar cinco horas.",
+    "18:20 del mismo día, conservando el valor sin conversión.",
+    "18:20 menos cinco horas es 13:20.",
+    "La conversión tiene signo contrario.",
+    "No son la misma referencia horaria.",
+    "CGD, arts. 159",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m38-q6": [
+    "Un reloj estaba adelantado aproximadamente dos minutos y su desfase no se conoce con precisión.",
+    "¿Cómo debe reflejarse esa limitación en la cronología analítica?",
+    "Conservar la marca original y registrar la corrección estimada con su incertidumbre.",
+    "Cambiar el registro original para que todos los eventos queden exactamente sincronizados.",
+    "Eliminar las fuentes del reloj adelantado aunque puedan aportar información contextual.",
+    "La normalización no debe inventar exactitud.",
+    "El original debe preservarse.",
+    "La incertidumbre no implica inutilidad.",
+    "CGD, arts. 159",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m39-q1": [
+    "",
+    "¿Qué exige la sana crítica al motivar el mérito de una prueba?",
+    "Explicar inferencias, premisas acreditadas y valoración conjunta del material.",
+    "Contabilizar documentos y asignar mayor mérito a la fuente más repetida.",
+    "Adoptar la conclusión técnica sin examinar sus fundamentos ni limitaciones.",
+    "El artículo 159 exige apreciación conjunta y razonada.",
+    "El conteo no determina mérito.",
+    "El informe técnico también requiere valoración.",
+    "CGD, arts. 159",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m39-q2": [
+    "Dos declaraciones coinciden en un dato, pero ambas personas lo conocieron por el mismo mensaje.",
+    "¿Qué cautela corresponde al valorar esa coincidencia?",
+    "Examinar su origen común antes de tratarla como corroboración independiente.",
+    "Asignar mérito doble por existir dos declaraciones formalmente diferentes.",
+    "Descartar ambas por no provenir de una observación directamente presencial.",
+    "La independencia informativa debe comprobarse.",
+    "Dos declaraciones pueden compartir fuente.",
+    "Pueden tener utilidad limitada.",
+    "CGD, arts. 159,176",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m39-q3": [
+    "Un indicio se construye a partir de una supuesta llamada que ninguna fuente del expediente acredita.",
+    "¿Qué requisito falta para utilizar esa inferencia indiciaria?",
+    "Demostrar el hecho indicador del que parte el razonamiento lógico.",
+    "Obtener una confesión que ratifique cualquier inferencia formulada por el instructor.",
+    "Repetir la hipótesis en varios informes para obtener convergencia de indicios.",
+    "El artículo 198 exige hecho indicador probado.",
+    "No exige confesión como requisito universal.",
+    "Repetición no demuestra el hecho.",
+    "CGD, arts. 196,198",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m39-q4": [
+    "Un hecho indicador probado se divide artificialmente en tres fragmentos para presentarlos como indicios independientes.",
+    "¿Qué regla impide multiplicar de ese modo su fuerza demostrativa?",
+    "La indivisibilidad del hecho indicador establecida en el artículo 197.",
+    "La prohibición absoluta de valorar varios indicios en el mismo expediente.",
+    "La obligación de valorar exclusivamente pruebas directas para cualquier decisión.",
+    "El hecho indicador no se fragmenta artificialmente.",
+    "La pluralidad de indicios sí es posible.",
+    "Los indicios son medio reconocido.",
+    "CGD, arts. 149,197,199",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m39-q5": [
+    "Se analiza un caso del artículo 53.5 del CGD sobre acoso sexual laboral.",
+    "¿Qué enfoque exige la regla especial de valoración incorporada por Ley 2365?",
+    "Diferencial e interseccional, atendiendo las circunstancias y relaciones de poder pertinentes.",
+    "Exclusivamente cuantitativo, basado en el número de declaraciones de cada parte.",
+    "Presunción automática de responsabilidad por la condición jerárquica de la persona señalada.",
+    "El artículo 160A establece ese enfoque.",
+    "El conteo no satisface la valoración.",
+    "El enfoque no elimina la presunción de inocencia.",
+    "CGD, arts. 160A",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021",
+      "ley-2365-2024"
+    ]
+  ],
+  "pgn-m39-q6": [
+    "En el caso anterior, una diligencia propuesta puede exponer innecesariamente a la víctima y no agrega información pertinente.",
+    "¿Qué control debe ejercer la autoridad antes de decretarla?",
+    "Examinar su aporte, las garantías de defensa y el riesgo para los derechos de la víctima.",
+    "Practicar toda diligencia solicitada porque el enfoque diferencial no admite restricciones probatorias.",
+    "Denegar cualquier contradicción del investigado porque existe un contexto de vulnerabilidad acreditado.",
+    "El artículo 160A exige protección compatible con garantías.",
+    "No toda prueba resulta necesaria.",
+    "El enfoque no suprime defensa.",
+    "CGD, arts. 151,160A",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021",
+      "ley-2365-2024"
+    ]
+  ],
+  "pgn-m40-q1": [
+    "",
+    "¿Qué valor tiene el relato de una queja frente a sus anexos documentales?",
+    "La queja orienta el recaudo; los anexos pueden valorarse según sana crítica.",
+    "La queja acredita los hechos cuando está firmada; los anexos solo ilustran.",
+    "Los anexos carecen de valor porque forman parte de una noticia disciplinaria.",
+    "El artículo 187 distingue relato y anexos.",
+    "La firma no prueba hechos ni responsabilidad.",
+    "Los anexos pueden ser medios valorables.",
+    "CGD, arts. 187",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m40-q2": [
+    "Una copia documental legible se aporta al expediente. No existe duda concreta sobre su autenticidad.",
+    "¿Qué regla permite su incorporación sin exigir siempre el original?",
+    "El artículo 188 admite documentos originales y copias según sus condiciones.",
+    "El artículo 188 exige que toda copia sea ratificada mediante testimonio.",
+    "La copia solo puede orientar la investigación, nunca servir como documento probatorio.",
+    "El Código permite original o copia.",
+    "No exige ratificación universal.",
+    "La copia puede tener mérito probatorio.",
+    "CGD, arts. 188",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m40-q3": [
+    "Una exportación electrónica permite acreditar su contenido completo e inalterado y puede presentarse cuando se requiera.",
+    "¿Qué exigencia funcional satisface respecto de la originalidad del mensaje de datos?",
+    "Garantía confiable de integridad y posibilidad de presentar la información.",
+    "Existencia de una impresión física firmada por el usuario del sistema.",
+    "Identificación definitiva de la persona que realizó cada operación registrada.",
+    "El artículo 8 de Ley 527 establece esos requisitos.",
+    "No exige soporte papel universal.",
+    "Originalidad no equivale a autoría de cada operación.",
+    "Ley 527/1999 arts. 8–9",
+    [
+      "ley-527-1999"
+    ]
+  ],
+  "pgn-m40-q4": [
+    "Una entidad conserva correos en un archivo que elimina las fechas de envío y los datos de destino disponibles originalmente.",
+    "¿Qué requisito de conservación de mensajes debe revisar?",
+    "La conservación de los datos disponibles de origen, destino, fecha y hora.",
+    "La impresión periódica de cada mensaje, aunque se pierdan sus metadatos.",
+    "La eliminación de encabezados para garantizar que el archivo siga siendo legible.",
+    "La Ley 527 incluye esos datos en la conservación.",
+    "Imprimir no reemplaza información disponible.",
+    "Legibilidad no justifica su eliminación.",
+    "Ley 527/1999 art. 12",
+    [
+      "ley-527-1999"
+    ]
+  ],
+  "pgn-m40-q5": [
+    "Un informe de datos registrados en archivos institucionales responde un requerimiento del despacho.",
+    "¿Qué característica exige el CGD al elaborar ese informe?",
+    "Motivación, juramento y explicación del origen de los datos reportados.",
+    "Conclusión de responsabilidad y calificación de la conducta del investigado.",
+    "Dictamen de dos expertos, incluso cuando solo reproduce datos registrados.",
+    "Los artículos 193–194 regulan informes técnicos de archivos.",
+    "No declara responsabilidad.",
+    "No se confunde con dictamen pericial.",
+    "CGD, arts. 193–194",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m40-q6": [
+    "Un sujeto procesal desea controvertir un informe técnico de datos registrados por considerarlo incompleto.",
+    "¿Qué oportunidad específica prevé el artículo 195 para esa actuación?",
+    "Tres días para solicitar aclaración o complementación del informe.",
+    "Cinco días para presentar objeción por error grave del informe.",
+    "Diez días para formular apelación contra el informe técnico recibido.",
+    "El artículo 195 fija traslado de tres días.",
+    "Excluye objeción por error grave.",
+    "El informe no es fallo apelable.",
+    "CGD, arts. 195",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m41-q1": [
+    "",
+    "¿Qué personas están exceptuadas de declarar contra familiares protegidos constitucionalmente?",
+    "Quienes se encuentren en los vínculos de parentesco o relación del artículo 33 constitucional.",
+    "Únicamente servidores vinculados al expediente como testigos de una entidad pública.",
+    "Solo abogados que tengan un contrato vigente con la persona disciplinada.",
+    "La Constitución protege a quienes tienen esos vínculos.",
+    "El carácter público no define la excepción.",
+    "El secreto profesional es otra excepción.",
+    "CGD, arts. 164,166; Constitución art. 33",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021",
+      "constitucion"
+    ]
+  ],
+  "pgn-m41-q2": [
+    "Una persona llamada como testigo conoce hechos exclusivamente por su ejercicio profesional protegido por secreto.",
+    "¿Qué garantía debe examinar el funcionario al recibir la declaración?",
+    "La excepción legal de declarar sobre aquello confiado por razón de la profesión.",
+    "La obligación de revelar cualquier dato bajo juramento si el despacho lo solicita.",
+    "La obligación de declarar mientras no figure formalmente como sujeto procesal.",
+    "El artículo 167 protege información confiada profesionalmente.",
+    "El juramento no elimina el secreto.",
+    "La excepción no depende de ser parte.",
+    "CGD, arts. 167",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m41-q3": [
+    "Un testigo observó un incidente desde lejos y afirma conocer además la intención de quien actuó.",
+    "¿Qué debe examinarse al valorar ese relato conforme a sana crítica?",
+    "Las condiciones de percepción y la diferencia entre observación e inferencia.",
+    "La seguridad con que relata los hechos como demostración suficiente de exactitud.",
+    "La duración de la declaración como indicador principal de su mérito probatorio.",
+    "El artículo 176 atiende condiciones de percepción.",
+    "Confianza no garantiza precisión.",
+    "Duración no determina mérito.",
+    "CGD, arts. 176",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m41-q4": [
+    "Un testigo relata lo que otra persona le contó después del incidente.",
+    "¿Qué tratamiento permite precisar el alcance de su conocimiento?",
+    "Identificar qué conoció directamente y qué información recibió de otra fuente.",
+    "Atribuirle percepción presencial por reproducir con detalle el relato del incidente.",
+    "Excluir toda declaración que contenga información recibida de otras personas.",
+    "La fuente de conocimiento determina alcance.",
+    "Detalle no prueba percepción directa.",
+    "La valoración exige distinguir, no excluir automáticamente.",
+    "CGD, arts. 175,176",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m41-q5": [
+    "Una persona investigada guarda silencio en versión libre y no presenta una explicación alternativa.",
+    "¿Qué efecto tiene ese comportamiento respecto de una confesión?",
+    "No constituye confesión ni sustituye la carga probatoria que corresponde al Estado.",
+    "Equivale a aceptar tácitamente la falta si la citación fue válida.",
+    "Permite aplicar los beneficios de confesión sin verificar los requisitos legales.",
+    "El silencio es ejercicio de defensa.",
+    "No equivale a aceptación.",
+    "Los beneficios exigen confesión válida.",
+    "CGD, arts. 14,147,161",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m41-q6": [
+    "Un testigo no exceptuado falta a la citación y no justifica satisfactoriamente su inasistencia en los tres días siguientes.",
+    "¿Qué sanción y recurso contempla el régimen de renuencia?",
+    "Multa hasta cincuenta salarios mínimos diarios de la época del hecho, con reposición.",
+    "Multa fija de cincuenta salarios mínimos mensuales, con apelación obligatoria.",
+    "Privación de libertad hasta que acepte rendir testimonio, sin recurso ordinario.",
+    "El artículo 165 prevé multa con ese límite y reposición.",
+    "No es multa mensual fija.",
+    "La conducción excepcional no autoriza privación de libertad.",
+    "CGD, arts. 165",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m42-q1": [
+    "",
+    "¿Qué diferencia un dictamen pericial de una conclusión jurídica del instructor?",
+    "El dictamen explica conocimiento especializado; la responsabilidad la decide la autoridad competente.",
+    "El dictamen establece la sanción; el instructor verifica únicamente la idoneidad del experto.",
+    "El dictamen sustituye la valoración de cualquier otra prueba por su carácter técnico.",
+    "El perito no emite juicio de responsabilidad.",
+    "La sanción no corresponde al experto.",
+    "El mérito se valora en conjunto.",
+    "CGD, arts. 179,182",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m42-q2": [
+    "Un perito acepta un encargo informático. Su borrador no explica los materiales ni las operaciones efectuadas.",
+    "¿Qué aspecto debe completar para satisfacer los requisitos del dictamen?",
+    "El fundamento técnico, los materiales examinados y el método aplicado.",
+    "La sanción recomendada según su apreciación de los hechos del expediente.",
+    "La identidad de todos los sujetos procesales aunque no intervengan en el análisis.",
+    "El dictamen debe ser motivado y verificable.",
+    "No puede declarar responsabilidad.",
+    "La identificación no sustituye metodología.",
+    "CGD, arts. 179",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m42-q3": [
+    "El despacho dispone la aclaración de un dictamen pericial ya trasladado a los sujetos procesales.",
+    "¿Qué término máximo inicial puede conceder al perito para esa aclaración?",
+    "Cinco días, con la prórroga por una vez prevista en la norma.",
+    "Tres días, igual al término común de traslado inicial del dictamen.",
+    "Diez días, sin posibilidad de ampliación conforme al régimen pericial.",
+    "El artículo 180 fija máximo de cinco días prorrogable una vez.",
+    "Tres días corresponden al traslado.",
+    "No es el plazo indicado.",
+    "CGD, arts. 180",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m42-q4": [
+    "Una solicitud de aclaración del dictamen se niega motivadamente por el funcionario competente.",
+    "¿Qué recurso prevé el trámite pericial frente a esa negativa?",
+    "Reposición contra la decisión que niega la aclaración solicitada.",
+    "Apelación en efecto suspensivo contra el dictamen pericial inicial.",
+    "Queja directa contra el perito por no completar el informe.",
+    "El artículo 180 prevé reposición.",
+    "No se apela el dictamen como providencia.",
+    "Queja no es el mecanismo descrito.",
+    "CGD, arts. 180",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m42-q5": [
+    "El dictamen de un experto experimentado utiliza muestras insuficientes. Otro explica una metodología sólida y verificable.",
+    "¿Qué criterio permite comparar su mérito probatorio?",
+    "Solidez, precisión, fundamentos e idoneidad, junto con las demás pruebas.",
+    "Antigüedad del experto como factor exclusivo de mérito probatorio.",
+    "Fecha de presentación, privilegiando siempre el dictamen más reciente.",
+    "El artículo 182 exige valoración cualitativa.",
+    "La antigüedad es solo un elemento contextual.",
+    "La fecha no decide mérito automáticamente.",
+    "CGD, arts. 182",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m42-q6": [
+    "Una cuestión técnica requiere que el perito explique personalmente aspectos de su dictamen ante el despacho.",
+    "¿Qué posibilidad contempla el artículo 181 del CGD?",
+    "Ordenar la comparecencia del perito a audiencia para explicar su dictamen.",
+    "Sustituir el dictamen por una declaración del instructor sobre el método utilizado.",
+    "Excluir el dictamen porque toda explicación posterior a su presentación está prohibida.",
+    "La comparecencia está prevista legalmente.",
+    "El instructor no reemplaza conocimiento experto.",
+    "Puede explicarse el dictamen.",
+    "CGD, arts. 181",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m43-q1": [
+    "",
+    "¿Qué objeto permite diferenciar la inspección disciplinaria de una simple solicitud de documentos?",
+    "La verificación directa de cosas, lugares, bienes u otros efectos materiales relevantes.",
+    "La obtención de cualquier copia de documentos conservados en otro expediente judicial.",
+    "La formulación de una conclusión de responsabilidad sin examinar físicamente los hechos.",
+    "El artículo 185 permite constatación directa.",
+    "Obtener copias es otra actuación probatoria.",
+    "La inspección no es fallo.",
+    "CGD, arts. 185",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m43-q2": [
+    "Durante una inspección se recogen elementos materiales útiles para verificar los hechos.",
+    "¿Qué procedimiento exige el CGD para su identificación y conservación?",
+    "Aplicar los procedimientos de cadena de custodia y registrar los elementos.",
+    "Conservar únicamente fotografías sin identificar los elementos materiales efectivamente recogidos.",
+    "Entregarlos al experto sin registro, dejando que este reconstruya su origen.",
+    "El artículo 185 exige cadena de custodia.",
+    "La fotografía no sustituye registro de recaudo.",
+    "La trazabilidad comienza al recogerlos.",
+    "CGD, arts. 185",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m43-q3": [
+    "Fiscalía descubrió elementos materiales probatorios con el escrito de acusación, aún no introducidos en juicio penal.",
+    "¿Qué condición permite incorporarlos conforme al artículo 154 del CGD?",
+    "Trasladarlos y someterlos a contradicción dentro de la actuación disciplinaria.",
+    "Esperar siempre la sentencia penal ejecutoriada para solicitar cualquier elemento descubierto.",
+    "Darles automáticamente el mérito definitivo asignado por la autoridad penal de origen.",
+    "La norma permite trasladar esos elementos con contradicción.",
+    "No exige sentencia penal.",
+    "El mérito se aprecia en disciplina.",
+    "CGD, arts. 154",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m43-q4": [
+    "Una prueba fue practicada válidamente en una actuación administrativa nacional y el despacho desea incorporarla.",
+    "¿Qué mecanismo de traslado contempla la regla general?",
+    "Obtener copia autorizada por el funcionario que conserva la actuación de origen.",
+    "Obtener únicamente un resumen informal elaborado por un tercero conocedor del caso.",
+    "Solicitar al investigado que declare auténtica la conclusión de la autoridad anterior.",
+    "El artículo 154 regula copia autorizada.",
+    "Un resumen no sustituye la prueba trasladada.",
+    "La defensa no valida la conclusión externa.",
+    "CGD, arts. 154",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m43-q5": [
+    "Se incorpora copia autorizada de una diligencia en otro proceso. La documentación no indica cuándo se permitió examinarla a los sujetos procesales.",
+    "¿Qué elemento debe completarse en la matriz de ingreso?",
+    "La oportunidad y constancia de contradicción de la prueba trasladada.",
+    "El nombre de quien redactó el proyecto de sanción del proceso anterior.",
+    "La fecha estimada en que se impondrá la sanción disciplinaria actual.",
+    "La contradicción debe ser verificable.",
+    "No sustituye constancia de acceso.",
+    "La sanción es una decisión posterior.",
+    "CGD, arts. 154,157",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m43-q6": [
+    "La inspección trasladada demuestra una condición física, pero el proceso anterior perseguía una finalidad jurídica diferente.",
+    "¿Cómo debe delimitarse el valor de la diligencia incorporada?",
+    "Precisar el hecho demostrado y valorar su relación con el objeto disciplinario.",
+    "Adoptar integralmente la decisión de origen por haber sido emitida por otra autoridad.",
+    "Descartar todo el medio porque las finalidades procesales no son idénticas.",
+    "El traslado no impone la valoración jurídica ajena.",
+    "El mérito debe examinarse autónomamente.",
+    "La diferencia no vuelve inútil la prueba.",
+    "CGD, arts. 154,159",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021"
+    ]
+  ],
+  "pgn-m44-q1": [
+    "",
+    "¿Qué acredita principalmente una coincidencia de huellas SHA-256 entre dos archivos?",
+    "Coincidencia binaria con alta confianza, sin demostrar por sí sola autoría.",
+    "Identidad del operador, autorización y legalidad de obtención de ambos archivos.",
+    "Fecha exacta de creación y ausencia de cualquier manipulación antes de adquirirlos.",
+    "El hash verifica contenido comparado.",
+    "No acredita identidad ni legalidad.",
+    "No prueba la historia anterior.",
+    "NIST SP 800-86",
+    [
+      "nist-sp-800-86"
+    ]
+  ],
+  "pgn-m44-q2": [
+    "Se recibe una exportación de registros sin datos del responsable ni intervalo de extracción.",
+    "¿Qué información debe documentarse para identificar la fuente de evidencia?",
+    "Origen, responsable, alcance temporal, procedimiento y autorización de adquisición.",
+    "Únicamente el tamaño del archivo y el nombre asignado por el analista.",
+    "La conclusión jurídica que se espera obtener antes de registrar la fuente.",
+    "La trazabilidad comienza por origen y adquisición.",
+    "Nombre y tamaño son insuficientes.",
+    "La expectativa no identifica la fuente.",
+    "NIST SP 800-86",
+    [
+      "nist-sp-800-86"
+    ]
+  ],
+  "pgn-m44-q3": [
+    "Una hoja de cálculo convierte automáticamente identificadores numéricos con ceros iniciales.",
+    "¿Qué control permite analizar los datos sin alterar la referencia original?",
+    "Importar desde la copia con tipos controlados y documentar las transformaciones.",
+    "Guardar el archivo convertido como original para unificar los formatos disponibles.",
+    "Restaurar manualmente los ceros sin conservar la exportación ni registrar cambios.",
+    "Separar original y análisis conserva reproducibilidad.",
+    "Sobrescribir elimina referencia.",
+    "La corrección debe ser verificable.",
+    "NIST SP 800-86",
+    [
+      "nist-sp-800-86"
+    ]
+  ],
+  "pgn-m44-q4": [
+    "Un analista filtra un conjunto de 1.000 eventos y conserva 120 para su informe.",
+    "¿Qué registro metodológico permite reproducir esa selección?",
+    "Filtros, criterio temporal, recuentos antes y después, herramienta y versión.",
+    "Únicamente el total final de 120 eventos y la conclusión del informe.",
+    "La eliminación del conjunto original para que solo existan registros relevantes.",
+    "Los parámetros permiten replicar selección.",
+    "El total no describe el procedimiento.",
+    "El original debe conservarse.",
+    "NIST SP 800-86",
+    [
+      "nist-sp-800-86"
+    ]
+  ],
+  "pgn-m44-q5": [
+    "Un informe técnico acredita integridad de un archivo, pero la autorización de su obtención todavía no está comprobada.",
+    "¿Qué distinción debe expresar el profesional en su informe?",
+    "La integridad técnica y la legalidad de adquisición son comprobaciones separadas.",
+    "La huella íntegra demuestra por sí misma la autorización jurídica de obtención.",
+    "La falta de autorización documentada prueba necesariamente falsedad del contenido digital.",
+    "Son dimensiones distintas de la evidencia.",
+    "El hash no prueba legalidad.",
+    "La incertidumbre jurídica no prueba falsedad.",
+    "CGD, arts. 158,159; NIST SP 800-86",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021",
+      "nist-sp-800-86"
+    ]
+  ],
+  "pgn-m44-q6": [
+    "Una transferencia de evidencia carece de constancia de recepción, aunque se conservan las huellas de integridad previas y actuales.",
+    "¿Qué actuación permite valorar ese vacío sin ocultarlo ni prejuzgar?",
+    "Documentar la incidencia, reconstruir la trazabilidad posible y evaluar su impacto.",
+    "Declarar automáticamente nulo todo el proceso por faltar una constancia de transferencia.",
+    "Crear retroactivamente una constancia sin verificar quién recibió realmente el elemento.",
+    "La incidencia requiere evaluación documentada.",
+    "No determina nulidad universal por sí sola.",
+    "No se inventan registros de custodia.",
+    "CGD, arts. 185; NIST SP 800-86",
+    [
+      "ley-1952-2019",
+      "ley-2094-2021",
+      "nist-sp-800-86"
+    ]
   ]
 }
 
