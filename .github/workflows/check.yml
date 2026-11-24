@@ -36,3 +36,8 @@ jobs:
         run: node scripts/check-procuraduria-module-svgs.mjs
       - name: Generar PWA
         run: npm run build
+
+      - name: Instalar Chromium para la prueba de navegador
+        run: npx playwright install --with-deps chromium
+      - name: Validar simulacro y PWA de Procuraduría en navegador
+        run: npm run e2e -- --config=playwright.pgn.config.mjs
