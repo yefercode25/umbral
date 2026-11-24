@@ -833,40 +833,196 @@ export const prioritySituationalOverrides: Record<string, PrioritySituationalOve
     "explanation": "Fundamento: CGD, 155, 179, 185, 200–201; Ley 527 arts. 8–12. La cadena de custodia exige trazabilidad real y la valoración debe distinguir incertidumbre técnica de consecuencias jurídicas. Primera alternativa incorrecta: Fabricar constancias no subsana la pérdida de trazabilidad. Segunda alternativa incorrecta: El incidente requiere evaluación concreta, no destrucción automática."
   }
 ],
-  'pgn-m51': [{
-    number: 1,
-    caseText: 'Una entidad necesita adquirir dispositivos para fortalecer su infraestructura. Los estudios previos incluyen una especificación que solo cumple el equipo del proveedor que hizo la visita preliminar. El área usuaria afirma que esa marca está probada y que la diferencia de precio es pequeña. Otro proponente entrega fichas técnicas de una solución funcionalmente equivalente, pero la respuesta a su observación se limita a decir que la entidad conoce mejor sus necesidades.',
-    stem: '¿Cuál examen corresponde antes de cerrar las condiciones del procedimiento de selección?',
-    options: [
-      'Mantener la condición sin ajustes porque la experiencia anterior del área solicitante constituye por sí sola justificación de selección objetiva.',
-      'Admitir cualquier equipo propuesto para no restringir competencia, aunque no satisfaga requerimientos técnicos esenciales.',
-      'Verificar que los requisitos respondan a necesidades objetivas y proporcionales, motivar diferencias funcionales y valorar observaciones sin favorecer injustificadamente a un proponente.',
+  'pgn-m45': [
+  {
+    "number": 1,
+    "caseText": "En un seguimiento contractual se verifica que la entidad corrigió una especificación restrictiva mediante una adenda publicada antes del cierre. Aún se desconoce si la modificación eliminó todas las barreras de participación y hay una denuncia distinta sobre una actuación pasada de un servidor. El coordinador desea cerrar automáticamente ambos asuntos porque la entidad respondió el requerimiento preventivo.",
+    "stem": "¿Qué decisión distingue el seguimiento preventivo de una posible actuación disciplinaria?",
+    "options": [
+      "Cerrar ambos asuntos por la existencia de una respuesta favorable de la entidad, sin examinar su alcance.",
+      "Convertir el riesgo inicial en cargos disciplinarios aunque se desconozcan los hechos y presupuestos correspondientes.",
+      "Comprobar el efecto de la corrección y el riesgo residual, documentar el cierre preventivo si procede y evaluar separadamente los hechos de eventual relevancia disciplinaria."
     ],
-    rationales: [
-      'La experiencia previa no elimina la obligación de justificar requisitos y principios de selección objetiva.',
-      'La apertura de competencia no exige renunciar a requisitos necesarios y verificables.',
-      'Equilibra planeación técnica, necesidad, proporcionalidad y trato objetivo a los oferentes.',
+    "rationales": [
+      "La respuesta no acredita mitigación ni extingue una posible noticia disciplinaria.",
+      "Una alerta no satisface el estándar para cargos.",
+      "La autonomía de las funciones exige verificar resultados y tratar cada objeto por su régimen."
     ],
-    correctOptionId: 'c',
-    explanation: 'Las reglas de contratación estatal exigen motivación y selección objetiva; las especificaciones deben corresponder a la necesidad y evitar exclusiones injustificadas.',
-  }],
-  'pgn-m52': [{
-    number: 1,
-    caseText: 'Una alcaldía utiliza una excavadora contratada por un periodo determinado para intervenir una vía. El equipo fue ingresado temporalmente al país por un proveedor extranjero y sufre un incendio durante la permanencia. El expediente tiene actas de entrega, mantenimiento, póliza e informe inicial de bomberos; la causa continúa indeterminada. El supervisor propone certificar cumplimiento total, mientras otro servidor exige atribuirle inmediatamente una infracción aduanera y una falta disciplinaria por el siniestro.',
-    stem: '¿Qué actuación distingue correctamente la supervisión contractual, la investigación de hechos y las competencias de otras autoridades?',
-    options: [
-      'Certificar el cumplimiento porque el daño fue accidental según el proveedor, y dejar cualquier otra responsabilidad a su aseguradora.',
-      'Preservar y conciliar soportes contractuales y técnicos, verificar obligaciones del supervisor y del contratista y el alcance de pólizas, y remitir a las autoridades competentes las cuestiones ajenas al régimen contractual sin presumir responsabilidad por el solo incendio.',
-      'Declarar una infracción aduanera y responsabilidad disciplinaria del supervisor en la misma acta, pues ambas se derivan automáticamente de la destrucción del equipo.',
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Constitución art. 277; Decreto Ley 262 art. 24; Resolución PGN 132/2014 arts. 3–11. La autonomía de las funciones exige verificar resultados y tratar cada objeto por su régimen. Primera alternativa incorrecta: La respuesta no acredita mitigación ni extingue una posible noticia disciplinaria. Segunda alternativa incorrecta: Una alerta no satisface el estándar para cargos."
+  }
+],
+  'pgn-m46': [
+  {
+    "number": 1,
+    "caseText": "Una procuraduría prepara su plan operativo anual de prevención. El análisis inicial identifica amenazas a derechos de poblaciones distintas, con recursos limitados para atenderlas simultáneamente. Una dependencia propone seleccionar únicamente asuntos fáciles de cerrar para mejorar estadísticas; otra desea ignorar lineamientos institucionales y actuar según las preferencias individuales del equipo.",
+    "stem": "¿Qué criterio de priorización permite organizar el plan conforme al modelo preventivo?",
+    "options": [
+      "Priorizar exclusivamente expedientes con respuesta rápida para aumentar el porcentaje de cierres.",
+      "Relacionar lineamientos y planes institucionales con magnitud, urgencia, derechos comprometidos y capacidad de actuación, documentando las razones y el seguimiento.",
+      "Delegar la priorización a la preferencia personal de cada operador sin registrar criterios comunes."
     ],
-    rationales: [
-      'La declaración del proveedor no resuelve por sí sola cumplimiento, riesgo ni soporte para pago.',
-      'Separa contratos, hechos, prueba y competencias; permite evaluar responsabilidades a partir de sus presupuestos propios.',
-      'Ni el siniestro ni su eventual relación con una operación temporal convierten al supervisor en responsable automático de otro régimen.',
+    "rationales": [
+      "Facilidad de cierre no equivale a importancia preventiva.",
+      "La priorización debe atender los planes y la magnitud de los riesgos conforme al art. 9.",
+      "Flexibilidad no equivale a discrecionalidad sin criterios ni procedimientos."
     ],
-    correctOptionId: 'b',
-    explanation: 'En el 3PU-15 interesa identificar deberes de supervisión, control de soportes, posibles omisiones y límites de competencia. No se pretende examinar aquí el cálculo de tributos o sanciones aduaneras.',
-  }],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Resolución PGN 132/2014 arts. 4, 9, 12–24. La priorización debe atender los planes y la magnitud de los riesgos conforme al art. 9. Primera alternativa incorrecta: Facilidad de cierre no equivale a importancia preventiva. Segunda alternativa incorrecta: Flexibilidad no equivale a discrecionalidad sin criterios ni procedimientos."
+  }
+],
+  'pgn-m47': [
+  {
+    "number": 1,
+    "caseText": "Una entidad reporta un control de revisión mensual de pagos que figura en su matriz de riesgos. En una muestra de seis meses solo hay constancia de revisión en dos, y los registros de excepción no tienen responsable asignado. El jefe sostiene que el riesgo residual es bajo porque el control está aprobado en un procedimiento institucional y se encuentra publicado en la intranet.",
+    "stem": "¿Qué debe revisar el profesional para valorar la capacidad real del control?",
+    "options": [
+      "Distinguir diseño y operación efectiva, verificar frecuencia, responsables, evidencia y excepciones, y reevaluar el riesgo residual con los resultados observados.",
+      "Calificar el control como plenamente eficaz por existir un procedimiento publicado, sin revisar su ejecución.",
+      "Declarar que todos los pagos son irregulares por ausencia de cuatro constancias, sin revisar las operaciones ni otras evidencias."
+    ],
+    "rationales": [
+      "La existencia formal de un control no prueba su funcionamiento ni reducción del riesgo.",
+      "Un documento aprobado no sustituye la evidencia de ejecución.",
+      "La ausencia de constancia es una alerta, no prueba automática de irregularidad de cada pago."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Resolución PGN 132/2014 arts. 10 y 24; Decreto 1499/2017; Constitución art. 209. La existencia formal de un control no prueba su funcionamiento ni reducción del riesgo. Primera alternativa incorrecta: Un documento aprobado no sustituye la evidencia de ejecución. Segunda alternativa incorrecta: La ausencia de constancia es una alerta, no prueba automática de irregularidad de cada pago."
+  }
+],
+  'pgn-m48': [
+  {
+    "number": 1,
+    "caseText": "Un agente del Ministerio Público recibe una providencia que podría afectar derechos fundamentales. El equipo prepara un escrito de impugnación copiando el término y la denominación de un recurso disciplinario, sin verificar la jurisdicción ni el trámite judicial específico. El expediente contiene constancia de notificación y el profesional dispone de la norma procesal aplicable.",
+    "stem": "¿Qué control debe hacerse antes de recomendar o preparar el recurso?",
+    "options": [
+      "Aplicar el término del Código General Disciplinario porque todo recurso presentado por la PGN se rige por él.",
+      "Presentar cualquier recurso sin revisar procedencia porque defender derechos fundamentales permite desconocer las reglas del proceso.",
+      "Verificar competencia y legitimación del agente, naturaleza del acto, recurso previsto en ese régimen, oportunidad y fundamento, y entregar al agente el proyecto sustentado."
+    ],
+    "rationales": [
+      "El régimen disciplinario no se aplica universalmente a la intervención judicial.",
+      "La finalidad constitucional no crea recursos inexistentes.",
+      "La habilitación procesal depende de la actuación y la jurisdicción, no de la identidad institucional."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Constitución arts. 118, 277.7 y 278; Decreto Ley 262/2000; CPACA art. 303. La habilitación procesal depende de la actuación y la jurisdicción, no de la identidad institucional. Primera alternativa incorrecta: El régimen disciplinario no se aplica universalmente a la intervención judicial. Segunda alternativa incorrecta: La finalidad constitucional no crea recursos inexistentes."
+  }
+],
+  'pgn-m49': [
+  {
+    "number": 1,
+    "caseText": "Una petición solicita actuación urgente ante una amenaza documentada a la integridad de una persona. La oficina tiene información suficiente para identificar el riesgo y la autoridad que debe intervenir, pero el trámite general tiene un plazo ordinario de respuesta. El responsable propone limitarse a asignar la petición a la cola normal sin valorar las circunstancias ni documentar medidas inmediatas.",
+    "stem": "¿Qué ruta debe examinarse para responder de manera adecuada al riesgo?",
+    "options": [
+      "Aplicar exclusivamente el plazo general sin examinar el riesgo, porque toda petición recibe idéntico tratamiento.",
+      "Verificar el supuesto de atención prioritaria y peligro inminente del art. 20 de Ley 1755, activar medidas y remisión dentro de competencia y documentar la atención.",
+      "Resolver directamente cualquier medida reservada a otra autoridad por el solo hecho de existir urgencia."
+    ],
+    "rationales": [
+      "El término general no elimina el deber de atención prioritaria cuando procede.",
+      "La atención prioritaria exige valorar las condiciones del caso y actuar dentro de competencia.",
+      "La urgencia no crea atribuciones ajenas."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Constitución arts. 13 y 23; Leyes 1618/2013, 1755/2015, 1581/2012 y 2365/2024. La atención prioritaria exige valorar las condiciones del caso y actuar dentro de competencia. Primera alternativa incorrecta: El término general no elimina el deber de atención prioritaria cuando procede. Segunda alternativa incorrecta: La urgencia no crea atribuciones ajenas."
+  }
+],
+  'pgn-m50': [
+  {
+    "number": 1,
+    "caseText": "La PGN revisa un contrato cuyo objeto está definido y firmado por las partes. El expediente contiene un certificado de disponibilidad presupuestal, pero no acredita todos los requisitos de ejecución aplicables, y la garantía exigida aún no fue aprobada. El supervisor propone aceptar la prestación porque considera que perfeccionamiento y autorización de ejecución son una sola etapa jurídica.",
+    "stem": "¿Qué distinción debe señalar el informe preventivo antes de recomendar el inicio?",
+    "options": [
+      "Diferenciar perfeccionamiento de requisitos de ejecución y verificar los soportes presupuestales y aprobación de garantía exigibles antes de la prestación.",
+      "Tratar la firma como autorización suficiente de ejecución sin verificar otros presupuestos.",
+      "Considerar inexistente todo contrato firmado que todavía no tenga acta de inicio, sin examinar el art. 41."
+    ],
+    "rationales": [
+      "La celebración y la ejecución tienen presupuestos diferenciados.",
+      "La firma no sustituye requisitos adicionales de ejecución.",
+      "La falta de inicio no implica automáticamente falta de perfeccionamiento."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Ley 80/1993 arts. 23–26, 40–43; Ley 1150/2007 art. 2; Decreto 1082/2015. La celebración y la ejecución tienen presupuestos diferenciados. Primera alternativa incorrecta: La firma no sustituye requisitos adicionales de ejecución. Segunda alternativa incorrecta: La falta de inicio no implica automáticamente falta de perfeccionamiento."
+  }
+],
+  'pgn-m51': [
+  {
+    "number": 1,
+    "caseText": "Una veeduría advierte que un pliego exige una certificación que solo posee un proveedor conocido. Los estudios no explican su necesidad, pero la entidad aporta después un informe técnico que describe riesgos de interoperabilidad y menciona alternativas equivalentes aún no evaluadas. Se acerca el cierre y la PGN debe valorar la alerta sin asumir la evaluación de las ofertas.",
+    "stem": "¿Qué actuación preventiva corresponde frente al requisito cuestionado y la nueva información?",
+    "options": [
+      "Concluir corrupción y ordenar la exclusión del proveedor que posee la certificación sin investigar hechos ni competencia.",
+      "Aceptar el requisito sin análisis adicional porque existe un informe técnico, aunque no haya evaluado alternativas.",
+      "Contrastar necesidad, proporcionalidad y alternativas, pedir justificación y corrección publicada cuando proceda, y verificar el efecto competitivo sin declarar direccionamiento probado."
+    ],
+    "rationales": [
+      "La señal de riesgo no demuestra responsabilidad ni habilita excluir oferentes desde PGN.",
+      "La mera existencia de un informe no acredita proporcionalidad.",
+      "La selección objetiva requiere justificación verificable de requisitos; el informe nuevo debe contrastarse."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Ley 80/1993 arts. 24–25; Ley 1150/2007 art. 5; Decreto 1082/2015. La selección objetiva requiere justificación verificable de requisitos; el informe nuevo debe contrastarse. Primera alternativa incorrecta: La señal de riesgo no demuestra responsabilidad ni habilita excluir oferentes desde PGN. Segunda alternativa incorrecta: La mera existencia de un informe no acredita proporcionalidad."
+  }
+],
+  'pgn-m52': [
+  {
+    "number": 1,
+    "caseText": "Un supervisor encuentra que el contratista no entregó dos productos dentro del plazo pactado y presenta informe con documentos y comunicaciones. El ordenador solicita descontar inmediatamente una multa de la factura, sin citar a audiencia al contratista ni al garante cuando corresponda. El expediente incluye cláusula de multas y la entidad está sometida al procedimiento del artículo 86 de la Ley 1474.",
+    "stem": "¿Qué ruta distingue informe de supervisión y decisión sancionatoria contractual?",
+    "options": [
+      "Descontar la multa con la sola firma del supervisor porque el informe prueba automáticamente el incumplimiento sancionable.",
+      "Remitir el informe sustentado a la autoridad competente y tramitar la audiencia con garantías, prueba y decisión motivada, reconociendo el recurso previsto.",
+      "Omitir toda actuación contractual porque únicamente un juez puede conocer incumplimientos de contratos estatales."
+    ],
+    "rationales": [
+      "La certificación o informe no sustituye el debido proceso.",
+      "El art. 86 regula el procedimiento con audiencia y decisión competente; el informe es soporte.",
+      "La entidad habilitada puede ejercer facultades contractuales conforme a ley."
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fundamento: Ley 1474/2011 arts. 83–86; Ley 80/1993 art. 40; Ley 1150/2007 art. 17. El art. 86 regula el procedimiento con audiencia y decisión competente; el informe es soporte. Primera alternativa incorrecta: La certificación o informe no sustituye el debido proceso. Segunda alternativa incorrecta: La entidad habilitada puede ejercer facultades contractuales conforme a ley."
+  }
+],
+  'pgn-m53': [
+  {
+    "number": 1,
+    "caseText": "Un integrante de una unión temporal incurre en una inhabilidad sobreviniente bajo la regla general del artículo 9. Los demás miembros ofrecen recibir directamente su participación y solicitan aprobación para redistribuirla entre ellos. El expediente no acredita excepción especial y la entidad debe revisar el mecanismo antes de adoptar una decisión sobre la continuidad del contrato.",
+    "stem": "¿Cuál alternativa corresponde al supuesto específico de integrante de unión temporal?",
+    "options": [
+      "Examinar cesión de la participación a un tercero habilitado con autorización escrita de la entidad, sin permitir cesión entre integrantes de la unión temporal.",
+      "Redistribuir libremente la participación entre miembros porque la unión temporal ya fue seleccionada.",
+      "Ordenar automáticamente liquidar todo el contrato sin evaluar la solución prevista por el art. 9."
+    ],
+    "rationales": [
+      "El art. 9 contempla cesión a tercero y prohíbe cesión entre miembros.",
+      "La selección anterior no elimina la restricción sobre la cesión.",
+      "El supuesto legal prevé una alternativa a la terminación automática."
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fundamento: Ley 80/1993 arts. 8–9; CPACA arts. 11–12; CGD art. 44. El art. 9 contempla cesión a tercero y prohíbe cesión entre miembros. Primera alternativa incorrecta: La selección anterior no elimina la restricción sobre la cesión. Segunda alternativa incorrecta: El supuesto legal prevé una alternativa a la terminación automática."
+  }
+],
+  'pgn-m54': [
+  {
+    "number": 1,
+    "caseText": "Una entidad recibe denuncias por un patrón de pagos atípicos y las registra en un archivo accesible a todo el personal, con nombres y teléfonos de informantes. El equipo de riesgos identifica operaciones que requieren contraste documental, pero su director quiere publicar los datos completos y clasificar como responsables a quienes figuran en el tablero antes de revisar los soportes.",
+    "stem": "¿Qué actuación concilia transparencia, protección de información y análisis de señales?",
+    "options": [
+      "Difundir todos los identificadores y etiquetas de responsabilidad porque la transparencia prevalece sin excepción.",
+      "Eliminar las denuncias y no revisar pagos porque la información contiene datos personales.",
+      "Restringir datos protegidos, preservar fuentes y verificar operaciones y controles; comunicar resultados agregados cuando proceda y canalizar hechos relevantes por competencia."
+    ],
+    "rationales": [
+      "La publicidad no elimina restricciones ni permite prejuzgar.",
+      "La protección de datos no exige destruir información útil legalmente custodiada.",
+      "Transparencia y protección de datos coexisten; la señal requiere análisis y ruta competente."
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fundamento: Ley 1474/2011 art. 73 modificado por Ley 2195/2022 art. 31; Decreto 1122/2024; Ley 1712/2014. Transparencia y protección de datos coexisten; la señal requiere análisis y ruta competente. Primera alternativa incorrecta: La publicidad no elimina restricciones ni permite prejuzgar. Segunda alternativa incorrecta: La protección de datos no exige destruir información útil legalmente custodiada."
+  }
+],
   'pgn-m61': [{
     number: 1,
     caseText: 'Un sistema institucional registra una modificación irregular desde una dirección IP que corresponde a la red de una sede. La salida a internet utiliza NAT, hay usuarios conectados por VPN y una cuenta de servicio es compartida por varias tareas automáticas. La jefatura solicita identificar al responsable y propone asociar la IP con el último usuario registrado en la portería del edificio. Existe información de autenticación multifactor y sesiones que aún no se ha correlacionado.',
