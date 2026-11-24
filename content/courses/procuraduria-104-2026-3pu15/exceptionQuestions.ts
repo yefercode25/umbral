@@ -3455,22 +3455,22 @@ const scenarios: Omit<Question, 'skillIds'>[] = [
     "scenarioId": "pgn-exception-calendario-recursos",
     "type": "pjs",
     "difficulty": 5,
-    "case": "Una providencia recurrible en reposición se notifica personalmente el viernes 6 de noviembre de 2026. La oficina trabaja lunes a viernes; el lunes 9 es festivo y los días 10, 11, 12, 13 y 16 son hábiles para el supuesto didáctico (se asume expresamente que el 16 no es inhábil en este calendario hipotético). No hubo suspensión.",
+    "case": "Una providencia recurrible en reposición se notifica personalmente el viernes 13 de noviembre de 2026. La oficina trabaja de lunes a viernes; el lunes 16 es festivo por traslado de la celebración de la Independencia de Cartagena. Los días 17, 18, 19, 20 y 23 son hábiles según el calendario del despacho. No hubo suspensión ni otra regla especial.",
     "stem": "¿Cuál es el quinto día hábil posterior a la notificación según el calendario dado?",
     "options": [
       {
         "id": "a",
-        "text": "Lunes 16: los días computables son 10, 11, 12, 13 y 16; se excluye la notificación y los inhábiles.",
+        "text": "Lunes 23: los días computables son 17, 18, 19, 20 y 23; se excluye la notificación y los inhábiles.",
         "rationale": "El artículo 131 fija cinco días y el calendario del ejercicio excluye los inhábiles."
       },
       {
         "id": "b",
-        "text": "Viernes 13: se incluyen el lunes festivo y los cuatro días hábiles siguientes, porque el plazo comienza el lunes.",
+        "text": "Viernes 20: se incluyen el lunes festivo y los cuatro días hábiles siguientes, porque el plazo comienza el lunes.",
         "rationale": "El día festivo dado no integra el cómputo de días hábiles."
       },
       {
         "id": "c",
-        "text": "Jueves 12: se cuenta el fin de semana inmediato como parte del plazo de cinco días desde el siguiente día calendario.",
+        "text": "Jueves 19: se cuenta el fin de semana inmediato como parte del plazo de cinco días desde el siguiente día calendario.",
         "rationale": "Los fines de semana inhábiles no se cuentan en el plazo ordinario de días."
       }
     ],
