@@ -77,10 +77,10 @@ export function LessonPage() {
       <div className={styles.lessonMeta}><span>{module.title}</span><span><Clock3 size={14}/> {lesson.durationMinutes} min</span></div>
       <h1>{lesson.title}</h1><p className={styles.subtitle}>{lesson.subtitle}</p>
       <LessonNarrator course={course} lesson={lesson} />
-      <LessonRenderer key={`${course.id}:${lesson.id}`} course={course} blocks={lesson.blocks} moduleId={module.id} lessonOrder={lesson.order} deferCheckpoints={isPgn}/>
-      {isPgn && <LessonAssessment key={`${course.id}:${lesson.id}`} course={course} lesson={lesson}
+      <LessonRenderer key={`reading:${course.id}:${lesson.id}`} course={course} blocks={lesson.blocks} moduleId={module.id} lessonOrder={lesson.order} deferCheckpoints={isPgn}/>
+      {isPgn && <LessonAssessment key={`assessment:${course.id}:${lesson.id}`} course={course} lesson={lesson}
         alreadyCompleted={alreadyCompleted} assessmentPassed={assessmentPassed}/>}
-      <LessonQuickReview key={`${course.id}:${lesson.id}`} course={course} lesson={lesson} />
+      <LessonQuickReview key={`notes:${course.id}:${lesson.id}`} course={course} lesson={lesson} />
       <div className={styles.finish}>
         <div>
           <span>Lección {index+1} de {allPublished.length}</span>

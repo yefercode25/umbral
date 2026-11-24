@@ -92,6 +92,7 @@ test('Simulacro integral PGN no muestra pistas antes de entregar', async ({page}
 test('PGN: cinco preguntas por lección, reintento, aprobación y progreso persistente', async ({ page }) => {
   const errors = []
   page.on('pageerror', error => errors.push(error.message))
+  page.on('console', message => { if (message.type() === 'error' && /same key|unique.*key/i.test(message.text())) errors.push(message.text()) })
   await page.goto(mock(DIAN))
   await expect.poll(async () => Boolean((await readCourses(page))[DIAN])).toBe(true)
   const beforeDian = (await readCourses(page))[DIAN]
@@ -129,7 +130,11 @@ test('PGN: cinco preguntas por lección, reintento, aprobación y progreso persi
   await expect(review.getByText(/Tu aprobación quedó guardada/)).toBeVisible()
   await finish.click()
   await expect(page).toHaveURL(/\/lesson\/pgn-m24-l2$/)
-  await expect(page.getByRole('region', { name: 'Comprueba lo aprendido' }).locator('fieldset')).toHaveCount(5)
+  await expect(review).toHaveCount(1)
+  await expect(review.locator('fieldset')).toHaveCount(5)
+  await expect(review.locator('input[name="pgn-m24-q1"]')).toHaveCount(0)
+  await expect(review.locator('input[name="pgn-m24-q3"]')).toHaveCount(3)
+  await expect(finish).toBeDisabled()
   expect((await readCourses(page))[PGN].lessons[lessonId].status).toBe('completed')
   await page.goto(route)
   await expect(finish).toBeEnabled()

@@ -26,6 +26,7 @@ export function LessonAssessment({ course, lesson, alreadyCompleted, assessmentP
   const answered = questions.filter(q => Boolean(selected[q.id])).length
   const canSubmit = questions.length === LESSON_REVIEW_COUNT && answered === LESSON_REVIEW_COUNT && !result
   const module = course.modules.find(m => m.id === lesson.moduleId)
+  const headingId = `pgn-lesson-assessment-${lesson.id}`
 
   const submit = () => {
     if (!canSubmit) return
@@ -51,11 +52,11 @@ export function LessonAssessment({ course, lesson, alreadyCompleted, assessmentP
 
   if (questions.length !== LESSON_REVIEW_COUNT) return <section className={styles.review} role="alert">No se pudo cargar la evaluación de esta lección. Vuelve a abrirla antes de continuar.</section>
 
-  return <section className={styles.review} aria-labelledby="pgn-module-review">
+  return <section className={styles.review} aria-labelledby={headingId}>
     <div className={styles.heading}>
       <div>
         <span className={styles.eyebrow}>{lesson.order === 3 ? 'CIERRE ACUMULATIVO' : `LECCIÓN ${lesson.order} · EVALUACIÓN`} · {module?.code ?? lesson.moduleId.toUpperCase()}</span>
-        <h2 id="pgn-module-review">Comprueba lo aprendido</h2>
+        <h2 id={headingId}>Comprueba lo aprendido</h2>
         <p>Resuelve cinco preguntas sobre los conceptos y casos del módulo. {lesson.order === 3 ? 'Este cierre recupera lo estudiado en las tres lecciones.' : 'Aplica lo estudiado hasta este punto.'} Necesitas cuatro aciertos de cinco; la corrección aparece al entregar.</p>
       </div>
       <span className={styles.counter}>{answered}/{LESSON_REVIEW_COUNT}</span>
