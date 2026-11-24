@@ -1,0 +1,39 @@
+# RC.8 · Revisión de plantillas, lote 1A (M25–M26)
+Base: RC.7, 1212 evaluables, 447 de redacción individual y 765 de la cohorte histórica de plantillas. CI RC.7: 164 correctas pronunciadamente largas en esa cohorte; 0 en la cohorte individual. Este commit revisa 18/765 (2,35 %), nueve por módulo. No añade ni elimina preguntas, no cambia clave, ID, dificultad, habilidades, lecciones ni almacenamiento. La clasificación histórica de selección de simulacros sigue intacta; los casos revisados mantienen acceso de práctica y se auditan separadamente.
+ 
+| Módulo | Reactivos | Controles |
+|---|---:|---|
+| M25 | 9 | Noticia, anonimato, competencia, inhibitoria, temeridad, remisión penal |
+| M26 | 9 | Presupuesto de indagación, término, archivo, cosa juzgada, prueba de identidad |
+
+Se sustituyen frases repetidas por supuestos concretos, distractores de figuras vecinas y racionales propios. Regresión de clave histórica y señal simétrica de longitud. No equivale a calibración psicométrica. Fuentes: [CGD consolidado PGN](https://apps.procuraduria.gov.co/normograma/compilacion/docs/ley_1952_2019.htm), [Ley 2094](https://apps.procuraduria.gov.co/normograma/compilacion/docs/ley_2094_2021.htm). Pendientes 747 plantillas; guía oficial individual pendiente. DIAN intacto.
+
+## Lote 1B (M27–M28)
+18 reactivos adicionales; acumulado 36/765 (4,71 %), quedan 729. M27: cómputo de investigación, pluralidad, ampliación, cierre anticipado, objeto, imparcialidad, versión libre, ruptura y contenido de apertura. M28: calidad y facultades de los sujetos, víctimas de acoso laboral, defensa técnica, prueba durante notificación, reserva, versión libre, recursos del quejoso y silencio. CGD arts. 90, 109–115, 147–148, 161, 211–215, 222; fuente consolidada PGN. Mantiene claves, estructura y cohortes históricas de simulacro. Regresión acumulativa de 36 casos.
+
+## Lote 1C (M29–M30)
+18 reactivos adicionales; acumulado 54/765 (7,06 %), quedan 711. M29: cierre, plazo y efectos de alegatos, diferencia entre alegatos y descargos, prueba pendiente y evaluación posterior. M30: estándar de cargos, falta de prueba personal, contenido del pliego, ilicitud, valoración individual, recursos, cosa juzgada, comunicación y remisión. CGD arts. 9–12, 90, 110–112, 133–134, 147–148, 160–161, 213, 220–225, 225B y 225E; consulta del texto consolidado PGN. Conserva claves y agrega regresión acumulativa de 54 casos.
+
+## Lote 1D (M31–M32)
+18 reactivos adicionales; acumulado 72/765 (9,41 %), quedan 693. M31: notificación personal, aceptación electrónica, conducta concluyente, recursos por etapa, plazo especial del fallo ordinario, queja y no agravación. M32: trascendencia, competencia, carga, oficio, alcance, pruebas válidas, oportunidad, resolución y recurso. CGD arts. 111, 120–138, 202–207, 225B y 225G; C-570/2019. Regresión acumulativa de 72 casos; se preserva la clave histórica.
+
+## Lote 1E (M33–M34)
+18 reactivos adicionales; acumulado 90/765 (11,76 %), quedan 675. M33: comisión fuera de sede, límites de comisión, pruebas derivadas, ampliación, remisión electrónica, notificación comisionada. M34: separación funcional, integridad de entrega, elección de juicio, variación de cargos por error frente a prueba sobreviniente, confesión y valoración independiente. CGD arts. 12–14, 90, 124, 127, 148, 152, 160–162, 202–203, 223, 225, 225A y 225D; consulta de compilación oficial PGN. Se añade referencia C-570/2019 al reactivo pertinente del lote previo. Regresión acumulativa de 90 casos; no se cambia selección de simulacros.
+
+## Lote 1F (M20–M22)
+27 reactivos adicionales; acumulado 117/765 (15,29 %), quedan 648. M20: principios, favorabilidad, independencia, culpabilidad, igualdad, exclusión, presunción y cosa juzgada. M21: destinatarios retirados, particulares, recursos, conexidad y extinción. M22: acción/omisión, dolo, culpa, error, fuerza mayor, deber prevalente, orden legítima y orden interno. Contraste: [CGD consolidado PGN](https://apps.procuraduria.gov.co/normograma/compilacion/docs/ley_1952_2019.htm), arts. 2–21, 24–32, 68–72, 92, 147, 158 y 160. Se mantienen IDs, claves, metadatos y selección histórica.
+
+## Lote 1G (M23–M24)
+18 adicionales; acumulado 135/765 (17,65 %), quedan 630. Cierra M20–M34 (15 módulos). M23: interés particular/directo, impedimento y recusación, términos, suspensión, deberes, designación y revisión. M24: puntos iniciales por tipo de conducta, cómputo independiente, notificación interruptiva, reclasificación, sanciones y prescripción de sanción. Contraste CGD consolidado PGN, arts. 33, 36, 38, 40, 44, 47–48, 56, 104–108. Los ejercicios temporales suponen expresamente el régimen vigente del art. 33 desde el 29/12/2023. No se cambia selección histórica de simulacros.
+
+## Lote 2A (M35–M37)
+27 adicionales; acumulado 162/765 (21,18 %), quedan 603. M35: necesidad, carga, imparcialidad, oficiosidad, libertad probatoria, indicios y certeza. M36: pertinencia, conducencia, utilidad, superfluidad, límites de recaudo y prueba ilegal. M37: exclusión, inexistencia, contradicción, traslado de actuaciones penales y administrativas, fuentes independientes. Contraste CGD consolidado PGN arts. 14, 21, 147–160, 205 y 222. Se mantiene selección histórica y se incorporan racionales individuales.
+
+## Lote 2B (M38–M39)
+18 adicionales; acumulado 180/765 (23,53 %), quedan 585. M38: priorización por riesgo de pérdida, matrices, preguntas discriminantes, cronología y actualización por hechos nuevos. M39: independencia de fuentes, indicios, motivación, contradicciones, inferencia de autoría, modalidad subjetiva y enfoque diferencial del art. 160A (Ley 2365/2024). Contraste CGD consolidado arts. 9–10, 27–31, 147–160A, 213. Se distingue el método analítico de las reglas legales. Mantiene claves y selección histórica.
+
+## Lote 2C (M40–M41)
+18 adicionales; acumulado 198/765 (25,88 %), quedan 567. M40: noticia y anexos, original/copia, autenticidad, documentos reservados, requerimientos, tacha, informes y mensajes de datos. M41: excepción constitucional, renuencia, secreto profesional, examen separado, interrogatorio, certificación, requisitos y oportunidad de confesión. CGD arts. 149, 159, 161–175, 187–195 y Ley 527/1999 arts. 10–11 ([Gestor Normativo](https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=4276)). Mantiene claves y selección histórica.
+
+## Lote 2D (M42–M44)
+27 adicionales; acumulado 225/765 (29,41 %), quedan 540. Cierra derecho probatorio M35–M44 (90 reactivos). M42: idoneidad, corrección, traslado, objeción, discrepancia, responsabilidad, impedimentos y valoración de dictámenes. M43: decreto de inspección, ampliación, testimonios, cadena de custodia, designación y traslado. M44: integridad, alcance de hash, custodia, UTC, preservación, discrepancias, legalidad, transformación y reproducibilidad. Contraste CGD arts. 21, 148–159, 177–186; referencias técnicas (no normas procesales colombianas) [NIST SP 800-86](https://csrc.nist.gov/pubs/sp/800/86/final) y [NIST SP 800-92](https://csrc.nist.gov/pubs/sp/800/92/final). Mantiene claves y selección histórica.
