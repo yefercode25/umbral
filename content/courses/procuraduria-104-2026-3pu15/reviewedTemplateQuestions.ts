@@ -6166,6 +6166,691 @@ const reviewed: Record<string, readonly ReviewedItem[]> = {
       ],
       "CGD art. 12; Decreto Ley 1851/2021"
     ]
+  ],
+  "pgn-m10": [
+    [
+      "Una entidad prepara material de orientación ciudadana y presenta a la Procuraduría como un ministerio encargado de dirigir las políticas del Gobierno. El equipo necesita corregir esa ubicación institucional antes de publicar el material.",
+      "¿Qué naturaleza constitucional corresponde a la Procuraduría?",
+      [
+        "Es un organismo del Ministerio Público con atribuciones constitucionales propias.",
+        "Es un ministerio ejecutivo encargado de coordinar el control administrativo.",
+        "Es una dependencia judicial que resuelve controversias entre ciudadanos y autoridades."
+      ],
+      [
+        "La PGN pertenece al Ministerio Público.",
+        "No integra el Gobierno nacional.",
+        "La potestad disciplinaria no la convierte en órgano judicial."
+      ],
+      "Constitución arts. 117–118, 275–277"
+    ],
+    [
+      "Un municipio advierte que una falla de planeación amenaza la continuidad de un servicio esencial. Todavía no existe una falta consumada acreditada y la Procuraduría puede ejercer vigilancia dentro de las atribuciones de la dependencia competente.",
+      "¿Qué función permite examinar el riesgo antes de que se materialice?",
+      [
+        "Función preventiva y de control de gestión dentro de las atribuciones legales.",
+        "Función disciplinaria mediante declaración anticipada de responsabilidad individual.",
+        "Función de intervención mediante sustitución de decisiones administrativas municipales."
+      ],
+      [
+        "Prevenir permite actuar antes de consumarse el daño.",
+        "No es sanción anticipada.",
+        "La intervención no sustituye la administración."
+      ],
+      "Constitución art. 277; Guía Preventiva PGN"
+    ],
+    [
+      "Un agente del Ministerio Público participa en un proceso judicial en el que se discute una afectación a derechos fundamentales. Presenta argumentos sustentados para que la autoridad judicial considere una medida prevista por la ley.",
+      "¿Qué función constitucional ejerce en esa participación ante el órgano judicial?",
+      [
+        "Intervención en defensa del orden jurídico, patrimonio público o derechos fundamentales.",
+        "Investigación disciplinaria dirigida a sancionar al funcionario que conoce el proceso.",
+        "Control fiscal destinado a decidir responsabilidad patrimonial de los litigantes."
+      ],
+      [
+        "El art. 277.7 prevé esa intervención.",
+        "Participar no equivale a investigar al juez.",
+        "El agente no decide responsabilidad fiscal."
+      ],
+      "Constitución art. 277.7"
+    ],
+    [
+      "Una oficina recibe un informe con dos componentes: una posible interrupción futura del servicio de salud y documentos sobre una omisión funcional ya ocurrida. Ambos asuntos pueden corresponder a atribuciones diferentes de Procuraduría.",
+      "¿Qué tratamiento permite ejercer las funciones misionales sin confundir sus propósitos?",
+      [
+        "Evaluar rutas preventiva y disciplinaria separadamente y articular información pertinente.",
+        "Abrir únicamente investigación y esperar el fallo para evaluar el riesgo.",
+        "Declarar responsabilidad dentro del informe preventivo para evitar actuaciones separadas."
+      ],
+      [
+        "Las rutas pueden concurrir con objetos y garantías diferentes.",
+        "La prevención no depende de sanción.",
+        "El informe preventivo no declara responsabilidad."
+      ],
+      "Constitución art. 277; Decreto Ley 262/2000"
+    ],
+    [
+      "Una queja identificada narra hechos concretos de posible incumplimiento de deberes de un servidor. El responsable de atención propone clasificarla exclusivamente como solicitud de orientación y no remitirla para evaluación disciplinaria.",
+      "¿Qué debe examinar el operador frente a los hechos concretos narrados?",
+      [
+        "Si existe noticia disciplinaria y qué autoridad resulta competente para evaluarla.",
+        "Si el ciudadano solicitó una sanción, único supuesto de inicio disciplinario.",
+        "Si la conducta produjo daño fiscal, presupuesto de toda acción disciplinaria."
+      ],
+      [
+        "La relevancia y competencia orientan la noticia.",
+        "También puede iniciarse de oficio o por informe.",
+        "No toda falta exige daño patrimonial."
+      ],
+      "Constitución art. 277.6; CGD arts. 85–87"
+    ],
+    [
+      "Una dependencia de la PGN conoce la existencia de un proceso contencioso sobre un acto administrativo. Su equipo preventivo desea solicitar una medida al juez en nombre de toda la entidad, sin revisar la habilitación procesal correspondiente.",
+      "¿Qué presupuesto debe verificar antes de intervenir en ese proceso judicial?",
+      [
+        "Competencia del agente, proceso, etapa y facultades legalmente previstas.",
+        "Pertenencia de los funcionarios a la planta de personal de Procuraduría.",
+        "Existencia de cualquier alerta preventiva que habilite toda intervención judicial."
+      ],
+      [
+        "La intervención requiere atribución procesal.",
+        "Pertenecer a PGN no otorga todas las competencias.",
+        "La alerta no sustituye las reglas procesales."
+      ],
+      "Constitución art. 277.7; CPACA art. 303"
+    ],
+    [
+      "Una entidad vigilada ejecuta las medidas correctivas solicitadas durante una actuación preventiva y entrega soportes de reducción del riesgo. El expediente conserva además información sobre una posible omisión funcional anterior que no se ha evaluado disciplinariamente.",
+      "¿Qué efecto tiene la corrección frente a la eventual falta anterior?",
+      [
+        "Verificar el resultado preventivo sin concluir automáticamente que desapareció la relevancia disciplinaria.",
+        "Archivar toda noticia previa porque la entidad corrigió la situación administrativa.",
+        "Sancionar al servidor porque la corrección confirma necesariamente una falta anterior."
+      ],
+      [
+        "El resultado preventivo no resuelve por sí solo otra actuación.",
+        "Corregir no extingue automáticamente una posible falta.",
+        "La mejora no demuestra responsabilidad."
+      ],
+      "Constitución art. 277; CGD arts. 9–10, 147"
+    ],
+    [
+      "En una vigilancia preventiva surge un documento que individualiza al posible autor de una conducta disciplinariamente relevante. El funcionario preventivo no tiene competencia de instrucción, pero dispone de canales institucionales para entregar la información.",
+      "¿Cómo debe gestionar esa información dentro del límite de su función?",
+      [
+        "Preservar los soportes y remitir a la autoridad disciplinaria competente.",
+        "Formular cargos dentro del expediente preventivo al conocer la identidad del autor.",
+        "Retener la información hasta finalizar toda la actuación preventiva de vigilancia."
+      ],
+      [
+        "El servidor sin competencia informa a quien corresponda.",
+        "La identidad no habilita cargos desde prevención.",
+        "No se exige esperar el cierre preventivo."
+      ],
+      "CGD arts. 87, 211–222"
+    ],
+    [
+      "Dos informes institucionales presentan cifras incompatibles sobre el mismo riesgo. El operador debe decidir si emite un requerimiento preventivo motivado y existe tiempo para comprobar las definiciones, fechas de corte y fuentes originales.",
+      "¿Qué actuación conserva el fundamento y los límites de la prevención?",
+      [
+        "Contrastar fuentes y distinguir hechos comprobados de incertidumbres al motivar la advertencia.",
+        "Seleccionar la cifra más alta para justificar la actuación más intensa.",
+        "Suspender toda vigilancia porque los informes contienen datos que no coinciden."
+      ],
+      [
+        "La advertencia requiere información verificable.",
+        "La cifra mayor no es necesariamente confiable.",
+        "Discrepar exige contraste, no parálisis."
+      ],
+      "Constitución art. 277; Resolución PGN 132/2014"
+    ]
+  ],
+  "pgn-m11": [
+    [
+      "Un servidor de una dependencia central afirma que todas las procuradurías delegadas tienen competencia indistinta para conocer cualquier asunto disciplinario. El equipo de reparto necesita contrastar esa afirmación con la estructura institucional vigente.",
+      "¿Qué criterio debe utilizar al asignar asuntos a procuradurías delegadas?",
+      [
+        "Consultar especialidades y atribuciones de cada dependencia según las reglas orgánicas.",
+        "Distribuir indistintamente todos los casos entre las delegadas del nivel central.",
+        "Asignar cada caso a la delegada con menor cantidad de expedientes pendientes."
+      ],
+      [
+        "Las competencias están delimitadas normativamente.",
+        "El nivel central no crea competencia indistinta.",
+        "La carga de trabajo no sustituye la atribución legal."
+      ],
+      "Decreto Ley 262/2000; Decreto Ley 1851/2021"
+    ],
+    [
+      "La oficina prepara un organigrama funcional de la Procuraduría después de la reforma disciplinaria. El borrador incluye una sola categoría de procuradurías delegadas disciplinarias y atribuye a cada despacho todas las fases de un expediente.",
+      "¿Qué separación estructural debe reflejar el organigrama actualizado de la entidad?",
+      [
+        "Dependencias de instrucción y de juzgamiento con competencias diferenciadas.",
+        "Dependencias instructoras que formulan cargos y emiten el fallo del mismo asunto.",
+        "Dependencias exclusivamente territoriales, sin atribuciones disciplinarias del nivel central."
+      ],
+      [
+        "La estructura reformada distingue instrucción y juicio.",
+        "No se concentra acusación y fallo en el mismo funcionario.",
+        "Existen niveles central y territorial."
+      ],
+      "Decreto Ley 262/2000 art. 2; Decreto Ley 1851/2021 art. 1; CGD art. 12"
+    ],
+    [
+      "Una queja se presenta ante una procuraduría provincial por facilidad de acceso del ciudadano. El asunto puede corresponder a otra dependencia territorial debido a la calidad y nivel del servidor investigado y a la naturaleza de la conducta.",
+      "¿Qué diferencia debe reconocer entre la sede receptora y la competente?",
+      [
+        "Recibir la noticia no atribuye automáticamente competencia para adelantar el procedimiento.",
+        "Registrar primero el escrito del ciudadano atribuye competencia de fondo a la receptora.",
+        "La provincial desplaza a las regionales por proximidad al lugar de los hechos."
+      ],
+      [
+        "Recepción y conocimiento de fondo son distintos.",
+        "Registrar no crea potestades.",
+        "Las reglas orgánicas delimitan la competencia."
+      ],
+      "Decreto Ley 262/2000; Decreto Ley 1851/2021"
+    ],
+    [
+      "Una noticia describe hechos cometidos por una persona vinculada a una entidad pública. El reparto cuenta con el nombre y lugar de los hechos, pero desconoce el nivel del cargo, sus funciones y si existe una atribución disciplinaria especial.",
+      "¿Qué datos necesita completar antes de asignar el expediente para actuación sustancial?",
+      [
+        "Calidad y nivel del sujeto, materia, circunscripción, etapa y reglas especiales.",
+        "Residencia del denunciante y antigüedad del funcionario encargado del reparto.",
+        "Número de anexos y disponibilidad física de cada despacho de instrucción."
+      ],
+      [
+        "La competencia reúne factores subjetivos, funcionales y territoriales.",
+        "La residencia no resuelve el reparto.",
+        "La logística no sustituye las reglas normativas."
+      ],
+      "CGD arts. 91–98; Decreto Ley 262/2000"
+    ],
+    [
+      "El equipo identifica dos actuaciones que podrían estar relacionadas y se encuentran distribuidas en despachos territoriales diferentes. Una de ellas involucra servidores de un nivel sujeto a una regla orgánica especial de competencia.",
+      "¿Qué control precede a una eventual acumulación o redistribución de expedientes?",
+      [
+        "Verificar conexidad y normas que atribuyen conocimiento de los asuntos relacionados.",
+        "Acumular siempre en la dependencia que inició primero su actuación disciplinaria.",
+        "Distribuir ambos expedientes a la sede más cercana a los hechos."
+      ],
+      [
+        "La conexidad requiere presupuestos y atribuciones.",
+        "La prioridad cronológica no desplaza la ley.",
+        "La distancia no resuelve competencia funcional."
+      ],
+      "CGD arts. 91–98; Decreto Ley 262/2000"
+    ],
+    [
+      "Una dependencia de instrucción formula válidamente cargos y termina las notificaciones correspondientes. La secretaría prepara el reparto para continuar el procedimiento y propone dejar el asunto a la misma autoridad que formuló la acusación.",
+      "¿Qué debe verificar al asignar el expediente para juzgamiento?",
+      [
+        "La dependencia y el funcionario habilitados, distintos de quienes ejercieron instrucción.",
+        "La permanencia del instructor por haber tramitado la mayor parte del expediente.",
+        "La asignación al despacho que recibió inicialmente la noticia disciplinaria."
+      ],
+      [
+        "La fase siguiente exige separación y competencia.",
+        "La continuidad no elimina imparcialidad estructural.",
+        "La recepción no determina quién juzga."
+      ],
+      "CGD arts. 12, 225–225A; Decreto Ley 1851/2021"
+    ],
+    [
+      "Una procuraduría delegada recibe una petición para asumir un asunto actualmente conocido por una dependencia territorial. El solicitante invoca competencia preferente, pero no se han examinado las atribuciones ni las condiciones legales para ejercerla.",
+      "¿Qué límite debe observar antes de modificar el despacho competente?",
+      [
+        "Comprobar la habilitación específica y el procedimiento de esa competencia preferente.",
+        "Asumir todo expediente territorial por el rango superior de la delegada central.",
+        "Rechazar cualquier cambio porque una actuación iniciada nunca puede redistribuirse."
+      ],
+      [
+        "La preferencia requiere habilitación y condiciones.",
+        "El rango no atribuye cualquier asunto.",
+        "Existen mecanismos legales de reasignación."
+      ],
+      "Decreto Ley 262/2000; Decreto Ley 1851/2021"
+    ],
+    [
+      "Una dependencia territorial cuenta con un equipo técnico idóneo para practicar una prueba fuera de la sede del despacho competente. La oficina analiza si esa facilidad logística permite transferirle automáticamente toda la instrucción del expediente.",
+      "¿Qué figura permite diferenciar la diligencia del conocimiento del proceso completo?",
+      [
+        "La comisión encarga una diligencia delimitada sin transferir el conocimiento del asunto.",
+        "El reparto transfiere toda competencia mediante una solicitud de apoyo técnico.",
+        "La delegación verbal de una prueba otorga facultad para formular cargos y fallar."
+      ],
+      [
+        "La comisión tiene objeto específico.",
+        "Apoyo técnico no equivale a reparto.",
+        "No habilita decisiones ajenas al encargo."
+      ],
+      "CGD art. 152; Decreto Ley 262/2000"
+    ],
+    [
+      "Un profesional del empleo 3PU-15 recibe una asignación interna para analizar soportes y proyectar una recomendación en una investigación. La descripción del empleo incluye apoyo profesional, pero no se identifica atribución para adoptar la decisión final.",
+      "¿Qué alcance debe mantener el profesional al realizar el apoyo asignado?",
+      [
+        "Ejecutar el apoyo y someter la decisión a quien tenga competencia legal.",
+        "Suscribir la decisión final porque el manual contempla apoyo a la instrucción.",
+        "Transferir el asunto a otra dependencia por tratarse de una función jurídica."
+      ],
+      [
+        "Apoyar no sustituye competencia decisoria.",
+        "El perfil no confiere una potestad general.",
+        "Un profesional puede apoyar asuntos jurídicos dentro de su rol."
+      ],
+      "Convocatoria 104-2026 v4; Decreto Ley 262/2000"
+    ]
+  ],
+  "pgn-m12": [
+    [
+      "Una veeduría informa sobre una cláusula que puede restringir participación de oferentes en un proceso todavía no adjudicado. La información permite verificar el riesgo sin establecer que se haya producido una falta disciplinaria o un daño fiscal.",
+      "¿Qué ruta misional puede activarse para examinar esa alerta?",
+      [
+        "Vigilancia preventiva y control de gestión dentro de las competencias aplicables.",
+        "Juzgamiento disciplinario inmediato por el posible efecto de la cláusula.",
+        "Control fiscal sancionatorio ejercido por el profesional receptor de la alerta."
+      ],
+      [
+        "Prevenir permite examinar riesgos antes del daño.",
+        "La alerta no satisface el estándar de sanción.",
+        "No corresponde control fiscal al operador PGN."
+      ],
+      "Constitución art. 277; Resolución PGN 132/2014"
+    ],
+    [
+      "Un informe acredita que un servidor identificado podría haber incumplido una obligación funcional y aporta soportes concretos. El asunto requiere que la autoridad competente evalúe conducta, ilicitud, culpabilidad y procedimiento conforme a la ley.",
+      "¿Qué función se relaciona con ese examen de responsabilidad individual?",
+      [
+        "La función disciplinaria, sometida al Código General Disciplinario y sus garantías.",
+        "La función preventiva, mediante advertencia definitiva de responsabilidad individual.",
+        "La función de intervención, mediante sustitución de la autoridad judicial."
+      ],
+      [
+        "La responsabilidad exige procedimiento disciplinario.",
+        "La advertencia no es fallo.",
+        "Intervenir no sustituye al juez."
+      ],
+      "Constitución art. 277.6; CGD arts. 9–10, 12"
+    ],
+    [
+      "Un procurador judicial participa en una actuación contenciosa en la que se discute la legalidad de un contrato. La entidad contratante tiene apoderado y el agente del Ministerio Público desea presentar un concepto en defensa del patrimonio público.",
+      "¿Qué objetivo corresponde a la intervención dentro del proceso descrito?",
+      [
+        "Ejercer facultades legales en defensa del orden jurídico y patrimonio público.",
+        "Representar a la entidad demandada y defender necesariamente su posición contractual.",
+        "Declarar mediante concepto el detrimento fiscal y responsabilidad de funcionarios."
+      ],
+      [
+        "La intervención protege intereses constitucionales.",
+        "El agente no es necesariamente apoderado de la entidad.",
+        "El concepto no constituye fallo fiscal."
+      ],
+      "Constitución art. 277.7; CPACA art. 303"
+    ],
+    [
+      "Durante la revisión preventiva de un pliego se identifica un requisito técnico que parece restringir el mercado. La entidad aún puede motivarlo o modificarlo y la Procuraduría cuenta con atribuciones para solicitar información pertinente.",
+      "¿Qué actuación examina la restricción sin asumir la selección del contratista?",
+      [
+        "Requerir justificación y evaluar proporcionalidad, publicidad y riesgos del requisito.",
+        "Ordenar adjudicación al oferente que la Procuraduría considere más competitivo.",
+        "Eliminar directamente la cláusula mediante instrucción del operador preventivo."
+      ],
+      [
+        "La vigilancia solicita justificación y evalúa riesgos.",
+        "Adjudicar corresponde a la entidad.",
+        "La PGN no modifica directamente documentos ajenos."
+      ],
+      "Resolución PGN 132/2014; Ley 1150/2007 art. 5"
+    ],
+    [
+      "Un oferente cuestiona el pliego porque su propia empresa no acredita una certificación exigida. La observación no explica si la condición es desproporcionada y la entidad aporta estudios técnicos que todavía requieren ser contrastados.",
+      "¿Qué análisis precede a clasificar la observación como riesgo preventivo?",
+      [
+        "Distinguir desacuerdo comercial de alerta sustentada revisando objeto y soportes.",
+        "Considerar acreditada la restricción por la sola inconformidad del oferente.",
+        "Descartar toda observación comercial sin examinar el requisito técnico."
+      ],
+      [
+        "La alerta requiere verificación y justificación.",
+        "La inconformidad no prueba irregularidad.",
+        "Una observación puede aportar información relevante."
+      ],
+      "Ley 1150/2007 art. 5; Resolución PGN 132/2014"
+    ],
+    [
+      "Una entidad responde a un requerimiento preventivo explicando las medidas que tomará para corregir un riesgo de contratación. El equipo de Procuraduría pretende firmar el informe de evaluación de ofertas para certificar que la entidad actuó correctamente.",
+      "¿Qué límite debe conservar al hacer seguimiento a la administración?",
+      [
+        "Verificar medidas y fundamento sin firmar como evaluador contractual.",
+        "Aprobar la evaluación como condición para que se adjudique el contrato.",
+        "Asumir la decisión en los aspectos previamente advertidos por Procuraduría."
+      ],
+      [
+        "La vigilancia no sustituye la gestión contractual.",
+        "No es autorización previa general.",
+        "Advertir no transfiere competencia."
+      ],
+      "Constitución art. 277; Resolución PGN 132/2014"
+    ],
+    [
+      "La administración modifica oportunamente una cláusula objetada durante la vigilancia preventiva. El operador dispone de la adenda, constancias de publicación y datos sobre la nueva participación, pero no ha evaluado todavía el efecto real de la modificación.",
+      "¿Qué debe comprobar antes de cerrar la actuación por corrección del riesgo?",
+      [
+        "Motivación, publicidad y efecto verificable de la corrección sobre el riesgo.",
+        "Existencia de la adenda, que demuestra automáticamente la eliminación del riesgo.",
+        "Responsabilidad disciplinaria como condición indispensable para cerrar la vigilancia."
+      ],
+      [
+        "El cierre requiere valorar resultados.",
+        "Modificar no garantiza mejora.",
+        "La responsabilidad sigue otra ruta."
+      ],
+      "Resolución PGN 132/2014; Decreto 1082/2015"
+    ],
+    [
+      "Durante una vigilancia aparece un mensaje que podría evidenciar favorecimiento en la contratación. No se conoce su origen completo y la persona señalada aún no ha ejercido contradicción dentro de una actuación disciplinaria competente.",
+      "¿Qué gestión permite examinar el mensaje sin convertirlo en sanción?",
+      [
+        "Preservarlo, contextualizarlo y evaluar remisión disciplinaria según competencia.",
+        "Declarar probado el dolo en el informe preventivo por existir el mensaje.",
+        "Ignorar el mensaje porque la vigilancia se inició por otro riesgo."
+      ],
+      [
+        "La información requiere preservación y evaluación.",
+        "El mensaje aislado no prueba culpabilidad.",
+        "La actuación puede ajustarse a información nueva."
+      ],
+      "CGD arts. 87, 147–148; Resolución PGN 132/2014"
+    ],
+    [
+      "Un estudio de mercado posterior acredita que una exigencia técnica previamente cuestionada es necesaria y proporcional al objeto del contrato. Los documentos permiten comprobar que la premisa inicial de restricción injustificada no se sostiene.",
+      "¿Cómo debe actualizar el operador su valoración preventiva inicial?",
+      [
+        "Modificarla motivadamente y explicar qué premisa cambió y qué riesgos permanecen.",
+        "Mantener la alerta original para conservar coherencia con el primer requerimiento.",
+        "Declarar irregular todo el proceso porque una alerta no puede revisarse."
+      ],
+      [
+        "La valoración responde a evidencia verificable.",
+        "Coherencia no justifica una premisa desvirtuada.",
+        "La alerta no es declaración irrevocable de irregularidad."
+      ],
+      "Resolución PGN 132/2014; Ley 1150/2007 art. 5"
+    ]
+  ],
+  "pgn-m13": [
+    [
+      "Una oficina asigna mediante reparto un expediente a un despacho que, conforme a las reglas orgánicas, carece de atribución material para conocerlo. El funcionario sostiene que el registro del reparto subsana cualquier limitación de competencia.",
+      "¿Qué distinción jurídica debe reconocer antes de actuar de fondo?",
+      [
+        "El reparto distribuye asuntos conforme a competencia, pero no crea potestades.",
+        "El reparto transfiere competencia aunque contradiga las normas orgánicas aplicables.",
+        "La competencia se adquiere al recibir físicamente los documentos del caso."
+      ],
+      [
+        "La competencia es normativa; el reparto la aplica.",
+        "La asignación no modifica atribuciones.",
+        "Recibir soportes no otorga potestades."
+      ],
+      "Constitución art. 121; Decreto Ley 262/2000"
+    ],
+    [
+      "El Viceprocurador pretende encargar una función de su despacho a un servidor adscrito. La oficina identifica que el decreto orgánico enumera las funciones delegables y aún no ha comprobado si la función solicitada se encuentra entre ellas.",
+      "¿Qué debe comprobar antes de formalizar esa delegación interna?",
+      [
+        "Que la función concreta esté autorizada por la norma orgánica aplicable.",
+        "Que el servidor adscrito acepte la función aunque la ley no permita delegarla.",
+        "Que el expediente haya sido repartido al servidor para asumir la función decisoria."
+      ],
+      [
+        "El parágrafo 2 del art. 17 delimita funciones delegables.",
+        "La aceptación no sustituye habilitación.",
+        "Repartir asuntos no equivale a delegar potestades."
+      ],
+      "Decreto Ley 262/2000 art. 17, parágrafo 2"
+    ],
+    [
+      "Un despacho competente comisiona a otro funcionario para recibir un testimonio determinado fuera de sede. El comisionado recibe copia de actuaciones necesarias y propone asumir las restantes decisiones de instrucción por contar con los soportes del caso.",
+      "¿Qué límite distingue comisión y transferencia del conocimiento del proceso?",
+      [
+        "La comisión habilita diligencias encargadas y derivadas permitidas, no toda la instrucción.",
+        "La comisión transfiere todas las facultades del instructor mientras conserva los documentos.",
+        "La comisión equivale a una asignación para formular cargos y juzgar."
+      ],
+      [
+        "El encargo se delimita por objeto y término.",
+        "Recibir copias no transfiere función de fondo.",
+        "No equivale a reparto ni juzgamiento."
+      ],
+      "CGD art. 152"
+    ],
+    [
+      "Antes de practicar una declaración comisionada, el profesional advierte que el despacho no especifica claramente qué hechos debe esclarecer ni el término para evacuar la diligencia. Todavía no se ha citado al testigo correspondiente.",
+      "¿Qué debe verificar antes de ejecutar el despacho comisorio incompleto?",
+      [
+        "La precisión del objeto de la diligencia y del término concedido.",
+        "Una autorización para decidir responsabilidad después de recibir la declaración.",
+        "La totalidad del expediente original aunque no sea necesaria para la prueba."
+      ],
+      [
+        "El art. 152 exige objeto y término.",
+        "El encargo no habilita decisión de fondo.",
+        "Se remiten las copias necesarias."
+      ],
+      "CGD art. 152"
+    ],
+    [
+      "Durante un testimonio comisionado surge una solicitud de la defensa directamente vinculada con el alcance de la declaración. La diligencia debe respetar las garantías correspondientes y el profesional dispone de medios para registrar lo ocurrido.",
+      "¿Qué actuación conserva las garantías y trazabilidad de la diligencia?",
+      [
+        "Tramitar lo habilitado, preservar la contradicción y registrar fielmente la novedad.",
+        "Omitir la solicitud porque toda intervención adicional excede cualquier comisión.",
+        "Resolver todas las pretensiones para evitar devolver cuestiones al comitente."
+      ],
+      [
+        "Las garantías subsisten en prueba comisionada.",
+        "No toda solicitud relacionada excede el encargo.",
+        "Las decisiones de fondo corresponden a la autoridad competente."
+      ],
+      "CGD arts. 152, 157, 172–175"
+    ],
+    [
+      "Finaliza una prueba comisionada y el profesional tiene el acta, grabación autorizada y documentos recaudados. Una inconsistencia advertida durante la práctica podría ser relevante para el comitente, aunque no exige decidir inmediatamente el fondo.",
+      "¿Qué debe integrar la devolución al despacho comitente?",
+      [
+        "Acta, soportes, constancias y novedades verificables, delimitando el alcance del encargo.",
+        "Una conclusión de culpabilidad sin incorporar documentos de soporte de la diligencia.",
+        "Solo los elementos favorables a la hipótesis que motivó la comisión."
+      ],
+      [
+        "La remisión preserva integridad y trazabilidad.",
+        "No sustituye valoración de fondo.",
+        "Seleccionar por hipótesis introduce sesgo."
+      ],
+      "CGD arts. 148, 152, 159"
+    ],
+    [
+      "Durante una prueba comisionada aparece un elemento probatorio que surge directamente de la diligencia ordenada. El plazo sigue vigente y la decisión del comitente no prohíbe expresamente practicar pruebas adicionales derivadas del encargo.",
+      "¿Qué facultad permite examinar ese elemento dentro de la comisión?",
+      [
+        "Practicar la prueba directamente derivada, respetando condiciones y garantías.",
+        "Esperar otra comisión aunque la prueba derive directamente y no esté prohibida.",
+        "Abrir investigación autónoma por cualquier hecho surgido durante la diligencia."
+      ],
+      [
+        "El art. 152 permite prueba derivada salvo prohibición.",
+        "No siempre exige otra comisión.",
+        "Se limita a conexión directa con el encargo."
+      ],
+      "CGD art. 152"
+    ],
+    [
+      "El término concedido para una prueba comisionada está por vencer y queda una diligencia necesaria que no puede completarse oportunamente. El profesional puede comunicar la situación al comitente por un medio eficaz y dejar constancia.",
+      "¿Qué gestión permite continuar más allá del término concedido?",
+      [
+        "Solicitar y obtener ampliación del término con comunicación eficaz y constancia.",
+        "Prorrogar unilateralmente y justificar la demora al entregar los soportes.",
+        "Dejar vencer el encargo y practicar después las pruebas sin autorización."
+      ],
+      [
+        "La ampliación exige solicitud, concesión y comunicación documentada.",
+        "El comisionado no se concede la prórroga.",
+        "El plazo no se extiende automáticamente."
+      ],
+      "CGD art. 152"
+    ],
+    [
+      "Al practicar una comisión, el servidor advierte que el despacho de origen podría carecer de competencia material por una regla especial aplicable. La situación no está aún resuelta y el profesional no tiene facultad de decidir el conflicto.",
+      "¿Qué procede ante esa duda fundada de competencia del comitente?",
+      [
+        "Documentar y comunicar la novedad a la autoridad habilitada para definirla.",
+        "Considerar saneada la competencia por la existencia de una providencia de comisión.",
+        "Resolver el conflicto y asumir íntegramente el expediente en la oficina comisionada."
+      ],
+      [
+        "La comisión no sana competencia por sí sola.",
+        "La orden no elimina la regla orgánica.",
+        "El profesional no adquiere potestad de resolver el conflicto."
+      ],
+      "Constitución art. 121; CGD arts. 91–98, 152"
+    ]
+  ],
+  "pgn-m14": [
+    [
+      "Un profesional recibe un expediente sobre cambios en registros de inventario y debe preparar insumos para la investigación. El material contiene fechas, asignaciones funcionales, registros de sistema y declaraciones que no coinciden plenamente.",
+      "¿Qué producto inicial aporta utilidad al análisis de instrucción dentro de su rol?",
+      [
+        "Una matriz de hechos, obligaciones, fuentes, contradicciones y cuestiones pendientes.",
+        "Una declaración definitiva de culpabilidad basada en la primera versión del incidente.",
+        "Una recopilación cronológica sin relacionar los documentos con los hechos investigados."
+      ],
+      [
+        "La matriz delimita soportes y vacíos.",
+        "La culpabilidad exige valoración competente.",
+        "Ordenar no basta si falta relación probatoria."
+      ],
+      "Convocatoria 104-2026 v4; Guía de investigación PGN"
+    ],
+    [
+      "Una autoridad solicita a una entidad un informe técnico sobre datos que aparecen registrados en sus archivos. El documento debe responder a esa solicitud, sin desarrollar un dictamen experto sobre una cuestión que requiera metodología pericial específica.",
+      "¿Qué régimen debe distinguir el profesional al identificar ese medio?",
+      [
+        "El informe de datos registrados se regula separadamente del dictamen pericial.",
+        "Todo informe técnico es dictamen pericial por utilizar información especializada.",
+        "El informe de archivo constituye testimonio jurado de quien lo firma."
+      ],
+      [
+        "El CGD distingue informes y prueba pericial.",
+        "La denominación no determina automáticamente el medio.",
+        "El informe no equivale a declaración testimonial."
+      ],
+      "CGD arts. 177–184, 193–195"
+    ],
+    [
+      "Una persona vinculada solicita analizar una base institucional para identificar quién realizó una modificación. El profesional obtiene una consulta que acredita el usuario registrado, pero la base no permite comprobar por sí sola qué persona operó la cuenta.",
+      "¿Qué límite debe expresar para evitar una atribución personal injustificada?",
+      [
+        "El registro identifica la cuenta, no necesariamente la persona que la utilizó.",
+        "El usuario registrado demuestra autoría y excluye hipótesis alternativas de ejecución.",
+        "La consulta carece de valor porque los registros nunca permiten analizar conductas."
+      ],
+      [
+        "El alcance técnico de la consulta es limitado.",
+        "Cuenta no equivale a autoría personal.",
+        "El registro conserva valor parcial."
+      ],
+      "CGD arts. 147–148, 159; Guía de pruebas PGN"
+    ],
+    [
+      "Un profesional elabora un informe sobre transacciones de un sistema. Recibió datos exportados por una dependencia, pero su borrador no registra quién realizó la extracción, qué intervalo cubre ni en qué formato se entregaron los datos.",
+      "¿Qué información debe añadir para hacer verificable la fuente analizada?",
+      [
+        "Origen, responsable de extracción, intervalo, formato y condiciones de adquisición.",
+        "Nombre de la herramienta con que abrió el archivo y fecha del informe.",
+        "Sentido de la decisión jurídica sin documentar la forma de obtener los datos."
+      ],
+      [
+        "Identificar fuente y adquisición permite reproducir el análisis.",
+        "La herramienta no describe origen ni cobertura.",
+        "La conclusión jurídica no reemplaza documentación técnica."
+      ],
+      "Guía de pruebas PGN; CGD art. 159"
+    ],
+    [
+      "Un informe informático contiene una tabla de resultados y afirma que varios eventos coinciden temporalmente. No identifica los filtros, parámetros de búsqueda ni tratamiento de zonas horarias que utilizó para producir esa tabla.",
+      "¿Qué aspecto metodológico debe documentarse para permitir revisión del informe?",
+      [
+        "Procedimientos, filtros, referencia temporal, transformaciones y límites de la comparación.",
+        "Cantidad de registros coincidentes para que el lector compruebe el resultado final.",
+        "Experiencia profesional sin describir las operaciones realizadas sobre los datos."
+      ],
+      [
+        "El método permite comprender y reproducir resultados.",
+        "La cantidad no explica cómo se seleccionó evidencia.",
+        "La experiencia no sustituye un método verificable."
+      ],
+      "CGD arts. 157, 159, 179; NIST SP 800-86"
+    ],
+    [
+      "Una dependencia solicita al profesional establecer si una actualización de un archivo fue realizada manualmente. El informe separa registros observados de dos hipótesis plausibles, pero el coordinador pide suprimir la sección de limitaciones para simplificarlo.",
+      "¿Qué estructura debe conservar para entregar un insumo técnico íntegro?",
+      [
+        "Hallazgos, inferencias, hipótesis alternativas, límites y soportes verificables.",
+        "Una conclusión única aunque no se puedan descartar otras explicaciones plausibles.",
+        "Resultados sin límites ni anexos para que la autoridad los reconstruya después."
+      ],
+      [
+        "El informe distingue observación e inferencia.",
+        "No se justifica una conclusión única con alternativas plausibles.",
+        "La revisión requiere documentación suficiente."
+      ],
+      "CGD arts. 148, 159, 179; Guía de pruebas PGN"
+    ],
+    [
+      "Tras analizar una operación registrada como manual, aparece un reporte de un proceso automático ejecutado en el mismo intervalo. El profesional conserva las fuentes originales y puede comparar la configuración del sistema con el evento cuestionado.",
+      "¿Qué ajuste requiere esa evidencia respecto de la hipótesis inicial?",
+      [
+        "Contrastar configuración y registros para actualizar las conclusiones afectadas.",
+        "Mantener la hipótesis manual por haber fundamentado el primer informe técnico.",
+        "Declarar legítima toda modificación por existir un proceso automático en ese horario."
+      ],
+      [
+        "La nueva fuente exige reexaminar inferencias.",
+        "No se sostiene una hipótesis contra evidencia relevante.",
+        "Coincidencia no acredita legitimidad."
+      ],
+      "CGD arts. 148, 159; NIST SP 800-92"
+    ],
+    [
+      "Una copia de un archivo presenta una huella SHA-256 diferente de la registrada en la adquisición. No se ha determinado si hubo una exportación distinta, una transformación documentada o una modificación no autorizada del contenido.",
+      "¿Qué conclusión técnica puede sostener antes de esclarecer esa diferencia?",
+      [
+        "Existe una discrepancia que exige verificar el origen y las transformaciones.",
+        "Está demostrada una alteración dolosa del último receptor de los archivos.",
+        "La integridad permanece idéntica porque ambas copias conservan su nombre visible."
+      ],
+      [
+        "La diferencia exige comprobar la comparación y su causa.",
+        "No demuestra intención ni autoría.",
+        "El nombre no acredita identidad binaria."
+      ],
+      "CGD art. 159; NIST SP 800-86"
+    ],
+    [
+      "Una autoridad pide al profesional informático que incluya en su informe la conclusión de que el disciplinado actuó con dolo. Los registros permiten describir operaciones y autorizaciones, pero no contienen prueba suficiente sobre conocimiento y voluntad.",
+      "¿Qué respuesta respeta los límites del aporte especializado al expediente?",
+      [
+        "Documentar hallazgos y alcance, dejando la calificación subjetiva a la autoridad competente.",
+        "Certificar dolo porque una operación no autorizada demuestra necesariamente intención disciplinaria.",
+        "Negarse a todo análisis porque el asunto incluye una valoración jurídica."
+      ],
+      [
+        "El experto aporta hechos y método, no sustituye el juicio.",
+        "La operación no acredita automáticamente dolo.",
+        "El apoyo técnico es útil dentro de sus límites."
+      ],
+      "CGD arts. 28, 179; Convocatoria 104-2026 v4"
+    ]
   ]
 }
 
@@ -6184,7 +6869,7 @@ export function reviewedTemplateQuestion(question: Question, number: number): Qu
       return { id: o.id, text: choices[i]!, rationale: rationales[i]! }
     }),
     explanation: (Number(question.moduleId.slice(5)) >= 20 && Number(question.moduleId.slice(5)) < 45 ? 'Código General Disciplinario, art(s). ' : 'Fundamento: ') + articles + '. ' + rationales.join(' '),
-    sourceIds: [...new Set([...question.sourceIds, ...(articles.includes('Constitución') ? ['constitucion'] : []), ...(articles.includes('Resolución PGN 132/2014') ? ['pgn-res-132-2014'] : []), ...(articles.includes('Decreto 1499/2017') ? ['decreto-1499-2017'] : []), ...(articles.includes('CPACA') ? ['cpaca'] : []), ...(articles.includes('Ley 1454/2011') ? ['ley-1454-2011'] : []), ...(articles.includes('Decreto Ley 262/2000') ? ['decreto-262-2000'] : []), ...(articles.includes('Decreto Ley 1851/2021') ? ['decreto-1851-2021'] : []), ...(articles.includes('Ley 1755/2015') ? ['ley-1755-2015'] : []), ...(articles.includes('Ley 80/1993') ? ['ley-80-1993'] : []), ...(articles.includes('Ley 1150/2007') ? ['ley-1150-2007'] : []), ...(articles.includes('Ley 1474/2011') ? ['ley-1474-2011'] : []), ...(articles.includes('Ley 2195/2022') ? ['ley-2195-2022'] : []), ...(articles.includes('Ley 1712/2014') ? ['ley-1712-2014'] : []), ...(articles.includes('Ley 1581/2012') ? ['ley-1581-2012'] : []), ...(articles.includes('CGD') ? ['ley-1952-2019'] : []), ...(Number(question.moduleId.slice(5)) >= 20 && Number(question.moduleId.slice(5)) < 45 ? ['ley-1952-2019', 'ley-2094-2021'] : []), ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : []), ...(articles.includes('NIST SP 800-86') ? ['nist-sp-800-86'] : []), ...(articles.includes('NIST SP 800-92') ? ['nist-sp-800-92'] : [])])],
+    sourceIds: [...new Set([...question.sourceIds, ...(articles.includes('Decreto 1082/2015') ? ['decreto-1082-2015'] : []), ...(articles.includes('Guía Preventiva PGN') ? ['pgn-guia-preventiva'] : []), ...(articles.includes('Guía de pruebas PGN') ? ['pgn-guia-pruebas'] : []), ...(articles.includes('Guía de investigación PGN') ? ['pgn-guia-investigacion'] : []), ...(articles.includes('Convocatoria 104-2026') ? ['pgn-convocatoria-104-v4'] : []), ...(articles.includes('Constitución') ? ['constitucion'] : []), ...(articles.includes('Resolución PGN 132/2014') ? ['pgn-res-132-2014'] : []), ...(articles.includes('Decreto 1499/2017') ? ['decreto-1499-2017'] : []), ...(articles.includes('CPACA') ? ['cpaca'] : []), ...(articles.includes('Ley 1454/2011') ? ['ley-1454-2011'] : []), ...(articles.includes('Decreto Ley 262/2000') ? ['decreto-262-2000'] : []), ...(articles.includes('Decreto Ley 1851/2021') ? ['decreto-1851-2021'] : []), ...(articles.includes('Ley 1755/2015') ? ['ley-1755-2015'] : []), ...(articles.includes('Ley 80/1993') ? ['ley-80-1993'] : []), ...(articles.includes('Ley 1150/2007') ? ['ley-1150-2007'] : []), ...(articles.includes('Ley 1474/2011') ? ['ley-1474-2011'] : []), ...(articles.includes('Ley 2195/2022') ? ['ley-2195-2022'] : []), ...(articles.includes('Ley 1712/2014') ? ['ley-1712-2014'] : []), ...(articles.includes('Ley 1581/2012') ? ['ley-1581-2012'] : []), ...(articles.includes('CGD') ? ['ley-1952-2019'] : []), ...(Number(question.moduleId.slice(5)) >= 20 && Number(question.moduleId.slice(5)) < 45 ? ['ley-1952-2019', 'ley-2094-2021'] : []), ...(articles.includes('C-570/2019') ? ['cc-c570-2019'] : []), ...(articles.includes('NIST SP 800-86') ? ['nist-sp-800-86'] : []), ...(articles.includes('NIST SP 800-92') ? ['nist-sp-800-92'] : [])])],
     verifiedAt: '2026-11-24',
   }
 }

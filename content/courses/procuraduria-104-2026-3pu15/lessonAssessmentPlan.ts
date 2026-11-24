@@ -3,6 +3,11 @@
  * El cierre es acumulativo. Los módulos aún pendientes conservan orden provisional.
  */
 const lessonSituationOrder: Record<number, readonly number[]> = {
+  "10": [2,3,4,5,6,7,8,9,10],
+  "11": [2,3,4,5,6,7,8,9,10],
+  "12": [2,3,4,5,6,7,8,9,10],
+  "13": [2,3,4,5,6,7,8,9,10],
+  "14": [2,3,4,5,6,7,8,9,10],
   "5": [2,3,4,5,6,7,8,9,10],
   "6": [2,3,4,5,6,7,8,9,10],
   "7": [2,3,4,5,6,7,8,9,10],
